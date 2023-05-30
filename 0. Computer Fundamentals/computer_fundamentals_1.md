@@ -1,21 +1,34 @@
 ---
 title: "Computer Fundamentals: Some Prerequisites"
-date: "04-05-2023"
+date: "04-06-2023"
 author: "Andrei Guevorkian"
 ---
+# Overview:
 
 [A Brief History of Computing](#a-brief-history-of-computing) 
 talk all the way up to early computers that used terminals for i/o. computer terminals were physical devices used to interact with mainframe computers. why were they black backgrounds?
 
+1. start off with jacquard loom. 
+2. then mention the first compouter designed (but never built): charles babbages' analytical engine. 
+3. Then talk about how electrcity started to be used widely and in many industries, including replacing punch cards and the mechanical counterparts. 
+4. first computer ENIAC
+5. talk about terminals. what were they, why is the screen black
+6. what did NASA use to do their missions (early on)?
+
 [Introduction to Modern Computers](#introduction-to-computers) 
 Continue from the history. talk how today, we have applications such as photoshop. we watch videos, save and look at pictures. We play videogames with high quality graphics. if it wasn't for the visual aspect, computers wouldn't be so mainstream. we have a profile picture on our social media accounts, which are all mainly based on pictures and videos. That's why GUI is important
 
-[What is a Computer?](#what-is-a-computer) 
-At its core, what is a computer. talk about embedded device in fridge. talk about the computational complexity spectrum, what are the extremes (maybe). talk about software and hardware, talk how can connect external devices using drivers. can get complicated.
+but today not only have gui, but when want to access a server, there is only cli. when dealing with cloud computing. when anything is still new, and you are working with new/"not widely-used" tech, then cli will be the way to go. and programmers are always working with new tech, that's what the best companies do, is explore and expand their business into new tech
 
-how user interacts with computer. evolution of it. device maybe just takes in sound, and interact that way. don't just tell the reader some definitions. explain what is a computer and what is it not. what is a computers basic structure. what is the bare minimum for something to be considered a computer? was the loom considered a computer? what makes a machine a computer? io cpu,etc
+[What is a Computer?](#what-is-a-computer)
+1. why wasn't the jacquard loom considered a computer? what made the babbage analytical engine be a "computer"?
+2. what about a hypothetical device that just takes in sound, and outputs sound. would that be labeled as a computer? why or why not?
+3. what are the basic requirements for a device to be considered a computer? what is the bare minimum. what is the simplest computer a person can make?
+4. analyze situation of embedded device in fridge. 
+5. talk about the computational complexity spectrum, what are the extremes (maybe). talk about software and hardware, talk how can connect external devices using drivers. can get complicated. 
+important: make sure to explain what is a computer and what it is not. don't just give boring definitions.
 
-we can simulate a computer using a computer. one or two sentence on that
+6. mention a sentence or two on: we can simulate a computer using a computer
 
 Add some tips,fun facts, notes and questions along the way
 > Name a computer around you that usually people don't see as a computer. 
