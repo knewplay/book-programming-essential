@@ -3,19 +3,49 @@ title: "Computer Fundamentals: Some Prerequisites"
 date: "04-06-2023"
 author: "Andrei Guevorkian"
 ---
-# Overview:
+Is your smartphone considered a computer? How about the components inside your oven that allow you to connect to it via an app? What are the minimum requirements for something to be considered a computer? That's what we'll dive into in this article.
 
-[A Brief History of Computing](#a-brief-history-of-computing) 
-talk all the way up to early computers that used terminals for i/o. computer terminals were physical devices used to interact with mainframe computers. why were they black backgrounds?
+# Table of Contents
+
+[A Brief History of Computing](#a-brief-history-of-computing)
+- [The Jacaquard Loom: Breakthrough in Automation](#the-jacaquard-loom-breakthrough-in-automation)
+- [Charles Babbage and the Analytical Engine: Conceptualizing the Computer](#charles-babbage-and-the-analytical-engine-conceptualizing-the-computer)
+- [Vacuum Tubes: From Mechanical to Electrical Components](#vacuum-tubes-from-mechanical-to-electrical-components)
+- [The ENIAC: The First Modern Computer](#the-eniac-the-first-modern-computer)
+- [Computer Terminals: An Advancement in Human-Computer Interaction](#computer-terminals-an-advancement-in-human-computer-interaction) 
+
+[The Modern State of Computers](#the-modern-state-of-computers)
+
+[Computer Fundamentals](#computer-fundamentals)
+
+[The File System](#the-file-system)
+
+# A Brief History of Computing
+
+## The Jacaquard Loom: Breakthrough in Automation
+The year is 1805, and Joseph-Marie Jacquard, a French weaver, introduces a groundbreaking invention that transforms the textile industry forever. With his ingenious creation, the Jacquard loom, Jacquard has brought automation to the textile industry, and has unknowingly layed the groundwork for the future of computers.
+
+At the heart of the Jacquard loom lies an innovative system of punch cards. These cards were pieces of stiff paper that contain patterns of holes punched through them in specific positions. By inserting the punch cards into the device, weavers can control which threads are lifted and lowered during weaving, resulting in beautifully complex designs that can be replicated perfectly indefinitely. Watch [this short animation](https://www.youtube.com/watch?v=K6NgMNvK52A) demonstrating this process. 
+
+The use of punch cards in the Jacquard loom not only automates the weaving process but also introduces the concept of input and output. Think of input as the information you provide to the loom, like the specific pattern you want to weave in the format of cards with holes punched in specific positions. Output, on the other hand, is the final result—the fabric with the intricate design that the loom produces based on the input it receives. We put something "in" the machine (input), and "out" comes something else (output).
+## Charles Babbage and the Analytical Engine: Conceptualizing the Computer
+
+## Vacuum Tubes: From Mechanical to Electrical Components
+
+## The ENIAC: The First Modern Computer
+
+## Computer Terminals: An Advancement in Human-Computer Interaction
 
 1. start off with jacquard loom. 
-2. then mention the first compouter designed (but never built): charles babbages' analytical engine. 
+These cards were pieces of stiff paper that had holes punched in them in specific patterns to represent data or instructions.
+2. then mention the first compouter designed (but never built): charles babbages' analytical engine. What made it a computer? what was different?
 3. Then talk about how electrcity started to be used widely and in many industries, including replacing punch cards and the mechanical counterparts. 
-4. first computer ENIAC
-5. talk about terminals. what were they, why is the screen black
+4. first computer ENIAC. why was it considered a computer, and not everything that came before it. Can you imagine how they'd have to deal with component failures on this machine? It's bad enough with the vacuum tubes in things like ENIAC, which would all have to be shut down and left to cool before someone had to crawl in and find the blown tube, but that would be a relatively simple proposition compared with hunting down a gear or ratchet or spring which had failed, and they would fail at an alarming rate, given the complexity of the machine and the sheer friction generated in use. The room in which this would have been housed would have been incredibly noisy and hot.
+5. talk about terminals. what were they, why is the screen black . computer terminals were physical devices used to interact with mainframe computers. why were they black backgrounds?
+
 6. what did NASA use to do their missions (early on)?
 
-[Introduction to Modern Computers](#introduction-to-computers) 
+# The Modern State of Computers
 Continue from the history. talk how today, we have applications such as photoshop. we watch videos, save and look at pictures. We play videogames with high quality graphics. if it wasn't for the visual aspect, computers wouldn't be so mainstream. we have a profile picture on our social media accounts, which are all mainly based on pictures and videos. That's why GUI is important
 
 but today not only have gui, but when want to access a server, there is only cli. when dealing with cloud computing. when anything is still new, and you are working with new/"not widely-used" tech, then cli will be the way to go. and programmers are always working with new tech, that's what the best companies do, is explore and expand their business into new tech
@@ -36,8 +66,13 @@ Add some tips,fun facts, notes and questions along the way
 Mention about the modern OS:
 Now talk about how to organize everything, drivers, etc. you want a special software that will manage all of those things that we don't need the user to manage. 
 
+
+The I/O could be anything. But as it turned out
+From punch cards, we moved on to keyboards, mice, and monitors as primary I/O devices when personal computers began to be common in the late 20th century. Keyboards and mice provide input, allowing us to tell the computer what to do, while monitors provide output, letting us see what the computer is doing or has done.
+
 [The File System](#the-file-system) 
 Analogy: can have one big notebook, with history math and physics and chemistry notes. However, we all know that it's much easier to sort through things by having a separate notebook for each subject.
 Now what if in history class, you have your notebook with your class notes, but one day the teacher asks you to take out a single piece of paper for the weekly quiz. Now you have a notebook, and a single piece of paper. after 8 weeks, you would have 8 single pieces of paper, which should logically be physically together. You don't want history quiz 1 to be between the math and physics notebooks. That'd be a mess when it's time to find the quiz and review it. --> Folder ...
 go back to the profile picture example. or the game graphics. behind all of these visuals, is computer code. and code is just text that get's converted to machine code that the computer can understand.  
 For the profile picture, that picture is stored somewhere on facebook's server, and when someone visits your account, the page just has a pointer to the location on the server where your picture resides. its a file. everything is stored in files. A typical program executes sequentially, one command at a time. so technically can have one big chunck of code. but that's just like having one large notebook containing all your class notes from all your courses. and computers have way more information than a year's worth of class notes. computers are very complex today, and it's better to organize and store the different funcitonalities into separate files, just like it's better to put different course material in different folders.
+
