@@ -11,7 +11,7 @@ Is your smartphone considered a computer? How about the components inside your o
 - [The Jacaquard Loom: Breakthrough in Automation](#the-jacaquard-loom-breakthrough-in-automation)
 - [Charles Babbage and the Analytical Engine: Conceptualizing the Computer](#charles-babbage-and-the-analytical-engine-conceptualizing-the-computer)
 - [Tabulating Machines: A Revolution in Information Management](#tabulating-machines-a-revolution-in-information-management)
-- [The ENIAC: The First Modern Computer](#the-eniac-the-first-modern-computer)
+- [The Z3: The First Modern Computer](#the-eniac-the-first-modern-computer)
 - [Computer Terminals: An Advancement in Human-Computer Interaction](#computer-terminals-an-advancement-in-human-computer-interaction) 
 
 [The Modern State of Computers](#the-modern-state-of-computers)
@@ -24,61 +24,33 @@ Is your smartphone considered a computer? How about the components inside your o
 
 ## The Jacaquard Loom: Breakthrough in Automation
 
-Before the year 1805, if I wanted to make a piece of cloth, such as a napkin, with a beautiful design on it, I would have to use a device called a handloom and manually control the position of each thread to create the desired pattern. And if I wanted to make two such napkins, I'd have to redo the entire process, and they would unlikely be exactly the same.
+Before the year 1805, if I wanted to make a piece of cloth, such as a napkin, with a beautiful design on it, I would have to use a device called a handloom and manually control the position of each thread to create the desired pattern. And if I wanted to make two such napkins, I'd have to redo the entire process.
 
-However, then came the Jacquard loom, named after the French weaver Joseph-Marie Jacquard. This device used a system of stiff paper with holes punched into them in specific patterns, which was a representation of a portion of the actual design pattern. So now, instead of manually controlling the threads with my hands, I would insert a series of these punch cards into the loom, and the machine would would lift and lower threads based on the hole positions on the card. Watch [this short animation](https://www.youtube.com/watch?v=K6NgMNvK52A) demonstrating this process.
+However, then came the Jacquard loom, named after the French weaver Joseph-Marie Jacquard. This device used a system of stiff paper with holes punched into them in specific patterns, which was a representation of a portion of the actual design pattern. So now, instead of manually controlling the threads with my hands, I would insert a series of these punch cards into the loom, and the machine would lift and lower threads based on the hole positions on the card. Watch [this short animation](https://www.youtube.com/watch?v=K6NgMNvK52A) demonstrating this process.
 
-You may be wondering "this is great and all, but what does this have to do with computers"? While the Jacquard loom is not directly related to the development of computers, it started the conversation of I/O, or "input and output", as well as automation and feeding a device "instructions". "Input" is what goes "in" a system, and "output" is what comes "out" as a result. Before the Jacquard loom, direct human intervention was critical in the input to get the desired output. In the case of the Jacquard loom, at a given moment, the input is a punch card, and the output is a row of threads being woven in a specific pattern, all without the human "touch". 
+What does this have to do with computers? Well, while the Jacquard loom is not directly related to the development of computers, it started a conversation about input and output, as well as automation and "feeding instructions" to a machine. 
 
-We could indirectly feed the machine instructions, and it will what we wanted it to do.
+"Input" is what goes "in" a system, and "output" is what comes "out" as a result. Before the Jacquard loom, direct human intervention was critical in the input to get the desired output. In the case of the Jacquard loom, at a given moment, the input is a punch card, and the output is a row of threads being woven in a specific pattern, all without the "human touch".
+
+This invention laid the foundation for key concepts in computing, notably the idea of feeding punch cards (containing instructions) as input to a machine. It foreshadowed the later development of computing devices.
 
 ## Charles Babbage and the Analytical Engine: Conceptualizing the Computer
 
-The first device considered a computer was the Analytical Engine, conceptualized by English mathematician and inventor Charles Babbage in the 1830's. Although it was never fully constructed during his lifetime, Babbage's designs and ideas laid the foundation for modern computing.
+The first device considered a computer was the Analytical Engine, conceptualized by English inventor Charles Babbage in the 1830s. Although it was never fully constructed during his lifetime, Babbage's designs and ideas laid the foundation for modern computing.
 
-Now, what made the Analytical Engine a computer? 
+What made this device the first computer? Well, because it had all functionalities of one: there was a reader to accept inputs in the form of punch cards, a printer to output and print the results, a processing unit to perform computations, and a storage unit to store, retrieve, and manipulate data. The Analytical Engine was an early, mechanical version of a general-purpose computer capable of solving various math problems using a steam engine to power the machine and turn all its gears.
 
-...
+## : The First Modern Computer
 
-The Analytical Engine was designed as a mechanical, general-purpose computing machine. It featured several key components, including a central processing unit, memory, punch cards for input and output, and an arithmetic unit. Babbage envisioned a machine that could perform calculations, store and manipulate data, and execute complex programs using punch cards for instructions.
+It wasn't until a hundred years after Babbage conceptualized his Analytical Engine that the first physical computer was actually built. We are now in the early 1940s, in the middle of the Second World War, and electricity has played a major role in the development of many new technologies, replacing their mechanical counteparts.
 
-While the Analytical Engine was never completed, Babbage's designs and concepts were ahead of their time and paved the way for subsequent developments in computing. His work laid the groundwork for the modern concept of a programmable computer, influencing future inventors and engineers in the field of computing.
+One such technology is vacuum tubes, electronic devices that controlled and amplified electrical signals, providing the means to process and control data electronically. These glass or metal containers, filled with a vacuum or low-pressure gas, acted as switches and amplifiers in early electronic computers, enabling the manipulation of electrical currents and the implementation of logical operations.
 
-## Tabulating Machines: A Revolution in Information Management
-
-Rememebr those punch cards that were used as input for the Jacquard loom? Well those punch cards ...
-
-
-Rather than just being a physical obstruction to a needle moving, it turns out that we can represent data with 
-
-
-These cards were pieces of stiff paper that had holes punched in them in specific patterns to represent data or instructions. When we write the letters 'a', 'n', and 'd' on a piece of paper, these are just drawing of characters that represent information
-
-
-Herman Hollerith, an American inventor, developed and popularized the use of punched cards for data processing in the late 19th century. He utilized punch cards as a means of encoding information in a binary-like format for efficient tabulation and analysis. Hollerith's system allowed data to be encoded on punched cards with specific hole positions representing different data values or categories.
-
-Hollerith's punched card system gained widespread recognition and adoption, particularly during the 1890 United States Census. His system enabled the census data to be processed more quickly and accurately compared to traditional manual methods. Hollerith's innovations and the success of his punched card technology led to the founding of the Tabulating Machine Company, which eventually evolved into IBM (International Business Machines) Corporation.
-
-Therefore, it was Herman Hollerith who harnessed the potential of punch cards to represent and process data, paving the way for their extensive use in early data processing and setting the stage for further advancements in computing technology.
-
-## The ENIAC: The First Modern Computer
-
-In the early 1900's, the use of electricity was becoming more and more widespread. By the second world war, electrical components were starting to replace mechanical ones, and ...
-
-The ENIAC (Electronic Numerical Integrator and Computer), completed in 1945, was the first general-purpose electronic computer.
-
-The ENIAC was an enormous machine, occupying a large room and comprising thousands of vacuum tubes, resistors, capacitors, and other electronic components. It was primarily developed for military purposes, assisting in complex calculations for artillery trajectory tables during World War II.
-
-While the ENIAC was groundbreaking in terms of its capabilities, it had its limitations. It required a significant amount of power to operate, generated a considerable amount of heat, and required manual rewiring for each new computation. Nevertheless, the ENIAC laid the foundation for future electronic computers and demonstrated the vast potential of electronic technology in computing.
-
-The use of vacuum tubes allowed for the creation of electronic circuits that could perform logic operations and amplify electrical signals. They became a fundamental building block of early electronic computers, such as the ENIAC, providing the means to process and control data electronically.
-
-Vacuum tubes were not without their challenges. They were fragile, consumed a significant amount of power, generated heat, and had a limited lifespan. The need to replace faulty tubes and the sheer number of tubes required in early computers made them bulky, expensive, and prone to frequent failures. However, vacuum tubes represented a crucial advancement in electronic technology, marking the transition from mechanical to electrical components and paving the way for further developments in computing.
-
+During this time, several pioneering computers were independently designed, representing significant advancements in the field of electronic computing. These included the Z3 created by Konrad Zuse in Germany, the Colossus developed in the United Kingdom for code-breaking purposes, and the Atanasoff-Berry Computer (ABC) designed by John Atanasoff and Clifford Berry in the United States.
 
 ## Computer Terminals: An Advancement in Human-Computer Interaction
 
-Vacuum tubes, despite their contributions to early electronic computers, had limitations such as being bulky, power-hungry, and prone to failure. These shortcomings drove the need for a more compact and robust electronic component that could replace vacuum tubes in computing systems.
+Vacuum tubes were not without their challenges. They were fragile, consumed a significant amount of power, generated heat, and had a limited lifespan. The need to replace faulty tubes and the sheer number of tubes required in early computers made them bulky, expensive, and prone to frequent failures. hese shortcomings drove the need for a more compact and robust electronic component that could replace vacuum tubes in computing systems.
 
 In 1947, the invention of the transistor by John Bardeen, Walter Brattain, and William Shockley at Bell Labs revolutionized the field of electronics. Transistors are solid-state devices made of semiconductor materials, such as silicon or germanium, and they function as switches or amplifiers for electronic signals.
 
@@ -114,6 +86,8 @@ Well, the word "computer" comes from the verb "to compute", and by adding "er" t
 Since the first use of the word in the 1600's, "computers" have evolved. They have gone from a person who computes, to machines that compute. But is computing all that is really required nowadays to be considered a "computer"? For example, take [a "computer" made up of dominoes](https://www.youtube.com/watch?v=w6E7aQnA4Ws). Woudl this system technically be a computer? Definitely not (even though in the video, they call it a computer, but they're using the simpler definition of a computer as "something that computes").
 
 Why isn't a ["domino computer"](https://www.youtube.com/watch?v=OpLU__bhu2w) or a ["water computer"](https://www.youtube.com/watch?v=IxXaizglscw) technically a computer? Because in order to be a computer, you have to do more than just perform mathematical computations. That's why a basic calculator isn't a computer.
+
+For one, these systems don't have a way to store data or retrieve previous calculations. 
 
 
 1. why wasn't the jacquard loom considered a computer? what made the babbage analytical engine be a "computer"?
