@@ -1,5 +1,5 @@
 ---
-title: "Computer Fundamentals: Some Prerequisites"
+title: "Computer Fundamentals: History and Fundamentals"
 date: "07-06-2023"
 author: "Andrei Guevorkian"
 ---
@@ -10,15 +10,13 @@ Is your smartphone considered a computer? How about the components inside your o
 [A Brief History of Computing](#a-brief-history-of-computing)
 - [The Jacaquard Loom: Breakthrough in Automation](#the-jacaquard-loom-breakthrough-in-automation)
 - [Charles Babbage and the Analytical Engine: Conceptualizing the Computer](#charles-babbage-and-the-analytical-engine-conceptualizing-the-computer)
-- [Tabulating Machines: A Revolution in Information Management](#tabulating-machines-a-revolution-in-information-management)
-- [The Z3: The First Modern Computer](#the-eniac-the-first-modern-computer)
+- [Electronic Computing: WWII's Technological Impact](#electronic-computing-wwiis-technological-impact)
 - [Computer Terminals: An Advancement in Human-Computer Interaction](#computer-terminals-an-advancement-in-human-computer-interaction) 
 
 [The Modern State of Computers](#the-modern-state-of-computers)
 
 [Computer Fundamentals](#computer-fundamentals)
 
-[The File System](#the-file-system)
 
 # A Brief History of Computing
 
@@ -26,7 +24,9 @@ Is your smartphone considered a computer? How about the components inside your o
 
 Before the year 1805, if I wanted to make a piece of cloth, such as a napkin, with a beautiful design on it, I would have to use a device called a handloom and manually control the position of each thread to create the desired pattern. And if I wanted to make two such napkins, I'd have to redo the entire process.
 
-However, then came the Jacquard loom, named after the French weaver Joseph-Marie Jacquard. This device used a system of stiff paper with holes punched into them in specific patterns, which was a representation of a portion of the actual design pattern. So now, instead of manually controlling the threads with my hands, I would insert a series of these punch cards into the loom, and the machine would lift and lower threads based on the hole positions on the card. Watch [this short animation](https://www.youtube.com/watch?v=K6NgMNvK52A) demonstrating this process.
+However, then came the Jacquard loom, named after the French weaver Joseph-Marie Jacquard. This device used a system of stiff paper with holes punched into them in specific patterns, which was a representation of a portion of the actual design pattern. So now, instead of manually controlling the threads with my hands, I would insert a series of these punch cards into the loom, and the machine would lift and lower threads based on the hole positions on the card. 
+
+> Watch [this short animation](https://www.youtube.com/watch?v=K6NgMNvK52A) demonstrating this process. (**render on page directly maybe**)
 
 What does this have to do with computers? Well, while the Jacquard loom is not directly related to the development of computers, it started a conversation about input and output, as well as automation and "feeding instructions" to a machine. 
 
@@ -40,42 +40,43 @@ The first device considered a computer was the Analytical Engine, conceptualized
 
 What made this device the first computer? Well, because it had all functionalities of one: there was a reader to accept inputs in the form of punch cards, a printer to output and print the results, a processing unit to perform computations, and a storage unit to store, retrieve, and manipulate data. The Analytical Engine was an early, mechanical version of a general-purpose computer capable of solving various math problems using a steam engine to power the machine and turn all its gears.
 
-## : The First Modern Computer
+> To get an idea of what the Analytical Engine would've looked liked, [watch this video](https://www.youtube.com/watch?v=be1EM3gQkAY).
 
-It wasn't until a hundred years after Babbage conceptualized his Analytical Engine that the first physical computer was actually built. We are now in the early 1940s, in the middle of the Second World War, and electricity has played a major role in the development of many new technologies, replacing their mechanical counteparts.
+## Electronic Computing: WWII's Technological Impact
 
-One such technology is vacuum tubes, electronic devices that controlled and amplified electrical signals, providing the means to process and control data electronically. These glass or metal containers, filled with a vacuum or low-pressure gas, acted as switches and amplifiers in early electronic computers, enabling the manipulation of electrical currents and the implementation of logical operations.
+It wasn't until a hundred years after Babbage conceptualized his Analytical Engine that the first physical computer was actually built. We are now in the early 1940s, in the middle of the Second World War, and electricity has played a major role in the development of many new technologies, replacing its mechanical counteparts.
 
-During this time, several pioneering computers were independently designed, representing significant advancements in the field of electronic computing. These included the Z3 created by Konrad Zuse in Germany, the Colossus developed in the United Kingdom for code-breaking purposes, and the Atanasoff-Berry Computer (ABC) designed by John Atanasoff and Clifford Berry in the United States.
+During this time, several pioneering computers were independently designed in Germany (the Z3 in 1941), the United States (the ABC in 1942), and the United Kingdom (the Colussus in 1943), representing significant advancements in the field of electronic computing. The large investment into this field was fueled by the desire to develop secure communication and encryption systems, decrypt the enemy's military communications, as well as predict weapon trajectory and analyze data in general. At the root of all of these problems is mathematics, hence why computers were important.
+
+As it turned out, the binary representation of numbers was easy to work with in order to perform all the calculations.
+
+> To learn more about binary numbers, [check this out](https://www.mathsisfun.com/binary-number-system.html)!
+
+This was not only perfect with the use of punch cards and punch tapes, where the presence of a hole can be represented with a 0, and the absence of a hole can be represented by a 1, but it also worked out well with the next technological advancement: vacuum tubes. They look like little light bulbs, and in some sense they were, but more importantly, they were electronic devices that controlled and manipulated electrical signals, providing the means to process and control data electronically, which in turn enabled their use in mathematical calculations. If the light is on, that's a '1' in binary, and if there is no light, that's a '0'. That's the fundamental idea.
+
+> [Take a look at the ENIAC](https://www.youtube.com/watch?v=HgsklKafxG8): the world's first fully functional, general-purpose electronic computer.
 
 ## Computer Terminals: An Advancement in Human-Computer Interaction
 
-Vacuum tubes were not without their challenges. They were fragile, consumed a significant amount of power, generated heat, and had a limited lifespan. The need to replace faulty tubes and the sheer number of tubes required in early computers made them bulky, expensive, and prone to frequent failures. hese shortcomings drove the need for a more compact and robust electronic component that could replace vacuum tubes in computing systems.
+What we have so far are tens of thousands of vacuum tubes and just as many small electronic components, making up a room-sized computer, known as the mainframe. As the mainframes themselves evolved, there arose a need for better ways for humans to interact with them. 
 
-In 1947, the invention of the transistor by John Bardeen, Walter Brattain, and William Shockley at Bell Labs revolutionized the field of electronics. Transistors are solid-state devices made of semiconductor materials, such as silicon or germanium, and they function as switches or amplifiers for electronic signals.
+The input/output, or I/O, conversation began in the early 1800s with the Jacquard loom, and has evolved from punch cards, to punch tapes, to teletype machines, and finally, in the 1960s, the terminal which uses a CRT display, or cathode-ray tubes.
 
-Compared to vacuum tubes, transistors offered several advantages. They were much smaller in size, consumed less power, generated less heat, and were more reliable and durable. Transistors also switched on and off faster than vacuum tubes, allowing for higher-speed computing operations.
+CRT displays transmitted light onto a screen, and this meant that it could be written and re-written endlessly, as opposed to paper copies. With CRTs, we now had a device, called a terminal, which consisted of a screen and a keyboard, enabling users to input text-based instructions using the keyboard, and receive output from the mainframe computer by looking at the screen. This terminal served as an interface between the user and the mainframe computer. 
 
-The advent of transistors led to the development of the second generation of computers, known as transistorized computers. These computers were smaller, faster, and more efficient than their vacuum tube predecessors. They marked a significant shift in the design and construction of computers, making them more practical for various applications.
+The terminal screen consisted of a black background, with green or white alphanumeric characters. One reason for the black background was to reduce eye strain; a white background would cause eye fatigue and glare, and it would also require a significant amount of power.
 
-Transistors allowed for the miniaturization of electronic components, paving the way for the development of integrated circuits (ICs) in the late 1950s and early 1960s. ICs combined multiple transistors, resistors, and capacitors onto a single silicon chip, enabling even greater reductions in size and power consumption.
-
-1. start off with jacquard loom. 
-These cards were pieces of stiff paper that had holes punched in them in specific patterns to represent data or instructions.
-2. then mention the first compouter designed (but never built): charles babbages' analytical engine. What made it a computer? what was different?
-3. Then talk about how electrcity started to be used widely and in many industries, including replacing punch cards and the mechanical counterparts. 
-4. first computer ENIAC. why was it considered a computer, and not everything that came before it. Can you imagine how they'd have to deal with component failures on this machine? It's bad enough with the vacuum tubes in things like ENIAC, which would all have to be shut down and left to cool before someone had to crawl in and find the blown tube, but that would be a relatively simple proposition compared with hunting down a gear or ratchet or spring which had failed, and they would fail at an alarming rate, given the complexity of the machine and the sheer friction generated in use. The room in which this would have been housed would have been incredibly noisy and hot.
-5. talk about terminals. what were they, why is the screen black . computer terminals were physical devices used to interact with mainframe computers. why were they black backgrounds?
-
-6. what did NASA use to do their missions (early on)?
+The invention of computer terminals significantly improved the efficiency and usability of computers. It enabled users to interact with the machines in a more intuitive and direct manner, enabling the growth and adoption of computing technology.
 
 # The Modern State of Computers
 
-transistors now instead 
+Today, we no longer have room-sized mainframes made of vacuum tubes. Nor do we communicate with our computers using text-based commands through a device called a terminal... well actually, some of us still sort of do that. I'll explain later. But it is true that the average person will never need to encounter anything that resembles a terminal. Large corporations such as Microsoft and Apple make their systems very easy to use, so much so that our grandparents can also catch on with the latest tech. Onn top of a keyboard, we mainly use a mouse to use visual applications like Photoshop, watch videos on Youtube, save pictures on our computers, and scroll down social media. Imagine having to write a text command to open your web browser. Imagine going on your social media account, and seeing only text.
 
-Continue from the history. talk how today, we have applications such as photoshop. we watch videos, save and look at pictures. We play videogames with high quality graphics. if it wasn't for the visual aspect, computers wouldn't be so mainstream. we have a profile picture on our social media accounts, which are all mainly based on pictures and videos. That's why GUI is important
+That's mainly because the modern state of computers is characterized by user-friendly interfaces, notably graphical user interfaces (GUIs). Instead of typing complex commands in a terminal, we interact with our computers using intuitive visual elements such as icons, buttons, menus, and windows.
 
-but today not only have gui, but when want to access a server, there is only cli. when dealing with cloud computing. when anything is still new, and you are working with new/"not widely-used" tech, then cli will be the way to go. and programmers are always working with new tech, that's what the best companies do, is explore and expand their business into new tech
+We moved away from vacuum tubes, and now have tiny transistors, billions of them, all tightly packed inside a laptop, which can sit on our lap. We no longer use the terms "mainframe"; the mainframe is now simply the computer or laptop, simply reduced in size considerably. And as for the terminal, the device that used to be separate from the mainframe and used to communicate with it, that is just the screen and the laptop's keyboard itself.
+
+Transistors allowed for the miniaturization of electronic components, paving the way for the development of integrated circuits (ICs) in the late 1950s and early 1960s. ICs combined multiple transistors, resistors, and capacitors onto a single silicon chip, enabling even greater reductions in size and power consumption. These ICs are used extensively in various electronic devices, ranging from smartphones and laptops to IoT (Internet of Things) devices, wearable technology, home automation systems, and smart appliances such as thermostats, refrigerators, and voice-controlled assistants.
 
 # Computer Fundamentals
 
@@ -83,12 +84,28 @@ Watching cat videos on a computer is cool, but what is a computer fundamentally?
 
 Well, the word "computer" comes from the verb "to compute", and by adding "er" to the end it means "someone that computes", just like what "writer" is to "write", "dancer" is to "dance", and "programmer" is to "program".
 
-Since the first use of the word in the 1600's, "computers" have evolved. They have gone from a person who computes, to machines that compute. But is computing all that is really required nowadays to be considered a "computer"? For example, take [a "computer" made up of dominoes](https://www.youtube.com/watch?v=w6E7aQnA4Ws). Woudl this system technically be a computer? Definitely not (even though in the video, they call it a computer, but they're using the simpler definition of a computer as "something that computes").
+Since the first use of the word in the 1600's, "computers" have evolved. They have gone from a person who computes, to machines that compute. But is computing all that is really required nowadays to be considered a "computer"? For example, take [a "computer" made up of dominoes](https://www.youtube.com/watch?v=w6E7aQnA4Ws). Can this system technically be considered a computer? Even though they call it a computer in the video, they are using the looser definition of "computer" as "something that computes". Following a slightly stricter definition of a modern computer, the answer would be no.
 
 Why isn't a ["domino computer"](https://www.youtube.com/watch?v=OpLU__bhu2w) or a ["water computer"](https://www.youtube.com/watch?v=IxXaizglscw) technically a computer? Because in order to be a computer, you have to do more than just perform mathematical computations. That's why a basic calculator isn't a computer.
 
-For one, these systems don't have a way to store data or retrieve previous calculations. 
+For one, these systems don't have a way to store data or retrieve previous calculations. They don't provide the possibility to store any data.
 
+Think back to Charles Babbage's Analytical Engine. What were its components? A device that takes in punch cards (the input), a device that performs calculations on the inputs (the processing unit), a device that can store numbers (the memory), and a way to show the user the result of the calculations (the output).
+
+Now what about those calculators that can store and display some of the last few calculation results. Or what if we could store numbers using dominoes. Would these be considered computers?
+
+Still not. The last key ingredient for a system or device to be a computer is to be programmable. What does it mean to be programmable?
+
+
+It’s programmable because you can upload your own code into it and have it do whatever task you want.
+
+
+
+doesnt need to have keyboard monitor
+
+provide link to turing completeness if interested. add a sentence
+
+==========================================================================================
 
 1. why wasn't the jacquard loom considered a computer? what made the babbage analytical engine be a "computer"?
 2. what about a hypothetical device that just takes in sound, and outputs sound. would that be labeled as a computer? why or why not?
@@ -99,24 +116,38 @@ important: make sure to explain what is a computer and what it is not. don't jus
 
 6. mention a sentence or two on: we can simulate a computer using a computer
 
-Domino computer example. 
-
-Now the question is "Can a domino computer become self-aware and destroy humanity?". 
-
-
 Add some tips,fun facts, notes and questions along the way
-> Name a computer around you that usually people don't see as a computer. 
+
+> WHAT DO YOU THINK IS A COMPUTER? WHAT IS NOT A COMPUTER?
+
+> Name a computer around you that usually people don't see as a computer.
+
+> Take a device that accepts only sound as input. The output will be the same sound, but one octave higher
+
+DISPERSE THESE THROUGHOUT
 
 Mention about the modern OS:
 Now talk about how to organize everything, drivers, etc. you want a special software that will manage all of those things that we don't need the user to manage. 
 
 
-The I/O could be anything. But as it turned out
 From punch cards, we moved on to keyboards, mice, and monitors as primary I/O devices when personal computers began to be common in the late 20th century. Keyboards and mice provide input, allowing us to tell the computer what to do, while monitors provide output, letting us see what the computer is doing or has done.
 
-# The File System 
-Analogy: can have one big notebook, with history math and physics and chemistry notes. However, we all know that it's much easier to sort through things by having a separate notebook for each subject.
-Now what if in history class, you have your notebook with your class notes, but one day the teacher asks you to take out a single piece of paper for the weekly quiz. Now you have a notebook, and a single piece of paper. after 8 weeks, you would have 8 single pieces of paper, which should logically be physically together. You don't want history quiz 1 to be between the math and physics notebooks. That'd be a mess when it's time to find the quiz and review it. --> Folder ...
-go back to the profile picture example. or the game graphics. behind all of these visuals, is computer code. and code is just text that get's converted to machine code that the computer can understand.  
-For the profile picture, that picture is stored somewhere on facebook's server, and when someone visits your account, the page just has a pointer to the location on the server where your picture resides. its a file. everything is stored in files. A typical program executes sequentially, one command at a time. so technically can have one big chunck of code. but that's just like having one large notebook containing all your class notes from all your courses. and computers have way more information than a year's worth of class notes. computers are very complex today, and it's better to organize and store the different funcitonalities into separate files, just like it's better to put different course material in different folders.
 
+
+do we have a definitive guide to knowing if a device is a "computer"? tell me the most basic computer one could build, going all the way up to the most complicated, and name stuff in between
+ChatGPT
+Certainly! Here's a spectrum of computing devices, ranging from the most basic to the most complex:
+
+Basic Computer: At the simplest end of the spectrum, a basic computer can be built using fundamental components, such as a central processing unit (CPU), memory, and input/output (I/O) devices. This could involve using a microcontroller or a single-board computer (SBC) like the Raspberry Pi. It would typically have limited computational capabilities and storage capacity, and may require programming to perform specific functions.
+
+Embedded Systems: Embedded systems are specialized computers designed for specific applications or tasks. These devices often have dedicated functions and are tightly integrated into other systems. Examples include smart appliances, industrial control systems, and automotive electronics. They typically have limited resources, specific input/output interfaces, and may run custom firmware or software.
+
+Personal Computers (PCs): Personal computers are general-purpose computers designed for individual use. They consist of a CPU, memory, storage, I/O devices (such as a keyboard, mouse, and monitor), and an operating system. PCs offer a broad range of applications and are highly programmable, allowing users to install software and perform diverse tasks.
+
+Workstations and Servers: Workstations and servers are more powerful computing systems, typically used for complex tasks and data processing. They have higher processing capabilities, larger memory capacities, and can handle demanding workloads. Workstations are used for tasks like 3D rendering, scientific simulations, and computer-aided design, while servers are designed to manage and distribute resources across networks.
+
+Mainframe Computers: Mainframes are large-scale computers designed for handling extensive computational tasks and managing critical data. They have massive processing power, extensive memory, and advanced capabilities for high-volume data processing, transaction processing, and concurrent user access. Mainframes are used in industries where reliability, security, and scalability are crucial, such as banking, healthcare, and government.
+
+Supercomputers: Supercomputers are the most powerful computers available. They are used for complex scientific simulations, data modeling, and high-performance computing. Supercomputers have massive processing power, parallel architectures, and specialized designs to solve problems requiring extensive computational resources.
+
+It's important to note that the boundaries between these categories can sometimes blur, as technology advances and computing devices become more specialized or versatile. The classification of a device as a "computer" ultimately depends on its ability to process data, execute instructions, and provide programmability to varying degrees.
