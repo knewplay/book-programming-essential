@@ -7,10 +7,30 @@ In the previous article, we explored the fascinating history of computers and th
 
 # Table of Contents
 
+[Hardware and Software](#)
+
 
 [The File System](#the-file-system)
 
-# OPERATING SYSTEM
+# Deconstructing a Laptop
+
+As we saw in the last article, a computer, fundamentally, consists of 4 parts: 
+1. the input, 
+2. the processing unit, 
+3. the memory (or storage), and 
+4. the output.
+
+In the context of a laptop, input devices such as the mouse, keyboard, touchpad, camera, and microphone gather data and transmit it to the computer. For example, during a Zoom meeting, your laptop's camera and microphone capture video and audio data, which is converted into digital signals (1's and 0's) for transmission to other participants' computers. The received bits are then processed and displayed as an image on their screens. The keyboard and touchpad/mouse are also input devices, allowing you to provide commands and interact with the computer's interface, such as clicking buttons and typing website URLs.
+
+The processing unit, or CPU (central processing unit) in a laptop, is where the computations, data manipulations and instruction executions take place, controlling the overall operation of the system.
+
+When it comes to saving information on a laptop, there are two kinds of methods which are used together: long-term "storage" in the form of a hard disk drive (HDD) or a solid-state drive (SSD), and temporary "memory" in the form of Random Access Memory (RAM).
+
+Finally, we have the output component, which presents the processed information to the user in a usable form. In the case of a laptop, the primary output device is the display screen, where visual information is presented. Additionally, the laptop may have audio output capabilities through built-in speakers or headphone jacks, allowing for the playback of sound or speech. Output devices can also include printers, external monitors, or other devices that provide tangible or perceptible outputs based on the processed data.
+
+All the devices which we saw here, such as the keyboard, the CPU, the hard drive, and the screen, are known as hardware. Hardware is "hard" to the touch. In other words, you can actually touch it and hold it. On the other hand, we have software. Software is "soft". In other words, it's not something physical that you can touch and feel.
+
+# Operating Systems
 
 Why many flavors. why mac windows linux. whats different. why have OS
 

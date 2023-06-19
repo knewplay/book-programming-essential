@@ -46,15 +46,15 @@ What made this device the first computer? Well, because it had all functionaliti
 
 It wasn't until a hundred years after Babbage conceptualized his Analytical Engine that the first physical computer was actually built. We are now in the early 1940s, in the middle of the Second World War, and electricity has played a major role in the development of many new technologies, replacing its mechanical counteparts.
 
-During this time, several pioneering computers were independently designed in Germany (the Z3 in 1941), the United States (the ABC in 1942), and the United Kingdom (the Colussus in 1943), representing significant advancements in the field of electronic computing. The large investment into this field was fueled by the desire to develop secure communication and encryption systems, decrypt the enemy's military communications, as well as predict weapon trajectory and analyze data in general. At the root of all of these problems is mathematics, hence why computers were important.
+During this time, several pioneering computers were independently designed in Germany (the Z3 in 1941), in the United States (the ABC in 1942), and in the United Kingdom (the Colussus in 1943), representing significant advancements in the field of electronic computing. The large investment into this field was fueled by the desire to develop secure communication and encryption systems, decrypt the enemy's military communications, as well as predict weapon trajectory and analyze data in general. At the root of all of these problems is mathematics, hence why computers were important.
 
-As it turned out, the binary representation of numbers was easy to work with in order to perform all the calculations.
+As it turned out, the binary representation of numbers was easy to work with in order to perform all the calculations, and the components we use work perfectly with it.
 
-> To learn more about binary numbers, [check this out](https://www.mathsisfun.com/binary-number-system.html)!
+> [Recommended reading](https://www.mathsisfun.com/binary-number-system.html) to learn more about binary numbers.
 
-This was not only perfect with the use of punch cards and punch tapes, where the presence of a hole can be represented with a 0, and the absence of a hole can be represented by a 1, but it also worked out well with the next technological advancement: vacuum tubes. They look like little light bulbs, and in some sense they were, but more importantly, they were electronic devices that controlled and manipulated electrical signals, providing the means to process and control data electronically, which in turn enabled their use in mathematical calculations. If the light is on, that's a '1' in binary, and if there is no light, that's a '0'. That's the fundamental idea.
+This was not only perfect with the use of punch cards and punch tapes, where the presence of a hole can be represented with a 0, and the absence of a hole can be represented by a 1, but it also worked out well with the next technological advancement: vacuum tubes. These look like little light bulbs, and in some sense they were, but more importantly, they were electronic devices that controlled and manipulated electrical signals, providing the means to process and control data electronically, which in turn enabled their use in mathematical calculations. If the light is on, that's a '1' in binary, and if there is no light, that's a '0'. And with these 1's and 0's, the computer can do calculations and represent all types of data, including user commands and instructions.
 
-> [Take a look at the ENIAC](https://www.youtube.com/watch?v=HgsklKafxG8): the world's first fully functional, general-purpose electronic computer.
+> [Take a look at the ENIAC](https://www.youtube.com/watch?v=HgsklKafxG8): the world's first general-purpose electronic computer.
 
 ## Computer Terminals: An Advancement in Human-Computer Interaction
 
@@ -82,22 +82,26 @@ Transistors allowed for the miniaturization of electronic components, paving the
 
 Watching cat videos on a computer is cool, but what is a computer fundamentally? What makes a given device a "computer"? Because clearly, if our laptops didn't give us access to cat videos, it would still be considered a computer... right?
 
-Well, the word "computer" comes from the verb "to compute", and by adding "er" to the end it means "someone that computes", just like what "writer" is to "write", "dancer" is to "dance", and "programmer" is to "program".
+Well, the word "computer" comes from the verb "to compute", and by adding "er" to the end it means "someone that computes", just like what "writer" is to "to write", "dancer" is to "to dance", and "programmer" is to "to program".
 
-Since the first use of the word in the 1600's, "computers" have evolved. They have gone from a person who computes, to machines that compute. But is computing all that is really required nowadays to be considered a "computer"? For example, take [a "computer" made up of dominoes](https://www.youtube.com/watch?v=w6E7aQnA4Ws). Can this system technically be considered a computer? Even though they call it a computer in the video, they are using the looser definition of "computer" as "something that computes". Following a slightly stricter definition of a modern computer, the answer would be no.
+Since the first use of the word in the 1600's, "computers" have evolved. They have gone from a person who computes, to machines that compute. But is computing all that is really required nowadays to be considered a "computer"? For example, take [a "computer" made up of dominoes](https://www.youtube.com/watch?v=w6E7aQnA4Ws). Based on the input, this "computer" computes and outputs the result. Can this system technically be considered a computer? Even though they call it a computer in the video, they are using the looser definition of "computer" as "something that computes". Following a slightly stricter definition of a modern computer, the answer would be no, this is far from a computer.
 
-Why isn't a ["domino computer"](https://www.youtube.com/watch?v=OpLU__bhu2w) or a ["water computer"](https://www.youtube.com/watch?v=IxXaizglscw) technically a computer? Because in order to be a computer, you have to do more than just perform mathematical computations. That's why a basic calculator isn't a computer.
+Why isn't a ["domino computer"](https://www.youtube.com/watch?v=OpLU__bhu2w) or even a ["water computer"](https://www.youtube.com/watch?v=IxXaizglscw) technically a computer? Because in order to be a computer, you have to do more than just perform mathematical computations. That's why a basic calculator isn't a computer.
 
 For one, these systems don't have a way to store data or retrieve previous calculations. They don't provide the possibility to store any data.
 
-Think back to Charles Babbage's Analytical Engine. What were its components? A device that takes in punch cards (the input), a device that performs calculations on the inputs (the processing unit), a device that can store numbers (the memory), and a way to show the user the result of the calculations (the output).
+Think back to Charles Babbage's Analytical Engine. What were its components? A device that takes in punch cards (the input), a device that performs calculations on the inputs (the processing unit), a device that can store numbers (the memory), and a way to show the user the result of the calculations (the output). This device allowed the operator to input an instruction that says "fetch the number in memory slot '5' and divide it by 10".
 
 Now what about those calculators that can store and display some of the last few calculation results. Or what if we could store numbers using dominoes. Would these be considered computers?
 
 Still not. The last key ingredient for a system or device to be a computer is to be programmable. What does it mean to be programmable?
 
+It means that the system is not only capable of doing the tasks which it was designed to do, but it could also do other things if the user desires. If a computer is programmable, it means that it wil do whatever the instructions (inputted by the user) tell it to do. 
+
 
 It’s programmable because you can upload your own code into it and have it do whatever task you want.
+
+> Note: A shortcut to find out if a system is a computer is to check if it is "Turing-complete". Turing completness is like having a set of building blocks which can be combined in different ways to build any structure. It measures how flexible and versatile a system is when it comes to solving problems. To learn more, read the first section of [this article](https://academy.binance.com/en/glossary/turing-complete)
 
 
 
