@@ -9,6 +9,12 @@ In the previous article, we explored the fascinating history of computers and th
 
 [Hardware and Software](#)
 
+talk about the computational complexity spectrum, what are the extremes (maybe). talk about software and hardware, talk how can connect external devices using drivers. can get complicated. 
+
+
+Mention about the modern OS:
+Now talk about how to organize everything, drivers, etc. you want a special software that will manage all of those things that we don't need the user to manage. 
+
 
 [The File System](#the-file-system)
 

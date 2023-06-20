@@ -90,37 +90,61 @@ Why isn't a ["domino computer"](https://www.youtube.com/watch?v=OpLU__bhu2w) or 
 
 For one, these systems don't have a way to store data or retrieve previous calculations. They don't provide the possibility to store any data.
 
-Think back to Charles Babbage's Analytical Engine. What were its components? A device that takes in punch cards (the input), a device that performs calculations on the inputs (the processing unit), a device that can store numbers (the memory), and a way to show the user the result of the calculations (the output). This device allowed the operator to input an instruction that says "fetch the number in memory slot '5' and divide it by 10".
+Think back to Charles Babbage's Analytical Engine. What were its components? A device that takes in punch cards (the input), a section that performs calculations on the inputs (the processing unit), a section that can store numbers (the memory), and a way to show the user the result of the calculations (the output). This device allowed the operator to input an instruction that says "fetch the number in memory slot '5' and divide it by 10".
 
 Now what about those calculators that can store and display some of the last few calculation results. Or what if we could store numbers using dominoes. Would these be considered computers?
 
-Still not. The last key ingredient for a system or device to be a computer is to be programmable. What does it mean to be programmable?
+Following the strictest definition of "computer", these systems would be missing one final ingredient: programmability. This means that the system is not only capable of doing the tasks which it was designed to do, but it could also do other things based on user commands.
 
-It means that the system is not only capable of doing the tasks which it was designed to do, but it could also do other things if the user desires. If a computer is programmable, it means that it wil do whatever the instructions (inputted by the user) tell it to do. 
+Imagine having a set of building blocks which can be combined in different ways to build any structure. The more structures you can build with the given building blocks, the closer a device ______
+
+And this is where the line starts to get a little blurry, because "how much" you should be able to build with these building blocks is not a clear answer.
+
+This means that by only touching the software, and without changing the hardware, that device can do various other tasks. If a computer is programmable, it means that it wil do whatever the instructions (inputted by the user) tell it to do.
+
+> Hardware is "hard" to the touch. In other words, you can actually touch it and hold it. Think of a computer disk hard drive,On the other hand, software is "soft". In other words, it's not something physical that you can touch and feel. Think
 
 
 It’s programmable because you can upload your own code into it and have it do whatever task you want.
 
-> Note: A shortcut to find out if a system is a computer is to check if it is "Turing-complete". Turing completness is like having a set of building blocks which can be combined in different ways to build any structure. It measures how flexible and versatile a system is when it comes to solving problems. To learn more, read the first section of [this article](https://academy.binance.com/en/glossary/turing-complete)
+
+However, there are countless appliances, gadgets, toys, instruments and devices with built-in computers that follow only one set of instructions. Such computers are known as "microcontrollers," which are produced by the billions each year and are not user programmable. 
 
 
+> Note: A shortcut to find out if a system is a computer (in the strictest sense of the word) is to check if it is "Turing-complete". This is a concept which measures how flexible and versatile a system is when it comes to solving problems, thus determining whether or not is has the capabilities of a general-purpose computer. To learn more, read the first section of [this article](https://academy.binance.com/en/glossary/turing-complete).
 
-doesnt need to have keyboard monitor
+# Questions
 
-provide link to turing completeness if interested. add a sentence
+Q1: Why isn't the Jacquard loom considered to be the first computer? 
+<details><summary>Hint</summary>
+The Jacquard loom takes input in form of punch cards, it gives an output in form of beautiful designs on a piece of cloth. However, does it perform any calculations in order to get the output from the input? Is it capable of storing data?
+</details>
 
+Q1: Does a computer absolutely need to have a keyboard and a mouse in order for it to be a computer?
+
+<details><summary>Hint</summary>
+The keyboard and the mouse are devices used for input. Having input for a device is essential for it to be a computer, however is a keyboard and a mouse the only kind of input that a computer can take? What else could it possibly use as input?
+</details>
+
+Q2: What about a monitor? What is the purpose of a monitor, and can you imagine a replacement device
+
+Q3: Consider a hypothetical device called the "Sound Processor." This device is designed to take in sound as input and produce processed sound as output. The Sound Processor has labeled buttons which allow the user to apply various effects, modify pitch or tone, and perform other audio transformations. It has a processing unit that can perform calculations and modifications on the inputted sound, and it also has a memory module which can store various sounds. 
+
+Is this device a computer?
+
+<details><summary>Hint</summary>
+Just because a device isn't able to solve complex, general problems, doesn't mean that it is not a computer. I
+While it may not fall under the category of a general-purpose computer, it can be considered a specialized or dedicated computer.
+</details>
+
+Q4: Why isn't  a basic calculator considered a computer?
+
+<details><summary>Hint</summary>
+Computers are known for their programmability, which allows users to define and execute custom instructions or programs. A basic calculator typically lacks the ability to create and run custom programs. It is designed with fixed functionality and predefined operations, limiting its versatility and adaptability.
+<details>
+
+Q4: What is the simplest, non-"general-purpose" computer you can imagine? What components would it have?
 ==========================================================================================
-
-1. why wasn't the jacquard loom considered a computer? what made the babbage analytical engine be a "computer"?
-2. what about a hypothetical device that just takes in sound, and outputs sound. would that be labeled as a computer? why or why not?
-3. what are the basic requirements for a device to be considered a computer? what is the bare minimum. what is the simplest computer a person can make?
-4. analyze situation of embedded device in fridge. 
-5. talk about the computational complexity spectrum, what are the extremes (maybe). talk about software and hardware, talk how can connect external devices using drivers. can get complicated. 
-important: make sure to explain what is a computer and what it is not. don't just give boring definitions.
-
-6. mention a sentence or two on: we can simulate a computer using a computer
-
-Add some tips,fun facts, notes and questions along the way
 
 > WHAT DO YOU THINK IS A COMPUTER? WHAT IS NOT A COMPUTER?
 
@@ -129,9 +153,6 @@ Add some tips,fun facts, notes and questions along the way
 > Take a device that accepts only sound as input. The output will be the same sound, but one octave higher
 
 DISPERSE THESE THROUGHOUT
-
-Mention about the modern OS:
-Now talk about how to organize everything, drivers, etc. you want a special software that will manage all of those things that we don't need the user to manage. 
 
 
 From punch cards, we moved on to keyboards, mice, and monitors as primary I/O devices when personal computers began to be common in the late 20th century. Keyboards and mice provide input, allowing us to tell the computer what to do, while monitors provide output, letting us see what the computer is doing or has done.
