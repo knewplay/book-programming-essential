@@ -46,15 +46,15 @@ What made this device the first computer? Well, because it had all functionaliti
 
 It wasn't until a hundred years after Babbage conceptualized his Analytical Engine that the first physical computer was actually built. We are now in the early 1940s, in the middle of the Second World War, and electricity has played a major role in the development of many new technologies, replacing its mechanical counteparts.
 
-During this time, several pioneering computers were independently designed in Germany (the Z3 in 1941), in the United States (the ABC in 1942), and in the United Kingdom (the Colussus in 1943), representing significant advancements in the field of electronic computing. The large investment into this field was fueled by the desire to develop secure communication and encryption systems, decrypt the enemy's military communications, as well as predict weapon trajectory and analyze data in general. At the root of all of these problems is mathematics, hence why computers were important.
+During this time, several pioneering computers were independently designed in Germany, in the United States, and in the United Kingdom, representing significant advancements in the field of computing. The large investment into this field was fueled by the desire to develop secure communication and encryption systems, decrypt the enemy's military communications, as well as predict weapon trajectory and analyze data in general. At the root of all of these problems is mathematics, hence making computers important.
 
-As it turned out, the binary representation of numbers was easy to work with in order to perform all the calculations, and the components we use work perfectly with it.
+As it turned out, doing math using digits 0 up to 9 was not the most effective way for computers. Instead, the binary representation of numbers was used to perform all the calculations, and the computers used today work perfectly with binary numbers.
 
 > [Recommended reading](https://www.mathsisfun.com/binary-number-system.html) to learn more about binary numbers.
 
-This was not only perfect with the use of punch cards and punch tapes, where the presence of a hole can be represented with a 0, and the absence of a hole can be represented by a 1, but it also worked out well with the next technological advancement: vacuum tubes. These look like little light bulbs, and in some sense they were, but more importantly, they were electronic devices that controlled and manipulated electrical signals, providing the means to process and control data electronically, which in turn enabled their use in mathematical calculations. If the light is on, that's a '1' in binary, and if there is no light, that's a '0'. And with these 1's and 0's, the computer can do calculations and represent all types of data, including user commands and instructions.
+This was not only perfect with the use of punch cards and punch tapes, where the presence of a hole can be represented with a 0, and the absence of a hole can be represented by a 1, but it also worked out well with the next technological advancement: vacuum tubes. These look like little light bulbs, but more importantly they were electronic devices that controlled and manipulated electrical signals, providing the means to process and control data electronically, which in turn enabled their use in mathematical calculations. In this system, a '1' in binary corresponded to a lit bulb, while a '0' represented an unlit bulb. With these binary digits, computers could perform calculations, store data, and execute user instructions.
 
-> [Take a look at the ENIAC](https://www.youtube.com/watch?v=HgsklKafxG8): the world's first general-purpose electronic computer.
+> [Take a look at the ENIAC](https://www.youtube.com/watch?v=HgsklKafxG8): the world's first general-purpose electronic computer, built near the end of World War 2.
 
 ## Computer Terminals: An Advancement in Human-Computer Interaction
 
@@ -70,13 +70,11 @@ The invention of computer terminals significantly improved the efficiency and us
 
 # The Modern State of Computers
 
-Today, we no longer have room-sized mainframes made of vacuum tubes. Nor do we communicate with our computers using text-based commands through a device called a terminal... well actually, some of us still sort of do that. I'll explain later. But it is true that the average person will never need to encounter anything that resembles a terminal. Large corporations such as Microsoft and Apple make their systems very easy to use, so much so that our grandparents can also catch on with the latest tech. Onn top of a keyboard, we mainly use a mouse to use visual applications like Photoshop, watch videos on Youtube, save pictures on our computers, and scroll down social media. Imagine having to write a text command to open your web browser. Imagine going on your social media account, and seeing only text.
+Today, we no longer have room-sized mainframes made of vacuum tubes. Nor do we communicate with our computers using text-based commands through a device called a terminal... well actually, some of us still sort of do that. I'll explain more in the next chapter. But it is true that the average person will never need to encounter anything that resembles a terminal. Large corporations such as Microsoft and Apple make their systems very easy to use, so much so that our grandparents can also catch on with the latest tech. On top of a keyboard, we also use a mouse to use visual applications like Microsoft PowerPoint, watch videos on Youtube, save pictures on our computers, and scroll down social media. Imagine having to write a text command to open your web browser. Imagine going on your social media account, and seeing only text.
 
-That's mainly because the modern state of computers is characterized by user-friendly interfaces, notably graphical user interfaces (GUIs). Instead of typing complex commands in a terminal, we interact with our computers using intuitive visual elements such as icons, buttons, menus, and windows.
+This is hard to imagine because the modern state of computers is characterized by user-friendly interfaces, notably graphical user interfaces (GUIs). Instead of typing complex commands in a terminal, we interact with our computers using intuitive visual elements such as icons, buttons, menus, and windows.
 
-We moved away from vacuum tubes, and now have tiny transistors, billions of them, all tightly packed inside a laptop, which can sit on our lap. We no longer use the terms "mainframe"; the mainframe is now simply the computer or laptop, simply reduced in size considerably. And as for the terminal, the device that used to be separate from the mainframe and used to communicate with it, that is just the screen and the laptop's keyboard itself.
-
-Transistors allowed for the miniaturization of electronic components, paving the way for the development of integrated circuits (ICs) in the late 1950s and early 1960s. ICs combined multiple transistors, resistors, and capacitors onto a single silicon chip, enabling even greater reductions in size and power consumption. These ICs are used extensively in various electronic devices, ranging from smartphones and laptops to IoT (Internet of Things) devices, wearable technology, home automation systems, and smart appliances such as thermostats, refrigerators, and voice-controlled assistants.
+We moved away from vacuum tubes, and now have tiny transistors, billions of them, all tightly packed inside a laptop or smartphone, which we can hold with one hand. We no longer use the terms "mainframe"; the mainframe is now simply the computer or laptop, simply reduced in size considerably. And as for the terminal, the device that used to be separate from the mainframe and used to communicate with it, that is now just the screen and the laptop's keyboard itself. It all got combined into one device, seamlessly.
 
 # Computer Fundamentals
 
@@ -84,21 +82,33 @@ Watching cat videos on a computer is cool, but what is a computer fundamentally?
 
 Well, the word "computer" comes from the verb "to compute", and by adding "er" to the end it means "someone that computes", just like what "writer" is to "to write", "dancer" is to "to dance", and "programmer" is to "to program".
 
-Since the first use of the word in the 1600's, "computers" have evolved. They have gone from a person who computes, to machines that compute. But is computing all that is really required nowadays to be considered a "computer"? For example, take [a "computer" made up of dominoes](https://www.youtube.com/watch?v=w6E7aQnA4Ws). Based on the input, this "computer" computes and outputs the result. Can this system technically be considered a computer? Even though they call it a computer in the video, they are using the looser definition of "computer" as "something that computes". Following a slightly stricter definition of a modern computer, the answer would be no, this is far from a computer.
+Since the first use of the word in the 1600's, "computers" have evolved. They have gone from a person who computes, to machines that compute. But is computing all that is really required nowadays to be considered a "computer"? For example, take [a "computer" made up of dominoes](https://www.youtube.com/watch?v=w6E7aQnA4Ws). Based on the input, this "computer" computes and outputs the result. Can this system technically be considered a computer? Even though they call it a computer in the video, they are using the looser definition of "computer" as "something that computes". Following a slightly stricter definition of a modern computer, the answer would be "no, this is far from a computer".
 
 Why isn't a ["domino computer"](https://www.youtube.com/watch?v=OpLU__bhu2w) or even a ["water computer"](https://www.youtube.com/watch?v=IxXaizglscw) technically a computer? Because in order to be a computer, you have to do more than just perform mathematical computations. That's why a basic calculator isn't a computer.
 
 For one, these systems don't have a way to store data or retrieve previous calculations. They don't provide the possibility to store any data.
 
-Think back to Charles Babbage's Analytical Engine. What were its components? A device that takes in punch cards (the input), a section that performs calculations on the inputs (the processing unit), a section that can store numbers (the memory), and a way to show the user the result of the calculations (the output). This device allowed the operator to input an instruction that says "fetch the number in memory slot '5' and divide it by 10".
+Think back to Charles Babbage's Analytical Engine (the first computer ever conceived). What were its components? 
+
+1. A device that takes in punch cards (the input), 
+2. a section that performs calculations based on the inputs (the processing unit), 
+3. a section that can store numbers (the memory), and 
+4. a way to show the user the result of the calculations (the output). 
+
+This device allowed the operator to input an instruction that says "fetch the number in memory slot '5' and divide it by 10".
 
 Now what about those calculators that can store and display some of the last few calculation results. Or what if we could store numbers using dominoes. Would these be considered computers?
 
-Following the strictest definition of "computer", these systems would be missing one final ingredient: programmability. This means that the system is not only capable of doing the tasks which it was designed to do, but it could also do other things based on user commands.
+Following the strictest definition of "computer", these systems would be missing one final ingredient: programmability. This means that the system is not only capable of doing the tasks which it was designed to do, but it could also do other things based on user instructions. In other words, in order to be a computer, a system needs to be capable of not only performing predefined tasks, but also executing user instructions or custom programs.
 
-Imagine having a set of building blocks which can be combined in different ways to build any structure. The more structures you can build with the given building blocks, the closer a device ______
+While both a basic calculator and a laptop are similar in the fact that they both process numbers, calculators do not have the capability to store custom programs written by the user. As for those "programmable calculators", which can in fact do that, well those would  be considered computers, albeit simple ones.
 
-And this is where the line starts to get a little blurry, because "how much" you should be able to build with these building blocks is not a clear answer.
+And remember in the 
+
+Z3 were programmable, but you had to change the physical wiring of the computer in order to 
+
+And this is where the line starts to get a little blurry, because "how much programmability" is enough? There are different levels of complexity and capabilities when it comes to computers.
+
 
 This means that by only touching the software, and without changing the hardware, that device can do various other tasks. If a computer is programmable, it means that it wil do whatever the instructions (inputted by the user) tell it to do.
 
