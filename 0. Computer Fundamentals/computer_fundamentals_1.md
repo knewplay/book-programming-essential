@@ -1,6 +1,6 @@
 ---
 title: "Computer Fundamentals: History and Fundamentals"
-date: "07-06-2023"
+date: "07-22-2023"
 author: "Andrei Guevorkian"
 ---
 Is your smartphone considered a computer? How about the components inside your oven that allow you to connect to it via an app? What are the minimum requirements for something to be considered a computer? That's what we'll explore in this article.
@@ -44,9 +44,9 @@ What made this device the first computer? Well, because it had all functionaliti
 
 ## Electronic Computing: WWII's Technological Impact
 
-It wasn't until a hundred years after Babbage conceptualized his Analytical Engine that the first physical computer was actually built. We are now in the early 1940s, in the middle of the Second World War, and electricity has played a major role in the development of many new technologies, replacing its mechanical counteparts.
+It wasn't until a hundred years after Babbage conceptualized his Analytical Engine that the first physical computer was actually built. We are now in the early 1940s, in the middle of the Second World War, and electricity has played a major role in the development of many new technologies, replacing their mechanical counteparts.
 
-During this time, several pioneering computers were independently designed in Germany, in the United States, and in the United Kingdom, representing significant advancements in the field of computing. The large investment into this field was fueled by the desire to develop secure communication and encryption systems, decrypt the enemy's military communications, as well as predict weapon trajectory and analyze data in general. At the root of all of these problems is mathematics, hence making computers important.
+During this time, several pioneering computers were independently designed in Germany (the Z3 in 1941), in the United States (the ABC in 1942), and in the United Kingdom (the Colossus in 1943), representing significant advancements in the field of computing. The large investment into this field was fueled by the desire to develop secure communication and encryption systems, decrypt the enemy's military communications, as well as predict weapon trajectory and analyze data in general. At the root of all of these problems is mathematics, hence making computers important.
 
 As it turned out, doing math using digits 0 up to 9 was not the most effective way for computers. Instead, the binary representation of numbers was used to perform all the calculations, and the computers used today work perfectly with binary numbers.
 
@@ -54,7 +54,7 @@ As it turned out, doing math using digits 0 up to 9 was not the most effective w
 
 This was not only perfect with the use of punch cards and punch tapes, where the presence of a hole can be represented with a 0, and the absence of a hole can be represented by a 1, but it also worked out well with the next technological advancement: vacuum tubes. These look like little light bulbs, but more importantly they were electronic devices that controlled and manipulated electrical signals, providing the means to process and control data electronically, which in turn enabled their use in mathematical calculations. In this system, a '1' in binary corresponded to a lit bulb, while a '0' represented an unlit bulb. With these binary digits, computers could perform calculations, store data, and execute user instructions.
 
-> [Take a look at the ENIAC](https://www.youtube.com/watch?v=HgsklKafxG8): the world's first general-purpose electronic computer, built near the end of World War 2.
+> [Take a look at the ENIAC](https://www.youtube.com/watch?v=HgsklKafxG8): considered to be the world's first general-purpose electronic computer, built in 1945.
 
 ## Computer Terminals: An Advancement in Human-Computer Interaction
 
@@ -62,7 +62,7 @@ What we have so far are tens of thousands of vacuum tubes and just as many small
 
 The input/output, or I/O, conversation began in the early 1800s with the Jacquard loom, and has evolved from punch cards, to punch tapes, to teletype machines, and finally, in the 1960s, the terminal which uses a CRT display, or cathode-ray tubes.
 
-CRT displays transmitted light onto a screen, and this meant that it could be written and re-written endlessly, as opposed to paper copies. With CRTs, we now had a device, called a terminal, which consisted of a screen and a keyboard, enabling users to input text-based instructions using the keyboard, and receive output from the mainframe computer by looking at the screen. This terminal served as an interface between the user and the mainframe computer. 
+CRT displays transmitted light onto a screen, and this meant that it could be written and re-written endlessly, as opposed to paper copies. With CRTs, we now had a device, called a terminal, which consisted of a screen and a keyboard, enabling users to input text-based instructions using the keyboard, and receive output from the mainframe computer by looking at the screen. This terminal served as an interface, i.e. a point of interaction, between the user and the mainframe computer. 
 
 The terminal screen consisted of a black background, with green or white alphanumeric characters. One reason for the black background was to reduce eye strain; a white background would cause eye fatigue and glare, and it would also require a significant amount of power.
 
@@ -72,9 +72,13 @@ The invention of computer terminals significantly improved the efficiency and us
 
 Today, we no longer have room-sized mainframes made of vacuum tubes. Nor do we communicate with our computers using text-based commands through a device called a terminal... well actually, some of us still sort of do that. I'll explain more in the next chapter. But it is true that the average person will never need to encounter anything that resembles a terminal. Large corporations such as Microsoft and Apple make their systems very easy to use, so much so that our grandparents can also catch on with the latest tech. On top of a keyboard, we also use a mouse to use visual applications like Microsoft PowerPoint, watch videos on Youtube, save pictures on our computers, and scroll down social media. Imagine having to write a text command to open your web browser. Imagine going on your social media account, and seeing only text.
 
-This is hard to imagine because the modern state of computers is characterized by user-friendly interfaces, notably graphical user interfaces (GUIs). Instead of typing complex commands in a terminal, we interact with our computers using intuitive visual elements such as icons, buttons, menus, and windows.
+This is hard to imagine because the modern state of computers is characterized by user-friendly interfaces, notably graphical user interfaces (GUIs). Instead of typing complex commands into a terminal, we interact with our computers using intuitive visual elements such as icons, buttons, menus, and windows.
 
 We moved away from vacuum tubes, and now have tiny transistors, billions of them, all tightly packed inside a laptop or smartphone, which we can hold with one hand. We no longer use the terms "mainframe"; the mainframe is now simply the computer or laptop, simply reduced in size considerably. And as for the terminal, the device that used to be separate from the mainframe and used to communicate with it, that is now just the screen and the laptop's keyboard itself. It all got combined into one device, seamlessly.
+
+And while it seems like the computers of today are very different from the "number crunchers" from the 1940s, when the only purpose of computers was to solve lenghty, difficuly, and tedious math problems, you may be surprised to head that everything modern computers essentially boils down to math.
+
+I'll give an example. Say you are using Photoshop, and you want to increase the brightness of an image. As you slide the "brightness" bar, the computer works through all the pixels of the image and changes the RGB (Red Green Blue) values accordingly. Read some more about it [here](https://users.cs.utah.edu/~germain/PPS/Topics/color.html).
 
 # Computer Fundamentals
 
@@ -99,90 +103,70 @@ This device allowed the operator to input an instruction that says "fetch the nu
 
 Now what about those calculators that can store and display some of the last few calculation results. Or what if we could store numbers using dominoes. Would these be considered computers?
 
-Following the strictest definition of "computer", these systems would be missing one final ingredient: programmability. This means that the system is not only capable of doing the tasks which it was designed to do, but it could also do other things based on user instructions. In other words, in order to be a computer, a system needs to be capable of not only performing predefined tasks, but also executing user instructions or custom programs.
+Following the stricter definition of "computer", these systems would be missing one final ingredient: programmability. This means that the system is not only capable of doing the tasks which it was designed to do, but it could also do other things based on user instructions. In other words, in order to be a computer, a system needs to be capable of not only performing predefined tasks, but also executing user instructions or custom programs.
 
-While both a basic calculator and a laptop are similar in the fact that they both process numbers, calculators do not have the capability to store custom programs written by the user. As for those "programmable calculators", which can in fact do that, well those would  be considered computers, albeit simple ones.
+While both a basic calculator and a laptop are similar in the fact that they both process numbers, calculators do not have the capability to store custom programs written by the user. As for those "programmable calculators", which can in fact do that, well those can be considered computers, albeit simple ones.
 
-And remember in the 
+The reason why I say that it "can" be a computer, is because there is an even stricter definition of computer as needing to be "general-purpose". And this is where the line starts ti get blurry. How "general-purpose" should it be? How much programmability is enough?
 
-Z3 were programmable, but you had to change the physical wiring of the computer in order to 
+This is the reason why some people claim that Germany's Z3 was the first computer, other's claim the Uk's Colossus was the first computer, and many more claim the ENIAC claims that title. The ENIAC was truly the first "general-purpose" computer, while the previous iterations were more specialized for war-related purposes, however they could still be reprogrammed, but they were limited in what they can solve (on top of needing a change in the physical wiring).
 
-And this is where the line starts to get a little blurry, because "how much programmability" is enough? There are different levels of complexity and capabilities when it comes to computers.
+> Exercise: What do you think should be considered a computer? What should not be considered a computer?
 
+And today, there are countless appliances, gadgets, toys, instruments, automotive electronics, and much more, that have built-in "mini-computers" called microcontrollers. Even though they come equipped with a processing unit, memory, I/O peripherals, these embedded devices are designed to perform specific tasks, as they typically come with a pre-programmed set of instructions tailored to the device. They do not have the versatility of a general-purpose computer, but they excel at executing specific tasks efficiently.
 
-This means that by only touching the software, and without changing the hardware, that device can do various other tasks. If a computer is programmable, it means that it wil do whatever the instructions (inputted by the user) tell it to do.
+> Exercise: Name a computer around you that usually people don't see as a computer.
 
-> Hardware is "hard" to the touch. In other words, you can actually touch it and hold it. Think of a computer disk hard drive,On the other hand, software is "soft". In other words, it's not something physical that you can touch and feel. Think
-
-
-It’s programmable because you can upload your own code into it and have it do whatever task you want.
-
-
-However, there are countless appliances, gadgets, toys, instruments and devices with built-in computers that follow only one set of instructions. Such computers are known as "microcontrollers," which are produced by the billions each year and are not user programmable. 
-
-
-> Note: A shortcut to find out if a system is a computer (in the strictest sense of the word) is to check if it is "Turing-complete". This is a concept which measures how flexible and versatile a system is when it comes to solving problems, thus determining whether or not is has the capabilities of a general-purpose computer. To learn more, read the first section of [this article](https://academy.binance.com/en/glossary/turing-complete).
+> Note: A shortcut to find out if a system is a computer (in the strictest sense of the word) is to check for "Turing-completeness". This is a theoretical concept which measures how flexible and versatile a system is when it comes to solving problems, thus determining whether or not is has the capabilities of a general-purpose computer. Embdedded devices are usually not Turing complete, while smartphones are. To learn more, read the first section of [this article](https://academy.binance.com/en/glossary/turing-complete).
 
 # Questions
 
 Q1: Why isn't the Jacquard loom considered to be the first computer? 
 <details><summary>Hint</summary>
-The Jacquard loom takes input in form of punch cards, it gives an output in form of beautiful designs on a piece of cloth. However, does it perform any calculations in order to get the output from the input? Is it capable of storing data?
+The Jacquard loom takes input in the form of punch cards, it gives an output in the form of beautiful designs on a piece of cloth. However, does it perform any calculations in order to get the output from the input? Is it capable of storing data? What is the "data"?
 </details>
 
-Q1: Does a computer absolutely need to have a keyboard and a mouse in order for it to be a computer?
+---
+
+Q2: Does a computer absolutely need to have a keyboard and a mouse in order for it to be a computer?
 
 <details><summary>Hint</summary>
-The keyboard and the mouse are devices used for input. Having input for a device is essential for it to be a computer, however is a keyboard and a mouse the only kind of input that a computer can take? What else could it possibly use as input?
+The keyboard and the mouse are devices used for input. Having input for a device is essential for it to be a computer, however is a keyboard and a mouse the only kind of input that a computer can take? What else could it possibly use as input? What about a touchpad, or a touchscreen, or voice commands?
 </details>
 
-Q2: What about a monitor? What is the purpose of a monitor, and can you imagine a replacement device
+---
 
-Q3: Consider a hypothetical device called the "Sound Processor." This device is designed to take in sound as input and produce processed sound as output. The Sound Processor has labeled buttons which allow the user to apply various effects, modify pitch or tone, and perform other audio transformations. It has a processing unit that can perform calculations and modifications on the inputted sound, and it also has a memory module which can store various sounds. 
-
-Is this device a computer?
+Q3: In a parallel universe, if a mouse was used as both an input and an output to a laptop, what would that look like? Think of possible scenarios.
 
 <details><summary>Hint</summary>
-Just because a device isn't able to solve complex, general problems, doesn't mean that it is not a computer. I
-While it may not fall under the category of a general-purpose computer, it can be considered a specialized or dedicated computer.
+If the mouse becomes not only an input, but also an output of a device, here are some possible scenarios: 
+1. The user moves their mouse onto a button on the screen, left click the button, let go of the mouse, and the computer physically moves the mouse to another location.
+2. The user has a calculator program in front of them. The user left clicks on one of the buttons with a number on it, and the mouse starts to physically right click (you can see it moving) the number of times that is shown on the button clicked. So if the user left-clicked on number 5, then the mouse will right-click 5 times.
+3. The mouse will have a microphone inside of it. So when the user clicks on the mouse, the mouse will listen to the user's command, and will execute it. For example, the user clicks on the mouse and says "move left by 1 centimeter", and the mouse does exactly that.
 </details>
 
-Q4: Why isn't  a basic calculator considered a computer?
+---
+
+Q4: Consider a hypothetical device called the "Sound Processor." This device is designed to take in sound and produce processed sound based on which button the user presses (modify pitch, tone, and other audio transformations).  
+
+Can this device be considered a computer? Did you have to make any assumptions about this device?
+
+<details><summary>Hint</summary>
+This device would not fall under the category of a general-purpose computer. However, does it do any computations? How is sound processed? Just because a device isn't able to solve complex, general problems, doesn't mean that it is not a computer.
+</details>
+
+---
+
+Q5: Why isn't a basic calculator considered a computer?
 
 <details><summary>Hint</summary>
 Computers are known for their programmability, which allows users to define and execute custom instructions or programs. A basic calculator typically lacks the ability to create and run custom programs. It is designed with fixed functionality and predefined operations, limiting its versatility and adaptability.
-<details>
+</details>
 
-Q4: What is the simplest, non-"general-purpose" computer you can imagine? What components would it have?
-==========================================================================================
+---
 
-> WHAT DO YOU THINK IS A COMPUTER? WHAT IS NOT A COMPUTER?
+Q6: What is the simplest, non-general-purpose computer you can imagine? What components would it have?
+<details><summary>Hint</summary>
+Would this device have a microphone to take in sound as input when the user presses a button? Would it take a picture with a camera every 1 second? How would it process the input, what would it store, and in what form would the output be?
+</details>
 
-> Name a computer around you that usually people don't see as a computer.
-
-> Take a device that accepts only sound as input. The output will be the same sound, but one octave higher
-
-DISPERSE THESE THROUGHOUT
-
-
-From punch cards, we moved on to keyboards, mice, and monitors as primary I/O devices when personal computers began to be common in the late 20th century. Keyboards and mice provide input, allowing us to tell the computer what to do, while monitors provide output, letting us see what the computer is doing or has done.
-
-
-
-do we have a definitive guide to knowing if a device is a "computer"? tell me the most basic computer one could build, going all the way up to the most complicated, and name stuff in between
-ChatGPT
-Certainly! Here's a spectrum of computing devices, ranging from the most basic to the most complex:
-
-Basic Computer: At the simplest end of the spectrum, a basic computer can be built using fundamental components, such as a central processing unit (CPU), memory, and input/output (I/O) devices. This could involve using a microcontroller or a single-board computer (SBC) like the Raspberry Pi. It would typically have limited computational capabilities and storage capacity, and may require programming to perform specific functions.
-
-Embedded Systems: Embedded systems are specialized computers designed for specific applications or tasks. These devices often have dedicated functions and are tightly integrated into other systems. Examples include smart appliances, industrial control systems, and automotive electronics. They typically have limited resources, specific input/output interfaces, and may run custom firmware or software.
-
-Personal Computers (PCs): Personal computers are general-purpose computers designed for individual use. They consist of a CPU, memory, storage, I/O devices (such as a keyboard, mouse, and monitor), and an operating system. PCs offer a broad range of applications and are highly programmable, allowing users to install software and perform diverse tasks.
-
-Workstations and Servers: Workstations and servers are more powerful computing systems, typically used for complex tasks and data processing. They have higher processing capabilities, larger memory capacities, and can handle demanding workloads. Workstations are used for tasks like 3D rendering, scientific simulations, and computer-aided design, while servers are designed to manage and distribute resources across networks.
-
-Mainframe Computers: Mainframes are large-scale computers designed for handling extensive computational tasks and managing critical data. They have massive processing power, extensive memory, and advanced capabilities for high-volume data processing, transaction processing, and concurrent user access. Mainframes are used in industries where reliability, security, and scalability are crucial, such as banking, healthcare, and government.
-
-Supercomputers: Supercomputers are the most powerful computers available. They are used for complex scientific simulations, data modeling, and high-performance computing. Supercomputers have massive processing power, parallel architectures, and specialized designs to solve problems requiring extensive computational resources.
-
-It's important to note that the boundaries between these categories can sometimes blur, as technology advances and computing devices become more specialized or versatile. The classification of a device as a "computer" ultimately depends on its ability to process data, execute instructions, and provide programmability to varying degrees.
