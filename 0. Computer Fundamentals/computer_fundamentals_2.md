@@ -3,7 +3,7 @@ title: "Computer Fundamentals: The File System"
 date: "07-06-2023"
 author: "Andrei Guevorkian"
 ---
-In the previous article, we explored the fascinating history of computers and their defining characteristics. Now, let's delve into computer Operating Systems as well as file systems.
+In the previous article, we explored the fascinating history of computers and their defining characteristics. Now, let's delve deeper into general-purpose computers and their underlying concepts such as Operating Systems and file systems.
 
 # Table of Contents
 
@@ -34,7 +34,7 @@ When it comes to saving information on a laptop, there are two kinds of methods 
 
 Finally, we have the output component, which presents the processed information to the user in a usable form. In the case of a laptop, the primary output device is the display screen, where visual information is presented. Additionally, the laptop may have audio output capabilities through built-in speakers or headphone jacks, allowing for the playback of sound or speech. Output devices can also include printers, external monitors, or other devices that provide tangible or perceptible outputs based on the processed data.
 
-All the devices which we saw here, such as the keyboard, the CPU, the hard drive, and the screen, are known as hardware. Hardware is "hard" to the touch. In other words, you can actually touch it and hold it. On the other hand, we have software. Software is "soft". In other words, it's not something physical that you can touch and feel.
+All the devices which we saw here, such as the keyboard, the CPU, the hard drive, and the screen, are known as hardware. Hardware is "hard" to the touch. In other words, you can actually touch it and hold it. It's also "hard" to change it. If you buy a laptop, the components on the laptop's motherboard are soldered into the board, making the hardware fixed. On the other hand, we have software. Software is "soft". In other words, it's not something physical that you can touch and feel. It is also soft in the sense that it is not fixed; one minute you can run Microsoft Word, and then Photoshop five seconds later. It is very flexible, and can be changed or removed easily.
 
 # Operating Systems
 
