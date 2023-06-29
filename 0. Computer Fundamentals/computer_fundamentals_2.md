@@ -8,8 +8,11 @@ In the previous article, we explored the fascinating history of computers and th
 # Table of Contents
 
 [Hardware and Software](#hardware-and-software)
+
 [Operating System](#operating-system)
+
 [The File System: A School Analogy](#the-file-system-a-school-analogy)
+
 [The File System](#the-file-system)
 
 # Hardware and Software
@@ -33,6 +36,24 @@ All the devices mentioned here, such as the keyboard, the CPU, the hard drive, a
 On the other hand, we have software. **Software** is "soft". In other words, it's not something physical that you can touch and feel. It is also soft in the sense that it is not fixed; one minute you can run Microsoft Word, and then Photoshop five seconds later. It is very flexible, and can be changed or removed easily.
 
 # Operating System
+
+Now the question is, how do we combine hardware with software? Because software without hardware is nothing, and hardware without software is just some piece of metal incapable of anything. You need hardware for the software to exist and to do something, and you need software to give the hardware things to do.
+
+Software is stored in the memory of a computer. You can think of your memory as having memory "slots", and in each slot you can hold a certain amount of information. For simplicity, let's say that one computer instruction (a.k.a. command) can be stored in one memory slot. So if we have 10 commands, then they will be stored in 10 different memory slots, a.k.a. memory locations, a.k.a. memory addresses. The CPU reads memory slot #1, and after executing the command there, it will go to the following memory slot, all the way up to memory slot #10, after which the program is complete (a program is essentially a bunch of commands written for the CPU to execute).
+
+Now let's say I want to write a text editor, something like Microsoft Word. Sure, my application will be able to write and edit text, add and delete images, undo the last action, so on and so forth. Now let's focus on the "write text" portion. How does the computer know that when I press 'P' on my keyboard, this means that 'p' should appear on my screen. Sure, the button says 'P', but that is just printed onto the button. Someone had to have written a program that says "this button on the keyboard corresponds to this letter". That is where the OS comes in.
+
+a computer program that will take the user's keyboard presses, and translate that into text.
+Imagine we are in the 1970s, and we happen to have access to a computer. Let's think of some programs (software) that we could write on our computer (hardware). Let's say we want to write a novel. Since it's the 1970s, Microsoft Word doesn't exist yet. To write out a novel on the computer, we need to write a program that will convert a key press into a letter on the screen. So if I press on 'P' on my keyboard, I should see the letter 'p' appear on the screen. I'd have to I'd first have to make a text-editor software, within which I can write my text and add illustrations. So in order to write text, I'd have to connect the keyboard presses,  It should ideally have some buttons which can let me save the text into a file, or "undo" a typo I made. 
+
+Now let's say that I finished writing my book, and
+
+We could make a text-editor program, that allows us to type text and save the text in a file on our computer. We can make a chess 
+
+Taking any computer, whether it's a home desktop PC (personal computer), or a mini-computer powering a robot, 
+Essentially, the CPU is waiting for things to do; it's waiting to get instructions on what calculations to perform.
+
+At the most fundamental level, if we have a piece of hardware that is designed to be able to execute "general-purpose" code, then it should 
 
 hardware and software. this will lay a foundation for them that terminal, git, programming, all these things are software
 firmware is what connects them. have drivers to help connect external devices to the computer. OS manages all of this -->

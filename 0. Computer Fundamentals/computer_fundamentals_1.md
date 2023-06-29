@@ -32,7 +32,7 @@ What does this have to do with computers? Well, while the Jacquard loom is not d
 
 "Input" is what goes "in" a system, and "output" is what comes "out" as a result. Before the Jacquard loom, direct human intervention was critical in the input to get the desired output. In the case of the Jacquard loom, at a given moment, the input is a punch card, and the output is a row of threads being woven in a specific pattern, all without the "human touch".
 
-This invention laid the foundation for key concepts in computing, notably the idea of feeding punch cards (containing instructions) as input to a machine, and having that machine d. It foreshadowed the later development of computing devices.
+This invention laid the foundation for key concepts in computing, notably the idea of feeding punch cards (containing instructions) as input to a machine. It foreshadowed the later development of computing devices.
 
 ## Charles Babbage and the Analytical Engine: Conceptualizing the Computer
 
@@ -117,7 +117,7 @@ This is the reason why some people claim that Germany's Z3 was the first compute
 
 > Exercise: What do you think should be considered a computer? What should not be considered a computer?
 
-And today, there are countless appliances, gadgets, toys, instruments, automotive electronics, and much more, that have built-in "mini-computers" called microcontrollers. Even though they come equipped with a processing unit, memory, I/O peripherals, and are programmable to a certain extent, these **embedded devices** are designed to perform specific tasks, as they typically come with a pre-programmed set of instructions specific to the device. They do not have the versatility of a general-purpose computer, but they excel at executing specific tasks efficiently.
+And today, there are countless appliances, gadgets, toys, instruments, automotive electronics, and much more, that have built-in "mini-computers" called microcontrollers. Even though they come equipped with a processing unit, memory, I/O peripherals, and are programmable to a certain extent, these **embedded devices** are designed to perform specific tasks, as they typically come with a pre-programmed set of instructions specific to the device. They do not have the versatility of a general-purpose computer, but they excel at executing specific tasks efficiently. They are typically programmable to a certain extent, but only within the constraints and limitations set by their design and intended purpose.
 
 > Exercise: Name a computer around you that usually people don't see as a computer.
 <details><summary>Hint</summary>
