@@ -18,6 +18,7 @@ In the previous article, we explored the fascinating history of computers and th
 # Hardware and Software
 
 As we saw in the last article, a computer, fundamentally, consists of 4 parts:
+
 1. the input, 
 2. the processing unit, 
 3. the memory (or storage), and 
@@ -25,25 +26,28 @@ As we saw in the last article, a computer, fundamentally, consists of 4 parts:
 
 In the context of a laptop, input devices such as the mouse, keyboard, touchpad, camera, and microphone gather data and transmit it to the computer. For example, during a Zoom meeting, your laptop's camera and microphone capture video and audio data, which is converted into digital signals (1's and 0's) for transmission to other participants' computers. The received bits are then processed (by the CPU) and displayed as an image on their screens (as output). The keyboard and touchpad/mouse are also input devices, allowing you to provide commands and interact with the computer's interface, such as clicking buttons and typing website URLs.
 
-The processing unit, or CPU (central processing unit) in a laptop, is where the computations, data manipulations and instruction executions take place, controlling the overall operation of the system.
+The processing unit, or CPU (Central Processing Unit) in a laptop, is where the computations, data manipulations and instruction executions take place, controlling the overall operation of the system.
 
-When it comes to saving information on a laptop, there are two kinds of methods which are used together: long-term "storage" in the form of a hard disk drive (HDD) or a solid-state drive (SSD), and temporary "memory" in the form of Random Access Memory (RAM).
+When it comes to saving information on a laptop, there are two kinds of methods which are used together: long-term "storage" in the form of a hard disk drive (HDD) or a solid-state drive (SSD), and temporary "memory" in the form of Random Access Memory (RAM). The 
+
+> There is a difference between storage and memory when we talk about a computer. To learn more about it, I recommend you read [this short article](https://student.cs.uwaterloo.ca/~cs100/F21content/02-03-secondary-storage.html), followed by [this article](https://student.cs.uwaterloo.ca/~cs100/F21content/02-04-memory.html) containing a great analogy. However, please note that the author of the article refers to "memory" as "primary memory", and "storage" as "secondary storage". Do not get lost/confused by this terminology.
 
 Finally, we have the output component, which presents the processed information to the user in a user-friendly format. In the case of a laptop, the primary output device is the display screen, where visual information is presented. Additionally, the laptop may have audio output capabilities through built-in speakers or headphone jacks, allowing for the playback of sound or speech. Output devices can also include printers, external monitors, or other devices that provide tangible or perceptible outputs based on the processed data.
 
 All the devices mentioned here, such as the keyboard, the CPU, the hard drive, and the screen, are known as hardware. **Hardware** is "hard" to the touch. In other words, you can actually touch it and hold it. It's also "hard" to change it. If you buy a laptop, the components on the laptop's motherboard are soldered onto the board, making the hardware fixed. 
 
-On the other hand, we have software. **Software** is "soft". In other words, it's not something physical that you can touch and feel. It is also soft in the sense that it is not fixed; one minute you can run Microsoft Word, and then Photoshop five seconds later. It is very flexible, and can be changed or removed easily.
+On the other hand, we have software. **Software** is "soft". In other words, it's not something physical that you can touch and feel. Can you "touch" a video game, or the Google search engine? Nope. It is also soft in the sense that it is not fixed; one minute you can run Microsoft Word, and then Photoshop five seconds later. It is very flexible, and can be changed or removed easily.
 
 # Operating System
 
 Now the question is, how do we combine hardware with software? Because software without hardware is just theory, and hardware without software is just some piece of metal worth little. You need hardware for the software to exist and have purpose, and you need software to give the hardware things to do (and have purpose).
 
-Software is stored in the memory of a computer. You can think of the memory as having many "slots", and in each slot you can hold a certain amount of information. For simplicity, let's say that one computer instruction (a.k.a. command) can be stored in one memory slot. So if we have 10 commands, then they will be stored in 10 different memory slots, a.k.a. memory locations, a.k.a. memory addresses. The CPU reads memory slot #1, and after executing the command there, it will go to the following memory slot, all the way up to memory slot #10, after which the program is over (a program is essentially a bunch of commands written for the CPU to execute).
+Software is stored in the memory/storage (hereon out, simply "memory") of a computer. You can think of the memory as having many "slots", and in each slot you can hold a certain amount of information. For simplicity, let's say that one computer instruction (a.k.a. command) can be stored in one memory slot. So if we have 10 commands, then we will need 10 different memory slots, a.k.a. memory locations, a.k.a. memory addresses. The CPU reads memory slot #1, and after executing the command there, it will go to the following memory slot, all the way up to memory slot #10, after which the program is over (a program is essentially a bunch of commands written for the CPU to execute).
 
-> There is a difference between storage and memory when we talk about a computer, but which I do not mention here. I recommend you read [this short article](https://student.cs.uwaterloo.ca/~cs100/F21content/02-03-secondary-storage.html), followed by [this article](https://student.cs.uwaterloo.ca/~cs100/F21content/02-04-memory.html), which will contain a great analogy. However, please note that the author of the article refers to "memory" as "primary memory", and "storage" as "secondary storage". Do not get lost in the terminology.
+Sounds simple, right? The problem is that a Mac computer, an iPhone, a Samsung smartphone, and a Lenovo laptop all have different processors, and so they execute programs differently. 
+Then there are also different keyboard and mouse manufacturers. [...]
 
-The problem is that a Mac computer, an iPhone, a Samsung smartphone, and a Lenovo laptop all have different processors, and so they execute programs differently. And what if I  Then there are also different keyboard and mouse manufacturers. In the early days of the modern computers (1960s and 1970s) when I plug a new keyboard into my laptop, I don't 
+In the early days of the modern computers (1960s and 1970s) when I plug a new keyboard into my laptop, I don't 
 
 The software that I write, I don't want it to be "machine-specific"
 
