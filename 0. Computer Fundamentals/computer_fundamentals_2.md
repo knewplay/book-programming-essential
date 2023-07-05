@@ -47,6 +47,8 @@ Software is stored in the memory/storage (hereon out, simply "memory") of a comp
 Sounds simple, right? The problem is that a Mac computer, an iPhone, a Samsung smartphone, and a Lenovo laptop all have different processors, and so they execute programs differently. 
 Then there are also different keyboard and mouse manufacturers. [...]
 
+
+
 In the early days of the modern computers (1960s and 1970s) when I plug a new keyboard into my laptop, I don't 
 
 The software that I write, I don't want it to be "machine-specific"
