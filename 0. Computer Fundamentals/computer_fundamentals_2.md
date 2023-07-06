@@ -3,7 +3,7 @@ title: "Computer Fundamentals: The Operating and File System"
 date: "07-06-2023"
 author: "Andrei Guevorkian"
 ---
-In the previous article, we explored the fascinating history of computers and their defining characteristics. Now, let's delve deeper into general-purpose computers and their underlying concepts such as Operating Systems and file systems.
+In the previous article, we explored the history of computers and their defining characteristics. Now, let's delve deeper into general-purpose computers and their underlying concepts such as Operating Systems and file systems.
 
 # Table of Contents
 
@@ -42,53 +42,63 @@ On the other hand, we have software. **Software** is "soft". In other words, it'
 
 Now the question is, how do we combine hardware with software? Because software without hardware is just theory, and hardware without software is just some piece of metal worth little. You need hardware for the software to exist and have purpose, and you need software to give the hardware things to do (and have purpose).
 
-Software is stored in the memory/storage (hereon out, simply "memory") of a computer. You can think of the memory as having many "slots", and in each slot you can hold a certain amount of information. For simplicity, let's say that one computer instruction (a.k.a. command) can be stored in one memory slot. So if we have 10 commands, then we will need 10 different memory slots, a.k.a. memory locations, a.k.a. memory addresses. The CPU reads memory slot #1, and after executing the command there, it will go to the following memory slot, all the way up to memory slot #10, after which the program is over (a program is essentially a bunch of commands written for the CPU to execute).
+Software is stored in the memory of a computer. You can think of the memory as having many "slots", and in each slot you can hold a certain amount of information. For simplicity, let's say that one computer instruction (a.k.a. command) can be stored in one memory slot. So if we have 10 commands, then we will need 10 different memory slots, a.k.a. memory locations, a.k.a. memory addresses. The CPU reads memory slot #1, and after executing the command there, it will go to the following memory slot, all the way up to memory slot #10, after which the program is over (a program is essentially a bunch of commands written for the CPU to execute).
 
 Sounds simple, right? The problem is that a Mac computer, an iPhone, a Samsung smartphone, and a Lenovo laptop all use different hardware from different companies (think of the processors being made by Intel, AMD, ARM, NVIDIA, Apple, Qualcomm, Huawei, etc.), and so they execute programs differently. On top of the internal hardware differences, we also want to connect external devices such as a mouse, keyboard, monitor, printer, and much more.
 
-It would be ridiculous to ask the programmers of Zoom to create one program for Lenovo laptops, one for Apple, one for smartphones that use the ARM processor, so on and so forth. Software shouldn't be "machine-specific".
+It would be ridiculous to ask software developers to write one program for Lenovo laptops, one for Apple, one for smartphones that use the ARM processor, so on and so forth. Software shouldn't be "machine-specific". This is how things were in the 1970s and part of the 1980s.
 
 To address these challenges and facilitate the seamless interaction between hardware and software, we rely on operating systems (OS). An operating system acts as an intermediary layer, bridging the gap between the hardware and software components of a computer system.
 
-The OS abstracts the complexities of hardware, providing a uniform environment for software developers to create applications. It also provides regular everyday computer users with their familiar view of the computer: the GUI, or Graphical User Interface. When we turn on a Windows computer there is a style that we expect to see, and it's a similar story when we turn on a device running macOS, an Android device or an Apple smartphone.
+The OS abstracts the complexities of hardware, providing a uniform environment for software developers to create applications. It also provides regular everyday computer users with their familiar view of the computer: the GUI, or Graphical User Interface. When we turn on a Windows computer there is a style that we expect to see, and it's a similar story when we turn on a device running macOS, iOS, or Android.
 
-Whether it's creating a new folder on our computer, running two programs simultaneously, saving a text document on our computer, or pluging a brand new mouse into the usb, the OS takes care of all this for us. Anything that the user shouldn't have to worry about is taken care of by the OS. For example, when was the last time that you told the computer how to allocate its memory space, i.e. Microsoft Word should have memory slots #1 - #10000 and Adobe Photoshop should take memory slots #10001 - #21000? When was the last time you wondered where in your storage you should save your essay file? Never. Just click "Save", and the OS will take care of the rest.
+[can have image of hw > OS > Apps > programmer] smthn like this : https://cdn4.explainthatstuff.com/computer-architecture.webp
+
+Whether it's creating a new folder on our computer, running two programs simultaneously, saving a text document on our computer, or pluging a brand new mouse into the usb, the OS takes care of all this for us. Anything that the user shouldn't have to worry about is taken care of by the OS. For example, when was the last time that you told the computer how to allocate its memory space, i.e. Microsoft Word should have memory slots #1 - #10000 and Adobe Photoshop should take memory slots #10001 - #21000? When was the last time you wondered where in storage you should save your essay file? Never. Just click "Save", and the OS will take care of the rest.
 
 All in all, operating systems play a vital role in harmonizing hardware and software components. They provide the necessary abstractions, services, and interfaces to ensure compatibility, efficient resource utilization, and seamless communication between different devices and software applications.
 
 > Do you know of any operating systems? What kind of devices do they run on, i.e. can these operating systems run on devices made by different companies (Lenovo, HP, Asus, Apple, Samsung, etc.)?
 
-Add recommended reading for details about windows OS
+> What could be some reasons for why multiple OSes exist?\
+P.S. Consider factors such as market demand, target user demographics, and specialized functionalities that drive the development of distinct operating systems.
 
-So far we agree that there is a computational complexity spectrum for computers, where on the lower extreme we have some embedded device that is programmable but is limited in its capabilities, and on the other end, we have something like a supercomputer that can process and store ridiculous amounts of data in record-breaking time.
-
-But a computer could have the best CPU in the world, but not be used to its full potential. This all depends on the software.
-But no matter the computer's complexity
-
-Mention about the modern OS:
-Now talk about how to organize everything, drivers, etc. you want a special software that will manage all of those things that we don't need the user to manage. 
-
-
-Now the big question is, how are hardware and software linked? How do you run large software programs on compact hardware devices.
-
-Why many flavors. why mac windows linux. whats different. why have OS
-
-hw > OS > Apps > programmer
-
-OS > file system, network, memory, process, multiprocess
+The operating systems of Microsoft's Windows, Apple's macOS/iOS, and Google's Android are popular. What is less known but still as widely used (although mostly unknowingly) is Linux. To learn more about Linux, [read this](https://opensource.com/resources/linux).
 
 # The File System: A School Analogy
+
+Imagine this. It's 8:27AM, and you just reached your school locker. You have a strict Physics teacher who closes the classroom door at 8:30AM. No ifs, buts or maybes. You frantically turn the lock combination, open the door, and a bunch of books and papers come crashing down on your feet. You kneel down, pick up a paper, and "oh no, this ones yesterday's History quiz! This one's the Math book, ugh it looks so similar to the Physics book!"... long story short, you're late for class.
+
+Now imagine a different scenario. It's 8:27AM, and you just reached your school locker. You turn the lock combination, open the locker, read the folder labels "History, no. Math, no. Chemistry, no. Physics, perfect!". You pull out the "Physics" folder, which you know contains everything already, lock the door, and head to class. It's 8:28AM by the way.
+
+Continuing from this "more organized version of you", you sit down at your desk, and open the folder. Inside this "Physics" folder, you have two more folders, two notebooks, a couple of blank sheets of papers (in case there's a pop-quiz or you just want to jot something down) and the Physics book which your teacher follows. The "subfolders" are labeled "Quizzes" and "Homework", and they have notebooks and separate papers inside of them too.
+
+Something to realize is that there is no "right" way to organize your files. You may be organized with your method, and maybe your classmate is as organized as you, but he has his Physics folder insider of a larger folder called "Science", which contains both "Physics" and "Chemistry" folders, and he holds his blank sheets of paper inside his "Quiz" folder.
+
+# The File System
+
+Let's now transition to the computer's way of organizing files and folders. We have an idea of what a folder is, and it's no different when it comes to computers. But what is a "file"? 
+
+A file in the context of computers is similar to the items you find in your school locker. It is a named collection of data stored on a computer's storage system. Just like your school book, notebook, or piece of paper, a computer file can hold various types of information, such as text, images, videos, audio, program instructions, or configuration data.
+
+While folders are used to group related files together, a file itself is not a container but rather the data contained within it. Think of it as the content of a specific book, notebook, or piece of paper in your locker. The file has a name that uniquely identifies it within its parent folder. So you can have a file called "quiz1.txt" in both the "History" folder and in the "Physics" folder, but this name must be unique within a single folder.
+
 
 what is file (review), what is direcotyr, why need to change it. what is the current working directory, ...
 
 single-level directory
 two-level directory => need to navigate
 
-# The File System 
-Analogy: can have one big notebook, with history math and physics and chemistry notes. However, we all know that it's much easier to sort through things by having a separate notebook for each subject.
-Now what if in history class, you have your notebook with your class notes, but one day the teacher asks you to take out a single piece of paper for the weekly quiz. Now you have a notebook, and a single piece of paper. after 8 weeks, you would have 8 single pieces of paper, which should logically be physically together. You don't want history quiz 1 to be between the math and physics notebooks. That'd be a mess when it's time to find the quiz and review it. --> Folder ...
+ 
 go back to the profile picture example. or the game graphics. behind all of these visuals, is computer code. and code is just text that get's converted to machine code that the computer can understand.  
 For the profile picture, that picture is stored somewhere on facebook's server, and when someone visits your account, the page just has a pointer to the location on the server where your picture resides. its a file. everything is stored in files. A typical program executes sequentially, one command at a time. so technically can have one big chunck of code. but that's just like having one large notebook containing all your class notes from all your courses. and computers have way more information than a year's worth of class notes. computers are very complex today, and it's better to organize and store the different funcitonalities into separate files, just like it's better to put different course material in different folders.
+
+
+So far we agree that there is a computational complexity spectrum for computers, where on the lower extreme we have some embedded device that is programmable but is limited in its capabilities, and on the other end, we have something like a supercomputer that can process and store ridiculous amounts of data in record-breaking time.
+
+But a computer could have the best CPU in the world, but not be used to its full potential. This all depends on the software.
+But no matter the computer's complexity
+
 
 # Questions
 
@@ -105,7 +115,7 @@ Q1: (Multiple choice question) Which of the following is the OS tasked with?
 5. All of the above.
 
 <details><summary>Hint</summary>
-The purpose of the OS is to abstract all the complex
+The purpose of the OS is to abstract all the complex interactions between hardware and software, providing a unified interface and essential services to manage memory, processes, file systems, and devices.
 </details>
 
 ---
