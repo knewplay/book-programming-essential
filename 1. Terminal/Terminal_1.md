@@ -5,8 +5,6 @@ author: "Andrei Guevorkian"
 ---
 
 Have you ever seen a movie where a hacker is frantically typing bright green letters on a black screen? Have you ever wanted to do that? As it turns out, that black screen isn't just a Hollywood invention; it really does exist, and it's called a **terminal**. 
- 
-a tool that allows you to interact with your computer using text-based commands. Whether you're interested in coding, cybersecurity, or robotics, learning how to use the terminal is a valuable skill that will help you in your technology career. 
 
 # Table of Contents
 
@@ -23,6 +21,8 @@ a tool that allows you to interact with your computer using text-based commands.
 
 
 # The Importance of the Terminal
+
+The terminal is a tool that allows you to interact with a computer using text-based commands. Everyone from software developers, to cybersecurity experts, to robotics engineers use the terminal on a daily basis, making this an invaluable tool forWhether you're interested in coding, cybersecurity, or robotics, learning how to use the terminal is a valuable skill that will help you in your technology career.
 
 LET READER KNOW THAT TERMINAL IS IMPORTANT. MENTION INTERESTING HISTORICAL EVENT. MORE STORIES FOR GENERAL KNOWLEDGE
 
