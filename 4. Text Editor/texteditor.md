@@ -1,0 +1,1 @@
+history of vim emacs, why use that instead o fgoogle docs or notepadd++

@@ -14,6 +14,9 @@ In the previous article, we explored the history of computers and their defining
 [The File System: A School Analogy](#the-file-system-a-school-analogy)
 
 [The File System](#the-file-system)
+ - [File Naming](#file-naming)
+ - [File Path](#file-path)
+ - [Current Working Directory](#current-working-directory)
 
 # Hardware and Software
 
@@ -28,7 +31,7 @@ In the context of a laptop, input devices such as the mouse, keyboard, touchpad,
 
 The processing unit, or CPU (Central Processing Unit) in a laptop, is where the computations, data manipulations and instruction executions take place, controlling the overall operation of the system.
 
-When it comes to saving information on a laptop, there are two kinds of methods which are used together: long-term "storage" in the form of a hard disk drive (HDD) or a solid-state drive (SSD), and temporary "memory" in the form of Random Access Memory (RAM). The 
+When it comes to saving information on a laptop, there are two kinds of methods which are used together: long-term "storage" in the form of a hard disk drive (HDD) or a solid-state drive (SSD), and temporary "memory" in the form of Random Access Memory (RAM). 
 
 > There is a difference between storage and memory when we talk about a computer. To learn more about it, I recommend you read [this short article](https://student.cs.uwaterloo.ca/~cs100/F21content/02-03-secondary-storage.html), followed by [this article](https://student.cs.uwaterloo.ca/~cs100/F21content/02-04-memory.html) containing a great analogy. However, please note that the author of the article refers to "memory" as "primary memory", and "storage" as "secondary storage". Do not get lost/confused by this terminology.
 
@@ -73,31 +76,92 @@ Now imagine a different scenario. It's 8:27AM, and you just reached your school 
 
 Continuing from this "more organized version of you", you sit down at your desk, and open the folder. Inside this "Physics" folder, you have two more folders, two notebooks, a couple of blank sheets of papers (in case there's a pop-quiz or you just want to jot something down) and the Physics book which your teacher follows. The "subfolders" are labeled "Quizzes" and "Homework", and they have notebooks and separate papers inside of them too.
 
-Something to realize is that there is no "right" way to organize your files. You may be organized with your method, and maybe your classmate is as organized as you, but he has his Physics folder insider of a larger folder called "Science", which contains both "Physics" and "Chemistry" folders, and he holds his blank sheets of paper inside his "Quiz" folder.
+Something to realize is that there is no "right" and definitive way to organize your files. You may be organized with your method, and maybe your classmate is also organized, but he has his Physics folder insider of a larger folder called "Science", which contains both "Physics" and "Chemistry" folders, and he holds his blank sheets of paper inside a "Quizzes" folder.
 
 # The File System
 
-Let's now transition to the computer's way of organizing files and folders. We have an idea of what a folder is, and it's no different when it comes to computers. But what is a "file"? 
+Let's now transition to the computer's way of organizing files and folders. This is a crucial aspect that the operating system takes care of, ensuring that information is not all jumbled together. Remember, all data is stored as a sequence of 1's and 0's, but the operating system creates a virtual boundary between one piece of data and the next.
 
-A file in the context of computers is similar to the items you find in your school locker. It is a named collection of data stored on a computer's storage system. Just like your school book, notebook, or piece of paper, a computer file can hold various types of information, such as text, images, videos, audio, program instructions, or configuration data.
+We have an idea of what a folder is in real life, and it's no different when it comes to computers; it's a way to separate and organize data. Sometimes, a folder is called a directory. Keep that in mind. Now what is a "file"?
 
-While folders are used to group related files together, a file itself is not a container but rather the data contained within it. Think of it as the content of a specific book, notebook, or piece of paper in your locker. The file has a name that uniquely identifies it within its parent folder. So you can have a file called "quiz1.txt" in both the "History" folder and in the "Physics" folder, but this name must be unique within a single folder.
+> The term "folder" is a relatively new term in the computer world, introduced with the advent of the GUI. Whenever you see "directory", in your head, replace it with the word.
 
+In the realm of computers, a file resembles the items you'd find inside your school locker. It is a named collection of data stored on a computer's storage system. Just like your school book, notebook, or piece of paper, a computer file can hold various types of information, such as text, images, videos, audio, program instructions, or configuration data.
+
+> To get a better understanding of how computers view and represent images, [read this](http://www.lakelandscomputing.com/binary-images.html).
+
+While folders are used to group related files together, a file is the data itself. Think of it as the content of a specific book, notebook, or piece of paper in your locker.
+
+## File Naming
+
+In school, if you open your Physics folder, you can distinguish between a sheet of paper and a notebook. You can see the difference, and you can touch the difference. Both contain information, but they are clearly different.
+
+When it comes to computer files, they aren't actual objects which we can hold and say "this is a JPG image file" or "this one's a simple text file". Calling some file "image1" doesn't make it an image, because maybe it's a text file where we describe some image in text.
+
+So, rule number one is that you must always specify the file type. How? By adding a filename extension. Foe example, "image1.png", or "image1.jpg", or "image1.txt".
+
+> Note: Most people use applications which automatically do this for them. For example, when we write and save a Microsoft Word file, clearly it get's saved as a "doc" file. When you work with images in Adobe Photoshop, they will never suggest ".txt" as a potential filename extension. But we will see in the next series of articles how programmers use a tool where they must specify the file type themselves.
+
+The second thing to realize is that in your Physics folder, you will not have two sheets of paper, both named "Quiz 1". That would be confusing. But if you had a notebook that's labeled "Quiz 1" and a loose sheet of paper labeled "Quiz 1", then there is some distinction and you can distinguish them. Furthermore, you can have a paper labeled "Quiz 1" in the Physics folder, and one in the History folder, and that is okay as well, as long as you don't mix the contents up.
+
+It's a similar story with computer files. The file has a name that uniquely identifies it within a folder. So you can have a file called "quiz1.txt" in both the "Document" folder and in the "Desktop" folder, but you cannot have the exact same name within the same folder.
+
+## File Path
+
+If you want to review your Quiz 1 for your Physics class, there is an underlying path to get to Quiz 1: open your locker (you can think of it as a folder containing all your course folders), open the Physics folder, and grab the loose sheet of paper labeled "Quiz 1". If your folder structure is different, then you'll have to take a different path: open your locker, open the Science folder, open the Physics folder, open the Quizzes folder, then grab "Quiz 1". It all depends on the structure of the folder system.
+
+A simple way to represent the path that you took to get to your Physics Quiz 1 in the first case is as follows: 
+```
+Locker > Physics > Quiz 1
+``` 
+
+In the second case, it is as follows: 
+
+```
+Locker > Science > Physics > Quizzes > Quiz 1.
+```
+
+The computer's file system works in the exact same way. Computers always have a folder called the root folder which is like the locker in the school example: a folder (or box) that contains all other folders. The root folder is denoted by a forward slash (/) on Linux and macOS, while Windows uses the drive (HDD or SSD) letter followed by a colon (e.g., "C:").
+
+> Task: Try to find the root folder on your computer! See what it holds. Don't be afraid to Google if you don't know how!
+
+Within the root folder, you will have subfolders. To these subfolders, the root folder is called the "parent folder", or "parent directory".
+
+## Current Working Directory
+
+Let's go back to the school analogy. Say you have the following file path to get to the Physics Quiz 1.
+
+```
+Locker > Science > Physics > Quizzes > Quiz 1.
+```
+
+Let's now say that you are in the middle of opening your locker. In other words, you are at this step:
+
+```
+Locker > 
+```
+
+If you take a look at all the folders directly available to you, you may find folders such as  Science, History, Math, English, Ethics, so on and so forth. At the Locker level, you are not able to access the Quiz 1 from Physics class.
+
+In order to get to the quiz, you will have to, one by one, go through the folders.
+
+Say you are inside the "Desktop" directory, and it's path is as follows:
+
+```
+Locker > Science > 
+```
+
+```
+c: > Users > Andrei > Desktop
+```
+
+If I am currently in the "Desktop" directory, then I can call
 
 what is file (review), what is direcotyr, why need to change it. what is the current working directory, ...
 
 single-level directory
 two-level directory => need to navigate
 
- 
-go back to the profile picture example. or the game graphics. behind all of these visuals, is computer code. and code is just text that get's converted to machine code that the computer can understand.  
-For the profile picture, that picture is stored somewhere on facebook's server, and when someone visits your account, the page just has a pointer to the location on the server where your picture resides. its a file. everything is stored in files. A typical program executes sequentially, one command at a time. so technically can have one big chunck of code. but that's just like having one large notebook containing all your class notes from all your courses. and computers have way more information than a year's worth of class notes. computers are very complex today, and it's better to organize and store the different funcitonalities into separate files, just like it's better to put different course material in different folders.
-
-
-So far we agree that there is a computational complexity spectrum for computers, where on the lower extreme we have some embedded device that is programmable but is limited in its capabilities, and on the other end, we have something like a supercomputer that can process and store ridiculous amounts of data in record-breaking time.
-
-But a computer could have the best CPU in the world, but not be used to its full potential. This all depends on the software.
-But no matter the computer's complexity
 
 
 # Questions
