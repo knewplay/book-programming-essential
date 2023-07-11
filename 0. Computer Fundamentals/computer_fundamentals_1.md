@@ -67,6 +67,8 @@ CRT displays transmitted light onto a screen, and this meant that it could be wr
 
 The terminal screen consisted of a black background, with green or white alphanumeric characters. One reason for the black background was to reduce eye strain; a white background would cause eye fatigue and glare, and it would also require a significant amount of power.
 
+[Figure x: The VT100 is a terminal introduced in 1978. Notice that there is no mouse.]
+
 The invention of computer terminals significantly improved the efficiency and usability of computers. It enabled users to interact with the machines in a more intuitive and direct manner, enabling the growth and adoption of computing technology.
 
 # The Modern State of Computers
