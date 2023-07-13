@@ -55,6 +55,8 @@ To address these challenges and facilitate the seamless interaction between hard
 
 The OS abstracts the complexities of hardware, providing a uniform environment for software developers to create applications. It also provides regular everyday computer users with their familiar view of the computer: the GUI, or Graphical User Interface. When we turn on a Windows computer there is a style that we expect to see, and it's a similar story when we turn on a device running macOS, iOS, or Android.
 
+MENTION THAT OS IS LOW-LEVEL SOFTWARE
+
 [can have image of hw > OS > Apps > programmer] smthn like this : https://cdn4.explainthatstuff.com/computer-architecture.webp
 
 Whether it's creating a new folder on our computer, running two programs simultaneously, saving a text document on our computer, or pluging a brand new mouse into the usb, the OS takes care of all this for us. Anything that the user shouldn't have to worry about is taken care of by the OS. For example, when was the last time that you told the computer how to allocate its memory space, i.e. Microsoft Word should have memory slots #1 - #10000 and Adobe Photoshop should take memory slots #10001 - #21000? When was the last time you wondered where in storage you should save your essay file? Never. Just click "Save", and the OS will take care of the rest.
