@@ -38,11 +38,15 @@ File and folder nameing rule should follow [Kebab Case](https://en.wikipedia.org
 ### Figure
 
 `./{chapter-name}/figures/{name-without-sequence-number}.{file-extention-name}`
-`./computer-fundamentals/figures/lisa.jpg`
-`./computer-fundamentals/figures/game-boy.jpg`
+
+#### Examples
+- `./computer-fundamentals/figures/lisa.jpg`
+- `./computer-fundamentals/figures/game-boy.jpg`
 
 ### Article
 
 `./chapter-name}/{name-without-sequence-number}.md`
-`./computer-fundamentals/basic.md`
-`./computer-fundamentals/hardware-and-software.md`
+
+#### Examples
+- `./computer-fundamentals/basic.md`
+- `./computer-fundamentals/hardware-and-software.md`
