@@ -24,7 +24,7 @@ Have you ever seen a movie where a hacker is frantically typing bright green let
 
 Back in the days, knowing how to use a terminal was absolutely necessary to communicate with the computer. Today, almost everyone uses the GUI exclusively. That is everyone except for programmers and IT professionals.
 
-We have to understand that fundamentally, all programs are a sequence of instructions for the computer to execute. It's not like the graphical components of a program just magically appear based on the instructions; someone had to program the corresponding graphical interface for the program.
+To understand why the terminal is important, we must recognize that all programs are ultimately a series of instructions guiding the computer's actions. These instructions can be directly represented to letters and numbers, rather than a graphical component on the screen. It's not like the graphical components of a program just magically appear based on the instructions; someone had to program the corresponding GUI for the program.
 
 For example, if you are playing a video game and click on the "Start Game" button, the game doesn't just start magically; it follows a set of commands set up by the programmers. For example, the underlying commands could be as follows:
 
@@ -44,9 +44,13 @@ And each one of these commands will likely call many other commands that take ca
 - *displayMap*
 - *displayScoreboard*
 
-Clearly there is a lot going on beneath the GUI. And it is exactly at this low level where the terminal resides and operates. The terminal provides direct access to the underlying command-line interface (CLI) of the OS, skipping the graphical user interface altogether. Remember, everything that can be done using the GUI can also be done in the CLI, but not everything that can be done in the CLI can be done in the GUI.
+Clearly there is a lot going on beneath the GUI. Just think about it.  What we see as "Start Game" is actually a long list of subprocesses. The general-public doesn't need to know the intricacies of starting a game, however as a programmer developing a game, it is essential to break things down into their smallest constituents! And it's the same story for any app with a GUI: the GUI is there for the client. Programmers and IT professionals stick to writing commands using text, because they have no choice.
 
-While the visual aspect is vital to any good game, it may not be as crucial in other industries. Technologies that are not directly linked to the general public oftentimes do not have a GUI. Why? Because it's extra work, and IT professionals are expected to be more technically inclined, so the idea is that they are capable of learning the terminal. And because all IT professionals are assumed to know how to use the terminal, they often do. You will not go very far in most fields related to computers if you do not know how to use the terminal.
+While GUIs simplify user interactions, they may not exist or may not be developed for certain specialized technologies or applications. Creating a GUI requires additional effort and is often deemed unnecessary when the target users are expected to possess technical knowledge. Hence, IT professionals are encouraged to master the terminal, as it provides unparalleled control and flexibility in diverse computer-related fields.
+
+You will not go very far in most fields related to computers if you do not know how to use the terminal.
+
+And it is exactly at this low level where the terminal resides and operates. The terminal provides direct access to the underlying command-line interface (CLI) of the OS, skipping the graphical user interface altogether. Remember, everything that can be done using the GUI can also be done in the CLI, but not everything that can be done in the CLI can be done in the GUI.
 
 ## Some concrete examples
 
