@@ -65,9 +65,25 @@ So whatever your interests, the terminal is crucial tool for programmers and IT 
 The terminal used to be an entire device on its own (a display with a keyboard), separate from the mainframe computer. Today, we use software called emulators that replicate the functionality of the old-school terminals. But although we technically use terminal-emulators, we simply call the program a terminal.
 
 ## Unix
-In the field of programming, the Unix OS will sometimes be mentioned. 
+It is so common to hear or read "Unix" in thn the field of programming, the Unix OS will sometimes be mentioned. 
 
+## Shell
+talk about shell,  commonly used shells bash csh, zsh, powershell
 
+## File system navigation
+
+## File manipulation
+
+## Text editing
+
+## I/O redirection
+- mention pipe (O > I) I/O redirection
+Redirecting input and output streams
+Using pipes to chain commands together
+
+## Additional Utilities
+Exploring additional useful terminal tools (e.g., tar, zip, ssh)
+Installing and managing software through package managers (e.g., apt, Homebrew)
 
 
 
@@ -99,28 +115,6 @@ In summary, Unix and Linux operating systems provide the foundation for the term
 
 
 
-
-
-
-
-
-talk about shell,  commonly used shells bash csh, zsh, powershell
-
-- mention pipe (O > I) I/O redirection
-Redirecting input and output streams
-Using pipes to chain commands together
-
-
-Command History and Auto-Completion
-
-Navigating command history
-Utilizing auto-completion for efficiency
-
-
-Additional Tools and Utilities
-
-Exploring additional useful terminal tools (e.g., tar, zip, ssh)
-Installing and managing software through package managers (e.g., apt, Homebrew)
 
 # Git
 Imagine investing months, or even years, in developing a remarkable app, only to one day lose your laptop, and thus, your work. Despite such potential setbacks, how do thousands of programmers still manage to collaborate on a single project, and even stay organized? Now that you know about the terminal, we can talk about the wonderful tool called **Git**.
