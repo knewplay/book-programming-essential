@@ -16,7 +16,7 @@ In the previous article, we explored the history of computers and their defining
 [The File System](#the-file-system)
  - [File Naming](#file-naming)
  - [File Path](#file-path)
- - [Current Working Directory](#current-working-directory)
+ - [Working Directory](#working-directory)
 
 # Hardware and Software
 
@@ -51,19 +51,15 @@ Sounds simple, right? The problem is that a Mac computer, an iPhone, a Samsung s
 
 It would be ridiculous to ask software developers to write one program for Lenovo laptops, one for Apple, one for smartphones that use the ARM processor, so on and so forth. Software shouldn't be "machine-specific". This is how things were in the 1970s and part of the 1980s.
 
-To address these challenges and facilitate the seamless interaction between hardware and software, we rely on operating systems (OS). An operating system acts as an intermediary layer, bridging the gap between the hardware and software components of a computer system.
+To address these challenges and facilitate the seamless interaction between hardware and software, we rely on operating systems (OS). The OS acts as an intermediary layer, bridging the gap between the hardware and software components of a computer system. In essense, an OS is low-level software, meaning that it interacts more closely with the physical hardware components.
 
 The OS abstracts the complexities of hardware, providing a uniform environment for software developers to create applications. It also provides regular everyday computer users with their familiar view of the computer: the GUI, or Graphical User Interface. When we turn on a Windows computer there is a style that we expect to see, and it's a similar story when we turn on a device running macOS, iOS, or Android.
-
-MENTION THAT OS IS LOW-LEVEL SOFTWARE
-
-[can have image of hw > OS > Apps > programmer] smthn like this : https://cdn4.explainthatstuff.com/computer-architecture.webp
 
 Whether it's creating a new folder on our computer, running two programs simultaneously, saving a text document on our computer, or pluging a brand new mouse into the usb, the OS takes care of all this for us. Anything that the user shouldn't have to worry about is taken care of by the OS. For example, when was the last time that you told the computer how to allocate its memory space, i.e. Microsoft Word should have memory slots #1 - #10000 and Adobe Photoshop should take memory slots #10001 - #21000? When was the last time you wondered where in storage you should save your essay file? Never. Just click "Save", and the OS will take care of the rest.
 
 All in all, operating systems play a vital role in harmonizing hardware and software components. They provide the necessary abstractions, services, and interfaces to ensure compatibility, efficient resource utilization, and seamless communication between different devices and software applications.
 
-> Do you know of any operating systems? What kind of devices do they run on, i.e. can these operating systems run on devices made by different companies (Lenovo, HP, Asus, Apple, Samsung, etc.)?
+> Do you know of any operating systems? What kind of devices do they run on, i.e. can these operating systems run on devices made by different companies (Lenovo, HP, Asus, Apple, Samsung Phones, etc.)?
 
 > What could be some reasons for why multiple OSes exist?\
 P.S. Consider factors such as market demand, target user demographics, and specialized functionalities that drive the development of distinct operating systems.
@@ -82,7 +78,7 @@ Something to realize is that there is no "right" and definitive way to organize 
 
 # The File System
 
-Let's now transition to the computer's way of organizing files and folders. This is a crucial aspect that the operating system takes care of, ensuring that information is not all jumbled together. Remember, all data is stored as a sequence of 1's and 0's, but the operating system creates a virtual boundary between one piece of data and the next.
+Let's now transition to the computer's way of organizing files and folders. This is a crucial aspect that the OS takes care of, ensuring that information is not all jumbled together. Remember, all data is stored as a sequence of 1's and 0's, but the OS creates a virtual boundary between one piece of data and the next.
 
 We have an idea of what a folder is in real life, and it's no different when it comes to computers; it's a way to separate and organize data. Sometimes, a folder is called a directory. Keep that in mind. Now what is a "file"?
 
@@ -129,12 +125,12 @@ The computer's file system works in the exact same way. Computers always have a 
 
 Within the root folder, you will have subfolders. To these subfolders, the root folder is called the "parent folder", or "parent directory".
 
-## Current Working Directory
+## Working Directory
 
 Let's go back to the school analogy. Say you have the following file path to get to the Physics Quiz 1.
 
 ```
-Locker > Science > Physics > Quizzes > Quiz 1.
+Locker > Physics > Quizzes > Quiz 1.
 ```
 
 Let's now say that you are in the middle of opening your locker. In other words, you are at this step:
@@ -143,32 +139,30 @@ Let's now say that you are in the middle of opening your locker. In other words,
 Locker > 
 ```
 
-If you take a look at all the folders directly available to you, you may find folders such as  Science, History, Math, English, Ethics, so on and so forth. At the Locker level, you are not able to access the Quiz 1 from Physics class.
+If you take a look at all the folders directly available to you, you may find folders such as Physics, Chemistry, History, Math, English, Ethics, so on and so forth. At the Locker level, you are not able to access the Quiz 1.
 
-In order to get to the quiz, you will have to, one by one, go through the folders.
-
-Say you are inside the "Desktop" directory, and it's path is as follows:
+In order to get to the quiz, you will have to, one by one, go through the folders as follows:
 
 ```
-Locker > Science > 
+Locker > Physics > 
 ```
 
 ```
-c: > Users > Andrei > Desktop
+Locker > Physics > Quizzes 
 ```
 
-If I am currently in the "Desktop" directory, then I can call
+At which point you will have direct access to Quiz 1.
 
-what is file (review), what is direcotyr, why need to change it. what is the current working directory, ...
-
-single-level directory
-two-level directory => need to navigate
-
-
+The working directory is the folder which you are "in" and have opened in front of you; this is the folder whose subfolders and files you can directly access. For instance, in order to access Quiz 1, the working directory had to be the Quizzes folder. In order to view all the different courses you are taking, you must go to the Locker "folder" and have that be your working directory.
 
 # Questions
+Q1: What are some examples of hardware components in a computer?
 
-Q1: (Multiple choice question) Which of the following is the OS tasked with?
+---
+Q2: Can you give examples of software applications you use on a daily basis?
+
+---
+Q3: (Multiple choice question) Which of the following is the OS tasked with?
 
 1. Memory Management: Manages computer memory, allocating and tracking memory resources for programs, ensuring efficient utilization and preventing conflicts between different processes.
 
@@ -185,3 +179,4 @@ The purpose of the OS is to abstract all the complex interactions between hardwa
 </details>
 
 ---
+Q4: What is the purpose of file naming conventions?

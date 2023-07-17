@@ -44,7 +44,7 @@ And each one of these commands will likely call many other commands that take ca
 - *displayMap*
 - *displayScoreboard*
 
-Clearly there is a lot going on beneath the GUI. And it is exactly at this low level where the terminal resides and operates. The terminal provides direct access to the underlying command-line interface (CLI) of the OS, skipping the graphical user interface altogether.
+Clearly there is a lot going on beneath the GUI. And it is exactly at this low level where the terminal resides and operates. The terminal provides direct access to the underlying command-line interface (CLI) of the OS, skipping the graphical user interface altogether. Remember, everything that can be done using the GUI can also be done in the CLI, but not everything that can be done in the CLI can be done in the GUI.
 
 While the visual aspect is vital to any good game, it may not be as crucial in other industries. Technologies that are not directly linked to the general public oftentimes do not have a GUI. Why? Because it's extra work, and IT professionals are expected to be more technically inclined, so the idea is that they are capable of learning the terminal. And because all IT professionals are assumed to know how to use the terminal, they often do. You will not go very far in most fields related to computers if you do not know how to use the terminal.
 
@@ -67,10 +67,18 @@ The terminal used to be an entire device on its own (a display with a keyboard),
 ## Unix
 It is so common to hear or read "Unix" in thn the field of programming, the Unix OS will sometimes be mentioned. 
 
+Add link to more history reading
+
 ## Shell
 talk about shell,  commonly used shells bash csh, zsh, powershell
 
 ## File system navigation
+
+The working directory is the current directory or folder in which a user is actively working within a file system. It is the default location where a command or program will execute and search for files unless a specific file path is provided.
+
+The working directory is important when working with files because it determines the context in which file operations take place. When you create, modify, or access a file without specifying a specific path, the operating system assumes that the file is located within the working directory. This allows for relative file referencing, making it easier to work with files within a specific project or directory structure.
+
+The working directory helps maintain organization and streamline file management. It ensures that related files and resources are easily accessible and allows for the execution of commands or programs without explicitly specifying the full file path. By understanding and utilizing the concept of the working directory, users can navigate through the file system more efficiently and perform file operations with greater ease.
 
 ## File manipulation
 
@@ -140,6 +148,8 @@ Cannot directly push code from your working copy to the remote site. Similarly, 
 They say that Google is a programmer's best friend. With a few keywords and a click of a button, a world of knowledge opens up. Whether it's debugging an error, exploring new libraries, or discovering best practices, programmers can navigate the vast realm of knowledge through a **search engine**.
 
 ## Importance
+Efficiency, etc
+
 
 ## Fundamentals
 
@@ -149,5 +159,6 @@ Have you ever wondered where programmers code? On their computers, sure. But do 
 
 ## Importance
 
+history of vim emacs, why use that instead of google docs or notepadd++
 
 ## Fundamentals
