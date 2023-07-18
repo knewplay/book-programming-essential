@@ -44,13 +44,15 @@ And each one of these commands will likely call many other commands that take ca
 - *displayMap*
 - *displayScoreboard*
 
-Clearly there is a lot going on beneath the GUI. Just think about it.  What we see as "Start Game" is actually a long list of subprocesses. The general-public doesn't need to know the intricacies of starting a game, however as a programmer developing a game, it is essential to break things down into their smallest constituents! And it's the same story for any app with a GUI: the GUI is there for the client. Programmers and IT professionals stick to writing commands using text, because they have no choice.
+Clearly there is a lot going on beneath the GUI. Just think about it.  What we see as "Start Game" is actually a long list of subprocesses. While everyday users don't need to know all these intricate details, programmers working on games or other apps need to break things down into their smallest components. And that's where the terminal comes in.
 
-While GUIs simplify user interactions, they may not exist or may not be developed for certain specialized technologies or applications. Creating a GUI requires additional effort and is often deemed unnecessary when the target users are expected to possess technical knowledge. Hence, IT professionals are encouraged to master the terminal, as it provides unparalleled control and flexibility in diverse computer-related fields.
+The terminal operates at a more fundamental level, granting direct access to the underlying command-line interface (CLI) of the operating system. It's like a secret door that bypasses the graphical user interface altogether. You can do everything you do with a GUI using the terminal, but not everything you can do with the terminal is possible through a GUI. That's because the GUI is written based on the commands, and not all commands might be represented in the GUI.
 
-You will not go very far in most fields related to computers if you do not know how to use the terminal.
+That's why programmers and IT professionals rely on the terminal. It's a powerhouse of control and functionality. See, while GUIs simplify user interactions, they may not exist or may not be developed for certain specialized technologies or applications. Nobody bothers to create the GUI-equivalent of tools used by programmers and IT professional. Why? Well, developing a GUI takes extra effort, and lots of code has to be written in order to erect a GUI-equivalent of a program. And the assumption is that since tech-savvy folks like programmers are capable of using the terminal, then they can just use the terminal. No need for a GUI-equivalent.
 
-And it is exactly at this low level where the terminal resides and operates. The terminal provides direct access to the underlying command-line interface (CLI) of the OS, skipping the graphical user interface altogether. Remember, everything that can be done using the GUI can also be done in the CLI, but not everything that can be done in the CLI can be done in the GUI.
+This explanation does make it seem like we're forced to use the terminal because there is no GUI-equivalent, but the truth is that the CLI offers way more functionality than most of its GUI counterparts.
+
+The terminal gives you direct access to the building blocks of a computer's operations. You can run powerful commands, automate tasks, manage files, configure software, and troubleshoot like a pro. By diving into the terminal, programmers and IT professionals gain a deeper understanding of computers and unlock their full potential in the world of technology.
 
 ## Some concrete examples
 
