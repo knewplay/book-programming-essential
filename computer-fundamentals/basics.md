@@ -17,6 +17,7 @@ Is your smartphone considered a computer? How about the components inside your o
 
 [Computer Fundamentals](#computer-fundamentals)
 
+[Questions](#questions)
 
 # A Brief History of Computing
 
@@ -138,66 +139,55 @@ Consider everyday "smart" devices that may not look like computers but have feat
 
 # Questions
 
-Q1: Why isn't the Jacquard loom considered to be the first computer? 
-<details><summary>Hint</summary>
-The Jacquard loom takes input in the form of punch cards, it gives an output in the form of beautiful designs on a piece of cloth. However, does it perform any calculations in order to get the output from the input? Is it capable of storing data? What is the "data"? Is there any "data"?
-</details>
+- Why isn't the Jacquard loom considered to be the first computer? 
+    <details><summary>Hint</summary>
+    The Jacquard loom takes input in the form of punch cards, it gives an output in the form of beautiful designs on a piece of cloth. However, does it perform any calculations in order to get the output from the input? Is it capable of storing data? What is the "data"? Is there any "data"?
+    </details>
 
----
+- Does a computer absolutely need to have a keyboard and a mouse in order for it to be a computer?
 
-Q2: Does a computer absolutely need to have a keyboard and a mouse in order for it to be a computer?
+    <details><summary>Hint</summary>
+    The keyboard and the mouse are devices used for input. Having input for a device is essential for it to be a computer, however is a keyboard and a mouse the only kind of input that a computer can take? What else could it possibly use as input? What about a touchpad, or a touchscreen, or voice commands?
+    </details>
 
-<details><summary>Hint</summary>
-The keyboard and the mouse are devices used for input. Having input for a device is essential for it to be a computer, however is a keyboard and a mouse the only kind of input that a computer can take? What else could it possibly use as input? What about a touchpad, or a touchscreen, or voice commands?
-</details>
+- In a parallel universe, if a mouse was used as both an input and an output to a laptop, what would that look like? Think of possible scenarios. 
 
----
+    Note: this is a creative exercise. Do not think logically and ask "why would anyone do this?". It doesn't need to make practical sense.
 
-Q3: In a parallel universe, if a mouse was used as both an input and an output to a laptop, what would that look like? Think of possible scenarios. 
+    <details><summary>Possible answer #1</summary>
+    The user moves their mouse onto a button on the screen, left clicks the button, lets go of the mouse, and the computer physically moves the mouse to another location, based on some sort of rule/algorithm.
+    </details>
 
-Note: this is a creative exercise. Do not think logically and ask "why would anyone do this?". It doesn't need to make practical sense.
+    <details><summary>Possible answer #2</summary>
+    The user has a calculator program on the screen. The user left clicks on one of the buttons with a number on it, and the mouse starts to physically right click (you can see it moving) the number of times that is shown on the button clicked. So if the user left-clicks on number 5, then the mouse will right-click 5 times.
+    </details>
 
-<details><summary>Possible answer #1</summary>
-The user moves their mouse onto a button on the screen, left clicks the button, lets go of the mouse, and the computer physically moves the mouse to another location, based on some sort of rule/algorithm.
-</details>
+    <details><summary>Possible answer #3</summary>
+    The mouse will have a built-in speaker inside of it. So when the user clicks on a button with the number 5, the mouse will say "five".
+    </details>
 
-<details><summary>Possible answer #2</summary>
-The user has a calculator program on the screen. The user left clicks on one of the buttons with a number on it, and the mouse starts to physically right click (you can see it moving) the number of times that is shown on the button clicked. So if the user left-clicks on number 5, then the mouse will right-click 5 times.
-</details>
+    <details><summary>Possible answer #4</summary>
+    The mouse will have a microphone inside of it. So when the user clicks on the mouse, the mouse will listen to the user's command, and will execute it. For example, the user clicks on the mouse and says "move left by 1 centimeter", and the mouse does exactly that, physically moving left by 1 cm.
+    </details>
 
-<details><summary>Possible answer #3</summary>
-The mouse will have a built-in speaker inside of it. So when the user clicks on a button with the number 5, the mouse will say "five".
-</details>
+- Consider a hypothetical device called the "Sound Processor." This device is designed to take in sound and produce processed sound based on which button the user presses (modify pitch, tone, and other audio transformations).  
 
-<details><summary>Possible answer #4</summary>
-The mouse will have a microphone inside of it. So when the user clicks on the mouse, the mouse will listen to the user's command, and will execute it. For example, the user clicks on the mouse and says "move left by 1 centimeter", and the mouse does exactly that, physically moving left by 1 cm.
-</details>
+    Can this device be considered a computer? Did you have to make any assumptions about this device?
 
+    <details><summary>Hint</summary>
+    This device would not fall under the category of a general-purpose computer. However, does it do any computations? How is sound processed? Just because a device isn't able to solve complex, general problems, doesn't mean that it is not a computer in the looser sense of the word. Which sense of the word are we talking about here?
+    </details>
 
----
+- Why isn't a basic calculator considered a computer?
 
-Q4: Consider a hypothetical device called the "Sound Processor." This device is designed to take in sound and produce processed sound based on which button the user presses (modify pitch, tone, and other audio transformations).  
+    <details><summary>Hint</summary>
+    Computers are known for their programmability, which allows users to define and execute custom instructions or programs. A basic calculator typically lacks the ability to create and run custom programs. It is designed with fixed functionality and predefined operations, limiting its versatility and adaptability.
 
-Can this device be considered a computer? Did you have to make any assumptions about this device?
+    Consider the following: you can't turn a calculator into a laptop computer, but you can run a calculator program inside of your laptop computer. Your laptop has the capability of running various programs, including calculator programs.
+    </details>
 
-<details><summary>Hint</summary>
-This device would not fall under the category of a general-purpose computer. However, does it do any computations? How is sound processed? Just because a device isn't able to solve complex, general problems, doesn't mean that it is not a computer in the looser sense of the word. Which sense of the word are we talking about here?
-</details>
-
----
-
-Q5: Why isn't a basic calculator considered a computer?
-
-<details><summary>Hint</summary>
-Computers are known for their programmability, which allows users to define and execute custom instructions or programs. A basic calculator typically lacks the ability to create and run custom programs. It is designed with fixed functionality and predefined operations, limiting its versatility and adaptability.
-
-Consider the following: you can't turn a calculator into a laptop computer, but you can run a calculator program inside of your laptop computer. Your laptop has the capability of running various programs, including calculator programs.
-</details>
-
----
-
-Q6: What is the simplest, non-general-purpose computer you can imagine? What components would it have?
-<details><summary>Hint</summary>
-Would this device have a microphone to take in sound as input when the user presses a button? Would it take a picture with a camera every 1 second? How would it process the input, what would it store, and in what form would the output be?
-</details>
+- What is the simplest, non-general-purpose computer you can imagine? What components would it have?
+    <details><summary>Hint</summary>
+    Would this device have a microphone to take in sound as input when the user presses a button? Would it take a picture with a camera every 1 second? How would it process the input, what would it store, and in what form would the output be?
+    </details>
 
