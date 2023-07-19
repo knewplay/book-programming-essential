@@ -71,7 +71,9 @@ So whatever your interests, the terminal is crucial tool for programmers and IT 
 The terminal used to be an entire device on its own (a display with a keyboard), separate from the mainframe computer. Today, we use software called emulators that replicate the functionality of the old-school terminals. But although we technically use terminal-emulators, we simply call the program a terminal.
 
 ## Unix
-It is so common to hear or read "Unix" in thn the field of programming, the Unix OS will sometimes be mentioned. 
+It is so common to come across the word "Unix" when talkig about computers, and many people new to the computer scene have not personally come across it.
+
+Unix, which was developed in the 1970s, was one of the first operating systems to introduce the concept of a command-line interface and provided a foundation for subsequent systems like Linux.
 
 Add link to more history reading
 
