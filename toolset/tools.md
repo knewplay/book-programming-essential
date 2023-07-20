@@ -3,8 +3,7 @@ title: "Toolset"
 date: "31-07-2023"
 author: "Andrei Guevorkian"
 ---
-At the end of the day, programmers are creators. They create software. And creators 
-
+Just as a master carpenter skillfully wields their tools to shape exquisite furniture or a painter expertly selects brushes and colors to create captivating artwork, programmers harness a collection of specialized tools to craft intricate software systems. Let's explore the essential tools that empower programmers to shape the digital world.
 
 # Table of Contents
 
@@ -71,14 +70,15 @@ So whatever your interests, the terminal is crucial tool for programmers and IT 
 The terminal used to be an entire device on its own (a display with a keyboard), separate from the mainframe computer. Today, we use software called emulators that replicate the functionality of the old-school terminals. But although we technically use terminal-emulators, we simply call the program a terminal.
 
 ## Unix
-It is so common to come across the word "Unix" when talkig about computers, and many people new to the computer scene have not personally come across it.
+If you continue your journey with computers, you will undoubtebly come across the term "Unix". Unix, which was developed in the 1970s, was one of the first operating systems to introduce the concept of a command-line interface and provided a foundation for subsequent systems like Linux.
 
-Unix, which was developed in the 1970s, was one of the first operating systems to introduce the concept of a command-line interface and provided a foundation for subsequent systems like Linux.
+We'll mention Linux soon, but 
 
 Add link to more history reading
 
 ## Shell
 talk about shell,  commonly used shells bash csh, zsh, powershell
+link with unix
 
 ## File system navigation
 
@@ -88,9 +88,15 @@ The working directory is important when working with files because it determines
 
 The working directory helps maintain organization and streamline file management. It ensures that related files and resources are easily accessible and allows for the execution of commands or programs without explicitly specifying the full file path. By understanding and utilizing the concept of the working directory, users can navigate through the file system more efficiently and perform file operations with greater ease.
 
+talk about pwd, cd, ls other
+
 ## File manipulation
 
+talk about creating a file, creating a folder, delete a file or folder, copy a file, move a file, rename a file
+
 ## Text editing
+
+display contents of a file (cat), add text to a file,
 
 ## I/O redirection
 - mention pipe (O > I) I/O redirection
@@ -100,7 +106,7 @@ Using pipes to chain commands together
 ## Additional Utilities
 Exploring additional useful terminal tools (e.g., tar, zip, ssh)
 Installing and managing software through package managers (e.g., apt, Homebrew)
-
+display user manual of a command
 
 
 
