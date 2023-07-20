@@ -67,18 +67,27 @@ So whatever your interests, the terminal is crucial tool for programmers and IT 
 
 
 ## Fundamentals
-The terminal used to be an entire device on its own (a display with a keyboard), separate from the mainframe computer. Today, we use software called emulators that replicate the functionality of the old-school terminals. But although we technically use terminal-emulators, we simply call the program a terminal.
+
+In this section, we will lay the groundwork for a solid foundation by delving into the essential components of the terminal.
+
+## Terminal-emulator
+The terminal used to be an entire device on its own (a display with a keyboard), separate from the mainframe computer. Today, we use software called emulators that replicate the functionality of old-school terminals. But although we technically use terminal-emulators, we simply call the program a terminal.
 
 ## Unix
-If you continue your journey with computers, you will undoubtebly come across the term "Unix". Unix, which was developed in the 1970s, was one of the first operating systems to introduce the concept of a command-line interface and provided a foundation for subsequent systems like Linux.
+As you delve deeper into the world of computers, you will inevitably encounter the term "Unix." Developed in the 1970s, Unix was a pioneering operating system that revolutionized the computing landscape. Unix played a significant role in popularizing the use of text-based commands as a primary means of interacting with a computer, and it served as the foundation for many subsequent operating systems, including the widely used Linux.
 
-We'll mention Linux soon, but 
+> To learn more about the history of Unix, read [The Story Behind the Development of the Unix Operating System](https://www.opensourceforu.com/2019/06/the-story-behind-the-development-of-the-unix-operating-system/).
 
-Add link to more history reading
+## Linux
+
+Linux is a Unix-like operating system that is widely used today. 
 
 ## Shell
 talk about shell,  commonly used shells bash csh, zsh, powershell
 link with unix
+
+## Kernel
+
 
 ## File system navigation
 
