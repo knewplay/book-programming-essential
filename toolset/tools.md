@@ -80,14 +80,16 @@ As you delve deeper into the world of computers, you will inevitably encounter t
 
 ## Linux
 
-Linux is a Unix-like operating system that is widely used today. 
+Linux is a Unix-inspired, Unix-like operating system widely used today. Linux also happens to be open-source, meaning that its software is freely available online, allowing users to view, modify, and distribute its source code.
+
+
 
 ## Shell
 talk about shell,  commonly used shells bash csh, zsh, powershell
 link with unix
 
 ## Kernel
-
+I mentioned previously that the operating system sits between the hardware components of a computer and the software applications.
 
 ## File system navigation
 
