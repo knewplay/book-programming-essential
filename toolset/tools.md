@@ -53,7 +53,7 @@ This explanation does make it seem like we're forced to use the terminal because
 
 The terminal gives you direct access to the building blocks of a computer's operations. You can run powerful commands, automate tasks, manage files, configure software, and troubleshoot like a pro. By diving into the terminal, programmers and IT professionals gain a deeper understanding of computers and unlock their full potential in the world of technology.
 
-## Some concrete examples
+### Some concrete examples
 
 Imagine you are building a website and want to configure the server settings for optimal performance. The terminal becomes invaluable in this scenario. By using specific commands, you can access the server through the terminal and make necessary configurations to improve the website's speed, security, and functionality.
 
@@ -70,25 +70,25 @@ So whatever your interests, the terminal is crucial tool for programmers and IT 
 
 In this section, we will lay the groundwork for a solid foundation by delving into the essential components of the terminal.
 
-## Terminal-emulator
+### Terminal-emulator
 The terminal used to be an entire device on its own (a display with a keyboard), separate from the mainframe computer. Today, we use software called emulators that replicate the functionality of old-school terminals. But although we technically use terminal-emulators, we simply call the program a terminal.
 
-## Unix
+### Unix
 As you delve deeper into the world of computers, you will inevitably encounter the term "Unix." Developed in the 1970s, Unix was a pioneering operating system that revolutionized the computing landscape. Unix played a significant role in popularizing the use of text-based commands as a primary means of interacting with a computer, and it served as the foundation for many subsequent operating systems, including the widely used Linux.
 
 > To learn more about the history of Unix, read [The Story Behind the Development of the Unix Operating System](https://www.opensourceforu.com/2019/06/the-story-behind-the-development-of-the-unix-operating-system/).
 
-## Linux
+### Linux
 Linux is a Unix-inspired, Unix-like operating system widely used today. Linux also happens to be open-source, meaning that its software is freely available online, allowing users to view, modify, and distribute its source code.
 
-## Kernel
+### Kernel
 In the Computer Fundamentals, Software and Hardware section, I mentioned that the operating system is what sits between the hardware components of a computer and the software applications.
 
 In general this is true, however the operating system is large and is made of many components. One of its components is called the kernel.
 
 Just like it's definition in english, the kernel is the core of the operating system. Windows has one, macOS has one, and so too does Linux. Everything we previously said the OS does is actually done specifically by the kernel.
 
-## Shell
+### Shell
 As it turns out, we can have direct access to the kernel of an operating system. And that is using a shell.
 
 A shell is simply an interface between the kernel and the user. 
@@ -96,25 +96,25 @@ A shell is simply an interface between the kernel and the user.
 ... commonly used shells bash csh, zsh, powershell
 link with unix
 
-## File system navigation
+### File system navigation
 The working directory is important when working with files because it determines the context in which file operations take place. When you create, modify, or access a file without specifying a specific path, the operating system assumes that the file is located within the working directory. This allows for relative file referencing, making it easier to work with files within a specific project or directory structure.
 
 talk about pwd, cd, ls other
 
-## File manipulation
+### File manipulation
 
 talk about creating a file, creating a folder, delete a file or folder, copy a file, move a file, rename a file
 
-## Text editing
+### Text editing
 
 display contents of a file (cat), add text to a file,
 
-## I/O redirection
+### I/O redirection
 - mention pipe (O > I) I/O redirection
 Redirecting input and output streams
 Using pipes to chain commands together
 
-## Additional Utilities
+### Additional Utilities
 Exploring additional useful terminal tools (e.g., tar, zip, ssh)
 Installing and managing software through package managers (e.g., apt, Homebrew)
 display user manual of a command
