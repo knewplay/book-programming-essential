@@ -1,6 +1,6 @@
 ---
 title: "Toolset"
-date: "31-07-2023"
+date: "2023-07-31"
 author: "Andrei Guevorkian"
 ---
 At the end of the day, programmers are creators. They create software. And creators 
