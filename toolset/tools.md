@@ -97,12 +97,7 @@ A shell is simply an interface between the kernel and the user.
 link with unix
 
 ## File system navigation
-
-The working directory is the current directory or folder in which a user is actively working within a file system. It is the default location where a command or program will execute and search for files unless a specific file path is provided.
-
 The working directory is important when working with files because it determines the context in which file operations take place. When you create, modify, or access a file without specifying a specific path, the operating system assumes that the file is located within the working directory. This allows for relative file referencing, making it easier to work with files within a specific project or directory structure.
-
-The working directory helps maintain organization and streamline file management. It ensures that related files and resources are easily accessible and allows for the execution of commands or programs without explicitly specifying the full file path. By understanding and utilizing the concept of the working directory, users can navigate through the file system more efficiently and perform file operations with greater ease.
 
 talk about pwd, cd, ls other
 
@@ -124,36 +119,6 @@ Exploring additional useful terminal tools (e.g., tar, zip, ssh)
 Installing and managing software through package managers (e.g., apt, Homebrew)
 display user manual of a command
 
-
-
-
-what is the relation between unix/linux and the temrinal
-ChatGPT
-Unix and Linux are operating systems that utilize a command-line interface known as the terminal. The terminal, also referred to as a shell or command-line interface (CLI), is a program that allows users to interact with the operating system by typing commands. Unix and Linux systems typically provide multiple terminal applications, such as Bash, Zsh, or Csh, each with its own features and functionalities.
-
-The terminal provides a text-based environment where users can execute commands, navigate the file system, manage processes, and perform various system operations. It serves as an alternative to graphical user interfaces (GUIs) commonly found in desktop environments, allowing users to perform tasks efficiently through typed commands.
-
-Unix, which was developed in the 1970s, was one of the first operating systems to introduce the concept of a command-line interface and provided a foundation for subsequent systems like Linux. Linux, created in the early 1990s, was developed as a free and open-source operating system that follows the design principles of Unix. It adopted many of Unix's concepts, including the use of the terminal as a primary means of interacting with the system.
-
-In the Unix and Linux environments, the terminal plays a crucial role in system administration, software development, and general user tasks. It offers powerful capabilities for automation, scripting, and remote access, making it a preferred choice for advanced users and professionals.
-
-While Unix and Linux systems often have graphical interfaces available, the terminal remains an essential tool for tasks that require precise control, scripting, or operating in server environments without a GUI. Many system administration tasks, programming workflows, and software development practices rely heavily on the use of the terminal.
-
-In summary, Unix and Linux operating systems provide the foundation for the terminal, which is a command-line interface allowing users to interact with the system through typed commands. The terminal is a powerful tool for system administration, development, and automation in Unix and Linux environments.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Git
 Imagine investing months, or even years, in developing a remarkable app, only to one day lose your laptop, and thus, your work. Despite such potential setbacks, how do thousands of programmers still manage to collaborate on a single project, and even stay organized? Now that you know about the terminal, we can talk about the wonderful tool called **Git**.
 
@@ -170,9 +135,30 @@ While this technique might keep you organized, once someone joins the project, w
 ### Version Control System (VCS)
 Version control is the practice of tracking and managing changes, usually to software code.
 
+### Repository
 
----
+### Committing changes
+
+Concept of a commit
+Staging and committing changes
+Importance of descriptive commit messages
+
 Cannot directly push code from your working copy to the remote site. Similarly, you cannot directly push your code from the staging area to the remote site. The remote site is only connected to the local repository.
+
+
+### Branching and Merging
+
+Introduction to branches
+Creating, switching, and deleting branches
+Merging changes between branches
+
+### Collaborating with Git
+
+Working with remote repositories
+Cloning repositories
+Pushing and pulling changes
+
+### Resolving conflicts
 
 # Search Engine
 They say that Google is a programmer's best friend. With a few keywords and a click of a button, a world of knowledge opens up. Whether it's debugging an error, exploring new libraries, or discovering best practices, programmers can navigate the vast realm of knowledge through a **search engine**.

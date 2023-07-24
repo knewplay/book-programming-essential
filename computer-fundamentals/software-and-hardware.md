@@ -155,7 +155,7 @@ Locker > Physics > Quizzes
 
 At which point you will have direct access to Quiz 1.
 
-The working directory is the folder which you are "in" and have opened in front of you; this is the folder whose subfolders and files you can directly access. For instance, in order to access Quiz 1, the working directory had to be the Quizzes folder. In order to view all the different courses you are taking, you must go to the Locker "folder" and have that be your working directory.
+The working directory is the folder which you are "in" and have opened in front of you; this is the folder whose subfolders and files you can directly access. For instance, in order to access Quiz 1, the working directory has to be the Quizzes folder. In order to view all the different courses you are taking, you must go to the Locker "folder" and have that be your working directory.
 
 # Questions
 - What are some examples of hardware components in a computer?
