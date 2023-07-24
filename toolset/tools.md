@@ -79,17 +79,22 @@ As you delve deeper into the world of computers, you will inevitably encounter t
 > To learn more about the history of Unix, read [The Story Behind the Development of the Unix Operating System](https://www.opensourceforu.com/2019/06/the-story-behind-the-development-of-the-unix-operating-system/).
 
 ## Linux
-
 Linux is a Unix-inspired, Unix-like operating system widely used today. Linux also happens to be open-source, meaning that its software is freely available online, allowing users to view, modify, and distribute its source code.
 
+## Kernel
+In the Computer Fundamentals, Software and Hardware section, I mentioned that the operating system is what sits between the hardware components of a computer and the software applications.
 
+In general this is true, however the operating system is large and is made of many components. One of its components is called the kernel.
+
+Just like it's definition in english, the kernel is the core of the operating system. Windows has one, macOS has one, and so too does Linux. Everything we previously said the OS does is actually done specifically by the kernel.
 
 ## Shell
-talk about shell,  commonly used shells bash csh, zsh, powershell
-link with unix
+As it turns out, we can have direct access to the kernel of an operating system. And that is using a shell.
 
-## Kernel
-I mentioned previously that the operating system sits between the hardware components of a computer and the software applications.
+A shell is simply an interface between the kernel and the user. 
+
+... commonly used shells bash csh, zsh, powershell
+link with unix
 
 ## File system navigation
 
