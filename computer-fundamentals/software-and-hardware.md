@@ -157,6 +157,28 @@ At which point you will have direct access to Quiz 1.
 
 The working directory is the folder which you are "in" and have opened in front of you; this is the folder whose subfolders and files you can directly access. For instance, in order to access Quiz 1, the working directory has to be the Quizzes folder. In order to view all the different courses you are taking, you must go to the Locker "folder" and have that be your working directory.
 
+When it comes to computers, the working directory is the current directory or folder in which a user is actively working within a file system. It is the default location where a command or program will execute and search for files unless a specific file path is provided.
+
+Going back to the analogy, say you are taking French class for the first time. So you want to create a folder labeled "French". You won't be under
+
+```
+English > quizzes 
+```
+
+to do so, right? You will go to
+
+```
+Locker >
+```
+
+and add the French folder there. So in computer terms, you had to make
+
+```
+Locker >
+```
+
+your working directory in order to add the French folder in the right location. And that's what a working directory is: a folder in which you are "working" in.
+
 # Questions
 - What are some examples of hardware components in a computer?
 
