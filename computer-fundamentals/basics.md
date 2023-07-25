@@ -1,6 +1,6 @@
 ---
-title: "Computer Fundamentals: History and Fundamentals"
-date: "07-22-2023"
+title: "Computer Fundamentals: Basics"
+date: "2023-06-22"
 author: "Andrei Guevorkian"
 ---
 Is your smartphone considered a computer? How about the components inside your oven that allow you to connect to it via an app? What are the minimum requirements for something to be considered a computer? That's what we'll explore in this article.
