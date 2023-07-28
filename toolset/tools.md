@@ -90,20 +90,27 @@ In the Computer Fundamentals, Software and Hardware section, I mentioned that th
 
 In general this is true, however the operating system is large and is made of many components. One of its components is called the kernel.
 
-Just like it's definition in english, the kernel is the core of the operating system. Windows has one, macOS has one, and so too does Linux. Everything we previously said the OS does is actually done specifically by the kernel.
+Just like it's definition in english, the kernel is the core of the operating system. Windows has one, macOS has one, and so too does Linux. Everything previously said that the OS does is actually done specifically by the kernel.
 
 ### Shell
-As it turns out, we can have direct access to the kernel of an operating system. And that is using a shell.
+As it turns out, we can have direct access to the kernel of an operating system. And that is thanks to the outermost layer of the operating system, known as the shell.
 
-A shell is simply an interface between the kernel and the user. 
+Ther shell takes in commands, and interprets them. For that reason, it can be called CLI, or "command-line interpreter" (the typical definition of CLI being "command-line interface"). The shell is a program that takes your typed commands and translates them into instructions that the operating system can understand and execute. It is the intermediary between the user and the operating system.
 
-... commonly used shells bash csh, zsh, powershell
-link with unix
+But wait, wasn't that the role of the terminal?
+
+Not exactly. The terminal is simply an interface; a place where the user can write their commands. The shell is what reads the commands you enter in the terminal, processes them, and communicates with the kernel to carry out the requested actions.
+
+When you enter a command in the shell, the shell takes that command and interacts with the kernel to execute it. The kernel then performs the necessary tasks, such as managing memory, accessing files, or running processes, based on the instructions provided by the shell.
+
+[//]: # "can have an image here such as: http://coewww.rutgers.edu/www1/linuxclass2008/lessons/lesson1/sec_9.html"
+
+[//]: # "mention bash csh zsh powershell"
 
 ### File system navigation
 The working directory is important when working with files because it determines the context in which file operations take place. When you create, modify, or access a file without specifying a specific path, the operating system assumes that the file is located within the working directory. This allows for relative file referencing, making it easier to work with files within a specific project or directory structure.
 
-talk about pwd, cd, ls other
+[//]: # "talk about pwd, cd, ls other"
 
 ### File manipulation
 
