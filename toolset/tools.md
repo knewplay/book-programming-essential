@@ -85,6 +85,9 @@ You'll be surprised to learn that Linux is used everywhere. While the average co
 
 I mention Linux here because you will likely encounter it if you continue working with technology, and Linux relies heavily on the use of text-based commands executed through the terminal.
 
+> Fun fact: Linux is used to power 96.3% of the world's top web servers.
+[Source](https://www.enterpriseappstoday.com/stats/linux-statistics.html#:~:text=Linux%20is%20used%20to%20power,Linus%20operating%20system%20is%20run)
+
 ### Kernel
 In the Computer Fundamentals, Software and Hardware section, I mentioned that the operating system is what sits between the hardware components of a computer and the software applications.
 
@@ -95,17 +98,19 @@ Just like it's definition in english, the kernel is the core of the operating sy
 ### Shell
 As it turns out, we can have direct access to the kernel of an operating system. And that is thanks to the outermost layer of the operating system, known as the shell.
 
-Ther shell takes in commands, and interprets them. For that reason, it can be called CLI, or "command-line interpreter" (the typical definition of CLI being "command-line interface"). The shell is a program that takes your typed commands and translates them into instructions that the operating system can understand and execute. It is the intermediary between the user and the operating system.
+Ther shell takes in commands, and interprets them. For that reason, it can be called a "command-line interpreter", or "command language interpreter" (not to be confused with the typical abbreviation of CLI being "command-line interface", which refers to the terminal). The shell is a program that takes your typed commands and translates them into instructions that the operating system can understand and execute. It sits between the user and the kernel of the operating system.
 
 But wait, wasn't that the role of the terminal?
 
-Not exactly. The terminal is simply an interface; a place where the user can write their commands. The shell is what reads the commands you enter in the terminal, processes them, and communicates with the kernel to carry out the requested actions.
+Not exactly. The terminal also sits between the user and the operating system, however it is simply an interface; a place where the user can write their commands. The terminal accepts input from the keyboard, and displays output onto the screen. The terminal itself does not know what to do with the provided input. And that is where the shell comes in.
 
-When you enter a command in the shell, the shell takes that command and interacts with the kernel to execute it. The kernel then performs the necessary tasks, such as managing memory, accessing files, or running processes, based on the instructions provided by the shell.
+When you type something into the terminal and press enter, the terminal sends what you wrote to the shell. The shell reads the commands you enter in the terminal, processes them, and communicates with the kernel to carry out the requested actions. The kernel then performs the necessary tasks, such as managing memory, accessing files, or running processes, based on the instructions provided by the shell.
+
+The terminal and the shell are often used interchangeably, so don't get too caught up on the definitions when reading about it online.
 
 [//]: # "can have an image here such as: http://coewww.rutgers.edu/www1/linuxclass2008/lessons/lesson1/sec_9.html"
 
-[//]: # "mention bash csh zsh powershell"
+Since the shell is just a program that interprets commands, there have been many variations created. The default shell on most Linux and on older macOS systems is called the GNU Bash, or just Bash. Newer macOS users use Zsh ("Z shell"), and Windows machines use the Command shell and PowerShell. 
 
 ### File system navigation
 The working directory is important when working with files because it determines the context in which file operations take place. When you create, modify, or access a file without specifying a specific path, the operating system assumes that the file is located within the working directory. This allows for relative file referencing, making it easier to work with files within a specific project or directory structure.
