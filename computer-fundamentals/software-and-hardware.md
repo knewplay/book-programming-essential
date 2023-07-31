@@ -127,6 +127,8 @@ The computer's file system works in the exact same way. Computers always have a 
 
 Within the root folder, you will have subfolders. To these subfolders, the root folder is called the "parent folder", or "parent directory".
 
+[//]: # "potentially talk about relative vs absolute path"
+
 ## Working Directory
 
 Let's go back to the school analogy. Say you have the following file path to get to the Physics Quiz 1.

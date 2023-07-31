@@ -110,20 +110,24 @@ The terminal and the shell are often used interchangeably, so don't get too caug
 
 [//]: # "can have an image here such as: http://coewww.rutgers.edu/www1/linuxclass2008/lessons/lesson1/sec_9.html"
 
-Since the shell is just a program that interprets commands, there have been many variations created. The default shell on most Linux and on older macOS systems is called the GNU Bash, or just Bash. Newer macOS users use Zsh ("Z shell"), and Windows machines use the Command shell and PowerShell. 
+Since the shell is just a program that interprets commands, there have been many variations created. The default shell on most Linux and on older macOS systems is called the GNU Bash, or just Bash. Newer macOS users use Zsh ("Z shell"), and Windows machines use the Command shell (also known as "cmd") and PowerShell.
 
 ### File system navigation
-The working directory is important when working with files because it determines the context in which file operations take place. When you create, modify, or access a file without specifying a specific path, the operating system assumes that the file is located within the working directory. This allows for relative file referencing, making it easier to work with files within a specific project or directory structure.
+The working directory is important when working with files because it determines the context in which file operations take place. When you create, modify, or access a file without specifying a specific file path, the operating system assumes that the file is located within the working directory.
 
-[//]: # "talk about pwd, cd, ls other"
+For macOS and Linux users, you can view the "Basic Navigation" of [this resource for specific commands](https://www.pluralsight.com/guides/beginner-linux-navigation-manual).
+
+For Windows users, you can view [this resource for specific commands](https://riptutorial.com/cmd/example/8646/navigating-in-cmd).
 
 ### File manipulation
 
+For macOS and Linux users, you can view the "File Manipulation" of [the previous resource for specific commands](https://www.pluralsight.com/guides/beginner-linux-navigation-manual).
+
 talk about creating a file, creating a folder, delete a file or folder, copy a file, move a file, rename a file
 
-### Text editing
+### Working with text
 
-display contents of a file (cat), add text to a file,
+For macOS and Linux users, you can view the "Working with Content" of [the previous resource for specific commands](https://www.pluralsight.com/guides/beginner-linux-navigation-manual).
 
 ### I/O redirection
 - mention pipe (O > I) I/O redirection
