@@ -155,9 +155,15 @@ There is however also the concept of a "relative path". This brings in the conce
 To understand the difference, check out [this article](https://www.redhat.com/sysadmin/linux-path-absolute-relative).
 
 ### I/O redirection
-- mention pipe (O > I) I/O redirection
-Redirecting input and output streams
-Using pipes to chain commands together
+When we enter a command into the terminal, we use the keyboard to do so. Hence, the input is text from the keyboard (a.k.a. standard input). Once the command gets executed, we (may) receive an output in the form of text on the terminal (a.k.a. standard output). Commands that do this are ***ls***, ***cat file-name.txt***, ***pwd***, so on and so forth. 
+
+In addition to receiving output on the terminal, we can use I/O redirection to manipulate how commands process data. Let's say you want to take the output of one command and use it as input for another command. This is where pipes come into play. Pipes are represented by the | symbol and allow us to connect multiple commands together, creating a powerful chain of actions.
+
+[//]: # "have image of two functions, output of one going in as input to the other"
+
+See examples of how to use pipes [in this article](https://www.computernetworkingnotes.com/linux-tutorials/pipes-in-linux-explained.html).
+
+It is also possible to redirect an output into a file rather than onto the terminal using the > operator. Learn more about it [in this article](https://learning.lpi.org/en/learning-materials/010-160/3/3.2/3.2_01/#:~:text=To%20redirect%20standard%20output%20to,will%20overwrite%20the%20existing%20file.). 
 
 ### Additional Utilities
 Exploring additional useful terminal tools (e.g., tar, zip, ssh)
