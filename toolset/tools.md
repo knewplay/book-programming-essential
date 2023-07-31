@@ -213,7 +213,8 @@ Pushing and pulling changes
 They say that Google is a programmer's best friend. With a few keywords and a click of a button, a world of knowledge opens up. Whether it's debugging an error, exploring new libraries, or discovering best practices, programmers can navigate the vast realm of knowledge through a **search engine**.
 
 ## Importance
-Efficiency, etc
+
+[//]: # "Efficiency, etc"
 
 
 ## Fundamentals
@@ -224,6 +225,6 @@ Have you ever wondered where programmers code? On their computers, sure. But do 
 
 ## Importance
 
-history of vim emacs, why use that instead of google docs or notepadd++
+[//]: # "history of vim emacs, why use that instead of google docs or notepadd++"
 
 ## Fundamentals
