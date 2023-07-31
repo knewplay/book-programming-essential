@@ -55,9 +55,9 @@ It would be ridiculous to ask software developers to write one program for Lenov
 
 To address these challenges and facilitate the seamless interaction between hardware and software, we rely on operating systems (OS). The operating system acts as an intermediary layer, bridging the gap between the hardware and software components of a computer system. In essense, an operating system is low-level software, meaning that it interacts more closely with the physical hardware components.
 
-The operating system abstracts the complexities of hardware, providing a uniform environment for software developers to create applications. It also provides regular everyday computer users with their familiar view of the computer: the GUI, or Graphical User Interface. When we turn on a Windows computer there is a style that we expect to see, and it's a similar story when we turn on a device running macOS, iOS, or Android.
+The operating system abstracts the complexities of hardware, providing a uniform environment for software developers to create applications. It also provides regular everyday computer users with their familiar view of the computer: the GUI (pronounced as "Gee-You-Eye"), or Graphical User Interface. When we turn on a Windows computer there is a style that we expect to see, and it's a similar story when we turn on a device running macOS, iOS, or Android.
 
-Whether it's creating a new folder on our computer, running two programs simultaneously, saving a text document on our computer, or pluging a brand new mouse into the usb, the operating system takes care of all this for us. Anything that the user shouldn't have to worry about is taken care of by the operating system. For example, when was the last time that you told the computer how to allocate its memory space, i.e. Microsoft Word should have memory slots #1 - #10000 and Adobe Photoshop should take memory slots #10001 - #21000? When was the last time you wondered where in storage you should save your essay file? Never. Just click "Save", and the operating system will take care of the rest.
+Whether it's creating a new folder on our computer, running two programs simultaneously, saving a text document on our computer, or pluging a brand new mouse into the usb port, the operating system takes care of all this for us. Anything that the user shouldn't have to worry about is taken care of by the operating system. For example, when was the last time that you told the computer how to allocate its memory space, e.g. Microsoft Word should have memory slots #1 - #10000 and Adobe Photoshop should take memory slots #10001 - #21000? When was the last time you wondered where in storage you should save your essay file? Never. Just click "Save", and the operating system will take care of the rest.
 
 All in all, operating systems play a vital role in harmonizing hardware and software components. They provide the necessary abstractions, services, and interfaces to ensure compatibility, efficient resource utilization, and seamless communication between different devices and software applications.
 
@@ -82,9 +82,9 @@ Something to realize is that there is no "right" and definitive way to organize 
 
 Let's now transition to the computer's way of organizing files and folders. This is a crucial aspect that the operating system takes care of, ensuring that information is not all jumbled together. Remember, all data is stored as a sequence of 1's and 0's, but the operating system creates a virtual boundary between one piece of data and the next.
 
-We have an idea of what a folder is in real life, and it's no different when it comes to computers; it's a way to separate and organize data. Sometimes, a folder is called a directory. Keep that in mind. Now what is a "file"?
+We have an idea of what a folder is in real life, and it's no different when it comes to computers; it's a way to separate and organize data. Often, a folder is called a directory. Do not forget that. Now what is a "file"?
 
-> The term "folder" is a relatively new term in the computer world, introduced with the advent of the GUI. Whenever you see "directory", in your head, replace it with the word.
+> The term directory was created first, and then the term "folder" was introduced with the advent of the GUI.
 
 In the realm of computers, a file resembles the items you'd find inside your school locker. It is a named collection of data stored on a computer's storage system. Just like your school book, notebook, or piece of paper, a computer file can hold various types of information, such as text, images, videos, audio, program instructions, or configuration data.
 
@@ -123,11 +123,9 @@ Locker > Science > Physics > Quizzes > Quiz 1.
 
 The computer's file system works in the exact same way. Computers always have a folder called the root folder which is like the locker in the school example: a folder (or box) that contains all other folders. The root folder is denoted by a forward slash (/) on Linux and macOS, while Windows uses the drive (HDD or SSD) letter followed by a colon (e.g., "C:").
 
-> Task: Try to find the root folder on your computer! See what it holds. Don't be afraid to Google if you don't know how!
+> Task: Try to find the root folder on your computer! See what it holds. Don't be afraid to google your questions!
 
 Within the root folder, you will have subfolders. To these subfolders, the root folder is called the "parent folder", or "parent directory".
-
-[//]: # "potentially talk about relative vs absolute path"
 
 ## Working Directory
 

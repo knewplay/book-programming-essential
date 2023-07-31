@@ -98,36 +98,61 @@ Just like it's definition in english, the kernel is the core of the operating sy
 ### Shell
 As it turns out, we can have direct access to the kernel of an operating system. And that is thanks to the outermost layer of the operating system, known as the shell.
 
-Ther shell takes in commands, and interprets them. For that reason, it can be called a "command-line interpreter", or "command language interpreter" (not to be confused with the typical abbreviation of CLI being "command-line interface", which refers to the terminal). The shell is a program that takes your typed commands and translates them into instructions that the operating system can understand and execute. It sits between the user and the kernel of the operating system.
+The shell takes in commands, and interprets them. For that reason, it can be called a "command-line interpreter", or "command language interpreter" (not to be confused with the typical abbreviation of CLI being "command-line interface", which refers to the terminal). The shell is a program that takes your typed commands and translates them into instructions that the kernel can understand and execute. It sits between the user and the kernel of the operating system.
 
 But wait, wasn't that the role of the terminal?
 
-Not exactly. The terminal also sits between the user and the operating system, however it is simply an interface; a place where the user can write their commands. The terminal accepts input from the keyboard, and displays output onto the screen. The terminal itself does not know what to do with the provided input. And that is where the shell comes in.
+Not exactly. The terminal does sit between the user and the operating system, however it is simply an interface; a place where the user can write their commands. The terminal only know how to accept input from the keyboard and display output onto the screen. The terminal itself does not know what to do with the provided input. And that is where the shell comes in.
 
-When you type something into the terminal and press enter, the terminal sends what you wrote to the shell. The shell reads the commands you enter in the terminal, processes them, and communicates with the kernel to carry out the requested actions. The kernel then performs the necessary tasks, such as managing memory, accessing files, or running processes, based on the instructions provided by the shell.
+When you type something into the terminal and press enter, the terminal sends what you wrote to the shell. The shell reads the commands you enter in the terminal, processes them, and communicates with the kernel to carry out the requested actions. The kernel then performs the necessary tasks, such as managing memory, accessing files, or running processes, based on the instructions provided by the shell. 
 
 The terminal and the shell are often used interchangeably, so don't get too caught up on the definitions when reading about it online.
 
 [//]: # "can have an image here such as: http://coewww.rutgers.edu/www1/linuxclass2008/lessons/lesson1/sec_9.html"
 
+[//]: # "can have an image here such as:https://developer.ibm.com/tutorials/l-linux-shells/. and this: https://i.stack.imgur.com/muYsK.jpg"
+
 Since the shell is just a program that interprets commands, there have been many variations created. The default shell on most Linux and on older macOS systems is called the GNU Bash, or just Bash. Newer macOS users use Zsh ("Z shell"), and Windows machines use the Command shell (also known as "cmd") and PowerShell.
 
-### File system navigation
-The working directory is important when working with files because it determines the context in which file operations take place. When you create, modify, or access a file without specifying a specific file path, the operating system assumes that the file is located within the working directory.
+### Review of the working directory
+I want to mention this topic again, because it is so important. The working directory is important when working with files because it determines the context in which file operations take place. When you create, modify, or access a file without specifying a specific file path, the operating system assumes that the file is located within the working directory.
 
+So if you are in the 
+
+```
+Locker > Physics > Quizzes 
+```
+
+folder, and you enter a command that translates to "create a file called "quiz8.txt", it will create it in your working directory, i.e. Locker/Physics/Quizzes/. If you do not specify where you want the command to execute, then it will by default execute in the working directory.
+
+### File system navigation
+Moving around the file system is 
 For macOS and Linux users, you can view the "Basic Navigation" of [this resource for specific commands](https://www.pluralsight.com/guides/beginner-linux-navigation-manual).
 
 For Windows users, you can view [this resource for specific commands](https://riptutorial.com/cmd/example/8646/navigating-in-cmd).
 
 ### File manipulation
 
+
+
 For macOS and Linux users, you can view the "File Manipulation" of [the previous resource for specific commands](https://www.pluralsight.com/guides/beginner-linux-navigation-manual).
 
-talk about creating a file, creating a folder, delete a file or folder, copy a file, move a file, rename a file
+[//]: # " for windows have link: talk about creating a file, creating a folder, delete a file or folder, copy a file, move a file, rename a file"
 
 ### Working with text
 
 For macOS and Linux users, you can view the "Working with Content" of [the previous resource for specific commands](https://www.pluralsight.com/guides/beginner-linux-navigation-manual).
+
+[//]: # " for windows have link. just want to check if this is good way of writing this"
+
+### Understanding relative versus absolute path
+In the Computer Fundamentals, Software and Hardware section, I talked about the meaning of a file path. There, I described what is known as "absolute path", i.e. the path it takes to get to a file from the root folder, or in the case of the analogy, the locker.
+
+There is however also the concept of a "relative path". This brings in the concept of a working directory, which I've also covered in that section.
+
+[//]: # "not sure how deep to go into it on my own ^^"
+
+To understand the difference, check out [this article](https://www.redhat.com/sysadmin/linux-path-absolute-relative).
 
 ### I/O redirection
 - mention pipe (O > I) I/O redirection
