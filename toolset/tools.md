@@ -126,20 +126,21 @@ Locker > Physics > Quizzes
 folder, and you enter a command that translates to "create a file called "quiz8.txt", it will create it in your working directory, i.e. Locker/Physics/Quizzes/. If you do not specify where you want the command to execute, then it will by default execute in the working directory.
 
 ### File system navigation
-Moving around the file system is 
+Moving around the file system is a fundamental skill in the terminal. You will need to work with files from different directories, and knowing how to navigate efficiently will save you time and effort.
+
 For macOS and Linux users, you can view the "Basic Navigation" of [this resource for specific commands](https://www.pluralsight.com/guides/beginner-linux-navigation-manual).
 
 For Windows users, you can view [this resource for specific commands](https://riptutorial.com/cmd/example/8646/navigating-in-cmd).
 
 ### File manipulation
-
-
+The terminal enables us to work with files efficiently.
 
 For macOS and Linux users, you can view the "File Manipulation" of [the previous resource for specific commands](https://www.pluralsight.com/guides/beginner-linux-navigation-manual).
 
 [//]: # " for windows have link: talk about creating a file, creating a folder, delete a file or folder, copy a file, move a file, rename a file"
 
 ### Working with text
+Working with text in the terminal opens up a whole world of possibilities and gives you the power to manipulate, search, and transform text effortlessly. 
 
 For macOS and Linux users, you can view the "Working with Content" of [the previous resource for specific commands](https://www.pluralsight.com/guides/beginner-linux-navigation-manual).
 
@@ -165,10 +166,7 @@ See examples of how to use pipes [in this article](https://www.computernetworkin
 
 It is also possible to redirect an output into a file rather than onto the terminal using the > operator. Learn more about it [in this article](https://learning.lpi.org/en/learning-materials/010-160/3/3.2/3.2_01/#:~:text=To%20redirect%20standard%20output%20to,will%20overwrite%20the%20existing%20file.). 
 
-### Additional Utilities
-Exploring additional useful terminal tools (e.g., tar, zip, ssh)
-Installing and managing software through package managers (e.g., apt, Homebrew)
-display user manual of a command
+[//]: # "not sure if I should add a final section (like a conclusion section) ### Additional Utilities There is a lot you can do with the terminal. And for everything that you can do, there is a command for it. So take your time to explore the terminal."
 
 # Git
 Imagine investing months, or even years, in developing a remarkable app, only to one day lose your laptop, and thus, your work. Despite such potential setbacks, how do thousands of programmers still manage to collaborate on a single project, and even stay organized? Now that you know about the terminal, we can talk about the wonderful tool called **Git**.
