@@ -1,6 +1,6 @@
 ---
-title: "Computer Fundamentals: The Operating and File System"
-date: "07-06-2023"
+title: "Computer Fundamentals: Software and Hardware"
+date: "2023-07-06"
 author: "Andrei Guevorkian"
 ---
 In the previous article, we explored the history of computers and their defining characteristics. Now, let's delve deeper into general-purpose computers and their underlying concepts such as Operating Systems and file systems.
@@ -16,7 +16,9 @@ In the previous article, we explored the history of computers and their defining
 [The File System](#the-file-system)
  - [File Naming](#file-naming)
  - [File Path](#file-path)
- - [Current Working Directory](#current-working-directory)
+ - [Working Directory](#working-directory)
+
+[Questions](#questions)
 
 # Hardware and Software
 
@@ -47,23 +49,21 @@ Now the question is, how do we combine hardware with software? Because software 
 
 Software is stored in the memory of a computer. You can think of the memory as having many "slots", and in each slot you can hold a certain amount of information. For simplicity, let's say that one computer instruction (a.k.a. command) can be stored in one memory slot. So if we have 10 commands, then we will need 10 different memory slots, a.k.a. memory locations, a.k.a. memory addresses. The CPU reads memory slot #1, and after executing the command there, it will go to the following memory slot, all the way up to memory slot #10, after which the program is over (a program is essentially a bunch of commands written for the CPU to execute).
 
-Sounds simple, right? The problem is that a Mac computer, an iPhone, a Samsung smartphone, and a Lenovo laptop all use different hardware from different companies (think of the processors being made by Intel, AMD, ARM, NVIDIA, Apple, Qualcomm, Huawei, etc.), and so they execute programs differently. On top of the internal hardware differences, we also want to connect external devices such as a mouse, keyboard, monitor, printer, and much more.
+Sounds simple, right? The problem is that a Mac computer, an iPhone, a Samsung smartphone, and a Lenovo laptop all use different hardware from different companies (think of the processors being made by Intel, AMD, Apple, etc.), and so they execute programs differently. On top of the internal hardware differences, we also want to connect external devices such as a mouse, keyboard, monitor, printer, and much more.
 
-It would be ridiculous to ask software developers to write one program for Lenovo laptops, one for Apple, one for smartphones that use the ARM processor, so on and so forth. Software shouldn't be "machine-specific". This is how things were in the 1970s and part of the 1980s.
+It would be ridiculous to ask software developers to write one program for Lenovo laptops, one for Apple, one for smartphones that use the Qualcomm processor, so on and so forth. Software shouldn't be "machine-specific". This is how things were in the 1970s and part of the 1980s.
 
-To address these challenges and facilitate the seamless interaction between hardware and software, we rely on operating systems (OS). An operating system acts as an intermediary layer, bridging the gap between the hardware and software components of a computer system.
+To address these challenges and facilitate the seamless interaction between hardware and software, we rely on operating systems (OS). The operating system acts as an intermediary layer, bridging the gap between the hardware and software components of a computer system. In essense, an operating system is low-level software, meaning that it interacts more closely with the physical hardware components.
 
-The OS abstracts the complexities of hardware, providing a uniform environment for software developers to create applications. It also provides regular everyday computer users with their familiar view of the computer: the GUI, or Graphical User Interface. When we turn on a Windows computer there is a style that we expect to see, and it's a similar story when we turn on a device running macOS, iOS, or Android.
+The operating system abstracts the complexities of hardware, providing a uniform environment for software developers to create applications. It also provides regular everyday computer users with their familiar view of the computer: the GUI (pronounced as "Gee-You-Eye"), or Graphical User Interface. When we turn on a Windows computer there is a style that we expect to see, and it's a similar story when we turn on a device running macOS, iOS, or Android.
 
-[can have image of hw > OS > Apps > programmer] smthn like this : https://cdn4.explainthatstuff.com/computer-architecture.webp
-
-Whether it's creating a new folder on our computer, running two programs simultaneously, saving a text document on our computer, or pluging a brand new mouse into the usb, the OS takes care of all this for us. Anything that the user shouldn't have to worry about is taken care of by the OS. For example, when was the last time that you told the computer how to allocate its memory space, i.e. Microsoft Word should have memory slots #1 - #10000 and Adobe Photoshop should take memory slots #10001 - #21000? When was the last time you wondered where in storage you should save your essay file? Never. Just click "Save", and the OS will take care of the rest.
+Whether it's creating a new folder on our computer, running two programs simultaneously, saving a text document on our computer, or pluging a brand new mouse into the usb port, the operating system takes care of all this for us. Anything that the user shouldn't have to worry about is taken care of by the operating system. For example, when was the last time that you told the computer how to allocate its memory space, e.g. Microsoft Word should have memory slots #1 - #10000 and Adobe Photoshop should take memory slots #10001 - #21000? When was the last time you wondered where in storage you should save your essay file? Never. Just click "Save", and the operating system will take care of the rest.
 
 All in all, operating systems play a vital role in harmonizing hardware and software components. They provide the necessary abstractions, services, and interfaces to ensure compatibility, efficient resource utilization, and seamless communication between different devices and software applications.
 
-> Do you know of any operating systems? What kind of devices do they run on, i.e. can these operating systems run on devices made by different companies (Lenovo, HP, Asus, Apple, Samsung, etc.)?
+> Do you know of any operating systems? What kind of devices do they run on, i.e. can these operating systems run on devices made by different companies? Think of Apple devices, a Samsung smartphone, a Lenovo laptop, etc.
 
-> What could be some reasons for why multiple OSes exist?\
+> What could be some reasons for why multiple operating systems exist?
 P.S. Consider factors such as market demand, target user demographics, and specialized functionalities that drive the development of distinct operating systems.
 
 The operating systems of Microsoft's Windows, Apple's macOS/iOS, and Google's Android are popular. What is less known but still as widely used (although mostly unknowingly) is Linux. To learn more about Linux, [read this](https://opensource.com/resources/linux).
@@ -82,9 +82,9 @@ Something to realize is that there is no "right" and definitive way to organize 
 
 Let's now transition to the computer's way of organizing files and folders. This is a crucial aspect that the operating system takes care of, ensuring that information is not all jumbled together. Remember, all data is stored as a sequence of 1's and 0's, but the operating system creates a virtual boundary between one piece of data and the next.
 
-We have an idea of what a folder is in real life, and it's no different when it comes to computers; it's a way to separate and organize data. Sometimes, a folder is called a directory. Keep that in mind. Now what is a "file"?
+We have an idea of what a folder is in real life, and it's no different when it comes to computers; it's a way to separate and organize data. Often, a folder is called a directory. Do not forget that. Now what is a "file"?
 
-> The term "folder" is a relatively new term in the computer world, introduced with the advent of the GUI. Whenever you see "directory", in your head, replace it with the word.
+> The term directory was created first, and then the term "folder" was introduced with the advent of the GUI.
 
 In the realm of computers, a file resembles the items you'd find inside your school locker. It is a named collection of data stored on a computer's storage system. Just like your school book, notebook, or piece of paper, a computer file can hold various types of information, such as text, images, videos, audio, program instructions, or configuration data.
 
@@ -123,16 +123,16 @@ Locker > Science > Physics > Quizzes > Quiz 1.
 
 The computer's file system works in the exact same way. Computers always have a folder called the root folder which is like the locker in the school example: a folder (or box) that contains all other folders. The root folder is denoted by a forward slash (/) on Linux and macOS, while Windows uses the drive (HDD or SSD) letter followed by a colon (e.g., "C:").
 
-> Task: Try to find the root folder on your computer! See what it holds. Don't be afraid to Google if you don't know how!
+> Task: Try to find the root folder on your computer! See what it holds. Don't be afraid to google your questions!
 
 Within the root folder, you will have subfolders. To these subfolders, the root folder is called the "parent folder", or "parent directory".
 
-## Current Working Directory
+## Working Directory
 
 Let's go back to the school analogy. Say you have the following file path to get to the Physics Quiz 1.
 
 ```
-Locker > Science > Physics > Quizzes > Quiz 1.
+Locker > Physics > Quizzes > Quiz 1.
 ```
 
 Let's now say that you are in the middle of opening your locker. In other words, you are at this step:
@@ -141,45 +141,63 @@ Let's now say that you are in the middle of opening your locker. In other words,
 Locker > 
 ```
 
-If you take a look at all the folders directly available to you, you may find folders such as  Science, History, Math, English, Ethics, so on and so forth. At the Locker level, you are not able to access the Quiz 1 from Physics class.
+If you take a look at all the folders directly available to you, you may find folders such as Physics, Chemistry, History, Math, English, Ethics, so on and so forth. At the Locker level, you are not able to access the Quiz 1.
 
-In order to get to the quiz, you will have to, one by one, go through the folders.
-
-Say you are inside the "Desktop" directory, and it's path is as follows:
+In order to get to the quiz, you will have to, one by one, go through the folders as follows:
 
 ```
-Locker > Science > 
+Locker > Physics > 
 ```
 
 ```
-c: > Users > Andrei > Desktop
+Locker > Physics > Quizzes 
 ```
 
-If I am currently in the "Desktop" directory, then I can call
+At which point you will have direct access to Quiz 1.
 
-what is file (review), what is direcotyr, why need to change it. what is the current working directory, ...
+The working directory is the folder which you are "in" and have opened in front of you; this is the folder whose subfolders and files you can directly access. For instance, in order to access Quiz 1, the working directory has to be the Quizzes folder. In order to view all the different courses you are taking, you must go to the Locker "folder" and have that be your working directory.
 
-single-level directory
-two-level directory => need to navigate
+When it comes to computers, the working directory is the current directory or folder in which a user is actively working within a file system. It is the default location where a command or program will execute and search for files unless a specific file path is provided.
 
+Going back to the analogy, say you are taking French class for the first time. So you want to create a folder labeled "French". You won't be under
 
+```
+English > quizzes 
+```
+
+to do so, right? You will go to
+
+```
+Locker >
+```
+
+and add the French folder there. So in computer terms, you had to make
+
+```
+Locker >
+```
+
+your working directory in order to add the French folder in the right location. And that's what a working directory is: a folder in which you are "working" in.
 
 # Questions
+- What are some examples of hardware components in a computer?
 
-Q1: (Multiple choice question) Which of the following is the OS tasked with?
+- Can you give examples of software applications you use on a daily basis?
 
-1. Memory Management: Manages computer memory, allocating and tracking memory resources for programs, ensuring efficient utilization and preventing conflicts between different processes.
+- (Multiple choice question) Which of the following is the OS tasked with?
 
-2. Process Management: Controls the execution of processes, scheduling CPU time and handling process creation and termination, ensuring fair allocation of resources and maximizing overall system performance.
+    1. Memory Management: Manages computer memory, allocating and tracking memory resources for programs, ensuring efficient utilization and preventing conflicts between different processes.
 
-3. File System Management: Organizes and manages data storage, allowing users to create, read, write, and delete files, providing a hierarchical structure and access control for efficient data management.
+    2. Process Management: Controls the execution of processes, scheduling CPU time and handling process creation and termination, ensuring fair allocation of resources and maximizing overall system performance.
 
-4. Device Management: Handles input and output devices, providing drivers and protocols for communication and coordinating I/O operations, ensuring seamless interaction between the computer and peripheral devices.
+    3. File System Management: Organizes and manages data storage, allowing users to create, read, write, and delete files, providing a hierarchical structure and access control for efficient data management.
 
-5. All of the above.
+    4. Device Management: Handles input and output devices, providing drivers and protocols for communication and coordinating I/O operations, ensuring seamless interaction between the computer and peripheral devices.
 
-<details><summary>Hint</summary>
-The purpose of the OS is to abstract all the complex interactions between hardware and software, providing a unified interface and essential services to manage memory, processes, file systems, and devices.
-</details>
+    5. All of the above.
 
----
+    <details><summary>Hint</summary>
+    The purpose of the OS is to abstract all the complex interactions between hardware and software, providing a unified interface and essential services to manage memory, processes, file systems, and devices.
+    </details>
+
+- What is the purpose of file naming conventions?
