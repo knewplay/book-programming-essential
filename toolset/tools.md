@@ -210,14 +210,20 @@ Pushing and pulling changes
 ### Resolving conflicts
 
 # Search Engine
-They say that Google is a programmer's best friend. With a few keywords and a click of a button, a world of knowledge opens up. Whether it's debugging an error, exploring new libraries, or discovering best practices, programmers can navigate the vast realm of knowledge through a **search engine**.
+They say that Google is a programmer's best friend. With a few keywords and a click of a button, a world of knowledge opens up at the palm of our hands. Whether it's debugging an error, exploring new libraries, or discovering best practices, programmers can navigate the vast realm of knowledge through a **search engine**.
 
 ## Importance
+In the world of programming, one thing remains certain: programmers, even those with decades of experience, will face hurdles, encounter challenges, and have moments of confusion. Why?
 
-[//]: # "Efficiency, etc"
+Well, programming is a dynamic field that constantly evolves with technology. Some programming languages that were once considered cutting-edge have evolved, while new ones have emerged. As a result, programmers often find themselves working on diverse projects with varying technical requirements. While their experience serves as a solid foundation, they may still encounter unfamiliar details.
 
+The key to overcoming these obstacles is to be resourceful and skilled in the art of searching for answers effectively. This is where the power of a search engine comes into play.
 
 ## Fundamentals
+We all wish that computers could just read our minds and give us the exact solution, in the exact context that we need it in. However, past the most rudimentary of programming questions, things aren't always that easy. Searching is somewhat of an art.
+
+### The search engine
+There's Google, there's Bing, there's DuckDuckGo,
 
 
 # Code Editor
