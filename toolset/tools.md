@@ -257,14 +257,15 @@ When it comes to simplifying your query, think of the resulting websites' titles
 #### Use autocompletion
 When you start typing words into the search bar, always pay attention to what Google is suggesting. It can help you complete your queries faster, but it can also better word a query for you, taking the guesswork of what to type away. This is a perfect feature to use when you have an idea of what you are looking for, but forgot the exact word.
 
-> If you know that you have to use some function 
-
 #### It's okay to be messy
 This is not a beauty contest. You do not get a prize for coming up with the nicest and cleanest way to ask a question. Sometimes, the perfect words just aren't coming into your mind, and that's okay. Use the English language as best you can to describe the problem.
 
 > Let's say you know that there is a function that "prints out" the argument as a message onto the screen. So you can write ***"function to print message in c"***. But what if you forgot the terms "function" and "print". Well, just simplify it into English: ***"how to output onto the screen in c"***. Now what if you forgot the term "output"? Simplify the query further: ***"how to write onto the screen in c"***.
 
 Part of the programming journey is to go from using purely English terms, to using more technical programming terms. As long as you read the results, learn more about the topic and get used to the correct terms, you are on the right path.
+
+#### Don't just click and stay
+After entering their query, most people will automatically click on the first search result and just read that. What I like to do is skim through the search results' titles, and see how well they match my query. If they match, I typically open a few of them in new tabs (by holding ctrl/cmd and clicking on the websites).
 
 ### Veterans google differently
 While experienced programmers do use Google a lot, there is a big difference in the way that they use it as opposed to how a complete beginner uses it. In the world of cybersecurity, there is this idea of a "script kiddie"; this is a person who uses existing code and copy-pastes his way through to whatever he wants to do. An experienced programmer will never simply take a piece of code and use it without fundamentally understanding what it does. They may do so to try to see if it works, but then they will try to understand it to potentially improve it and customize it.
