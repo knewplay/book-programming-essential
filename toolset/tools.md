@@ -267,6 +267,23 @@ Part of the programming journey is to go from using purely English terms, to usi
 #### Don't just click and stay
 After entering their query, most people will automatically click on the first search result and just read that. What I like to do is skim through the search results' titles, and see how well they match my query. If they match, I typically open a few of them in new tabs (by holding ctrl/cmd and clicking on the websites).
 
+#### Use matching operators
+1. Using double quotes ("") around any term acts as an **inclusion operator** and will force Google to match it exactly. E.g. ***"html" "css" website development***
+2. Using the minus symbol (-) before a word acts as an **exclusion operator** and will filter out any results containing that word. E.g. ***website development -html -css***
+3. Using the asterisk (*) within a query acts as a **wildcard operator** and will be replaced with any word or phrase. E.g. you run your code, and receive an error message which contains your local directory (which will only be relevant to you). Instead searching for the entire error message, you could replace that section with an asterisk
+
+#### Use date operators
+If you are typing ***"c programming tutorial"*** and are getting results from 2010, you may want to limit the search to more recent articles.
+
+You can use the complete format of ***yyyy-mm-dd***, or just type in the year. For example, ***"c programming tutorial after:2020"***.
+
+Similarly, you can use ***"before"*** to search for articles before a certain date.
+
+#### 
+
+#### StackOverflow
+
+
 ### Veterans google differently
 While experienced programmers do use Google a lot, there is a big difference in the way that they use it as opposed to how a complete beginner uses it. In the world of cybersecurity, there is this idea of a "script kiddie"; this is a person who uses existing code and copy-pastes his way through to whatever he wants to do. An experienced programmer will never simply take a piece of code and use it without fundamentally understanding what it does. They may do so to try to see if it works, but then they will try to understand it to potentially improve it and customize it.
 
