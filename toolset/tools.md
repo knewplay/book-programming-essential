@@ -303,10 +303,9 @@ You can use the complete format of ***yyyy-mm-dd***, or just type in the year. F
 
 Similarly, you can use ***"before"*** to search for articles before a certain date.
 
-#### 
-
-#### StackOverflow
-
+#### Honorable mention: StackOverflow
+One website that you will commonly encounter through your google search results will be StackOverflow. 
+[//]: # "TODO complete"
 
 ### Veterans google differently
 While experienced programmers do use Google a lot, there is a big difference in the way that they use it as opposed to how a complete beginner uses it. In the world of cybersecurity, there is this idea of a "script kiddie"; this is a person who uses existing code and copy-pastes his way through to whatever he wants to do. An experienced programmer will never simply take a piece of code and use it without fundamentally understanding what it does. They may do so to try to see if it works, but then they will try to understand it to potentially improve it and customize it.
