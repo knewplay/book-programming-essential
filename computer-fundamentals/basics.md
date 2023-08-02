@@ -31,7 +31,7 @@ However, then came the Jacquard loom, named after the French weaver Joseph-Marie
 
 What does this have to do with computers? Well, while the Jacquard loom is not directly related to the development of computers, it started a conversation about input and output, as well as automation and "feeding instructions" to a machine. 
 
-![The Jacquard loom has revolutionized the textile industry.](./figures/Fig_0.1_jacquard_loom.jpg "Jacquard Loom")
+![The Jacquard loom has revolutionized the textile industry.](./figures/jacquard-loom.jpg "Jacquard Loom")
 
 "Input" is what goes "in" a system, and "output" is what comes "out" as a result. Before the Jacquard loom, direct human intervention was critical in the input to get the desired output. In the case of the Jacquard loom, at a given moment, the input is a punch card, and the output is a row of threads being woven in a specific pattern, all without the "human touch".
 
@@ -41,7 +41,7 @@ This invention laid the foundation for key concepts in computing, notably the id
 
 The first device considered a computer was the Analytical Engine, conceptualized by English inventor Charles Babbage in the 1830s. Although it was never fully constructed during his lifetime, Babbage's designs and ideas laid the foundation for modern computing.
 
-![The Analytical Engine is a groundbreaking early computer design.](./figures/Fig_0.1_Analytical_Engine.jpg "Analytical Engine")
+![The Analytical Engine is a groundbreaking early computer design.](./figures/analytical-engine.jpg "Analytical Engine")
 
 What made this device the first computer? Well, because it had all functionalities of one: there was a reader to accept inputs in the form of punch cards, a printer to output and print the results, a processing unit to perform computations, and a storage unit to store, retrieve, and manipulate data. The Analytical Engine was an early, mechanical version of a general-purpose computer capable of solving various math problems using a steam engine to power the machine and turn all its gears.
 
@@ -60,7 +60,7 @@ As it turned out, doing math using digits 0, 1, 2, ..., 8, 9 was not the most ef
 
 This was not only perfect with the use of punch cards and punch tapes, where the presence of a hole can be represented with a 0, and the absence of a hole can be represented by a 1, but it also worked out well with the next technological advancement: vacuum tubes. These look like little light bulbs, but more importantly they were electronic devices that controlled and manipulated electrical signals, providing the means to process and control data electronically, which in turn enabled their use in mathematical calculations. In this system, a '1' in binary corresponded to a lit bulb, while a '0' represented an unlit bulb. With these binary digits, computers could perform calculations, store data, and execute user instructions.
 
-![An assortment of vacuum tubes.](./figures/Fig_0.1_Vacuum_Tubes.jpg "Vacuum Tubes")
+![An assortment of vacuum tubes.](./figures/vacuum-tubes.jpg "Vacuum Tubes")
 
 > [Take a look at the ENIAC](https://www.youtube.com/watch?v=HgsklKafxG8): considered to be the world's first general-purpose electronic computer, built in 1945.
 
@@ -74,7 +74,7 @@ CRT displays transmitted light onto a screen, and this meant that it could be wr
 
 The terminal screen consisted of a black background, with green or white alphanumeric characters. One reason for the black background was to reduce eye strain; a white background would cause eye fatigue and glare, and it would also require a significant amount of power.
 
-![The VT100 is a Terminal Introduced in 1978. Notice that there is no mouse.](./figures/Fig_0.1_Terminal.jpg "VT100")
+![The VT100 is a Terminal Introduced in 1978. Notice that there is no mouse.](./figures/terminal.jpg "VT100")
 
 The invention of computer terminals significantly improved the efficiency and usability of computers. It enabled users to interact with the machines in a more intuitive and direct manner, enabling the growth and adoption of computing technology.
 
@@ -82,7 +82,7 @@ The invention of computer terminals significantly improved the efficiency and us
 
 Today, we no longer have room-sized mainframes made of vacuum tubes. Nor do we communicate with our computers using text-based commands through a device called a terminal... well actually, some of us still sort of do that. More on this in the next chapter. But it is true that the average person will never need to encounter anything that resembles a terminal. Large corporations such as Microsoft and Apple make their systems very easy to use, so much so that our grandparents can also catch on with the latest tech. On top of a keyboard, we also use a mouse to use visual applications like Microsoft PowerPoint, watch videos on Youtube, save pictures on our computers, and scroll down social media. Imagine having to write a text command to open your web browser. Imagine going on your social media account, and only seeing text.
 
-![Apple Lisa: a GUI pioneer](./figures/Fig_0.1_Lisa.jpg "Apple Lisa")
+![Apple Lisa: a GUI pioneer](./figures/lisa-computer.jpg "Apple Lisa")
 
 This is hard to imagine because the modern state of computers is characterized by user-friendly interfaces, notably graphical user interfaces (GUIs). Instead of typing complex commands into a terminal, we interact with our computers using intuitive visual elements such as icons, buttons, menus, and windows.
 
@@ -130,7 +130,7 @@ This is the reason why some people claim that Germany's Z3 was the first compute
 
 And today, there are countless appliances, gadgets, toys, instruments, automotive electronics, and much more, that have built-in "mini-computers" called microcontrollers. Even though they come equipped with a processing unit, memory, I/O peripherals, and are programmable to a certain extent, these **embedded devices** are designed to perform specific tasks, as they typically come with a pre-programmed set of instructions specific to the device. They do not have the versatility of a general-purpose computer, but they excel at executing specific tasks efficiently. They are typically programmable to a certain extent, but only within the constraints and limitations set by their design and intended purpose.
 
-![The Gameboy: a portable gaming console powerhouse.](./figures/Fig_0.1_Game_Boy.jpg "Gameboy exploded view")
+![The Gameboy: a portable gaming console powerhouse.](./figures/game-boy.jpg "Gameboy exploded view")
 
 > Exercise: Name a computer around you that usually people don't see as a computer.
 <details><summary>Hint</summary>
