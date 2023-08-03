@@ -251,32 +251,31 @@ The truth is that you can google anything, anytime you want. Google is never goi
 4. Just like when learning a new programming language, there may be a new library that you must use. Learn more about the library by googling it.
 
 ### How to google
-[//]: # "can also call this part: Asking the right questions"
-Googling is an art. There is no one way to enter your query. I might it one way, and you might ask it slightly differently. And that's okay. But here are some general guidelines on how to do it.  
+Googling is an art. There is no one way to enter your query. I might ask it one way, and you might ask it slightly differently. And that's okay. But here are some general guidelines on how to do it.  
 
 #### **Be simple but precise**
 The important thing is to find a balance between concise and descriptive queries. You need to use the minimum number of words, but also give enough information for Google to understand what it needs to show you. Never add any information that is not important. Being too specific is not good either, as it will limit your search result and Google will return fewer quality examples of what you really want to know.
 
-> If you want to know how to write a Hello World program in C, don't mention your operating system, your location, or your programming environment. All of these things are unrelated to the problem, and will not affect the result.
+> If you want to know how to write a Hello World program in C, don't mention your operating system, your location, or your programming environment. All of these things are unrelated to the problem, and will negatively affect the search result as it will take the focus away from *"how to write a hello world program in c"*.
 
 When it comes to simplifying your query, think of the resulting websites' titles and contents. Google will match your query with the website title and contents.
 
-> Instead of writing *"I'm confused by when I should use semicolons in C"*, write *"semicolon use in c"*, or just simply *"semicolons in c"*. If Google shows results of semicolon use in regular English (for example), and didn't pick up the *"in c"* portion of the query, then specify: *"semicolon use in c programming language"*, for example.
+> Instead of writing *"I'm confused by when I should use semicolons in C"*, write *"semicolon use in c"*, or just simply *"semicolons in c"*. If Google shows results of semicolon use in regular English (for example), and didn't pick up the *"in c"* portion of the query, then specify: *"semicolon use in c programming language"*.
 
 > Sidenote: Google searched are case-insensitive, meaning it doesn't matter if you write *C* of *c*.
 
 #### **Use autocompletion**
-When you start typing words into the search bar, always pay attention to what Google is suggesting. It can help you complete your queries faster, but it can also better word a query for you, taking the guesswork of what to type away. This is a perfect feature to use when you have an idea of what you are looking for, but forgot the exact word.
+When you start typing words into the search bar, always pay attention to what Google is suggesting. It can help you complete your queries faster, but it can also better word a query for you, taking the guesswork of what to type away. This is a perfect feature to use when you have an idea of what you are looking for, but not sure how to phrase it.
 
 #### **It's okay to be messy**
 This is not a beauty contest. You do not get a prize for coming up with the nicest and cleanest way to ask a question. Sometimes, the perfect words just aren't coming into your mind, and that's okay. Use the English language as best you can to describe the problem.
 
-> Let's say you know that there is a function that "prints out" the argument as a message onto the screen. So you can write *"function to print message in c"*. But what if you forgot the terms "function" and "print". Well, just simplify it into English: *"how to output onto the screen in c"*. Now what if you forgot the term "output"? Simplify the query further: *"how to write onto the screen in c"*.
+> Let's say you know that there is a function that *prints out* the argument as a message onto the screen. So you can write *"function to print message in c"*. But what if you forgot the terms "function" and "print". Well, just simplify it into English: *"how to output onto the screen in c"*. Now what if you forgot the term "output"? Simplify the query further: *"how to write onto the screen in c"*.
 
-Part of the programming journey is to go from using purely English terms, to using more technical programming terms. As long as you read the results, learn more about the topic and get used to the correct terms, you are on the right path.
+Part of the programming journey is to go from using purely English terms, to using more technical and precise programming terms. As long as you read the results, learn more about the topic and get used to the correct terms, you are on the right path.
 
 #### **Don't just click and stay**
-After entering their query, most people will automatically click on the first search result and just read that. What I like to do is skim through the search results' titles, and see how well they match my query. If they match, I typically open a few of them in new tabs (by holding *ctrl/cmd* and clicking on the websites).
+After entering their query, most people will automatically click on the first search result and just read that. What I like to do is skim through the search results' titles and snippets, and see how well they match my query. If they match, I typically open a few of them in separate tabs (by holding *ctrl/cmd* and clicking on the websites), and skim through them. If the websites all provide the same solution, then I will use it with confidence. If not, then I might dig a bit into the different solutions and learn about the differences.
 
 #### **Use matching operators**
 1. Using double quotes ("") around any term acts as an **inclusion operator** and will force Google to match it exactly. E.g. ***"html" "css" website development***
@@ -290,9 +289,12 @@ You can use the complete format of ***yyyy-mm-dd***, or just type in the year. F
 
 Similarly, you can use ***"before"*** to search for articles before a certain date.
 
-#### **Honorable mention: StackOverflow**
-One website that you will commonly encounter through your google search results will be StackOverflow. Stackoverflow is a question-and-answer website for programmers.
-[//]: # "TODO complete"
+#### **Honorable mention: Stack Overflow**
+One website that you will commonly encounter through your google search results will be StackOverflow. Stack OverFlow is a question-and-answer website for programmers. 
+
+For beginners, Stack Overflow is an excellent place to learn from others' experiences and to gain insights into best practices. Reading through questions and answers related to topics you're interested in can provide valuable exposure to real-world coding scenarios.
+
+ 
 
 ### Veterans google differently
 While experienced programmers do use Google a lot, there is a big difference in the way that they use it as opposed to how a complete beginner uses it. In the world of cybersecurity, there is this idea of a "script kiddie"; this is a person who uses existing code and copy-pastes his way through to whatever he wants to do. An experienced programmer will never simply take a piece of code and use it without fundamentally understanding what it does. They may do so to try to see if it works, but then they will try to understand it to potentially improve it and customize it.
