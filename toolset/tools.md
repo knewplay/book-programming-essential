@@ -105,7 +105,7 @@ The shell takes in commands, and interprets them. For that reason, it can be cal
 
 But wait, wasn't that the role of the terminal?
 
-Not exactly. The terminal does sit between the user and the operating system, however it is simply an interface; a place where the user can write their commands. The terminal only know how to accept input from the keyboard and display output onto the screen. The terminal itself does not know what to do with the provided input. And that is where the shell comes in.
+Not exactly. The terminal does sit between the user and the operating system, however it is simply an interface; a place where the user can write their commands. The terminal only knows how to accept input from the keyboard and display output onto the screen. The terminal itself does not know what to do with the provided input. And that is where the shell comes in.
 
 When you type something into the terminal and press enter, the terminal sends what you wrote to the shell. The shell reads the commands you enter in the terminal, processes them, and communicates with the kernel to carry out the requested actions. The kernel then performs the necessary tasks, such as managing memory, accessing files, or running processes, based on the instructions provided by the shell. 
 
