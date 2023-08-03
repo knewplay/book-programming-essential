@@ -11,7 +11,7 @@ Just as a master carpenter skillfully wields their tools to shape exquisite furn
 
 [Git](#git)
 
-[Search Engine](#google-search)
+[Search Engine](#search-engine)
 
 [Code Editor](#code-editor)
 
@@ -239,48 +239,59 @@ Google Search is a powerful tool that helps users navigate the vast landscape of
 
 3. Ranking: When you perform a search, Google's (secret) search algorithms come into play. These algorithms analyze the indexed data and consider numerous factors to determine the most relevant and useful results for your query. Google takes into account factors like the words used in your search, the freshness of the content, the quality of the web page, and the number of other websites linking to that page (known as PageRank).
 
+### When to google
+The truth is that you can google anything, anytime you want. Google is never going to tell you "that was a dumb question". Once you start googling, you will notice that there have been many people before you who have had the same questions, and those questions are answered on the internet. However, here are some more specific cases when it is appropriate to google.
+
+1. As someone learning a new programming language, googling can help you find tutorials, guides and online courses to expand your knowledge.
+
+2. If you come across the use of a function in a tutorial, and would like to see more examples of that function being used, then googling for examples is a great idea.
+
+3. When you compile or run your code, errors are innevitable, and copy-pasting the error message will often lead you to either a blog post solving the error, or a discussion forum where others have faced the same issue and found solutions.
+
+4. Just like when learning a new programming language, there may be a new library that you must use. Learn more about the library by googling it.
+
 ### How to google
 [//]: # "can also call this part: Asking the right questions"
-Googling is an art. There is no one way to enter your query. I might ask it one way, and you might ask it slightly differently. And that's okay. But here are some general guidelines on how to do it.  
+Googling is an art. There is no one way to enter your query. I might it one way, and you might ask it slightly differently. And that's okay. But here are some general guidelines on how to do it.  
 
-#### Be simple but precise
+#### **Be simple but precise**
 The important thing is to find a balance between concise and descriptive queries. You need to use the minimum number of words, but also give enough information for Google to understand what it needs to show you. Never add any information that is not important. Being too specific is not good either, as it will limit your search result and Google will return fewer quality examples of what you really want to know.
 
 > If you want to know how to write a Hello World program in C, don't mention your operating system, your location, or your programming environment. All of these things are unrelated to the problem, and will not affect the result.
 
 When it comes to simplifying your query, think of the resulting websites' titles and contents. Google will match your query with the website title and contents.
 
-> Instead of writing ***"I'm confused by when I should use semicolons in C"***, write ***"semicolon use in C"***. If Google shows results of semicolon use in regular English, then specify: ***"semicolon use in c programming language"***, for example.
+> Instead of writing *"I'm confused by when I should use semicolons in C"*, write *"semicolon use in c"*, or just simply *"semicolons in c"*. If Google shows results of semicolon use in regular English (for example), and didn't pick up the *"in c"* portion of the query, then specify: *"semicolon use in c programming language"*, for example.
 
-> Sidenote: Google searched are case-insensitive, meaning it doesn't matter if you write ***C*** of ***c***.
+> Sidenote: Google searched are case-insensitive, meaning it doesn't matter if you write *C* of *c*.
 
-#### Use autocompletion
+#### **Use autocompletion**
 When you start typing words into the search bar, always pay attention to what Google is suggesting. It can help you complete your queries faster, but it can also better word a query for you, taking the guesswork of what to type away. This is a perfect feature to use when you have an idea of what you are looking for, but forgot the exact word.
 
-#### It's okay to be messy
+#### **It's okay to be messy**
 This is not a beauty contest. You do not get a prize for coming up with the nicest and cleanest way to ask a question. Sometimes, the perfect words just aren't coming into your mind, and that's okay. Use the English language as best you can to describe the problem.
 
-> Let's say you know that there is a function that "prints out" the argument as a message onto the screen. So you can write ***"function to print message in c"***. But what if you forgot the terms "function" and "print". Well, just simplify it into English: ***"how to output onto the screen in c"***. Now what if you forgot the term "output"? Simplify the query further: ***"how to write onto the screen in c"***.
+> Let's say you know that there is a function that "prints out" the argument as a message onto the screen. So you can write *"function to print message in c"*. But what if you forgot the terms "function" and "print". Well, just simplify it into English: *"how to output onto the screen in c"*. Now what if you forgot the term "output"? Simplify the query further: *"how to write onto the screen in c"*.
 
 Part of the programming journey is to go from using purely English terms, to using more technical programming terms. As long as you read the results, learn more about the topic and get used to the correct terms, you are on the right path.
 
-#### Don't just click and stay
-After entering their query, most people will automatically click on the first search result and just read that. What I like to do is skim through the search results' titles, and see how well they match my query. If they match, I typically open a few of them in new tabs (by holding ctrl/cmd and clicking on the websites).
+#### **Don't just click and stay**
+After entering their query, most people will automatically click on the first search result and just read that. What I like to do is skim through the search results' titles, and see how well they match my query. If they match, I typically open a few of them in new tabs (by holding *ctrl/cmd* and clicking on the websites).
 
-#### Use matching operators
+#### **Use matching operators**
 1. Using double quotes ("") around any term acts as an **inclusion operator** and will force Google to match it exactly. E.g. ***"html" "css" website development***
 2. Using the minus symbol (-) before a word acts as an **exclusion operator** and will filter out any results containing that word. E.g. ***website development -html -css***
-3. Using the asterisk (*) within a query acts as a **wildcard operator** and will be replaced with any word or phrase. E.g. you run your code, and receive an error message which contains your local directory (which will only be relevant to you). Instead searching for the entire error message, you could replace that section with an asterisk
+3. Using the asterisk (*) within a query acts as a **wildcard operator** and will be replaced with any word or phrase. E.g. you run your code, and receive an error message which contains your local directory (which will only be relevant to you). Instead searching for the entire error message, you could replace that section with an asterisk.
 
-#### Use date operators
+#### **Use date operators**
 If you are typing ***"c programming tutorial"*** and are getting results from 2010, you may want to limit the search to more recent articles.
 
 You can use the complete format of ***yyyy-mm-dd***, or just type in the year. For example, ***"c programming tutorial after:2020"***.
 
 Similarly, you can use ***"before"*** to search for articles before a certain date.
 
-#### Honorable mention: StackOverflow
-One website that you will commonly encounter through your google search results will be StackOverflow. 
+#### **Honorable mention: StackOverflow**
+One website that you will commonly encounter through your google search results will be StackOverflow. Stackoverflow is a question-and-answer website for programmers.
 [//]: # "TODO complete"
 
 ### Veterans google differently
