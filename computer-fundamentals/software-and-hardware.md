@@ -2,6 +2,7 @@
 title: "Computer Fundamentals: Software and Hardware"
 date: "2023-07-06"
 author: "Andrei Guevorkian"
+illustrator: "Dengyijia Liu"
 ---
 In the previous article, we explored the history of computers and their defining characteristics. Now, let's delve deeper into general-purpose computers and their underlying concepts such as Operating Systems and file systems.
 
