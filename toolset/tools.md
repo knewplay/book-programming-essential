@@ -1,7 +1,8 @@
 ---
 title: "Toolset"
-date: "2023-07-31"
+date: "2023-08-18"
 author: "Andrei Guevorkian"
+illustrator: "Dengyijia Liu"
 ---
 Just as a master carpenter skillfully wields their tools to shape exquisite furniture or a painter expertly selects brushes and colors to create captivating artwork, programmers harness a collection of specialized tools to craft intricate software systems. Let's explore the essential tools that empower programmers to shape the digital world.
 
