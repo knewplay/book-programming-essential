@@ -174,13 +174,17 @@ Imagine investing months, or even years, in developing a remarkable app, only to
 
 ## Importance
 
-Let's say that you are working on a software program. You store all your code in one folder, and name that folder "Project". Anyone who's programmed knows that code can go from "working" to "not working" very quickly. So what you decide to do is whenever you have a working product, you save it in the original "Project" folder. You know that what you have in that folder works.
+Imagine you're working on a robotics project that involves launching a projectile. You have your entire project's code neatly organized in a folder named "RoboticsProject". However, coding can be tricky, and changes you make can sometimes lead to unexpected results. To avoid breaking the working code, you employ a smart strategy.
 
-So now, if you want to add some feature to your project, you duplicate the "Project" folder and name this new folder "Project_v2". Why do this? Because just in case you mess something up, you don't want the main folder that works to be affected. With a new folder called "Project_v2", you now have a place where you are safe to experiment in, and if everything completely fails and you end up changing the code so much that it is now unrecognizable, well you will still have the original "Project" folder, so everything's okay.
+Whenever you achieve a functional milestone, you save it in the original "RoboticsProject" folder. This way, you always have a known working version to fall back on.
 
-And if the "Project_v2" ends up working perfectly well with the newly implemented feature, well then that will become the main project.
+Now, let's say you want to add a new feature, like a sophisticated projectile launch mechanism. To keep things safe, you create a duplicate of the "RoboticsProject" folder and name it "RoboticsProject_v2". Why go through this trouble? Well, this duplicate serves as a playground where you can freely experiment without fear of damaging your working code. If your attempts in "RoboticsProject_v2" lead to chaos, no worries, because your original code in "RoboticsProject" remains intact.
 
-This technique is already better than what most new programmers do. However,While this technique might keep you organized, once someone joins the project, working on the same codebase becomes a bit more difficult. Image person A is working on feature A, and that code is partially intertwined with feature B that person B is trying to add. 
+Suppose "RoboticsProject_v2" turns out to be a success, and your new projectile launch mechanism works flawlessly. At this point, "RoboticsProject_v2" becomes your main project, incorporating the new feature.
+
+This approach significantly improves your workflow compared to what many novice programmers do. However, there's a catch. When multiple people collaborate on the same project, managing code becomes more complex. Imagine person A working on enhancing the projectile launch feature while person B is simultaneously working on another feature that interacts with the projectile launch code. Once they both complete their features, which of the two folder is going to be the new main code? How are we going to merge the two folders together?
+
+To address such challenges, programmers often rely on version control systems like Git. These systems allow collaborative work while keeping everyone's changes organized and manageable. So, while the "duplicate and experiment" technique is great for personal projects, for team collaborations, embracing version control practices like Git takes your coding journey to a whole new level.
 
 ## Fundamentals
 
