@@ -199,16 +199,17 @@ Version Control Systems also maintain a bunch of metadata along with the actual 
 
 There are a number of Version Control Systems out there such as Subversion (SVN) and Mercurial, but Git has become the de facto standard for version control. In here, we will talk about the concepts with Git in mind.
 
-
+### Merging
+Discover how to integrate changes from different branches using merging. Understand the process of combining code changes to ensure project cohesion.
 
 ### Setting Up a Repository
 Learn how to create a repository to organize your project's files and commit history. Understand the local and remote aspects of repositories.
 
-github is a host for githunb repos
+[//]: # "github is a host for githunb repos"
 
 ### Staging Changes
 
-internal temporary db, staging area that you are ready to commit that you havent commited yet
+[//]: # "internal temporary db, staging area that you are ready to commit that you havent commited yet"
 
 ### Committing Changes
 Dive into committing changes to your repository. Understand the concept of commits, staging changes, and crafting meaningful commit messages.
