@@ -176,9 +176,11 @@ Imagine investing months, or even years, in developing a remarkable app, only to
 
 Let's say that you are working on a software program. You store all your code in one folder, and name that folder "Project". Anyone who's programmed knows that code can go from "working" to "not working" very quickly. So what you decide to do is whenever you have a working product, you save it in the original "Project" folder. You know that what you have in that folder works.
 
-So now, if you want to add some feature to your project, you duplicate the "Project" folder and name this new folder "Project_v2". Now you have a place where you are safe to experiment in, and if everything completely fails and you end up changing the code so much that it is now unrecognizable, well you will still have the original "Project" folder, so everything's okay.
+So now, if you want to add some feature to your project, you duplicate the "Project" folder and name this new folder "Project_v2". Why do this? Because just in case you mess something up, you don't want the main folder that works to be affected. With a new folder called "Project_v2", you now have a place where you are safe to experiment in, and if everything completely fails and you end up changing the code so much that it is now unrecognizable, well you will still have the original "Project" folder, so everything's okay.
 
-While this technique might keep you organized, once someone joins the project, working on the same codebase becomes a bit more difficult. Image person A is working on feature A, and that code is partially intertwined with feature B that person B is trying to add. 
+And if the "Project_v2" ends up working perfectly well with the newly implemented feature, well then that will become the main project.
+
+This technique is already better than what most new programmers do. However,While this technique might keep you organized, once someone joins the project, working on the same codebase becomes a bit more difficult. Image person A is working on feature A, and that code is partially intertwined with feature B that person B is trying to add. 
 
 ## Fundamentals
 
