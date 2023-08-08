@@ -189,32 +189,33 @@ To address such challenges, programmers often rely on version control systems li
 ## Fundamentals
 
 ### Version Control System (VCS)
-Version control is the practice of tracking and managing changes, usually to software code.
+[//]: # "Version control is the practice of tracking and managing changes, usually to software code."
 
-### Repository
+### Setting Up a Repository
+Learn how to create a repository to organize your project's files and commit history. Understand the local and remote aspects of repositories.
 
-### Committing changes
+### Committing Changes
+Dive into committing changes to your repository. Understand the concept of commits, staging changes, and crafting meaningful commit messages.
 
-Concept of a commit
-Staging and committing changes
-Importance of descriptive commit messages
+[//]: # "Cannot directly push code from your working copy to the remote site. Similarly, you cannot directly push your code from the staging area to the remote site. The remote site is only connected to the local repository."
 
-Cannot directly push code from your working copy to the remote site. Similarly, you cannot directly push your code from the staging area to the remote site. The remote site is only connected to the local repository.
+### Branching
+Explore the power of branching to work on multiple versions of your project simultaneously. Learn to create branches and switch between them.
 
+### Merging
+Discover how to integrate changes from different branches using merging. Understand the process of combining code changes to ensure project cohesion.
 
-### Branching and Merging
-
-Introduction to branches
-Creating, switching, and deleting branches
-Merging changes between branches
-
-### Collaborating with Git
-
-Working with remote repositories
-Cloning repositories
-Pushing and pulling changes
+### Collaborating with Remote Repositories
+Extend your understanding to remote repositories. Learn how to clone repositories, push your changes, and pull others' contributions.
 
 ### Resolving conflicts
+Understand conflict resolution during merging. Learn strategies to harmonize code changes and maintain code quality.
+
+### Enhancing Collaboration
+[//]: # "Talk about the concept of pull requests and code reviews." 
+
+### Best Practices and Etiquette
+
 
 # Search Engine
 They say that Google is a programmer's best friend. With a few keywords and a click of a button, a world of knowledge opens up. Whether it's debugging an error, exploring new libraries, or discovering best practices, programmers can navigate the vast realm of knowledge through a **search engine**.
