@@ -83,7 +83,7 @@ As you delve deeper into the world of computers, you will inevitably encounter t
 Linux is a Unix-inspired, Unix-like operating system widely used today. It was created by Linus Torvalds in the early 1990s. Linux also happens to be open-source, meaning that its software is freely available online, allowing users to view, modify, and distribute its source code.
 
 > Note: "Source code" refers to the original, human-readable version of the code that programmers write. "Code" can sometimes be used more broadly to refer to compiled or executable programs, while "source code" indicates the raw code that developers work with before it's translated into machine-readable instructions.
- 
+
 You'll be surprised to learn that Linux is used everywhere. While the average consumer knows only of Windows and macOS computers, companies across various sectors have embraced Linux's versatility, stability, and cost-effectiveness. From web servers and cloud computing to scientific research, embedded systems, and even space exploration.
 
 I mention Linux here because you will likely encounter it if you continue working with technology, and Linux relies heavily on the use of text-based commands executed through the terminal.
@@ -191,8 +191,13 @@ To address such challenges, programmers often rely on version control systems li
 ## Fundamentals
 
 ### Version Control Systems (VCS)
-Version Controle Systems are tools that are used to keep track of changes to source code or other collections of files or folders.
-[//]: # "Version control is the practice of tracking and managing changes, usually to software code."
+Version Control Systems are tools that are used to keep track of changes to source code or other collections of files or folders. In other words, they keep track of the history of changes to some set of documents. 
+
+Version Control Systems track changes to a folder and its contents in a series of snapshots. So if you are working on your code, you can decide to take a snapshot of the entire state of your project folder at any time, and with time you will have multiple of these snapshots.
+
+Version Control Systems also maintain a bunch of metadata along with the actual changes to the content. This makes it possible to know who authored a particular change to a particular file, when was this change made, what message was left with the snapshot, etc.
+
+There are a handful of Version Control Systems out there, such as Git, Subversion (SVN), and Mercurial, however they all have the same fundamental concepts. In here, we will talk about the concepts with Git in mind.
 
 ### Setting Up a Repository
 Learn how to create a repository to organize your project's files and commit history. Understand the local and remote aspects of repositories.
