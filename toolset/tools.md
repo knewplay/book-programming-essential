@@ -82,6 +82,8 @@ As you delve deeper into the world of computers, you will inevitably encounter t
 ### Linux
 Linux is a Unix-inspired, Unix-like operating system widely used today. It was created by Linus Torvalds in the early 1990s. Linux also happens to be open-source, meaning that its software is freely available online, allowing users to view, modify, and distribute its source code.
 
+> Note: "Source code" refers to the original, human-readable version of the code that programmers write. "Code" can sometimes be used more broadly to refer to compiled or executable programs, while "source code" indicates the raw code that developers work with before it's translated into machine-readable instructions.
+ 
 You'll be surprised to learn that Linux is used everywhere. While the average consumer knows only of Windows and macOS computers, companies across various sectors have embraced Linux's versatility, stability, and cost-effectiveness. From web servers and cloud computing to scientific research, embedded systems, and even space exploration.
 
 I mention Linux here because you will likely encounter it if you continue working with technology, and Linux relies heavily on the use of text-based commands executed through the terminal.
@@ -188,7 +190,8 @@ To address such challenges, programmers often rely on version control systems li
 
 ## Fundamentals
 
-### Version Control System (VCS)
+### Version Control Systems (VCS)
+Version Controle Systems are tools that are used to keep track of changes to source code or other collections of files or folders.
 [//]: # "Version control is the practice of tracking and managing changes, usually to software code."
 
 ### Setting Up a Repository
