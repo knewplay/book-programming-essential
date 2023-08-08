@@ -184,7 +184,7 @@ Now, let's say you want to add a new feature, like a sophisticated projectile la
 
 Suppose "RoboticsProject_v2" turns out to be a success, and your new projectile launch mechanism works flawlessly. At this point, "RoboticsProject_v2" becomes your main project, incorporating the new feature.
 
-This approach significantly improves your workflow compared to what many novice programmers do. However, there's a catch. When multiple people collaborate on the same project, managing code becomes more complex. Imagine person A working on enhancing the projectile launch feature while person B is simultaneously working on another feature that interacts with the projectile launch code. Once they both complete their features, which of the two folder is going to be the new main code? How are we going to merge the two folders together?
+This approach significantly improves your workflow compared to what many novice programmers do. However, there's a catch. When multiple people collaborate on the same project, managing code becomes more complex. Imagine person A working on enhancing the projectile launch feature while person B is simultaneously working on another feature that interacts with the projectile launch code. Once they both complete their features, which of the two folder is going to be the new main code? How are we going to merge the two folders together? Is person A going to send his version, tell person B the changes he's made, and have person B manually copy and paste the changes into his version, which will eventually become the main version?
 
 To address such challenges, programmers often rely on version control systems like Git. These systems allow collaborative work while keeping everyone's changes organized and manageable. So, while the "duplicate and experiment" technique is great for personal projects, for team collaborations, embracing version control practices like Git takes your coding journey to a whole new level.
 
@@ -197,7 +197,7 @@ Version Control Systems track changes to a folder and its contents in a series o
 
 Version Control Systems also maintain a bunch of metadata along with the actual changes to the content. This makes it possible to know who authored a particular change to a particular file, when was this change made, what message was left with the snapshot, etc.
 
-There are a handful of Version Control Systems out there, such as Git, Subversion (SVN), and Mercurial, however they all have the same fundamental concepts. In here, we will talk about the concepts with Git in mind.
+There are a number of Version Control Systems out there such as Subversion (SVN) and Mercurial, but Git has become the de facto standard for version control. In here, we will talk about the concepts with Git in mind.
 
 ### Setting Up a Repository
 Learn how to create a repository to organize your project's files and commit history. Understand the local and remote aspects of repositories.
