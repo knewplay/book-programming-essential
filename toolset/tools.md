@@ -172,19 +172,19 @@ It is also possible to redirect an output into a file rather than onto the termi
 [//]: # "not sure if I should add a final section (like a conclusion section) ### Additional Utilities There is a lot you can do with the terminal. And for everything that you can do, there is a command for it. So take your time to explore the terminal."
 
 # Git
-Imagine investing months, or even years, in developing a remarkable app, only to one day lose your laptop, and thus, your work. Despite such potential setbacks, how do thousands of programmers still manage to collaborate on a single project, and even stay organized? Now that you know about the terminal, we can talk about the wonderful tool called **Git**.
+Imagine investing months, or even years, in developing a remarkable app, only to one day lose your laptop, and thus, your work. Despite such potential setbacks, how do thousands of programmers still manage to collaborate on a single project, and even stay organized? Now that you know about the terminal, we can discuss the wonderful tool called **Git**.
 
 ## Importance
 
-Imagine you're working on a robotics project that involves launching a projectile. You have your entire project's code neatly organized in a folder named "RoboticsProject". However, coding can be tricky, and changes you make can sometimes lead to unexpected results. To avoid breaking the working code, you employ a smart strategy.
+Suppose you're working on a robotics project centered around launching a projectile, with all your code neatly stored in a "RoboticsProject" folder. Given the complexities of coding and the potential for unexpected outcomes, you've adopted a prudent approach. Each time you reach a functional milestone, you save that version in the "RoboticsProject" folder, ensuring you always have a reliable backup to revert to if needed.
 
-Whenever you achieve a functional milestone, you save it in the original "RoboticsProject" folder. This way, you always have a known working version to fall back on.
+Suppose you decide to add a new feature, such as a sophisticated projectile launch mechanism. To ensure safety, you could duplicate the "RoboticsProject" folder and name it "RoboticsProject_v2".
 
-Now, let's say you want to add a new feature, like a sophisticated projectile launch mechanism. To keep things safe, you create a duplicate of the "RoboticsProject" folder and name it "RoboticsProject_v2". Why go through this trouble? Well, this duplicate serves as a playground where you can freely experiment without fear of damaging your working code. If your attempts in "RoboticsProject_v2" lead to chaos, no worries, because your original code in "RoboticsProject" remains intact.
+Why go through this trouble? Well, this duplicate serves as a playground where you can freely experiment without fear of damaging your working code. If your attempts in "RoboticsProject_v2" lead to chaos, no worries, because your original code in "RoboticsProject" remains intact.
 
 Suppose "RoboticsProject_v2" turns out to be a success, and your new projectile launch mechanism works flawlessly. At this point, "RoboticsProject_v2" becomes your main project, incorporating the new feature.
 
-This approach significantly improves your workflow compared to what many novice programmers do. However, there's a catch. When multiple people collaborate on the same project, managing code becomes more complex. Imagine person A working on enhancing the projectile launch feature while person B is simultaneously working on another feature that interacts with the projectile launch code. Once they both complete their features, which of the two folder is going to be the new main code? How are we going to merge the two folders together? Is person A go`ing to send his version, tell person B the changes he's made, and have person B manually copy and paste the changes into his version, which will eventually become the main version?
+This approach significantly improves your workflow compared to what many novice programmers do. However, there's a catch. Managing code becomes more complex when multiple people collaborate on the same project. Imagine person A enhancing the projectile launch feature while person B simultaneously works on another feature that interacts with the projectile launch code. Once they both complete their features, which of the two folder will be the new main code? How are we going to merge the two folders together? Is person A go`ing to send his version, tell person B the changes he's made, and have person B manually copy and paste the changes into his version, which will eventually become the main version?
 
 To address such challenges, programmers often rely on version control systems like Git. These systems allow collaborative work while keeping everyone's changes organized and manageable. So, while the "duplicate and experiment" technique is great for personal projects, for team collaborations, embracing version control practices like Git takes your coding journey to a whole new level.
 
@@ -193,11 +193,11 @@ To address such challenges, programmers often rely on version control systems li
 ### Version Control Systems (VCS)
 Version Control Systems are tools that are used to keep track of changes to source code or other collections of files or folders. In other words, they keep track of the history of changes to some set of documents. 
 
-Version Control Systems track changes to a folder and its contents in a series of snapshots. So if you are working on your code, you can decide to take a snapshot of the entire state of your project folder at any time, and with time you will have multiple of these snapshots.
+Version Control Systems track changes to a folder and its contents in a series of snapshots. So if you are working on your code, you can take a snapshot of the entire state of your project folder at any time, and with time you will have multiple of these snapshots.
 
 Version Control Systems also maintain a bunch of metadata along with the actual changes to the content. This makes it possible to know who authored a particular change to a particular file, when was this change made, and what message was left with the snapshot.
 
-There are a number of Version Control Systems out there such as Subversion (SVN) and Mercurial, but Git has become the de facto standard for version control. In here, we will talk about the concepts with Git in mind.
+There are several Version Control Systems out there such as Subversion (SVN) and Mercurial, but Git has become the de facto standard for version control. In here, we will talk about the concepts with Git in mind.
 
 ### Merging
 Discover how to integrate changes from different branches using merging. Understand the process of combining code changes to ensure project cohesion.
