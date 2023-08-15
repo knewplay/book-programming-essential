@@ -184,7 +184,7 @@ Why go through this trouble? Well, this duplicate serves as a playground where y
 
 Suppose "RoboticsProject_v2" turns out to be a success, and your new projectile launch mechanism works flawlessly. At this point, "RoboticsProject_v2" becomes your main project, incorporating the new feature.
 
-This approach significantly improves your workflow compared to what many novice programmers do. However, there's a catch. Managing code becomes more complex when multiple people collaborate on the same project. Imagine person A enhancing the projectile launch feature while person B simultaneously works on another feature that interacts with the projectile launch code. Once they both complete their features, which of the two folder will be the new main code? How are we going to merge the two folders together? Is person A go`ing to send his version, tell person B the changes he's made, and have person B manually copy and paste the changes into his version, which will eventually become the main version?
+This approach significantly improves your workflow compared to what many novice programmers do. However, there's a catch. Managing code becomes more complex when multiple people collaborate on the same project. Imagine person A enhancing the projectile launch feature while person B simultaneously works on another feature that interacts with the projectile launch code. Once they both complete their features, which of the two folder will be the new main code? How are we going to merge the two folders together? Is person A going to send his version, tell person B the changes he's made, and have person B manually copy and paste the changes into his version, which will eventually become the main version?
 
 To address such challenges, programmers often rely on version control systems like Git. These systems allow collaborative work while keeping everyone's changes organized and manageable. So, while the "duplicate and experiment" technique is great for personal projects, for team collaborations, embracing version control practices like Git takes your coding journey to a whole new level.
 
@@ -223,15 +223,25 @@ When you put your project in a remote repository, it's like creating a meeting p
 > Hosting means storing your website or project on a computer called a server, which is connected to the internet and makes your content accessible to others. When you hear about web hosting, it means renting space on one of these servers to store your website. Similarly, platforms like GitHub, GitLab, and Bitbucket host your code repositories on their servers, so others can access and collaborate on them.
 
 ### Staging Changes
+I already mentioned that you can take a snapshot of the entire state of your project folder at any time. That will be discussed in the next section, "Committing Changes". 
 
-[//]: # "internal temporary db, staging area that you are ready to commit that you havent commited yet"
+In Git, before you take a snapshot of your project's current state, you need to decide which changes you want to include in that snapshot. This step is called staging. Git provides a special area, called the staging area, where you can select and organize the changes you want to include in your snapshot.
+
+Staging is like preparing a set of items you want to pack into a box. You pick out the items you need and set them aside, so you're ready to pack them up when the time comes.
+
+For simple projects, you'll usually stage all your changes at once. However, for more advanced projects, you might want to be more selective about which changes you stage together, as it is an intermediary step between making changes to your project and taking a snapshot of those changes. While it might seem like an extra step at first, it becomes a powerful tool for keeping your project organized as it grows in complexity.
 
 ### Committing Changes
-Dive into committing changes to your repository. Understand the concept of commits, staging changes, and crafting meaningful commit messages.
+When we talk about "taking a snapshot" of your project, we're actually referring to a process known as "committing" in Git. Once you've staged your changes, you're ready to commit them. In other words, it's time to save a snapshot of your current progress.
 
-[//]: # "Cannot directly push code from your working copy to the remote site. Similarly, you cannot directly push your code from the staging area to the remote site. The remote site is only connected to the local repository."
+Think of committing in Git as creating a checkpoint in a video game. It's a saved state that you can always return to later if needed.
+
+But there's more to committing than just saving your progress. Each commit includes a message; a brief note that describes what changes were made and why. These messages, create a narrative of your project's progress. They help collaborators (and your future self) understand the reasoning behind each change.
+
+As you work on your code, you'll find yourself staging and committing changes regularly. This process results in a series of snapshots, each representing a specific stage of your project. If we were to visualize these snapshots, they would form a timeline where each snapshot links back to the one before it. This timeline preserves the chronological order of your changes and helps you see the project's entire history at a glance.
 
 ### Branching
+Snapshots don't always have to move linearly in one direction. They can 
 Explore the power of branching to work on multiple versions of your project simultaneously. Learn to create branches and switch between them.
 
 ### Merging
@@ -239,6 +249,10 @@ Discover how to integrate changes from different branches using merging. Underst
 
 ### Collaborating with Remote Repositories
 Extend your understanding to remote repositories. Learn how to clone repositories, push your changes, and pull others' contributions.
+
+[//]: # "While your local repository maintains this history of commits, these are local to your machine. To share this history and the current state with others, one must synchronize the local repository with a remote one."
+
+[//]: # "Cannot directly push code from your working copy to the remote site. Similarly, you cannot directly push your code from the staging area to the remote site. The remote site is only connected to the local repository."
 
 ### Resolving conflicts
 Understand conflict resolution during merging. Learn strategies to harmonize code changes and maintain code quality.
