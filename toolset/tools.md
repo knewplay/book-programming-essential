@@ -199,13 +199,28 @@ Version Control Systems also maintain a bunch of metadata along with the actual 
 
 There are several Version Control Systems out there such as Subversion (SVN) and Mercurial, but Git has become the de facto standard for version control. In here, we will talk about the concepts with Git in mind.
 
-### Merging
-Discover how to integrate changes from different branches using merging. Understand the process of combining code changes to ensure project cohesion.
-
 ### Setting Up a Repository
-Learn how to create a repository to organize your project's files and commit history. Understand the local and remote aspects of repositories.
+At the heart of every Git project is the repository, often referred to as a "repo" (pronounced "ree-pow"). A Git repository is a special folder for your project where every change, every decision, and every version of your project resides. 
 
-[//]: # "github is a host for githunb repos"
+I'll repeat because it is so important: a Git repo is not just a place to keep your files; it also keeps track of all the changes you make, so you can see how your project has changed over time.
+
+#### **Local Repository**
+You have your computer, right? On this computer, you have folders and files. One of these folders is your "RoboticsProject" folder. This is where you are programming your robot.
+
+With one command, you can turn this folder into a Git repository. And since it is stored locally on your computer, it is known as a "local repository". 
+
+> In computer terms, "local" means something is on your own computer or in your immediate network. For example, "localhost" is a way of referring to your own computer, particularly when you're running a program or service on it. A "local network" is a group of computers or devices that are physically close, like the devices in your home. This is in contrast to "remote," which means it's located off-site or somewhere else on the internet.
+
+This local environment contains not only your project files but also a history of changes, authorship, and notes associated with those changes.
+
+#### **Remote Repository**
+Local repositories are fantastic for individual work, but the true power of Git shines when collaborating. Remote repositories are hosted on the internet, and they act as a hub where teams can share, collaborate, and synchronize their codebase.
+
+Imagine that you want to share your "RoboticsProject" folder with friends so they can help you with the programming. Instead of using a USB drive or some messaging app to share the work, you can use a remote repository that will host your project for free on the internet. 
+
+When you put your project in a remote repository, it's like creating a meeting place for you and your friends to share, collaborate, and synchronize your code. You can all work on the same project from your own computers, and the remote repository will help keep track of everyone's changes.
+
+> Hosting means storing your website or project on a computer called a server, which is connected to the internet and makes your content accessible to others. When you hear about web hosting, it means renting space on one of these servers to store your website. Similarly, platforms like GitHub, GitLab, and Bitbucket host your code repositories on their servers, so others can access and collaborate on them.
 
 ### Staging Changes
 
