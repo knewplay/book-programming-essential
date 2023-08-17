@@ -108,10 +108,10 @@ Now imagine a different scenario. It's 8:27AM, and you just reached your school 
 
 Continuing from this "more organized version of you", you sit down at your desk, and open the folder. Inside this "Physics" folder, you have two more folders, two notebooks, a couple of blank sheets of papers (in case there's a pop-quiz or you just want to jot something down) and the Physics book which your teacher follows. The "subfolders" are labeled "Quizzes" and "Homework", and they have notebooks and separate papers inside of them too.
 
-<!-- <figure>
-  <img src="./figures/physics-folder" title="Physics Folder" style="width: 50%">
+<figure>
+  <img src="./figures/folders.jpg" title="Physics Folder" style="width: 50%">
   <figcaption>A look inside the Physics folder.</figcaption>
-</figure> -->
+</figure>
 
 Something to realize is that there is no "right" and definitive way to organize your files. You may be organized with your method, and maybe your classmate is also organized, but he has his Physics folder insider of a larger folder called "Science", which contains both "Physics" and "Chemistry" folders, and he holds his blank sheets of paper inside a "Quizzes" folder.
 
@@ -126,7 +126,7 @@ We have an idea of what a folder is in real life, and it's no different when it 
 In the realm of computers, a file resembles the items you'd find inside your school locker. It is a named collection of data stored on a computer's storage system. Just like your school book, notebook, or piece of paper, a computer file can hold various types of information, such as text, images, videos, audio, program instructions, or configuration data.
 
 <figure>
-  <img src="./figures/file-systerm.jpg" title="The File System" style="width: 50%">
+  <img src="./figures/file-system-2.jpg" title="The File System" style="width: 50%">
   <figcaption>The file system can be viewed as an inverted tree, with the root at the top, and leaves at the bottom.</figcaption>
 </figure>
 
@@ -152,10 +152,16 @@ It's a similar story with computer files. The file has a name that uniquely iden
 
 If you want to review your Quiz 1 for your Physics class, there is an underlying path to get to Quiz 1: open your locker (you can think of it as a folder containing all your course folders), open the Physics folder, and grab the loose sheet of paper labeled "Quiz 1". If your folder structure is different, then you'll have to take a different path: open your locker, open the Science folder, open the Physics folder, open the Quizzes folder, then grab "Quiz 1". It all depends on the structure of the folder system.
 
-A simple way to represent the path that you took to get to your Physics Quiz 1 in the first case is as follows: 
+A simple way to represent the path that you took to get to your Physics Quiz 1 in the first case is as follows:
+
 ```
 Locker > Physics > Quiz 1
 ``` 
+
+<figure>
+  <img src="./figures/file-path-1.jpg" title="A File Path" style="width: 50%">
+  <figcaption>An example of a path, highlighted in red.</figcaption>
+</figure>
 
 In the second case, it is as follows: 
 
@@ -164,7 +170,7 @@ Locker > Science > Physics > Quizzes > Quiz 1.
 ```
 
 <figure>
-  <img src="./figures/file-path.jpg" title="A File Path" style="width: 50%">
+  <img src="./figures/file-path-2.jpg" title="A File Path" style="width: 50%">
   <figcaption>An example of a path, highlighted in red.</figcaption>
 </figure>
 
