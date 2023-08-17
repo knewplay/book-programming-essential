@@ -40,13 +40,19 @@ When it comes to saving information on a laptop, there are two kinds of methods 
 
 Finally, we have the output component, which presents the processed information to the user in a user-friendly format. In the case of a laptop, the primary output device is the display screen, where visual information is presented. Additionally, the laptop may have audio output capabilities through built-in speakers or headphone jacks, allowing for the playback of sound or speech. Output devices can also include printers, external monitors, or other devices that provide tangible or perceptible outputs based on the processed data.
 
-![An illustration of a modern laptop with CPU and RAM depicted, symbolizing the essential components of the computer.](./figures/laptop.jpg "Laptop")
+<figure>
+  <img src="./figures/laptop.jpg" title="Laptop" style="width: 50%">
+  <figcaption>An illustration of a modern laptop with CPU and RAM depicted, symbolizing the essential components of the computer.</figcaption>
+</figure>
 
 All the devices mentioned here, such as the keyboard, the CPU, the hard drive, and the screen, are known as hardware. **Hardware** is "hard" to the touch. In other words, you can actually touch it and hold it. It's also "hard" to change it. If you buy a laptop, the components on the laptop's motherboard are soldered onto the board, making the hardware fixed. 
 
 On the other hand, we have software. **Software** is "soft". In other words, it's not something physical that you can touch and feel. Can you "touch" a video game, or the Google search engine? Nope. It is also soft in the sense that it is not fixed; one minute you can run Microsoft Word, and then Photoshop five seconds later. It is very flexible, and can be changed or removed easily.
 
-![An illustration of a modern laptop showcasing the intangible yet dynamic nature of software applications.](./figures/software.jpg "Laptop's Software")
+<figure>
+  <img src="./figures/software.jpg" title="Laptop's Software" style="width: 50%">
+  <figcaption>An illustration of a modern laptop showcasing the intangible yet dynamic nature of software applications.</figcaption>
+</figure>
 
 # Operating System
 
@@ -54,7 +60,10 @@ Now the question is, how do we combine hardware with software? Because software 
 
 Software is stored in the memory of a computer. You can think of the memory as having many "slots", and in each slot you can hold a certain amount of information. For simplicity, let's say that one computer instruction (a.k.a. command) can be stored in one memory slot. So if we have 10 commands, then we will need 10 different memory slots, a.k.a. memory locations, a.k.a. memory addresses. The CPU reads memory slot #1, and after executing the command there, it will go to the following memory slot, all the way up to memory slot #10, after which the program is over (a program is essentially a bunch of commands written for the CPU to execute).
 
-![An illustration of a memory stick with zoomed-in memory slots holding instructions for a computer program.](./figures/computer-memory.jpg "Memory Slots")
+<figure>
+  <img src="./figures/computer-memory.jpg" title="Memory Slots" style="width: 50%">
+  <figcaption>An illustration of a memory stick with zoomed-in memory slots holding instructions for a computer program.</figcaption>
+</figure>
 
 Sounds simple, right? The problem is that a Mac computer, an iPhone, a Samsung smartphone, and a Lenovo laptop all use different hardware from different companies (think of the processors being made by Intel, AMD, Apple, etc.), and so they execute programs differently. On top of the internal hardware differences, we also want to connect external devices such as a mouse, keyboard, monitor, printer, and much more.
 
@@ -62,7 +71,10 @@ It would be ridiculous to ask software developers to write one program for Lenov
 
 To address these challenges and facilitate the seamless interaction between hardware and software, we rely on operating systems (OS). The operating system acts as an intermediary layer, bridging the gap between the hardware and software components of a computer system. In essense, an operating system is low-level software, meaning that it interacts more closely with the physical hardware components.
 
-![The operating system acts as a pivotal intermediary, facilitating seamless interaction between the user, software, and hardware components of a computer system.](./figures/software-hardware.jpg "Operating System")
+<figure>
+  <img src="./figures/software-hardware.jpg" title="Operating System" style="width: 50%">
+  <figcaption>The operating system acts as a pivotal intermediary, facilitating seamless interaction between the user, software, and hardware components of a computer system.</figcaption>
+</figure>
 
 The operating system abstracts the complexities of hardware, providing a uniform environment for software developers to create applications. It also provides regular everyday computer users with their familiar view of the computer: the GUI (pronounced as "Gee-You-Eye"), or Graphical User Interface. When we turn on a Windows computer there is a style that we expect to see, and it's a similar story when we turn on a device running macOS, iOS, or Android.
 
@@ -81,15 +93,25 @@ The operating systems of Microsoft's Windows, Apple's macOS/iOS, and Google's An
 
 Imagine this. It's 8:27AM, and you just reached your school locker. You have a strict Physics teacher who closes the classroom door at 8:30AM. No ifs, buts or maybes. You frantically turn the lock combination, open the door, and a bunch of books and papers come crashing down on your feet. You kneel down, pick up a paper, and "oh no, this ones yesterday's History quiz! This one's the Math book, ugh it looks so similar to the Physics book!"... long story short, you're late for class.
 
-![A messy locker.](./figures/school-locker-messy.jpg "Messy Locker")
+<figure>
+  <img src="./figures/school-locker-messy.jpg" title="Messy Locker" style="width: 50%">
+  <figcaption>A messy locker.</figcaption>
+</figure>
+
 
 Now imagine a different scenario. It's 8:27AM, and you just reached your school locker. You turn the lock combination, open the locker, read the folder labels "History, no. Math, no. Chemistry, no. Physics, perfect!". You pull out the "Physics" folder, which you know contains everything already, lock the door, and head to class. It's 8:28AM by the way.
 
-![An organized locker.](./figures/school-locker-organized.jpg "Organized Locker")
+<figure>
+  <img src="./figures/school-locker-organized.jpg" title="Organized Locker" style="width: 50%">
+  <figcaption>An organized locker.</figcaption>
+</figure>
 
 Continuing from this "more organized version of you", you sit down at your desk, and open the folder. Inside this "Physics" folder, you have two more folders, two notebooks, a couple of blank sheets of papers (in case there's a pop-quiz or you just want to jot something down) and the Physics book which your teacher follows. The "subfolders" are labeled "Quizzes" and "Homework", and they have notebooks and separate papers inside of them too.
 
-[//]: # "TODO: Add illustration here of physics folder insides"
+<!-- <figure>
+  <img src="./figures/physics-folder" title="Physics Folder" style="width: 50%">
+  <figcaption>A look inside the Physics folder.</figcaption>
+</figure> -->
 
 Something to realize is that there is no "right" and definitive way to organize your files. You may be organized with your method, and maybe your classmate is also organized, but he has his Physics folder insider of a larger folder called "Science", which contains both "Physics" and "Chemistry" folders, and he holds his blank sheets of paper inside a "Quizzes" folder.
 
@@ -103,9 +125,10 @@ We have an idea of what a folder is in real life, and it's no different when it 
 
 In the realm of computers, a file resembles the items you'd find inside your school locker. It is a named collection of data stored on a computer's storage system. Just like your school book, notebook, or piece of paper, a computer file can hold various types of information, such as text, images, videos, audio, program instructions, or configuration data.
 
-![The file system can be viewed as an inverted tree, with the root at the top, and leaves at the bottom.](./figures/file-systerm.jpg "The File System")
-
-[//]: # "TODO: Image above to be changed"
+<figure>
+  <img src="./figures/file-systerm.jpg" title="The File System" style="width: 50%">
+  <figcaption>The file system can be viewed as an inverted tree, with the root at the top, and leaves at the bottom.</figcaption>
+</figure>
 
 > To get a better understanding of how computers view and represent images, [read this](http://www.lakelandscomputing.com/binary-images.html).
 
@@ -140,8 +163,10 @@ In the second case, it is as follows:
 Locker > Science > Physics > Quizzes > Quiz 1.
 ```
 
-![An example of a path, highlighted in blue.](./figures/file-path.jpg "A File Path")
-[//]: # "TODO: Image above to be changed"
+<figure>
+  <img src="./figures/file-path.jpg" title="A File Path" style="width: 50%">
+  <figcaption>An example of a path, highlighted in red.</figcaption>
+</figure>
 
 The computer's file system works in the exact same way. Computers always have a folder called the root folder which is like the locker in the school example: a folder (or box) that contains all other folders. The root folder is denoted by a forward slash (/) on Linux and macOS, while Windows uses the drive (HDD or SSD) letter followed by a colon (e.g., "C:").
 
