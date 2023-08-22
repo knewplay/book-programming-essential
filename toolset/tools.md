@@ -195,23 +195,25 @@ Version Control Systems are tools that are used to keep track of changes to sour
 
 Version Control Systems track changes to a folder and its contents in a series of snapshots. So if you are working on your code, you can take a snapshot of the entire state of your project folder at any time, and with time you will have multiple of these snapshots.
 
-Version Control Systems also maintain a bunch of metadata along with the actual changes to the content. This makes it possible to know who authored a particular change to a particular file, when was this change made, and what message was left with the snapshot.
+Version Control Systems also keep track of some extra information, or "metadata", along with the actual changes to the content. This makes it possible to know who authored a particular change to a particular file, when was this change made, and what message was left with the snapshot.
 
 There are several Version Control Systems out there such as Subversion (SVN) and Mercurial, but Git has become the de facto standard for version control. In here, we will talk about the concepts with Git in mind.
 
 ### Setting Up a Repository
 At the heart of every Git project is the repository, often referred to as a "repo" (pronounced "ree-pow"). A Git repository is a special folder for your project where every change, every decision, and every version of your project resides. 
 
-I'll repeat because it is so important: a Git repo is not just a place to keep your files; it also keeps track of all the changes you make, so you can see how your project has changed over time.
+I'll repeat because it is so important: a Git repo is not just a place to keep your files, it also keeps track of all the changes you make, so you can see how your project has changed over time.
 
 #### **Local Repository**
 You have your computer, right? On this computer, you have folders and files. One of these folders is your "RoboticsProject" folder. This is where you are programming your robot.
 
-With one command, you can turn this folder into a Git repository. And since it is stored locally on your computer, it is known as a "local repository". 
+With just one command, you can turn this folder into a Git repository. And since it is stored locally on your computer, it will be known as a "local repository". 
 
 > In computer terms, "local" means something is on your own computer or in your immediate network. For example, "localhost" is a way of referring to your own computer, particularly when you're running a program or service on it. A "local network" is a group of computers or devices that are physically close, like the devices in your home. This is in contrast to "remote," which means it's located off-site or somewhere else on the internet.
 
-This local environment contains not only your project files but also a history of changes, authorship, and notes associated with those changes.
+This local environment contains not only your project files but also a history of changes, authorship, and notes associated with those changes. This point is extremely important. Don't think of your repository as simply the current state of your project, because that's not what it is. Your local repository is the history of your project, alongside the metadata of each snapshot.
+
+Within your local repository, there's a place where you actively work on your project files, and this is called the "working directory." It's essentially your project's current state, with all the latest changes you've made. As you make edits, add files, or delete them, these changes happen in the working directory. Once you're satisfied with the modifications you've made, you can stage them, which means you're preparing them to be committed to the local repository. When you commit the changes, they become part of the project's history that your local repository holds.
 
 #### **Remote Repository**
 Local repositories are fantastic for individual work, but the true power of Git shines when collaborating. Remote repositories are hosted on the internet, and they act as a hub where teams can share, collaborate, and synchronize their codebase.
@@ -231,14 +233,35 @@ Staging is like preparing a set of items you want to pack into a box. You pick o
 
 For simple projects, you'll usually stage all your changes at once. However, for more advanced projects, you might want to be more selective about which changes you stage together, as it is an intermediary step between making changes to your project and taking a snapshot of those changes. While it might seem like an extra step at first, it becomes a powerful tool for keeping your project organized as it grows in complexity.
 
+> There may be certain files that you don't want to be tracked and added to your repository. For example, you might want to exclude log files, which are automatically generated records of events in a software application. They can be large and change frequently, so it's typically not helpful to track them in your Git repository.
+
 ### Committing Changes
-When we talk about "taking a snapshot" of your project, we're actually referring to a process known as "committing" in Git. Once you've staged your changes, you're ready to commit them. In other words, it's time to save a snapshot of your current progress.
+When we talk about "taking a snapshot" of your project, we're actually referring to a process   known as "committing" in Git. Once you've staged your changes, you're ready to commit them. In other words, it's time to save a snapshot of your current progress.
 
 Think of committing in Git as creating a checkpoint in a video game. It's a saved state that you can always return to later if needed.
 
-But there's more to committing than just saving your progress. Each commit includes a message; a brief note that describes what changes were made and why. These messages, create a narrative of your project's progress. They help collaborators (and your future self) understand the reasoning behind each change.
+But there's more to committing than just saving your progress. Each commit includes a message from the author; a brief note that describes what changes were made and why. These messages, create a narrative of your project's progress. They help collaborators (and your future self) understand the reasoning behind each change.
 
 As you work on your code, you'll find yourself staging and committing changes regularly. This process results in a series of snapshots, each representing a specific stage of your project. If we were to visualize these snapshots, they would form a timeline where each snapshot links back to the one before it. This timeline preserves the chronological order of your changes and helps you see the project's entire history at a glance.
+
+So if you realize that you made a mistake in your code, and you want to backtrack to a previous commit, how do you do it?
+
+Well, every commit you make is assigned a unique SHA-1 identifier, a 40-character fingerprint derived from your changes and associated metadata. This ensures each commit is distinct and allows for precise tracking. If needed, you can revert to an earlier project version using its SHA-1, safeguarding against unintentional errors or changes.
+
+And how do you know at which point you are at in this series of snapshots? That is thanks to the HEAD pointer.
+
+The HEAD is a pointer that tells you where you are in the repository. It usually points to the latest commit in the branch you're currently working on. If you switch branches (which we will see later) or retract a previous commit, the HEAD will move accordingly, as shown in the illustration below.
+
+[Illustration of snapshots with HEAD pointer.]
+
+### Bringing It All Together
+At this point, we've explored various components and stages of Git. Let's take a moment to see how everything comes together to form a streamlined workflow for developers. Specifically, let's focus on the interaction between the working directory, staging area, local repository, and remote repository.
+
+1. Working Directory: This is where you'll be doing most of your work. It's the place where you write, edit, and delete your project files. When you have made some changes to your files that you're satisfied with, you move on to the next step, staging your changes.
+
+2. Staging Area: Before committing changes to the local repository, you need to decide which changes you want to include in that snapshot. This step is called staging. The staging area is a sort of buffer that holds the changes you want to commit. You select and organize the changes here, making sure you have a set of related changes ready to be committed.
+
+3. Committing to the Local Repository: Once you have staged your changes, you commit them to your local repository. This step involves saving a snapshot of your project at its current state to the repository. Remember, each commit captures a moment in your project's history. When you commit, you provide a message that briefly describes the changes you've made and why. This message becomes part of your project's history, helping you and your collaborators understand why each change was made.
 
 ### Branching
 Branching is one of the powerful features of Git. Imagine you're working on the "RoboticsProject" folder with your team, and you want to try a new feature for the projectile launch mechanism. Instead of making changes directly to the main project, you create a "branch" - a parallel version of your project where you can experiment without affecting the original code. In Git, the main branch is often called the "main" or "master" branch, and it's the version of your project that's considered stable and ready for production.
@@ -261,7 +284,7 @@ To get your own local copy of the remote repository, you "clone" it. Cloning cre
 
 (Insert an illustration of a computer with an empty folder, then a cloud symbol representing the remote repository, and an arrow pointing from the cloud to the computer, showing the process of cloning.)
 
-Once you have a local copy, you can create branches, make changes, and commit them just like in any other Git repository. While your local repository maintains this history of commits, these are local to your machine. To share this history and the current state with others, one must synchronize the local repository with a remote one.
+Once you have a local copy, you can create branches, make changes, and commit them just like in any other Git repository. While your local repository maintains this history of commits, these are local to your computer. To share this history and the current state with others, one must synchronize the local repository with a remote one.
 
 (Insert an illustration of a computer with a local repository connected to a cloud symbol representing the remote repository, showing arrows for pushing and pulling.)
 
@@ -272,10 +295,7 @@ However, it is crucial to note that you cannot directly push code from your work
 1. A computer representing the user's local machine with three areas: Working copy, Staging area, and Local repository.
 2. A cloud symbol representing the Remote repository.
 3. Arrows going from the Staging area to the Local repository (representing commits).
-4. Arrows going from the Local repository to the Remote repository (representing pushing) and from the Remote repository to the Local repository (representing pulling).
-5. Crossed-out arrows between the Working copy and the Remote repository and between the Staging area and the Remote repository to emphasize that these connections are not possible.
-
-This illustration would visually represent the process described in the paragraph, emphasizing that the user cannot directly push or pull from the working copy or the staging area to the remote repository. Instead, they must commit changes to the local repository and then synchronize with the remote repository.) -->
+4. Arrows going from the Local repository to the Remote repository (representing pushing) and from the Remote repository to the Local repository (representing pulling). -->
 
 When working with remote repositories, there's an important concept called "upstream tracking." Imagine you've created a feature branch, and you've pushed it to the remote repository. The next time you want to push changes to the same branch, you don't need to specify where to push them. Git remembers the branch's location in the remote repository, making it easier to share your changes. This is what's referred to as "upstream tracking."
 
@@ -290,6 +310,7 @@ Understand conflict resolution during merging. Learn strategies to harmonize cod
 [//]: # "Talk about the concept of pull requests and code reviews." 
 
 ### Best Practices and Etiquette
+If you are doing everything correctly, you will never need to revert back to some previous commit that you've made. Ideally, when you are experimenting, you should be creating new branches for every new feature you want to add to the project. However, in ever you do have to revert back to some previous version of your code, then
 
 
 # Search Engine
