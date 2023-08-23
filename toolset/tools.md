@@ -264,11 +264,13 @@ At this point, we've explored various components and stages of Git. Let's take a
 3. Committing to the Local Repository: Once you have staged your changes, you commit them to your local repository. This step involves saving a snapshot of your project at its current state to the repository. Remember, each commit captures a moment in your project's history. When you commit, you provide a message that briefly describes the changes you've made and why. This message becomes part of your project's history, helping you and your collaborators understand why each change was made.
 
 ### Branching
-Branching is one of the powerful features of Git. Imagine you're working on the "RoboticsProject" folder with your team, and you want to try a new feature for the projectile launch mechanism. Instead of making changes directly to the main project, you create a "branch" - a parallel version of your project where you can experiment without affecting the original code. In Git, the main branch is often called the "main" or "master" branch, and it's the version of your project that's considered stable and ready for production.
+Branching is one of the powerful features of Git. Imagine you're working on the "RoboticsProject" folder with your team, and you want to try a new feature for the projectile launch mechanism. Instead of making changes directly to the main project, you create a "branch" - a parallel version of your project where you can experiment without affecting the original code. In Git, the main branch is often called the "main" branch (previously called "master"), and it's the version of your project that's considered stable and ready for production.
 
 When you create a new branch, it's like you're taking a snapshot of the main branch at that point in time. You can make changes, add new files, and even delete files in the new branch without affecting the main branch. This allows you to experiment, try new features, or fix bugs in a safe environment.
 
 (Insert an illustration of the main branch splitting into two branches, with one branch showing the new feature development.)
+
+If you are working alone, a branch enables you to try something out, and easily revert your code back to the beginning simply by switching back to the main branch. When working with others, if everyone works in their own branch, they can save work on their part in isolation, without affecting their teammates. 
 
 ### Merging
 After working on your feature branch and testing the new projectile calculation code, you're ready to incorporate it into the main project. This process is called "merging." By merging your feature branch into the main branch, you're integrating the changes you made in the feature branch back into the main project. This way, your team can benefit from the new features or fixes you've added.
@@ -303,8 +305,16 @@ When working with remote repositories, there's an important concept called "upst
 
 Remember, collaborating with others involves not only sharing your changes but also keeping up with their work. Regularly pulling updates from the remote repository ensures you're working with the latest version of the project and helps prevent conflicts when merging.
 
+I encourage you to practice your Git command skills with [this Git visualizing tool](http://onlywei.github.io/explain-git-with-d3/#freeplay). Note that the staging step is ommited in this tool, so you can commit directly.
+
 ### Resolving conflicts
-Understand conflict resolution during merging. Learn strategies to harmonize code changes and maintain code quality.
+Let's imagine a scenario. You're working on the "RoboticsProject" folder on your computer, programming the launch mechanism. At the same time, your friend is working on the same file, making some minor tweaks to the code. You both finish your parts and try to merge your changes. Boom! Conflict. Why? Because you both made edits to the same line of code.
+
+So, what's this "conflict"? When you and your teammates are working on the same code and make different changes to the same spot, Git gets a bit confused. It's like trying to listen to two people talk at once and not knowing who to focus on. Git needs you to step in and decide which change should stay.
+
+When this happens, Git won't leave you hanging. It’ll mark the troublesome code with things like <<<<<<<, =======, and >>>>>>>. Your change is above the =======, and your friend's change is below. Now, it's decision time! You've got to dive in, edit the file (don't forget to remove all the markers added by Git), and decide which changes to keep, which to discard, and perhaps somehow blend the two changes together. After resolving the conflict, stage the newly adjusted file, and then commit (leave a helpful message explaining the reasoning of the change) and push your harmonized version to the remote repository.
+
+While a Git conflict may seem intimidating at first, it's usually simple to solve as long as you are communicating with your friend. Discussing the reasons behind each change can help both of you understand the broader perspective and decide on the best solution. This collaborative resolution not only ensures the code works as intended but also fosters a harmonious team dynamic. Remember, in collaborative projects, communication is as crucial as coding prowess.
 
 ### Enhancing Collaboration
 [//]: # "Talk about the concept of pull requests and code reviews." 
