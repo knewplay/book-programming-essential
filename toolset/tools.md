@@ -242,19 +242,19 @@ For simple projects, you'll usually stage all your changes at once. However, for
 > There may be certain files that you don't want to be tracked and added to your repository. For example, you might want to exclude log files, which are automatically generated records of events in a software application. They can be large and change frequently, so it's typically not helpful to track them in your Git repository.
 
 ### Committing Changes
-When we talk about "taking a snapshot" of your project, we're actually referring to a process   known as "committing" in Git. Once you've staged your changes, you're ready to commit them. In other words, it's time to save a snapshot of your current progress.
+When we talk about "taking a snapshot" of your project, we're actually referring to a process known as "committing" in Git. Once you've staged your changes, you're ready to commit them. In other words, it's time to save a snapshot of your current progress.
 
 Think of committing in Git as creating a checkpoint in a video game. It's a saved state that you can always return to later if needed.
 
-But there's more to committing than just saving your progress. Each commit includes a message from the author; a brief note that describes what changes were made and why. These messages, create a narrative of your project's progress. They help collaborators (and your future self) understand the reasoning behind each change.
+> Remember that committing does more than bookmark your progress. Every commit carries a message, offering a glimpse into the 'why' behind the changes.
 
 As you work on your code, you'll find yourself staging and committing changes regularly. This process results in a series of snapshots, each representing a specific stage of your project. If we were to visualize these snapshots, they would form a timeline where each snapshot links back to the one before it. This timeline preserves the chronological order of your changes and helps you see the project's entire history at a glance.
 
-So if you realize that you made a mistake in your code, and you want to backtrack to a previous commit, how do you do it?
+So if you realize that you made a mistake in your code, and you want to backtrack to a previous commit, how do you do it? Does each commit have a number associated to it? Can I just say "I want to go to commit #3"? Actually, yes, that's basically correct.
 
-Well, every commit you make is assigned a unique SHA-1 identifier, a 40-character fingerprint derived from your changes and associated metadata. This ensures each commit is distinct and allows for precise tracking. If needed, you can revert to an earlier project version using its SHA-1, safeguarding against unintentional errors or changes.
+Each commit does have a unique identifier, but instead of being some arbitrary number like 1, 2, 3, it's a long, funky looking string generated through a process called SHA-1. Imagine this: You have a magical machine that turns any document, no matter how big, into a unique combination of letters and numbers. To be more precise, this is a 40-character fingerprint derived from your changes and associated metadata. This ensures each commit is distinct and allows for precise tracking. In Git, every time you save your progress (or "commit"), your work goes through this machine, and out comes a special code. This code, or "hash", is like a unique name tag for that specific moment in your project. So, when you want to revisit a past moment, you just need to reference its unique hash ID!
 
-And how do you know at which point you are at in this series of snapshots? That is thanks to the HEAD pointer.
+And how do you know at which point you are at in this series of snapshots? Sure you can say "I want to go to commit 4f5h...359b", but what keeps track of this? That is thanks to the HEAD pointer.
 
 The HEAD is a pointer that tells you where you are in the repository. It usually points to the latest commit in the branch you're currently working on. If you switch branches (which we will see later) or retract a previous commit, the HEAD will move accordingly, as shown in the illustration below.
 
@@ -263,7 +263,7 @@ The HEAD is a pointer that tells you where you are in the repository. It usually
 ### Bringing It All Together
 At this point, we've explored various components and stages of Git. Let's take a moment to see how everything comes together to form a streamlined workflow for developers. Specifically, let's focus on the interaction between the working directory, staging area, local repository, and remote repository.
 
-1. Working Directory: This is where you'll be doing most of your work. It's the place where you write, edit, and delete your project files. When you have made some changes to your files that you're satisfied with, you move on to the next step, staging your changes. Whichever commit the HEAD pointer points to, is the version of the project that you will see in front of you, in your working directory.
+1. Working Directory: This is where you'll be doing most of your work. It's the place where you write, edit, and delete your project files. When you have made some changes to your files that you're satisfied with, you move on to the next step, staging your changes. Whichever commit the HEAD pointer points to, is the version of the project that you will see in front of you in your working directory.
 
 2. Staging Area: Before committing changes to the local repository, you need to decide which changes you want to include in that snapshot. This step is called staging. The staging area is a sort of buffer that holds the changes you want to commit. You select and organize the changes here, making sure you have a set of related changes ready to be committed.
 
