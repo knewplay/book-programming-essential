@@ -197,6 +197,8 @@ Version Control Systems track changes to a folder and its contents in a series o
 
 Version Control Systems also keep track of some extra information, or "metadata", along with the actual changes to the content. This makes it possible to know who authored a particular change to a particular file, when was this change made, and what message was left with the snapshot.
 
+[Illistration of snapshot]
+
 There are several Version Control Systems out there such as Subversion (SVN) and Mercurial, but Git has become the de facto standard for version control. In here, we will talk about the concepts with Git in mind.
 
 ### Setting Up a Repository
@@ -220,6 +222,8 @@ Local repositories are fantastic for individual work, but the true power of Git 
 
 Imagine that you want to share your "RoboticsProject" folder with friends so they can help you with the programming. Instead of using a USB drive or some messaging app to share the work, you can use a remote repository that will host your project for free on the internet. 
 
+[Illustration of repository]
+
 When you put your project in a remote repository, it's like creating a meeting place for you and your friends to share, collaborate, and synchronize your code. You can all work on the same project from your own computers, and the remote repository will help keep track of everyone's changes.
 
 > Hosting means storing your website or project on a computer called a server, which is connected to the internet and makes your content accessible to others. When you hear about web hosting, it means renting space on one of these servers to store your website. Similarly, platforms like GitHub, GitLab, and Bitbucket host your code repositories on their servers, so others can access and collaborate on them.
@@ -230,6 +234,8 @@ I already mentioned that you can take a snapshot of the entire state of your pro
 In Git, before you take a snapshot of your project's current state, you need to decide which changes you want to include in that snapshot. This step is called staging. Git provides a special area, called the staging area, where you can select and organize the changes you want to include in your snapshot.
 
 Staging is like preparing a set of items you want to pack into a box. You pick out the items you need and set them aside, so you're ready to pack them up when the time comes.
+
+[Illustration of staging]
 
 For simple projects, you'll usually stage all your changes at once. However, for more advanced projects, you might want to be more selective about which changes you stage together, as it is an intermediary step between making changes to your project and taking a snapshot of those changes. While it might seem like an extra step at first, it becomes a powerful tool for keeping your project organized as it grows in complexity.
 
@@ -284,11 +290,11 @@ When you're working with a team on a project, you'll often have a central versio
 
 To get your own local copy of the remote repository, you "clone" it. Cloning creates an exact copy of the entire repository on your computer, including all the code, branches, and commit history.
 
-(Insert an illustration of a computer with an empty folder, then a cloud symbol representing the remote repository, and an arrow pointing from the cloud to the computer, showing the process of cloning.)
+[Illustration of clone]
 
 Once you have a local copy, you can create branches, make changes, and commit them just like in any other Git repository. While your local repository maintains this history of commits, these are local to your computer. To share this history and the current state with others, one must synchronize the local repository with a remote one.
 
-(Insert an illustration of a computer with a local repository connected to a cloud symbol representing the remote repository, showing arrows for pushing and pulling.)
+[Illustration of push pull]
 
 However, it is crucial to note that you cannot directly push code from your working copy to the remote site. Similarly, you cannot directly push your code from the staging area to the remote site. The remote site is only connected to the local repository. When you're ready to share your changes with your team, you "push" your commits from the local repository to the remote repository. Conversely, to get the latest updates from your team, you "pull" the changes from the remote repository into your local copy.
 
