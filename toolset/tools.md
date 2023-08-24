@@ -175,7 +175,6 @@ It is also possible to redirect an output into a file rather than onto the termi
 Imagine investing months, or even years, in developing a remarkable app, only to one day lose your laptop and, thus, your work. Despite such potential setbacks, how do thousands of programmers still manage to collaborate on a single project and stay organized? Now that you know about the terminal, we can discuss the wonderful tool called **Git**.
 
 ## Importance
-
 Suppose you're working on a robotics project centered around launching a projectile, with all your code neatly stored in a "RoboticsProject" folder. Given the complexities of coding and the potential for unexpected outcomes, you've adopted a prudent approach. Each time you reach a functional milestone, you save that version in the "RoboticsProject" folder, ensuring you always have a reliable backup to revert to if needed.
 
 Suppose you decide to add a new feature, such as a sophisticated projectile launch mechanism. To ensure safety, you could duplicate the "RoboticsProject" folder and name it "RoboticsProject_v2".
@@ -207,13 +206,13 @@ At the heart of every Git project is the repository, often referred to as a "rep
 I'll repeat this because it is so important: a Git repo is not just a place to keep your files; it also keeps track of all your changes so you can see how your project has changed over time.
 
 #### **Local repository**
-You have your computer in front of you. On this computer, you have folders and files. One of these folders is your "RoboticsProject" folder. This is where you are programming your robot.
+You have your computer in front of you. On this computer, you have folders and files. One of these folders is your "RoboticsProject" folder. This is where you are programming your robot. This folder, with its files and sub-folders, is known as your working directory. This is where you are writing your project.
 
 With just one command, you can turn this folder into a Git repository. And since it is stored locally on your computer, it will be known as a "local repository". 
 
 > In computer terms, "local" means something is on your own computer or in your immediate network. For example, "localhost" refers to your own computer, particularly when you're running a program or service on it. A "local network" is a group of computers or devices that are physically close, like the devices in your home. This is in contrast to "remote," which means it's located off-site or somewhere else on the internet.
 
-This local environment contains not only your project files but also a history of changes, authorship, and notes associated with those changes. This point is critical. Don't think of your repository as simply the current state of your project because that's not what it is. Your local repository is the history of your project, alongside the metadata of each snapshot.
+This local environment contains not only your project files but also a history of changes, authorship, and notes associated with those changes. This point is critical. Don't think of your repository as simply the current state of your project because that's what the working directory is. Your local repository is the history of your project, alongside the metadata of each snapshot.
 
 #### **Remote repository**
 Local repositories are fantastic for individual work, but the true power of Git shines when collaborating. Remote repositories are hosted on the internet and act as a hub where teams can share, collaborate, and synchronize their codebase.
