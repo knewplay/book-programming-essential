@@ -190,7 +190,7 @@ To address such challenges, programmers often rely on version control systems li
 
 ## Fundamentals
 
-### Version Control Systems (VCS)
+### Version control systems (VCS)
 Version Control Systems are tools that are used to keep track of changes to source code or other collections of files or folders. In other words, they keep track of the history of changes to some set of documents. 
 
 Version Control Systems track changes to a folder and its contents in a series of snapshots. So, if you are working on your code, you can take a snapshot of the entire state of your project folder at any time, and with time, you will have multiple of these snapshots.
@@ -201,12 +201,12 @@ Version Control Systems also keep track of some extra information, or "metadata"
 
 There are several Version Control Systems out there, such as Subversion (SVN) and Mercurial, but Git has become the de facto standard for version control. Here, we will talk about the concepts with Git in mind.
 
-### Setting Up a Repository
+### Setting up a repository
 At the heart of every Git project is the repository, often referred to as a "repo" (pronounced "ree-pow"). A Git repository is a special folder for your project where every change, every decision, and every version of your project resides. 
 
 I'll repeat this because it is so important: a Git repo is not just a place to keep your files; it also keeps track of all your changes so you can see how your project has changed over time.
 
-#### **Local Repository**
+#### **Local repository**
 You have your computer in front of you. On this computer, you have folders and files. One of these folders is your "RoboticsProject" folder. This is where you are programming your robot.
 
 With just one command, you can turn this folder into a Git repository. And since it is stored locally on your computer, it will be known as a "local repository". 
@@ -215,7 +215,7 @@ With just one command, you can turn this folder into a Git repository. And since
 
 This local environment contains not only your project files but also a history of changes, authorship, and notes associated with those changes. This point is critical. Don't think of your repository as simply the current state of your project because that's not what it is. Your local repository is the history of your project, alongside the metadata of each snapshot.
 
-#### **Remote Repository**
+#### **Remote repository**
 Local repositories are fantastic for individual work, but the true power of Git shines when collaborating. Remote repositories are hosted on the internet and act as a hub where teams can share, collaborate, and synchronize their codebase.
 
 Imagine that you want to share your "RoboticsProject" folder with friends so they can help you with the programming. Instead of using a USB drive or some messaging app to share the work, you can use a remote repository that will host your project for free on the internet. 
@@ -226,7 +226,7 @@ Putting your project in a remote repository is like creating a meeting place for
 
 > Hosting means storing your website or project on a computer called a server, which is connected to the internet and makes your content accessible to others. When you hear about web hosting, think of it as renting space on one of these servers to store your website. Similarly, platforms like GitHub, GitLab, and Bitbucket host your code repositories on their servers so others can access and collaborate on them.
 
-### Staging Changes
+### Staging changes
 I already mentioned that you can take a snapshot of the entire state of your project folder at any time. That will be discussed in the next section, "Committing Changes". 
 
 In Git, before you take a snapshot of your project's current state, you need to decide which changes you want to include in that snapshot. This step is called staging. Git provides a particular area, called the staging area, where you can select and organize the changes you want to include in your snapshot.
@@ -239,7 +239,7 @@ For simple projects, you'll usually stage all your changes at once. However, for
 
 > There may be certain files you don't want to be tracked and added to your repository. For example, you might want to exclude log files, which are automatically generated records of events in a software application. They can be large and change frequently, so it's typically not helpful to track them in your Git repository.
 
-### Committing Changes
+### Committing changes
 When we talk about "taking a snapshot" of your project, we're actually referring to a process known as "committing" in Git. Once you've staged your changes, you're ready to commit them. In other words, it's time to save a snapshot of your current progress.
 
 Think of committing in Git as creating a checkpoint in a video game. It's a saved state that you can always return to later if needed.
@@ -258,7 +258,7 @@ The HEAD is a pointer that tells you where you are in the repository. It usually
 
 [Illustration of snapshots with HEAD pointer.]
 
-### Bringing It All Together
+### Bringing it all together
 At this point, we've explored various components and stages of Git. Let's take a moment to see how everything comes together to form a streamlined workflow for developers. Specifically, let's focus on the interaction between the working directory, staging area, local repository, and remote repository.
 
 1. Working Directory: This is where you'll be doing most of your work. It's where you write, edit, and delete your project files. When you have made some changes to your files that you're satisfied with, you move on to the next step, staging your changes. 
@@ -285,7 +285,7 @@ Merging is taking the separate lines of development created by branching and joi
 
 (Insert an illustration of two branches merging back together, with a highlight on the point where they join.)
 
-### Collaborating with Remote Repositories
+### Collaborating with remote repositories
 When working with a team on a project, you'll often have a central version of the project hosted online. This is known as a "remote" repository. You and your teammates can each have your own "local" copy of the repository on your computers, where you make changes and test them.
 
 To get your own local copy of the remote repository, you "clone" it. Cloning creates an exact copy of the entire repository on your computer, including all the code, branches, and commit history.
@@ -322,10 +322,10 @@ When this happens, Git won't leave you hanging. It’ll mark the troublesome cod
 
 While a Git conflict may seem intimidating at first, it's usually simple to solve as long as you are communicating with your friend. Discussing the reasons behind each change can help both of you understand the broader perspective and decide on the best solution. This collaborative resolution not only ensures the code works as intended but also fosters a harmonious team dynamic. Remember, in collaborative projects, communication is as crucial as coding prowess.
 
-<!-- ### Enhancing Collaboration
+<!-- ### Enhancing collaboration
 [//]: # "Talk about the concept of pull requests and code reviews."  -->
 
-### Best Practices and Etiquette
+### Best practices and etiquette
 Navigating the realm of Git collaboration can be a smooth journey if we all follow certain guidelines. Whether you're a newbie or a seasoned developer, these practices will enhance your team dynamics:
 
 1. Commit Messages: Always write clear and concise commit messages. A good message describes the change and its purpose, providing context for your team.
