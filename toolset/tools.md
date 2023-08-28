@@ -179,6 +179,8 @@ Suppose you're working on a robotics project centered around launching a project
 
 Suppose you decide to add a new feature, such as a sophisticated projectile launch mechanism. To ensure safety, you could duplicate the "RoboticsProject" folder and name it "RoboticsProject_v2".
 
+[robotics-project.jpg]
+
 Why go through this trouble? Well, this duplicate serves as a playground where you can freely experiment without fear of damaging your working code. If your attempts in "RoboticsProject_v2" lead to chaos, no worries because your original code in "RoboticsProject" remains intact.
 
 Suppose "RoboticsProject_v2" turns out to be a success, and your new projectile launch mechanism works flawlessly. At this point, "RoboticsProject_v2" becomes your main project, incorporating the new feature.
@@ -196,7 +198,7 @@ Version Control Systems track changes to a folder and its contents in a series o
 
 Version Control Systems also keep track of some extra information, or "metadata", along with the actual changes to the content. This makes it possible to know who authored a particular change to a specific file, when it was made, and what message was left with the snapshot.
 
-[Illistration of snapshot]
+[snapshot.jpg]
 
 There are several Version Control Systems out there, such as Subversion (SVN) and Mercurial, but Git has become the de facto standard for version control. Here, we will talk about the concepts with Git in mind.
 
@@ -214,12 +216,14 @@ With just one command, you can turn this folder into a Git repository. And since
 
 This local environment contains not only your project files but also a history of changes, authorship, and notes associated with those changes. This point is critical. Don't think of your repository as simply the current state of your project because that's what the working directory is. Your local repository is the history of your project, alongside the metadata of each snapshot.
 
+[local-repository.jpg]
+
 #### **Remote repository**
 Local repositories are fantastic for individual work, but the true power of Git shines when collaborating. Remote repositories are hosted on the internet and act as a hub where teams can share, collaborate, and synchronize their codebase.
 
 Imagine that you want to share your "RoboticsProject" folder with friends so they can help you with the programming. Instead of using a USB drive or some messaging app to share the work, you can use a remote repository that will host your project for free on the internet. 
 
-[Illustration of repository]
+[remote-repository.jpg]
 
 Putting your project in a remote repository is like creating a meeting place for you and your friends to share, collaborate, and synchronize your code. You can all work on the same project from your computers, and the remote repository will help keep track of everyone's changes.
 
@@ -232,7 +236,7 @@ In Git, before you take a snapshot of your project's current state, you need to 
 
 Staging is like preparing a set of items you want to pack into a box. You pick out the items you need and set them aside so you're ready to pack them up when the time comes.
 
-[Illustration of staging]
+[staging-area.jpg]
 
 For simple projects, you'll usually stage all your changes at once. However, for more advanced projects, you might want to be more selective about which changes you stage together, as it is an intermediary step between making changes to your project and taking a snapshot of those changes. While it might seem like an extra step at first, it becomes a powerful tool for organizing your project as it grows in complexity.
 
@@ -255,7 +259,7 @@ And how do you know at which point you are at in this series of snapshots? Sure,
 
 The HEAD is a pointer that tells you where you are in the repository. It usually points to the latest commit in the branch you're currently working on. If you switch branches (which we will see later) or retract a previous commit, the HEAD will move accordingly, as shown in the illustration below.
 
-[Illustration of snapshots with HEAD pointer.]
+[committing-changes.jpg]
 
 ### Bringing it all together
 At this point, we've explored various components and stages of Git. Let's take a moment to see how everything comes together to form a streamlined workflow for developers. Specifically, let's focus on the interaction between the working directory, staging area, local repository, and remote repository.
@@ -268,12 +272,14 @@ Note that whichever commit the HEAD pointer points to is the version of the proj
 
 3. Committing to the Local Repository: Once you have staged your changes, you commit them to your local repository. This step involves saving a snapshot of your project in its current state to the repository. Remember, each commit captures a moment in your project's history. When you commit, you provide a message that briefly describes the changes you've made and why. This message becomes part of your project's history, helping you and your collaborators understand why each change was made.
 
+[bring-it-all-together.jpg]
+
 ### Branching
 Branching is one of the powerful features of Git. Imagine you're working on the "RoboticsProject" folder with your team and want to try a new feature for the projectile launch mechanism. Instead of making changes directly to the main project, you create a "branch" - a parallel version of your project where you can experiment without affecting the original code. In Git, the main branch is often called the "main" branch (previously called "master"), and it's the version of your project that's considered stable and ready for production.
 
 When you create a new branch, it's like you're taking a snapshot of the main branch at that point in time. You can make changes, add new files, and even delete files in the new branch without affecting the main branch. This allows you to experiment, try new features, or fix bugs in a safe environment.
 
-(Insert an illustration of the main branch splitting into two branches, with one branch showing the new feature development.)
+[branching.jpg]
 
 If you are working alone, a branch enables you to try something out and easily revert your code back to the beginning simply by switching back to the main branch. When working with others, if everyone works in their own branch, they can save work on their part in isolation without affecting their teammates. 
 
@@ -282,31 +288,24 @@ After working on your feature branch and testing the new projectile calculation 
 
 Merging is taking the separate lines of development created by branching and joining them back together. When you merge two branches, Git will try to automatically combine the changes. If the branches have diverged significantly, you may need to help Git by resolving any conflicts that arise.
 
-(Insert an illustration of two branches merging back together, with a highlight on the point where they join.)
+[merging.jpg]
 
 ### Collaborating with remote repositories
 When working with a team on a project, you'll often have a central version of the project hosted online. This is known as a "remote" repository. You and your teammates can each have your own "local" copy of the repository on your computers, where you make changes and test them.
 
 To get your own local copy of the remote repository, you "clone" it. Cloning creates an exact copy of the entire repository on your computer, including all the code, branches, and commit history.
 
-[Illustration of clone]
+[clone.jpg]
 
 Once you have a local copy, you can create branches, make changes, and commit them just like in any other Git repository. While your local repository maintains this history of commits, these are local to your computer. To share this history and the current state with others, one must synchronize the local repository with a remote one.
 
-[Illustration of push pull]
+[push-pull.jpg]
 
 However, it is crucial to note that you cannot directly push code from your working copy to the remote site. Similarly, you cannot directly push your code from the staging area to the remote site. The remote site is only connected to the local repository. When you're ready to share your changes with your team, you "push" your commits from the local repository to the remote repository. Conversely, to get the latest updates from your team, you "pull" the changes from the remote repository into your local copy.
 
-<!-- (Insert an illustration showing a simplified version of the Git workflow, highlighting the connection between the local repository and the remote repository. The illustration could include:
-
-1. A computer representing the user's local machine with three areas: Working copy, Staging area, and Local repository.
-2. A cloud symbol representing the Remote repository.
-3. Arrows going from the Staging area to the Local repository (representing commits).
-4. Arrows going from the Local repository to the Remote repository (representing pushing) and from the Remote repository to the Local repository (representing pulling). -->
-
 <!-- When working with remote repositories, there's an important concept called "upstream tracking." Imagine you've created a feature branch and pushed it to the remote repository. The next time you want to push changes to the same branch, you don't need to specify where to push them. Git remembers the branch's location in the remote repository, making it easier to share your changes. This is what's referred to as "upstream tracking." -->
 
-(Insert an illustration of a branch with a label showing it's tracking its counterpart in the remote repository.)
+[remote.jpg ]
 
 Remember, collaborating with others involves not only sharing your changes but also keeping up with their work. Regularly pulling updates from the remote repository ensures you're working with the project's latest version and helps prevent conflicts when merging.
 
@@ -316,6 +315,8 @@ I encourage you to practice your Git command skills with [this Git visualizing t
 Let's imagine a scenario. You're working on the "RoboticsProject" folder on your computer, programming the launch mechanism. At the same time, your friend is working on the same file, making some minor tweaks to the code. You both finish your parts and try to merge your changes. Boom! Conflict. Why? Because you both made edits to the same line of code.
 
 So, what's this "conflict"? When you and your teammates are working on the same code and make different changes to the same spot, Git gets a bit confused. It's like trying to listen to two people talk at once and not knowing who to focus on. Git needs you to step in and decide which change should stay.
+
+[resolving-conflicts.jpg]
 
 When this happens, Git won't leave you hanging. It’ll mark the troublesome code with things like <<<<<<<, =======, and >>>>>>>. Your change is above the =======, and your friend's change is below. Now, it's decision time! You've got to dive in, edit the file (don't forget to remove all the markers added by Git), and decide which changes to keep, which to discard, and perhaps somehow blend the two changes together. After resolving the conflict, stage the newly adjusted file, and then commit (leave a helpful message explaining the reasoning behind the change) and push your harmonized version to the remote repository.
 
