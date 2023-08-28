@@ -311,7 +311,25 @@ You must learn to carefully evaluate solutions you find online. Because at the e
 Have you ever wondered where programmers code? On their computers, sure. But do they open Microsoft Word? Do they open their browser and go to some special website where they can code? Programmers use a dedicated software tool designed specifically for coding: the **code editor**.
 
 ## Importance
+In the early days of computing, programming was done using punch cards. Each card represented a line of code, and programmers had to feed a stack of these cards into a machine to run a program. This method was tedious and error-prone: a single misplaced hole in a card meant the whole stack might be rendered useless.
 
-[//]: # "history of vim emacs, why use that instead of google docs or notepadd++"
+As computers evolved and became more interactive, the need for a more efficient way to program them became evident. This led to the development of the first code editors. These were rudimentary tools, basic environments for writing and editing text. However, they marked a significant leap from punch cards, allowing programmers to type in their code, make edits, and save their work electronically.
+
+One of the earliest and most influential of these editors was vi, created in the 1970s. It was purely keyboard-driven, mainly because the mouse wasn't a common tool yet. Other editors like vim (an improved version of vi) and emacs emerged around this era. They prioritized speed and efficiency, and their influence can still be seen in many of the code editors we use today.
+
+While you can technically use any text editor, like Google Docs or Notepad++, to write code, specialized code editors are preferred for several reasons. They're designed with coding in mind, providing features like syntax highlighting, auto-completion, error detection, and integrated debugging. 
+
+> Fun fact: In computing, we often refer to programming errors as "bugs." The term "bug" actually has a fascinating origin. Back in 1947, a moth found its way into one of the components of the Mark II computer at Harvard University. When the team, led by Grace Hopper, discovered it, they commented that they were "debugging" the system. That's how we got the term "debugging." So, a "bug" refers to an error or flaw in software that produces unexpected results, and "debugging" is the process of finding and fixing these issues to ensure the program works correctly.
+
+These tools make the coding process faster, more efficient, and less prone to error. In today's world, with these editors, you can write, test, and see the results of your code almost instantly, a far cry from the days of punch cards.
 
 ## Fundamentals
+<!-- - mention google docs, notepad++ again
+- give examples of popular editors (vi, vim, emacs, vs code, visual stodio, pycharm, eclipse). name them but categorize. What field are they used for, and why.
+- show how its a spectrum of complexity: can go from vim (basic command-line editor) to visual studio (advanced cloud-based integrated environment)
+- mention how programmers who use Vim swear by it (or emacs), without a mouse is faster. 
+- explain IDE (it include code editor, but also much more)
+- tell them where they can get started from. include some links to resources
+
+At the end of the day, you can get the same result from whatever editor you use. Important thing is to start programming.  -->
+
