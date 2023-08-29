@@ -416,6 +416,11 @@ We all wish that computers could just read our minds and give us the exact solut
 
 While there are alternative search engines such as Bing, Yahoo, DuckDuckGo, we will stick with the Google search engine, as it is the most widely used, notably among programmers. However, the advice provided will be relevant for all search engines.
 
+<figure>
+  <img src="./figures/search.jpg" title="Google Search Engine" style="width: 50%">
+  <figcaption>A browser window displaying the homepage of the Google search engine.</figcaption>
+</figure>
+
 ### How Google Search works
 The internet is a global network of interconnected computers and servers. It is a vast infrastructure that allows various devices and networks to communicate with each other using a common set of rules known as protocols. 
 
