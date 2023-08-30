@@ -313,23 +313,56 @@ Have you ever wondered where programmers code? On their computers, sure. But do 
 ## Importance
 In the early days of computing, programming was done using punch cards. Each card represented a line of code, and programmers had to feed a stack of these cards into a machine to run a program. This method was tedious and error-prone: a single misplaced hole in a card meant the whole stack might be rendered useless.
 
-As computers evolved and became more interactive, the need for a more efficient way to program them became evident. This led to the development of the first code editors. These were rudimentary tools, basic environments for writing and editing text. However, they marked a significant leap from punch cards, allowing programmers to type in their code, make edits, and save their work electronically.
+As computers evolved and became more interactive, the need for a more efficient way to program them became evident. This led to the development of the first code editors. These tools were basic, offering simple environments for writing and editing text. However, they marked a significant leap from punch cards, allowing programmers to type in their code, make edits, and save their work electronically.
 
-One of the earliest and most influential of these editors was vi, created in the 1970s. It was purely keyboard-driven, mainly because the mouse wasn't a common tool yet. Other editors like vim (an improved version of vi) and emacs emerged around this era. They prioritized speed and efficiency, and their influence can still be seen in many of the code editors we use today.
+<!-- [Illustration of computer without mouse and with a code editor on its screen 
+https://en.wikipedia.org/wiki/VT220#/media/File:DEC_VT240_terminal.jpg
+] -->
+<!-- <figure>
+  <img src="./figures/XYZ" title="First Computer Bug" style="width: 50%">
+  <figcaption>On September 9, 1947, a team of computer scientists reported the world’s first computer bug—a moth trapped in their computer at Harvard University.</figcaption>
+</figure> -->
 
-While you can technically use any text editor, like Google Docs or Notepad++, to write code, specialized code editors are preferred for several reasons. They're designed with coding in mind, providing features like syntax highlighting, auto-completion, error detection, and integrated debugging. 
+At the end of the day, writing code is really just typing text. This means, in theory, you could use anything from Google Docs to Microsoft Word for this task. However, as you delve deeper into programming, you'll understand the need for tools that are tailored specifically for the job. They're designed with coding in mind, providing features like syntax highlighting, auto-completion, error detection, and integrated debugging.
 
 > Fun fact: In computing, we often refer to programming errors as "bugs." The term "bug" actually has a fascinating origin. Back in 1947, a moth found its way into one of the components of the Mark II computer at Harvard University. When the team, led by Grace Hopper, discovered it, they commented that they were "debugging" the system. That's how we got the term "debugging." So, a "bug" refers to an error or flaw in software that produces unexpected results, and "debugging" is the process of finding and fixing these issues to ensure the program works correctly.
+
+<!-- [Illustration of bug found in Mark2]->
+
+<!-- <figure>
+  <img src="./figures/XYZ" title="First Computer Bug" style="width: 50%">
+  <figcaption>On September 9, 1947, a team of computer scientists reported the world’s first computer bug—a moth trapped in their computer at Harvard University.</figcaption>
+</figure> -->
 
 These tools make the coding process faster, more efficient, and less prone to error. In today's world, with these editors, you can write, test, and see the results of your code almost instantly, a far cry from the days of punch cards.
 
 ## Fundamentals
-<!-- - mention google docs, notepad++ again
-- give examples of popular editors (vi, vim, emacs, vs code, visual stodio, pycharm, eclipse). name them but categorize. What field are they used for, and why.
-- show how its a spectrum of complexity: can go from vim (basic command-line editor) to visual studio (advanced cloud-based integrated environment)
-- mention how programmers who use Vim swear by it (or emacs), without a mouse is faster. 
-- explain IDE (it include code editor, but also much more)
-- tell them where they can get started from. include some links to resources
+Different code editors cater to different needs and are popular in different fields. Let's look at some of the popular ones.
 
-At the end of the day, you can get the same result from whatever editor you use. Important thing is to start programming.  -->
+#### **Command-line editors**
+It all started in the 1970's, before the mouse became mainstream with the Apple Macintosh in 1984. During this time, programmers primarily relied on keyboard-based text editors. Among the most notable of these were vi, developed in 1976, and emacs, which came about in the same year. A little later on, vim (Vi IMproved) was introduced in 1991 as an enhanced version of vi, bringing along more features and capabilities. These editors were built for efficiency, allowing users to navigate and edit files directly from the command line using keyboard shortcuts. 
 
+In the modern era, there's still a dedicated group of programmers who swear by these tools (notably Vim, Neovim, Nano and Emacs) for their unmatched speed and flexibility. These editors exist solely within the terminal. They don't have flashy visuals; they're all about straightforward coding. However, there's a caveat: mastering them can be a challenge. There's a steep learning curve associated with memorizing various keyboard shortcuts, but once surmounted, many find the efficiency gains invaluable.
+
+#### **General-purpose editors**
+So far, we've explored code editors that operate within the command-line interface. However, in today's coding landscape, many developers prefer editors that seamlessly integrate mouse navigation, offering a more intuitive and enriched user experience.
+
+Popular choices in this category include VS Code and Sublime Text. Think of them as the multi-functional Swiss army knives of the coding world. Whether you're coding a website, an app, or just scripting something fun, these editors are ready. They're adaptable to multiple programming languages, and they help by coloring your code (syntax highlighting), letting you add extra features (plugins), and even integrate a mini command line inside (integrated terminals).
+
+#### **Integrated Development Environments (IDEs)**
+When delving deep into a coding project, sometimes a simple text editor won't suffice. IDEs offer more comprehensive features compared to basic text editors, integrating numerous tools essential for software development. While every IDE includes a code editor, not every code editor qualifies as an IDE.
+
+Popular IDEs include Visual Studio for multiple languages (but primarily C#), Eclipse and IntelliJ for Java and PyCharm for Python. These environments are specially designed for a deeper integration with specific languages or development tasks. They provide tools that simplify the entire software development process - from writing code, to testing, debugging, and even deploying.
+
+### The conclusion
+As you can see, the world of code editors spans a broad spectrum. On one end, you have the minimalist vim which operates solely with keyboard commands, and on the other end, you have IDEs like Visual Studio that offer a suite of tools all in one place.
+
+If you're just getting started and want to explore some of these editors, here are a few  download links to get you started:
+
+[Vim](https://www.vim.org/download.php)
+[VS Code](https://code.visualstudio.com/)
+[Sublime Text](https://www.sublimetext.com/)
+[PyCharm](https://www.jetbrains.com/pycharm/)
+[Visual Studio](https://visualstudio.microsoft.com/)
+
+Remember, the best tool often depends on the task at hand and personal preference. Ask an experienced programmer what they recommend for a particular task. However, the most important thing isn't which editor you choose, but that you dive in and start programming.
