@@ -311,9 +311,15 @@ You must learn to carefully evaluate solutions you find online. Because at the e
 Have you ever wondered where programmers code? On their computers, sure. But do they open Microsoft Word? Do they open their browser and go to some special website where they can code? Programmers use a dedicated software tool designed specifically for coding: the **code editor**.
 
 ## Importance
-In the early days of computing, programming was done using punch cards. Each card represented a line of code, and programmers had to feed a stack of these cards into a machine to run a program. This method was tedious and error-prone: a single misplaced hole in a card meant the whole stack might be rendered useless.
+In the early days of computing, programming was done using punch cards. Each card represented a line of code, and programmers had to feed a stack of these cards into a machine to run a program. This method was tedious and error-prone, as a single misplaced hole in a card meant the whole stack might be rendered useless.
 
-As computers evolved and became more interactive, the need for a more efficient way to program them became evident. This led to the development of the first code editors. These tools were basic, offering simple environments for writing and editing text. However, they marked a significant leap from punch cards, allowing programmers to type in their code, make edits, and save their work electronically.
+As computers evolved and became more interactive, the need for a more efficient way to program them became evident. This led to the development of the first code editors. These tools were basic, offering simple environments for writing and editing text. Most importantly, these tools allowed programmers to easily correct errors with a simple backspace and to save their work electronically.
+
+The first code editors started to appear in the 1970s. Since the mouse only became mainstream with the Apple Macintosh in 1984, the first code editors were keyboard-based. The first of these was vi, released in 1976. To this day, it is a standard tool on many Linux distros. In the same year, another influential editor emerged, Emacs. Characterized by its extensibility and customizability, Emacs allowed programmers to do much more than just edit text, transforming it into an environment where one could email, browse the web, and more - all without leaving the editor. This gave it a unique edge and garnered a dedicated user base. 
+
+In 1991, Vim (Vi IMproved) was released. Vim is an enhanced version of vi, bringing along more features and capabilities. These editors were built for efficiency, allowing users to navigate and edit files directly from the command line using keyboard shortcuts. 
+
+Fast forward to the modern era, and we have Visual Studio Code, or VS Code for short. Launched by Microsoft in 2015, it quickly ascended to popularity due to its versatility, rich feature set, and a vast library of extensions. It amalgamated the efficiency of traditional editors with the visual appeal and mouse integration that many contemporary developers appreciate. The open-source nature of VS Code also allowed a community of developers to contribute, enhancing its capabilities even further.
 
 <!-- [Illustration of computer without mouse and with a code editor on its screen 
 https://en.wikipedia.org/wiki/VT220#/media/File:DEC_VT240_terminal.jpg
@@ -339,8 +345,6 @@ These tools make the coding process faster, more efficient, and less error-prone
 Different code editors cater to different needs and are popular in different fields. Let's look at some of the popular ones.
 
 #### **Command-line editors**
-It all started in the 1970s before the mouse became mainstream with the Apple Macintosh in 1984. During this time, programmers primarily relied on keyboard-based text editors. Among the most notable of these were vi, developed in 1976, and emacs, which came about in the same year. A little later on, vim (Vi IMproved) was introduced in 1991 as an enhanced version of vi, bringing along more features and capabilities. These editors were built for efficiency, allowing users to navigate and edit files directly from the command line using keyboard shortcuts. 
-
 In the modern era, there's still a dedicated group of programmers who swear by these tools (notably Vim, Neovim, Nano and Emacs) for their unmatched speed and flexibility. These editors exist solely within the terminal. They don't have flashy visuals; they're all about straightforward coding. However, there's a caveat: mastering them can be a challenge. A steep learning curve is associated with memorizing various keyboard shortcuts, but once surmounted, many find the efficiency gains invaluable.
 
 <!-- [Illustration of vim editor https://linuxnatives.net/wp-content/uploads/2020/09/xcustom-edit.png.pagespeed.ic.cragFp1Ilr.webp] -->
@@ -360,18 +364,10 @@ Popular IDEs include Visual Studio for multiple languages (but primarily C#), Ec
 <!-- [Illustration of IDE https://docs.microsoft.com/en-us/visualstudio/ide/media/visualstudioide.png?view=vs-2017] -->
 
 ### The conclusion
-As you can see, the world of code editors spans a broad spectrum. On one end, you have the minimalist vim, which operates solely with keyboard commands, and on the other end, you have IDEs like Visual Studio that offer a suite of tools all in one place.
+The world of code editors spans a broad spectrum. On one end, you have minimalist tools like vim that operate solely on keyboard commands, and on the other end, there are IDEs like Visual Studio that bring together a suite of tools.
 
-If you're just getting started and want to explore some of these editors, here are a few  download links to get you started:
+Today, however, VS Code represents a harmonious middle ground. It stands as a testament to the evolution of code editors, seamlessly blending the efficiency of traditional editors with the intuitive interfaces of modern-day tools.
 
-[Vim](https://www.vim.org/download.php)
+For those embarking on their coding journey, I can't recommend VS Code enough. It's versatile and caters to a multitude of projects. While there may be instances where a specialized tool is beneficial, VS Code fulfills the requirements of the majority of programmers.
 
-[VS Code](https://code.visualstudio.com/)
-
-[Sublime Text](https://www.sublimetext.com/)
-
-[PyCharm](https://www.jetbrains.com/pycharm/)
-
-[Visual Studio](https://visualstudio.microsoft.com/)
-
-Remember, the best tool often depends on the task at hand and personal preference. Ask an experienced programmer what they recommend for a particular task. However, the most important thing isn't which editor you choose but that you dive in and start programming.
+[Download VS Code here](https://code.visualstudio.com/), and happy programming!
