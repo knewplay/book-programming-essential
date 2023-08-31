@@ -315,12 +315,6 @@ In the early days of computing, programming was done using punch cards. Each car
 
 As computers evolved and became more interactive, the need for a more efficient way to program them became evident. This led to the development of the first code editors. These tools were basic, offering simple environments for writing and editing text. Most importantly, these tools allowed programmers to easily correct errors with a simple backspace and to save their work electronically.
 
-The first code editors started to appear in the 1970s. Since the mouse only became mainstream with the Apple Macintosh in 1984, the first code editors were keyboard-based. The first of these was vi, released in 1976. To this day, it is a standard tool on many Linux distros. In the same year, another influential editor emerged, Emacs. Characterized by its extensibility and customizability, Emacs allowed programmers to do much more than just edit text, transforming it into an environment where one could email, browse the web, and more - all without leaving the editor. This gave it a unique edge and garnered a dedicated user base. 
-
-In 1991, Vim (Vi IMproved) was released. Vim is an enhanced version of vi, bringing along more features and capabilities. These editors were built for efficiency, allowing users to navigate and edit files directly from the command line using keyboard shortcuts. 
-
-Fast forward to the modern era, and we have Visual Studio Code, or VS Code for short. Launched by Microsoft in 2015, it quickly ascended to popularity due to its versatility, rich feature set, and a vast library of extensions. It amalgamated the efficiency of traditional editors with the visual appeal and mouse integration that many contemporary developers appreciate. The open-source nature of VS Code also allowed a community of developers to contribute, enhancing its capabilities even further.
-
 <!-- [Illustration of computer without mouse and with a code editor on its screen 
 https://en.wikipedia.org/wiki/VT220#/media/File:DEC_VT240_terminal.jpg
 ] -->
@@ -345,21 +339,27 @@ These tools make the coding process faster, more efficient, and less error-prone
 Different code editors cater to different needs and are popular in different fields. Let's look at some of the popular ones.
 
 #### **Command-line editors**
-In the modern era, there's still a dedicated group of programmers who swear by these tools (notably Vim, Neovim, Nano and Emacs) for their unmatched speed and flexibility. These editors exist solely within the terminal. They don't have flashy visuals; they're all about straightforward coding. However, there's a caveat: mastering them can be a challenge. A steep learning curve is associated with memorizing various keyboard shortcuts, but once surmounted, many find the efficiency gains invaluable.
+The first code editors started to appear in the 1970s. Since the mouse only became mainstream with the Apple Macintosh in 1984, the first code editors were keyboard-based. One of the pioneers was vi, released in 1976. To this day, it is a standard tool on many Linux distros. 
+
+In the same year, another influential editor emerged, Emacs. Characterized by its extensibility and customizability, Emacs went beyond text editing. With some customization, it transformed into an environment where one could use a debugger, email, browse the web, play music, and more - all without leaving the editor. This gave it a unique edge and garnered a dedicated user base.
+
+In 1991, Vim (Vi IMproved) was released. Vim is an enhanced version of vi, bringing along more features and capabilities. These editors were built for efficiency, allowing users to navigate and edit files directly from the command line using keyboard shortcuts. 
+
+In the modern era, there's still a dedicated group of programmers who swear by these tools (notably Vim, Neovim, Nano and Emacs) for their unmatched speed and adaptability. Operating solely within the terminal, they don't have flashy visuals. However, there's a caveat: mastering them can be a challenge. A steep learning curve is associated with memorizing various keyboard shortcuts, but for many, the payoff in efficiency is well worth the effort.
 
 <!-- [Illustration of vim editor https://linuxnatives.net/wp-content/uploads/2020/09/xcustom-edit.png.pagespeed.ic.cragFp1Ilr.webp] -->
 
 #### **General-purpose editors**
-So far, we've explored code editors that operate within the command-line interface. However, in today's coding landscape, many developers prefer editors that seamlessly integrate mouse navigation, offering a more intuitive and enriched user experience.
+Today's coding landscape sees many developers gravitating towards editors that seamlessly integrate mouse navigation, offering a more intuitive and enriched user experience. Among these, Visual Studio Code, or VS Code for short, stands out. Launched by Microsoft in 2015, it rapidly gained traction due to its rich feature set, versatility, and a vast library of extensions. VS Code blended the efficiency of traditional editors with the visual appeal and mouse integration that many contemporary developers appreciate. The open-source nature of VS Code also allowed a community of developers to contribute, enhancing its capabilities even further.
 
-Popular choices in this category include VS Code and Sublime Text. Think of them as the multi-functional Swiss army knives of the coding world. Whether you're coding a website, an app, scripting something fun, or working in multiple programming languages, these editors are ready to assist. They offer features such as  coloring your code (syntax highlighting), allowing you to add extra features (plugins), and even integrating a mini command line (integrated terminals).
+Another example in this category is Sublime Text. These editors are like the multi-functional Swiss army knives of the coding world. Whether you're coding a website, an app, scripting something fun, or working in multiple programming languages, these editors are ready to assist. They offer features such as  coloring your code (syntax highlighting), allowing you to add extra features (plugins), and even integrating a mini command line (integrated terminals).
 
 <!-- [Illustration of vs code editor https://www.dotnetpro.de/img/1/6/6/7/3/2/4/VSCode_w833_h655.jpg] -->
 
 #### **Integrated Development Environments (IDEs)**
 When delving deep into a coding project, sometimes a simple text editor won't suffice. IDEs offer more comprehensive features compared to basic text editors, integrating numerous tools essential for software development. While every IDE includes a code editor, not every code editor qualifies as an IDE.
 
-Popular IDEs include Visual Studio for multiple languages (but primarily C#), Eclipse and IntelliJ for Java, and PyCharm for Python. These environments are specially designed for a deeper integration with specific languages or development tasks. They provide tools that simplify the entire software development process - from writing code, to testing, debugging, and even deploying.
+Popular IDEs include Visual Studio for multiple languages (but primarily C#), Eclipse and IntelliJ for Java, PyCharm for Python, Android Studio for Android app development, and Apple's Xcode for iOS app development. These environments are specially designed for a deeper integration with specific languages or development tasks. They provide tools that simplify the entire software development process - from writing code, to testing, debugging, and even deploying.
 
 <!-- [Illustration of IDE https://docs.microsoft.com/en-us/visualstudio/ide/media/visualstudioide.png?view=vs-2017] -->
 
