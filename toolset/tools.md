@@ -256,7 +256,7 @@ Staging is like preparing a set of items you want to pack into a box. You pick o
 
 For simple projects, you'll usually stage all your changes at once. However, for more advanced projects, you might want to be more selective about which changes you stage together, as it is an intermediary step between making changes to your project and taking a snapshot of those changes. While it might seem like an extra step at first, it becomes a powerful tool for organizing your project as it grows in complexity.
 
-> There may be certain files you don't want to be tracked and added to your repository. For example, you might want to exclude log files, which are automatically generated records of events in a software application. They can be large and change frequently, so it's typically not helpful to track them in your Git repository.
+> There may be certain files you don't want to be tracked and added to your repository. For example, you might want to exclude log files, which are automatically generated records of events in a software application. They can be large and change frequently, so it's typically not helpful to track them in your Git repository. [Read this](https://www.bmc.com/blogs/gitignore/) to learn how to ignore files.
 
 ### Committing changes
 When we talk about "taking a snapshot" of your project, we're actually referring to a process known as "committing" in Git. Once you've staged your changes, you're ready to commit them. In other words, it's time to save a snapshot of your current progress.
@@ -277,7 +277,7 @@ The HEAD is a pointer that tells you where you are in the repository. It usually
 
 <figure>
   <img src="./figures/committing-changes.jpg" title="Committing Changes" style="width: 50%">
-  <figcaption>Three snapshots in a Git repository, each labeled with a unique hash ID. The 'HEAD' pointer indicates the current position in the project's timeline, while 'MAIN' marks the most recent commit.</figcaption>
+  <figcaption>Four snapshots in a Git repository, each labeled with a unique hash ID. The 'HEAD' pointer indicates the current position in the project's timeline, while 'MAIN' marks the most recent commit.</figcaption>
 </figure>
 
 ### Bringing it all together
@@ -287,7 +287,7 @@ At this point, we've explored various components and stages of Git. Let's take a
 
 1. Working Directory: This is where you'll be doing most of your work. It's where you write, edit, and delete your project files. When you have made some changes to your files that you're satisfied with, you move on to the next step, staging your changes. 
 
-Note that whichever commit the HEAD pointer points to is the version of the project that you will see in front of you in your working directory.
+    Note that whichever commit the HEAD pointer points to is the version of the project that you will see in front of you in your working directory.
 
 2. Staging Area: Before committing changes to the local repository, you must decide which changes you want to include in that snapshot. This step is called staging. The staging area is a sort of buffer that holds the changes you want to commit. You select and organize the changes here, ensuring you have a set of related changes ready to be committed.
 
@@ -326,6 +326,8 @@ Merging is taking the separate lines of development created by branching and joi
 
 > Recourse: For specific commands around merging, [read this](https://www.atlassian.com/git/tutorials/using-branches/git-merge).
 
+I encourage you to practice your Git command skills with [this Git visualizing tool](http://onlywei.github.io/explain-git-with-d3/#freeplay). Note that the staging step is omitted in this tool so that you can commit directly.
+
 ### Collaborating with remote repositories
 When working with a team on a project, you'll often have a central version of the project hosted online. This is known as a "remote" repository. You and your teammates can each have your own "local" copy of the repository on your computers, where you make changes and test them.
 
@@ -349,14 +351,12 @@ However, it is crucial to note that you cannot directly push code from your work
 
 <figure>
   <img src="./figures/remote.jpg" title="Local and Remote Workflow" style="width: 50%">
-  <figcaption>hanges are pushed to the remote repository from the local one. Meanwhile, updates from the remote repository are pulled both into the local repository and the working directory.</figcaption>
+  <figcaption>Changes are pushed to the remote repository from the local one. Meanwhile, updates from the remote repository are pulled both into the local repository and the working directory.</figcaption>
 </figure>
 
 Remember, collaborating with others involves not only sharing your changes but also keeping up with their work. Regularly pulling updates from the remote repository ensures you're working with the project's latest version and helps prevent conflicts when merging.
 
-> Recourse: Read [this article](https://www.javatpoint.com/git-remote) to learn about the Git commands.
-
-I encourage you to practice your Git command skills with [this Git visualizing tool](http://onlywei.github.io/explain-git-with-d3/#freeplay). Note that the staging step is omitted in this tool so that you can commit directly.
+> Recourse: Read [this article](https://www.javatpoint.com/git-remote) to learn about the Git remote-related commands.
 
 ### Resolving conflicts
 Let's imagine a scenario. You're working on the "RoboticsProject" folder on your computer, programming the launch mechanism. At the same time, your friend is working on the same file, making some minor tweaks to the code. You both finish your parts and try to merge your changes. Boom! Conflict. Why? Because you both made edits to the same line of code.
@@ -374,7 +374,6 @@ When this happens, Git shows both changes, delimited by <, =, and > markers. At 
 
 While a Git conflict may seem intimidating at first, it's usually simple to solve as long as you are communicating with your friend. Discussing the reasons behind each change can help both of you understand the broader perspective and decide on the best solution. This collaborative resolution ensures the code works as intended and fosters a harmonious team dynamic. Remember, in collaborative projects, communication is as crucial as coding prowess.
 
-
 <!-- ### Enhancing collaboration
 [//]: # "Talk about the concept of pull requests and code reviews."  -->
 
@@ -387,7 +386,7 @@ Navigating the realm of Git collaboration can be a smooth journey if we all foll
 
 3. Branching Out: Create a new branch when experimenting or adding a new feature. This keeps the main codebase stable and allows for isolated testing and development.
 
-4. Adopt a consistent branch naming convention and clarity in the branch's purpose. Examples of branch names are **launch-mechanism**, **sensor-integration**, and **battery-optimization**.
+4. Adopt a consistent branch naming convention and clarity in the branch's purpose. Examples of branch names are *launch-mechanism*, *sensor-integration*, and *battery-optimization*.
 
 5. Regular Updates: Pull changes from the main branch regularly. This reduces the likelihood of conflicts and keeps your local copy up to date.
 
