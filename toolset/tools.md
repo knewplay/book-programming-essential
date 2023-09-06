@@ -173,7 +173,7 @@ It is also possible to redirect an output into a file rather than onto the termi
 [//]: # "not sure if I should add a final section (like a conclusion section) ### Additional Utilities There is a lot you can do with the terminal. And for everything that you can do, there is a command for it. So take your time to explore the terminal."
 
 # Git
-Imagine investing months, or even years, in developing a remarkable app, only to one day lose your laptop and, thus, your work. Despite such potential setbacks, how do thousands of programmers still manage to collaborate on a single project and stay organized? Now that you know about the terminal, we can discuss the wonderful tool called **Git**.
+Imagine investing months, or even years, in developing a remarkable app, only to one day lose your laptop and, thus, your work. Despite such potential setbacks, how do thousands of programmers still manage to collaborate on a single project and stay organized? Now that you know about the terminal, we can discuss the powerful tool called **Git**.
 
 ## Importance
 Suppose you're working on a robotics project centered around launching a projectile, with all your code neatly stored in a "RoboticsProject" folder. Given the complexities of coding and the potential for unexpected outcomes, you've adopted a prudent approach. Each time you reach a functional milestone, you save that version in the "RoboticsProject" folder, ensuring you always have a reliable backup to revert to if needed.
@@ -182,7 +182,7 @@ Suppose you decide to add a new feature, such as a sophisticated projectile laun
 
 <figure>
   <img src="./figures/robotics-project.jpg" title="Robotics Project" style="width: 50%">
-  <figcaption>To the left, we have the version of the project that is stable, and that we know works. To the right is an experimental version of the robot, with a launch mechanism which is still being developed and tested.</figcaption>
+  <figcaption>To the left, we have the version of the project that is stable and works. To the right is an experimental version of the robot, with a launch mechanism still being developed and tested.</figcaption>
 </figure>
 
 Why go through this trouble? Well, this duplicate serves as a playground where you can freely experiment without fear of damaging your working code. If your attempts in "RoboticsProject_v2" lead to chaos, no worries because your original code in "RoboticsProject" remains intact.
@@ -196,7 +196,7 @@ To address such challenges, programmers often rely on version control systems li
 ## Fundamentals
 
 ### Version control systems (VCS)
-Version Control Systems are tools that are used to keep track of changes to source code or other collections of files or folders. In other words, they keep track of the history of changes to some set of documents. 
+Version Control Systems are tools that keep track of changes to code or other collections of files or folders. In other words, they keep track of the history of changes to some set of documents. 
 
 Version Control Systems track changes to a folder and its contents in a series of snapshots. So, if you are working on your code, you can take a snapshot of the entire state of your project folder at any time, and with time, you will have multiple of these snapshots.
 
@@ -283,7 +283,7 @@ The HEAD is a pointer that tells you where you are in the repository. It usually
 ### Bringing it all together
 At this point, we've explored various components and stages of Git. Let's take a moment to see how everything comes together to form a streamlined workflow for developers. Specifically, let's focus on the interaction between the working directory, staging area, local repository, and remote repository.
 
-> Important: Please note that all of this is happening locally, on the user's computer. We are not yet interacting with a remote repository and dealing with other people working on the same project. In order to turn your regular folder into a Git repository, read [2.1 Git Basics - Getting a Git Repository](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository).
+> Important: Please note that all of this is happening locally on the user's computer. We are not yet interacting with a remote repository and dealing with other people working on the same project. In order to turn your regular folder into a Git repository, read [2.1 Git Basics - Getting a Git Repository](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository).
 
 1. Working Directory: This is where you'll be doing most of your work. It's where you write, edit, and delete your project files. When you have made some changes to your files that you're satisfied with, you move on to the next step, staging your changes. 
 
@@ -291,7 +291,7 @@ Note that whichever commit the HEAD pointer points to is the version of the proj
 
 2. Staging Area: Before committing changes to the local repository, you must decide which changes you want to include in that snapshot. This step is called staging. The staging area is a sort of buffer that holds the changes you want to commit. You select and organize the changes here, ensuring you have a set of related changes ready to be committed.
 
-3. Committing to the Local Repository: Once you have staged your changes, you commit them to your local repository. This step involves saving a snapshot of your project in its current state to the repository. Remember, each commit captures a moment in your project's history. When you commit, you provide a message that briefly describes the changes you've made and why. This message becomes part of your project's history, helping you and your collaborators understand why each change was made.
+3. Committing to the Local Repository: Once you have staged your changes, you commit them to your local repository. This step involves saving a snapshot of your project in its current state to the repository. Remember, each commit captures a moment in your project's history. When you commit, you provide a message that briefly describes your changes and why. This message becomes part of your project's history, helping you and your collaborators understand why each change was made.
 
 <figure>
   <img src="./figures/bring-it-all-together.jpg" title="Git Local Workflow" style="width: 50%">
@@ -340,7 +340,7 @@ Once you have a local copy, you can create branches, make changes, and commit th
 
 <figure>
   <img src="./figures/push-pull.jpg" title="Push and Pull Process" style="width: 50%">
-  <figcaption>o synchronize changes, you push updates from your local repository to the remote and pull the latest changes from the remote back to your local repository.</figcaption>
+  <figcaption>To synchronize changes, you push updates from your local repository to the remote and pull the latest changes from the remote back to your local repository.</figcaption>
 </figure>
 
 However, it is crucial to note that you cannot directly push code from your working copy to the remote site. Similarly, you cannot directly push your code from the staging area to the remote site. The remote site is only connected to the local repository. When you're ready to share your changes with your team, you "push" your commits from the local repository to the remote repository. Conversely, to get the latest updates from your team, you "pull" the changes from the remote repository into your local copy.
@@ -349,7 +349,7 @@ However, it is crucial to note that you cannot directly push code from your work
 
 <figure>
   <img src="./figures/remote.jpg" title="Local and Remote Workflow" style="width: 50%">
-  <figcaption>From the local repository, changes are pushed to the remote. Meanwhile, updates from the remote are pulled both into the local repository and the working directory.</figcaption>
+  <figcaption>hanges are pushed to the remote repository from the local one. Meanwhile, updates from the remote repository are pulled both into the local repository and the working directory.</figcaption>
 </figure>
 
 Remember, collaborating with others involves not only sharing your changes but also keeping up with their work. Regularly pulling updates from the remote repository ensures you're working with the project's latest version and helps prevent conflicts when merging.
@@ -368,11 +368,11 @@ So, what's this "conflict"? When you and your teammates are working on the same 
   <figcaption>Two developers editing the same code line, leading to a conflict that needs a decision on which change to keep.</figcaption>
 </figure>
 
-When this happens, Git shows both changes, delimited by markers such as <, =, and >. At this point, you have to edit the file and decide which changes to keep, which to discard, or perhaps somehow blend the two changes together. After "resolving" the conflict, stage the file, and then commit (leave a helpful message explaining the reasoning behind the change) and push your harmonized version to the remote repository.
+When this happens, Git shows both changes, delimited by <, =, and > markers. At this point, you have to edit the file and decide which changes to keep, which to discard, or perhaps blend the two changes together. After "resolving" the conflict, stage the file, and then commit (leave a helpful message explaining the reasoning behind the change) and push your harmonized version to the remote repository.
 
 > Recourse: Read [this article](https://www.freecodecamp.org/news/how-to-fix-merge-conflicts-in-git/) to view how to resolve a Git conflict.
 
-While a Git conflict may seem intimidating at first, it's usually simple to solve as long as you are communicating with your friend. Discussing the reasons behind each change can help both of you understand the broader perspective and decide on the best solution. This collaborative resolution not only ensures the code works as intended but also fosters a harmonious team dynamic. Remember, in collaborative projects, communication is as crucial as coding prowess.
+While a Git conflict may seem intimidating at first, it's usually simple to solve as long as you are communicating with your friend. Discussing the reasons behind each change can help both of you understand the broader perspective and decide on the best solution. This collaborative resolution ensures the code works as intended and fosters a harmonious team dynamic. Remember, in collaborative projects, communication is as crucial as coding prowess.
 
 
 <!-- ### Enhancing collaboration
@@ -383,11 +383,11 @@ Navigating the realm of Git collaboration can be a smooth journey if we all foll
 
 1. Commit Messages: Always write clear and concise commit messages. A good message describes the change and its purpose, providing context for your team.
 
-2. Small Commits: It's easier to understand and review small, focused commits than large ones. Aim to commit one logical change at a time. Don't cram all of your local changes into the upcoming commit. This is where the staging area can become useful, as it will allow you to select specific files, and even parts of those files to include in the next commit.
+2. Small Commits: It's easier to understand and review small, focused commits than large ones. Aim to commit one logical change at a time. Don't cram all of your local changes into the upcoming commit. This is where the staging area can become useful, as it will allow you to select specific files and even parts of those files to include in the next commit.
 
-3. Branching Out: Create a new branch whenever you're experimenting or adding a new feature. This keeps the main codebase stable and allows for isolated testing and development.
+3. Branching Out: Create a new branch when experimenting or adding a new feature. This keeps the main codebase stable and allows for isolated testing and development.
 
-4. Adopt a consistent branch naming convention, as well as clarity in the branch's purpose. Examples of branch names are **launch-mechanism**, **sensor-integration**, and **battery-optimization**.
+4. Adopt a consistent branch naming convention and clarity in the branch's purpose. Examples of branch names are **launch-mechanism**, **sensor-integration**, and **battery-optimization**.
 
 5. Regular Updates: Pull changes from the main branch regularly. This reduces the likelihood of conflicts and keeps your local copy up to date.
 
