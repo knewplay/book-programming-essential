@@ -368,11 +368,12 @@ So, what's this "conflict"? When you and your teammates are working on the same 
   <figcaption>Two developers editing the same code line, leading to a conflict that needs a decision on which change to keep.</figcaption>
 </figure>
 
-When this happens, Git won't leave you hanging. It’ll mark the troublesome code with things like <<<<<<<, =======, and >>>>>>>. Your change is above the =======, and your friend's change is below. Now, it's decision time! You've got to dive in, edit the file (don't forget to remove all the markers added by Git), and decide which changes to keep, which to discard, and perhaps somehow blend the two changes together. After resolving the conflict, stage the newly adjusted file, and then commit (leave a helpful message explaining the reasoning behind the change) and push your harmonized version to the remote repository.
+When this happens, Git shows both changes, delimited by markers such as <, =, and >. At this point, you have to edit the file and decide which changes to keep, which to discard, or perhaps somehow blend the two changes together. After "resolving" the conflict, stage the file, and then commit (leave a helpful message explaining the reasoning behind the change) and push your harmonized version to the remote repository.
+
+> Recourse: Read [this article](https://www.freecodecamp.org/news/how-to-fix-merge-conflicts-in-git/) to view how to resolve a Git conflict.
 
 While a Git conflict may seem intimidating at first, it's usually simple to solve as long as you are communicating with your friend. Discussing the reasons behind each change can help both of you understand the broader perspective and decide on the best solution. This collaborative resolution not only ensures the code works as intended but also fosters a harmonious team dynamic. Remember, in collaborative projects, communication is as crucial as coding prowess.
 
-Recourse: Read [this article](https://www.freecodecamp.org/news/how-to-fix-merge-conflicts-in-git/) to view how to resolve a Git conflict.
 
 <!-- ### Enhancing collaboration
 [//]: # "Talk about the concept of pull requests and code reviews."  -->
@@ -382,7 +383,7 @@ Navigating the realm of Git collaboration can be a smooth journey if we all foll
 
 1. Commit Messages: Always write clear and concise commit messages. A good message describes the change and its purpose, providing context for your team.
 
-2. Small Commits: It's easier to understand and review small, focused commits than large ones. Aim to commit one logical change at a time.
+2. Small Commits: It's easier to understand and review small, focused commits than large ones. Aim to commit one logical change at a time. Don't cram all of your local changes into the upcoming commit. This is where the staging area can become useful, as it will allow you to select specific files, and even parts of those files to include in the next commit.
 
 3. Branching Out: Create a new branch whenever you're experimenting or adding a new feature. This keeps the main codebase stable and allows for isolated testing and development.
 
