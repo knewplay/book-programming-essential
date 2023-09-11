@@ -505,7 +505,66 @@ You must learn to carefully evaluate solutions you find online. Because at the e
 Have you ever wondered where programmers code? On their computers, sure. But do they open Microsoft Word? Do they open their browser and go to some special website where they can code? Programmers use a dedicated software tool designed specifically for coding: the **code editor**.
 
 ## Importance
+In the early days of computing, programming was done using punch cards. Each card represented a line of code, and programmers had to feed a stack of these cards into a machine to run a program. This method was tedious and error-prone, as a single misplaced hole in a card meant the whole stack might be rendered useless.
 
-[//]: # "history of vim emacs, why use that instead of google docs or notepadd++"
+As computers evolved and became more interactive, the need for a more efficient way to program them became evident. This led to the development of the first code editors. These tools were basic, offering simple environments for writing and editing text. Most importantly, these tools allowed programmers to easily correct errors with a simple backspace and to save their work electronically.
+
+<figure>
+  <img src="./figures/code.jpg" title="VT220" style="width: 50%">
+  <figcaption>A VT220 computer terminal, representing the kind of early hardware interfaces through which programmers interacted with computers in the 1980s.</figcaption>
+</figure>
+
+At the end of the day, writing code is really just typing text. This means, in theory, you could use anything from Google Docs to Microsoft Word for this task. However, as you delve deeper into programming, you'll understand the need for tools tailored specifically for the job, as they will make the coding process faster, more efficient, and less error-prone.
+
+> Fun fact: In computing, we often refer to programming errors as "bugs." The term "bug" actually has a fascinating origin. Back in 1947, a moth found its way into one of the components of the Mark II computer at Harvard University. When the team, led by Grace Hopper, discovered it, they commented that they were "debugging" the system. That's how we got the term "debugging." So, a "bug" refers to an error or flaw in software that produces unexpected results, and "debugging" is the process of finding and fixing these issues to ensure the program works correctly.
 
 ## Fundamentals
+Different code editors cater to different needs and are popular in different fields. Let's look at some of the popular ones.
+
+#### **Command-line editors**
+The first code editors started to appear in the 1970s. Since the mouse only became mainstream with the Apple Macintosh in 1984, the first code editors were keyboard-based. One of the pioneers was vi, released in 1976. To this day, it is a standard tool on many Linux distros. 
+
+In the same year, Emacs emerged as another influential editor. Characterized by its extensibility and customizability, Emacs went beyond text editing. With some customization, it transformed into an environment where one could use a debugger, email, browse the web, play music, and more - all without leaving the editor. This gave it a unique edge and garnered a dedicated user base.
+
+In 1991, Vim (Vi IMproved) was released. Vim is an enhanced version of vi, bringing along more features and capabilities. Editors like Vim were built for efficiency, allowing users to navigate and edit files directly from the command line using keyboard shortcuts. 
+
+In the modern era, there's still a dedicated group of programmers who swear by such minimalist tools (notably Vim, Neovim, Nano and Emacs) for their unmatched speed and adaptability. Operating solely within the terminal, they don't have flashy visuals. However, there's a caveat: mastering them can be a challenge. A steep learning curve is associated with memorizing various keyboard shortcuts, but for many, the payoff in efficiency is well worth the effort.
+
+<figure>
+  <img src="./figures/vim.jpg" title="Vim" style="width: 50%">
+  <figcaption>A screenshot of the Vim editor, showcasing its simple and efficient command-line interface.</figcaption>
+</figure>
+
+#### **General-purpose editors**
+Today's coding landscape sees many developers gravitating towards editors that seamlessly integrate mouse navigation, offering a more intuitive and enriched user experience. Among these, Visual Studio Code, or VS Code for short, stands out. Launched by Microsoft in 2015, it rapidly gained traction due to its rich feature set, versatility, and a vast library of extensions. VS Code blended the efficiency of traditional editors with the visual appeal and mouse integration that many contemporary developers appreciate. The open-source nature of VS Code also allowed a community of developers to contribute, enhancing its capabilities even further.
+
+Another example in this category is Sublime Text. These editors are like the multi-functional Swiss army knives of the coding world. Whether you're coding a website, an app, scripting something fun, or working in multiple programming languages, these editors are ready to assist. They offer features such as code colouring, a.k.a. syntax highlighting, auto-completion, error detection, the ability to add extra features through plugins, and integration of a mini command line known as an integrated terminal.
+
+<figure>
+  <img src="./figures/vs.jpg" title="VS Code" style="width: 50%">
+  <figcaption>A user interface snapshot of the Visual Studio Code (VS Code) editor, illustrating its modern and intuitive design.</figcaption>
+</figure>
+
+#### **Integrated Development Environments (IDEs)**
+When delving deep into a coding project, sometimes a simple text editor won't suffice. IDEs offer more comprehensive features compared to basic text editors, integrating numerous tools essential for software development. While every IDE includes a code editor, not every code editor qualifies as an IDE.
+
+Popular IDEs include Visual Studio for multiple languages (but primarily C#), Eclipse and IntelliJ for Java, PyCharm for Python, Android Studio for Android app development, and Apple's Xcode for iOS app development. These environments are specially designed for a deeper integration with specific languages or development tasks. They provide tools that simplify the entire software development process - from writing code, to testing, debugging, and even deploying.
+
+<figure>
+  <img src="./figures/ide.jpg" title="Visual Studio IDE" style="width: 50%">
+  <figcaption>The interface of the Visual Studio Integrated Development Environment (IDE), highlighting its array of integrated tools for software development.</figcaption>
+</figure>
+
+### The conclusion
+The world of code editors spans a broad spectrum. On one end, you have minimalist tools like Vim that operate solely on keyboard commands, and on the other end, there are IDEs like Visual Studio that bring together a suite of tools.
+
+Today, however, VS Code represents a harmonious middle ground. It stands as a testament to the evolution of code editors, seamlessly blending the efficiency of traditional editors with the intuitive interfaces of modern-day tools.
+
+<figure>
+  <img src="./figures/preferred-code-editor.jpg" title="StackOF Survey" style="width: 50%">
+  <figcaption>A bar chart from a Stack Overflow survey conducted in 2023, displaying preferences for different code editors among developers.</figcaption>
+</figure>
+
+For those embarking on their coding journey, I can't recommend VS Code enough. It's versatile and caters to a multitude of projects. While there may be instances where a specialized tool is beneficial, VS Code fulfills the requirements of the majority of programmers.
+
+[Download VS Code here](https://code.visualstudio.com/), and happy programming!
