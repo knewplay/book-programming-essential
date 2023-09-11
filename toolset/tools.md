@@ -87,6 +87,11 @@ Linux, a widely-used Unix-like operating system, was developed by Linus Torvalds
 
 You'll be surprised to learn that Linux is used everywhere. While the average consumer knows only of Windows and macOS computers, companies across various sectors have embraced Linux's versatility, stability, and cost-effectiveness. They deploy it in applications ranging from web servers and cloud computing to scientific research, embedded systems, and even space exploration.
 
+<figure>
+  <img src="./figures/linux.jpg" title="Linux is everywhere" style="width: 50%">
+  <figcaption>Various industries utilizing Linux, highlighting its widespread adoption.</figcaption>
+</figure>
+
 I mention Linux here because you will likely encounter it if you continue working with technology, and Linux relies heavily on text-based commands executed through the terminal.
 
 > Fun fact: Linux powers 96.3% of the world's top web servers.
@@ -98,6 +103,11 @@ In the Computer Fundamentals, Software and Hardware section, I mentioned that th
 In general this is true, however the operating system is large and has many components. One of its components is called the kernel.
 
 Just like its definition in english, the kernel is the operating system's core. Windows has one, macOS has one, and so too does Linux. Everything previously said that the OS does is actually done specifically by the kernel.
+
+<figure>
+  <img src="./figures/kernel.jpg" title="Kernel" style="width: 50%">
+  <figcaption>The Kernel serves as the core bridge between software applications and the physical hardware.</figcaption>
+</figure>
 
 ### Shell
 As it turns out, we can have direct access to the kernel of an operating system. And that is thanks to the outermost layer of the operating system, known as the shell.
@@ -112,9 +122,10 @@ When you type something into the terminal and press enter, the terminal sends wh
 
 The terminal and the shell are often used interchangeably, so don't get too caught up on the definitions when reading about it online.
 
-[//]: # "can have an image here such as: http://coewww.rutgers.edu/www1/linuxclass2008/lessons/lesson1/sec_9.html"
-
-[//]: # "can have an image here such as:https://developer.ibm.com/tutorials/l-linux-shells/. and this: https://i.stack.imgur.com/muYsK.jpg"
+ <figure>
+  <img src="./figures/shell.jpg" title="The Shell" style="width: 50%">
+  <figcaption>The shell interprets user commands and communicates directly with the kernel, facilitating user interaction with the operating system.</figcaption>
+</figure>
 
 Since the shell is just a program that interprets commands, many variations have been created. The default shell on most Linux and older macOS systems is called the GNU Bash, or just Bash. Newer macOS users use Zsh ("Z shell"), and Windows machines use the Command shell (also known as "cmd") and PowerShell.
 
@@ -164,13 +175,17 @@ When we enter a command into the terminal, we use the keyboard. Hence, the input
 
 In addition to receiving output on the terminal, we can use I/O redirection to manipulate how commands process data. Let's say you want to take the output of one command and use it as input for another command. This is where pipes come into play. Pipes are represented by the | symbol and allow us to connect multiple commands, creating a powerful chain of actions.
 
-[//]: # "have image of two functions, output of one going in as input to the other"
+<figure>
+  <img src="./figures/piping.jpg" title="Piping process" style="width: 50%">
+  <figcaption>The process of piping involves inputting the output of one function into another.</figcaption>
+</figure>
 
 See examples of how to use pipes [in this article](https://www.computernetworkingnotes.com/linux-tutorials/pipes-in-linux-explained.html).
 
 It is also possible to redirect an output into a file rather than onto the terminal using the > operator. Learn more about it [in this article](https://learning.lpi.org/en/learning-materials/010-160/3/3.2/3.2_01/#:~:text=To%20redirect%20standard%20output%20to,will%20overwrite%20the%20existing%20file.). 
 
-[//]: # "not sure if I should add a final section (like a conclusion section) ### Additional Utilities There is a lot you can do with the terminal. And for everything that you can do, there is a command for it. So take your time to explore the terminal."
+### Conclusion
+The terminal is an immensely powerful tool, offering a direct line of communication to the core of your operating system. As you become more comfortable using it, you'll discover its potential to streamline tasks, automate repetitive actions, and give you a richer understanding of how computers work. Continue to explore, learn, and remember: every expert was once a beginner. Happy coding!
 
 # Git
 Imagine investing months, or even years, in developing a remarkable app, only to one day lose your laptop and, thus, your work. Despite such potential setbacks, how do thousands of programmers still manage to collaborate on a single project and stay organized? Now that you know about the terminal, we can discuss the powerful tool called **Git**.
