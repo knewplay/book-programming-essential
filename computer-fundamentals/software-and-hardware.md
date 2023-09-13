@@ -73,18 +73,18 @@ To address these challenges and facilitate the seamless interaction between hard
 
 <figure>
   <img src="./figures/software-hardware.jpg" title="Operating System" style="width: 50%">
-  <figcaption>The operating system acts as a pivotal intermediary, facilitating seamless interaction between the user, software, and hardware components of a computer system.</figcaption>
+  <figcaption>The operating system acts as an intermediary, facilitating seamless interaction between the user, software, and hardware components of a computer system.</figcaption>
 </figure>
 
 The operating system abstracts the complexities of hardware, providing a uniform environment for software developers to create applications. It also provides regular everyday computer users with their familiar view of the computer: the GUI (pronounced as "Gee-You-Eye"), or Graphical User Interface. When we turn on a Windows computer there is a style that we expect to see, and it's a similar story when we turn on a device running macOS, iOS, or Android.
 
-Whether it's creating a new folder on our computer, running two programs simultaneously, saving a text document on our computer, or pluging a brand new mouse into the usb port, the operating system takes care of all this for us. Anything that the user shouldn't have to worry about is taken care of by the operating system. For example, when was the last time that you told the computer how to allocate its memory space, e.g. Microsoft Word should have memory slots #1 - #10000 and Adobe Photoshop should take memory slots #10001 - #21000? When was the last time you wondered where in storage you should save your essay file? Never. Just click "Save", and the operating system will take care of the rest.
+Whether it's creating a new folder on our computer, running two programs simultaneously, saving a text document on our computer, or pluging a brand new mouse into the usb port, the operating system takes care of all this for us. Anything that the user shouldn't have to worry about is taken care of by the operating system. For example, when was the last time that you told your computer how to allocate its memory space, e.g. Microsoft Word should have memory slots #1 - #10000 and Adobe Photoshop should take memory slots #10001 - #21000? When was the last time you wondered where in storage you should save your essay file? Never. Just click "Save", and the operating system will take care of the rest.
 
 All in all, operating systems play a vital role in harmonizing hardware and software components. They provide the necessary abstractions, services, and interfaces to ensure compatibility, efficient resource utilization, and seamless communication between different devices and software applications.
 
-> Do you know of any operating systems? What kind of devices do they run on, i.e. can these operating systems run on devices made by different companies? Think of Apple devices, a Samsung smartphone, a Lenovo laptop, etc.
+> Question: Do you know of any operating systems? What kind of devices do they run on, i.e. can these operating systems run on devices made by different companies? Think of Apple devices, a Samsung smartphone, a Lenovo laptop, etc.
 
-> What could be some reasons for why multiple operating systems exist?
+> Question: What could be some reasons for why multiple operating systems exist?
 P.S. Consider factors such as market demand, target user demographics, and specialized functionalities that drive the development of distinct operating systems.
 
 The operating systems of Microsoft's Windows, Apple's macOS/iOS, and Google's Android are popular. What is less known but still as widely used (although mostly unknowingly) is Linux. To learn more about Linux, [read this](https://opensource.com/resources/linux).
@@ -95,7 +95,7 @@ Imagine this. It's 8:27AM, and you just reached your school locker. You have a s
 
 <figure>
   <img src="./figures/school-locker-messy.jpg" title="Messy Locker" style="width: 50%">
-  <figcaption>A messy locker.</figcaption>
+  <figcaption>A cluttered locker with books and papers tumbling out.</figcaption>
 </figure>
 
 
@@ -103,14 +103,14 @@ Now imagine a different scenario. It's 8:27AM, and you just reached your school 
 
 <figure>
   <img src="./figures/school-locker-organized.jpg" title="Organized Locker" style="width: 30%">
-  <figcaption>An organized locker.</figcaption>
+  <figcaption>A neat locker with clearly labeled folders.</figcaption>
 </figure>
 
-Continuing from this "more organized version of you", you sit down at your desk, and open the folder. Inside this "Physics" folder, you have two more folders, two notebooks, a couple of blank sheets of papers (in case there's a pop-quiz or you just want to jot something down) and the Physics book which your teacher follows. The "subfolders" are labeled "Quizzes" and "Homework", and they have notebooks and separate papers inside of them too.
+Continuing from this "more organized version of you", you sit down at your desk, and open the folder. Inside this "Physics" folder, you have two more folders, two notebooks, a couple of blank sheets of papers (in case there's a pop-quiz or you just want to jot something down) and the Physics book which your teacher follows. The subfolders are labeled "Quizzes" and "Homework", and they have notebooks and papers inside of them too.
 
 <figure>
   <img src="./figures/folders.jpg" title="Physics Folder" style="width: 90%">
-  <figcaption>A look inside the Physics folder.</figcaption>
+  <figcaption>Inside the Physics folder: blank sheets,  notebooks, a textbook, and folder labeled "Quizzes" and "Homework".</figcaption>
 </figure>
 
 Something to realize is that there is no "right" and definitive way to organize your files. You may be organized with your method, and maybe your classmate is also organized, but he has his Physics folder insider of a larger folder called "Science", which contains both "Physics" and "Chemistry" folders, and he holds his blank sheets of paper inside a "Quizzes" folder.
@@ -119,7 +119,7 @@ Something to realize is that there is no "right" and definitive way to organize 
 
 Let's now transition to the computer's way of organizing files and folders. This is a crucial aspect that the operating system takes care of, ensuring that information is not all jumbled together. Remember, all data is stored as a sequence of 1's and 0's, but the operating system creates a virtual boundary between one piece of data and the next.
 
-We have an idea of what a folder is in real life, and it's no different when it comes to computers; it's a way to separate and organize data. Often, a folder is called a directory. Do not forget that. Now what is a "file"?
+We have an idea of what a folder is in real life, and it's no different when it comes to computers; it's a way to separate and organize data. It is important to note that "directory" is oftentimes used interchangeably with "folder". Now what is a "file"?
 
 > The term directory was created first, and then the term "folder" was introduced with the advent of the GUI.
 
@@ -138,7 +138,7 @@ While folders are used to group related files together, a file is the data itsel
 
 In school, if you open your Physics folder, you can distinguish between a sheet of paper and a notebook. You can see the difference, and you can touch the difference. Both contain information, but they are clearly different.
 
-When it comes to computer files, they aren't actual objects which we can hold and say "this is a JPG image file" or "this one's a simple text file". Calling some file "image1" doesn't make it an image, because maybe it's a text file where we describe some image in text.
+When it comes to computer files, they aren't actual objects which we can hold and say "this is a JPG image file" or "this one's a simple text file". Calling some file "image1" doesn't make it an image, because it could just be text describing one.
 
 So, rule number one is that you must always specify the file type. How? By adding a filename extension. For example, "image1.png", or "image1.jpg", or "image1.txt".
 
@@ -215,16 +215,16 @@ When it comes to computers, the working directory is the current directory or fo
 Going back to the analogy, say you are taking French class for the first time. So you want to create a folder labeled "French". You won't be under
 
 ```
-English > quizzes 
+English >
 ```
 
-to do so, right? You will go to
+to do so, right? Because French classes are not some subsection of English classes. You will instead go to
 
 ```
 Locker >
 ```
 
-and add the French folder there. So in computer terms, you had to make
+and add the French folder next to all the other course folders. So in computer terms, you had to make
 
 ```
 Locker >
