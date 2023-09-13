@@ -102,14 +102,14 @@ Imagine this. It's 8:27AM, and you just reached your school locker. You have a s
 Now imagine a different scenario. It's 8:27AM, and you just reached your school locker. You turn the lock combination, open the locker, read the folder labels "History, no. Math, no. Chemistry, no. Physics, perfect!". You pull out the "Physics" folder, which you know contains everything already, lock the door, and head to class. It's 8:28AM by the way.
 
 <figure>
-  <img src="./figures/school-locker-organized.jpg" title="Organized Locker" style="width: 50%">
+  <img src="./figures/school-locker-organized.jpg" title="Organized Locker" style="width: 30%">
   <figcaption>An organized locker.</figcaption>
 </figure>
 
 Continuing from this "more organized version of you", you sit down at your desk, and open the folder. Inside this "Physics" folder, you have two more folders, two notebooks, a couple of blank sheets of papers (in case there's a pop-quiz or you just want to jot something down) and the Physics book which your teacher follows. The "subfolders" are labeled "Quizzes" and "Homework", and they have notebooks and separate papers inside of them too.
 
 <figure>
-  <img src="./figures/folders.jpg" title="Physics Folder" style="width: 50%">
+  <img src="./figures/folders.jpg" title="Physics Folder" style="width: 90%">
   <figcaption>A look inside the Physics folder.</figcaption>
 </figure>
 
@@ -140,9 +140,9 @@ In school, if you open your Physics folder, you can distinguish between a sheet 
 
 When it comes to computer files, they aren't actual objects which we can hold and say "this is a JPG image file" or "this one's a simple text file". Calling some file "image1" doesn't make it an image, because maybe it's a text file where we describe some image in text.
 
-So, rule number one is that you must always specify the file type. How? By adding a filename extension. Foe example, "image1.png", or "image1.jpg", or "image1.txt".
+So, rule number one is that you must always specify the file type. How? By adding a filename extension. For example, "image1.png", or "image1.jpg", or "image1.txt".
 
-> Note: Most people use applications which automatically do this for them. For example, when we write and save a Microsoft Word file, clearly it get's saved as a "doc" file. When you work with images in Adobe Photoshop, they will never suggest ".txt" as a potential filename extension. But we will see in the next series of articles how programmers use a tool where they must specify the file type themselves.
+> Note: Most people use applications which automatically do this for them. For example, when we write and save a Microsoft Word file, clearly it get's saved as a "doc" file. When you work with images in Adobe Photoshop, they will never suggest ".txt" as a potential filename extension.
 
 The second thing to realize is that in your Physics folder, you will not have two sheets of paper, both named "Quiz 1". That would be confusing. But if you had a notebook that's labeled "Quiz 1" and a loose sheet of paper labeled "Quiz 1", then there is some distinction and you can distinguish them. Furthermore, you can have a paper labeled "Quiz 1" in the Physics folder, and one in the History folder, and that is okay as well, as long as you don't mix the contents up.
 
