@@ -4,13 +4,11 @@ A computer, without instructions, is essentially a very expensive paperweight. I
 
 Whether it's calculating large sums, displaying graphics, playing music, or connecting with other devices over the internet, all computer operations boil down to intricate sets of instructions we've programmed it to understand and execute.
 
-The languages we use to communicate these instructions come in various forms, known as programming languages. Just like how we use different human languages (like English, French, or Mandarin) to communicate with one another, we employ different programming languages (like Python, Java, or C++) to converse with computers. Each language has its strengths and is suited for different kinds of tasks.
+The languages we use to communicate these instructions come in various forms, known as programming languages. Just like how we use different spoken languages (like English, French, or Mandarin) to communicate with one another, we employ different programming languages (like Python, Java, or C++) to converse with computers. Each language has its strengths and is suited for different kinds of tasks.
 
-In this book, we will not learn about any one specific programming language. Instead, we will learn something much more important: how to think like a programmer. Because if you know how to think like a programmer, you are able to write code in any language.
+The purpose of this book is not to learn about any one specific programming language. Instead, we will learn something much more important: how to think like a programmer. Because if you know how to think like a programmer, you are able to effectively communicate with computers, irrespective of the coding language used.
 
-However, this book will not introduce any specific programming language. Instead, we will explore foundational concepts that are universal to all programming language. We'll learn how to think like a programmer. Once you solve enough problems using this mindset, the language you choose simply becomes a tool to express your ideas. 
-
-But why is this so vital, and why has it become a central skill in the modern world?
+But why is programming this so vital, and why has it become a central skill in the modern world?
 
 From the smartphones in our pockets to the intricate systems that power our cities, programming plays an instrumental role in shaping the world around us. Think of your day-to-day activities: maybe you ask a voice assistant for the weather, use an app to order food, or play a video game to unwind. Behind all these activities are lines of code, written by programmers.
 
