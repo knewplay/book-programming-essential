@@ -171,11 +171,11 @@ In the Computer Fundamentals, Software and Hardware section, I talked about the 
 
 However, "relative paths" are equally essential. They define a file or directory's location concerning the current working directory. Instead of tracing back to the system's root, they start from where you are right now in the file system, i.e. the working directory.
 
-For instance, if you're in the Locker/Physics/Quizzes directory, the relative path to a "Homework" folder inside it would just be "Physics -> Homework", whereas its absolute path might be /Root/Science/Physics/Homework/.
+For instance, if you're in the Locker/Physics/Quizzes directory, the relative path to a "Homework" folder inside it would just be "Go up to Physics" -> "Down to Homework", whereas its absolute path might be Root -> Science -> Physics -> Homework.
 
  <figure>
-  <img src="./figures/TODO" title="TODO" style="width: 50%">
-  <figcaption>TODO++++++++++++++++++++++++++++!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</figcaption>
+  <img src="./figures/path.jpg" title="Absolute path vs. relative path" style="width: 50%">
+  <figcaption>On the left, arrows show an absolute path from the root to a target folder. On the right, arrows depict a relative path from a current directory to the target.</figcaption>
 </figure>
 
 To better understand the difference, as well as learn some more about how to navigate the file system, check out [this article](https://www.redhat.com/sysadmin/linux-path-absolute-relative).
