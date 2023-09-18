@@ -23,16 +23,3 @@ While a programmer's code may be used by billions, it's their unique approach to
 Is this mindset essential for our book? Absolutely. While the technicalities of programming are vital, fostering this mindset will empower readers to tackle any coding challenge they encounter and, more broadly, to approach problems in their daily lives with a similar analytical and creative spirit.
 
 As we journey through this book, we'll not only learn the nuts and bolts of coding but also nurture this mindset, making us not just better programmers, but better problem-solvers.
-
-
-**Question:** Imagine you are organizing a big family picnic and you need to ensure everyone has everything they need (food, drinks, and activities). How would you approach to organize this event?
-
-<details><summary>Possible answer</summary>
-
-1. Approximate the total number of attendees, categorize them as children, teens, adults, seniors.
-2. Plan the food and beverage arrangements.
-3. Plan the entertainment aspect, including music and activities for kids and adults.
-4. Ensure proper seating arrangements (seniors need chairs and tables rather than a picnic cloth on the grass).
-
-    Note that some of these, if not all, can be further broken down and made simpler.
-</details>
