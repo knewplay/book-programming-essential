@@ -29,6 +29,11 @@ To understand why the terminal is important, we must recognize that all programs
 
 For example, if you are playing a video game and click on the "Start Game" button, the game doesn't just start magically; it follows a set of commands set up by the programmers. For example, the underlying commands could be as follows:
 
+<figure>
+  <img src="./figures/start-game.jpg" title="Start Game Button" style="width: 50%">
+  <figcaption>"Start Game" button – a simple click triggers a series of underlying programming commands.</figcaption>
+</figure>
+
 - *initializeGame*
 - *createPlayerCharacter*
 - *setGameParameters*
