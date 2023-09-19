@@ -18,22 +18,81 @@ In programming, problems can often feel like a massive jigsaw puzzle, especially
 - Analogies: Relate the problem to a real-world scenario. If you were to explain it to a friend, how would you describe it?
 - Iterative Approach: Start with a basic version of the solution. Improve and refine it in iterations.
 
-### From Theory to Practice
+## From Theory to Practice
 Understanding the theory behind decomposition is crucial, but putting it into practice is where the real learning happens. The next time you're faced with a challenge, whether in coding or everyday life, pause and break it down. With practice, this approach becomes second nature, transforming how you tackle problems in programming and beyond.
 
-# Activity
+### Practice Problems
 
-**Question:** Imagine you are organizing a big family picnic and you need to ensure everyone has everything they need (food, drinks, and activities). How would you approach to organize this event?
+**Problem 1:** 
+Imagine you are organizing a big family picnic and you need to ensure everyone has everything they need (food, drinks, and activities). How would you approach to organize this event?
 
-<details><summary>Possible answer</summary>
+**Answer:** 
+Organizing a big family picnic can be a complex task. Here's one structured approach, among many, to ensure everything runs smoothly:
 
-1. Approximate the total number of attendees, categorize them as children, teens, adults, seniors.
-2. Plan the food and beverage arrangements.
-3. Plan the entertainment aspect, including music and activities for kids and adults.
-4. Ensure proper seating arrangements (seniors need chairs and tables rather than a picnic cloth on the grass).
+1. Tally Attendees:
+- Consult with family members to determine a tentative guest list.
+- Categorize attendees by age: children, teens, adults, seniors.
 
-    Note that some of these, if not all, can be further broken down and made simpler.
-</details>
+2. Plan Food and Beverage:
 
+- Assess dietary preferences and restrictions. Consider a mix of vegetarian and non-vegetarian options.
+- Consider hydration: plenty of water, perhaps some soft drinks and juices.
+
+3. Entertainment Arrangements:
+
+- Plan age-appropriate games and activities. For instance, sack races, tug of war, musical chairs, frisbee, and cards or board games for adults.
+- Think about bringing a portable speaker with a playlist that caters to the family's musical tastes. 
+
+4. Seating and Shelter:
+
+- Ensure enough seating. Seniors might prefer chairs and tables rather than picnic mats.
+- Visit the location beforehand to see if there are any pavilions or covered areas available for use.
+
+5. Miscellaneous Preparations:
+
+- First-Aid: Have a kit available, especially if many children are attending.
+- Water Safety: If near water, consider relevant precautions.
+- Weather: Monitor forecasts; plan for rain with umbrellas or a backup venue.
+- Parking: Ensure the site has sufficient parking or inform attendees of alternatives.
+
+Remember, while this is one approach to plan, adaptability is essential.
+
+**Problem 2:** 
+Imagine you're tasked with designing a simple to-do list app that helps users organize their daily tasks. How would you approach the development of this app?
+
+**Answer:** 
+Designing a to-do list app, while conceptually simple, requires a focus on user experience to make it stand out. Here's a structured method to guide the development:
+
+1. Determine Core Functionality:
+- Primary Purpose: Allow users to quickly add, modify, and delete tasks.
+- Features: Task entry, due dates, priority levels, task categorization (e.g., work, personal, urgent), and reminders.
+
+2. User Interface (UI) Design:
+- Visual Elements: Use subtle colors or icons on a simple interface to differentiate tasks based on priority or category.
+- Quick Actions: Implement swipe gestures for marking tasks as done or for deleting them.
+
+3. Data Management:
+- Local Storage: Save tasks locally so users can access them offline.
+- Cloud Sync: Optionally, allow users to sync tasks across devices via the cloud.
+
+4. Navigation and Flow:
+- List Views: Main chronological list with highlighted due tasks and a detailed view upon tapping.
+- Search and Filter: Allow users to search their tasks or filter by category.
+
+5. Miscellaneous Features:
+- Timely Alerts: Notify users of upcoming or overdue tasks based on set reminders.
+- Dark Mode: A popular feature, offer a dark theme for better visibility in low light.
+- Tutorials: For first-time users, a brief walkthrough highlighting the app's features can be helpful.
+
+While this is one approach to plan, it's essential to remain open to feedback and iterative improvement in the world of app design.
+
+
+## Exercises
+
+**Q1:** You're going on a camping trip for a weekend with five friends, and you are tasked with planning it. Write down everything you think you'll need for this trip, from food to equipment and entertainment.
+
+**Q2:** Write a short story with a beginning, middle, and end. Begin with just a one-line summary for the start, middle, and conclusion. In the next iteration, expand each line into a short paragraph. In the third and final iteration, refine the story by adding some details, dialogues, and descriptions.
+
+**Q3:** You're given the responsibility of designing the layout for a new local library. Consider various aspects of library design such as categorizing books (by genre, author, publication year), shelf labeling (maybe through color coding or other symbols), creating distinct zones (reading areas, computer stations, children's section), and ensuring accessibility for all visitors. How would you approach this task to provide an organized and user-friendly space?
 
 
