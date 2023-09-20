@@ -35,7 +35,7 @@ Converting a problem into a flowchart involves breaking down the problem into in
 
 ### Step 1: Define the Problem
 
-Clearly understand what you're trying to achieve. In our example, the problem or task is: Make a cup of tea.
+Understand what you're trying to achieve. In our example, the problem or task is: Make a cup of tea.
 
 ### Step 2: List Down the Steps
 
