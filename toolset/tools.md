@@ -29,6 +29,11 @@ To understand why the terminal is important, we must recognize that all programs
 
 For example, if you are playing a video game and click on the "Start Game" button, the game doesn't just start magically; it follows a set of commands set up by the programmers. For example, the underlying commands could be as follows:
 
+<figure>
+  <img src="./figures/start-game.jpg" title="Start Game Button" style="width: 50%">
+  <figcaption>"Start Game" button – a simple click triggers a series of underlying programming commands.</figcaption>
+</figure>
+
 - *initializeGame*
 - *createPlayerCharacter*
 - *setGameParameters*
@@ -49,7 +54,7 @@ It's evident that a lot is going on beneath the GUI. Just think about it. What w
 
 The terminal operates at a more fundamental level, granting direct access to the operating system's underlying command-line interface (CLI). It's like a secret door that bypasses the graphical user interface altogether. You can do everything you do with a GUI using the terminal, but not everything you can do with the terminal is possible through a GUI. That's because the GUI is written based on the commands, and not all commands are necessarily represented in the GUI.
 
-That's why programmers and IT professionals rely on the terminal. It's a powerhouse of control and functionality. While GUIs simplify user interactions, programmers might not create or develop them for certain specialized technologies or applications. Nobody bothers to create the GUI-equivalent of tools used by programmers and IT professional. Why? Well, developing a GUI takes extra effort, and programmers must write lots of code to erect a GUI-equivalent of a program. And the assumption is that since tech-savvy folks like programmers are capable of using the terminal, then they can just use the terminal. No need for a GUI-equivalent.
+That's why programmers and IT professionals rely on the terminal. It offers unparalleled control and functionality. While GUIs simplify user interactions, programmers might not create or develop them for certain specialized technologies or applications. Nobody bothers to create the GUI-equivalent of tools used by programmers and IT professionals. Why? Well, developing a GUI takes extra effort, and programmers must write lots of code to erect a GUI-equivalent of a program. And the assumption is that since tech-savvy folks like programmers are capable of using the terminal, then they should just use the terminal. No need for a GUI-equivalent.
 
 This explanation might make it seem like programmers force us to use the terminal because there is no GUI-equivalent, but the truth is that the CLI offers way more functionality than most of its GUI counterparts.
 
@@ -65,7 +70,7 @@ Another field where the terminal shines is cybersecurity. Security analysts use 
 
 Finally, the terminal is also crucial in the field of robotics. Even though we sometimes see young kids "programming" robots within their school curriculum, they often do it using a GUI. These interfaces often feature drag-and-drop functionality and simplified coding blocks that allow students to create basic robot behaviors without delving into the complexities of coding. Transitioning to the terminal becomes essential as students advance in their robotics journey. It allows them to dive deeper into coding, write precise and customized algorithms, and gain a deeper understanding of the mechanics behind their robot's operations.
 
-So whatever your interests, the terminal is crucial tool for programmers and IT professionals. It provides direct access to the underlying command-line interface, allowing for precise control, automation, and efficient workflows. The terminal empowers users to delve into the inner workings of computer operations, unleashing the full potential of their skills and creativity.
+So whatever your interests, the terminal is a crucial tool for programmers and IT professionals. It provides direct access to the underlying command-line interface, allowing for precise control, automation, and efficient workflows. The terminal empowers users to delve into the inner workings of computer operations, unleashing the full potential of their skills and creativity.
 
 
 ## Fundamentals
@@ -87,7 +92,12 @@ Linux, a widely-used Unix-like operating system, was developed by Linus Torvalds
 
 You'll be surprised to learn that Linux is used everywhere. While the average consumer knows only of Windows and macOS computers, companies across various sectors have embraced Linux's versatility, stability, and cost-effectiveness. They deploy it in applications ranging from web servers and cloud computing to scientific research, embedded systems, and even space exploration.
 
-I mention Linux here because you will likely encounter it if you continue working with technology, and Linux relies heavily on text-based commands executed through the terminal.
+<figure>
+  <img src="./figures/linux.jpg" title="Linux is everywhere" style="width: 50%">
+  <figcaption>Various industries utilize Linux, highlighting its widespread adoption.</figcaption>
+</figure>
+
+As you delve deeper into the technology realm, you'll likely encounter Linux, which places significant emphasis on executing text-based commands through the terminal.
 
 > Fun fact: Linux powers 96.3% of the world's top web servers.
 [Source](https://www.enterpriseappstoday.com/stats/linux-statistics.html#:~:text=Linux%20is%20used%20to%20power,Linus%20operating%20system%20is%20run)
@@ -95,82 +105,97 @@ I mention Linux here because you will likely encounter it if you continue workin
 ### Kernel
 In the Computer Fundamentals, Software and Hardware section, I mentioned that the operating system is what sits between the hardware components of a computer and the software applications.
 
-In general this is true, however the operating system is large and has many components. One of its components is called the kernel.
+In general, this is true, however the operating system is large and has many components. One of its components is called the kernel.
 
-Just like its definition in english, the kernel is the operating system's core. Windows has one, macOS has one, and so too does Linux. Everything previously said that the OS does is actually done specifically by the kernel.
+Just like its definition in English, the kernel is the operating system's core. Windows has one, macOS has one, and so too does Linux. Everything previously said that the OS does is actually done specifically by the kernel.
+
+<figure>
+  <img src="./figures/kernel.jpg" title="Kernel" style="width: 50%">
+  <figcaption>The Kernel is the core bridge between software applications and the physical hardware.</figcaption>
+</figure>
 
 ### Shell
 As it turns out, we can have direct access to the kernel of an operating system. And that is thanks to the outermost layer of the operating system, known as the shell.
 
-The shell takes in commands, and interprets them. For that reason, it can be called a "command-line interpreter", or "command language interpreter" (not to be confused with the typical abbreviation of CLI being "command-line interface", which refers to the terminal). The shell is a program that translates your typed commands into instructions that the kernel can understand and execute. It sits between the user and the kernel of the operating system.
+The shell takes in commands and interprets them. For that reason, it can be called a "command-line interpreter" or "command language interpreter" (not to be confused with the typical abbreviation of CLI being "command-line interface", which refers to the terminal). The shell is a program that translates your typed commands into instructions that the kernel can understand and execute. It sits between the user and the kernel of the operating system.
 
 But wait, wasn't that the role of the terminal?
 
-Not exactly. The terminal does sit between the user and the operating system, however it is simply an interface; a place where the user can write their commands. The terminal only knows how to accept input from the keyboard and display output onto the screen. The terminal itself does not know what to do with the provided input. And that is where the shell comes in.
+Not exactly. The terminal does sit between the user and the operating system. However, it is simply an interface, a place where the user can write their commands. The terminal only knows how to accept input from the keyboard and display output onto the screen. The terminal itself does not know what to do with the provided input. And that is where the shell comes in.
 
 When you type something into the terminal and press enter, the terminal sends what you wrote to the shell. The shell reads the commands you enter in the terminal, processes them, and communicates with the kernel to perform the requested actions. The kernel then performs the necessary tasks, such as managing memory, accessing files, or running processes, based on the instructions provided by the shell. 
 
 The terminal and the shell are often used interchangeably, so don't get too caught up on the definitions when reading about it online.
 
-[//]: # "can have an image here such as: http://coewww.rutgers.edu/www1/linuxclass2008/lessons/lesson1/sec_9.html"
-
-[//]: # "can have an image here such as:https://developer.ibm.com/tutorials/l-linux-shells/. and this: https://i.stack.imgur.com/muYsK.jpg"
+ <figure>
+  <img src="./figures/shell.jpg" title="The Shell" style="width: 50%">
+  <figcaption>The shell interprets user commands and communicates directly with the kernel, facilitating user interaction with the operating system.</figcaption>
+</figure>
 
 Since the shell is just a program that interprets commands, many variations have been created. The default shell on most Linux and older macOS systems is called the GNU Bash, or just Bash. Newer macOS users use Zsh ("Z shell"), and Windows machines use the Command shell (also known as "cmd") and PowerShell.
 
 ### Review of the working directory
-I want to mention this topic again, because it is so important. The working directory is important when working with files because it determines the context in which file operations occur. When you create, modify, or access a file without specifying a specific file path, the operating system assumes that the file is located within the working directory.
+I want to mention this topic again because it is so important. The working directory is important when working with files because it determines the context in which file operations occur. When you create, modify, or access a file without specifying a specific file path, the operating system assumes that the file is located within the working directory.
 
-So if you are in the 
+So, if you are in the 
 
 ```
 Locker > Physics > Quizzes 
 ```
 
-folder, and you enter a command that translates to "create a file called "quiz8.txt", it will create it in your working directory, i.e. Locker/Physics/Quizzes/. If you do not specify where you want the command to execute, then it will by default execute in the working directory.
+folder, and you enter a command that translates to "create a file called "quiz8.txt", it will create it in your working directory, i.e. Locker/Physics/Quizzes/. If you do not specify where you want the command to execute, then it will, by default, execute in the working directory.
 
 ### File system navigation
 Moving around the file system is a fundamental skill in the terminal. You will need to work with files from different directories, and knowing how to navigate efficiently will save you time and effort.
 
 For macOS and Linux users, you can view the "Basic Navigation" of [this resource for specific commands](https://www.pluralsight.com/guides/beginner-linux-navigation-manual).
 
-For Windows users, you can view [this resource for specific commands](https://riptutorial.com/cmd/example/8646/navigating-in-cmd).
+For Windows users, you can view [this resource for specific commands](https://riptutorial.com/cmd/example/8646/navigating-in-cmd) or [this article](https://www.howtogeek.com/659411/how-to-change-directories-in-command-prompt-on-windows-10/).
 
 ### File manipulation
 The terminal enables us to work with files efficiently.
 
 For macOS and Linux users, you can view the "File Manipulation" of [the previous resource for specific commands](https://www.pluralsight.com/guides/beginner-linux-navigation-manual).
 
-[//]: # " for windows have link: talk about creating a file, creating a folder, delete a file or folder, copy a file, move a file, rename a file"
+For Windows users, you can review some navigation commands as well as learn about file manipulation in [this article](https://www.it.uc3m.es/pbasanta/asng/course_notes/linux_managefiles_en.html).
 
 ### Working with text
 Working with text in the terminal opens up a world of possibilities. It allows you to manipulate, search, and transform text effortlessly. 
 
 For macOS and Linux users, you can view the "Working with Content" of [the previous resource for specific commands](https://www.pluralsight.com/guides/beginner-linux-navigation-manual).
 
-[//]: # " for windows have link. just want to check if this is good way of writing this"
+For Windows users, you can read [this article](https://www.onmsft.com/feature/command-prompt-basics-files-and-folders/).
 
 ### Understanding relative versus absolute path
 In the Computer Fundamentals, Software and Hardware section, I talked about the meaning of a file path. There, I described what is known as "absolute path", i.e. the path it takes to get to a file from the root folder, or in the case of the analogy, the locker.
 
-There is however also the concept of a "relative path". This idea brings in the concept of a working directory, which I've also covered in that section.
+However, "relative paths" are equally essential. They define a file or directory's location concerning the current working directory. Instead of tracing back to the system's root, they start from where you are right now in the file system, i.e. the working directory.
 
-[//]: # "not sure how deep to go into it on my own ^^"
+For instance, if you're in the Locker/Physics/Quizzes directory, the relative path to a "Homework" folder inside it would just be "Go up to Physics" -> "Down to Homework", whereas its absolute path might be Root -> Science -> Physics -> Homework.
 
-To understand the difference, check out [this article](https://www.redhat.com/sysadmin/linux-path-absolute-relative).
+ <figure>
+  <img src="./figures/path.jpg" title="Absolute path vs. relative path" style="width: 50%">
+  <figcaption>On the left, arrows show an absolute path from the root to a target folder. On the right, arrows depict a relative path from a current directory to the target.</figcaption>
+</figure>
+
+To better understand the difference, as well as learn some more about how to navigate the file system, check out [this article](https://www.redhat.com/sysadmin/linux-path-absolute-relative).
 
 ### I/O redirection
 When we enter a command into the terminal, we use the keyboard. Hence, the input is text from the keyboard (a.k.a. standard input). Once the command gets executed, we (may) receive an output in the form of text on the terminal (a.k.a. standard output). Commands that do this are ***ls***, ***cat***, ***pwd***, and so on. 
 
 In addition to receiving output on the terminal, we can use I/O redirection to manipulate how commands process data. Let's say you want to take the output of one command and use it as input for another command. This is where pipes come into play. Pipes are represented by the | symbol and allow us to connect multiple commands, creating a powerful chain of actions.
 
-[//]: # "have image of two functions, output of one going in as input to the other"
+<figure>
+  <img src="./figures/piping.jpg" title="Piping process" style="width: 50%">
+  <figcaption>The process of piping involves inputting the output of one function into another.</figcaption>
+</figure>
 
 See examples of how to use pipes [in this article](https://www.computernetworkingnotes.com/linux-tutorials/pipes-in-linux-explained.html).
 
 It is also possible to redirect an output into a file rather than onto the terminal using the > operator. Learn more about it [in this article](https://learning.lpi.org/en/learning-materials/010-160/3/3.2/3.2_01/#:~:text=To%20redirect%20standard%20output%20to,will%20overwrite%20the%20existing%20file.). 
 
-[//]: # "not sure if I should add a final section (like a conclusion section) ### Additional Utilities There is a lot you can do with the terminal. And for everything that you can do, there is a command for it. So take your time to explore the terminal."
+### Conclusion
+The terminal is an immensely powerful tool, offering a direct line of communication to the core of your operating system. As you become more comfortable using it, you'll discover its potential to streamline tasks, automate repetitive actions, and give you a richer understanding of how computers work. Continue to explore, learn, and remember: every expert was once a beginner. Happy coding!
 
 # Git
 Imagine investing months, or even years, in developing a remarkable app, only to one day lose your laptop and, thus, your work. Despite such potential setbacks, how do thousands of programmers still manage to collaborate on a single project and stay organized? Now that you know about the terminal, we can discuss the powerful tool called **Git**.
