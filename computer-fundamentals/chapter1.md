@@ -1,3 +1,4 @@
+# Chapter 1: Understanding and Breaking Down Problems
 Programming, at its core, is about solving problems. But before you can solve a problem using code, you need to understand it thoroughly. This chapter delves into the art of decomposing complex problems into smaller, more manageable parts, allowing you to tackle them step by step.
 
 ## The Essence of Problem Decomposition
