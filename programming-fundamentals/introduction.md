@@ -1,6 +1,6 @@
 ---
 title: "Chapter 1: Understanding and Breaking Down Problems"
-date: "2023-09-20"
+date: "2023-09-30"
 author: "Andrei Guevorkian"
 illustrator: "Dengyijia Liu"
 ---
