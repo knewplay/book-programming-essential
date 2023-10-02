@@ -1,3 +1,10 @@
+---
+title: "Chapter 1: Understanding and Breaking Down Problems"
+date: "2023-09-20"
+author: "Andrei Guevorkian"
+illustrator: "Dengyijia Liu"
+---
+
 At its core, programming is the act of instructing computers to perform specific tasks.
 
 Without instructions, a computer is essentially dormant, like a powerful engine without fuel. It's through programming that we harness its immense potential, turning complex algorithms into tangible, useful applications.
