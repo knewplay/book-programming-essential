@@ -14,7 +14,6 @@ Just as a master carpenter skillfully wields their tools to shape exquisite furn
 [Git](#git)
 
 [Search Engine](#search-engine)
-[Search Engine](#search-engine)
 
 [Code Editor](#code-editor)
 
@@ -442,9 +441,7 @@ One of the subsets of the internet is called the World Wide Web, or simply "web"
 Google Search is a powerful tool that helps users navigate the vast landscape of the web to find relevant information. When you enter a query ("query" is a fancy word for "question") into Google's search bar and hit the search button, a complex and fascinating process is set in motion.
 
 1. Crawling: Google uses specialized software known as "web crawlers" to systematically browse the web. These crawlers follow hyperlinks from one web page to another, collecting data about each page they visit. This process is known as "crawling."
-
 2. Indexing: The data collected by the web crawlers is then indexed, which means it is organized and stored in Google's vast database. This index allows Google to quickly retrieve relevant information when a user performs a search.
-
 3. Ranking: When you perform a search, Google's (secret) search algorithms come into play. These algorithms analyze the indexed data and consider numerous factors to determine the most relevant and useful results for your query. Google takes into account factors like the words used in your search, the freshness of the content, the quality of the web page, and the number of other websites linking to that page (known as PageRank).
 
 ### When to google
@@ -452,11 +449,8 @@ Google Search is a powerful tool that helps users navigate the vast landscape of
 The truth is that you can google anything, anytime you want. Google is never going to tell you "that was a dumb question". Once you start googling, you will notice that there have been many people before you who have had the same questions, and those questions are answered on the internet. However, here are some more specific cases when it is appropriate to google.
 
 1. As someone learning a new programming language, googling can help you find tutorials, guides and online courses to expand your knowledge.
-
 2. If you come across the use of a function in a tutorial, and would like to see more examples of that function being used, then googling for examples is a great idea.
-
 3. When you compile or run your code, errors are innevitable, and copy-pasting the error message will often lead you to either a blog post solving the error, a discussion forum where others have faced the same issue and found solutions, or most commonly, a Q&A website such as Stack OverFlow. However, do not forget to read and try to understand the error message yourself before automatically copy-pasting it.
-
 4. Just like when learning a new programming language, there may be a new library that you must use. Learn more about the library by googling it.
 
 ### How to google
