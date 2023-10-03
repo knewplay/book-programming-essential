@@ -3,6 +3,28 @@ title: "Chapter 2: Algorithms and Flowcharts"
 date: "2023-09-26"
 author: "Andrei Guevorkian"
 illustrator: "Dengyijia Liu"
+exercises:
+  - ["treasure-hunt", "Imagine you're setting up a treasure hunt game for your friend. You've buried a treasure and only you know its location. Now, it's your friend's turn to find it. However, there's a twist: your friend, much like a computer, requires precise and unambiguous instructions to accomplish the task.
+
+  Standing at the designated starting point, you hand over a note with the following instructions:
+
+  1. Take 10 steps forward
+  2. Turn right and take 3 large steps
+  3. Turn left and crawl 5 times
+  4. Dig 2 inches down to find the treasure!
+
+  Draw the corresponding flowchart for these instructions."]
+  - ["daily-routine", "Think of a daily routine, and map it out on a flowchart. It could be your morning routine, making a cup of tea, or even how you decide what to wear!"]
+  - ["simon-says", "You're playing a game of \"Simon Says\" with a group of children. The goal is for you to call out commands and for the children to follow, but only if you first say \"Simon Says.\" If you don't use the phrase \"Simon Says\" before a command and they still execute it, they're out of the game. Given this set of rules:
+  1. Listen for the phrase \"Simon Says.\"
+  2. If \"Simon Says\" is heard, execute the following command.
+  3. If \"Simon Says\" is not heard, do not execute the command.
+  4. If a command is executed without the preceding \"Simon Says\", the player is out.
+
+  Convert this rule set into a flowchart."]
+  - ["guess-number", "You are thinking of a secret number between 1 and 100, and you ask your friend to guess it. If their guess is too high, you respond with \"Too high\". If their guess is too low, you say \"Too low\". Your friend continues guessing based on your feedback until they correctly guess the secret number.
+
+  Create a flowchart to visually represent this process, ensuring you account for each decision and response until the correct number is identified."]
 ---
 
 As we venture deeper into the realm of programming and problem-solving, the importance of structured thinking becomes evident. Central to this idea is the concept of algorithms, which act as blueprints for action. Let's dive deeper into what algorithms are and how they can be visually represented using flowcharts.
@@ -131,33 +153,3 @@ Draw a flowchart diagram to instruct the robot on how to walk forward.
 **Answer:**
 
 [Flowchart diagram]
-
-## Exercises
-
-**Question 1:**
-Imagine you're setting up a treasure hunt game for your friend. You've buried a treasure and only you know its location. Now, it's your friend's turn to find it. However, there's a twist: your friend, much like a computer, requires precise and unambiguous instructions to accomplish the task.
-
-Standing at the designated starting point, you hand over a note with the following instructions:
-
-1. Take 10 steps forward
-2. Turn right and take 3 large steps
-3. Turn left and crawl 5 times
-4. Dig 2 inches down to find the treasure!
-
-Draw the corresponding flowchart for these instructions.
-
-**Question 2:** Think of a daily routine, and map it out on a flowchart. It could be your morning routine, making a cup of tea, or even how you decide what to wear!
-
-**Question 3:**
-You're playing a game of "Simon Says" with a group of children. The goal is for you to call out commands and for the children to follow, but only if you first say "Simon Says." If you don't use the phrase "Simon Says" before a command and they still execute it, they're out of the game. Given this set of rules:
-
-1. Listen for the phrase "Simon Says."
-2. If "Simon Says" is heard, execute the following command.
-3. If "Simon Says" is not heard, do not execute the command.
-4. If a command is executed without the preceding "Simon Says", the player is out.
-
-Convert this rule set into a flowchart.
-
-**Question 4:** You are thinking of a secret number between 1 and 100, and you ask your friend to guess it. If their guess is too high, you respond with "Too high". If their guess is too low, you say "Too low". Your friend continues guessing based on your feedback until they correctly guess the secret number.
-
-Create a flowchart to visually represent this process, ensuring you account for each decision and response until the correct number is identified.

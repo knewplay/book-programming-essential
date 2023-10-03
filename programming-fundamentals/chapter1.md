@@ -3,6 +3,10 @@ title: "Chapter 1: Understanding and Breaking Down Problems"
 date: "2023-09-20"
 author: "Andrei Guevorkian"
 illustrator: "Dengyijia Liu"
+exercises:
+  - ["camping-planning", "You're going on a camping trip for a weekend with five friends, and you are tasked with planning it. Write down everything you think you'll need for this trip, from food to equipment and entertainment."]
+  - ["short-story", "Write a short story with a beginning, middle, and end. Begin with just a one-line summary for the start, middle, and conclusion. In the next iteration, expand each line into a short paragraph. In the third and final iteration, refine the story by adding some details, dialogues, and descriptions."]
+  - ["library-layout", "You're given the responsibility of designing the layout for a new local library. Consider various aspects of library design such as categorizing books (by genre, author, publication year), shelf labeling (maybe through color coding or other symbols), creating distinct zones (reading areas, computer stations, children's section), and ensuring accessibility for all visitors. How would you approach this task to provide an organized and user-friendly space?"]
 ---
 
 Programming, at its core, is about solving problems. But before you can solve a problem using code, you need to understand it thoroughly. This chapter delves into the art of decomposing complex problems into smaller, more manageable parts, allowing you to tackle them step by step.
@@ -100,11 +104,3 @@ Designing a to-do list app, while conceptually simple, requires a focus on user 
     - Tutorials: For first-time users, a brief walkthrough highlighting the app's features can be helpful.
 
 While this is one approach to plan, it's essential to remain open to feedback and iterative improvement in the world of app design.
-
-## Exercises
-
-**Q1:** You're going on a camping trip for a weekend with five friends, and you are tasked with planning it. Write down everything you think you'll need for this trip, from food to equipment and entertainment.
-
-**Q2:** Write a short story with a beginning, middle, and end. Begin with just a one-line summary for the start, middle, and conclusion. In the next iteration, expand each line into a short paragraph. In the third and final iteration, refine the story by adding some details, dialogues, and descriptions.
-
-**Q3:** You're given the responsibility of designing the layout for a new local library. Consider various aspects of library design such as categorizing books (by genre, author, publication year), shelf labeling (maybe through color coding or other symbols), creating distinct zones (reading areas, computer stations, children's section), and ensuring accessibility for all visitors. How would you approach this task to provide an organized and user-friendly space?

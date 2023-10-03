@@ -44,53 +44,53 @@ author: "Andrei Guevorkian"
 - How to convert a problem into a flowchart.
 - Activity: Designing a flowchart for a simple daily task.
 
-### [Chapter 3: Logic and Decision Making](./programming-fundamentals/chapter3)
+### Chapter 3: Logic and Decision Making
 
 - Understanding conditions.
 - Introducing the if, else, and elif constructs.
 - Introduction to logical operators.
 - Activity: Creating simple decision-based programs.
 
-### [Chapter 4: Repetition and Iteration](./programming-fundamentals/chapter4)
+### Chapter 4: Repetition and Iteration
 
 - Understanding loops.
 - Understanding the structure of a loop.
 - Recognizing when and why to use loops.
 - Activity: Representing a task you do every day that's repetitive in code.
 
-### [Chapter 5: Modularizing Your Code with Functions](./programming-fundamentals/chapter5)
+### Chapter 5: Modularizing Your Code with Functions
 
 - The significance of modularizing code.
 - Understanding functions.
 - Understanding parameters, arguments, and return mechanisms.
 - Activity: Designing a program using modular components.
 
-### [Chapter 6: Organizing Information with Data Structures](./programming-fundamentals/chapter6)
+### Chapter 6: Organizing Information with Data Structures
 
 - Understanding how to store multiple pieces of data.
 - Introducing concepts like lists and dictionaries.
-- Activity: Designing programs using data strutures. For example, a simple shopping list manager, a book catalogue (books have a title, an author and a date of publication), a student gradebook (displaying students' grade and calculating an average), etc.
+- Activity: Designing programs using data structures. For example, a simple shopping list manager, a book catalogue (books have a title, an author and a date of publication), a student gradebook (displaying students' grade and calculating an average), etc.
 
-### [Chapter 7: Putting It All Together](./programming-fundamentals/chapter7)
+### Chapter 7: Putting It All Together
 
 - Combining all the concepts.
 - Designing a more complex program.
 - Activity: Designing programs combining all concepts from previous chapters.
 
-### [Chapter 8: Debugging and Problem Solving](./programming-fundamentals/chapter8)
+### Chapter 8: Debugging and Problem Solving
 
 - Common errors in programming and how to spot them.
 - Introduction to debugging techniques.
 - The importance of testing your code.
 - Activity: Finding the errors in a given snippet of code (pseudocode, logic-based).
 
-### [Chapter 9: Best Practices and Readability](./programming-fundamentals/chapter9)
+### Chapter 9: Best Practices and Readability
 
 - Writing clean and understandable code.
 - Commenting and documentation.
 - Activity: Rewriting a given messy code snippet to make it clean and readable.
 
-### [Chapter 10: Exploring Further](./programming-fundamentals/chapter10)
+### Chapter 10: Exploring Further
 
 - Introduction to more advanced topics: databases, web development, mobile apps.
 - How to stay updated in the ever-evolving world of programming.

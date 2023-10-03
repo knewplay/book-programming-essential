@@ -3,6 +3,13 @@ title: "Basics of Computers"
 date: "2023-06-22"
 author: "Andrei Guevorkian"
 illustrator: "Dengyijia Liu"
+questions:
+  - ["jacquard", "Why isn't the Jacquard loom considered to be the first computer?"]
+  - ["mouse", "Does a computer absolutely need to have a keyboard and a mouse in order for it to be a computer?"]
+  - ["parallel-universe", "In a parallel universe, if a mouse was used as both an input and an output to a laptop, what would that look like? Think of possible scenarios. This is a creative exercise. Do not think logically and ask \"why would anyone do this?\". It doesn't need to make practical sense."]
+  - ["sound-processor", "Consider a hypothetical device called the 'Sound Processor.' This device is designed to take in sound and produce processed sound based on which button the user presses (modify pitch, tone, and other audio transformations)."]
+  - ["calculator", "Why isn't a basic calculator considered a computer?"]
+  - ["simple-computer", "What is the simplest, non-general-purpose computer you can imagine? What components would it have?"]
 ---
 
 Is your smartphone considered a computer? How about the components inside your oven that allow you to connect to it via an app? What are the minimum requirements for something to be considered a computer? That's what we'll explore in this article.
@@ -11,7 +18,7 @@ Is your smartphone considered a computer? How about the components inside your o
 
 [A Brief History of Computing](#a-brief-history-of-computing)
 
-- [The Jacaquard Loom: Breakthrough in Automation](#the-jacaquard-loom-breakthrough-in-automation)
+- [The Jacquard Loom: Breakthrough in Automation](#the-jacquard-loom-breakthrough-in-automation)
 - [Charles Babbage and the Analytical Engine: Conceptualizing the Computer](#charles-babbage-and-the-analytical-engine-conceptualizing-the-computer)
 - [Electronic Computing: WWII's Technological Impact](#electronic-computing-wwiis-technological-impact)
 - [Computer Terminals: An Advancement in Human-Computer Interaction](#computer-terminals-an-advancement-in-human-computer-interaction)
@@ -24,7 +31,7 @@ Is your smartphone considered a computer? How about the components inside your o
 
 ## A Brief History of Computing
 
-### The Jacaquard Loom: Breakthrough in Automation
+### The Jacquard Loom: Breakthrough in Automation
 
 Before the year 1805, if I wanted to make a piece of cloth, such as a napkin, with a beautiful design on it, I would have to use a device called a handloom and manually control the position of each thread to create the desired pattern. And if I wanted to make two such napkins, I'd have to redo the entire process.
 
@@ -54,7 +61,7 @@ What made this device the first computer? Well, because it had all functionaliti
 
 ### Electronic Computing: WWII's Technological Impact
 
-It wasn't until a hundred years after Babbage conceptualized his Analytical Engine that the first physical computer was actually built. We are now in the early 1940s, in the middle of the Second World War, and electricity has played a major role in the development of many new technologies, replacing their mechanical counteparts.
+It wasn't until a hundred years after Babbage conceptualized his Analytical Engine that the first physical computer was actually built. We are now in the early 1940s, in the middle of the Second World War, and electricity has played a major role in the development of many new technologies, replacing their mechanical counterparts.
 
 During this time, several pioneering computers were independently designed in Germany (the Z3 in 1941), in the United States (the ABC in 1942), and in the United Kingdom (the Colossus in 1943), representing significant advancements in the field of computing. The large investment into this field was fueled by the desire to develop secure communication and encryption systems, decrypt the enemy's military communications, as well as predict weapon trajectory and analyze data in general. At the root of all of these problems is mathematics, hence making computers important.
 
@@ -95,7 +102,7 @@ This is hard to imagine because the modern state of computers is characterized b
 
 We moved away from vacuum tubes, and now have tiny transistors, billions of them, all tightly packed inside a laptop or smartphone, which we can hold with one hand. We no longer use the terms "mainframe"; the mainframe is now simply the computer or laptop, simply reduced in size considerably. And as for the terminal, the device that used to be separate from the mainframe and used to communicate with it, that is now just the screen and the laptop's keyboard itself. It all got combined into one device, seamlessly.
 
-And while it seems like the computers of today are very different from the "number crunchers" from the 1940s, when the only purpose of computers was to solve lenghty, difficuly, and tedious math problems, you may be surprised to hear that everything a modern computer does essentially boils down to math.
+And while it seems like the computers of today are very different from the "number crunchers" from the 1940s, when the only purpose of computers was to solve lengthy, difficulty, and tedious math problems, you may be surprised to hear that everything a modern computer does essentially boils down to math.
 
 I'll give an example. Say you are using Photoshop, and you want to increase the brightness of an image. As you slide the "brightness" bar, the computer works through all the pixels of the image and changes (using math) the RGB (Red Green Blue) values accordingly.
 
@@ -136,71 +143,9 @@ This is the reason why some people claim that Germany's Z3 was the first compute
 
 And today, there are countless appliances, gadgets, toys, instruments, automotive electronics, and much more, that have built-in "mini-computers" called microcontrollers. Even though they come equipped with a processing unit, memory, I/O peripherals, and are programmable to a certain extent, these **embedded devices** are designed to perform specific tasks, as they typically come with a pre-programmed set of instructions specific to the device. They do not have the versatility of a general-purpose computer, but they excel at executing specific tasks efficiently. They are typically programmable to a certain extent, but only within the constraints and limitations set by their design and intended purpose.
 
-![Gameboy Exploded View](./figures/game-boy.jpg)
-*The Gameboy: a portable gaming console powerhouse.*
+![Game Boy Exploded View](./figures/game-boy.jpg)
+*The Game Boy: a portable gaming console powerhouse.*
 
 > Exercise: Name a computer around you that usually people don't see as a computer.
-<!-- <details><summary>Hint</summary>
-Consider everyday "smart" devices that may not look like computers but have features like connectivity, interactivity, and the ability to process information and run software.
-</details>
-<details><summary>Possible answers</summary>
-1. In-car Infotainment systems: They feature touchscreens, processors, operating systems, and storage. These systems provide a wide range of functionalities, including multimedia playback, GPS navigation, internet connectivity, vehicle diagnostics, and integration with other devices.
-2. A voice-controlled device such as Amazon Echo or Google Home: They contain a powerful computer system that enables voice recognition, natural language processing, and connectivity to the internet. They can perform a wide range of tasks, including playing music, providing information, controlling smart home devices, and even acting as virtual assistants. Despite their unassuming appearance, smart speakers are indeed computers capable of processing data and executing complex algorithms behind the scenes.
-</details>
-<details><summary>More possible answers</summary>
-1. Smartwatches: They contain computer systems, including processors, memory, and storage, allowing them to run applications, track health data, receive notifications, and perform various functions. They have operating systems and can connect to the internet, enabling them to process data, execute tasks, and interact with other devices.
-2. Smart TVs: They are essentially computers integrated with televisions. They feature powerful processors, memory, and storage, running operating systems specifically designed for smart TV functionalities. They can connect to the internet, stream content from online services, run applications, and offer interactive features.
-</details> -->
 
 > Note: A shortcut to find out if a system is a computer (in the strictest sense of the word) is to check for "Turing-completeness". This is a theoretical concept which measures how flexible and versatile a system is when it comes to solving problems, thus determining whether or not is has the capabilities of a general-purpose computer. Embedded devices are usually not Turing complete, while smartphones are. To learn more, read the first section of [this article](https://academy.binance.com/en/glossary/turing-complete).
-
-## Questions
-
-- Why isn't the Jacquard loom considered to be the first computer?
-    <!-- <details><summary>Hint</summary>
-    The Jacquard loom takes input in the form of punch cards, it gives an output in the form of beautiful designs on a piece of cloth. However, does it perform any calculations in order to get the output from the input? Is it capable of storing data? What is the "data"? Is there any "data"?
-    </details> -->
-- Does a computer absolutely need to have a keyboard and a mouse in order for it to be a computer?
-    <!-- <details><summary>Hint</summary>
-    The keyboard and the mouse are devices used for input. Having input for a device is essential for it to be a computer, however is a keyboard and a mouse the only kind of input that a computer can take? What else could it possibly use as input? What about a touchpad, or a touchscreen, or voice commands?
-    </details> -->
-- In a parallel universe, if a mouse was used as both an input and an output to a laptop, what would that look like? Think of possible scenarios.
-
-  Note: this is a creative exercise. Do not think logically and ask "why would anyone do this?". It doesn't need to make practical sense.
-
-  <!-- <details><summary>Possible answer #1</summary>
-  The user moves their mouse onto a button on the screen, left clicks the button, lets go of the mouse, and the computer physically moves the mouse to another location, based on some sort of rule/algorithm.
-  </details>
-
-  <details><summary>Possible answer #2</summary>
-  The user has a calculator program on the screen. The user left clicks on one of the buttons with a number on it, and the mouse starts to physically right click (you can see it moving) the number of times that is shown on the button clicked. So if the user left-clicks on number 5, then the mouse will right-click 5 times.
-  </details>
-
-  <details><summary>Possible answer #3</summary>
-  The mouse will have a built-in speaker inside of it. So when the user clicks on a button with the number 5, the mouse will say "five".
-  </details>
-
-  <details><summary>Possible answer #4</summary>
-  The mouse will have a microphone inside of it. So when the user clicks on the mouse, the mouse will listen to the user's command, and will execute it. For example, the user clicks on the mouse and says "move left by 1 centimeter", and the mouse does exactly that, physically moving left by 1 cm.
-  </details> -->
-
-- Consider a hypothetical device called the "Sound Processor." This device is designed to take in sound and produce processed sound based on which button the user presses (modify pitch, tone, and other audio transformations).  
-
-    Can this device be considered a computer? Did you have to make any assumptions about this device?
-
-    <!-- <details><summary>Hint</summary>
-    This device would not fall under the category of a general-purpose computer. However, does it do any computations? How is sound processed? Just because a device isn't able to solve complex, general problems, doesn't mean that it is not a computer in the looser sense of the word. Which sense of the word are we talking about here?
-    </details> -->
-
-- Why isn't a basic calculator considered a computer?
-
-  <!-- <details><summary>Hint</summary>
-    Computers are known for their programmability, which allows users to define and execute custom instructions or programs. A basic calculator typically lacks the ability to create and run custom programs. It is designed with fixed functionality and predefined operations, limiting its versatility and adaptability.
-
-    Consider the following: you can't turn a calculator into a laptop computer, but you can run a calculator program inside of your laptop computer. Your laptop has the capability of running various programs, including calculator programs.
-    </details> -->
-
-- What is the simplest, non-general-purpose computer you can imagine? What components would it have?
-    <!-- <details><summary>Hint</summary>
-    Would this device have a microphone to take in sound as input when the user presses a button? Would it take a picture with a camera every 1 second? How would it process the input, what would it store, and in what form would the output be?
-    </details> -->

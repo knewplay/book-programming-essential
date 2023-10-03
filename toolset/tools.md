@@ -450,7 +450,7 @@ The truth is that you can google anything, anytime you want. Google is never goi
 
 1. As someone learning a new programming language, googling can help you find tutorials, guides and online courses to expand your knowledge.
 2. If you come across the use of a function in a tutorial, and would like to see more examples of that function being used, then googling for examples is a great idea.
-3. When you compile or run your code, errors are innevitable, and copy-pasting the error message will often lead you to either a blog post solving the error, a discussion forum where others have faced the same issue and found solutions, or most commonly, a Q&A website such as Stack OverFlow. However, do not forget to read and try to understand the error message yourself before automatically copy-pasting it.
+3. When you compile or run your code, errors are inevitable, and copy-pasting the error message will often lead you to either a blog post solving the error, a discussion forum where others have faced the same issue and found solutions, or most commonly, a Q&A website such as Stack OverFlow. However, do not forget to read and try to understand the error message yourself before automatically copy-pasting it.
 4. Just like when learning a new programming language, there may be a new library that you must use. Learn more about the library by googling it.
 
 ### How to google
@@ -467,7 +467,7 @@ When it comes to simplifying your query, think of the resulting websites' titles
 
 > Instead of writing *"I'm confused by when I should use semicolons in C"*, write *"semicolon use in c"*, or just simply *"semicolons in c"*. If Google shows results of semicolon use in regular English (for example), and didn't pick up the *"in c"* portion of the query, then specify: *"semicolon use in c programming language"*.
 
-> Sidenote: Google searches are case-insensitive, meaning it doesn't matter if you write *C* of *c*.
+> Note: Google searches are case-insensitive, meaning it doesn't matter if you write *C* of *c*.
 
 #### **Use autocompletion**
 
@@ -542,7 +542,7 @@ Different code editors cater to different needs and are popular in different fie
 
 #### Command-line editors
 
-The first code editors started to appear in the 1970s. Since the mouse only became mainstream with the Apple Macintosh in 1984, the first code editors were keyboard-based. One of the pioneers was vi, released in 1976. To this day, it is a standard tool on many Linux distros.
+The first code editors started to appear in the 1970s. Since the mouse only became mainstream with the Apple Macintosh in 1984, the first code editors were keyboard-based. One of the pioneers was vi, released in 1976. To this day, it is a standard tool on many Linux machines.
 
 In the same year, Emacs emerged as another influential editor. Characterized by its extensibility and customizability, Emacs went beyond text editing. With some customization, it transformed into an environment where one could use a debugger, email, browse the web, play music, and more - all without leaving the editor. This gave it a unique edge and garnered a dedicated user base.
 
@@ -557,7 +557,7 @@ In the modern era, there's still a dedicated group of programmers who swear by s
 
 Today's coding landscape sees many developers gravitating towards editors that seamlessly integrate mouse navigation, offering a more intuitive and enriched user experience. Among these, Visual Studio Code, or VS Code for short, stands out. Launched by Microsoft in 2015, it rapidly gained traction due to its rich feature set, versatility, and a vast library of extensions. VS Code blended the efficiency of traditional editors with the visual appeal and mouse integration that many contemporary developers appreciate. The open-source nature of VS Code also allowed a community of developers to contribute, enhancing its capabilities even further.
 
-Another example in this category is Sublime Text. These editors are like the multi-functional Swiss army knives of the coding world. Whether you're coding a website, an app, scripting something fun, or working in multiple programming languages, these editors are ready to assist. They offer features such as code colouring, a.k.a. syntax highlighting, auto-completion, error detection, the ability to add extra features through plugins, and integration of a mini command line known as an integrated terminal.
+Another example in this category is Sublime Text. These editors are like the multi-functional Swiss army knives of the coding world. Whether you're coding a website, an app, scripting something fun, or working in multiple programming languages, these editors are ready to assist. They offer features such as code coloring, a.k.a. syntax highlighting, auto-completion, error detection, the ability to add extra features through plugins, and integration of a mini command line known as an integrated terminal.
 
 ![VS Code](./figures/vs.jpg)
 *A user interface snapshot of the Visual Studio Code (VS Code) editor, illustrating its modern and intuitive design.*
