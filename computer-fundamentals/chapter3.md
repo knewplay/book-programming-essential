@@ -5,6 +5,8 @@ author: "Andrei Guevorkian"
 illustrator: "Dengyijia Liu"
 ---
 
+In our everyday lives, we make countless decisions based on conditions: if it rains, take an umbrella; if it's cold, wear a jacket. Similarly, in programming, decision-making is a crucial aspect, enabling the program to react differently to different inputs or situations.
+
 ## Table of Contents
 
 [A Brief Review of Transistors](#a-brief-review-of-transistors)
@@ -21,7 +23,6 @@ illustrator: "Dengyijia Liu"
 
 [Questions](#questions)
 
-In our everyday lives, we make countless decisions based on conditions: if it rains, take an umbrella; if it's cold, wear a jacket. Similarly, in programming, decision-making is a crucial aspect, enabling the program to react differently to different inputs or situations.
 
 ## A Brief Review of Transistors
 
@@ -66,9 +67,15 @@ For decision-making, common constructs are **if**, **else**, and **else if** (or
 
 Before delving into the pseudocode, let's familiarize ourselves with some basic comparison operators used in decision-making:
 
-- \> : Greater than. E.g., 5 > 3 is true because 5 is greater than 3.
-- < : Less than. E.g., 2 < 4 is true because 2 is less than 4.
-- == : Equal to. For instance, 7 == 7 is true because both sides of the operator have the same value.
+- \> : Greater than. 
+  - 5 > 3 is true because 5 is greater than 3.
+  - 2 > 8 is false because 2 is not greater than 8.
+- < : Less than.
+  - 2 < 4 is true because 2 is less than 4.
+  - 6 < 3 is false because 6 is not less than 3.
+- == : Equal to.
+  - 7 == 7 is true because both sides of the operator have the same value.
+  - 5 == 8 is false because 5 is not equal to 8.
 
 > Note: We use "==" to check for equality in most programming languages instead of "=". The reason for this will become clearer later when you dive into actual coding. For now, remember to use "==" when making comparisons.
 
