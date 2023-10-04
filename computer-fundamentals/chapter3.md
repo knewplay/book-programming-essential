@@ -67,15 +67,15 @@ For decision-making, common constructs are **if**, **else**, and **else if** (or
 
 Before delving into the pseudocode, let's familiarize ourselves with some basic comparison operators used in decision-making:
 
-- \> : Greater than. 
-  - 5 > 3 is true because 5 is greater than 3.
-  - 2 > 8 is false because 2 is not greater than 8.
+- \> : Greater than.
+  - 5 > 3 is a true statement because 5 is greater than 3.
+  - 2 > 8 is a false statement because 2 is not greater than 8.
 - < : Less than.
-  - 2 < 4 is true because 2 is less than 4.
-  - 6 < 3 is false because 6 is not less than 3.
+  - 2 < 4 is a true statement because 2 is less than 4.
+  - 6 < 3 is a false statement because 6 is not less than 3.
 - == : Equal to.
-  - 7 == 7 is true because both sides of the operator have the same value.
-  - 5 == 8 is false because 5 is not equal to 8.
+  - 7 == 7 is a true statement because both sides of the operator have the same value.
+  - 5 == 8 is a false statement because 5 is not equal to 8.
 
 > Note: We use "==" to check for equality in most programming languages instead of "=". The reason for this will become clearer later when you dive into actual coding. For now, remember to use "==" when making comparisons.
 
@@ -93,7 +93,7 @@ We start by taking an input:
 INPUT number
 ```
 
-Next, we must decide what to do based on the number's value. This is where the if construct comes in.
+Next, we must decide what to do based on the number's value. This is where the **if** construct comes in.
 
 If the number is greater than zero, we can say it's positive:
 
@@ -102,7 +102,7 @@ IF number > 0 THEN
     PRINT "The number is positive."
 ```
 
-But what if it's not? We need another check, and that's where elif proves useful. It's like saying, "if the previous conditions weren't met, then check this."
+But what if it's not? We need another check, and that's where **else if** proves useful. It's like saying, "if the previous conditions weren't met, then check this."
 
 If the number is less than zero, it's negative:
 
@@ -111,7 +111,7 @@ ELSE IF number < 0 THEN
     PRINT "The number is negative."
 ```
 
-Lastly, if the number isn't positive or negative, it must be zero. That's where else comes in. It's our catch-all for "if none of the above conditions are met, do this":
+Lastly, if the number isn't positive or negative, it must be zero. That's where **else** comes in. It's our catch-all for "if none of the above conditions are met, do this":
 
 ```typescript
 ELSE
@@ -155,7 +155,7 @@ ELSE
 END IF
 ```
 
-There are multiple ways to solve most problems, depending on the order in you evaluate the conditions.
+There are multiple ways to solve most problems, depending on the order in which you evaluate the conditions.
 
 **Problem 2:**
 Imagine you're programming a digital traffic light system. Create a flowchart and corresponding pseudocode that considers vehicle and pedestrian traffic, ensuring safety rules are prioritized.
