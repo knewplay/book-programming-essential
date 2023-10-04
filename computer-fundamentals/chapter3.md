@@ -5,6 +5,22 @@ author: "Andrei Guevorkian"
 illustrator: "Dengyijia Liu"
 ---
 
+## Table of Contents
+
+[A Brief Review of Transistors](#a-brief-review-of-transistors)
+
+- [The Binary Nature of Transistors](#the-binary-nature-of-transistors)
+
+- [Connecting Transistors to Programming: Boolean Values](#connecting-transistors-to-programming-boolean-values)
+
+[Introducing Pseudocode and Decision-Making in Programs](#introducing-pseudocode-and-decision-making-in-programs)
+
+- [Comparison Operators](#comparison-operators)
+
+[Practical Problems](#practical-problems)
+
+[Questions](#questions)
+
 In our everyday lives, we make countless decisions based on conditions: if it rains, take an umbrella; if it's cold, wear a jacket. Similarly, in programming, decision-making is a crucial aspect, enabling the program to react differently to different inputs or situations.
 
 ## A Brief Review of Transistors
