@@ -33,6 +33,8 @@ As we venture deeper into the realm of programming and problem-solving, the impo
 
 [Introduction to Flowcharts](#introduction-to-flowcharts)
 
+- [Convert a Problem into a Flowchart](#convert-a-problem-into-a-flowchart)
+
 [Practice Problems](#practice-problems)
 
 [Questions](#questions)
@@ -68,7 +70,7 @@ A flowchart uses symbols to represent different types of actions or steps. Key s
 
 [Illustration of these symbols with labels: For the robot example, a flowchart could visually depict the process from scanning the environment to shooting the ball, highlighting decisions (like whether a ball is found) and actions (like navigating or shooting).]
 
-### How to convert a problem into a flowchart
+### Convert a Problem into a Flowchart
 
 Converting a problem into a flowchart involves breaking down the problem into individual steps or processes, then representing those steps graphically. Let's take a straightforward example: making a cup of tea.
 
