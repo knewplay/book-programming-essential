@@ -6,9 +6,13 @@ illustrator: "Dengyijia Liu"
 questions:
   - ["jacquard", "Why isn't the Jacquard loom considered to be the first computer?"]
   - ["mouse", "Does a computer absolutely need to have a keyboard and a mouse in order for it to be a computer?"]
-  - ["parallel-universe", "In a parallel universe, if a mouse was used as both an input and an output to a laptop, what would that look like? Think of possible scenarios. This is a creative exercise. Do not think logically and ask \"why would anyone do this?\". It doesn't need to make practical sense."]
-  - ["sound-processor", "Consider a hypothetical device called the 'Sound Processor.' This device is designed to take in sound and produce processed sound based on which button the user presses (modify pitch, tone, and other audio transformations)."]
-  - ["calculator", "Why isn't a basic calculator considered a computer?"]
+  - ["parallel-universe", "In a parallel universe, if a mouse was used as both an input and an output to a laptop, what would that look like? Think of possible scenarios. 
+  
+  This is a creative exercise. Do not think logically and do not ask \"why would anyone do this?\". It doesn't need to make practical sense."]
+  - ["sound-processor", "Consider a hypothetical device called the 'Sound Processor.' This device is designed to take in sound and produce processed sound based on which button the user presses (you can modify pitch, tone, and make other audio transformations).
+  
+  Following the simplest definition of what is a computer, can this device be considered a computer? Did you have to make any assumptions about this device?"]
+  - ["calculator", "Why isn't a basic calculator considered a computer? "]
   - ["simple-computer", "What is the simplest, non-general-purpose computer you can imagine? What components would it have?"]
 ---
 

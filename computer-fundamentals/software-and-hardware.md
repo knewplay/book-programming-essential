@@ -6,7 +6,7 @@ illustrator: "Dengyijia Liu"
 questions:
   - ["hardware", "What are some examples of hardware components in a computer?"]
   - ["software", "Can you give examples of software applications you use on a daily basis?"]
-  - ["os-tasks", "(Multiple choice question) Which of the following is the OS tasked with?
+  - ["os-tasks", "(Multiple choice question - Select one or more answers)  Which of the following is the OS tasked with?
 
   1. Memory Management: Manages computer memory, allocating and tracking memory resources for programs, ensuring efficient utilization and preventing conflicts between different processes.
 
