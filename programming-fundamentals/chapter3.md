@@ -1,6 +1,6 @@
 ---
 title: "Chapter 3: Logic and Decision Making"
-date: "2023-10-04"
+date: "2023-10-05"
 author: "Andrei Guevorkian"
 illustrator: "Dengyijia Liu"
 questions:
@@ -149,9 +149,11 @@ With this understanding, we can now delve into real-world problems like deciding
 ## Practical Problems
 
 **Problem 1:**
+
 Write a program that evaluates a number to determine if it's positive, negative, or zero.
 
 **Possible Answer 1:**
+
 We start by taking an input:
 
 ```typescript
@@ -206,6 +208,7 @@ END IF
 By outlining logic in pseudocode, transitioning to actual coding in any programming language becomes a smoother process, as the core logic remains consistent.
 
 **Possible Answer 2:**
+
 Without going into all the steps, here is the final pseudocode.
 
 ```typescript
@@ -223,6 +226,7 @@ END IF
 There are multiple ways to solve most problems, depending on the order in which you evaluate the conditions.
 
 **Problem 2:**
+
 Suppose you're organizing an outdoor event. You'll proceed if:
 
 - The forecast does not predict rain.
@@ -231,11 +235,34 @@ Suppose you're organizing an outdoor event. You'll proceed if:
 Write corresponding pseudocode for such a program.
 
 **Answer:**
-Using our programming constructs and logical operators, the decision-making part of the program might look like this:
+
+**Evaluating Rain Forecast:**
+We want to check if it's NOT raining. Here's how we can understand the NOT raining condition:
+
+- The *'raining'* variable would be **True** if it's raining and **False** if it isn't.
+- Using "NOT" in front of *'raining'* inverts its truth value. So, if *'raining'* is **True**, *'NOT raining'* becomes **False**, and vice versa.
+- For our event to proceed, we want it to be the case where it's not raining, so we're looking for the scenario where *'NOT raining'* is **True**.
+
+In pseudocode:
 
 ```typescript
-IF NOT raining AND (temperature >= 60 AND temperature <= 85):
+IF NOT raining
+```
+
+**Evaluating Temperature:**
+We want the temperature to be between 60°F and 85°F. This condition can be represented as:
+
+```typescript
+temperature > 60 AND temperature < 85
+```
+
+Combining both conditions, our complete decision-making pseudocode becomes:
+
+```typescript
+IF NOT raining AND (temperature > 60 AND temperature < 85):
     proceed_with_event
 ELSE
     reschedule_event
 ```
+
+By breaking down our conditions in this way, we ensure that the event only proceeds if it's not raining and the temperature is within our desired range.
