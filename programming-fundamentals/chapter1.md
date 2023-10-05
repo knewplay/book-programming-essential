@@ -58,27 +58,18 @@ Imagine you are organizing a big family picnic and you need to ensure everyone h
 Organizing a big family picnic can be a complex task. Here's one structured approach, among many, to ensure everything runs smoothly:
 
 1. Tally Attendees:
-
     - Consult with family members to determine a tentative guest list.
     - Categorize attendees by age: children, teens, adults, seniors.
-
 2. Plan Food and Beverage:
-
     - Assess dietary preferences and restrictions. Consider a mix of vegetarian and non-vegetarian options.
     - Consider hydration: plenty of water, perhaps some soft drinks and juices.
-
 3. Entertainment Arrangements:
-
     - Plan age-appropriate games and activities. For instance, sack races, tug of war, musical chairs, frisbee, and cards or board games for adults.
     - Think about bringing a portable speaker with a playlist that caters to the family's musical tastes.
-
 4. Seating and Shelter:
-
     - Ensure enough seating. Seniors might prefer chairs and tables rather than picnic mats.
     - Visit the location beforehand to see if there are any pavilions or covered areas available for use.
-
 5. Miscellaneous Preparations:
-
     - First-Aid: Have a kit available, especially if many children are attending.
     - Water Safety: If near water, consider relevant precautions.
     - Weather: Monitor forecasts; plan for rain with umbrellas or a backup venue.
@@ -95,24 +86,16 @@ Designing a to-do list app, while conceptually simple, requires a focus on user 
 1. Determine Core Functionality:
     - Primary Purpose: Allow users to quickly add, modify, and delete tasks.
     - Features: Task entry, due dates, priority levels, task categorization (e.g., work, personal, urgent), and reminders.
-
 2. User Interface (UI) Design:
-
     - Visual Elements: Use subtle colors or icons on a simple interface to differentiate tasks based on priority or category.
     - Quick Actions: Implement swipe gestures for marking tasks as done or for deleting them.
-
 3. Data Management:
-
     - Local Storage: Save tasks locally so users can access them offline.
     - Cloud Sync: Optionally, allow users to sync tasks across devices via the cloud.
-
 4. Navigation and Flow:
-
     - List Views: Main chronological list with highlighted due tasks and a detailed view upon tapping.
     - Search and Filter: Allow users to search their tasks or filter by category.
-
 5. Miscellaneous Features:
-
     - Timely Alerts: Notify users of upcoming or overdue tasks based on set reminders.
     - Dark Mode: A popular feature, offer a dark theme for better visibility in low light.
     - Tutorials: For first-time users, a brief walkthrough highlighting the app's features can be helpful.

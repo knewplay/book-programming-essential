@@ -33,7 +33,7 @@ As we venture deeper into the realm of programming and problem-solving, the impo
 
 [Introduction to Flowcharts](#introduction-to-flowcharts)
 
-- [Convert a Problem into a Flowchart](#convert-a-problem-into-a-flowchart)
+[Convert a Problem into a Flowchart](#convert-a-problem-into-a-flowchart)
 
 [Practice Problems](#practice-problems)
 
@@ -129,10 +129,8 @@ Routine: Getting ready for work in the morning
 2. Turn off the alarm.
 3. Check the weather on the phone.
 4. Decision: Is it raining?
-
     - Yes: Decide to wear rain-appropriate attire and carry an umbrella.
     - No: Proceed with choosing regular attire.
-
 5. Go to the bathroom to brush teeth and wash face.
 6. Choose outfit based on the earlier decision.
 7. Put on clothes.
