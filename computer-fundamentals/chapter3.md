@@ -46,7 +46,6 @@ In our everyday lives, we make countless decisions based on conditions: if it ra
 
 [Questions](#questions)
 
-
 ## A Brief Review of Transistors
 
 Imagine a tiny switch, so small that millions of them could fit on the tip of your finger. This is a transistor. It's a device that can either allow an electric current to flow through it (like turning on a light) or stop it entirely (like turning the light off).
