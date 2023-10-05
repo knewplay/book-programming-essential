@@ -148,15 +148,19 @@ It's a similar story with computer files. The file has a name that uniquely iden
 ### File Path
 
 Suppose you want to review your Quiz 1 for your Physics class. In that case, there is an underlying path to get to Quiz 1:
-Open your locker (you can think of it as a folder containing all your course folders).
-Open the Physics folder.
-Grab the loose sheet of paper labeled "Quiz 1".
-If your folder structure is different, then you'll have to take a different path:
-Open your locker.
-Open the Science folder.
-Open the Physics folder.
-Open the Quizzes folder.
-Grab "Quiz 1".
+
+1. Open your locker (you can think of it as a folder containing all your course folders).
+2. Open the Physics folder.
+3. Grab the loose sheet of paper labeled "Quiz 1".
+
+If your folder structure is different, then you'll have to take a different path. For example:
+
+1. Open your locker.
+2. Open the Science folder.
+3. Open the Physics folder.
+4. Open the Quizzes folder.
+5. Grab "Quiz 1".
+
 It all depends on the structure of the folder system.
 
 A simple way to represent the path that you took to get to your Physics Quiz 1 in the first case is as follows:
@@ -211,12 +215,14 @@ Locker > Physics > Quizzes
 
 At this point, you will have direct access to Quiz 1.
 
-The "working directory" is the present folder you've opened and are exploring. It's the one where you can directly see and access its files and subfolders. To illustrate, if you want to see Quiz 1, your working directory must be the Quizzes folder. To view all your subjects, the Locker needs to be your working directory.
+The **working directory** is the present folder you've opened and are exploring. It's the one where you can directly see and access its files and subfolders. To illustrate, if you want to see Quiz 1, your working directory must be the Quizzes folder. To view all your subjects, the Locker needs to be your working directory.
+
 In computing terms, the working directory is the current directory or folder where a user is actively operating within a file system. By default, any program or command will run and search in this location unless you specify a different path.
+
 For instance, let's say you've just started taking French classes. You need to create a new folder named "French". You wouldn't do this inside:
 
 ```text
-English >
+Locker > English >
 ```
 
 Right? Because French isn't a subset of English. Instead, you'd navigate to:
@@ -231,4 +237,4 @@ And create the French folder there, alongside your other subjects. In computer j
 Locker >
 ```
 
-as your working directory so you could correctly position the French folder. This captures the essence of a working directory: the folder you're currently navigating or "working" within.
+as your **working directory** so you could correctly position the French folder. This captures the essence of a working directory: the folder you're currently navigating or "working" within.
