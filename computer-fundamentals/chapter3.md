@@ -3,6 +3,27 @@ title: "Chapter 3: Logic and Decision Making"
 date: "2023-10-04"
 author: "Andrei Guevorkian"
 illustrator: "Dengyijia Liu"
+questions:
+  - ["plant", "You're creating an automatic plant watering system. The plant should be watered if:
+
+- The soil is dry.
+- It's daytime.
+
+Write pseudocode to determine whether the plant should be watered or not."]
+  - ["alarm", "You're building an alarm system for your home. The alarm should sound if:
+
+- A window or door is opened.
+- The system is armed.
+
+Write pseudocode for this scenario."]
+  - ["grade","Design a program that categorizes a student's grade. The program should:
+
+- Display \"Excellent\" for scores 90 and above.
+- Display \"Good\" for scores between 70 and 89.
+- Display \"Average\" for scores between 50 and 69.
+- Display \"Fail\" for scores below 50.
+
+Write the corresponding pseudocode to determine and display the student's category based on the score."]
 ---
 
 In our everyday lives, we make countless decisions based on conditions: if it rains, take an umbrella; if it's cold, wear a jacket. Similarly, in programming, decision-making is a crucial aspect, enabling the program to react differently to different inputs or situations.
@@ -97,7 +118,7 @@ In both cases, the underlying principle is evaluating the accuracy or truthfulne
 
 When programming real-world applications, we use variables like raining or temperature to symbolize and manage real-world data. Our decision-making constructs and logical operators interact with these variables in the same way they would with pure numbers.
 
-[4-part Illustration: 1. 3>2 (True), 2. 4>4 (False), 3. raining (True), 4. not raining (False)]
+<!-- [4-part Illustration: 1. 3>2 (True), 2. 4>4 (False), 3. raining (True), 4. not raining (False)] -->
 
 This dynamic nature of variables lets our programs react and make decisions based on the current situation or data, whether that data represents numbers, weather conditions, user inputs, or any other conceivable scenario.
 
