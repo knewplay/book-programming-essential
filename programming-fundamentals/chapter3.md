@@ -132,9 +132,9 @@ For instance:
 
 **Mathematical comparison**: 5 > 3 evaluates to True because 5 is, indeed, greater than 3.
 
-**Real-world condition:** *'raining'* might be a variable in our program representing whether it's raining or not. If it's raining, *'raining'* is True; if not, *'raining'* is False. Another variable, *'temperature'*, could represent the current temperature.
+**Real-world condition:** *'raining'* might be a variable in our program representing whether it's raining or not. If it's raining, *'raining'* is **True**; if not, *'raining'* is False. Another variable, *'temperature'*, could represent the current temperature.
 
-> Note: Think of these variables as containers. Instead of always having a fixed value, like the number 5, they can hold different values at different times. In one scenario, *'raining'* might be True, and in another, it might be False.
+> Note: Think of these variables as containers. Instead of always having a fixed value, like the number 5, they can hold different values at different times. For instance, today the variable *'raining'* might be True, but tomorrow it might be False. Similarly, *'temperature'* could be 25°C today and 23°C the next day. The term "variable" essentially means something that can "vary" or change.
 
 In both cases, the underlying principle is evaluating the accuracy or truthfulness of a statement or condition.
 
@@ -230,7 +230,7 @@ There are multiple ways to solve most problems, depending on the order in which 
 Suppose you're organizing an outdoor event. You'll proceed if:
 
 - The forecast does not predict rain.
-- The temperature is between 60°F and 85°F.
+- The temperature is between 18°C and 30°C.
 
 Write corresponding pseudocode for such a program.
 
@@ -250,16 +250,16 @@ IF NOT raining
 ```
 
 **Evaluating Temperature:**
-We want the temperature to be between 60°F and 85°F. This condition can be represented as:
+We want the temperature to be between 18°C and 30°C. This condition can be represented as:
 
 ```typescript
-temperature > 60 AND temperature < 85
+temperature > 18 AND temperature < 30
 ```
 
 Combining both conditions, our complete decision-making pseudocode becomes:
 
 ```typescript
-IF NOT raining AND (temperature > 60 AND temperature < 85):
+IF NOT raining AND (temperature > 18 AND temperature < 30):
     proceed_with_event
 ELSE
     reschedule_event
