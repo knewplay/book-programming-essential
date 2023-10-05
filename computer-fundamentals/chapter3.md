@@ -33,13 +33,11 @@ In our everyday lives, we make countless decisions based on conditions: if it ra
 [A Brief Review of Transistors](#a-brief-review-of-transistors)
 
 - [The Binary Nature of Transistors](#the-binary-nature-of-transistors)
-
 - [Connecting Transistors to Programming: Boolean Values](#connecting-transistors-to-programming-boolean-values)
 
 [Introducing Pseudocode and Decision-Making in Programs](#introducing-pseudocode-and-decision-making-in-programs)
 
 - [Comparison Operators](#comparison-operators)
-
 - [Logical Operators](#logical-operators)
 
 [From Math to Everyday Decisions](#from-math-to-everyday-decisions)
