@@ -1,3 +1,10 @@
+---
+title: "Chapter 1: Understanding and Breaking Down Problems"
+date: "2023-09-30"
+author: "Andrei Guevorkian"
+illustrator: "Dengyijia Liu"
+---
+
 At its core, programming is the act of instructing computers to perform specific tasks.
 
 Without instructions, a computer is essentially dormant, like a powerful engine without fuel. It's through programming that we harness its immense potential, turning complex algorithms into tangible, useful applications.
@@ -15,9 +22,7 @@ Programming is everywhere: from our smartphones to the systems powering our citi
 While a programmer's code may be used by billions, it's their unique approach to problem solving that truly sets them apart. And this is thanks to the programmer mindset. Let's break this down:
 
 - Logical: At the heart of every program is logic. A programmer thinks systematically, understanding the sequence of operations and how different components interact with each other.
-
 - Creative: While logic forms the foundation, creativity adds the flair. Every problem can have multiple solutions, and it's often the most creative one that stands out, making a program more efficient or user-friendly.
-
 - Persistent: Anyone who's ever written code knows that it rarely works perfectly the first time. There are bugs, unexpected outcomes, and challenges. Persistence is about continuous troubleshooting and refining the code until it's just right (or just good enough).
 
 Is this mindset essential for our book? Absolutely. While the technicalities of programming are vital, fostering this mindset will empower readers to tackle any coding challenge they encounter and, more broadly, to approach problems in their daily lives with a similar analytical and creative spirit.

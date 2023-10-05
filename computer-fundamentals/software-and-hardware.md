@@ -1,12 +1,28 @@
 ---
-title: "Computer Fundamentals: Software and Hardware"
+title: "Software and Hardware"
 date: "2023-07-06"
 author: "Andrei Guevorkian"
 illustrator: "Dengyijia Liu"
+questions:
+  - ["hardware", "What are some examples of hardware components in a computer?"]
+  - ["software", "Can you give examples of software applications you use on a daily basis?"]
+  - ["os-tasks", "(Multiple choice question - Select one or more answers)  Which of the following is the OS tasked with?
+
+  1. Memory Management: Manages computer memory, allocating and tracking memory resources for programs, ensuring efficient utilization and preventing conflicts between different processes.
+
+  2. Process Management: Controls the execution of processes, scheduling CPU time and handling process creation and termination, ensuring fair allocation of resources and maximizing overall system performance.
+
+  3. File System Management: Organizes and manages data storage, allowing users to create, read, write, and delete files, providing a hierarchical structure and access control for efficient data management.
+
+  4. Device Management: Handles input and output devices, providing drivers and protocols for communication and coordinating I/O operations, ensuring seamless interaction between the computer and peripheral devices.
+
+  5. All of the above."]
+  - ["file-naming","What is the purpose of file naming conventions?"]
 ---
+
 In the previous article, we explored the history of computers and their defining characteristics. Now, let's delve deeper into general-purpose computers and their underlying concepts such as Operating Systems and file systems.
 
-# Table of Contents
+## Table of Contents
 
 [Hardware and Software](#hardware-and-software)
 
@@ -15,19 +31,20 @@ In the previous article, we explored the history of computers and their defining
 [The File System: A School Analogy](#the-file-system-a-school-analogy)
 
 [The File System](#the-file-system)
- - [File Naming](#file-naming)
- - [File Path](#file-path)
- - [Working Directory](#working-directory)
+
+- [File Naming](#file-naming)
+- [File Path](#file-path)
+- [Working Directory](#working-directory)
 
 [Questions](#questions)
 
-# Hardware and Software
+## Hardware and Software
 
 As we saw in the last article, a computer fundamentally consists of 4 parts:
 
-1. the input, 
-2. the processing unit, 
-3. the memory (or storage), and 
+1. the input,
+2. the processing unit,
+3. the memory (or storage), and
 4. the output.
 
 **Input:** This is where data enters the system. Devices like the keyboard, mouse, touchpad, camera, and microphone capture and transmit information to the computer for processing.
@@ -40,30 +57,24 @@ As we saw in the last article, a computer fundamentally consists of 4 parts:
 
 **Output:** After processing, the data is presented as output. On a laptop, the screen is the primary output device, visualizing data. Additionally, devices like speakers, headphone jacks, printers, or external monitors represent other forms of output.
 
-<figure>
-  <img src="./figures/laptop.jpg" title="Laptop" style="width: 50%">
-  <figcaption>An illustration of a modern laptop with CPU and RAM depicted, symbolizing the essential components of the computer.</figcaption>
-</figure>
+![Laptop](./figures/laptop.jpg)
+*An illustration of a modern laptop with CPU and RAM depicted, symbolizing the essential components of the computer.*
 
-All the devices mentioned here, such as the keyboard, the CPU, the hard drive, and the screen, are known as hardware. **Hardware** is "hard" to the touch. It's tangible. In other words, you can actually touch it and hold it. It's also "hard" to change it. If you buy a laptop, the components on the laptop's motherboard are soldered onto the board, making the hardware fixed and hard to modify. 
+All the devices mentioned here, such as the keyboard, the CPU, the hard drive, and the screen, are known as hardware. **Hardware** is "hard" to the touch. It's tangible. In other words, you can actually touch it and hold it. It's also "hard" to change it. If you buy a laptop, the components on the laptop's motherboard are soldered onto the board, making the hardware fixed and hard to modify.
 
 On the other hand, we have software. Software is soft. In other words, it's not something physical that you can touch or feel. Can you touch a video game, or the Google search engine? Nope. It's also soft in the sense that it's flexible. One minute, you can run Microsoft Word, and the next, you might run Photoshop. Software can easily be changed, modified, or removed.
 
-<figure>
-  <img src="./figures/software.jpg" title="Laptop's Software" style="width: 50%">
-  <figcaption>An illustration of a modern laptop showcasing the intangible yet dynamic nature of software applications.</figcaption>
-</figure>
+![Laptop's Software](./figures/software.jpg)
+*An illustration of a modern laptop showcasing the intangible yet dynamic nature of software applications.*
 
-# Operating System
+## Operating System
 
 Marrying hardware and software poses an intriguing question. Without hardware, software remains an abstract concept; without software, hardware becomes an unutilized piece of machinery. They complement each other: hardware provides a platform for software, while software brings functionality to hardware.
 
 Software resides in a computer's memory, which can be visualized as numerous "slots." Each slot holds a unit of information—let's equate one instruction (or command) to one slot for simplicity. If we have a sequence of 10 commands, we'd occupy 10 consecutive memory slots, often referred to as memory locations or addresses. The CPU processes the instruction in slot #1, then moves on sequentially, ending with the instruction in slot #10. Collectively, this sequence forms a program, which is essentially a series of commands for the CPU.
 
-<figure>
-  <img src="./figures/computer-memory.jpg" title="Memory Slots" style="width: 50%">
-  <figcaption>An illustration of a memory stick with zoomed-in memory slots holding instructions for a computer program.</figcaption>
-</figure>
+![Memory Slots](./figures/computer-memory.jpg)
+*An illustration of a memory stick with zoomed-in memory slots holding instructions for a computer program.*
 
 While it might seem straightforward, consider this: different devices like a Mac computer, an iPhone, a Samsung phone, and a Lenovo laptop have different parts made by various companies. This means they each might run programs in their own unique way. Plus, we often connect extra devices like mice, keyboards, screens, or printers.
 
@@ -71,10 +82,8 @@ Imagine if software developers had to make separate versions of a program for ea
 
 This is where operating systems (or OS) come in. They act like a translator or a middleman, smoothing out the communication between the hardware (the physical parts of a computer) and software (the programs we run). In simple terms, an operating system is low-level software that's specially designed to work closely with the actual hardware of a device.
 
-<figure>
-  <img src="./figures/software-hardware.jpg" title="Operating System" style="width: 50%">
-  <figcaption>The operating system acts as an intermediary, facilitating seamless interaction between the user, software, and hardware components of a computer system.</figcaption>
-</figure>
+![Operating System](./figures/software-hardware.jpg)
+*The operating system acts as an intermediary, facilitating seamless interaction between the user, software, and hardware components of a computer system.*
 
 The operating system abstracts the complexities of hardware, providing a uniform environment for software developers to create applications. It also provides regular everyday computer users with their familiar view of the computer: the GUI (pronounced as "Gee-You-Eye"), or Graphical User Interface. When we turn on a Windows computer, there is a style that we expect to see, and it's a similar story when we turn on a device running macOS, iOS, or Android.
 
@@ -84,38 +93,28 @@ All in all, operating systems play a vital role in harmonizing hardware and soft
 
 > Question: Do you know of any operating systems? What kind of devices do they run on, i.e. can these operating systems run on devices made by different companies? Think of Apple devices, a Samsung smartphone, a Lenovo laptop, etc.
 
-> Question: Why might there be several operating systems around?
-P.S. Consider factors such as market demand, target user demographics, and specialized functionalities that drive the development of distinct operating systems.
-
 While many recognize names like Microsoft's Windows, Apple's macOS/iOS, and Google's Android, Linux remains less spotlighted. Yet, it's everywhere, often operating behind the scenes. To understand Linux better, explore this (helpful article)[read this](https://opensource.com/resources/linux).
 
-	# The File System: A School Analogy
+## The File System: A School Analogy
 
 Imagine this. It's 8:27AM, and you just reached your school locker. You have a strict Physics teacher who closes the classroom door at 8:30AM. No ifs, buts or maybes. You frantically turn the lock combination, open the door, and a bunch of books and papers come crashing down on your feet. You kneel down, pick up a paper, and "Oh no, this one's yesterday's History quiz! This one's the Math book. Ugh, it looks so similar to the Physics book!"... long story short, you're late for class.
 
-<figure>
-  <img src="./figures/school-locker-messy.jpg" title="Messy Locker" style="width: 50%">
-  <figcaption>A cluttered locker with books and papers tumbling out.</figcaption>
-</figure>
-
+![Messy Locker](./figures/school-locker-messy.jpg)
+*A cluttered locker with books and papers tumbling out.*
 
 Now imagine a different scenario. It's 8:27AM, and you just reached your school locker. You turn the lock combination, open the locker, and are greeted by the organized shelves. You read the folder labels: "History, no. Math, no. Chemistry, no. Physics, perfect!". You pull out the "Physics" folder, which you know contains everything already, lock the door, and head to class. It's 8:28AM, by the way.
 
-<figure>
-  <img src="./figures/school-locker-organized.jpg" title="Organized Locker" style="width: 30%">
-  <figcaption>A neat locker with clearly labeled folders.</figcaption>
-</figure>
+![Organized Locker](./figures/school-locker-organized.jpg)
+*A neat locker with clearly labeled folders.*
 
 Continuing with this organized version of you, once seated in the classroom, you open your Physics folder. Inside, you see two smaller folders, two notebooks, some blank sheets (handy for surprise quizzes or jotting down notes), and the core Physics textbook. The subfolders are clearly labeled "Quizzes" and "Homework", each holding its own set of notebooks and sheets.
 
-<figure>
-  <img src="./figures/folders.jpg" title="Physics Folder" style="width: 90%">
-  <figcaption>Inside the Physics folder: blank sheets,  notebooks, a textbook, and a folder labeled "Quizzes" and "Homework".</figcaption>
-</figure>
+![Physics Folder](./figures/folders.jpg)
+*Inside the Physics folder: blank sheets,  notebooks, a textbook, and a folder labeled "Quizzes" and "Homework".*
 
 Here's an essential takeaway: there isn't a single "correct" method to sort your files. Your style might work wonders for you, while an equally organized classmate might stash their Physics materials inside a broader "Science" folder. This larger folder could house both "Physics" and "Chemistry" folders, and perhaps their spare sheets of paper are always tucked away within the "Quizzes" folder.
 
-# The File System
+## The File System
 
 Let's now transition to the computer's way of organizing files and folders. This is a crucial aspect that the operating system takes care of, ensuring that information is not all jumbled together. Remember, all data is stored as a sequence of 1's and 0's, but the operating system creates a virtual boundary between one piece of data and the next.
 
@@ -125,16 +124,14 @@ We have an idea of what a folder is in real life, and it's no different when it 
 
 In the realm of computers, a file resembles the items you'd find inside your school locker. It is a named collection of data stored on a computer's storage system. Just like your school book, notebook, or piece of paper, a computer file can hold various types of information, such as text, images, videos, audio, program instructions, or configuration data.
 
-<figure>
-  <img src="./figures/file-system-2.jpg" title="The File System" style="width: 50%">
-  <figcaption>The file system can be viewed as an inverted tree, with the root at the top and leaves at the bottom.</figcaption>
-</figure>
+![The File System](./figures/file-system-2.jpg)
+*The file system can be viewed as an inverted tree, with the root at the top and leaves at the bottom.*
 
 > To get a better understanding of how computers view and represent images, [read this](http://www.lakelandscomputing.com/binary-images.html).
 
 While folders group related files together, a file represents the actual data. Think of it as the content of a specific book, notebook, or piece of paper in your locker.
 
-## File Naming
+### File Naming
 
 When you sift through your Physics folder in school, you can immediately tell the difference between a sheet of paper and a notebook. You can see and feel the difference. Both contain information, but they are clearly different.
 
@@ -148,41 +145,41 @@ The second thing to realize is that in your Physics folder, you will not have tw
 
 It's a similar story with computer files. The file has a name that uniquely identifies it within a folder. So you can have a file called "quiz1.txt" in both the "Document" folder and the "Desktop" folder, but you cannot have the exact same name within the same folder.
 
-## File Path
+### File Path
 
 Suppose you want to review your Quiz 1 for your Physics class. In that case, there is an underlying path to get to Quiz 1:
-Open your locker (you can think of it as a folder containing all your course folders).
-Open the Physics folder.
-Grab the loose sheet of paper labeled "Quiz 1".
-If your folder structure is different, then you'll have to take a different path:
-Open your locker.
-Open the Science folder.
-Open the Physics folder.
-Open the Quizzes folder.
-Grab "Quiz 1".
+
+1. Open your locker (you can think of it as a folder containing all your course folders).
+2. Open the Physics folder.
+3. Grab the loose sheet of paper labeled "Quiz 1".
+
+If your folder structure is different, then you'll have to take a different path. For example:
+
+1. Open your locker.
+2. Open the Science folder.
+3. Open the Physics folder.
+4. Open the Quizzes folder.
+5. Grab "Quiz 1".
+
 It all depends on the structure of the folder system.
 
 A simple way to represent the path that you took to get to your Physics Quiz 1 in the first case is as follows:
 
-```
+```text
 Locker > Physics > Quiz 1
-``` 
-
-<figure>
-  <img src="./figures/file-path-1.jpg" title="A File Path" style="width: 50%">
-  <figcaption>An example of a path, highlighted in red.</figcaption>
-</figure>
-
-In the second case, it is as follows: 
-
 ```
+
+![A File Path](./figures/file-path-1.jpg)
+*An example of a path, highlighted in red.*
+
+In the second case, it is as follows:
+
+```text
 Locker > Science > Physics > Quizzes > Quiz 1.
 ```
 
-<figure>
-  <img src="./figures/file-path-2.jpg" title="A File Path" style="width: 50%">
-  <figcaption>An example of a path, highlighted in red.</figcaption>
-</figure>
+![A File Path](./figures/file-path-2.jpg)
+*An example of a path, highlighted in red.*
 
 This is exactly how a computer's file system operates. Every computer has a starting folder known as the root folder. It's analogous to the locker in our example, a primary container for all other folders. For Linux and macOS, the root folder is marked by a forward slash (/), whereas Windows denotes it by a drive (hard drive or solid-state drive) letter, say "C:".
 
@@ -190,17 +187,17 @@ This is exactly how a computer's file system operates. Every computer has a star
 
 Within the root folder, you will have subfolders. To these subfolders, the root folder is called the "parent folder" or "parent directory".
 
-## Working Directory
+### Working Directory
 
 Let's go back to the school analogy. Say you have the following file path to get to Physics Quiz 1.
 
-```
+```text
 Locker > Physics > Quizzes > Quiz 1.
 ```
 
 Let's now say that you are in the middle of opening your locker. In other words, you are at this step:
 
-```
+```text
 Locker > 
 ```
 
@@ -208,57 +205,36 @@ If you look at all the folders directly available to you, you may find folders s
 
 In order to get to the quiz, you will have to, one by one, go through the folders as follows:
 
-```
+```text
 Locker > Physics > 
 ```
 
-```
+```text
 Locker > Physics > Quizzes 
 ```
 
 At this point, you will have direct access to Quiz 1.
 
-The "working directory" is the present folder you've opened and are exploring. It's the one where you can directly see and access its files and subfolders. To illustrate, if you want to see Quiz 1, your working directory must be the Quizzes folder. To view all your subjects, the Locker needs to be your working directory.
+The **working directory** is the present folder you've opened and are exploring. It's the one where you can directly see and access its files and subfolders. To illustrate, if you want to see Quiz 1, your working directory must be the Quizzes folder. To view all your subjects, the Locker needs to be your working directory.
+
 In computing terms, the working directory is the current directory or folder where a user is actively operating within a file system. By default, any program or command will run and search in this location unless you specify a different path.
+
 For instance, let's say you've just started taking French classes. You need to create a new folder named "French". You wouldn't do this inside:
 
-```
-English >
+```text
+Locker > English >
 ```
 
 Right? Because French isn't a subset of English. Instead, you'd navigate to:
 
-```
+```text
 Locker >
 ```
 
 And create the French folder there, alongside your other subjects. In computer jargon, you set
 
-```
+```text
 Locker >
 ```
 
-as your working directory so you could correctly position the French folder. This captures the essence of a working directory: the folder you're currently navigating or "working" within.
-
-# Questions
-- What are some examples of hardware components in a computer?
-
-- Can you give examples of software applications you use on a daily basis?
-
-- (Multiple choice question) Which of the following is the OS tasked with?
-
-    1. Memory Management: Manages computer memory, allocating and tracking memory resources for programs, ensuring efficient utilization and preventing conflicts between different processes.
-
-    2. Process Management: Controls the execution of processes, scheduling CPU time and handling process creation and termination, ensuring fair allocation of resources and maximizing overall system performance.
-
-    3. File System Management: Organizes and manages data storage, allowing users to create, read, write, and delete files, providing a hierarchical structure and access control for efficient data management.
-
-    4. Device Management: Handles input and output devices, providing drivers and protocols for communication and coordinating I/O operations, ensuring seamless interaction between the computer and peripheral devices.
-
-    5. All of the above.
-
-    <details><summary>Hint</summary>
-    The purpose of the OS is to abstract all the complex interactions between hardware and software, providing a unified interface and essential services to manage memory, processes, file systems, and devices.
-    </details>
-
-- What is the purpose of file naming conventions?
+as your **working directory** so you could correctly position the French folder. This captures the essence of a working directory: the folder you're currently navigating or "working" within.
