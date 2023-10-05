@@ -40,6 +40,10 @@ In our everyday lives, we make countless decisions based on conditions: if it ra
 
 - [Comparison Operators](#comparison-operators)
 
+- [Logical Operators](#logical-operators)
+
+[From Math to Everyday Decisions](#from-math-to-everyday-decisions)
+
 [Practical Problems](#practical-problems)
 
 [Questions](#questions)
@@ -88,13 +92,13 @@ For decision-making, common constructs are **if**, **else**, and **else if** (or
 
 Before delving into the pseudocode, let's familiarize ourselves with some basic comparison operators used in decision-making:
 
-- \> : Greater than.
+- **\>** : Greater than.
   - 5 > 3 is a true statement because 5 is greater than 3.
   - 2 > 8 is a false statement because 2 is not greater than 8.
-- < : Less than.
+- **<** : Less than.
   - 2 < 4 is a true statement because 2 is less than 4.
   - 6 < 3 is a false statement because 6 is not less than 3.
-- == : Equal to.
+- **==** : Equal to.
   - 7 == 7 is a true statement because both sides of the operator have the same value.
   - 5 == 8 is a false statement because 5 is not equal to 8.
 
@@ -102,21 +106,42 @@ Before delving into the pseudocode, let's familiarize ourselves with some basic 
 
 These operators help us compare values and determine the relationship between them. They're fundamental to setting up conditions in our code.
 
-## Linking Mathematical Conditions to Real-world Scenarios
+### Logical Operators
+
+Beyond simple comparisons, we often need to check multiple conditions at once or invert the logic of a condition. This is where logical operators come in. The three primary logical operators are **and**, **or**, and **not**.
+
+- **and** : Both conditions must be true.
+  - The statement "5 > 3 and 6 > 4" is true because both individual conditions are true.
+  - However, "5 > 3 and 6 < 4" is false because, even though the first condition is true, the second is false.
+- **or** : At least one condition must be true.
+  - The statement "5 > 3 or 6 < 4" is true because at least one of the conditions (the first one) is true.
+  - "2 < 1 or 3 < 2" is false because both conditions are false.
+- **not** : Inverts the truth value of the condition.
+  - If we have a statement like "5 > 3", its truth value is true. Using **not** inverts this, making the statement "not(5 > 3)" false.
+  - Similarly, for the statement "2 > 3" which is false, "not(2 > 3)" will be true.
+
+These operators allow for more complex conditions and evaluations. For instance, imagine you're programming a system that checks if a user is allowed to view a specific piece of content. You might have conditions like:
+
+- The user must be logged in **and** the user must have a premium subscription.
+- The content must be available in the user's region **or** the user has a "global pass".
+
+Using logical operators like **and** and **or** lets us create these multifaceted conditions to guide decision-making in our programs. They provide the flexibility and nuance to mirror real-world decisions within the digital realm of programming.
+
+## From Math to Everyday Decisions
 
 Until now, our examples have primarily focused on numbers. However, programming isn't confined to mathematical operations. Often, the conditions we evaluate are abstract, representing real-world scenarios. The logical structure remains consistent, regardless of whether you're comparing numbers or determining whether it's raining.
 
 For instance:
 
-**Mathematical Comparison**: 5 > 3 evaluates to True because 5 is, indeed, greater than 3.
+**Mathematical comparison**: 5 > 3 evaluates to True because 5 is, indeed, greater than 3.
 
-**Real-world Condition:** raining might be a variable in our program representing whether it's raining or not. If it's raining, raining is True; if not, raining is False. Another variable, temperature, could represent the current temperature.
+**Real-world condition:** *'raining'* might be a variable in our program representing whether it's raining or not. If it's raining, *'raining'* is True; if not, *'raining'* is False. Another variable, *'temperature'*, could represent the current temperature.
 
-> Note: Think of these variables as containers. Instead of always having a fixed value, like the number 5, they can hold different values at different times. In one scenario, raining might be True, and in another, it might be False.
+> Note: Think of these variables as containers. Instead of always having a fixed value, like the number 5, they can hold different values at different times. In one scenario, *'raining'* might be True, and in another, it might be False.
 
 In both cases, the underlying principle is evaluating the accuracy or truthfulness of a statement or condition.
 
-When programming real-world applications, we use variables like raining or temperature to symbolize and manage real-world data. Our decision-making constructs and logical operators interact with these variables in the same way they would with pure numbers.
+When programming real-world applications, we use variables like *'raining'* or *'temperature'* to symbolize and manage real-world data. Our decision-making constructs and logical operators interact with these variables in the same way they would with pure numbers.
 
 <!-- [4-part Illustration: 1. 3>2 (True), 2. 4>4 (False), 3. raining (True), 4. not raining (False)] -->
 
@@ -211,9 +236,9 @@ Write corresponding pseudocode for such a program.
 **Answer:**
 Using our programming constructs and logical operators, the decision-making part of the program might look like this:
 
-```python
-if not raining and (temperature >= 60 and temperature <= 85):
-    proceed_with_event()
-else:
-    reschedule_event()
+```typescript
+IF NOT raining AND (temperature >= 60 AND temperature <= 85):
+    proceed_with_event
+ELSE
+    reschedule_event
 ```
