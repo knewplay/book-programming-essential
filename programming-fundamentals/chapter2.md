@@ -22,9 +22,15 @@ questions:
 4. Pour some cereal into the bowl.
 
 However, the attempt fails. What went wrong? Provide better instructions."]
-  - ["guess-number", "You are thinking of a secret number between 1 and 100, and you ask your friend to guess it. If their guess is too high, you respond with \"Too high\". If their guess is too low, you say \"Too low\". Your friend continues guessing based on your feedback until they correctly guess the secret number.
+  - ["sandwich", "You have a robot chef in your kitchen that can prepare sandwiches based on user preferences. Your task is to provide instructions for the robot chef. The user can choose:
 
-  Describe the flow of decisions and responses you would go through until the correct number is identified, as if you were instructing someone to create a flowchart for the game."]
+- The type of bread (white or whole wheat)
+- The type of meat (ham or turkey)
+- Whether they want tomatoes (yes or no)
+
+Every sandwich also includes lettuce by default.
+
+Describe in detail the sequence of commands and decision-making process you would provide to the robot to ensure the sandwich is made to the user's preferences, making sure to include the specified decisions."]
 ---
 
 As we venture deeper into the realm of programming and problem-solving, the importance of structured thinking becomes evident. Central to this idea is the concept of algorithms, which act as blueprints for action. Let's dive deeper into what algorithms are and how they can be visually represented using flowcharts.
@@ -110,7 +116,7 @@ Once you've drawn out each step from your list, take a moment to review the flow
 
 The intuitive approach is like narrating a story to yourself. You're recounting the tale of making a cup of tea, from start to finish. By following each step as you would in real life and drawing it out in sequence, you create a visual representation of the process.
 
-<!-- [Illustration of tea making process] -->
+[Illustration of tea making process]
 
 By using this systematic approach, you can turn any problem or process into a clear, visual flowchart.
 
@@ -139,12 +145,12 @@ Routine: Getting ready for work in the morning
 
 This sequence lists out the steps and includes a decision-making point regarding the weather, which affects the choice of attire for the day.
 
-**Activity #2:** Imagine you possess another humanoid robot. Resembling an adult human, this robot can flawlessly hear and execute every command you give. However, it's limited to understanding only the most fundamental commands, like "lift your right foot 5 centimeters" or "turn your head 90 degrees left". It's unable to process abstract or compound actions like "walk across the room."
+**Activity #2:** Imagine you have a humanoid robot. This robot can flawlessly execute every command you give but understands only fundamental commands, such as "lift your right foot 5 centimeters" or "turn your head 90 degrees left". It's unable to process abstract or compound actions like "walk forward".
 
-Describe in detail the series of commands you would give to instruct the robot on how to walk forward step by step. Additionally, you can draw the corresponding flowchart diagram.
+You want to instruct the robot to move 30 centimeters forward. Describe in detail the series of commands you would provide to ensure the robot moves the desired distance.
 
 **Answer:**
-To make the robot walk forward, a series of commands can be given, focusing on one step at a time:
+To instruct the robot to move 30 centimeters forward with each leg, one after another, you would give the following commands:
 
 1. Lift the right foot 5 centimeters.
 2. Move the right foot 30 centimeters forward.
@@ -153,9 +159,8 @@ To make the robot walk forward, a series of commands can be given, focusing on o
 5. Lift the left foot 5 centimeters.
 6. Move the left foot 30 centimeters forward.
 7. Lower the left foot until it touches the ground.
-8. Transfer the weight to the left foot.
-9. Repeat steps 1-8 for continued walking.
+8. Distribute the weight evenly between both legs, achieving a 50/50 balance.
 
-This series of commands instructs the robot on the basic mechanics of walking, step by step.
+These commands ensure the robot takes a single step with each leg, moving a total of 30 centimeters forward.
 
-<!-- [Flowchart diagram] -->
+[Flowchart diagram]
