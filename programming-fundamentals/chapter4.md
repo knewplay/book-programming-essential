@@ -4,7 +4,7 @@ date: "2023-10-10"
 author: "Andrei Guevorkian"
 illustrator: "Dengyijia Liu"
 questions:
-  - ["", ""]
+  - ["sandwich-loop", ""]
   - ["guess-number", "You are thinking of a secret number between 1 and 100, and you ask your friend to guess it. If their guess is too high, you respond with \"Too high\". If their guess is too low, you say \"Too low\". Your friend continues guessing based on your feedback until they correctly guess the secret number.
 
   Describe the flow of decisions and responses you would go through until the correct number is identified, as if you were instructing someone to create a flowchart for the game."]
@@ -19,7 +19,40 @@ In our daily lives, we encounter many repetitive tasks, whether it's setting an 
 - [The Binary Nature of Transistors](#the-binary-nature-of-transistors)
 - [Connecting Transistors to Programming: Boolean Values](#connecting-transistors-to-programming-boolean-values)
 
-## Introducing Loops: The Power of Repetition
+## Understanding the Concept of Loops
+
+Loops are a fundamental concept in programming. They allow us to execute a set of instructions multiple times, which is often referred to as "iteration." Instead of writing the same code over and over again, a loop provides a cleaner way to repeat actions.
+
+Imagine playing your favorite video game. There are certain elements in that game that are repetitive, all thanks to loops. Here are a few:
+
+- **Gameplay Music:** That catchy tune that plays over and over in the background? It's looped to create a consistent ambiance.
+- **Non-Playable Characters (NPCs):** Characters like guards that patrol the same route or vendors in a marketplace who follow a fixed path are repeating their actions through loops.
+- **Respawning Items:** Ever noticed how some collectible items or power-ups reappear in the same spot after a while? That's a loop ensuring you never run out of challenges or rewards.
+- **Animated Backgrounds:** The moving clouds, flying birds, or flowing rivers that bring a game environment to life? These are often looped animations, adding depth without the need for constant new animations.
+
+Using loops, developers can instruct the game to repeat specific actions seamlessly, enhancing the overall gaming experience. It's one of the many nifty tricks in the programmer's toolkit!
+
+## Use Cases of Looping
+
+Loops are incredibly useful in scenarios where:
+
+- A specific action needs to be repeated multiple times.
+- An action must be executed until a particular condition is satisfied.
+- We have a collection of items and want to perform the same operation on each item.
+
+Using loops not only saves time but also ensures our code remains clean and efficient.
+
+## The Structure of a Loop
+
+A loop generally consists of three main components:
+
+- Starting Point: This is where the loop begins.
+- Condition: The loop continues as long as this condition holds true.
+- Update: After each loop iteration, there's typically an update or an action that leads us closer to exiting the loop.
+
+Consider the countdown for a rocket launch as an example. The countdown starts at 10, and with each passing second, the number decreases by 1. Once the countdown reaches 0, the rocket launches! In this case, the starting point is `countdown = 10`, the condition to check if is `countdown == 0`, and the update we do is to update `countdown - 1` every passing second.
+
+[Have an illustration [like this one](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.quora.com%2FHow-do-I-visualize-a-loop-in-C-programming&psig=AOvVaw3nEYgUSEy0vJgFHnHPCkYu&ust=1697055905206000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJiF5Iao7IEDFQAAAAAdAAAAABAD)]
 
 ## Activities
 
