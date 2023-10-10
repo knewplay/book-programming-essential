@@ -42,7 +42,7 @@ In our everyday lives, we make countless decisions based on conditions: if it ra
 
 [From Math to Everyday Decisions](#from-math-to-everyday-decisions)
 
-[Practical Problems](#practical-problems)
+[Activities](#activities)
 
 [Questions](#questions)
 
@@ -146,13 +146,13 @@ This dynamic nature of variables lets our programs react and make decisions base
 
 With this understanding, we can now delve into real-world problems like deciding whether to hold an outdoor event based on the weather forecast.
 
-## Practical Problems
+## Activities
 
-**Problem 1:**
+**Activity #1:**
 
 Write a program that evaluates a number to determine if it's positive, negative, or zero.
 
-**Possible Answer 1:**
+**Possible Answer #1:**
 
 We start by taking an input:
 
@@ -207,7 +207,7 @@ END IF
 
 By outlining logic in pseudocode, transitioning to actual coding in any programming language becomes a smoother process, as the core logic remains consistent.
 
-**Possible Answer 2:**
+**Possible Answer #2:**
 
 Without going into all the steps, here is the final pseudocode.
 
@@ -225,7 +225,7 @@ END IF
 
 There are multiple ways to solve most problems, depending on the order in which you evaluate the conditions.
 
-**Problem 2:**
+**Activity #2:**
 
 Suppose you're organizing an outdoor event. You'll proceed if:
 

@@ -35,7 +35,7 @@ As we venture deeper into the realm of programming and problem-solving, the impo
 
 [Convert a Problem into a Flowchart](#convert-a-problem-into-a-flowchart)
 
-[Practice Problems](#practice-problems)
+[Activities](#activities)
 
 [Questions](#questions)
 
@@ -117,9 +117,9 @@ By using this systematic approach, you can turn any problem or process into a cl
 
 Remember, algorithms and flowcharts are all about breaking down problems and representing solutions in a structured manner. As you become more familiar with them, they'll become invaluable tools in your problem-solving toolkit!
 
-## Practice Problems
+## Activities
 
-**Problem 1:**
+**Activity #1:**
 Think of a daily routine. Describe the sequence and decision-making process of your routine as if you were guiding someone through the steps. For instance, consider the routine of getting ready for work in the morning.
 
 **Answer:**
@@ -140,7 +140,7 @@ Routine: Getting ready for work in the morning
 
 This sequence lists out the steps and includes a decision-making point regarding the weather, which affects the choice of attire for the day.
 
-**Problem 2:** Imagine you possess another humanoid robot. Resembling an adult human, this robot can flawlessly hear and execute every command you give. However, it's limited to understanding only the most fundamental commands, like "lift your right foot 5 centimeters" or "turn your head 90 degrees left". It's unable to process abstract or compound actions like "walk across the room."
+**Activity #2:** Imagine you possess another humanoid robot. Resembling an adult human, this robot can flawlessly hear and execute every command you give. However, it's limited to understanding only the most fundamental commands, like "lift your right foot 5 centimeters" or "turn your head 90 degrees left". It's unable to process abstract or compound actions like "walk across the room."
 
 Describe in detail the series of commands you would give to instruct the robot on how to walk forward step by step. Additionally, you can draw the corresponding flowchart diagram.
 
