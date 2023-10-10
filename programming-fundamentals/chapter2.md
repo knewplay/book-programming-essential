@@ -45,7 +45,7 @@ An algorithm is a well-defined series of steps to solve a specific problem or ac
 
 Imagine you're teaching someone to tie their shoelaces. The instructions you give them, starting from holding the two ends of the laces to the final tightening of the knot, constitute an algorithm.
 
-Now, consider a more complex scenario: robots in a competition. In such a contest, a robot might be tasked to collect balls from the ground and shoot them into a basket. The robot doesn't act on instinct or intuition; instead, it follows a strict set of instructions - its algorithm. The algorithm could look something like this:
+Now, consider a more complex scenario: robots in a competition. In such a contest, a robot might be tasked to collect a ball from the ground and shoot it into a basket. The robot doesn't act on instinct or intuition; instead, it follows a strict set of instructions - its algorithm. The algorithm could look something like this:
 
 1. Scan the surroundings for a ball.
 2. Navigate towards the ball while avoiding obstacles.
@@ -53,7 +53,6 @@ Now, consider a more complex scenario: robots in a competition. In such a contes
 4. Identify the location of the basket.
 5. Calculate the right angle and force to shoot the ball into the basket.
 6. Shoot the ball.
-7. Repeat until no balls are left or a set period expires.
 
 Even though it might seem simple to us, each of these steps needs to be meticulously defined for a robot to perform them. How does it "scan" or "pick up"? Each of these larger tasks can be further decomposed into smaller, more precise actions, each constituting part of the overall algorithm.
 
@@ -109,7 +108,7 @@ Keep drawing arrows from one rectangle to the next as you move through your list
 
 Once you've drawn out each step from your list, take a moment to review the flowchart. Walk through each step and decision in your mind to ensure nothing is missing and the flow is logical.
 
-The intuitive approach is like narrating a story to yourself. You're recounting the tale of making a cup of tea, from start to finish. By following each step as you would in real life and drawing it out in sequence, you create a visual representation of the process. This method can be particularly useful for those who are new to flowcharts or who think best in linear, sequential terms.
+The intuitive approach is like narrating a story to yourself. You're recounting the tale of making a cup of tea, from start to finish. By following each step as you would in real life and drawing it out in sequence, you create a visual representation of the process.
 
 <!-- [Illustration of tea making process] -->
 
