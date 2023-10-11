@@ -20,7 +20,7 @@ In our daily lives, we encounter many repetitive tasks, whether it's setting an 
 
 [The Structure of a Loop](#the-structure-of-a-loop)
 
-[Visualizing the Loop](#visualizing-the-loop)
+[Visualizing with an Example](#visualizing-with-an-example)
 
 [Activities](#activities)
 
@@ -47,21 +47,24 @@ Loops are incredibly useful in scenarios where:
 
 Using loops not only saves time but also ensures our code remains clean and efficient.
 
-### The Structure of a Loop
+## The Structure of a Loop
 
-A loop generally consists of three main components:
+Let's take a closer look at the core components of a loop, using a visual guide:
 
-- Starting Point: This is where the loop begins.
-- Condition: The loop continues as long as this condition holds true.
-- Update: After each loop iteration, there's typically an update or an action that leads us closer to exiting the loop.
+[[Illustration](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.quora.com%2FHow-do-I-visualize-a-loop-in-C-programming&psig=AOvVaw3nEYgUSEy0vJgFHnHPCkYu&ust=1697055905206000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJiF5Iao7IEDFQAAAAAdAAAAABAD)]
+
+1. **Starting Point (*`start`*):** This is where our loop begins its journey. It sets the stage for the series of repetitive actions that will follow.
+2. **Initialization (*`initialization of loop counter`*):** We set a base or starting value for our loop.
+3. **Condition (*`while condition`*):** This is the loop's heartbeat. As long as this condition remains true, the loop will continue its iterations. In the flowchart, you can see a decision diamond (the pink one) where the loop checks if the condition is still true. If it's not, the loop will break, and the process will stop.
+4. **Execution (*`body of the loop`*):** Here's where the main action of the loop takes place. It's the task or set of tasks that the loop performs with each iteration. Maybe it's adding a number, printing a message, or updating a score in a video game.
+5. **Update (*`update the counter`*):** After executing the main action, the loop typically modifies the loop counter, pushing the loop closer to an exiting condition.
+6. **Exit Point (*`stop`*)**: All loops must have an end (unless they're meant to run indefinitely). When the loop's condition no longer holds true, it exits, allowing the program to either end or move on to the next task.
 
 Consider the countdown for a rocket launch as an example. The countdown starts at 10, and with each passing second, the number decreases by 1. Once the countdown reaches 0, the rocket launches! In this case, the starting point is `countdown = 10`, the condition to check if is `countdown == 0`, and the update we do is to update `countdown - 1` every passing second.
 
-[Have an illustration [like this one](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.quora.com%2FHow-do-I-visualize-a-loop-in-C-programming&psig=AOvVaw3nEYgUSEy0vJgFHnHPCkYu&ust=1697055905206000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJiF5Iao7IEDFQAAAAAdAAAAABAD) or [this one](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*IMUHWrK8w_b_t25ZYRm47g.png)]
+## Visualizing with an Example
 
-## Visualizing the Loop
-
-Now that we've learned about loops let's visualize them!
+Let's say we are tasked with printing "Hello" 8 times onto the screen.
 
 🎨 Illustration: A flowchart diagram representing a loop that prints "Hello" 8 times. As shown [here](https://www.google.com/url?sa=i&url=https%3A%2F%2Fonline.visual-paradigm.com%2Fdiagrams%2Ftemplates%2Fflowchart%2Fflowchart-example-using-loop%2F&psig=AOvVaw3eXjygPKUVObcEHkNF7kqV&ust=1697038491315000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJDMkZbn64EDFQAAAAAdAAAAABAX)
 
@@ -70,6 +73,8 @@ This flowchart begins with the Start. From there, we set our "counter" to 0. Thi
 Next, we have a decision point where we check: "Is the counter equal to 7?" If it's not, we go ahead and print "Hello" and then add 1 to our counter. Think of this as completing one lap and taking a sip of water.
 
 If our counter does reach 7, it means we've already printed "Hello" 8 times (remember, we started counting from 0), and we exit the loop. It's like deciding that you've run enough laps for the day and heading home.
+
+> Note: While humans start counting from 1 (1, 2, ..., 8), computers count starting from 0 (0, 1, ..., 7). The reason ...
 
 ## Activities
 
