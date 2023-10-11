@@ -18,9 +18,13 @@ In our daily lives, we encounter many repetitive tasks, whether it's setting an 
 
 [Use Cases of Looping](#use-cases-of-looping)
 
-[The Structure of a Loop](#the-structure-of-a-loop)
+[Looping in Pseudocode](#looping-in-pseudocode)
 
-[Visualizing with an Example](#visualizing-with-an-example)
+[Nested Loops](#nested-loops)
+
+[The Intricacies of a Loop](#the-intricacies-of-a-loop)
+
+[Visualizing with Examples](#visualizing-with-examples)
 
 [Activities](#activities)
 
@@ -47,9 +51,21 @@ Loops are incredibly useful in scenarios where:
 
 Using loops not only saves time but also ensures our code remains clean and efficient.
 
-## The Structure of a Loop
+## Looping in Pseudocode
 
-Let's take a closer look at the core components of a loop, using a visual guide:
+[Section]
+
+## Nested Loops
+
+Just as we nest boxes within larger boxes, loops can also be placed inside other loops. This is known as nesting. It's a powerful technique, especially when you need to handle multi-dimensional tasks. But remember, with great power comes great complexity! It's crucial to be careful when using nested loops to ensure they all run as expected.
+
+[provide intuitive example]
+
+## The Intricacies of a Loop
+
+When you'll start actually programming, you'll notice that you can't just say "Loop 5 times"; it's a bit more complicated than that.
+
+So in this section, let's take a closer look at the core components of a loop, using a visual guide:
 
 [[Illustration](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.quora.com%2FHow-do-I-visualize-a-loop-in-C-programming&psig=AOvVaw3nEYgUSEy0vJgFHnHPCkYu&ust=1697055905206000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJiF5Iao7IEDFQAAAAAdAAAAABAD) but split "body" and "update" into two boxes]
 
@@ -111,9 +127,9 @@ To make the robot walk across the room, you would use a series of commands for e
 9. Check for obstacles or the end of the room. If an obstacle or end of the room is detected, exit loop.
 10. Otherwise, repeat from step 1.
 
-This series of commands instructs the robot on the basic mechanics of walking, step by step. You would then loop the above commands until the robot has walked the desired distance across the room.
+[Illustration of flowchart diagram]
 
-<!-- [Flowchart diagram] -->
+This series of commands instructs the robot on the basic mechanics of walking, step by step. You would then loop the above commands until the robot has walked the desired distance across the room.
 
 ### Activity #2
 
@@ -122,6 +138,8 @@ You're working with a new generation humanoid robot that's designed for physical
 Instruct your robot to perform a set of 10 push-ups, followed by 10 sit-ups, and then 10 squats. The robot should then loop this set 5 times.
 
 ### Answer
+
+Pseudocode:
 
 ```typescript
 Repeat 5 times:
