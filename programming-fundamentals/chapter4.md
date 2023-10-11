@@ -75,26 +75,42 @@ If our counter does reach 7, it means we've already printed "Hello" 8 times (rem
 
 ### Activity #1
 
-### Activity #2
-
-Imagine you possess the same humanoid robot as the one in [Chapter 2 Activity #2](./chapter2.md#activity-2). Resembling an adult human, this robot can flawlessly hear and execute every command you give. However, it's limited to understanding only the most fundamental commands, like "lift your right foot 5 centimeters" or "turn your head 90 degrees left". It's unable to process abstract or compound actions like "walk across the room."
-
-Describe in detail the series of commands you would give to instruct the robot on how to walk forward step by step. Additionally, you can draw the corresponding flowchart diagram.
+Recall the humanoid robot from [Chapter 2 Activity #2](./chapter2.md#activity-2). With your understanding of loops from this chapter, describe the commands you would provide to ensure the robot walks across the room. Consider visualizing your solution with a flowchart diagram.
 
 ### Answer
 
-To make the robot walk forward, a series of commands can be given, focusing on one step at a time:
+To make the robot walk across the room, you would use a series of commands for each step, and then loop through those commands until the robot has crossed the room:
 
 1. Lift the right foot 5 centimeters.
 2. Move the right foot 30 centimeters forward.
 3. Lower the right foot until it touches the ground.
 4. Transfer the weight to the right foot.
 5. Lift the left foot 5 centimeters.
-6. Move the left foot 30 centimeters forward.
+6. Move the left foot 60 centimeters forward.
 7. Lower the left foot until it touches the ground.
 8. Transfer the weight to the left foot.
-9. Repeat steps 1-8 for continued walking.
+9. Check for obstacles or the end of the room. If an obstacle or end of the room is detected, exit loop.
+10. Otherwise, repeat from step 1.
 
-This series of commands instructs the robot on the basic mechanics of walking, step by step.
+This series of commands instructs the robot on the basic mechanics of walking, step by step. You would then loop the above commands until the robot has walked the desired distance across the room.
 
 <!-- [Flowchart diagram] -->
+
+### Activity #2
+
+You're working with a new generation humanoid robot that's designed for physical exercises. Unlike previous models, this robot has advanced kinesthetic intelligence, meaning it understands basic exercise commands without needing a breakdown of every movement. For instance, you don't need to instruct it with "bend your arms 90 degrees" for push-ups; you can simply command "Do a push-up", and it will perform the action. However, you cannot ask it to "Do 10 push-ups", as it can only comprehend one push-up at a time.
+
+Instruct your robot to perform a set of 10 push-ups, followed by 10 sit-ups, and then 10 squats. The robot should then loop this set 5 times.
+
+### Answer
+
+```typescript
+Repeat 5 times:
+    Repeat 10 times:
+        Do a push-up
+    Repeat 10 times:
+        Do a sit-up
+    Repeat 10 times:
+        Do a squat
+
+```
