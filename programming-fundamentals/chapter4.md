@@ -14,10 +14,13 @@ In our daily lives, we encounter many repetitive tasks, whether it's setting an 
 
 ## Table of Contents
 
-[A Brief Review of Transistors](#a-brief-review-of-transistors)
+[Understanding the Concept of Loops](#understanding-the-concept-of-loops)
 
-- [The Binary Nature of Transistors](#the-binary-nature-of-transistors)
-- [Connecting Transistors to Programming: Boolean Values](#connecting-transistors-to-programming-boolean-values)
+[Use Cases of Looping](#use-cases-of-looping)
+
+[The Structure of a Loop](#the-structure-of-a-loop)
+
+[Activities](#activities)
 
 ## Understanding the Concept of Loops
 
@@ -52,7 +55,7 @@ A loop generally consists of three main components:
 
 Consider the countdown for a rocket launch as an example. The countdown starts at 10, and with each passing second, the number decreases by 1. Once the countdown reaches 0, the rocket launches! In this case, the starting point is `countdown = 10`, the condition to check if is `countdown == 0`, and the update we do is to update `countdown - 1` every passing second.
 
-[Have an illustration [like this one](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.quora.com%2FHow-do-I-visualize-a-loop-in-C-programming&psig=AOvVaw3nEYgUSEy0vJgFHnHPCkYu&ust=1697055905206000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJiF5Iao7IEDFQAAAAAdAAAAABAD)]
+[Have an illustration [like this one](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.quora.com%2FHow-do-I-visualize-a-loop-in-C-programming&psig=AOvVaw3nEYgUSEy0vJgFHnHPCkYu&ust=1697055905206000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJiF5Iao7IEDFQAAAAAdAAAAABAD) or [this one](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*IMUHWrK8w_b_t25ZYRm47g.png)]
 
 ## Activities
 
