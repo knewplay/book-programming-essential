@@ -22,9 +22,15 @@ questions:
 4. Pour some cereal into the bowl.
 
 However, the attempt fails. What went wrong? Provide better instructions."]
-  - ["guess-number", "You are thinking of a secret number between 1 and 100, and you ask your friend to guess it. If their guess is too high, you respond with \"Too high\". If their guess is too low, you say \"Too low\". Your friend continues guessing based on your feedback until they correctly guess the secret number.
+  - ["sandwich", "You have a robot chef in your kitchen that can prepare sandwiches based on user preferences. Your task is to provide instructions for the robot chef. The user can choose:
 
-  Describe the flow of decisions and responses you would go through until the correct number is identified, as if you were instructing someone to create a flowchart for the game."]
+- The type of bread (white or whole wheat)
+- The type of meat (ham or turkey)
+- Whether they want tomatoes (yes or no)
+
+Every sandwich also includes lettuce by default.
+
+Describe in detail the sequence of commands and decision-making process you would provide to the robot to ensure the sandwich is made to the user's preferences, making sure to include the specified decisions."]
 ---
 
 As we venture deeper into the realm of programming and problem-solving, the importance of structured thinking becomes evident. Central to this idea is the concept of algorithms, which act as blueprints for action. Let's dive deeper into what algorithms are and how they can be visually represented using flowcharts.
@@ -35,7 +41,7 @@ As we venture deeper into the realm of programming and problem-solving, the impo
 
 [Convert a Problem into a Flowchart](#convert-a-problem-into-a-flowchart)
 
-[Practice Problems](#practice-problems)
+[Activities](#activities)
 
 [Questions](#questions)
 
@@ -45,7 +51,7 @@ An algorithm is a well-defined series of steps to solve a specific problem or ac
 
 Imagine you're teaching someone to tie their shoelaces. The instructions you give them, starting from holding the two ends of the laces to the final tightening of the knot, constitute an algorithm.
 
-Now, consider a more complex scenario: robots in a competition. In such a contest, a robot might be tasked to collect balls from the ground and shoot them into a basket. The robot doesn't act on instinct or intuition; instead, it follows a strict set of instructions - its algorithm. The algorithm could look something like this:
+Now, consider a more complex scenario: robots in a competition. In such a contest, a robot might be tasked to collect a ball from the ground and shoot it into a basket. The robot doesn't act on instinct or intuition; instead, it follows a strict set of instructions - its algorithm. The algorithm could look something like this:
 
 1. Scan the surroundings for a ball.
 2. Navigate towards the ball while avoiding obstacles.
@@ -53,7 +59,6 @@ Now, consider a more complex scenario: robots in a competition. In such a contes
 4. Identify the location of the basket.
 5. Calculate the right angle and force to shoot the ball into the basket.
 6. Shoot the ball.
-7. Repeat until no balls are left or a set period expires.
 
 Even though it might seem simple to us, each of these steps needs to be meticulously defined for a robot to perform them. How does it "scan" or "pick up"? Each of these larger tasks can be further decomposed into smaller, more precise actions, each constituting part of the overall algorithm.
 
@@ -109,17 +114,17 @@ Keep drawing arrows from one rectangle to the next as you move through your list
 
 Once you've drawn out each step from your list, take a moment to review the flowchart. Walk through each step and decision in your mind to ensure nothing is missing and the flow is logical.
 
-The intuitive approach is like narrating a story to yourself. You're recounting the tale of making a cup of tea, from start to finish. By following each step as you would in real life and drawing it out in sequence, you create a visual representation of the process. This method can be particularly useful for those who are new to flowcharts or who think best in linear, sequential terms.
+The intuitive approach is like narrating a story to yourself. You're recounting the tale of making a cup of tea, from start to finish. By following each step as you would in real life and drawing it out in sequence, you create a visual representation of the process.
 
-<!-- [Illustration of tea making process] -->
+[Illustration of tea making process]
 
 By using this systematic approach, you can turn any problem or process into a clear, visual flowchart.
 
 Remember, algorithms and flowcharts are all about breaking down problems and representing solutions in a structured manner. As you become more familiar with them, they'll become invaluable tools in your problem-solving toolkit!
 
-## Practice Problems
+## Activities
 
-**Problem 1:**
+**Activity #1:**
 Think of a daily routine. Describe the sequence and decision-making process of your routine as if you were guiding someone through the steps. For instance, consider the routine of getting ready for work in the morning.
 
 **Answer:**
@@ -140,12 +145,12 @@ Routine: Getting ready for work in the morning
 
 This sequence lists out the steps and includes a decision-making point regarding the weather, which affects the choice of attire for the day.
 
-**Problem 2:** Imagine you possess another humanoid robot. Resembling an adult human, this robot can flawlessly hear and execute every command you give. However, it's limited to understanding only the most fundamental commands, like "lift your right foot 5 centimeters" or "turn your head 90 degrees left". It's unable to process abstract or compound actions like "walk across the room."
+**Activity #2:** Imagine you have a humanoid robot. This robot can flawlessly execute every command you give but understands only fundamental commands, such as "lift your right foot 5 centimeters" or "turn your head 90 degrees left". It's unable to process abstract or compound actions like "walk forward".
 
-Describe in detail the series of commands you would give to instruct the robot on how to walk forward step by step. Additionally, you can draw the corresponding flowchart diagram.
+You want to instruct the robot to move 30 centimeters forward. Describe in detail the series of commands you would provide to ensure the robot moves the desired distance.
 
 **Answer:**
-To make the robot walk forward, a series of commands can be given, focusing on one step at a time:
+To instruct the robot to move 30 centimeters forward with each leg, one after another, you would give the following commands:
 
 1. Lift the right foot 5 centimeters.
 2. Move the right foot 30 centimeters forward.
@@ -154,9 +159,8 @@ To make the robot walk forward, a series of commands can be given, focusing on o
 5. Lift the left foot 5 centimeters.
 6. Move the left foot 30 centimeters forward.
 7. Lower the left foot until it touches the ground.
-8. Transfer the weight to the left foot.
-9. Repeat steps 1-8 for continued walking.
+8. Distribute the weight evenly between both legs, achieving a 50/50 balance.
 
-This series of commands instructs the robot on the basic mechanics of walking, step by step.
+These commands ensure the robot takes a single step with each leg, moving a total of 30 centimeters forward.
 
-<!-- [Flowchart diagram] -->
+[Flowchart diagram]

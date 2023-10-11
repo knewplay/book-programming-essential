@@ -15,13 +15,10 @@ Programming, at its core, is about solving problems. But before you can solve a 
 
 [The Essence of Problem Decomposition](#the-essence-of-problem-decomposition)
 
-[Benefits of Breaking Problems Down](#benefits-of-breaking-problems-down)
+- [Benefits of Breaking Problems Down](#benefits-of-breaking-problems-down)
+- [Techniques for Decomposition](#techniques-for-decomposition)
 
-[Techniques for Decomposition](#techniques-for-decomposition)
-
-[From Theory to Practice](#from-theory-to-practice)
-
-[Practice Problems](#practice-problems)
+[Activities](#activities)
 
 [Questions](#questions)
 
@@ -35,7 +32,7 @@ In programming, problems can often feel like a massive jigsaw puzzle, especially
 
 - Clarity: By segmenting a big problem, you focus on one piece at a time, making it easier to understand.
 - Achievable Milestones: Every small problem you solve is a milestone. This offers a sense of achievement and forward momentum.
-- Easier Debugging: When problems arise, it's simpler to pinpoint issues in smaller chunks of code rather than a large block.
+- Identifying Issues: It's simpler to spot and correct mistakes or inefficiencies in smaller sections of work rather than in a large complex task.
 - Collaboration: By decomposing tasks, multiple people can work on different components simultaneously.
 
 ### Techniques for Decomposition
@@ -45,13 +42,9 @@ In programming, problems can often feel like a massive jigsaw puzzle, especially
 - Analogies: Relate the problem to a real-world scenario. If you were to explain it to a friend, how would you describe it?
 - Iterative Approach: Start with a basic version of the solution. Improve and refine it in iterations.
 
-## From Theory to Practice
+## Activities
 
-Understanding the theory behind decomposition is crucial, but putting it into practice is where the real learning happens. The next time you're faced with a challenge, whether in coding or everyday life, pause and break it down. With practice, this approach becomes second nature, transforming how you tackle problems in programming and beyond.
-
-### Practice Problems
-
-**Problem 1:**
+**Activity #1:**
 Imagine you are organizing a big family picnic and you need to ensure everyone has everything they need (food, drinks, and activities). How would you approach to organize this event?
 
 **Answer:**
@@ -70,14 +63,12 @@ Organizing a big family picnic can be a complex task. Here's one structured appr
     - Ensure enough seating. Seniors might prefer chairs and tables rather than picnic mats.
     - Visit the location beforehand to see if there are any pavilions or covered areas available for use.
 5. Miscellaneous Preparations:
-    - First-Aid: Have a kit available, especially if many children are attending.
-    - Water Safety: If near water, consider relevant precautions.
     - Weather: Monitor forecasts; plan for rain with umbrellas or a backup venue.
     - Parking: Ensure the site has sufficient parking or inform attendees of alternatives.
 
 Remember, while this is one approach to plan, adaptability is essential.
 
-**Problem 2:**
+**Activity #2:**
 Imagine you're tasked with designing a simple to-do list app that helps users organize their daily tasks. How would you approach the development of this app?
 
 **Answer:**
