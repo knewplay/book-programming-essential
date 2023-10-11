@@ -20,6 +20,8 @@ In our daily lives, we encounter many repetitive tasks, whether it's setting an 
 
 [The Structure of a Loop](#the-structure-of-a-loop)
 
+[Visualizing the Loop](#visualizing-the-loop)
+
 [Activities](#activities)
 
 ## Understanding the Concept of Loops
@@ -57,9 +59,7 @@ Consider the countdown for a rocket launch as an example. The countdown starts a
 
 [Have an illustration [like this one](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.quora.com%2FHow-do-I-visualize-a-loop-in-C-programming&psig=AOvVaw3nEYgUSEy0vJgFHnHPCkYu&ust=1697055905206000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJiF5Iao7IEDFQAAAAAdAAAAABAD) or [this one](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*IMUHWrK8w_b_t25ZYRm47g.png)]
 
-## Activities
-
-**Activity #1:** ...
+## Visualizing the Loop
 
 Now that we've learned about loops let's visualize them!
 
@@ -71,11 +71,11 @@ Next, we have a decision point where we check: "Is the counter equal to 7?" If i
 
 If our counter does reach 7, it means we've already printed "Hello" 8 times (remember, we started counting from 0), and we exit the loop. It's like deciding that you've run enough laps for the day and heading home.
 
-Loops, whether in flowcharts or code, provide a visual and structured way to handle repetitive tasks. With this fun activity, you should now have a clearer picture of how loops operate!
+## Activities
 
-Hope this helps deepen your understanding and makes the concept fun!
+**Activity #1:** ...
 
-**Activity #2:** Imagine you possess another humanoid robot. Resembling an adult human, this robot can flawlessly hear and execute every command you give. However, it's limited to understanding only the most fundamental commands, like "lift your right foot 5 centimeters" or "turn your head 90 degrees left". It's unable to process abstract or compound actions like "walk across the room."
+**Activity #2:** Imagine you possess the same humanoid robot as the one in [Chapter 2 Activity #2](./chapter2.md/#). Resembling an adult human, this robot can flawlessly hear and execute every command you give. However, it's limited to understanding only the most fundamental commands, like "lift your right foot 5 centimeters" or "turn your head 90 degrees left". It's unable to process abstract or compound actions like "walk across the room."
 
 Describe in detail the series of commands you would give to instruct the robot on how to walk forward step by step. Additionally, you can draw the corresponding flowchart diagram.
 
@@ -95,4 +95,3 @@ To make the robot walk forward, a series of commands can be given, focusing on o
 This series of commands instructs the robot on the basic mechanics of walking, step by step.
 
 <!-- [Flowchart diagram] -->
-
