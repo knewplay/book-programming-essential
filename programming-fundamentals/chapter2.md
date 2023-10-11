@@ -124,10 +124,12 @@ Remember, algorithms and flowcharts are all about breaking down problems and rep
 
 ## Activities
 
-**Activity #1:**
+### Activity #1
+
 Think of a daily routine. Describe the sequence and decision-making process of your routine as if you were guiding someone through the steps. For instance, consider the routine of getting ready for work in the morning.
 
-**Answer:**
+### Answer
+
 Routine: Getting ready for work in the morning
 
 1. Wake up when the alarm rings.
@@ -145,11 +147,14 @@ Routine: Getting ready for work in the morning
 
 This sequence lists out the steps and includes a decision-making point regarding the weather, which affects the choice of attire for the day.
 
-**Activity #2:** Imagine you have a humanoid robot. This robot can flawlessly execute every command you give but understands only fundamental commands, such as "lift your right foot 5 centimeters" or "turn your head 90 degrees left". It's unable to process abstract or compound actions like "walk forward".
+### Activity #2
+
+Imagine you have a humanoid robot. This robot can flawlessly execute every command you give but understands only fundamental commands, such as "lift your right foot 5 centimeters" or "turn your head 90 degrees left". It's unable to process abstract or compound actions like "walk forward".
 
 You want to instruct the robot to move 30 centimeters forward. Describe in detail the series of commands you would provide to ensure the robot moves the desired distance.
 
-**Answer:**
+### Answer
+
 To instruct the robot to move 30 centimeters forward with each leg, one after another, you would give the following commands:
 
 1. Lift the right foot 5 centimeters.

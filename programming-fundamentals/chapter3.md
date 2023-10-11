@@ -148,11 +148,11 @@ With this understanding, we can now delve into real-world problems like deciding
 
 ## Activities
 
-**Activity #1:**
+### Activity #1
 
 Write a program that evaluates a number to determine if it's positive, negative, or zero.
 
-**Possible Answer #1:**
+### Possible Answer #1
 
 We start by taking an input:
 
@@ -207,7 +207,7 @@ END IF
 
 By outlining logic in pseudocode, transitioning to actual coding in any programming language becomes a smoother process, as the core logic remains consistent.
 
-**Possible Answer #2:**
+### Possible Answer #2
 
 Without going into all the steps, here is the final pseudocode.
 
@@ -225,7 +225,7 @@ END IF
 
 There are multiple ways to solve most problems, depending on the order in which you evaluate the conditions.
 
-**Activity #2:**
+### Activity #2
 
 Suppose you're organizing an outdoor event. You'll proceed if:
 
@@ -234,7 +234,7 @@ Suppose you're organizing an outdoor event. You'll proceed if:
 
 Write corresponding pseudocode for such a program.
 
-**Answer:**
+### Answer
 
 **Evaluating Rain Forecast:**
 We want to check if it's NOT raining. Here's how we can understand the NOT raining condition:

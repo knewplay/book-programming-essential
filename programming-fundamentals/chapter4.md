@@ -37,7 +37,7 @@ Imagine playing your favorite video game. There are certain elements in that gam
 
 Using loops, developers can instruct the game to repeat specific actions seamlessly, enhancing the overall gaming experience. It's one of the many nifty tricks in the programmer's toolkit!
 
-## Use Cases of Looping
+### Use Cases of Looping
 
 Loops are incredibly useful in scenarios where:
 
@@ -47,7 +47,7 @@ Loops are incredibly useful in scenarios where:
 
 Using loops not only saves time but also ensures our code remains clean and efficient.
 
-## The Structure of a Loop
+### The Structure of a Loop
 
 A loop generally consists of three main components:
 
@@ -73,13 +73,16 @@ If our counter does reach 7, it means we've already printed "Hello" 8 times (rem
 
 ## Activities
 
-**Activity #1:** ...
+### Activity #1
 
-**Activity #2:** Imagine you possess the same humanoid robot as the one in [Chapter 2 Activity #2](./chapter2.md/#). Resembling an adult human, this robot can flawlessly hear and execute every command you give. However, it's limited to understanding only the most fundamental commands, like "lift your right foot 5 centimeters" or "turn your head 90 degrees left". It's unable to process abstract or compound actions like "walk across the room."
+### Activity #2
+
+Imagine you possess the same humanoid robot as the one in [Chapter 2 Activity #2](./chapter2.md#activity-2). Resembling an adult human, this robot can flawlessly hear and execute every command you give. However, it's limited to understanding only the most fundamental commands, like "lift your right foot 5 centimeters" or "turn your head 90 degrees left". It's unable to process abstract or compound actions like "walk across the room."
 
 Describe in detail the series of commands you would give to instruct the robot on how to walk forward step by step. Additionally, you can draw the corresponding flowchart diagram.
 
-**Answer:**
+### Answer
+
 To make the robot walk forward, a series of commands can be given, focusing on one step at a time:
 
 1. Lift the right foot 5 centimeters.

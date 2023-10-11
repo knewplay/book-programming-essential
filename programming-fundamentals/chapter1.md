@@ -44,10 +44,11 @@ In programming, problems can often feel like a massive jigsaw puzzle, especially
 
 ## Activities
 
-**Activity #1:**
+### Activity #1
+
 Imagine you are organizing a big family picnic and you need to ensure everyone has everything they need (food, drinks, and activities). How would you approach to organize this event?
 
-**Answer:**
+### Answer
 Organizing a big family picnic can be a complex task. Here's one structured approach, among many, to ensure everything runs smoothly:
 
 1. Tally Attendees:
@@ -68,10 +69,11 @@ Organizing a big family picnic can be a complex task. Here's one structured appr
 
 Remember, while this is one approach to plan, adaptability is essential.
 
-**Activity #2:**
+### Activity #2
+
 Imagine you're tasked with designing a simple to-do list app that helps users organize their daily tasks. How would you approach the development of this app?
 
-**Answer:**
+### Answer
 Designing a to-do list app, while conceptually simple, requires a focus on user experience to make it stand out. Here's a structured method to guide the development:
 
 1. Determine Core Functionality:
