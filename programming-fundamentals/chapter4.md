@@ -71,7 +71,7 @@ So in this section, let's take a closer look at the core components of a loop, u
 
 1. **Starting Point (*`start`*):** This is where our loop begins its journey. It sets the stage for the series of repetitive actions that will follow.
 2. **Initialization (*`initialization of loop counter`*):** We set a base or starting value for our loop.
-3. **Condition (*`while condition`*):** This is the loop's heartbeat. As long as this condition remains true, the loop will continue its iterations. In the flowchart, you can see a decision diamond (the pink one) where the loop checks if the condition is still true. If it's not, the loop will break, and the process will stop.
+3. **Condition (*`while condition`*):** This is the loop's heartbeat. As long as this condition remains **true**, the loop will continue its iterations. In the flowchart, you can see a decision diamond (the pink one) where the loop checks if the condition is still true. If it's not, the loop will break, and the process will stop.
 4. **Execution (*`body of the loop`*):** Here's where the main action of the loop takes place. It's the task or set of tasks that the loop performs with each iteration. Maybe it's adding a number, printing a message, or updating a score in a video game.
 5. **Update (*`update the counter`*):** After executing the main action, the loop typically modifies the loop counter, pushing the loop closer to an exiting condition.
 6. **Exit Point (*`stop`*)**: All loops must have an end (unless they're meant to run indefinitely). When the loop's condition no longer holds true, it exits, allowing the program to either end or move on to the next task.
@@ -86,7 +86,7 @@ Let's say we are tasked with printing "Hello!" 8 times onto the screen.
 
 1. **Starting Point (*`Start`*):** Every loop kicks off from a starting point, the beginning of its journey. This is where we enter our loop from.
 2. **Initialization (*`Set counter to 0`*):** Before executing its main task, the loop sets an initial value for the counter. Here, the counter is set to 0. This counter keeps track of how many times "Hello!" has been printed.
-3. **Condition (*`Is counter == 7?`*)**: At this step, the loop checks the counter's value. It's asking, "Is the counter equal to 7?" If the counter isn't yet at 7, the loop will continue to print. Once the counter reaches 7, it's time for the loop to stop.
+3. **Condition (*`Is counter <= 7?`*)**: At this step, the loop checks the counter's value. It's asking, "Is the counter equal to 7?" If the counter isn't yet at 7, the loop will continue to print. Once the counter reaches 7, it's time for the loop to stop.
 4. **Execution (*`Print 'Hello!'`*):** Here, the loop performs its main action by printing "Hello!".
 5. **Update (*`Add 1 to counter`*)**: After each print action, the loop increments the counter by 1. This update ensures the loop keeps track of the number of "Hello!" prints.
 6. **Exit Point (*`Exit`*)**: When the counter indicates that "Hello!" has been printed eight times, the loop reaches this exit point and ends its task.
@@ -99,7 +99,7 @@ Rocket launches are thrilling, right? They always start with that dramatic count
 
 1. **Starting Point (*`Start`*):** Our loop's exciting journey begins here, at the launch pad of our mission.
 2. **Initialization (*`Set countdown to 10`*):** As the countdown initiates, the loop sets a variable named 'countdown' to 10. This will be our countdown timer, starting from 10 and going down to 0.
-3. **Condition (*`Is countdown == 0?`*):** At this check, the loop questions, "Has the countdown reached zero?" If 'countdown' isn't 0 yet, the loop will continue counting down. But when it hits 0, it's launch time!
+3. **Condition (*`Is countdown > 0?`*):** At this check, the loop questions, "Has the countdown reached zero?" If 'countdown' isn't 0 yet, the loop will continue counting down. But when it hits 0, the loop is exited and it's launch time!
 4. **Execution (*`Announce countdown`*)**: With every tick of the countdown, the loop announces the current number, letting everyone know how many seconds remain until launch.
 5. **Update (*`Subtract 1 from countdown`*):** After each announcement, the loop decreases the 'countdown' by 1. This action ensures that we're progressing toward that exhilarating moment of blast-off.
 6. **Exit Point (*`Launch the rocket`*)**: When 'countdown' hits zero, the loop's work is done, and it's time for the rocket to soar into the skies!
@@ -124,7 +124,7 @@ To make the robot walk across the room, you would use a series of commands for e
 6. Move the left foot 60 centimeters forward.
 7. Lower the left foot until it touches the ground.
 8. Transfer the weight to the left foot.
-9. Check for obstacles or the end of the room. If an obstacle or end of the room is detected, exit loop.
+9. Check if wall is reached. If an obstacle or end of the room is detected, exit loop.
 10. Otherwise, repeat from step 1.
 
 [Illustration of flowchart diagram]

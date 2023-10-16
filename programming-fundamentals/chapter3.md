@@ -98,6 +98,14 @@ Before delving into the pseudocode, let's familiarize ourselves with some basic 
 - **==** : Equal to.
   - 7 == 7 is a true statement because both sides of the operator have the same value.
   - 5 == 8 is a false statement because 5 is not equal to 8.
+- **<=** : Less than or equal to.
+  - 4 <= 5 is a true statement because 4 is less than 5.
+  - 7 <= 7 is also a true statement because both numbers are equal.
+  - 9 <= 6 is a false statement because 9 is not less than nor equal to 6.
+- **>=** : Greater than or equal to.
+  - 6 >= 3 is a true statement because 6 is greater than 3.
+  - 8 >= 8 is also a true statement because both numbers are equal.
+  - 4 >= 10 is a false statement because 4 is neither greater than nor equal to 10.
 
 > Note: We use "==" to check for equality in most programming languages instead of "=". The reason for this will become clearer later when you dive into actual coding. For now, remember to use "==" when making comparisons.
 
@@ -253,13 +261,13 @@ IF NOT raining
 We want the temperature to be between 18°C and 30°C. This condition can be represented as:
 
 ```typescript
-temperature > 18 AND temperature < 30
+temperature >= 18 AND temperature <= 30
 ```
 
 Combining both conditions, our complete decision-making pseudocode becomes:
 
 ```typescript
-IF NOT raining AND (temperature > 18 AND temperature < 30):
+IF NOT raining AND (temperature >= 18 AND temperature <= 30):
     proceed_with_event
 ELSE
     reschedule_event
