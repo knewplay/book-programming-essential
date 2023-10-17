@@ -18,13 +18,13 @@ In our daily lives, we encounter many repetitive tasks, whether it's setting an 
 
 [Use Cases of Looping](#use-cases-of-looping)
 
-[Looping in Pseudocode](#looping-in-pseudocode)
-
-[Nested Loops](#nested-loops)
-
 [The Intricacies of a Loop](#the-intricacies-of-a-loop)
 
 [Visualizing with Examples](#visualizing-with-examples)
+
+[Looping in Pseudocode](#looping-in-pseudocode)
+
+[Nested Loops](#nested-loops)
 
 [Activities](#activities)
 
@@ -51,19 +51,9 @@ Loops are incredibly useful in scenarios where:
 
 Using loops not only saves time but also ensures our code remains clean and efficient.
 
-## Looping in Pseudocode
-
-[Section]
-
-## Nested Loops
-
-Just as we nest boxes within larger boxes, loops can also be placed inside other loops. This is known as nesting. It's a powerful technique, especially when you need to handle multi-dimensional tasks. But remember, with great power comes great complexity! It's crucial to be careful when using nested loops to ensure they all run as expected.
-
-[provide intuitive example]
-
 ## The Intricacies of a Loop
 
-When you'll start actually programming, you'll notice that you can't just say "Loop 5 times"; it's a bit more complicated than that.
+When you start actually programming, you'll notice that you can't just say "Loop 5 times"; it's a bit more complicated than that.
 
 So in this section, let's take a closer look at the core components of a loop, using a visual guide:
 
@@ -86,7 +76,7 @@ Imagine we're programming a robot for a competition where it needs to shoot a ba
 
 1. **Starting Point (*`Start`*):** Our loop begins at this entry point, initiating the robot's ball shooting sequence.
 2. **Initialization (*`Set shotCounter to 0`*):** The loop starts by setting an initial value for the shot counter, which keeps track of how many balls the robot has shot. Initially, the shot counter is set to 0.
-3. **Condition (*`Is shotCounter < 10?`*)**: At this step, the loop checks the counter's value. It's asking, "Is the counter equal to 7?" If the counter isn't yet at 7, the loop will continue to print. Once the counter reaches 7, it's time for the loop to stop.
+3. **Condition (*`Is shotCounter < 10?`*)**: At this step, the loop checks the counter's value. It's asking, "Has the robot shot less than 10 balls?" If the shot counter hasn't reached 10, the loop will continue instructing the robot to shoot. Once the counter reaches 10, the robot stops.
 4. **Execution (*`Shoot ball into basket`*):** Here, the loop commands the robot to take a shot, aiming the ball at the basket.
 5. **Update (*`Add 1 to shotCounter`*)**: After each successful shot, the loop increments the shot counter by 1, ensuring accurate tracking of the number of shots taken.
 6. **Exit Point (*`Exit`*)**: After the robot has shot ten balls, the loop concludes its task, and the robot stops shooting.
@@ -105,6 +95,16 @@ Rocket launches are thrilling, right? They always start with that dramatic count
 6. **Exit Point (*`Launch the rocket`*)**: When 'countdown' hits zero, the loop's work is done, and it's time for the rocket to soar into the skies!
 
 **Overview:** The countdown starts at 10, and with each passing second, the number decreases by 1. Once the countdown reaches 0, the rocket launches! In this case, the starting point is `countdown = 10`, the condition to check if is `countdown == 0`, and the update we do is to update `countdown - 1` every passing second.
+
+## Looping in Pseudocode
+
+[Section]
+
+## Nested Loops
+
+Just as we nest boxes within larger boxes, loops can also be placed inside other loops. This is known as nesting. It's a powerful technique, especially when you need to handle multi-dimensional tasks. But remember, with great power comes great complexity! It's crucial to be careful when using nested loops to ensure they all run as expected.
+
+[provide intuitive example]
 
 ## Activities
 
@@ -149,5 +149,4 @@ Repeat 5 times:
         Do a sit-up
     Repeat 10 times:
         Do a squat
-
 ```
