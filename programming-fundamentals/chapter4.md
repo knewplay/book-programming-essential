@@ -4,10 +4,13 @@ date: "2023-10-10"
 author: "Andrei Guevorkian"
 illustrator: "Dengyijia Liu"
 questions:
-  - ["sandwich-loop", ""]
+  - ["sandwich-loop", "Write a program where you make 10 identical sandwiches, all consisting of bread, ham and cheese. Prepare each sandwich sequentially using a loop, ensuring that one sandwich is completed before starting the next."]
   - ["guess-number", "You are thinking of a secret number between 1 and 100, and you ask your friend to guess it. If their guess is too high, you respond with \"Too high\". If their guess is too low, you say \"Too low\". Your friend continues guessing based on your feedback until they correctly guess the secret number.
 
   Describe the flow of decisions and responses you would go through until the correct number is identified, as if you were instructing someone to create a flowchart for the game."]
+  - ["sandwich-nested-loop","In the first sandwich-making program, you made 10 sandwiches sequentially; one after another. In this problem, you must make 10 sandwiches for 2 days in a row. Write the pseudocode representing this.
+  
+  Hint: Think about using an outer loop for the number of days and an inner loop for the sequence of making each sandwich."]
 ---
 
 In our daily lives, we encounter many repetitive tasks, whether it's setting an alarm each night or brushing our teeth every morning. Similarly, in programming, there's a concept that allows us to handle repetitive actions efficiently: loops. Dive into this chapter to discover how loops work in the world of coding.
@@ -88,23 +91,43 @@ Imagine we're programming a robot for a competition where it needs to shoot a ba
 Rocket launches are thrilling, right? They always start with that dramatic countdown: "10, 9, 8...". Let's break down how a loop might handle this!
 
 1. **Starting Point (*`Start`*):** Our loop's exciting journey begins here, at the launch pad of our mission.
-2. **Initialization (*`Set countdown to 10`*):** As the countdown initiates, the loop sets a variable named 'countdown' to 10. This will be our countdown timer, starting from 10 and going down to 0.
-3. **Condition (*`Is countdown > 0?`*):** At this check, the loop questions, "Has the countdown reached zero?" If 'countdown' isn't 0 yet, the loop will continue counting down. But when it hits 0, the loop is exited and it's launch time!
+2. **Initialization (*`Set countdown to 10`*):** As we prepare for launch, the loop gets ready by setting the starting point of our countdown at 10.
+3. **Condition (*`Is countdown > 0?`*):** At this checkpoint, the loop asks, "Is there still time left on the countdown?" If the countdown is still greater than 0, the loop continues with the countdown. But once it reaches 0, the loop is exited.
 4. **Execution (*`Announce countdown`*)**: With every tick of the countdown, the loop announces the current number, letting everyone know how many seconds remain until launch.
 5. **Update (*`Subtract 1 from countdown`*):** After each announcement, the loop decreases the 'countdown' by 1. This action ensures that we're progressing toward that exhilarating moment of blast-off.
 6. **Exit Point (*`Launch the rocket`*)**: When 'countdown' hits zero, the loop's work is done, and it's time for the rocket to soar into the skies!
 
 **Overview:** The countdown starts at 10, and with each passing second, the number decreases by 1. Once the countdown reaches 0, the rocket launches! In this case, the starting point is `countdown = 10`, the condition to check if is `countdown == 0`, and the update we do is to update `countdown - 1` every passing second.
 
-## Looping in Pseudocode
-
-[Section]
-
 ## Nested Loops
 
 Just as we nest boxes within larger boxes, loops can also be placed inside other loops. This is known as nesting. It's a powerful technique, especially when you need to handle multi-dimensional tasks. But remember, with great power comes great complexity! It's crucial to be careful when using nested loops to ensure they all run as expected.
 
-[provide intuitive example]
+### Nested Loop Example: Amusement Park
+
+Imagine this: you're on a weekend trip to "WonderWorld Amusement Park" with an all-inclusive two-day ticket pass. You're super excited and have decided that on each day, you'll ride 5 different roller coasters.
+
+This situation is a great example of nested loops. Think of the two-day weekend as the outer loop. Now, inside each day (each cycle of the outer loop), there's another loop for the five times you ride the roller coasters.
+
+Here's a breakdown:
+
+- Day Loop (Outer Loop): This runs for two days (Saturday and Sunday).
+- Roller Coaster Ride Loop (Inner Loop): Each day, you ride five roller coasters.
+
+The beauty of nested loops is in their simplicity. You're not doing something drastically different each time; you're repeating the same enjoyable action (riding a roller coaster) within the larger context of the weekend.
+
+Here is what the pseudocode would look like:
+
+```typescript
+REPEAT 2 days:
+    REPEAT 5 times:
+        "Wait in line for the roller coaster"
+        "Ride the roller coaster"
+        "Go look for another roller coaster"
+    "Explore other parts of the park or take a break"
+```
+
+This logic conveys that for two days, you'll wait in line, ride the roller coaster, and then decide where to go next five times each day. After those five rides, you might wander to other attractions or just take a break.
 
 ## Activities
 
@@ -142,11 +165,11 @@ Instruct your robot to perform a set of 10 push-ups, followed by 10 sit-ups, and
 Pseudocode:
 
 ```typescript
-Repeat 5 times:
-    Repeat 10 times:
-        Do a push-up
-    Repeat 10 times:
-        Do a sit-up
-    Repeat 10 times:
-        Do a squat
+REPEAT 5 times:
+    REPEAT 10 times:
+        "Do a push-up"
+    REPEAT 10 times:
+        "Do a sit-up"
+    REPEAT 10 times:
+        "Do a squat"
 ```

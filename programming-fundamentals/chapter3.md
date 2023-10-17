@@ -156,6 +156,10 @@ With this understanding, we can now delve into real-world problems like deciding
 
 ## Activities
 
+We will be answering these questions using pseudocode.
+
+Pseudocode allows us to represent programming logic without diving into the intricacies of a specific language syntax. It's a simple and language-independent way to lay out your ideas and logic.
+
 ### Activity #1
 
 Write a program that evaluates a number to determine if it's positive, negative, or zero.
