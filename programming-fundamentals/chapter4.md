@@ -10,13 +10,12 @@ questions:
   Describe the flow of decisions and responses you would go through until the correct number is identified, as if you were instructing someone to create a flowchart for the game."]
   - ["workout","Is the following program different from the Activity #2 solution. Explain your answer.
   
-```typescript
 REPEAT 5 times:
     REPEAT 10 times:
         do_pushup
         do_situp
         do_squat
-```"]
+"]
 ---
 
 In our daily lives, we encounter many repetitive tasks, whether it's setting an alarm each night or brushing our teeth every morning. Similarly, in programming, there's a concept that allows us to handle repetitive actions efficiently: loops. Dive into this chapter to discover how loops work in the world of coding.
