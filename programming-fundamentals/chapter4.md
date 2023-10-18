@@ -8,9 +8,15 @@ questions:
   - ["guess-number", "You are thinking of a secret number between 1 and 100, and you ask your friend to guess it. If their guess is too high, you respond with \"Too high\". If their guess is too low, you say \"Too low\". Your friend continues guessing based on your feedback until they correctly guess the secret number.
 
   Describe the flow of decisions and responses you would go through until the correct number is identified, as if you were instructing someone to create a flowchart for the game."]
-  - ["sandwich-nested-loop","In the first sandwich-making program, you made 10 sandwiches sequentially; one after another. In this problem, you must make 10 sandwiches for 2 days in a row. Write the pseudocode representing this.
+  - ["sandwich-nested-loop","Is the following program different from the Activity #2 solution. Explain your answer.
   
-  Hint: Think about using an outer loop for the number of days and an inner loop for the sequence of making each sandwich."]
+```typescript
+REPEAT 5 times:
+    REPEAT 10 times:
+        do_pushup
+        do_situp
+        do_squat
+```"]
 ---
 
 In our daily lives, we encounter many repetitive tasks, whether it's setting an alarm each night or brushing our teeth every morning. Similarly, in programming, there's a concept that allows us to handle repetitive actions efficiently: loops. Dive into this chapter to discover how loops work in the world of coding.
@@ -25,7 +31,8 @@ In our daily lives, we encounter many repetitive tasks, whether it's setting an 
 
 [Visualizing with Examples](#visualizing-with-examples)
 
-[Looping in Pseudocode](#looping-in-pseudocode)
+- [Example #1: Repetitive Ball Shots by a Robot](#example-1-repetitive-ball-shots-by-a-robot)
+- [Example #2: Rocket Launch Countdown](#example-2-rocket-launch-countdown)
 
 [Nested Loops](#nested-loops)
 
@@ -101,7 +108,9 @@ Rocket launches are thrilling, right? They always start with that dramatic count
 
 ## Nested Loops
 
-Just as we nest boxes within larger boxes, loops can also be placed inside other loops. This is known as nesting. It's a powerful technique, especially when you need to handle multi-dimensional tasks. But remember, with great power comes great complexity! It's crucial to be careful when using nested loops to ensure they all run as expected.
+Just as we nest boxes within larger boxes, loops can also be placed inside other loops. This is known as nesting. It's a powerful technique, especially when you need to handle multi-dimensional tasks.
+
+[Illustration [1](https://create.roblox.com/docs/tutorials/fundamentals/coding-4/nested-loops) [2](https://study.com/academy/lesson/nested-while-loops-in-java.html) or img sent in chat]
 
 ### Nested Loop Example: Amusement Park
 
@@ -121,13 +130,12 @@ Here is what the pseudocode would look like:
 ```typescript
 REPEAT 2 days:
     REPEAT 5 times:
-        "Wait in line for the roller coaster"
-        "Ride the roller coaster"
-        "Go look for another roller coaster"
-    "Explore other parts of the park or take a break"
+        ride_roller_coaster
+        look_for_another_roller_coaster
+    rest
 ```
 
-This logic conveys that for two days, you'll wait in line, ride the roller coaster, and then decide where to go next five times each day. After those five rides, you might wander to other attractions or just take a break.
+This logic conveys that for two days, you'll ride a roller coaster, and then decide where to go next five times each day. After those five rides, you might take a break.
 
 ## Activities
 
@@ -147,12 +155,24 @@ To make the robot walk across the room, you would use a series of commands for e
 6. Move the left foot 60 centimeters forward.
 7. Lower the left foot until it touches the ground.
 8. Transfer the weight to the left foot.
-9. Check if wall is reached. If an obstacle or end of the room is detected, exit loop.
+9. Check if wall is reached. If so, exit loop.
 10. Otherwise, repeat from step 1.
+
+```typescript
+REPEAT while not endOfRoom
+    lift_right_foot_5cm
+    move_right_foot_forward_30cm
+    lower_right_foot
+    transfer_weight_right
+    lift_left_foot_5cm
+    move_left_foot_forward_60cm
+    lower_left_foot
+    transfer_weight_left
+```
 
 [Illustration of flowchart diagram]
 
-This series of commands instructs the robot on the basic mechanics of walking, step by step. You would then loop the above commands until the robot has walked the desired distance across the room.
+This series of commands instructs the robot on the basic mechanics of walking, step by step. You would then loop the above commands until the robot has reached the end of the room.
 
 ### Activity #2
 
@@ -162,14 +182,35 @@ Instruct your robot to perform a set of 10 push-ups, followed by 10 sit-ups, and
 
 ### Answer
 
-Pseudocode:
+To instruct our humanoid robot efficiently, we need to think step-by-step and loop-wise. We want the robot to perform a set of exercises and then repeat that whole set multiple times. This scenario is perfect for nested loops.
+
+Let's break it down:
+
+**Outer Loop:** Represents the entire exercise set we want the robot to repeat. We want the robot to loop through this set 5 times.
+
+```typescript
+REPEAT 5 times:
+```
+
+**Inner Loops:** Represents each exercise within the set. Since the robot can only comprehend one movement at a time, we'll use a loop for each exercise type:
+
+Push-ups: We want the robot to do a push-up 10 times. Hence, we loop the do_pushup command 10 times.
+
+```typescript
+REPEAT 10 times:
+    do_pushup
+```
+
+Similarly, we instruct the robot to repeat the do_situp and do_squat commands 10 times.
+
+When pieced together in a nested loop structure, the pseudocode becomes:
 
 ```typescript
 REPEAT 5 times:
     REPEAT 10 times:
-        "Do a push-up"
+        do_pushup
     REPEAT 10 times:
-        "Do a sit-up"
+        do_situp
     REPEAT 10 times:
-        "Do a squat"
+        do_squat
 ```

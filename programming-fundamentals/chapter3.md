@@ -81,9 +81,9 @@ Pseudocode is a method to design and represent algorithms without the strict str
 
 An integral part of pseudocode, and programming in general, is decision-making. This is achieved using specific patterns or templates known as constructs.
 
-> Note: In programming, a "construct" is a fundamental piece or feature of the language that serves a building block. Constructs provide a way to introduce structure, repetition, decision-making, and more into our code.
+> Note: In programming, a "construct" is a fundamental piece or feature of the language that serves as a building block. Constructs provide a way to introduce structure, repetition, decision-making, and more into our code.
 
-For decision-making, common constructs are **if**, **else**, and **else if** (or 'else-if' or 'elif').
+For decision-making, common constructs are **if**, **else**, and **else if** ("else-if" or "elif" are also used).
 
 ### Comparison Operators
 
@@ -157,8 +157,6 @@ With this understanding, we can now delve into real-world problems like deciding
 ## Activities
 
 We will be answering these questions using pseudocode.
-
-Pseudocode allows us to represent programming logic without diving into the intricacies of a specific language syntax. It's a simple and language-independent way to lay out your ideas and logic.
 
 ### Activity #1
 
