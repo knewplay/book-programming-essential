@@ -8,7 +8,7 @@ questions:
   - ["guess-number", "You are thinking of a secret number between 1 and 100, and you ask your friend to guess it. If their guess is too high, you respond with \"Too high\". If their guess is too low, you say \"Too low\". Your friend continues guessing based on your feedback until they correctly guess the secret number.
 
   Describe the flow of decisions and responses you would go through until the correct number is identified, as if you were instructing someone to create a flowchart for the game."]
-  - ["sandwich-nested-loop","Is the following program different from the Activity #2 solution. Explain your answer.
+  - ["workout","Is the following program different from the Activity #2 solution. Explain your answer.
   
 ```typescript
 REPEAT 5 times:
