@@ -5,12 +5,12 @@ author: "Andrei Guevorkian"
 illustrator: "Dengyijia Liu"
 questions:
   - plant: |
-    You're creating an automatic plant watering system. The plant should be watered if:
+      You're creating an automatic plant watering system. The plant should be watered if:
 
-    - The soil is dry.
-    - It's daytime.
+      - The soil is dry.
+      - It's daytime.
 
-    Write pseudocode to determine whether the plant should be watered or not.
+      Write pseudocode to determine whether the plant should be watered or not.
   - alarm: |
       "You're building an alarm system for your home. The alarm should sound if:
 
