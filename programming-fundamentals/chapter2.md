@@ -4,33 +4,36 @@ date: "2023-09-26"
 author: "Andrei Guevorkian"
 illustrator: "Dengyijia Liu"
 questions:
-  - ["treasure-hunt", "Imagine you're setting up a treasure hunt game for your friend. You've buried a treasure and only you know its location. Now, it's your friend's turn to find it. However, there's a twist: your friend, much like a computer, requires precise and unambiguous instructions to accomplish the task.
+  - treasure-hunt: |
+      Imagine you're setting up a treasure hunt game for your friend. You've buried a treasure and only you know its location. Now, it's your friend's turn to find it. However, there's a twist: your friend, much like a computer, requires precise and unambiguous instructions to accomplish the task.
 
-  Standing at the designated starting point, you hand over a note with the following instructions:
+      Standing at the designated starting point, you hand over a note with the following instructions:
 
-  1. Take 10 steps forward
-  2. Turn right and take 3 large steps
-  3. Turn left and crawl 5 times
-  4. Dig 2 inches down to find the treasure!
+      1. Take 10 steps forward
+      2. Turn right and take 3 large steps
+      3. Turn left and crawl 5 times
+      4. Dig 2 inches down to find the treasure!
 
-  Describe the sequence and decision-making process you would use to turn these instructions into a flowchart. Be sure to mention any symbols and their meanings."]
-  - ["cereal", "The year is 2053, and you have a humanoid servant robot at home, equipped with advanced visual sensors. You want to ask the robot to make you some cereal, but unfortunately, \"making cereal\" is too complex of a task for this early version of a servant robot. You've prepped the table with a bowl, cereal, and milk in front of the robot and decided to give it the following instructions (assuming the robot understands the concept of pouring):
+      Describe the sequence and decision-making process you would use to turn these instructions into a flowchart. Be sure to mention any symbols and their meanings.
+  - cereal: |
+      The year is 2053, and you have a humanoid servant robot at home, equipped with advanced visual sensors. You want to ask the robot to make you some cereal, but unfortunately, \"making cereal\" is too complex of a task for this early version of a servant robot. You've prepped the table with a bowl, cereal, and milk in front of the robot and decided to give it the following instructions (assuming the robot understands the concept of pouring):
 
-1. Grab the milk carton.
-2. Pour some milk into the bowl.
-3. Grab the box of cereal.
-4. Pour some cereal into the bowl.
+      1. Grab the milk carton.
+      2. Pour some milk into the bowl.
+      3. Grab the box of cereal.
+      4. Pour some cereal into the bowl.
 
-However, the attempt fails. What went wrong? Provide better instructions."]
-  - ["sandwich", "You have a robot chef in your kitchen that can prepare sandwiches based on user preferences. Your task is to provide instructions for the robot chef. The user can choose:
+      However, the attempt fails. What went wrong? Provide better instructions
+  - sandwich: |
+      You have a robot chef in your kitchen that can prepare sandwiches based on user preferences. Your task is to provide instructions for the robot chef. The user can choose:
 
-- The type of bread (white or whole wheat)
-- The type of meat (ham or turkey)
-- Whether they want tomatoes (yes or no)
+      - The type of bread (white or whole wheat)
+      - The type of meat (ham or turkey)
+      - Whether they want tomatoes (yes or no)
 
-Every sandwich also includes lettuce by default.
+      Every sandwich also includes lettuce by default.
 
-Describe in detail the sequence of commands and decision-making process you would provide to the robot to ensure the sandwich is made to the user's preferences, making sure to include the specified decisions."]
+      Describe in detail the sequence of commands and decision-making process you would provide to the robot to ensure the sandwich is made to the user's preferences, making sure to include the specified decisions.
 ---
 
 As we venture deeper into the realm of programming and problem-solving, the importance of structured thinking becomes evident. Central to this idea is the concept of algorithms, which act as blueprints for action. Let's dive deeper into what algorithms are and how they can be visually represented using flowcharts.

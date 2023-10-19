@@ -4,20 +4,16 @@ date: "2023-07-06"
 author: "Andrei Guevorkian"
 illustrator: "Dengyijia Liu"
 questions:
-  - ["hardware", "What are some examples of hardware components in a computer?"]
-  - ["software", "Can you give examples of software applications you use on a daily basis?"]
-  - ["os-tasks", "(Multiple choice question - Select one or more answers)  Which of the following is the OS tasked with?
-
-  1. Memory Management: Manages computer memory, allocating and tracking memory resources for programs, ensuring efficient utilization and preventing conflicts between different processes.
-
-  2. Process Management: Controls the execution of processes, scheduling CPU time and handling process creation and termination, ensuring fair allocation of resources and maximizing overall system performance.
-
-  3. File System Management: Organizes and manages data storage, allowing users to create, read, write, and delete files, providing a hierarchical structure and access control for efficient data management.
-
-  4. Device Management: Handles input and output devices, providing drivers and protocols for communication and coordinating I/O operations, ensuring seamless interaction between the computer and peripheral devices.
-
-  5. All of the above."]
-  - ["file-naming","What is the purpose of file naming conventions?"]
+  - hardware: What are some examples of hardware components in a computer?
+  - software: Can you give examples of software applications you use on a daily basis?
+  - os-tasks: |
+      Multiple choice question - Select one or more answers)  Which of the following is the OS tasked with?
+      1. Memory Management: Manages computer memory, allocating and tracking memory resources for programs, ensuring efficient utilization and preventing conflicts between different processes.
+      2. Process Management: Controls the execution of processes, scheduling CPU time and handling process creation and termination, ensuring fair allocation of resources and maximizing overall system performance.
+      3. File System Management: Organizes and manages data storage, allowing users to create, read, write, and delete files, providing a hierarchical structure and access control for efficient data management.
+      4. Device Management: Handles input and output devices, providing drivers and protocols for communication and coordinating I/O operations, ensuring seamless interaction between the computer and peripheral devices.
+      5. All of the above.
+  - file-naming: What is the purpose of file naming conventions?
 ---
 
 In the previous article, we explored the history of computers and their defining characteristics. Now, let's delve deeper into general-purpose computers and their underlying concepts such as Operating Systems and file systems.
