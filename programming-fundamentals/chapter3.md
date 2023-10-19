@@ -4,26 +4,29 @@ date: "2023-10-05"
 author: "Andrei Guevorkian"
 illustrator: "Dengyijia Liu"
 questions:
-  - ["plant", "You're creating an automatic plant watering system. The plant should be watered if:
+  - plant: |
+    You're creating an automatic plant watering system. The plant should be watered if:
 
-- The soil is dry.
-- It's daytime.
+    - The soil is dry.
+    - It's daytime.
 
-Write pseudocode to determine whether the plant should be watered or not."]
-  - ["alarm", "You're building an alarm system for your home. The alarm should sound if:
+    Write pseudocode to determine whether the plant should be watered or not.
+  - alarm: |
+      "You're building an alarm system for your home. The alarm should sound if:
 
-- A window or door is opened.
-- The system is armed.
+      - A window or door is opened.
+      - The system is armed.
 
-Write pseudocode for this scenario."]
-  - ["grade","Design a program that categorizes a student's grade. The program should:
+      Write pseudocode for this scenario.
+  - grade: |
+      Design a program that categorizes a student's grade. The program should:
 
-- Display \"Excellent\" for scores 90 and above.
-- Display \"Good\" for scores between 70 and 89.
-- Display \"Average\" for scores between 50 and 69.
-- Display \"Fail\" for scores below 50.
+      - Display "Excellent" for scores 90 and above.
+      - Display "Good" for scores between 70 and 89.
+      - Display "Average" for scores between 50 and 69.
+      - Display "Fail" for scores below 50.
 
-Write the corresponding pseudocode to determine and display the student's category based on the score."]
+      Write the corresponding pseudocode to determine and display the student's category based on the score.
 ---
 
 In our everyday lives, we make countless decisions based on conditions: if it rains, take an umbrella; if it's cold, wear a jacket. Similarly, in programming, decision-making is a crucial aspect, enabling the program to react differently to different inputs or situations.
