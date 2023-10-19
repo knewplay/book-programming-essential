@@ -119,25 +119,51 @@ variable_name = value
 variable_name = new_value
 ```
 
-### Rules and Naming Conventions for Variables
+### Variable Naming Rules and Conventions
 
 You may have noticed that the variable names follow a certain style. Here are some rules and conventions that programmers follow in order to ensure code clarity and prevent potentials errors.
 
-1. Use letters of the alphabet (a-z, A-Z), numbers (0, 1, 2, …, 9) and the underscore (_) only (e.g.: *level_2*).
-2. Do not start the name with a number (1level).
-3. It is preferable to put a space before and after the “equals” sign. This is not necessary, but it is advisable
-to do so to make the code easier to read (“cows=12” vs. “cows = 12”).
-4. It is best to start with a lowercase letter and not an uppercase letter (*Var1* vs. *var1*). This is what
-programmers use by convention.
+#### Mandatory Rules
 
-> Note: As the programmer, you can name your variable whatever you want, but it's best to give meaning to each variable's name. For example, if you want to store the author's name in a variable, instead of naming the variable *var1* or *abcd* (which you technically are allowed to do), it would be more suitable to name it *authorName*, *author*, or something of the like.
+1. **Valid Characters:**
+  
+    Use only letters (a-z, A-Z), numbers (0-9), and underscores (_).
 
-1. Begin with a letter (a-z, A-Z) or underscore (_). Numbers shouldn't be at the start.
-2. Avoid Spaces & Special characters: Use underscores (_) or camelCase for multi-word names. Steer clear of characters like @, #, $, %.
-3. Be Unique & Case-Sensitive: Each variable should have a distinct name. Note: myVariable and myvariable are different in most languages.
-4. Stay Descriptive: Choose clear names like username over vague ones such as u.
-5. Consistency Matters: Adhere to a naming style, whether camelCase (myVariableName) or snake_case (my_variable_name).
-6. Reserved Words: Avoid language-specific keywords.
+    Example: *motor_speed*, *axis3_value*.
+2. **Starting Character:**
+
+    Always begin with a letter (a-z, A-Z) or an underscore (_). Never start with a number.
+
+    Example: *sensor_reading* (correct), *_backup_value* (correct), *3rd_motor* (incorrect).
+3. **Reserved Words:**
+
+    Steer clear of language-specific keywords.
+
+    Example: Avoid naming a variable *int* or *return* as they are common reserved words in many languages.
+
+#### Best Practices
+
+1. **Spacing:**
+
+    It's more readable to place a space before and after the equals sign.
+
+    Example: *wheel_rotation = 45* is preferable to *wheel_rotation=45*.
+2. **Capitalization:**
+
+    Start with a lowercase letter. For multi-word names, use camelCase or snake_case.
+
+    Example: *robotArmPosition* (camelCase), *robot_arm_position* (snake_case).
+3. **Descriptiveness:**
+
+    Opt for clear names that describe their purpose.
+    Example: *battery_voltage* (clear) over *bv* (vague).
+4. **Consistency:**
+
+    Stick to a chosen naming style throughout your code.
+
+    Example: If you start with snake_case (*motor_speed*), don't mix with camelCase (*robotArm*) in the same codebase.
+
+> Tip: Although the "Best Practices" aren't strict rules, adhering to them can greatly enhance the clarity and maintainability of your code. Instead of using generic names like *abc* or *var1*, choose descriptive identifiers that convey the variable's purpose.
 
 ## Strong vs. Weak Typing: C and Python Examples
 
