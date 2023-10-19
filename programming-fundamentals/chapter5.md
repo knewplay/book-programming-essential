@@ -167,11 +167,32 @@ You may have noticed that the variable names follow a certain style. Here are so
 
 ## Strong vs. Weak Typing: C and Python Examples
 
-In programming, the way languages handle and enforce data types varies. This brings us to the concepts of strong and weak typing.
+In programming, languages differ in how strictly they enforce data types, leading to the concepts of strong and weak typing.
 
-C (Strong Typing)
-In C, you need to specify the data type of a variable when you declare it. Once set
+### Strongly Typed Languages
 
-Strongly Typed Languages: In these languages, the data type of a variable is set when the variable is declared, and it can't change unless explicitly redefined. For instance, if you declare a variable to be of type integer, you can't just assign a string value to it later on. C is an example of a strongly typed language.
+In these languages, the data type of a variable is set when the variable is declared, and it can't change unless explicitly redefined. For instance, if you declare a variable to be of type integer, you can't just assign a string value to it later on. C is an example of a strongly typed language.
 
-Weakly Typed Languages: In contrast, weakly typed languages allow variables to take on different data types without explicit redefinition. This provides flexibility but can also lead to unintended consequences if not used carefully. Python can be seen as an example of this
+#### C Example
+
+```c
+int motorSpeed = 100;
+motorSpeed = "fast"; // This results in an error
+```
+
+In the above example, once the *motorSpeed* variable is defined as an integer, trying to assign a string value to it will result in an error.
+
+### Weakly Typed Languages
+
+Conversely, weakly typed languages allow for more flexibility with variable data types. A variable's type can change over the course of a program. This flexibility is double-edged; while it can simplify code, it can also lead to unexpected behaviors if not used judiciously. Python is an example of a weakly typed language.
+
+#### Python Example
+
+```python
+motorSpeed = 100
+motorSpeed = "fast"  # This is valid in Python
+```
+
+In the Python example, the *motorSpeed* variable can easily transition from holding an integer to a string without any errors.
+
+In summary, while strongly typed languages prioritize strict adherence to data types for accuracy and predictability, weakly typed languages offer flexibility, which can speed up development but requires extra caution.
