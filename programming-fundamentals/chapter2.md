@@ -16,7 +16,7 @@ questions:
 
       Describe the sequence and decision-making process you would use to turn these instructions into a flowchart. Be sure to mention any symbols and their meanings.
   - cereal: |
-      The year is 2053, and you have a humanoid servant robot at home, equipped with advanced visual sensors. You want to ask the robot to make you some cereal, but unfortunately, \"making cereal\" is too complex of a task for this early version of a servant robot. You've prepped the table with a bowl, cereal, and milk in front of the robot and decided to give it the following instructions (assuming the robot understands the concept of pouring):
+      The year is 2053, and you have a humanoid servant robot at home, equipped with advanced visual sensors. You want to ask the robot to make you some cereal, but unfortunately, "making cereal" is too complex of a task for this early version of a servant robot. You've prepped the table with a bowl, cereal, and milk in front of the robot and decided to give it the following instructions (assuming the robot understands the concept of pouring):
 
       1. Grab the milk carton.
       2. Pour some milk into the bowl.
