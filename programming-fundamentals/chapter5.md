@@ -4,9 +4,10 @@ date: "2023-10-19"
 author: "Andrei Guevorkian"
 illustrator: "Dengyijia Liu"
 questions:
-  - ["", ""]
-  - ["", ""]
-  - ["",""]
+  - ["library", "How are data types in programming similar to items in a library?"]
+  - ["primitive-types", "List the common or 'primitive' data types supported by most programming languages."]
+  - ["define-variable","In programming, how do you assign a value to a variable? Can you provide a simple example for both weakly typed and strongly typed languages?"
+]
 ---
 
 In daily life, we deal with different types of data. We classify items by color, size, shape, and various other attributes. Similarly, in programming, understanding data types and how they are managed is essential to designing efficient and effective programs.
