@@ -9,26 +9,28 @@ questions:
   - ["",""]
 ---
 
-In daily life, we deal with different types of data. We classify items by color, size, shape, and various other attributes. Similarly, in programming, understanding data types and how they are managed is paramount to designing efficient and effective programs.
+In daily life, we deal with different types of data. We classify items by color, size, shape, and various other attributes. Similarly, in programming, understanding data types and how they are managed is essential to designing efficient and effective programs.
 
 ## Table of Contents
 
 [Understanding Data Types](#understanding-data-types)
 
-[Typical Data Types in Programming](#typical-data-types-in-programming)
+[Common Data Types in Programming](#common-data-types-in-programming)
 
 [Variables: The Storage Units of Data](#variables-the-storage-units-of-data)
 
 - [Purpose of Using Variables](#purpose-of-using-variables)
 - [Benefits of Using Variables](#benefits-of-using-variables)
-- [Assigning Values to Variables]()
-- [Changing Variable Values]()
+- [Assigning Values to Variables](#assigning-values-to-variables)
+- [Changing Variable Values](#changing-variable-values)
+- [Variable Naming Rules and Conventions](#variable-naming-rules-and-conventions)
 
-[Examples with Pseudocode]()
+[Strong vs. Weak Typing: C and Python Examples](#strong-vs-weak-typing-c-and-python-examples)
 
-[Side-by-Side: Variables in C and Python]()
+- [Strongly Typed Languages](#strongly-typed-languages)
+- [Weakly Typed Languages](#weakly-typed-languages)
 
-[Activities]()
+[Activities](#activities)
 
 [Questions](#questions)
 
@@ -43,22 +45,20 @@ Imagine walking into a library. In this library, there are various items: books,
   - Operations: You can listen to them, skip tracks, or repeat songs.
   - Storage: Stored in CD racks or cases.
 - Newspapers:
-  - Operations: Read articles, check out the classifieds, or solve puzzles.
+  - Operations: Read articles, check out advertisements, or solve puzzles.
   - Storage: Kept in stacks or in special newspaper stands.
 
-Just as different items in a library have specific operations and storage methods, data types in programming dictate how data can be manipulated and stored.
+Just as different items in a library have distinct operations and storage methods, data types in programming have their unique ways of being manipulated and stored. For instance, in the library, you wouldn't try to "listen" to a book or "read" a CD. Similarly, in our daily lives, you wouldn't "peel" a number like a fruit or "wear" it like a shirt. Understanding and respecting these distinctions in programming ensures that we use data appropriately and efficiently.
 
-Recognizing the "type" of an item or piece of data helps us understand what we can and cannot do with it. In the library, you wouldn't try to "listen" to a book or "read" a CD.
+[illustration of boy reading a CD, or listening to a book]
 
-Every piece of data in a program has a 'type'. These types help determine what operations can be performed on the data and how it is stored. So what are some of the common data types in programming?
-
-## Typical Data Types in Programming
+## Common Data Types in Programming
 
 At their core, most programming languages support a set of basic or "primitive" data types:
 
 - Integers (int): Whole numbers, both positive and negative. e.g., -3, 0, 42.
 - Floating-point numbers (float): Decimal numbers. e.g., 3.14, -0.001.
-- Booleans (boolean): Represented by two values, either 'True' or 'False'.
+- Booleans (boolean): Represented by two values, either 'True' or 'False'. e.g., "the sun is blue" (False), "7 > 13" (False).
 - Strings (string): Sequences of characters. e.g., "Hello, World!" or "I am 15 years old"
 
 > Note: While these are general categories, the exact naming and behavior might differ slightly from one programming language to another.
@@ -69,7 +69,7 @@ At their core, most programming languages support a set of basic or "primitive" 
 
 Continuing with our library analogy, imagine being a librarian responsible for managing the vast amount of items in the library. Over time, you'd realize that just knowing the types of items isn't enough. Every day, people come in and ask for specific books or CDs by name or content. To keep the library organized and to efficiently find items for members, you need a system.
 
-Enter the library catalog system. Each book, CD, or newspaper is given a unique identifier or 'tag'. This tag doesn't just state the type (book, CD, newspaper) but has specific information like title, author, or release date. When a person asks for the book "Animal Farm", you don't just go to the 'book' section. You look up its unique identifier, find its location, and retrieve it. "Animal Farm" is a book, correct, however it is a specific type of book, and so distinguishing it from other books is important.
+Enter the library catalog system. Each book, CD, or newspaper is given a unique identifier or 'tag'. This tag doesn't just state the type (book, CD, newspaper) but has specific information like title, author, or release date. When a person asks for the book "Animal Farm", you don't just go to the 'book' section. Instead, you look up its unique identifier, find its location, and retrieve it. "Animal Farm" is a book, correct, however it is a specific type of book, and so distinguishing it from other books is important.
 
 This 'tagging' system of the library mirrors the concept of 'variables' in programming. A variable is like a tag or label given to a piece of data. It doesn't just tell us the type (integer, float, string) but provides a specific identity so that we can efficiently retrieve, modify, or operate on that data when needed. Just like you wouldn't want to search through all books to find one, in programming, we use variables to directly access and manage specific data.
 
@@ -105,6 +105,7 @@ variable_name = value
 For example:
 
 ```python
+title = "Animal Farm"
 author = "George Orwell"
 ```
 
@@ -148,15 +149,18 @@ You may have noticed that the variable names follow a certain style. Here are so
     It's more readable to place a space before and after the equals sign.
 
     Example: *wheel_rotation = 45* is preferable to *wheel_rotation=45*.
+
 2. **Capitalization:**
 
     Start with a lowercase letter. For multi-word names, use camelCase or snake_case.
 
     Example: *robotArmPosition* (camelCase), *robot_arm_position* (snake_case).
+
 3. **Descriptiveness:**
 
     Opt for clear names that describe their purpose.
     Example: *battery_voltage* (clear) over *bv* (vague).
+
 4. **Consistency:**
 
     Stick to a chosen naming style throughout your code.
@@ -173,6 +177,8 @@ In programming, languages differ in how strictly they enforce data types, leadin
 
 In these languages, the data type of a variable is set when the variable is declared, and it can't change unless explicitly redefined. For instance, if you declare a variable to be of type integer, you can't just assign a string value to it later on. C is an example of a strongly typed language.
 
+[Illustration of box titled "Animal Farm" with a book inside titled animal farm. Next image is removal of the book from the box, and insertion of a DVD of Animal Farm the cartoon. At the bottom, it says "Not Allowed in C"]
+
 #### C Example
 
 ```c
@@ -186,6 +192,8 @@ In the above example, once the *motorSpeed* variable is defined as an integer, t
 
 Conversely, weakly typed languages allow for more flexibility with variable data types. A variable's type can change over the course of a program. This flexibility is double-edged; while it can simplify code, it can also lead to unexpected behaviors if not used judiciously. Python is an example of a weakly typed language.
 
+[Illustration of box titled "Animal Farm" with a book inside titled animal farm. Next image is removal of the book from the box, and insertion of a DVD of Animal Farm the cartoon. At the bottom, it says "Allowed in Python"]
+
 #### Python Example
 
 ```python
@@ -196,3 +204,53 @@ motorSpeed = "fast"  # This is valid in Python
 In the Python example, the *motorSpeed* variable can easily transition from holding an integer to a string without any errors.
 
 In summary, while strongly typed languages prioritize strict adherence to data types for accuracy and predictability, weakly typed languages offer flexibility, which can speed up development but requires extra caution.
+
+## Activities
+
+**Activity #1:**
+
+Given a list of variable names and their descriptions, identify which names are correctly named (following mandatory rules and best practices) and which are not.
+
+- *123data*: Holds information about a dataset.
+- *user-response*: User's feedback on a survey.
+- *computeValue*: Calculates a specific value based on an algorithm.
+- *if*: Represents a number in decimal format.
+- *UserAddress*: Stores user's home address.
+- *tad*: Calculates the total amount due.
+
+**Answer:**
+
+- *123data*:
+  - **Incorrect** (Starts with a number)
+  - **Suggested name:** *data123* or *dataset*
+- *user-response*:
+  - **Incorrect** (Contains a hyphen)
+  - **Suggested name**: *userResponse* (camelCase) or *user_response* (snake_case)
+- *computeValue*:
+  - **Correct**
+- *if*:
+  - **Incorrect** (Keyword in most programming languages)
+- *UserAddress*:
+  - **Correct** (But not following best practice of starting variable name with a lowercase letter)
+  - **Suggested name**: *userAddress*
+- *tad*:
+  - **Correct** (But not following best practice of being descriptive)
+  - **Suggested name**: *totalAmountDue*
+
+**Activity #2:**
+
+Given a list of variables and their assigned values, determine the probable data type of each variable. Write down why you believe each variable is of the chosen data type.
+
+- *temperature = 23.5*
+- *isActive = True*
+- *username = "Charlie_01"*
+- *studentCount = 150*
+- *username1 = Charlie_01*
+
+**Answer:**
+
+- *temperature*: float (Because it's a decimal number)
+- *isActive*: boolean (It's either True or False)
+- *username*: string (Sequence of characters enclosed in quotes)
+- *studentCount*: integer (Whole number without decimal points)
+- *username1*: Not a valid datatype assignment
