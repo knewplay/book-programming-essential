@@ -17,7 +17,6 @@ questions:
           do_pushup
           do_situp
           do_squat
-
 ---
 
 In our daily lives, we encounter many repetitive tasks, whether it's setting an alarm each night or brushing our teeth every morning. Similarly, in programming, there's a concept that allows us to handle repetitive actions efficiently: loops. Dive into this chapter to discover how loops work in the world of coding.
