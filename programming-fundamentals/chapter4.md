@@ -4,18 +4,20 @@ date: "2023-10-10"
 author: "Andrei Guevorkian"
 illustrator: "Dengyijia Liu"
 questions:
-  - ["sandwich-loop", "Write a program where you make 10 identical sandwiches, all consisting of bread, ham and cheese. Prepare each sandwich sequentially using a loop, ensuring that one sandwich is completed before starting the next."]
-  - ["guess-number", "You are thinking of a secret number between 1 and 100, and you ask your friend to guess it. If their guess is too high, you respond with \"Too high\". If their guess is too low, you say \"Too low\". Your friend continues guessing based on your feedback until they correctly guess the secret number.
+  - sandwich-loop: Write a program where you make 10 identical sandwiches, all consisting of bread, ham and cheese. Prepare each sandwich sequentially using a loop, ensuring that one sandwich is completed before starting the next.
+  - guess-number: |
+      You are thinking of a secret number between 1 and 100, and you ask your friend to guess it. If their guess is too high, you respond with "Too high". If their guess is too low, you say "Too low". Your friend continues guessing based on your feedback until they correctly guess the secret number.
 
-  Describe the flow of decisions and responses you would go through until the correct number is identified, as if you were instructing someone to create a flowchart for the game."]
-  - ["workout","Is the following program different from the Activity #2 solution. Explain your answer.
+      Describe the flow of decisions and responses you would go through until the correct number is identified, as if you were instructing someone to create a flowchart for the game.
+  - workout: |
+      Is the following program different from the Activity 2 solution. Explain your answer.
   
-REPEAT 5 times:
-    REPEAT 10 times:
-        do_pushup
-        do_situp
-        do_squat
-"]
+      REPEAT 5 times:
+        REPEAT 10 times:
+          do_pushup
+          do_situp
+          do_squat
+
 ---
 
 In our daily lives, we encounter many repetitive tasks, whether it's setting an alarm each night or brushing our teeth every morning. Similarly, in programming, there's a concept that allows us to handle repetitive actions efficiently: loops. Dive into this chapter to discover how loops work in the world of coding.
