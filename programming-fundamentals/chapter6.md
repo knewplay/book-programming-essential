@@ -20,7 +20,8 @@ In daily tasks, we often break things down into steps: making a sandwich involve
 
 [Anatomy of a Function](#anatomy-of-a-function)
 
-- [Parameters and Arguments](#parameters-and-arguments)
+- [Function Definition and its Parameters](#function-definition-and-its-parameters)
+- [Function Call and its Arguments](#function-call-and-its-arguments)
 - [Return Mechanism](#return-mechanism)
 
 [Designing with Modularity in Mind](#designing-with-modularity-in-mind)
@@ -39,7 +40,7 @@ Imagine a mysterious black box. You don't know what's inside it, but you're give
 
 [Illustration of [industrial machine/BLACK BOX which takes in something and outputs something else](https://content.presentermedia.com/content/clipart/00019000/19074/process_conversion_300_nwm.jpg), and on top of it have [illustration of function](https://res.cloudinary.com/practicaldev/image/fetch/s--4bEYLci3--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/kq34mrtitnuolaulcpfz.png)]
 
-Now, consider an airplane-manufacturing plant. You're outside, observing the massive building, and throughout the day, trucks come in loaded with plane parts. By the end of the day, out rolls a brand-new airplane. This entire plant can be visualized as a single function — you input plane parts, and it outputs a ready-to-fly airplane. 
+Now, consider an airplane-manufacturing plant. You're outside, observing the massive building, and throughout the day, trucks come in loaded with plane parts. By the end of the day, out rolls a brand-new airplane. This entire plant can be visualized as a single function: you input plane parts, and it outputs a ready-to-fly airplane.
 
 [Illustration of building, with plane parts going in, and a plane coming out]
 
@@ -68,11 +69,34 @@ In essence, modularization brings structure and clarity to the programming proce
 
 ## Anatomy of a Function
 
-Explain in pseudocode
+Now that we've seen the overall system, let’s dive deeper to understand one of its core sections: the fuselage assembly area. This is where the main body of the plane gets pieced together.
 
-### Parameters and Arguments
+### Function Definition and its Parameters
 
-I/O
+Imagine a section of the plant where the fuselage is assembled. Before assembly starts, the fuselage-assembly team needs some key details like the size of the airplane (small, medium, large) and the number of windows it should have. Without these details, the fuselage-assembly team cannot do their work. Because remember, we have purposefully separated the plane building process, so one group does not have direct access to what the other groups are doing. They are all working independently. So this information needs to be fed to them from the general manager.
+
+In programming, it's the same story. The programmer (general manager) needs to provide the "input" to the function in order for the function to do its job. And these inputs are known as "parameters".
+
+For our fuselage assembly example, the code might look like this:
+
+```typescript
+FUNCTION AssembleFuselage(size, numberOfWindows)
+    // Here the fuselage gets assembled.
+END FUNCTION
+```
+
+- `FUNCTION`: This is a keyword indicating that we're defining a new function. Think of it as announcing, "Hey, we're setting up a new section of the assembly line here!"
+- `AssembleFuselage`: This is the name of the function, much like naming the "fuselage assembly" section. By using this name in our code, we can instruct the function to start its task, just as a project manager would say *"Hey Fuselage-Assembly team, get to work!"*
+- `(size, numberOfWindows)`: Inside these parentheses, we have our parameters – the essential details the function needs. In this case, the two parameters are:
+- `size`: This parameter expects a value that indicates the size of the airplane, like "small", "medium", or "large".
+- `numberOfWindows`: This parameter expects a number, indicating how many windows the fuselage should have.
+Think of these parameters as the instruction manual or blueprint for the fuselage assembly team. Without these specifics, the team won't know how to proceed.
+- `// Here the fuselage gets assembled.`: This is a comment in the pseudocode. It doesn't affect the functionality but is a note to anyone reading the code (or for our analogy, a reminder for the assembly team) about what happens in this section of the function. In a real code setting, this is where the steps or operations to assemble the fuselage would be detailed.
+- `END FUNCTION`: This keyword indicates the function's conclusion. It's a signal that the process defined in this function is complete. Think of it as the signal that the fuselage assembly job is complete.
+
+The beauty of this approach is that once this function is set up, we can call upon it multiple times with various inputs. If we need a large plane with 20 windows, we simply provide those specific details (arguments) when we call the function. It's like telling the assembly team to start a new project with a new set of blueprints.
+
+### Function Call and its Arguments
 
 ### Return Mechanism
 
