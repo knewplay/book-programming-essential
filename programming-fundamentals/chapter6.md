@@ -85,6 +85,8 @@ FUNCTION AssembleFuselage(size, numberOfWindows)
 END FUNCTION
 ```
 
+Breaking this down:
+
 - `FUNCTION`: This is a keyword indicating that we're defining a new function. Think of it as announcing, "Hey, we're setting up a new section of the assembly line here!"
 - `AssembleFuselage`: This is the name of the function, much like naming the "fuselage assembly" section. By using this name in our code, we can instruct the function to start its task, just as a project manager would say *"Hey Fuselage-Assembly team, get to work!"*
 - `(size, numberOfWindows)`: Inside these parentheses, we have our parameters – the essential details the function needs. In this case, the two parameters are:
@@ -94,11 +96,84 @@ Think of these parameters as the instruction manual or blueprint for the fuselag
 - `// Here the fuselage gets assembled.`: This is a comment in the pseudocode. It doesn't affect the functionality but is a note to anyone reading the code (or for our analogy, a reminder for the assembly team) about what happens in this section of the function. In a real code setting, this is where the steps or operations to assemble the fuselage would be detailed.
 - `END FUNCTION`: This keyword indicates the function's conclusion. It's a signal that the process defined in this function is complete. Think of it as the signal that the fuselage assembly job is complete.
 
+> Note: You might notice that the comment in the pseudocode is indented (moved a few spaces to the right). This indentation is a convention in programming to show that a piece of code belongs to or is "inside" a specific section, in this case, the AssembleFuselage function.
+
 The beauty of this approach is that once this function is set up, we can call upon it multiple times with various inputs. If we need a large plane with 20 windows, we simply provide those specific details (arguments) when we call the function. It's like telling the assembly team to start a new project with a new set of blueprints.
 
 ### Function Call and its Arguments
 
+Now that we've established our fuselage assembly section (the function definition) and know the details it requires (parameters), it's time to put it into action. This is like telling the assembly team to start the assembly based on the specifics we've provided.
+
+In programming, when we want a function to carry out its task, we "call" it. And just like the assembly team needs their specific set of blueprints (size and number of windows) to get started, we provide these specifics to the function when we call it. These specific values that we supply during a function call are known as "arguments."
+
+Let's understand this with a direct application:
+
+```typescript
+AssembleFuselage("medium", 15)
+```
+
+Breaking this down:
+
+- `AssembleFuselage`: We're calling the function by its name, telling it to start the assembly.
+- `("medium", 15)`: Here, we're providing the arguments, i.e. the specific details for this particular assembly job. We want a medium-sized airplane with 15 windows.
+
+By calling the function with these arguments, we're instructing our (virtual) assembly team to construct a medium-sized fuselage with 15 windows.
+
+The beauty of functions is their reusability. Need another airplane? No problem! Just call the function again with different arguments:
+
+```typescript
+AssembleFuselage("large", 20)
+```
+
+Now we're asking for a large airplane with 20 windows. And just like that, with a single line of code (or instruction to our assembly team), we set in motion the entire process to create a different type of airplane.
+
+This is the power of functions: Set up the process once, then initiate it whenever needed with the specifics you desire. Just like having an efficient assembly line that's ready to produce different models of airplanes based on the instructions you provide.
+
 ### Return Mechanism
+
+So far, we've talked about how to create a function and how to call it. In both these discussions, the topic of "input" is involved. But what about the output? If we revisit the basic representation of a function, for every input that we give it, it should give us an output in return.
+
+[Illustration of function core]
+
+Consider a scenario where the fuselage-assembly team finishes their work. Sometimes they might need to simply give a status update like "Fuselage Assembly Complete." Other times, they might need to actually present the finished fuselage for inspection or integration with other parts of the plane.
+
+In programming, the "return" mechanism can handle both these scenarios. Once a function completes its task, it can return a simple message or the result of its operation.
+
+Let's illustrate with two pseudocode examples:
+
+**1. Returning a status message:**
+
+```typescript
+FUNCTION AssembleFuselage(size, numberOfWindows)
+    // The fuselage gets assembled based on the size and number of windows.
+    
+    // Once done, a status message is sent back.
+    RETURN "Fuselage Assembly Complete"
+END FUNCTION
+```
+
+In this case:
+
+- `RETURN`: This keyword indicates that the function is providing an outcome after completing its task.
+- `"Fuselage Assembly Complete"`: This is the message the function returns. It's equivalent to the assembly team announcing their completion.
+
+**2. Returning the actual assembled fuselage:**
+
+```typescript
+FUNCTION AssembleFuselage(size, numberOfWindows)
+    // The fuselage gets assembled based on the size and number of windows.
+    
+    // Once done, the assembled fuselage is returned for further use.
+    RETURN assembledFuselage
+END FUNCTION
+```
+
+In this scenario:
+
+- `RETURN`: Indicates that the function is providing the result of its task.
+- `assembledFuselage`: Represents the finished plane part that's being returned. Think of this as the actual fuselage being presented for inspection or integration.
+
+Whether it's a status message or the finished product, the return mechanism in programming ensures a clear and efficient handoff, just as it would in an airplane assembly line.
 
 ## Designing with Modularity in Mind
 
