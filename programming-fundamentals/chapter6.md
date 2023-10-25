@@ -16,7 +16,7 @@ In daily tasks, we often break things down into steps: making a sandwich involve
 
 [Understanding Functions](#understanding-functions)
 
-[Benefits of Using Functions](#benefits-of-using-functions)
+[Why Modularize?](#why-modularize)
 
 [Anatomy of a Function](#anatomy-of-a-function)
 
@@ -53,19 +53,38 @@ OR Somehow show that the pieces that come in from the trucks, then get distribut
 
 Much like the specialized sections in the airplane-manufacturing plant, functions in programming allow developers to break down complex tasks into smaller, more manageable pieces. This not only makes the code more organized but also easier to debug, maintain, and reuse.
 
-### Benefits of Using Functions
+## Why Modularize?
 
-When I described to you this airplane-manufacturing plant, I hope to have given to you the picture that it is very organized thanks to the different sections. Each section has its own workspace, tools, and materials, ensuring that there's no clutter. When each section is clean and organized, the whole process runs smoother and more efficiently.
+Let's briefly compare the state of the assembly plant without modularity, and then with it. This contrast will set the stage for a deeper understanding of its significance and benefits.
 
-Similarly, in programming, by having separate functions for different tasks, the code is 'cleaner'. It's organized in a way that's easier to read and understand, just like an organized workspace makes it easier to build an airplane.
+### Example Without Modularity
 
-Now imagine that one day, at this airplane-manufacturing plant, a batch of airplane tires were found to be defective. Instead of halting the entire assembly line, the tire section just focuses on addressing that particular issue. Meanwhile, the wings, engines, and other parts continue to be built as usual.
+Imagine an airplane manufacturing plant where there's only one large assembly line, and every part of the airplane is constructed sequentially in this single line:
 
-Similarly, in programming, when there's an issue in a specific part of the program, you can dive into that specific function to fix it, without having to touch the rest of the code. It's easier to maintain, and its easier to pinpoint where changes or fixes need to be made in case of an error.
+1. Crafting the fuselage
+2. Assembling the wings
+3. Integrating the engines
+4. Fitting the landing gears
+5. Installing the cockpit instruments
+6. ... and so forth.
 
-Furthermore, as your program grows and evolves, modifications become inevitable. With a modular structure, updates can be made to one module without disturbing others.
+**Challenges:**
 
-In essence, modularization brings structure and clarity to the programming process. By modularizing tasks and functionalities, we ensure a smoother development experience and pave the way for more robust and maintainable software solutions.
+- If there's a mistake during the crafting of the fuselage, the entire assembly line might need to be paused or adjusted.
+- Distributing tasks among teams is challenging because everything is interconnected in one continuous flow.
+- Introducing a new design or modification, such as a change in wing shape or engine type, would disrupt the entire assembly process.
+
+### Example with Modularity
+
+In a more modular approach, the airplane manufacturing plant has separate assembly lines or stations for each major part.
+
+Each station functions as an independent module. Once all parts are ready, they come together in a final assembly line.
+
+**Advantages:**
+
+- If there's an issue with the fuselage design, it can be addressed without affecting the wing or engine assembly.
+- Tasks can be distributed efficiently among specialized teams.
+- Design modifications or upgrades become simpler. If there's a new wing design, it's adjusted at the wing assembly station without disrupting other stations.
 
 ## Anatomy of a Function
 
@@ -176,8 +195,6 @@ In this scenario:
 Whether it's a status message or the finished product, the return mechanism in programming ensures a clear and efficient handoff, just as it would in an airplane assembly line.
 
 ## Designing with Modularity in Mind
-
-Provide clear example w/o use of functions, and then with the use of functions.
 
 ## Activities
 
