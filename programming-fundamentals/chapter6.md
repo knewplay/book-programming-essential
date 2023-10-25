@@ -196,6 +196,62 @@ Whether it's a status message or the finished product, the return mechanism in p
 
 ## Designing with Modularity in Mind
 
+When constructing an airplane, for the sake of this example, we'll consider that it's primarily made up of a fuselage, wings, engines, and a cockpit.
+
+**Fuselage Assembly:** The department responsible for assembling the fuselage. Parameters like its size and the number of windows are crucial to this process.
+
+```typescript
+FUNCTION AssembleFuselage(fuselageSize, numberOfWindows)
+    // Steps to assemble the fuselage
+    RETURN "Fuselage Assembly Complete"
+END FUNCTION
+```
+
+**Wing Assembly:** The design and structure of the wings are determined by the specific model of the airplane. Different types may necessitate varying wing configurations.
+
+```typescript
+FUNCTION AssembleWings(typeOfWing)
+    // Steps to assemble the chosen type of wing
+    RETURN "Wings Assembly Complete"
+END FUNCTION
+```
+
+**Engine Installation:** The number of engines an airplane carries depends on its size and purpose. A cargo plane might require more engines than a small commercial jet, for instance.
+
+```typescript
+FUNCTION InstallEngines(numberOfEngines)
+    // Steps to install the specified number of engines
+    RETURN "Engine Installation Complete"
+END FUNCTION
+```
+
+**Cockpit Assembly:** The cockpit's electronic systems are standardized across various airplane models. Given this uniformity, assembling the cockpit doesn't require specific input parameters.
+
+```typescript
+FUNCTION AssembleCockpit()
+    // Steps to set up the chosen type of controls
+    RETURN "Cockpit Assembly Complete"
+END FUNCTION
+```
+
+### Assembling the Entire Airplane
+
+With the above modules, the main assembly function would be:
+
+```typescript
+FUNCTION AssembleAirplane(fuselageSize, numberOfWindows, typeOfWing, numberOfEngines)
+    AssembleFuselage(fuselageSize, numberOfWindows)
+    AssembleWings(typeOfWing)
+    InstallEngines(numberOfEngines)
+    AssembleCockpit()
+    RETURN "Airplane Assembly Complete"
+END FUNCTION
+```
+
+> Note: Notice how the call to `AssembleCockpit` did not require any arguments to be passed to the function. This is because `AssembleCockpit` doesn't take any input, and so the parentheses are left empty.
+
+One of the most notable benefits of such a modular design is maintainability. If, for instance, there is an issue or a need for an improvement in the `AssembleWings` function, there's no need to sift through the overarching `AssembleAirplane` function. Instead, one would directly approach the specific function where the problem has occurred, making adjustments and optimizations far more straightforward and efficient. This approach not only reduces errors but also saves significant time during the debugging and improvement processes.
+
 ## Activities
 
 **Activity #1:**
