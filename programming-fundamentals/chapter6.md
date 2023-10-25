@@ -256,8 +256,83 @@ One of the most notable benefits of such a modular design is maintainability. If
 
 **Activity #1:**
 
-have student design functions to complete a large task.  Something they are familiar with and have an intuition for.
+Design functions to complete the task of organizing a birthday party.
+
+**Answer:**
+
+Break down the process of organizing a birthday party into smaller, more manageable functions.
+
+Pseudocode:
+
+```typescript
+FUNCTION SendInvitations(listOfFriends)
+    // Steps to send out invitations to friends on the list
+    RETURN "Invitations Sent"
+END FUNCTION
+
+FUNCTION OrderCake(cakeType, caseSize)
+    // Steps to order a specific type of cake
+    RETURN "Cake Ordered"
+END FUNCTION
+
+FUNCTION DecorateVenue(theme)
+    // Steps to decorate the venue based on the chosen theme
+    RETURN "Venue Decorated"
+END FUNCTION
+
+FUNCTION ArrangeMusic(playlist)
+    // Steps to set up music based on the chosen playlist
+    RETURN "Music Arranged"
+END FUNCTION
+```
+
+Since the question only asked us to "design the functions", this means that we don't need to make the actual function calls and complete the task of actually organizing a birthday party. It's like creating an action plan without carrying out the actions.
 
 **Activity #2:**
 
-Pseudocode of 3 functions, and make functions calls.
+Write pseudocode for the following three functions, and then make function calls to demonstrate their use.
+
+1. Greet the program user by their username.
+2. Display today's date.
+3. Provide a recommendation for a movie based on the users favorite movie.
+
+**Answer:**
+
+Pseudocode:
+
+```typescript
+FUNCTION GreetUser(userName)
+    // Greet the user by name
+    RETURN "Hello, " + userName + "!"
+END FUNCTION
+
+FUNCTION DisplayDate()
+    // Show today's date
+    RETURN todaysDate
+END FUNCTION
+
+FUNCTION RecommendMovie(favoriteMovie)
+    // Suggest a movie for the user to watch based on his favorite movie
+    RETURN topRecommendation
+END FUNCTION
+```
+
+The function calls of these function would look like this:
+
+```typescript
+GreetUser("John")
+DisplayDate()
+RecommendMovie("Sherlock Holmes")
+```
+
+If you run this code, you will get something like this:
+
+```text
+Hello, John!
+
+2023-10-26
+
+Murder on the Orient Express
+```
+
+It is important to note that the function `DisplayDate` does not need any input in order to display today's date. THat is why, in its function definition, we do not include any parameters, and similarly, when calling the function, we do not pass any arguments.
