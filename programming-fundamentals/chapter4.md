@@ -141,7 +141,7 @@ This logic conveys that for two days, you'll ride a roller coaster, and then dec
 
 ### Activity #1
 
-Recall the humanoid robot from [Chapter 2 Activity #2](./chapter2.md#activity-2). With your understanding of loops from this chapter, describe the commands you would provide to ensure the robot walks across the room. Consider visualizing your solution with a flowchart diagram.
+Recall the humanoid robot from [Chapter 2 Activity #2](./chapter2#activity-2). With your understanding of loops from this chapter, describe the commands you would provide to ensure the robot walks across the room. Consider visualizing your solution with a flowchart diagram.
 
 ### Answer
 
