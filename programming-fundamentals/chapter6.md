@@ -4,8 +4,27 @@ date: "2023-10-26"
 author: "Andrei Guevorkian"
 illustrator: "Dengyijia Liu"
 questions:
-- birthday-song: 
-Happy Birthday song is repetitive. have a function call for the "Happy birthday to you" line. Write the happy birthday song in pseudocode.
+  - birthday-song: |
+      The "Happy Birthday" song has a repetitive structure. Given the function provided below:
+
+      FUNCTION HappyBDay()
+          DISPLAY "Happy birthday to you!"
+      END FUNCTION    
+
+      Construct a program that utilizes this function to display the complete "Happy Birthday" song for an individual named John.
+
+  - party-food: |
+      You're hosting a party and are using a robot to serve food to your guests. Design a function that can accept multiple inputs, ensuring each guest receives the appropriate food. Consider things like the food preference of the guest, as well as any dietary restrictions.
+
+      Complete the function definition provided below. Afterwards, demonstrate its usage by calling it three times with details for three different guests.
+
+      FUNCTION ServeFood(guestName, , )
+          // Determine the food to serve based on the guest's name, preference, and any dietary restrictions
+          // Once the appropriate food is selected, the robot serves it to the guest
+          RETURN "Food served to " + guestName
+      END FUNCTION
+  - user-profile: |
+      Design a function named DisplayProfile(userName, userAge) that takes in the user's name and age and returns a profile summary.
 ---
 
 In daily tasks, we often break things down into steps: making a sandwich involves selecting ingredients, assembling, and finally eating. Similarly, in programming, we modularize our code using "functions", turning complex tasks into manageable, step-by-step processes.
@@ -191,6 +210,8 @@ In this scenario:
 
 - `RETURN`: Indicates that the function is providing the result of its task.
 - `assembledFuselage`: Represents the finished plane part that's being returned. Think of this as the actual fuselage being presented for inspection or integration.
+
+> Note: Again, notice the indentation of the body of the functions. This indicates that those lines of code are inside the function, and it visually separates the body of the function from the rest of the code, making the code structure clear and readable.
 
 Whether it's a status message or the finished product, the return mechanism in programming ensures a clear and efficient handoff, just as it would in an airplane assembly line.
 
