@@ -73,6 +73,7 @@ author: "Andrei Guevorkian"
 
 ### [Chapter 7: Putting It All Together](./programming-fundamentals/chapter7.md)
 
+- Introducing arithmetic operations.
 - Combining all the concepts.
 - Designing a more complex program.
 - Activity: Designing programs combining all concepts from previous chapters.
