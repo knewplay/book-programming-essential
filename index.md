@@ -58,7 +58,7 @@ author: "Andrei Guevorkian"
 - Recognizing when and why to use loops.
 - Activity: Representing a task you do every day that's repetitive in code.
 
-### Chapter 5: Modularizing Your Code with Functions
+### [Chapter 5: Modularizing Your Code with Functions](./programming-fundamentals/chapter5)
 
 - The significance of modularizing code.
 - Understanding functions.
