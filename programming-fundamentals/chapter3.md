@@ -84,9 +84,9 @@ Pseudocode is a method to design and represent algorithms without the strict str
 
 An integral part of pseudocode, and programming in general, is decision-making. This is achieved using specific patterns or templates known as constructs.
 
-> Note: In programming, a "construct" is a fundamental piece or feature of the language that serves a building block. Constructs provide a way to introduce structure, repetition, decision-making, and more into our code.
+> Note: In programming, a "construct" is a fundamental piece or feature of the language that serves as a building block. Constructs provide a way to introduce structure, repetition, decision-making, and more into our code.
 
-For decision-making, common constructs are **if**, **else**, and **else if** (or 'else-if' or 'elif').
+For decision-making, common constructs are **if**, **else**, and **else if** ("else-if" or "elif" are also used).
 
 ### Comparison Operators
 
@@ -101,6 +101,14 @@ Before delving into the pseudocode, let's familiarize ourselves with some basic 
 - **==** : Equal to.
   - 7 == 7 is a true statement because both sides of the operator have the same value.
   - 5 == 8 is a false statement because 5 is not equal to 8.
+- **<=** : Less than or equal to.
+  - 4 <= 5 is a true statement because 4 is less than 5.
+  - 7 <= 7 is also a true statement because both numbers are equal.
+  - 9 <= 6 is a false statement because 9 is not less than nor equal to 6.
+- **>=** : Greater than or equal to.
+  - 6 >= 3 is a true statement because 6 is greater than 3.
+  - 8 >= 8 is also a true statement because both numbers are equal.
+  - 4 >= 10 is a false statement because 4 is neither greater than nor equal to 10.
 
 > Note: We use "==" to check for equality in most programming languages instead of "=". The reason for this will become clearer later when you dive into actual coding. For now, remember to use "==" when making comparisons.
 
@@ -151,11 +159,13 @@ With this understanding, we can now delve into real-world problems like deciding
 
 ## Activities
 
-**Activity #1:**
+We will be answering these questions using pseudocode.
+
+### Activity #1
 
 Write a program that evaluates a number to determine if it's positive, negative, or zero.
 
-**Possible Answer #1:**
+### Possible Answer #1
 
 We start by taking an input:
 
@@ -210,7 +220,7 @@ END IF
 
 By outlining logic in pseudocode, transitioning to actual coding in any programming language becomes a smoother process, as the core logic remains consistent.
 
-**Possible Answer #2:**
+### Possible Answer #2
 
 Without going into all the steps, here is the final pseudocode.
 
@@ -228,7 +238,7 @@ END IF
 
 There are multiple ways to solve most problems, depending on the order in which you evaluate the conditions.
 
-**Activity #2:**
+### Activity #2
 
 Suppose you're organizing an outdoor event. You'll proceed if:
 
@@ -237,7 +247,7 @@ Suppose you're organizing an outdoor event. You'll proceed if:
 
 Write corresponding pseudocode for such a program.
 
-**Answer:**
+### Answer
 
 **Evaluating Rain Forecast:**
 We want to check if it's NOT raining. Here's how we can understand the NOT raining condition:
@@ -256,13 +266,13 @@ IF NOT raining
 We want the temperature to be between 18°C and 30°C. This condition can be represented as:
 
 ```typescript
-temperature > 18 AND temperature < 30
+temperature >= 18 AND temperature <= 30
 ```
 
 Combining both conditions, our complete decision-making pseudocode becomes:
 
 ```typescript
-IF NOT raining AND (temperature > 18 AND temperature < 30):
+IF NOT raining AND (temperature >= 18 AND temperature <= 30):
     proceed_with_event
 ELSE
     reschedule_event
