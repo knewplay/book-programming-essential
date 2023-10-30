@@ -12,7 +12,6 @@ questions:
       END FUNCTION    
 
       Construct a program that utilizes this function to display the complete "Happy Birthday" song for an individual named John.
-
   - party-food: |
       You're hosting a party and are using a robot to serve food to your guests. Design a function that can accept multiple inputs, ensuring each guest receives the appropriate food. Consider things like the food preference of the guest, as well as any dietary restrictions.
 
