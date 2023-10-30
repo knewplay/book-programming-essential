@@ -44,14 +44,14 @@ author: "Andrei Guevorkian"
 - How to convert a problem into a flowchart.
 - Activity: Designing a flowchart for a simple daily task.
 
-### [Chapter 3: Logic and Decision Making](./programming-fundamentals/chapter3.md)
+### [Chapter 3: Logic and Decision Making](./programming-fundamentals/chapter3)
 
 - Understanding conditions.
 - Introducing the if, else, and elif constructs.
 - Introduction to logical operators.
 - Activity: Creating simple decision-based programs.
 
-### [Chapter 4: Repetition and Iteration](./programming-fundamentals/chapter4.md)
+### [Chapter 4: Repetition and Iteration](./programming-fundamentals/chapter4)
 
 - Understanding loops.
 - Understanding the structure of a loop.
