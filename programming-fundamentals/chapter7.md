@@ -39,12 +39,38 @@ When you think of math, the first things that probably come to mind are the basi
 - **\*** : Multiplication: `4 * 6 = 24`
 - **/** : Division: `12 / 3 = 4`
 
-## Example 1: Celsius to Fahrenheit Converter
+## Example Problems
 
-## Example 2: Even or Odd
+In this section, we're going to tackle a set of example problems that will take us back through everything we've learned so far. We'll start with simpler examples and gradually ramp up the challenge.
 
-## Example 3: A Basic Calculator
+### Example 1: Celsius to Fahrenheit Converter
 
-## Example 4: Something with looping
+**Question:** Write a function that converts Celsius temperature to Fahrenheit. After creating this function, demonstrate its use by providing a test case.
+
+**Answer:**
+
+To solve this, it's important to understand the relationship between Celsius and Fahrenheit. To convert Celsius to Fahrenheit, you multiply the Celsius temperature by 9/5 and then add 32. In mathematical terms, the formula is: **Fahrenheit = (Celsius × 9/5) + 32**.
+
+**Pseudocode:**
+
+```typescript
+FUNCTION ConvertToFahrenheit(celsius):
+    fahrenheit = celsius * 9/5 + 32
+    RETURN fahrenheit
+```
+
+If we want to test this function, we could call it and pass it an argument, like so:
+
+```typescript
+ConvertToFahrenheit(10)
+```
+
+On execution, the call `ConvertToFahrenheit(10)` should yield a result of `50` Fahrenheit.
+
+### Example 2: Even or Odd
+
+### Example 3: A Basic Calculator
+
+### Example 4: Something with looping
 
 ## Activities
