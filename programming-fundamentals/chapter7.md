@@ -32,6 +32,13 @@ Now that we've gone over everything from breaking down problems to using data ty
 
 ## Arithmetic Operations in Programming
 
+When you think of math, the first things that probably come to mind are the basic arithmetic operations. In programming, these operations are just as essential. Let's dive into each of them:
+
+- **\+** : Addition: `3 + 5 = 8`
+- **\-** : Subtraction: `9 - 4 = 5`
+- **\*** : Multiplication: `4 * 6 = 24`
+- **/** : Division: `12 / 3 = 4`
+
 ## Example 1: Celsius to Fahrenheit Converter
 
 ## Example 2: Even or Odd
