@@ -12,7 +12,7 @@ questions:
       q3 text.
 ---
 
-In this chapter, we'll harness the power of foundational arithmetic operations and functions to solve more comprehensive problems. By the end, you'll confidently weave together these basics to construct effective pseudocode solutions for a range of challenges.
+Now that we've gone over everything from breaking down problems to using data types, loops, and functions, it's time to put all these pieces together. In this chapter, we're going to combine everything you've learned and build a complete program.
 
 ## Table of Contents
 
