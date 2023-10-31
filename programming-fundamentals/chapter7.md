@@ -18,7 +18,7 @@ In this chapter, we'll harness the power of foundational arithmetic operations a
 
 [Arithmetic Operations in Programming](#arithmetic-operations-in-programming)
 
-[Example 1: Celsius to Farenheit Converter](#example-1-celsius-to-farenheit-converter)
+[Example 1: Celsius to Fahrenheit Converter](#example-1-celsius-to-fahrenheit-converter)
 
 [Example 2: Even or Odd](#example-2-even-or-odd)
 
@@ -32,7 +32,7 @@ In this chapter, we'll harness the power of foundational arithmetic operations a
 
 ## Arithmetic Operations in Programming
 
-## Example 1: Celsius to Farenheit Converter
+## Example 1: Celsius to Fahrenheit Converter
 
 ## Example 2: Even or Odd
 
