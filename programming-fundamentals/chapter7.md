@@ -192,6 +192,27 @@ At the start of the program, the `Feedback` function is defined, ensuring its av
 
 Now why does the program exit the loop once the correct number is guessed? That's because if the user guesses that the secret number is `7`, then when it's time to reevaluate the loops' condition of `guess != secret_number`, we will have `guess = 7` and `secret_number = 7`, meaning that the statement `guess != secret_number` is False (since "*7 is not equal to 7*" is False).
 
-**Function call:**
+**Example of Execution:**
+
+Imagine a user interacting with the program:
+
+```text
+Guess the secret number between 1 and 10.
+Enter your guess:
+3
+Your guess is too low.
+Enter your guess:
+8
+Your guess is too high.
+Enter your guess:
+7
+Congratulations! You've guessed the secret number.
+```
+
+In this execution:
+
+- The user first guessed the number 3, which is too low. The program provides feedback accordingly.
+- The user then guessed the number 8, which is too high. Again, the program provides feedback.
+- Finally, the user guessed 7, which matches the secret number. The program congratulates the user, and the loop exits.
 
 ## Activities
