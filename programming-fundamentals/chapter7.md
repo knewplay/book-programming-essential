@@ -24,7 +24,7 @@ Now that we've gone over everything from breaking down problems to using data ty
 
 [Example 3: A Basic Calculator](#example-3-a-basic-calculator)
 
-[Example 4: Something with loopings](#example-4-something-with-looping)
+[Example 4: Guess the Secret Number](#example-4-guess-the-secret-number)
 
 [Activities](#activities)
 
@@ -153,15 +153,44 @@ In the given pseudocode, we first engage the user by prompting them to provide t
 
 If the user selects "+", we compute the sum of the two numbers and store it in the `result` variable, which is then promptly printed to show the user their answer. Similarly, for "-", we subtract `number2` from `number1`, again saving and displaying the result using the same variable. For multiplication (denoted by "*"), the two numbers are multiplied, and for division ("/"), `number1` is divided by `number2`, with the outcomes stored in `result` and shown to the user. Lastly, if the operation input is anything other than the given four choices, a message is printed to inform the user that their chosen operation is not recognized.
 
-### Example 4: Something with looping
+### Example 4: Guess the Secret Number
 
 **Question:**
 
+Write a program where you store a secret number between 1 and 10 in a variable, and the user has to guess it. The user should be prompted to guess the number until they get it right. Create a function named Feedback to provide feedback on the user's guess. The function should take in the user's guess and the secret number as inputs and return whether the guess is too high, too low, or correct.
+
 **Answer:**
+
+We'll set a predefined secret number, and then use a `WHILE` loop to repeatedly ask the user for their guess. If they guess correctly, we'll exit the loop and congratulate them. If not, the `Feedback` function will provide feedback on their guess, and we'll prompt them to try again.
 
 **Pseudocode:**
 
+```typescript
+FUNCTION Feedback(guess, secret_number):
+    IF guess < secret_number:
+        RETURN "Your guess is too low."
+    ELSE IF guess > secret_number:
+        RETURN "Your guess is too high."
+    ELSE:
+        RETURN "Congratulations! You've guessed the secret number."
+
+secret_number = 7
+guess = 0
+
+PRINT "Guess the secret number between 1 and 10."
+
+WHILE guess != secret_number:
+    PRINT "Enter your guess:"
+    guess = INPUT
+    message = Feedback(guess, secret_number)
+    PRINT message
+```
+
 **Explanation:**
+
+At the start of the program, the `Feedback` function is defined, ensuring its availability for later use. This doesn't mean the function runs immediately; it simply tells the computer what to do when the function is called later. The actual execution begins with setting the `secret_number` and initializing `guess`. Initializing `guess` with a value, in this case 0, is essential because it provides a starting value that ensures the `WHILE` loop condition is checked properly on the first run. Without initializing `guess`, the program wouldn't know what to compare `secret_number` to during the initial check, which could lead to an error or unintended behavior. The program then prompts the user to guess the secret number. The `WHILE` loop comes into play next; it keeps asking the user for their guess as long as the guess doesn't match the secret number. Within this loop, the `Feedback` function provides hints based on the user's input: if the guess is low, it informs the user to guess higher, and if it's high, it advises guessing lower. Once the correct number is guessed, the loop is exited, and the user is congratulated.
+
+Now why does the program exit the loop once the correct number is guessed? That's because if the user guesses that the secret number is `7`, then when it's time to reevaluate the loops' condition of `guess != secret_number`, we will have `guess = 7` and `secret_number = 7`, meaning that the statement `guess != secret_number` is False (since "*7 is not equal to 7*" is False).
 
 **Function call:**
 
