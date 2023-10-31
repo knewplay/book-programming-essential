@@ -111,6 +111,22 @@ Running the above code, `IsEvenOrOdd(7)` should output `Odd`.
 
 ### Example 3: A Basic Calculator
 
+**Question:**
+
+**Answer:**
+
+**Explanation:**
+
+**Function call:**
+
 ### Example 4: Something with looping
+
+**Question:**
+
+**Answer:**
+
+**Explanation:**
+
+**Function call:**
 
 ## Activities
