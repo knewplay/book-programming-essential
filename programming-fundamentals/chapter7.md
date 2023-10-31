@@ -113,17 +113,53 @@ Running the above code, `IsEvenOrOdd(7)` should output `Odd`.
 
 **Question:**
 
+Write a program (no need for a function) that prompts the user for two numbers and then for an operation (+, -, *, /). Compute the result based on the given operation.
+
 **Answer:**
+
+We'll be collecting two numbers and an operation from the user. After receiving the inputs, we'll determine which arithmetic operation to perform using conditional statements and then display the result.
+
+**Pseudocode:**
+
+```typescript
+PRINT "Enter first number: "
+number1 = INPUT
+PRINT "Enter second number: "
+number2 = INPUT
+PRINT "Enter operation (+, -, *, /): "
+operation = INPUT
+
+IF operation == "+":
+    result = number1 + number2
+    PRINT result
+ELIF operation == "-":
+    result = number1 - number2
+    PRINT result
+ELIF operation == "*":
+    result = number1 * number2
+    PRINT result
+ELIF operation == "/":
+    result = number1 / number2
+    PRINT result
+ELSE:
+    PRINT "Unrecognized operation"
+```
 
 **Explanation:**
 
-**Function call:**
+Absolutely! Here's the detailed explanation written as a cohesive paragraph:
+
+In the given pseudocode, we first engage the user by prompting them to provide two numbers and an arithmetic operation. After printing a message asking for the first number, we store the user's input in a variable called `number1`. We follow the same process for the second number, saving it in `number2`. Moving on, we then ask the user to choose an arithmetic operation, and their choice is stored in the `operation` variable. With all our inputs gathered, we use conditional statements to decide which calculation to perform.
+
+If the user selects "+", we compute the sum of the two numbers and store it in the `result` variable, which is then promptly printed to show the user their answer. Similarly, for "-", we subtract `number2` from `number1`, again saving and displaying the result using the same variable. For multiplication (denoted by "*"), the two numbers are multiplied, and for division ("/"), `number1` is divided by `number2`, with the outcomes stored in `result` and shown to the user. Lastly, if the operation input is anything other than the given four choices, a message is printed to inform the user that their chosen operation is not recognized.
 
 ### Example 4: Something with looping
 
 **Question:**
 
 **Answer:**
+
+**Pseudocode:**
 
 **Explanation:**
 
