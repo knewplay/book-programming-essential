@@ -59,6 +59,12 @@ FUNCTION ConvertToFahrenheit(celsius):
     RETURN fahrenheit
 ```
 
+**Explanation:**
+
+For the `ConvertToFahrenheit` function, the name itself gives away its purpose: to convert a given temperature from Celsius to Fahrenheit. Inside the parentheses, we have a parameter named `celsius`, which is the input temperature we want to convert. Within the function, we use a variable named `fahrenheit` to store the result of our conversion. The math behind this conversion is done using the formula `celsius * 9/5 + 32`, a standard way to change Celsius to Fahrenheit. After the calculation, the function then provides the converted temperature using the `RETURN` statement. Essentially, this function takes in a Celsius value, performs the necessary calculations, and then hands back the Fahrenheit equivalent.
+
+**Function call:**
+
 If we want to test this function, we could call it and pass it an argument, like so:
 
 ```typescript
@@ -68,6 +74,40 @@ ConvertToFahrenheit(10)
 On execution, the call `ConvertToFahrenheit(10)` should yield a result of `50` Fahrenheit.
 
 ### Example 2: Even or Odd
+
+**Question:** Design a function to identify whether a given integer is even or odd. Create the solution using loops, and afterwards, demonstrate the function with a test case.
+
+**Answer:**
+
+To figure out if a number is even or odd using loops, we'll subtract 2 from the number repeatedly until it becomes less than 2. If the result is 0, then the number is even; otherwise, it's odd.
+
+**Pseudocode:**
+
+```typescript
+FUNCTION IsEvenOrOdd(number):
+    WHILE number >= 2:
+        number = number - 2
+    IF number == 0:
+        RETURN "Even"
+    ELSE:
+        RETURN "Odd"
+```
+
+**Explanation:**
+
+Think of it like this: if you had 7 apples and you kept giving 2 away at a time, you'd be left with 1 apple. Any time you have 1 apple left (or any number not evenly divisible by 2), that means you started with an odd number. On the other hand, if you kept giving away 2 apples at a time and ended up with none left, you had an even number of apples to start with.
+
+In our loop, we kept subtracting 2 until the number became less than 2. If, after all the subtractions, the number is 0, that means the original number was even. If it's not 0, then it's surely 1. And that's why in our "else" condition, we can confidently say the number is odd.
+
+**Function call:**
+
+To test our function:
+
+```typescript
+IsEvenOrOdd(7)
+```
+
+Running the above code, `IsEvenOrOdd(7)` should output `Odd`.
 
 ### Example 3: A Basic Calculator
 
