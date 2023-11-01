@@ -56,6 +56,7 @@ To solve this, it's important to understand the relationship between Celsius and
 FUNCTION ConvertToFahrenheit(celsius):
     fahrenheit = celsius * 9/5 + 32
     RETURN fahrenheit
+END FUNCTION
 ```
 
 **Explanation:**
@@ -90,6 +91,7 @@ FUNCTION IsEvenOrOdd(number):
         RETURN "Even"
     ELSE:
         RETURN "Odd"
+END FUNCTION
 ```
 
 **Explanation:**
@@ -172,6 +174,7 @@ FUNCTION Feedback(guess, secret_number):
         RETURN "Your guess is too high."
     ELSE:
         RETURN "Congratulations! You've guessed the secret number."
+END FUNCTION
 
 secret_number = 7
 guess = 0
@@ -183,6 +186,7 @@ WHILE guess != secret_number:
     guess = INPUT
     message = Feedback(guess, secret_number)
     PRINT message
+END WHILE
 ```
 
 **Explanation:**
