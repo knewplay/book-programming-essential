@@ -12,19 +12,18 @@ questions:
       Write three separate functions: RectangleArea(length, width), TriangleArea(base, height), and CircleArea(radius). Each function should calculate and return the area for its respective shape.
 ---
 
-Now that we've gone over everything from breaking down problems to using data types, loops, and functions, it's time to put all these pieces together. In this chapter, we're going to combine everything you've learned and solve multiple problems.
+Now that we've gone over everything from breaking down problems to using data types, loops, and functions, it's time to put all these pieces together. In this chapter, we're going to combine everything you've learned and solve various problems.
 
 ## Table of Contents
 
 [Arithmetic Operations in Programming](#arithmetic-operations-in-programming)
 
-[Example 1: Celsius to Fahrenheit Converter](#example-1-celsius-to-fahrenheit-converter)
+[Example Problems](#example-problems)
 
-[Example 2: Even or Odd](#example-2-even-or-odd)
-
-[Example 3: A Basic Calculator](#example-3-a-basic-calculator)
-
-[Example 4: Guess the Secret Number](#example-4-guess-the-secret-number)
+- [Example 1: Celsius to Fahrenheit Converter](#example-1-celsius-to-fahrenheit-converter)
+- [Example 2: Even or Odd](#example-2-even-or-odd)
+- [Example 3: A Basic Calculator](#example-3-a-basic-calculator)
+- [Example 4: Guess the Secret Number](#example-4-guess-the-secret-number)
 
 [Activities](#activities)
 
