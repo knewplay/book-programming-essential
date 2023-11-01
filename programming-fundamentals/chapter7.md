@@ -25,7 +25,7 @@ Now that we've gone over everything from breaking down problems to using data ty
 - [Example 3: A Basic Calculator](#example-3-a-basic-calculator)
 - [Example 4: Guess the Secret Number](#example-4-guess-the-secret-number)
 
-[Activities](#activities)
+[Activity](#activity)
 
 [Questions](#questions)
 
