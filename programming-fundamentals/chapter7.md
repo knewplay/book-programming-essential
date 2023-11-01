@@ -214,4 +214,43 @@ In this execution:
 - The user then guessed the number 8, which is too high. Again, the program provides feedback.
 - Finally, the user guessed 7, which matches the secret number. The program congratulates the user, and the loop exits.
 
-## Activities
+## Activity
+
+In "Chapter 6: Modularizing Your Code with Functions", we explored an airplane manufacturing plant. One of the divisions of this plant is the "Engine Installation".
+
+This division is given the wings of the plane and told how many engines it must install in total.
+
+Design a function that represents the process adopted by the engine installation team.
+
+**Answer:**
+
+```typescript
+FUNCTION InstallEngines(wings, numberOfEngines)
+    enginesInstalled = 0
+    enginesPerWing = numberOfEngines / 2
+
+    WHILE enginesInstalled < numberOfEngines
+        IF enginesInstalled == enginesPerWing + 1
+            switch_to_other_wing
+        install_engine // Steps to install engine
+        enginesInstalled = enginesInstalled + 1
+    END WHILE
+    
+    RETURN "Engine Installation Complete"
+
+END FUNCTION
+```
+
+The `InstallEngines` function models the procedure of attaching engines to an airplane's wings. It accepts two parameters: `wings`, symbolizing the airplane's wings, and `numberOfEngines`, indicating the total number of engines to be installed.
+
+Initially, a counter `enginesInstalled` is set to zero, serving as a tracker for how many engines have been placed. Additionally, `enginesPerWing` calculates the number of engines each wing should ideally hold by dividing the total number of engines by two.
+
+The function then enters a `WHILE` loop, continually installing engines until the desired number, `numberOfEngines`, is met.
+
+Within this loop:
+
+- The program checks if the current iteration, `enginesInstalled`, is equal to half the total number of engines plus one (`enginesPerWing + 1`, which is the same as `numberOfEngines/2 + 1`). This check determines the midpoint in the engine installation process. When the loop reaches this midpoint, it signifies that half of the engines have already been installed on one wing, and it's time to switch to the other wing. The `switch_to_other_wing` action is then executed, although the specific steps of this action aren't detailed in the provided pseudocode.
+- Immediately after the conditional check (and potentially switching wings), the `install_engine` action is executed. This action represents the actual process of installing an engine. Again, the specific steps to "install an engine" are abstracted away in this snippet and are represented by the comment: // Steps to install each engine.
+- Once `install_engine` is executed, the program then increments the `enginesInstalled` counter.
+
+Once the `WHILE` loop is exited, the function confirms the completion of the installation by returning "Engine Installation Complete".
