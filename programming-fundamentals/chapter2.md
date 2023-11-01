@@ -137,16 +137,15 @@ Routine: Getting ready for work in the morning
 
 1. Wake up when the alarm rings.
 2. Turn off the alarm.
-3. Check the weather on the phone.
-4. Decision: Is it raining?
-    - Yes: Decide to wear rain-appropriate attire and carry an umbrella.
-    - No: Proceed with choosing regular attire.
+3. Check the weather.
+4. Put on basic clothing.
 5. Go to the bathroom to brush teeth and wash face.
-6. Choose outfit based on the earlier decision.
-7. Put on clothes.
-8. Make and eat breakfast.
-9. Grab a bag, ensuring the essentials are inside (wallet, keys, phone).
-10. Leave the house to start the commute.
+6. Eat breakfast.
+7. Decision: Is it raining?
+    - Yes: Wear rain-appropriate attire and carry an umbrella.
+    - No: Wear regular attire.
+8. Grab your schoolbag, ensuring the essentials are inside.
+9. Leave the house and head to school.
 
 This sequence lists out the steps and includes a decision-making point regarding the weather, which affects the choice of attire for the day.
 
