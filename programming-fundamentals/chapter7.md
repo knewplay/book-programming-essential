@@ -4,15 +4,15 @@ date: "2023-11-02"
 author: "Andrei Guevorkian"
 illustrator: "Dengyijia Liu"
 questions:
-  - tag1: |
-      q1 text,
-  - tag2: |
-      q2 text.
-  - tag3: |
-      q3 text.
+  - age-classifier: |
+      Create a function that classifies a person based on their age. The function should take an age as a parameter and return whether they're a "Child", "Teen", "Adult", or "Senior". Then, ask the user for their age and use the function to display their age classification.
+  - avg-calc: |
+      Request the user to input three numbers. Compute the average of these numbers and display the result.
+  - area-func: |
+      Write three separate functions: RectangleArea(length, width), TriangleArea(base, height), and CircleArea(radius). Each function should calculate and return the area for its respective shape.
 ---
 
-Now that we've gone over everything from breaking down problems to using data types, loops, and functions, it's time to put all these pieces together. In this chapter, we're going to combine everything you've learned and build a complete program.
+Now that we've gone over everything from breaking down problems to using data types, loops, and functions, it's time to put all these pieces together. In this chapter, we're going to combine everything you've learned and solve multiple problems.
 
 ## Table of Contents
 
