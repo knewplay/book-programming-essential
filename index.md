@@ -58,7 +58,7 @@ author: "Andrei Guevorkian"
 - Recognizing when and why to use loops.
 - Activity: Representing a task you do every day that's repetitive in code.
 
-### Chapter 5: Data Types and Variables
+### [Chapter 5: Data Types and Variables](./programming-fundamentals/chapter5)
 
 - Understanding variables and constants.
 - Delving into basic data types: integers, strings, floats, booleans.
