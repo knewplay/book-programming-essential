@@ -25,7 +25,7 @@ Now that we've gone over everything from breaking down problems to using data ty
 - [Example 3: A Basic Calculator](#example-3-a-basic-calculator)
 - [Example 4: Guess the Secret Number](#example-4-guess-the-secret-number)
 
-[Activity](#activity)
+[Activities](#activities)
 
 [Questions](#questions)
 
@@ -218,7 +218,9 @@ In this execution:
 - The user then guessed the number 8, which is too high. Again, the program provides feedback.
 - Finally, the user guessed 7, which matches the secret number. The program congratulates the user, and the loop exits.
 
-## Activity
+## Activities
+
+**Activity #1:**
 
 In "Chapter 6: Modularizing Your Code with Functions", we explored an airplane manufacturing plant. One of the divisions of this plant is the "Engine Installation".
 
@@ -241,20 +243,60 @@ FUNCTION InstallEngines(wings, numberOfEngines)
     END WHILE
     
     RETURN "Engine Installation Complete"
-
 END FUNCTION
 ```
 
-The `InstallEngines` function models the procedure of attaching engines to an airplane's wings. It accepts two parameters: `wings`, symbolizing the airplane's wings, and `numberOfEngines`, indicating the total number of engines to be installed.
+1. **Function Declaration:** The algorithm starts with the declaration of the `InstallEngines` function. This function models the procedure of attaching engines to an airplane's wings. It accepts two parameters: `wings`, symbolizing the airplane's wings, and `numberOfEngines`, indicating the total number of engines to be installed.
+2. **Initializing Variables:** Initially, a counter `enginesInstalled` is set to zero, serving as a tracker for how many engines have been placed. Additionally, `enginesPerWing` calculates the number of engines each wing should ideally hold by dividing the total number of engines by two.
+3. **WHILE Loop:** The function then enters a `WHILE` loop, continually installing engines until the desired number, `numberOfEngines`, is met.
+    - **Midpoint Check:** The program checks if the current iteration, `enginesInstalled`, is equal to half the total number of engines plus one (`enginesPerWing + 1`, which is the same as `numberOfEngines/2 + 1`). This check determines the midpoint in the engine installation process. When the loop reaches this midpoint, it signifies that half of the engines have already been installed on one wing, and it's time to switch to the other wing. The `switch_to_other_wing` action is then executed, although the specific steps of this action aren't detailed in the provided pseudocode.
+    - **Engine Installation:** Immediately after the conditional check (and potentially switching wings), the `install_engine` action is executed. This action represents the actual process of installing an engine. Again, the specific steps to "install an engine" are abstracted away in this snippet and are represented by the comment: // Steps to install each engine.
+    - **Counter Increment:** Once `install_engine` is executed, the program then increments the `enginesInstalled` counter.
+4. **Function Conclusion:** Once the `WHILE` loop is exited, the function confirms the completion of the installation by returning "Engine Installation Complete".
 
-Initially, a counter `enginesInstalled` is set to zero, serving as a tracker for how many engines have been placed. Additionally, `enginesPerWing` calculates the number of engines each wing should ideally hold by dividing the total number of engines by two.
+**Activity #2:**
 
-The function then enters a `WHILE` loop, continually installing engines until the desired number, `numberOfEngines`, is met.
+A local gym wants to implement a promotional discount for its members based on their age and the duration of their membership. They have the following rules:
 
-Within this loop:
+- Teenagers (younger than 20 years old) who are just about to sign up (0 years of membership) receive a 10% discount.
+- Elderly members (55 years and older) who have been a member of the gym for 5 or more years receive a 15% discount.
 
-- The program checks if the current iteration, `enginesInstalled`, is equal to half the total number of engines plus one (`enginesPerWing + 1`, which is the same as `numberOfEngines/2 + 1`). This check determines the midpoint in the engine installation process. When the loop reaches this midpoint, it signifies that half of the engines have already been installed on one wing, and it's time to switch to the other wing. The `switch_to_other_wing` action is then executed, although the specific steps of this action aren't detailed in the provided pseudocode.
-- Immediately after the conditional check (and potentially switching wings), the `install_engine` action is executed. This action represents the actual process of installing an engine. Again, the specific steps to "install an engine" are abstracted away in this snippet and are represented by the comment: // Steps to install each engine.
-- Once `install_engine` is executed, the program then increments the `enginesInstalled` counter.
+Design a pseudocode algorithm that calculates and displays the eligible discount for a member based on their age and membership duration.
 
-Once the `WHILE` loop is exited, the function confirms the completion of the installation by returning "Engine Installation Complete".
+**Answer:**
+
+```typescript
+FUNCTION CalculateDiscount(age, membershipDuration)
+    discount = 0
+
+    IF age < 20 AND membershipDuration == 0
+        discount = 10
+    ELSE IF age >= 55 AND membershipDuration >= 5
+        discount = 15
+    END IF
+
+    RETURN discount
+END FUNCTION
+
+// Main Program
+PRINT "Enter your age: "
+INPUT age
+
+PRINT "Enter number of years you've been a member: "
+INPUT membershipDuration
+
+discountPercent = CalculateDiscount(age, membershipDuration)
+
+PRINT "You are eligible for a " + discountPercent + "% discount!"
+```
+
+1. **Function Declaration:** The algorithm starts with the declaration of the CalculateDiscount function. This function takes two parameters: the age and membership duration of a gym member.
+2. **Initializing Discount:** Within the function, the discount is initialized to 0%. This ensures that if none of the conditions are met, no discount is given.
+3. **Conditional Checks:**
+    - The first condition checks if the user's age is less than 20 (meaning they're a teenager) AND they have 0 years of membership. If both these conditions are true, the discount is set to 10%.
+    - The next condition, an `ELSE IF`, checks if the user's age is 55 or above (elderly) AND they've been a member for 5 or more years. If both these conditions are satisfied, the discount is set to 15%.
+    - These conditions use the logical AND (`AND`) operator, ensuring that both parts of each condition must be true for the discount to be applied.
+4. **Return Discount:** The function then returns the determined discount value.
+5. **Main Program:** After the function is defined, the main program begins by prompting the user to enter their age followed by the number of years they've been a member of the gym.
+6. **Function Call:** The `CalculateDiscount` function is then called with the provided age and membership duration, and the result is stored in the discountPercent variable.
+7. **Displaying the Result:** Finally, the program displays the discount the user is eligible for using the `PRINT` statement.
