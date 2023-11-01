@@ -44,21 +44,28 @@ author: "Andrei Guevorkian"
 - How to convert a problem into a flowchart.
 - Activity: Designing a flowchart for a simple daily task.
 
-### Chapter 3: Logic and Decision Making
+### [Chapter 3: Logic and Decision Making](./programming-fundamentals/chapter3)
 
 - Understanding conditions.
 - Introducing the if, else, and elif constructs.
 - Introduction to logical operators.
 - Activity: Creating simple decision-based programs.
 
-### Chapter 4: Repetition and Iteration
+### [Chapter 4: Repetition and Iteration](./programming-fundamentals/chapter4)
 
 - Understanding loops.
 - Understanding the structure of a loop.
 - Recognizing when and why to use loops.
 - Activity: Representing a task you do every day that's repetitive in code.
 
-### Chapter 5: Modularizing Your Code with Functions
+### [Chapter 5: Data Types and Variables](./programming-fundamentals/chapter5)
+
+- Understanding variables and constants.
+- Delving into basic data types: integers, strings, floats, booleans.
+- Assigning values and understanding variable scope.
+- Activity: Designing programs that make use of various data types and variables.
+
+### Chapter 6: Modularizing Your Code with Functions
 
 - The significance of modularizing code.
 - Understanding functions.

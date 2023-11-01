@@ -127,32 +127,36 @@ Remember, algorithms and flowcharts are all about breaking down problems and rep
 
 ## Activities
 
-**Activity #1:**
+### Activity #1
+
 Think of a daily routine. Describe the sequence and decision-making process of your routine as if you were guiding someone through the steps. For instance, consider the routine of getting ready for work in the morning.
 
-**Answer:**
+### Answer
+
 Routine: Getting ready for work in the morning
 
 1. Wake up when the alarm rings.
 2. Turn off the alarm.
-3. Check the weather on the phone.
-4. Decision: Is it raining?
-    - Yes: Decide to wear rain-appropriate attire and carry an umbrella.
-    - No: Proceed with choosing regular attire.
+3. Check the weather.
+4. Put on basic clothing.
 5. Go to the bathroom to brush teeth and wash face.
-6. Choose outfit based on the earlier decision.
-7. Put on clothes.
-8. Make and eat breakfast.
-9. Grab a bag, ensuring the essentials are inside (wallet, keys, phone).
-10. Leave the house to start the commute.
+6. Eat breakfast.
+7. Decision: Is it raining?
+    - Yes: Wear rain-appropriate attire and carry an umbrella.
+    - No: Wear regular attire.
+8. Grab your schoolbag, ensuring the essentials are inside.
+9. Leave the house and head to school.
 
 This sequence lists out the steps and includes a decision-making point regarding the weather, which affects the choice of attire for the day.
 
-**Activity #2:** Imagine you have a humanoid robot. This robot can flawlessly execute every command you give but understands only fundamental commands, such as "lift your right foot 5 centimeters" or "turn your head 90 degrees left". It's unable to process abstract or compound actions like "walk forward".
+### Activity #2
+
+Imagine you have a humanoid robot. This robot can flawlessly execute every command you give but understands only fundamental commands, such as "lift your right foot 5 centimeters" or "turn your head 90 degrees left". It's unable to process abstract or compound actions like "walk forward".
 
 You want to instruct the robot to move 30 centimeters forward. Describe in detail the series of commands you would provide to ensure the robot moves the desired distance.
 
-**Answer:**
+### Answer
+
 To instruct the robot to move 30 centimeters forward with each leg, one after another, you would give the following commands:
 
 1. Lift the right foot 5 centimeters.
