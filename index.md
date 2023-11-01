@@ -65,7 +65,7 @@ author: "Andrei Guevorkian"
 - Understanding parameters, arguments, and return mechanisms.
 - Activity: Designing a program using modular components.
 
-### Chapter 6: Organizing Information with Data Structures
+### [Chapter 6: Organizing Information with Data Structures](./programming-fundamentals/chapter6)
 
 - Understanding how to store multiple pieces of data.
 - Introducing concepts like lists and dictionaries.
