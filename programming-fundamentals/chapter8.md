@@ -190,3 +190,24 @@ END WHILE
 Comment on this code. Does it do what it is intended to do? What would you change, if anything?
 
 **Answer:**
+
+The code is close to achieving the goal but falls short due to a common oversight. It's meant to count from 1 to 10, yet it stops at 9. The loop's condition, i < 10, causes it to halt prematurely.
+
+To better understand and catch such issues, it's essential to mentally simulate the program's execution, especially paying attention to edge cases. Let's mentally run the code:
+
+- Start with `i = 1`, the loop runs, and it prints 1.
+- Then `i` becomes 2, and so forth. It's clear that the pattern continues.
+- Fast forward to when `i = 8` and then `i = 9`, everything works as expected.
+- But at `i = 10`, the loop condition `i < 10` is no longer true, so the loop stops, and 10 isn't printed. This is an edge case, i.e. the boundaries of our counting range.
+
+To correct this, we can change the loop's condition to `i <= 10` so that it includes 10 in the count. The revised code looks like this:
+
+```typescript
+i = 1         // Initialize variable i
+WHILE i <= 10
+    PRINT i   // Display i onto the screen
+    i = i + 1 // Increment i by 1
+END WHILE
+```
+
+Now, if you mentally run through the code again, you'll see that it counts all the way up to 10, fixing the original issue and ensuring that the program works as intended.
