@@ -48,6 +48,31 @@ IF x > 10
     PRINT "X is a big number!"
 ```
 
+### Logic Errors
+
+These can be trickier. Logic errors happen when your pseudocode doesn't do what you intend it to do. Here's an example:
+
+**Incorrect Pseudocode:**
+
+```typescript
+IF x < 10
+    PRINT "X is a big number!"
+ELSE
+    PRINT "X is a small number!"
+```
+
+The messages are mixed up! If x is less than 10, it should say that it's a small number.
+
+**Corrected Pseudocode:**
+
+```typescript
+IF x < 10
+    PRINT "X is a small number!"
+ELSE
+    PRINT "X is a big number!"
+```
+
+
 ## Strategies for Identifying Errors
 
 Next, we'll explore strategies for identifying errors in pseudocode. This includes reading the code carefully, understanding the intended outcome, and breaking down the logic step by step to pinpoint where things might be going wrong.
