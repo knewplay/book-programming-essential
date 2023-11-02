@@ -36,6 +36,17 @@ Spotting errors in your code doesn't have to be overwhelming. With a few smart s
 6. **Test with Examples:** Plug in actual values and mentally walk through the steps of your code. This can help you verify whether the logic produces the expected outcome.
 7. **Take a Break:** If you've been staring at your code for hours and can't seem to spot the problem, step away and come back with fresh eyes. It's amazing what a good night's sleep or even a short break can do for your problem-solving abilities. It's like hitting the restart button on your computer; sometimes, the issues just seem to fix themselves.
 
+To illustrate, let's consider a simple piece of pseudocode:
+
+```typescript
+IF temperature > 30
+    PRINT "It's hot outside!"
+ELIF temperature > 20 and temperature < 30
+    PRINT "It's warm outside!"
+ELSE
+    PRINT "It's a cold day."
+```
+
 ## Strategies for Identifying Errors
 
 ## Correcting Errors in Pseudocode
