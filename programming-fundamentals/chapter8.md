@@ -26,6 +26,28 @@ Debugging, or fixing errors, is a huge part of programming, even for experts. It
 
 ## Recognizing Common Errors in Pseudocode
 
+When you're learning a new language, it's normal to make mistakes. Let's take a look at some of the common types of errors you might encounter in writing code:
+
+### Spelling and Syntax Errors
+
+These are the easiest to spot and fix. They happen when you misspell a command or forget to include a necessary part of the code structure. For example:
+
+**Incorrect Pseudocode:**
+
+```typescript
+IF x > 10
+    PRIT "X is a big number!"
+```
+
+Can you spot the mistake?
+
+**Corrected Pseudocode:**
+
+```typescript
+IF x > 10
+    PRINT "X is a big number!"
+```
+
 ## Strategies for Identifying Errors
 
 Next, we'll explore strategies for identifying errors in pseudocode. This includes reading the code carefully, understanding the intended outcome, and breaking down the logic step by step to pinpoint where things might be going wrong.
