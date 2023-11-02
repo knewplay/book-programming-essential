@@ -18,6 +18,10 @@ Debugging, or fixing errors, is a huge part of programming, even for experts. It
 
 [Recognizing Common Errors in Pseudocode](#recognizing-common-errors-in-pseudocode)
 
+- [Spelling and Syntax Errors](#spelling-and-syntax-errors)
+- [Logic Errors](#logic-errors)
+- [Runtime Errors](#runtime-errors)
+
 [Strategies for Identifying Errors](#strategies-for-identifying-errors)
 
 [Correcting Errors in Pseudocode](#correcting-errors-in-pseudocode)
