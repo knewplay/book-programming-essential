@@ -84,7 +84,7 @@ author: "Andrei Guevorkian"
 - Designing a more complex program.
 - Activity: Designing programs combining all concepts from previous chapters.
 
-### Chapter 8: Debugging and Problem Solving
+### [Chapter 8: Debugging and Problem Solving](./programming-fundamentals/chapter8)
 
 - Common errors in programming and how to spot them.
 - Introduction to debugging techniques.
