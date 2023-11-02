@@ -24,8 +24,6 @@ Debugging, or fixing errors, is a huge part of programming, even for experts. It
 
 [Strategies for Identifying Errors](#strategies-for-identifying-errors)
 
-[Correcting Errors in Pseudocode](#correcting-errors-in-pseudocode)
-
 [Activities](#activities)
 
 ## Recognizing Common Errors in Pseudocode
@@ -132,7 +130,5 @@ Using our strategies:
 **Test with Examples:** Trying out specific temperatures like 25 or 15 might not reveal the issue, but testing the boundary values, such as 20 or 30, would highlight the gap.
 
 **Take a Break:** If nothing stands out, a break and a fresh look later might make it obvious that you need to specify what happens at exactly 30 degrees.
-
-## Correcting Errors in Pseudocode
 
 ## Activities
