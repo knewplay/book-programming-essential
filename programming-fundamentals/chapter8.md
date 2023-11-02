@@ -12,3 +12,4 @@ questions:
       q3 text
 ---
 
+In this chapter, we turn our attention to the critical task of identifying and correcting errors in pseudocode. As you sharpen your ability to recognize and resolve these issues, you'll build a stronger foundation in your programming journey.
