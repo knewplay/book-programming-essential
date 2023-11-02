@@ -132,3 +132,33 @@ Using our strategies:
 **Take a Break:** If nothing stands out, a break and a fresh look later might make it obvious that you need to specify what happens at exactly 30 degrees.
 
 ## Activities
+
+**Activitiy #1:**
+
+```typescript
+x = INPUT
+IF x < 10
+    PRINT "x is less than 10"
+ELSE IF x < 5
+    PRINT "x is less than 5"
+ELSE
+    PRINT "x is not less than 10 and 5"
+```
+
+**Answer:**
+
+**Activitiy #2:**
+
+Your friend was asked to write a program that will count numbers from 1 to 10. They wrote the following code:
+
+```typescript
+i = 1         // Initialize variable i
+WHILE i < 10
+    PRINT i   // Display i onto the screen
+    i = i + 1 // Increment i by 1
+END WHILE
+```
+
+Comment on this code. Does it do what it is intended to do? What would you change, if anything?
+
+**Answer:**
