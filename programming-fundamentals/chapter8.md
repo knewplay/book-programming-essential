@@ -28,6 +28,8 @@ Debugging, or fixing errors, is a huge part of programming, even for experts. It
 
 ## Strategies for Identifying Errors
 
+Next, we'll explore strategies for identifying errors in pseudocode. This includes reading the code carefully, understanding the intended outcome, and breaking down the logic step by step to pinpoint where things might be going wrong.
+
 Spotting errors in your code doesn't have to be overwhelming. With a few smart strategies, you can make the process more systematic and manageable. Here's how:
 
 1. **Read Aloud:** Reading your code out loud can sometimes highlight issues that you might not notice while reading silently. If something sounds off, it's worth a closer look.
