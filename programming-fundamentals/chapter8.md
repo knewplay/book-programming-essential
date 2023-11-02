@@ -76,7 +76,7 @@ ELSE
 
 ### Runtime Errors
 
-Runtime errors are like unexpected pitfalls that crop up while your program is running, hence the name "runtime." They can be particularly tricky because your code looks correct at first glance, but when you try to run it, things don't work as expected. For instance:
+Runtime errors are like unexpected pitfalls that crop up while your program is running, hence the name "runtime". They can be particularly tricky because your code looks correct at first glance, but when you try to run it, things don't work as expected. For instance:
 
 **Incorrect Pseudocode:**
 
@@ -147,19 +147,21 @@ ELSE
     PRINT "x is not less than 10 and 5"
 ```
 
-Does it do what it is intended to do? Explain
+Are there any problems with this code? Explain.
 
 **Answer:**
 
-The code your friend wrote does not do what it is intended to do.
+The code your friend wrote doesn't work as intended. To figure out why, we need to test it with a variety of numbers, especially paying attention to the edge cases - the points at which the behavior of the program might change.
 
-When we test the code with a range of values - something above 10, exactly 10, a number between 5 and 10, exactly 5, and something below 5 - we can see how the code behaves and where it falls short.
+Let's run through some numbers:
 
-- x = 12, x = 10: It prints "x is not less than 10 and 5." Which is correct.
-- x = 8 or 5: It prints "x is less than 10," which is correct.
-- x = 3: It still prints "x is less than 10," ignoring the fact that x is also less than 5.
+- **Above 10 (e.g., 12):** It prints "x is not less than 10 and 5". This is correct.
+- **Exactly 10:** It prints "x is not less than 10 and 5". This is correct.
+- **Between 5 and 10 (e.g., 8):** It prints "x is less than 10". This is correct.
+- **Exactly 5:** It prints "x is less than 10". This is correct.
+- **Below 5 (e.g., 3):** It prints "x is less than 10" instead of printing "x is less than 5", which is what we actually want. This is an edge case that the code fails to handle correctly.
 
-The flaw lies in the sequence of the conditions. When we input a number, for example, 3, the program first checks if `x < 10`. Since 3 is indeed less than 10, the program outputs "x is less than 10" and bypasses the subsequent conditions. As a result, the second condition `ELSE IF x < 5` is never executed, which means the program will never print "x is less than 5," even though it's accurate.
+The flaw lies in the sequence of the conditions. When we input a number, for example, 3, the program first checks if `x < 10`. Since 3 is indeed less than 10, the program outputs "x is less than 10" and bypasses the subsequent conditions. As a result, the second condition `ELSE IF x < 5` is never executed, which means the program will never print "x is less than 5", even though it's accurate.
 
 The code should be rearranged so that it checks for the smaller value first. Here's a corrected version:
 
