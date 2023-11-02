@@ -26,6 +26,8 @@ Debugging, or fixing errors, is a huge part of programming, even for experts. It
 
 ## Recognizing Common Errors in Pseudocode
 
+## Strategies for Identifying Errors
+
 Spotting errors in your code doesn't have to be overwhelming. With a few smart strategies, you can make the process more systematic and manageable. Here's how:
 
 1. **Read Aloud:** Reading your code out loud can sometimes highlight issues that you might not notice while reading silently. If something sounds off, it's worth a closer look.
@@ -62,8 +64,6 @@ Using our strategies:
 **Test with Examples:** Trying out specific temperatures like 25 or 15 might not reveal the issue, but testing the boundary values, such as 20 or 30, would highlight the gap.
 
 **Take a Break:** If nothing stands out, a break and a fresh look later might make it obvious that you need to specify what happens at exactly 30 degrees.
-
-## Strategies for Identifying Errors
 
 ## Correcting Errors in Pseudocode
 
