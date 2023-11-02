@@ -72,6 +72,21 @@ ELSE
     PRINT "X is a big number!"
 ```
 
+### Runtime Errors
+
+Runtime errors are like unexpected pitfalls that crop up while your program is running, hence the name "runtime." They can be particularly tricky because your code looks correct at first glance, but when you try to run it, things don't work as expected. For instance:
+
+**Incorrect Pseudocode:**
+
+```typescript
+x = 5
+result = x / 0
+PRINT result
+```
+
+Dividing by zero is something you just can't do—it's like trying to share five cookies with zero friends. It just doesn't work!
+
+By being able to recognize these common errors in pseudocode, you're well on your way to becoming a more efficient and effective programmer. All it takes is some practice.
 
 ## Strategies for Identifying Errors
 
