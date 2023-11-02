@@ -97,7 +97,7 @@ Next, we'll explore strategies for identifying errors in pseudocode. This includ
 Spotting errors in your code doesn't have to be overwhelming. With a few smart strategies, you can make the process more systematic and manageable. Here's how:
 
 1. **Read Aloud:** Reading your code out loud can sometimes highlight issues that you might not notice while reading silently. If something sounds off, it's worth a closer look.
-2. **Check for Completeness:** Go through each line of your pseudocode and ask yourself, "Does this instruction make sense?" and "Is this step complete?" Make sure each part of your pseudocode does exactly what it's supposed to do.
+2. **Check for Completeness and Edge Cases:** Go through each line of your pseudocode and ask yourself, "Does this instruction make sense?" and "Is this step complete?". Ensure that you've considered the boundary values or extreme scenarios, making sure each part of your pseudocode does exactly what it's supposed to do.
 3. **Work Backwards:** Start from the end of your code and trace your way back. This can provide a fresh perspective and help you spot errors that you might have missed initially.
 4. **Simplify Complex Statements:** Break down any long or complex instructions into smaller, manageable pieces. This can make errors more apparent and easier to fix.
 5. **Peer Review:** A second pair of eyes can often catch mistakes you've missed. Ask a friend or classmate to look over your code and provide feedback.
@@ -119,7 +119,7 @@ Using our strategies:
 
 **Read Aloud:** "*If temperature is greater than 30, print 'It's hot outside!' Else if temperature is greater than 20 and less than 30, print 'It's warm outside!' Otherwise, print 'It's cold outside.'*" Reading this aloud, everything seems in place at first glance.
 
-**Check for Completeness:** Each statement appears to address different temperature ranges, but is there any range missing? What happens if the temperature is exactly 30?
+**Check for Completeness and Edge Cases:** Each statement appears to address different temperature ranges, but is there any range missing? What happens if the temperature is exactly 20? What about 30?
 
 **Work Backwards:** Starting from the `ELSE` statement, which captures temperatures 20 and below, one might trace back to ensure all other possibilities are correctly addressed.
 
