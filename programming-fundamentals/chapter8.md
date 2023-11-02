@@ -133,7 +133,9 @@ Using our strategies:
 
 ## Activities
 
-**Activitiy #1:**
+**Activity #1:**
+
+Your friend wrote the following code:
 
 ```typescript
 x = INPUT
@@ -145,9 +147,35 @@ ELSE
     PRINT "x is not less than 10 and 5"
 ```
 
+Does it do what it is intended to do? Explain
+
 **Answer:**
 
-**Activitiy #2:**
+The code your friend wrote does not do what it is intended to do.
+
+When we test the code with a range of values - something above 10, exactly 10, a number between 5 and 10, exactly 5, and something below 5 - we can see how the code behaves and where it falls short.
+
+- x = 12, x = 10: It prints "x is not less than 10 and 5." Which is correct.
+- x = 8 or 5: It prints "x is less than 10," which is correct.
+- x = 3: It still prints "x is less than 10," ignoring the fact that x is also less than 5.
+
+The flaw lies in the sequence of the conditions. When we input a number, for example, 3, the program first checks if `x < 10`. Since 3 is indeed less than 10, the program outputs "x is less than 10" and bypasses the subsequent conditions. As a result, the second condition `ELSE IF x < 5` is never executed, which means the program will never print "x is less than 5," even though it's accurate.
+
+The code should be rearranged so that it checks for the smaller value first. Here's a corrected version:
+
+```typescript
+x = INPUT
+IF x < 5
+    PRINT "x is less than 5"
+ELSE IF x < 10
+    PRINT "x is less than 10"
+ELSE
+    PRINT "x is not less than 10 and 5"
+```
+
+Now, the code checks if `x` is less than 5 first. If it's not, then it checks if it's less than 10. This way, all possibilities are covered correctly.
+
+**Activity #2:**
 
 Your friend was asked to write a program that will count numbers from 1 to 10. They wrote the following code:
 
