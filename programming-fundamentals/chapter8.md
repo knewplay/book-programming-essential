@@ -4,12 +4,14 @@ date: "2023-11-08"
 author: "Andrei Guevorkian"
 illustrator: "Dengyijia Liu"
 questions:
-  - tag1: |
-      q1 text
-  - tag2: |
-      q2 text
-  - tag3: |
-      q3 text
+  - top-three: |
+      In your opinion, what are the 3 most commonly used debugging techniques?
+  - robot-move: |
+      Imagine you have a little robot that can move forward or backward when you press one of two buttons. The "Forward" button should make the robot step forward, and the "Backward" button should make it step backward. Write down the steps (in pseudocode) that describe what the robot should do, inside an infinite loop, so that it continuously responds to the button presses. Then, can you introduce a bug on purpose so that when you press the "Backward" button, the robot moves forward instead?
+  - describe-weather: |
+      Imagine you're programming your very own weather robot. Your task is to write a function that checks the temperature and tells you how the weather feels. The function will take one input: the temperature in degrees Celsius. It will return a description of the weather, which can be "Too Hot," "Hot," "Just Perfect," "Cold," or "Too Cold." You get to decide what temperature ranges correspond to each of these descriptions.
+
+      Can you write this function? Remember to name your function and clearly define the temperature ranges for each description.
 ---
 
 Debugging, or fixing errors, is a huge part of programming, even for experts. It's as crucial as writing the code itself. In this chapter, we'll concentrate on spotting and fixing errors in pseudocode, a key skill for any coder. As you improve at this, you'll become a more adept and efficient programmer.
