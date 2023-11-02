@@ -47,6 +47,22 @@ ELSE
     PRINT "It's a cold day."
 ```
 
+Using our strategies:
+
+**Read Aloud:** "*If temperature is greater than 30, print 'It's hot outside!' Else if temperature is greater than 20 and less than 30, print 'It's warm outside!' Otherwise, print 'It's cold outside.'*" Reading this aloud, everything seems in place at first glance.
+
+**Check for Completeness:** Each statement appears to address different temperature ranges, but is there any range missing? What happens if the temperature is exactly 30?
+
+**Work Backwards:** Starting from the `ELSE` statement, which captures temperatures 20 and below, one might trace back to ensure all other possibilities are correctly addressed.
+
+**Simplify Complex Statements:** The `ELIF` statement uses 'and', a logical operator that requires both conditions to be true. Make sure this logic correctly includes all intended values, especially at the boundaries.
+
+**Peer Review:** A classmate might not spot the boundary issue immediately, but a discussion could lead to questions about temperatures at the exact transition points.
+
+**Test with Examples:** Trying out specific temperatures like 25 or 15 might not reveal the issue, but testing the boundary values, such as 20 or 30, would highlight the gap.
+
+**Take a Break:** If nothing stands out, a break and a fresh look later might make it obvious that you need to specify what happens at exactly 30 degrees.
+
 ## Strategies for Identifying Errors
 
 ## Correcting Errors in Pseudocode
