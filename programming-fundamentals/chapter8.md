@@ -11,7 +11,7 @@ questions:
   - describe-weather: |
       Imagine you're programming your very own weather robot. Your task is to write a function that checks the temperature and tells you how the weather feels. The function will take one input: the temperature in degrees Celsius. It will return a description of the weather, which can be "Too Hot," "Hot," "Just Perfect," "Cold," or "Too Cold." You get to decide what temperature ranges correspond to each of these descriptions.
 
-      Can you write this function? Remember to name your function and clearly define the temperature ranges for each description.
+      Remember to name your function and clearly define the temperature ranges for each description.
 ---
 
 Debugging, or fixing errors, is a huge part of programming, even for experts. It's as crucial as writing the code itself. In this chapter, we'll concentrate on spotting and fixing errors in pseudocode, a key skill for any coder. As you improve at this, you'll become a more adept and efficient programmer.
@@ -94,7 +94,7 @@ By being able to recognize these common errors in pseudocode, you're well on you
 
 ## Strategies for Identifying Errors
 
-Next, we'll explore strategies for identifying errors in pseudocode. This includes reading the code carefully, understanding the intended outcome, and breaking down the logic step by step to pinpoint where things might be going wrong.
+Next, we'll explore strategies for identifying errors in your code.
 
 Spotting errors in your code doesn't have to be overwhelming. With a few smart strategies, you can make the process more systematic and manageable. Here's how:
 
@@ -127,7 +127,7 @@ Using our strategies:
 
 **Simplify Complex Statements:** The `ELIF` statement uses 'and', a logical operator that requires both conditions to be true. Make sure this logic correctly includes all intended values, especially at the boundaries.
 
-**Peer Review:** A classmate might not spot the boundary issue immediately, but a discussion could lead to questions about temperatures at the exact transition points.
+**Peer Review:** A classmate might not spot the boundary issue immediately, but a discussion could lead to questions about temperatures at the edge cases.
 
 **Test with Examples:** Trying out specific temperatures like 25 or 15 might not reveal the issue, but testing the boundary values, such as 20 or 30, would highlight the gap.
 
@@ -161,7 +161,7 @@ Let's run through some numbers:
 - **Exactly 10:** It prints "x is not less than 10 and 5". This is correct.
 - **Between 5 and 10 (e.g., 8):** It prints "x is less than 10". This is correct.
 - **Exactly 5:** It prints "x is less than 10". This is correct.
-- **Below 5 (e.g., 3):** It prints "x is less than 10" instead of printing "x is less than 5", which is what we actually want. This is an edge case that the code fails to handle correctly.
+- **Below 5 (e.g., 3):** It prints "x is less than 10" instead of printing "x is less than 5", which is what we actually want. This is a case that the code fails to handle correctly.
 
 The flaw lies in the sequence of the conditions. When we input a number, for example, 3, the program first checks if `x < 10`. Since 3 is indeed less than 10, the program outputs "x is less than 10" and bypasses the subsequent conditions. As a result, the second condition `ELSE IF x < 5` is never executed, which means the program will never print "x is less than 5", even though it's accurate.
 
