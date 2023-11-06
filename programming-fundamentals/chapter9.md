@@ -60,8 +60,6 @@ This variable clearly represents the player's score.
 
 > Note: In our made up pseudocode programming language, we have function names follow the `P`ascal`C`ase notation, and variables follow either camel`C`ase or snake`_`case, making sure to stay consistent throughout your code.
 
-### 
-
 
 ## Code Structure and Formatting
 
