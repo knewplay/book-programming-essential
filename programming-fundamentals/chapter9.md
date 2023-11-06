@@ -24,6 +24,8 @@ When writing code, it's important not just to make it work, but also to make it 
 
 [Activities](#activities)
 
+[Questions](#questions)
+
 ## Some Review
 
 - Function naming (capitalization, descriptiveness)
