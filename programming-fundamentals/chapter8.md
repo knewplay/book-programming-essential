@@ -28,6 +28,8 @@ Debugging, or fixing errors, is a huge part of programming, even for experts. It
 
 [Activities](#activities)
 
+[Questions](#questions)
+
 ## Recognizing Common Errors in Pseudocode
 
 When you're learning a new language, it's normal to make mistakes. Let's take a look at some of the common types of errors you might encounter in writing code:
