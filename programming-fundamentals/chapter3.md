@@ -12,7 +12,7 @@ questions:
 
       Write pseudocode to determine whether the plant should be watered or not.
   - alarm: |
-      "You're building an alarm system for your home. The alarm should sound if:
+      You're building an alarm system for your home. The alarm should sound if:
 
       - A window or door is opened.
       - The system is armed.
@@ -101,6 +101,9 @@ Before delving into the pseudocode, let's familiarize ourselves with some basic 
 - **==** : Equal to.
   - 7 == 7 is a true statement because both sides of the operator have the same value.
   - 5 == 8 is a false statement because 5 is not equal to 8.
+- **!=** : Not equal to.
+  - 5 != 8 is a true statement because 5 is indeed not equal to 8.
+  - 7 != 7 is a false statement because 7 is equal to 7.
 - **<=** : Less than or equal to.
   - 4 <= 5 is a true statement because 4 is less than 5.
   - 7 <= 7 is also a true statement because both numbers are equal.

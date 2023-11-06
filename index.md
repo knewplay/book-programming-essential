@@ -78,13 +78,14 @@ author: "Andrei Guevorkian"
 - Introducing concepts like lists and dictionaries.
 - Activity: Designing programs using data structures. For example, a simple shopping list manager, a book catalogue (books have a title, an author and a date of publication), a student gradebook (displaying students' grade and calculating an average), etc.
 
-### Chapter 7: Putting It All Together
+### [Chapter 7: Putting It All Together](./programming-fundamentals/chapter7)
 
+- Introducing arithmetic operations.
 - Combining all the concepts.
 - Designing a more complex program.
 - Activity: Designing programs combining all concepts from previous chapters.
 
-### Chapter 8: Debugging and Problem Solving
+### [Chapter 8: Debugging and Problem Solving](./programming-fundamentals/chapter8)
 
 - Common errors in programming and how to spot them.
 - Introduction to debugging techniques.
