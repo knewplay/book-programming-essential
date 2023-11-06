@@ -12,7 +12,7 @@ questions:
 
       Write pseudocode to determine whether the plant should be watered or not.
   - alarm: |
-      "You're building an alarm system for your home. The alarm should sound if:
+      You're building an alarm system for your home. The alarm should sound if:
 
       - A window or door is opened.
       - The system is armed.
