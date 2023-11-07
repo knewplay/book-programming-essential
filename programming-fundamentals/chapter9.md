@@ -20,6 +20,12 @@ When writing code, it's important not just to make it work, but also to make it 
 
 [Code Structure and Formatting](#code-structure-and-formatting)
 
+- [Spacing and Indentation](#spacing-and-indentation)
+- [Organizing Variables](#organizing-variables)
+- [Logical Segmentation](#logical-segmentation)
+- [Avoiding Deep Nesting](#avoiding-deep-nesting)
+- [Avoiding Repetition with Functions](#avoiding-repetition-with-functions)
+
 [Commenting Properly](#commenting-properly)
 
 [Activities](#activities)
@@ -60,10 +66,17 @@ This variable clearly represents the player's score.
 
 > Note: In our made up pseudocode programming language, we have function names follow the `P`ascal`C`ase notation, and variables follow either camel`C`ase or snake`_`case, making sure to stay consistent throughout your code.
 
-
 ## Code Structure and Formatting
 
-- Spacing around a code block (variables are together, can glance at the code and notice them)(space around a function, while loop, if-else block,)
+### Spacing and Indentation
+
+### Organizing Variables
+
+### Logical Segmentation
+
+### Avoiding Deep Nesting
+
+### Avoiding Repetition with Functions
 
 ## Commenting Properly
 
