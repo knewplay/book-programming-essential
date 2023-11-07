@@ -98,7 +98,7 @@ author: "Andrei Guevorkian"
 - Commenting and documentation.
 - Activity: Rewriting a given messy code snippet to make it clean and readable.
 
-### Chapter 10: Exploring Further
+### [Chapter 10: Exploring Further](./programming-fundamentals/chapter10)
 
 - Introduction to more advanced topics: databases, web development, mobile apps.
 - How to stay updated in the ever-evolving world of programming.
