@@ -1,6 +1,6 @@
 ---
 title: "Chapter 9: Best Practices and Readability"
-date: "2023-11-08"
+date: "2023-11-07"
 author: "Andrei Guevorkian"
 illustrator: "Dengyijia Liu"
 questions:
