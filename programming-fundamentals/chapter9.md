@@ -144,6 +144,38 @@ END IF
 
 ### Using Functions to Reduce Repetition
 
+Just like we don't want to repeat the same story over and over again, we don't want to write the same code repeatedly. If you're doing the same thing in multiple places, consider making a function for it:
+
+```typescript
+// Instead of this
+IF conditionA
+    AddSugar()
+    AddFlour()
+    Mix()
+END IF
+
+IF conditionB
+    AddSugar()
+    AddFlour()
+    Mix()
+END IF
+
+// Do this
+FUNCTION MakeMixture()
+    AddSugar()
+    AddFlour()
+    Mix()
+END FUNCTION
+
+IF conditionA
+    MakeMixture()
+END IF
+
+IF conditionB
+    MakeMixture()
+END IF
+```
+
 ## Commenting Properly
 
 ## Activities
