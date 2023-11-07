@@ -106,6 +106,20 @@ All the "ingredients" are listed at the top, so it's clear what we need to bake 
 
 ### Logical Segmentation
 
+When writing a story, we use paragraphs to separate ideas; in coding, we use blank lines to break up our code into sections. Each part does something different, like setting up the game, playing a round, or ending the game:
+
+```typescript
+FUNCTION PlayGame()
+    SetupGame()
+
+    WHILE not gameOver
+        PlayRound()
+    END WHILE
+    
+    EndGame()
+END FUNCTION
+```
+
 ### Avoiding Deep Nesting
 
 ### Avoiding Repetition with Functions
