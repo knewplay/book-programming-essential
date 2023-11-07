@@ -154,12 +154,14 @@ Just like we don't want to repeat the same story over and over again, we don't w
 IF conditionA
     AddSugar()
     AddFlour()
+    AddEggs()
     Mix()
 END IF
 
 IF conditionB
     AddSugar()
     AddFlour()
+    AddEggs()
     Mix()
 END IF
 
@@ -167,6 +169,7 @@ END IF
 FUNCTION MakeMixture()
     AddSugar()
     AddFlour()
+    AddEggs()
     Mix()
 END FUNCTION
 
