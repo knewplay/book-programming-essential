@@ -88,6 +88,22 @@ Notice how the actions inside the for loop (adding water and steeping the tea) a
 
 ### Organizing Variables
 
+Think of variables like ingredients in a recipe. You want to lay them all out before you start cooking. By grouping related variables at the start, you make your "recipe" easier to follow. Here's an example:
+
+```typescript
+FUNCTION BakeCake()
+    eggs = 3
+    sugar = "1 cup"
+    flour = "2 cups"
+    
+    MixIngredients(eggs, sugar, flour)
+    PourBatter()
+    Bake()
+END FUNCTION
+```
+
+All the "ingredients" are listed at the top, so it's clear what we need to bake the cake.
+
 ### Logical Segmentation
 
 ### Avoiding Deep Nesting
