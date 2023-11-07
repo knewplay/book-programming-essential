@@ -65,7 +65,7 @@ author: "Andrei Guevorkian"
 - Assigning values and understanding variable scope.
 - Activity: Designing programs that make use of various data types and variables.
 
-### [Chapter 6: Organizing Information with Data Structures](./programming-fundamentals/chapter6)
+### [Chapter 6: Modularizing Your Code with Functions](./programming-fundamentals/chapter6)
 
 - The significance of modularizing code.
 - Understanding functions.
