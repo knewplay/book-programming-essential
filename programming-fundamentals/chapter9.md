@@ -28,6 +28,9 @@ When writing code, it's important not just to make it work, but also to make it 
 
 [Commenting Properly](#commenting-properly)
 
+- [Bad Commenting Examples](#bad-commenting-examples)
+- [Good Commenting Examples](#good-commenting-examples)
+
 [Activities](#activities)
 
 [Questions](#questions)
@@ -177,6 +180,46 @@ END IF
 ```
 
 ## Commenting Properly
+
+While not strictly part of the code's functionality, comments are part of the overall structure. Use them to explain why you're doing something, not what you're doing (which should be clear from the code itself). Over-commenting with obvious information can clutter the code, while under-commenting can leave readers puzzled.
+
+### Bad Commenting Examples
+
+```typescript
+// Bad: States the obvious
+counter = 0 // Set counter to zero
+
+// Bad: Explains 'how' instead of 'why', which should be evident from the code
+FUNCTION addNumbers(a, b)
+    // Add a and b and return the sum
+    RETURN a + b
+END FUNCTION
+
+// Bad: Comment is redundant because the code is self-explanatory
+IF temperature >= 100
+    // If temperature is greater than or equal to 100, print 'It's very hot!'
+    PRINT "It's very hot!"
+END IF
+```
+
+### Good Commenting Examples
+
+```typescript
+// Good: Explains why a specific value is chosen
+maxLoginAttempts = 3 // Limit attempts to prevent brute force attacks
+
+// Good: Describes the purpose of a complex function
+FUNCTION calculateOptimalPath()
+    // Finds the quickest route through the network.
+    ...
+END FUNCTION
+
+// Good: Clarifies the reason behind a particular logic choice
+IF temperature < 0
+    // Check for sub-zero temperatures to trigger the anti-freeze protocol
+    activateAntiFreeze()
+END IF
+```
 
 ## Activities
 
