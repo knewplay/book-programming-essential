@@ -24,7 +24,7 @@ When writing code, it's important not just to make it work, but also to make it 
 - [Organizing Variables](#organizing-variables)
 - [Logical Segmentation](#logical-segmentation)
 - [Avoiding Deep Nesting](#avoiding-deep-nesting)
-- [Avoiding Repetition with Functions](#avoiding-repetition-with-functions)
+- [Using Functions to Reduce Repetition](#using-functions-to-reduce-repetition)
 
 [Commenting Properly](#commenting-properly)
 
@@ -122,7 +122,27 @@ END FUNCTION
 
 ### Avoiding Deep Nesting
 
-### Avoiding Repetition with Functions
+When we write stories, if we have too many stories within stories, it can become confusing. Similarly, in programming, having too many loops or conditions inside of each other (nested) can make code hard to follow. Try to keep things simple:
+
+```typescript
+// Try to avoid this
+IF conditionA
+    IF conditionB
+        IF conditionC
+            // Code here is deeply nested 
+            //and harder to read.
+        END IF
+    END IF
+END IF
+
+
+// Better approach
+IF conditionA AND conditionB AND conditionC
+    // Code here is easier to understand.
+END IF
+```
+
+### Using Functions to Reduce Repetition
 
 ## Commenting Properly
 
