@@ -262,4 +262,39 @@ With the ingredients and steps laid out clearly, anyone reading this code will u
 
 **Activity #2:**
 
+Here’s a long piece of code that repeats the same steps several times. Can you create a function to avoid repetition and make the code cleaner?
+
+```typescript
+Display("Welcome, playerone!")
+// ...
+// 10 more lines of code for setting up the game for user "playerone". 
+// These might include initializing scores, setting positions, etc.
+
+Display("Welcome, zombieXZ!")
+// ...
+// Same 10 lines of code for setting up the game for user "zombieXZ" 
+
+Display("Welcome, IronHeart007!")
+// ...
+// Same 10 lines of code for setting up the game for user "IronHeart007"
+```
+
 **Answer:**
+
+We want to make a function that handles the setup process for a player. This way, we can call the same function for all players without repeating those 11 (the `PRINT` as well as the 10 other lines) lines of code. Here's how you might structure that function and call it for all players:
+
+```typescript
+FUNCTION SetUpGame(player)
+    Display("Welcome, " + player + "!")
+    // ...
+    // 10 more lines of code for setting up the game for a player
+    // These might include initializing scores, setting positions, etc.
+END FUNCTION
+
+// Call the function for each player
+SetUpGame("playerone");
+SetUpGame("zombieXZ");
+SetUpGame("IronHeart007")
+```
+
+This setup not only simplifies your code, making it easier to read and maintain, but also makes your game setup more flexible. If you wanted to add 100 more players or change the setup process, you'd only need to update it in one place.
