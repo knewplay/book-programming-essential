@@ -225,7 +225,40 @@ END IF
 
 **Activity #1:**
 
+Here’s a snippet of code where everything is jumbled together. Can you reorganize it using proper spacing and indentation?
+
+```typescript
+FUNCTION MakePizza(topping1,topping2)
+dough = 'wheat'
+AddToPan(dough)
+AddToPan(topping1)
+AddToPan(topping2)
+ovenTemp = 475
+Bake(ovenTemp)
+END FUNCTION
+```
+
 **Answer:**
+
+When making a pizza in code, just like in the kitchen, organization is key. You gather your ingredients, prepare your dough, add the toppings, and finally, bake your pizza to perfection. Let's take this step-by-step approach to our `MakePizza` function:
+
+```typescript
+FUNCTION MakePizza(topping1,topping2)
+    // Prepare the base ingredients
+    dough = 'wheat'
+    ovenTemp = 475
+    
+    // Start the pizza-making process
+    AddToPan(dough)
+    AddToPan(topping1)
+    AddToPan(topping2)
+    
+    // Bake the pizza at the desired temperature
+    Bake(ovenTemp)
+END FUNCTION
+```
+
+With the ingredients and steps laid out clearly, anyone reading this code will understand the process of making a pizza. The comments provide additional context, making the function accessible even for those who might be new to coding.
 
 **Activity #2:**
 
