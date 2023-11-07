@@ -68,7 +68,23 @@ This variable clearly represents the player's score.
 
 ## Code Structure and Formatting
 
+How you structure and format your code can greatly influence how easy it is to read and maintain. Here's how to keep your code looking neat and organized:
+
 ### Spacing and Indentation
+
+Just like paragraphs in a story, code needs to be organized with proper spacing and indentation to tell the computer (and our friends) what steps to follow and in what order. Indentation helps to show which pieces of code are connected. For example, everything inside a loop should be indented one level deeper:
+
+```typescript
+FUNCTION PrepareTea(numOfGuests)
+    i = 0
+    WHILE i < numOfGuests:
+        AddWater()
+        SteepTea()
+    END WHILE
+END FUNCTION
+```
+
+Notice how the actions inside the for loop (adding water and steeping the tea) are indented, showing they are part of the looping action.
 
 ### Organizing Variables
 
