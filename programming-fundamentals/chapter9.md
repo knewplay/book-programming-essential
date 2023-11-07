@@ -4,12 +4,12 @@ date: "2023-11-08"
 author: "Andrei Guevorkian"
 illustrator: "Dengyijia Liu"
 questions:
-  - q1-tag: |
-      Q1 text
-  - q2-tag: |
-      Q2 text
-  - q3-tag: |
-      Q3 text
+  - function-use: |
+      When might you choose to create a function in your code instead of writing out the steps each time? Can you think of an example from a game or an app?
+  - commenting: |
+      3. What's the difference between a comment that is helpful and one that is unnecessary? Provide examples.
+  - logical-segmentation: |
+      What does "logical segmentation" mean in the context of writing code, and why is it helpful?
 ---
 
 When writing code, it's important not just to make it work, but also to make it readable and maintainable for others (and your future self). This chapter will guide you through the best practices to achieve clean, understandable code.
