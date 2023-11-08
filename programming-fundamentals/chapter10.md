@@ -11,3 +11,43 @@ questions:
   - q3-tag: |
         q3-text
 ---
+
+
+## Table of Contents
+
+[Introduction to More Advanced Topics](#introduction-to-more-advanced-topics)
+
+- [Artificial Intelligence](#artificial-intelligence)
+- [Cybersecurity](#cybersecurity)
+- [Databases](#databases)
+- [Game Development](#game-development)
+- [Mobile Apps](#mobile-apps)
+- [Robotics](#robotics)
+- [The Cloud](#the-cloud)
+- [Web Development](#web-development)
+
+[Learning Resources](#learning-resources)
+
+[Staying Current: The Programmer’s Growth](#staying-current-the-programmers-growth)
+
+## Introduction to More Advanced Topics
+
+### Artificial Intelligence
+
+### Cybersecurity
+
+### Databases
+
+### Game Development
+
+### Mobile Apps
+
+### Robotics
+
+### The Cloud
+
+### Web Development
+
+## Learning Resources
+
+## Staying Current: The Programmer’s Growth
