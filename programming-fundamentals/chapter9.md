@@ -7,7 +7,7 @@ questions:
   - function-use: |
       When might you choose to create a function in your code instead of writing out the steps each time? Can you think of an example from a game or an app?
   - commenting: |
-      3. What's the difference between a comment that is helpful and one that is unnecessary? Provide examples.
+      What's the difference between a comment that is helpful and one that is unnecessary? Provide examples.
   - logical-segmentation: |
       What does "logical segmentation" mean in the context of writing code, and why is it helpful?
 ---
@@ -67,7 +67,7 @@ playerScore = 0
 
 This variable clearly represents the player's score.
 
-> Note: In our made up pseudocode programming language, we have function names follow the `P`ascal`C`ase notation, and variables follow either camel`C`ase or snake`_`case, making sure to stay consistent throughout your code.
+> Note: In our made-up pseudocode programming language, we have function names follow the PascalCase notation (e.g. `StartGame()`), and variables follow either camelCase (e.g. `loginAttempts`) or snake_case (e.g. `login_attempts`). Whichever naming convention you decide to use, make sure to stay consistent with it throughout your code.
 
 ## Code Structure and Formatting
 
