@@ -193,7 +193,7 @@ While not strictly part of the code's functionality, comments are part of the ov
 counter = 0 // Set counter to zero
 
 // Bad: Explains 'how' instead of 'why', which should be evident from the code
-FUNCTION addNumbers(a, b)
+FUNCTION AddNumbers(a, b)
     // Add a and b and return the sum
     RETURN a + b
 END FUNCTION
@@ -201,7 +201,7 @@ END FUNCTION
 // Bad: Comment is redundant because the code is self-explanatory
 IF temperature >= 100
     // If temperature is greater than or equal to 100, print 'It's very hot!'
-    PRINT "It's very hot!"
+    Print("It's very hot!")
 END IF
 ```
 
@@ -212,7 +212,7 @@ END IF
 maxLoginAttempts = 3 // Limit attempts to prevent brute force attacks
 
 // Good: Describes the purpose of a complex function
-FUNCTION calculateOptimalPath()
+FUNCTION CalculateOptimalPath()
     // Finds the quickest route through the network.
     ...
 END FUNCTION
@@ -220,7 +220,7 @@ END FUNCTION
 // Good: Clarifies the reason behind a particular logic choice
 IF temperature < 0
     // Check for sub-zero temperatures to trigger the anti-freeze protocol
-    activateAntiFreeze()
+    ActivateAntiFreeze()
 END IF
 ```
 
