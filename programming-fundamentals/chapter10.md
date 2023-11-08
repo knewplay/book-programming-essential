@@ -12,6 +12,7 @@ questions:
         q3-text
 ---
 
+With a solid foundation in programming basics, you're ready to peek into more complex and exciting areas. This chapter will give you a glimpse into advanced fields where programming is making a big impact, inviting you to consider your next steps in the programming landscape.
 
 ## Table of Contents
 
@@ -19,11 +20,9 @@ questions:
 
 - [Artificial Intelligence](#artificial-intelligence)
 - [Cybersecurity](#cybersecurity)
-- [Databases](#databases)
 - [Game Development](#game-development)
 - [Mobile Apps](#mobile-apps)
 - [Robotics](#robotics)
-- [The Cloud](#the-cloud)
 - [Web Development](#web-development)
 
 [Learning Resources](#learning-resources)
@@ -36,15 +35,11 @@ questions:
 
 ### Cybersecurity
 
-### Databases
-
 ### Game Development
 
 ### Mobile Apps
 
 ### Robotics
-
-### The Cloud
 
 ### Web Development
 
