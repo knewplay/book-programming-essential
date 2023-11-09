@@ -66,6 +66,44 @@ END FUNCTION
 
 This little snippet shows how AI uses predefined rules to decide what to do next. It's not actually learning or thinking; it's simply following its programming to try and win the game. And while this is a simple example, real-world AI systems can be incredibly complex, using thousands or millions of rules to do things like translating languages or predicting the weather.
 
+However, when most people talk about AI, they actually mean "Machine Learning", or "ML". The key word here is "learning"; the machine can improve its performance over time by learning from the data collected.
+
+Here's a simple way to visualize how a computer could learn to tell the difference between cats and dogs using pseudocode:
+
+```typescript
+FUNCTION learnFromPhotos(photoCollection)
+    REPEAT FOR EACH photo in photoCollection
+        IF photo is labeled 'cat'
+            Teach computer features of a cat
+        ELSE IF photo is labeled 'dog'
+            Teach computer features of a dog
+        END IF
+    END REPEAT
+END FUNCTION
+
+FUNCTION guessAnimal(newPhoto)
+    IF newPhoto matches more features of 'cat'
+        RETURN 'This is probably a cat'
+    ELSE
+        RETURN 'This is probably a dog'
+    END IF
+END FUNCTION
+```
+
+Here's a very brief summary to review the distinction between AI and ML:
+
+**Traditional AI:**
+
+- Uses hard-coded rules.
+- Does not learn from data.
+- Makes decisions based on the given rules.
+
+**Machine Learning:**
+
+- Learns from data using algorithms.
+- Can improve its performance over time as it is exposed to more data.
+- Makes decisions based on patterns it has learned from the data.
+
 ### Cybersecurity
 
 ### Game Development
