@@ -66,23 +66,25 @@ END FUNCTION
 
 This little snippet shows how AI uses predefined rules to decide what to do next. It's not actually learning or thinking; it's simply following its programming to try and win the game. And while this is a simple example, real-world AI systems can be incredibly complex, using thousands or millions of rules to do things like translating languages or predicting the weather.
 
-However, when most people talk about AI, they actually mean "Machine Learning", or "ML". The key word here is "learning"; the machine can improve its performance over time by learning from the data collected.
+However, when most people talk about AI, they actually mean "Machine Learning", or "ML", which is a subset of AI. In other words, all ML is AI, but not all AI is ML.
+
+The key word in ML is "learning", i.e. the machine can improve its performance over time by learning from the data collected.
 
 Here's a simple way to visualize how a computer could learn to tell the difference between cats and dogs using pseudocode:
 
 ```typescript
-FUNCTION learnFromPhotos(photoCollection)
+FUNCTION LearnFromPhotos(photoCollection)
     REPEAT FOR EACH photo in photoCollection
         IF photo is labeled 'cat'
-            Teach computer features of a cat
+            LearnFeatures(cat)
         ELSE IF photo is labeled 'dog'
-            Teach computer features of a dog
+            LearnFeatures(dog)
         END IF
     END REPEAT
 END FUNCTION
 
-FUNCTION guessAnimal(newPhoto)
-    IF newPhoto matches more features of 'cat'
+FUNCTION GuessAnimal(newPhoto)
+    IF newPhoto "matches more features" of 'cat'
         RETURN 'This is probably a cat'
     ELSE
         RETURN 'This is probably a dog'
@@ -90,7 +92,9 @@ FUNCTION guessAnimal(newPhoto)
 END FUNCTION
 ```
 
-Here's a very brief summary to review the distinction between AI and ML:
+the features would be things like the shape of the ears, the size of the animal, or the type of fur, and the computer would learn to recognize these features through algorithms that adjust based on whether their predictions are right or wrong. As the computer goes through more and more photos, it gets better at figuring out which features are most important for telling cats and dogs apart.
+
+In summary:
 
 **Traditional AI:**
 
