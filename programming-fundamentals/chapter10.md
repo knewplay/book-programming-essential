@@ -62,9 +62,11 @@ END FUNCTION
 
 This little snippet shows how AI uses predefined rules to decide what to do next. It's not actually learning or thinking; it's simply following its programming to try and win the game. And while this is a simple example, real-world AI systems can be incredibly complex, using thousands or millions of rules to do things like translating languages or predicting the weather.
 
-However, when most people talk about AI, they are often referring to "Machine Learning" (ML), which is a specific subset of AI. The key aspect of ML is "learning," which means the machine improves over time by learning from data. The critical factor here is that the machine is provided with labeled data—this is like giving the machine a filled-out quiz to study from, so it knows what the correct answers (or classifications) should be.
+However, when most people talk about AI, they are often referring to "Machine Learning" (ML), which is a specific subset of AI. The key aspect of ML is the 'L', which is "Learning," which means the machine improves over time by learning from data. The more the data, the faster the learning. For example, imagine [intuitive example for teens]....
 
-In ML, we give the computer examples of labeled data, such as pictures that are already tagged as 'cat' or 'dog'. The machine uses these examples to learn the distinctive features of each animal.
+The critical factor here is that the machine is provided with labeled data. This is like giving the machine a filled-out quiz to study from, so it knows what the correct answers (or classifications) should be. As a concrete example, say we are writing a program that will determine if it sees a cat or a dog in an image. In that case, we'd give the computer examples of labeled data, such as pictures that are already tagged as 'cat' or 'dog'. The machine uses these examples to learn the distinctive features of each animal.
+
+[Illustration of 4 images, with checkbox under it saying Cat [] Dog [✓]. This show that we are training the program with labeled data]
 
 Here's a simplified pseudocode example of how a machine could learn from labeled photos to tell the difference between cats and dogs:
 
