@@ -148,9 +148,22 @@ function CheckPassword(inputPassword)
 END function
 
 // Example of calling the function with a user's input
-userPassword = INPUT "Enter your password: "
+Print("Enter your password: ")
+userPassword = INPUT
 CheckPassword(userPassword)
 ```
+
+The pseudocode starts by setting the correct password and initializing an attempt counter. The loop allows the user to enter a password up to three times. If the password is correct, the loop breaks, and the user gains access. If the password is incorrect, it prompts the user to try again until the maximum number of attempts is reached.
+
+Now in reality, passwords are not stored in plain text like in the simplified pseudocode example. Storing passwords in plain text is highly insecure as it makes them easily accessible to anyone who can breach the database, including hackers. Instead, secure systems use a process called hashing to store passwords.
+
+Hashing transforms your password into a scrambled string of characters, known as a hash. This is done using a hash function, a special algorithm that takes any input text (like a password) and produces a unique hash. Importantly, hashing is a one-way process: converting a password into a hash is straightforward, but reversing a hash back to the original password is extremely difficult, if not impossible.
+
+Here’s how it works in practice: when you create a password on a website, the system hashes your password and stores this hash. Later, when you log in, the system hashes the password you enter and compares it to the stored hash. If the two hashes match, your login is successful.
+
+This method of storing passwords as hashes increases security. If someone were to access the database, they would only find the hashes, not the actual passwords. Without the ability to reverse these hashes into original passwords, the stolen data is much less useful to a potential attacker.
+
+Employing hashing is a crucial cybersecurity practice, as it significantly enhances the protection of user data, ensuring that even in the case of a data breach, users’ actual passwords remain undisclosed.
 
 ### Game Development
 
