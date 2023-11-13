@@ -71,8 +71,6 @@ For instance, imagine a music streaming app that suggests new songs and artists 
 
 A critical aspect of ML is that it relies on labeled data. This is like giving the machine a completed quiz to study from, so it knows what the correct answers (or classifications) should be. As a concrete example, say we are writing a program that will determine if it sees a cat or a dog in an image. In that case, we'd give the computer examples of labeled data, such as pictures that are already tagged as 'cat' or 'dog'. The machine uses these examples to learn the distinctive features of each animal.
 
-[Illustration of 4 images, with checkbox under it saying Cat [] Dog [✓]. This show that we are training the program with labeled data]
-
 Here's a simplified pseudocode example of how a machine could learn from labeled photos to tell the difference between cats and dogs:
 
 ```typescript
