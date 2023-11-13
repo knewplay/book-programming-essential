@@ -42,21 +42,22 @@ Very simply, AI is about rules and algorithms that help computers perform tasks 
 For example, think of a simple AI that plays tic-tac-toe:
 
 ```typescript
-FUNCTION PlayTicTacToe(board)
-    WHILE "empty space on the board exists" == True
-        IF move == "lead to victory"
+function PlayTicTacToe(board)
+    while "empty space on the board exists" == True
+        if move == "lead to victory"
             // If AI can win with this move, take it
             MAKE move
             RETURN
-        ELSE IF move == "block opponent victory"
+        else if move == "block opponent victory"
             // If AI can block the opponent's victory, do it
             MAKE move
             RETURN
-    END FOR
+        END if
+    END while
 
     // If neither winning nor blocking, take a random free space
     MAKE move "randomly in a free space"
-END FUNCTION
+END function
 
 ```
 
@@ -71,21 +72,23 @@ The critical factor here is that the machine is provided with labeled data. This
 Here's a simplified pseudocode example of how a machine could learn from labeled photos to tell the difference between cats and dogs:
 
 ```typescript
-FUNCTION LearnFromPhotos(photoCollection)
-    REPEAT FOR EACH photo in photoCollection
-        IF photo is labeled 'cat'
+function LearnFromPhotos(photoCollection)
+    while photo "left in" photoCollection
+        if photo is labeled 'cat'
             LearnFeatures('cat', photo)
-        ELSE // Photo is labeled 'dog'
+        else // Photo is labeled 'dog'
             LearnFeatures('dog', photo)
-    END REPEAT
-END FUNCTION
+        END if
+    END while
+END function
 
-FUNCTION GuessAnimal(newPhoto)
-    IF newPhoto "matches more features" of 'cat'
-        RETURN 'This is probably a cat'
-    ELSE
-        RETURN 'This is probably a dog'
-END FUNCTION
+function GuessAnimal(newPhoto)
+    if newPhoto "matches more features of" 'cat'
+        RETURN "This is probably a cat"
+    else
+        RETURN "This is probably a dog"
+    END if
+END function
 ```
 
 The 'LearnFeatures' function is where the machine learning algorithm examines each labeled photo, identifying and cataloging features such as ear shape, fur pattern, or tail length. Over time, as the algorithm encounters more labeled photos, it gets better at understanding which features are most likely to signify 'cat' or 'dog'. This process is called "training the model."
