@@ -119,6 +119,39 @@ In summary:
 
 ### Cybersecurity
 
+Cybersecurity is a field growing in importance as we entering deeper into the digital era, where everything from our conversations to our banking transactions happen online.
+
+The field of cybersecurity contains multiple subfields, such as .... However, there are certain applications of cyberseucirty that are commonplace and that people directly use on a daily basis, and that's passwords.
+
+Say you have a social media account and you are trying to access it. Here is a pseudocode example for the password authentication system of this social media company:
+
+```typescript
+function CheckPassword(inputPassword)
+    realPassword = "secret123"  // This is the correct password
+    attemptCount = 0            // Start counting attempts
+
+    while attemptCount < 3
+        if inputPassword == realPassword
+            Print("Welcome! You're in.")
+            EXIT LOOP  // Stop checking since the password is correct
+        else
+            Print("Oops! Wrong password. Try again.")
+            attemptCount = attemptCount + 1
+            // Ask for the password again
+            inputPassword = INPUT "Enter your password: "
+        END if
+    END while
+
+    if attemptCount == 3
+        Print("Sorry, no more tries allowed.")
+    END if
+END function
+
+// Example of calling the function with a user's input
+userPassword = INPUT "Enter your password: "
+CheckPassword(userPassword)
+```
+
 ### Game Development
 
 ### Mobile Apps
