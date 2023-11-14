@@ -170,7 +170,7 @@ In the realm of digital creativity, game development stands out as a fascinating
 
 One of the core concepts in game development is the game loop, a continuous cycle that keeps the game running and responsive. It's the heartbeat of every game, constantly checking for player inputs, updating the game state, and rendering the game world on the screen.
 
-Here's a basic pseudocode example of a simple game loop:
+Let's look at a basic pseudocode example for a simple 2D game loop, similar to classic games like Super Mario Bros:
 
 ```typescript
 function RunGame()
