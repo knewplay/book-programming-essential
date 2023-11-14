@@ -272,6 +272,13 @@ In this pseudocode, `NavigateRoom()` is the main function where the robot contin
 
 ### Web Development
 
+Let's dive deeper into one of the core functionalities of the web: the client-server interaction. Imagine you're at a library:
+
+- The 'client' is like you, going to the library to find a book.
+- The 'server' is like the librarian, who knows where all the books are.
+
+When you ask for a book, the librarian (server) checks if it's available. If it is, they give it to you; if not, they tell you it's unavailable. This is similar to what happens when you use a web browser (the client) to visit a website. Your browser asks a server for the website's pages, and the server responds.
+
 ```typescript
 // Client-Side Code
 function RequestWebPage(url)
