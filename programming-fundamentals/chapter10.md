@@ -119,11 +119,11 @@ In summary:
 
 ### Cybersecurity
 
-Cybersecurity is a field growing in importance as we entering deeper into the digital era, where everything from our conversations to our banking transactions happen online.
+As we delve deeper into the digital era, cybersecurity becomes increasingly crucial. Our conversations, personal information, and even banking transactions are all happening online, making the security of this digital space more important than ever.
 
-The field of cybersecurity contains multiple subfields, such as .... However, there are certain applications of cyberseucirty that are commonplace and that people directly use on a daily basis, and that's passwords.
+Cybersecurity encompasses a range of subfields, each addressing different aspects of digital protection. These include network security, which focuses on protecting data in transit; ethical hacking, where experts think like hackers to find and fix vulnerabilities; cryptology, involving the creation and cracking of codes; and cyber forensics, the art of uncovering digital evidence after a security breach. Among these varied and intriguing areas, one of the most directly relevant to everyday users is the management and protection of passwords.
 
-Say you have a social media account and you are trying to access it. Here is a pseudocode example for the password authentication system of this social media company:
+Consider a scenario where you're trying to log into your social media account. Here's a pseudocode example to illustrate how a social media company might handle password authentication:
 
 ```typescript
 function CheckPassword(inputPassword)
@@ -155,15 +155,15 @@ CheckPassword(userPassword)
 
 The pseudocode starts by setting the correct password and initializing an attempt counter. The loop allows the user to enter a password up to three times. If the password is correct, the loop breaks, and the user gains access. If the password is incorrect, it prompts the user to try again until the maximum number of attempts is reached.
 
-Now in reality, passwords are not stored in plain text like in the simplified pseudocode example. Storing passwords in plain text is highly insecure as it makes them easily accessible to anyone who can breach the database, including hackers. Instead, secure systems use a process called hashing to store passwords.
+However, in real-world applications, passwords are not stored in plain text as shown here. Storing passwords in plain text is highly insecure as it makes them easily accessible to anyone who can breach the database, including hackers. Instead, secure systems use a process called hashing to store passwords.
 
 Hashing transforms your password into a scrambled string of characters, known as a hash. This is done using a hash function, a special algorithm that takes any input text (like a password) and produces a unique hash. Importantly, hashing is a one-way process: converting a password into a hash is straightforward, but reversing a hash back to the original password is extremely difficult, if not impossible.
+
+[Illustration of hashing]
 
 Here’s how it works in practice: when you create a password on a website, the system hashes your password and stores this hash. Later, when you log in, the system hashes the password you enter and compares it to the stored hash. If the two hashes match, your login is successful.
 
 This method of storing passwords as hashes increases security. If someone were to access the database, they would only find the hashes, not the actual passwords. Without the ability to reverse these hashes into original passwords, the stolen data is much less useful to a potential attacker.
-
-Employing hashing is a crucial cybersecurity practice, as it significantly enhances the protection of user data, ensuring that even in the case of a data breach, users’ actual passwords remain undisclosed.
 
 ### Game Development
 
