@@ -272,6 +272,34 @@ In this pseudocode, `NavigateRoom()` is the main function where the robot contin
 
 ### Web Development
 
+```typescript
+// Client-Side Code
+function RequestWebPage(url)
+    Print("Requesting webpage from: " + url)
+    response = SendRequestToServer(url)
+    if response != "Error"
+        DisplayWebPage(response)
+    else
+        Print("Failed to load webpage.")
+    END if
+END function
+
+// Server-Side Code
+function SendRequestToServer(url)
+    if url "exists in" server
+        pageContent = GetPageContent(url)
+        return pageContent
+    else
+        return "Error: Page not found"
+    END if
+END function
+
+function GetPageContent(url)
+    // Code to retrieve the webpage content based on the URL
+    // Returns the HTML/CSS/JS content of the page
+END function
+```
+
 ## Learning Resources
 
 ## Staying Current: The Programmer’s Growth
