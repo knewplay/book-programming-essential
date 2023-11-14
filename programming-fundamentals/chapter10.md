@@ -21,7 +21,6 @@ With a solid foundation in programming basics, you're ready to peek into more co
 - [Artificial Intelligence](#artificial-intelligence)
 - [Cybersecurity](#cybersecurity)
 - [Game Development](#game-development)
-- [Mobile Apps](#mobile-apps)
 - [Robotics](#robotics)
 - [Web Development](#web-development)
 
@@ -232,8 +231,6 @@ END function
 ```
 
 In this pseudocode, `RunGame()` is the main function where the game loop resides. It repeatedly checks for player input, updates the game state accordingly (like moving a character or jumping), and then renders the game screen to reflect these changes. The loop continues until the player decides to exit. This basic structure is a fundamental concept in game development, illustrating how games continually process input and update the gaming environment in real-time.
-
-### Mobile Apps
 
 ### Robotics
 
