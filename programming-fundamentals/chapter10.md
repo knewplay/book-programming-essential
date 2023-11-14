@@ -276,7 +276,7 @@ In this pseudocode, `NavigateRoom()` is the main function where the robot contin
 // Client-Side Code
 function RequestWebPage(url)
     Print("Requesting webpage from: " + url)
-    response = SendRequestToServer(url)
+    response = SendRequestToServer(url) // Function defined below
     if response != "Error"
         DisplayWebPage(response)
     else
@@ -287,7 +287,7 @@ END function
 // Server-Side Code
 function SendRequestToServer(url)
     if url "exists in" server
-        pageContent = GetPageContent(url)
+        pageContent = GetPageContent(url) // Function defined below
         return pageContent
     else
         return "Error: Page not found"
