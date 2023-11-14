@@ -236,6 +236,34 @@ Expanding from the basic game loop, game development covers a wide range of skil
 
 ### Robotics
 
+Here's a simple pseudocode example, similar to the algorithm a robotic vacuum cleaner might use to navigate around obstacles:
+
+```typescript
+function NavigateRoom()
+    while not atDestination
+        if ObstacleDetected()
+            AvoidObstacle()
+        else
+            MoveForward()
+        END if
+    END while
+    Print("Destination reached!")
+END function
+
+function ObstacleDetected()
+    // Code to detect if there is an obstacle in front of the robot
+    // Returns true if an obstacle is detected, false otherwise
+END function
+
+function AvoidObstacle()
+    // Code for the robot to change direction or take action to avoid the obstacle
+END function
+
+function MoveForward()
+    // Code to move the robot forward
+END function
+```
+
 ### Web Development
 
 ## Learning Resources
