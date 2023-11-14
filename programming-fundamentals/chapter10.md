@@ -272,12 +272,16 @@ In this pseudocode, `NavigateRoom()` is the main function where the robot contin
 
 ### Web Development
 
+Web development, commonly known as "web dev" among programmers, is an exciting and dynamic field that powers the websites and applications you use every day. Whether you're checking out your favorite blog, streaming a video, or researching for a school project, these activities are facilitated by web developers who create and maintain the sites and applications.
+
 Let's dive deeper into one of the core functionalities of the web: the client-server interaction. Imagine you're at a library:
 
 - The 'client' is like you, going to the library to find a book.
 - The 'server' is like the librarian, who knows where all the books are.
 
 When you ask for a book, the librarian (server) checks if it's available. If it is, they give it to you; if not, they tell you it's unavailable. This is similar to what happens when you use a web browser (the client) to visit a website. Your browser asks a server for the website's pages, and the server responds.
+
+Here's a simple pseudocode example that mirrors this interaction in web development:
 
 ```typescript
 // Client-Side Code
@@ -306,6 +310,8 @@ function GetPageContent(url)
     // Returns the HTML/CSS/JS content of the page
 END function
 ```
+
+In this pseudocode, when you request a webpage, the client (your web browser) sends this request to a server. The server checks if it has the page you're asking for and sends back the page (or an error message if it doesn't have it). [explain code in more detail]
 
 ## Learning Resources
 
