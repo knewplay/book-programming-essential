@@ -24,9 +24,7 @@ With a solid foundation in programming basics, you're ready to peek into more co
 - [Robotics](#robotics)
 - [Web Development](#web-development)
 
-[Learning Resources](#learning-resources)
-
-[Staying Current: The Programmer’s Growth](#staying-current-the-programmers-growth)
+[Journey into Programming: Start with What You Love](#journey-into-programming-start-with-what-you-love)
 
 ## Introduction to More Advanced Topics
 
@@ -319,6 +317,4 @@ In web development, the 'front-end' is what you, as the user, see and interact w
 
 As more of our daily life moves online, the skills learned in web development become increasingly valuable, opening doors to creating exciting and impactful digital experiences for everyone.
 
-## Learning Resources
-
-## Staying Current: The Programmer’s Growth
+## Journey into Programming: Start with What You Love
