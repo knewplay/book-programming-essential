@@ -92,7 +92,7 @@ author: "Andrei Guevorkian"
 - The importance of testing your code.
 - Activity: Finding the errors in a given snippet of code (pseudocode, logic-based).
 
-### Chapter 9: Best Practices and Readability
+### [Chapter 9: Best Practices and Readability](./programming-fundamentals/chapter9)
 
 - Writing clean and understandable code.
 - Commenting and documentation.
