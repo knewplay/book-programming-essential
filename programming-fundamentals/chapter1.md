@@ -26,6 +26,8 @@ Programming, at its core, is about solving problems. But before you can solve a 
 
 Imagine you're faced with a jigsaw puzzle. If given all the pieces jumbled up in a box, it's overwhelming. But when you start grouping pieces by color or patterns and tackling small sections at a time, the task becomes more manageable. This is the essence of problem decomposition.
 
+[TODO: illustration of jigsaw puzzle partially solved]
+
 In programming, problems can often feel like a massive jigsaw puzzle, especially when you're just starting out. The trick is to break them down into bite-sized tasks that you can handle.
 
 ### Benefits of Breaking Problems Down
@@ -42,11 +44,18 @@ In programming, problems can often feel like a massive jigsaw puzzle, especially
 - Analogies: Relate the problem to a real-world scenario. If you were to explain it to a friend, how would you describe it?
 - Iterative Approach: Start with a basic version of the solution. Improve and refine it in iterations.
 
+![Problem decomposition](./figures/ch-1-problem-decomposition.jpg)
+*A complex problem is broken down into smaller parts and then recombined to form a complete solution.*
+
 ## Activities
 
 ### Activity #1
 
 Imagine you are organizing a big family picnic and you need to ensure everyone has everything they need (food, drinks, and activities). How would you approach to organize this event?
+
+[TODO: Potentially completely remove picnic setup image]
+![Family Picnic](./figures/ch-1-family-picnic.jpg)
+*A picnic setup with food and drinks on blankets.*
 
 ### Answer
 Organizing a big family picnic can be a complex task. Here's one structured approach, among many, to ensure everything runs smoothly:
@@ -66,6 +75,9 @@ Organizing a big family picnic can be a complex task. Here's one structured appr
 5. Miscellaneous Preparations:
     - Weather: Monitor forecasts; plan for rain with umbrellas or a backup venue.
     - Parking: Ensure the site has sufficient parking or inform attendees of alternatives.
+
+![Picnic Organization](./figures/ch-1-organizing-a-big-family-picnic.jpg)
+*Steps to organizing a successful family picnic.*
 
 Remember, while this is one approach to plan, adaptability is essential.
 
