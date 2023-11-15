@@ -147,7 +147,6 @@ You may have noticed that the variable names follow a certain style. Here are so
 3. **Descriptiveness:**
     - Opt for clear names that describe their purpose.
     - Example: `battery_voltage` (clear) over `bv` (vague).
-
 4. **Consistency:**
     - Stick to a chosen naming style throughout your code.
     - Example: If you start with snake_case (`motor_speed`), don't mix with camelCase (`robotArm`) in the same codebase.
