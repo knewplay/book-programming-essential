@@ -65,18 +65,12 @@ author: "Andrei Guevorkian"
 - Assigning values and understanding variable scope.
 - Activity: Designing programs that make use of various data types and variables.
 
-### Chapter 6: Modularizing Your Code with Functions
+### [Chapter 6: Modularizing Your Code with Functions](./programming-fundamentals/chapter6)
 
 - The significance of modularizing code.
 - Understanding functions.
 - Understanding parameters, arguments, and return mechanisms.
 - Activity: Designing a program using modular components.
-
-### [Chapter 6: Organizing Information with Data Structures](./programming-fundamentals/chapter6)
-
-- Understanding how to store multiple pieces of data.
-- Introducing concepts like lists and dictionaries.
-- Activity: Designing programs using data structures. For example, a simple shopping list manager, a book catalogue (books have a title, an author and a date of publication), a student gradebook (displaying students' grade and calculating an average), etc.
 
 ### [Chapter 7: Putting It All Together](./programming-fundamentals/chapter7)
 
