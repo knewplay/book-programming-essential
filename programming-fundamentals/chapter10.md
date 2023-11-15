@@ -272,7 +272,7 @@ In this pseudocode, `NavigateRoom()` is the main function where the robot contin
 
 ### Web Development
 
-Web development, commonly known as "web dev" among programmers, is an exciting and dynamic field that powers the websites and applications you use every day. Whether you're checking out your favorite blog, streaming a video, or researching for a school project, these activities are facilitated by web developers who create and maintain the sites and applications.
+Web development, commonly known as "web dev" among programmers, is the process behind the creation of websites and applications that are part of our daily digital experience. From browsing a news site to logging into a social media platform, web dev plays a crucial role in how these services are built and function.
 
 Let's dive deeper into one of the core functionalities of the web: the client-server interaction. Imagine you're at a library:
 
@@ -311,7 +311,9 @@ function GetPageContent(url)
 END function
 ```
 
-In this pseudocode, when you request a webpage, the client (your web browser) sends this request to a server. The server checks if it has the page you're asking for and sends back the page (or an error message if it doesn't have it). [explain code in more detail]
+In this pseudocode, the `RequestWebPage(url)` function on the client side (like your web browser) asks the server for a specific webpage by calling `SendRequestToServer(url)`. The server, through `SendRequestToServer(url)`, checks if the requested URL is available. If it is, the `GetPageContent(url)` function retrieves the webpage's content and sends it back to the client. The client then displays this content if there's no error, or shows an error message if the page can't be found. This process exemplifies the basic request-response pattern of web interactions, where the client requests data and the server responds accordingly.
+
+This model is foundational to much of how the internet operates, with clients (like web browsers or app interfaces) sending requests to servers, which then process these requests and respond accordingly.
 
 ## Learning Resources
 
