@@ -53,6 +53,9 @@ In our everyday lives, we make countless decisions based on conditions: if it ra
 
 Imagine a tiny switch, so small that millions of them could fit on the tip of your finger. This is a transistor. It's a device that can either allow an electric current to flow through it (like turning on a light) or stop it entirely (like turning the light off).
 
+![Transistor](./figures/ch-2-tea-makeing-image.jpg)
+*Illustration of a transistor.*
+
 In essence, a transistor has two primary states:
 
 - On: This is when it allows electricity to pass through. We can liken this to opening a faucet and letting water flow.
@@ -81,6 +84,9 @@ Programming uses this true or false approach for decision-making. And it all cir
 ## Introducing Pseudocode and Decision-Making in Programs
 
 Pseudocode is a method to design and represent algorithms without the strict structure of a particular programming language. It allows programmers to focus on logic and flow, without worrying about the syntax of any specific programming language.
+
+![Pseudocode](./figures/ch-2-tea-makeing-image.jpg)
+*The pseudocode-equivalent of a flowchart diagram.*
 
 An integral part of pseudocode, and programming in general, is decision-making. This is achieved using specific patterns or templates known as constructs.
 
