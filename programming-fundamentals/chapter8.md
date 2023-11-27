@@ -78,6 +78,9 @@ ELSE
     PRINT "X is a big number!"
 ```
 
+![Logic errors](./figures/ch-8-logic-errors.jpg)
+*A toy with various shaped blocks and holes, illustrating the importance of correct alignment, akin to fixing logic errors in programming.*
+
 ### Runtime Errors
 
 Runtime errors are like unexpected pitfalls that crop up while your program is running, hence the name "runtime". They can be particularly tricky because your code looks correct at first glance, but when you try to run it, things don't work as expected. For instance:
@@ -91,6 +94,9 @@ PRINT result
 ```
 
 Dividing by zero is something you just can't do—it's like trying to share five cookies with zero friends. It just doesn't work!
+
+![Cookies](./figures/ch-8-five-cookies.jpg)
+*Some cookies.*
 
 By being able to recognize these common errors in pseudocode, you're well on your way to becoming a more efficient and effective programmer. All it takes is some practice.
 
@@ -106,6 +112,9 @@ Spotting errors in your code doesn't have to be overwhelming. With a few smart s
 4. **Peer Review:** A second pair of eyes can often catch mistakes you've missed. Ask a friend or classmate to look over your code and provide feedback.
 5. **Test with Examples:** Plug in actual values and mentally walk through the steps of your code. This can help you verify whether the logic produces the expected outcome.
 6. **Take a Break:** If you've been staring at your code for hours and can't seem to spot the problem, step away and come back with fresh eyes. It's amazing what a good night's sleep or even a short break can do for your problem-solving abilities. It's like hitting the restart button on your computer; sometimes, the issues just seem to fix themselves.
+
+![Reading aloud](./figures/ch-8-read-aloud.jpg)
+*Reading your code out loud, or pretending to explain it to someone are great ways to notice mistakes which went overlooked earlier.*
 
 To illustrate, let's consider a simple piece of pseudocode:
 
@@ -127,6 +136,9 @@ Using our strategies:
 **Simplify Complex Statements:** The `ELIF` statement uses 'and', a logical operator that requires both conditions to be true. Make sure this logic correctly includes all intended values, especially at the boundaries.
 
 **Peer Review:** A classmate might not spot the boundary issue immediately, but a discussion could lead to questions about temperatures at the edge cases.
+
+![Peer review](./figures/ch-8-peer-review.jpg)
+*After double checking your work and spending time on it yourself, a great way to get new ideas is to show your code to someone else.*
 
 **Test with Examples:** Trying out specific temperatures like 25 or 15 might not reveal the issue, but testing the boundary values, such as 20 or 30, would highlight the gap.
 
@@ -177,6 +189,9 @@ ELSE
 ```
 
 Now, the code checks if `x` is less than 5 first. If it's not, then it checks if it's less than 10. This way, all possibilities are covered correctly.
+
+![1D coordinate system](./figures/ch-8-activity.jpg)
+*As can be seen, x < 5 must be checked first because it is contained within x < 10.*
 
 **Activity #2:**
 
