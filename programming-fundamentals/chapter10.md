@@ -9,7 +9,7 @@ questions:
   - career-choice: |
       If you were to pursue a career in programming, which field(s) would you choose and why?
   - unrelated-field: |
-        Consider a profession that doesn't obviously require programming. Suggest three ways in which programming could enhance or improve this profession, possibly through automation or other means.
+      Consider a profession that doesn't obviously require programming. Suggest three ways in which programming could enhance or improve this profession, possibly through automation or other means.
 ---
 
 With a solid foundation in programming basics, you're ready to peek into more complex and exciting areas. This chapter will give you a glimpse into advanced fields where programming is making a big impact, inviting you to consider your next steps in the programming landscape.
