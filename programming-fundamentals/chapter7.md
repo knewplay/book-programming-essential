@@ -46,6 +46,9 @@ In this section, we're going to tackle a set of example problems that will take 
 
 **Question:** Write a function that converts Celsius temperature to Fahrenheit. After creating this function, demonstrate its use by providing a test case.
 
+![A thermometer](./figures/ch-7-thermometer.jpg)
+*A thermometer displaying temperatures in both Celsius and Fahrenheit.*
+
 **Answer:**
 
 To solve this, it's important to understand the relationship between Celsius and Fahrenheit. To convert Celsius to Fahrenheit, you multiply the Celsius temperature by 9/5 and then add 32. In mathematical terms, the formula is: **Fahrenheit = (Celsius × 9/5) + 32**.
@@ -116,6 +119,9 @@ Running the above code, `IsEvenOrOdd(7)` should output `Odd`.
 
 Write a program (no need for a function) that prompts the user for two numbers and then for an operation (+, -, *, /). Compute the result based on the given operation.
 
+![A basic calculator](./figures/ch-7-calculator.jpg)
+*A basic calculator.*
+
 **Answer:**
 
 We'll be collecting two numbers and an operation from the user. After receiving the inputs, we'll determine which arithmetic operation to perform using conditional statements and then display the result.
@@ -159,6 +165,9 @@ If the user selects "+", we compute the sum of the two numbers and store it in t
 **Question:**
 
 Write a program where you store a secret number between 1 and 10 in a variable, and the user has to guess it. The user should be prompted to guess the number until they get it right. Create a function named Feedback to provide feedback on the user's guess. The function should take in the user's guess and the secret number as inputs and return whether the guess is too high, too low, or correct.
+
+![Guess the number](./figures/ch-7-computer.jpg)
+*What number is the computer thinking of?*
 
 **Answer:**
 
@@ -224,6 +233,9 @@ In this execution:
 
 In "Chapter 6: Modularizing Your Code with Functions", we explored an airplane manufacturing plant. One of the divisions of this plant is the "Engine Installation".
 
+![Engine](./figures/ch-7-engine.jpg)
+*An airplane engine.*
+
 This division is given the wings of the plane and told how many engines it must install in total.
 
 Design a function that represents the process adopted by the engine installation team.
@@ -260,6 +272,9 @@ A local gym wants to implement a promotional discount for its members based on t
 
 - Teenagers (younger than 20 years old) who are just about to sign up (0 years of membership) receive a 10% discount.
 - Elderly members (55 years and older) who have been a member of the gym for 5 or more years receive a 15% discount.
+
+![Treadmill](./figures/ch-7-thermometer.jpg)
+*A treadmill.*
 
 Design a pseudocode algorithm that calculates and displays the eligible discount for a member based on their age and membership duration.
 
