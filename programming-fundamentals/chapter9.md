@@ -42,7 +42,7 @@ In some of the previous chapters, we've touched upon some good coding practices 
 Good naming is like giving clear, easy-to-follow instructions. When naming functions, we use verbs to describe actions, making it obvious what the function does. So is this good enough?
 
 ```typescript
-function DoThing()
+function DoThing():
     ...
 END function
 ```
@@ -52,7 +52,7 @@ No, because what this function does just by looking at its name is anyone's gues
 Instead, you should call it something like:
 
 ```typescript
-function CalculateTotalScore()
+function CalculateTotalScore():
     ...
 END function
 ```
@@ -78,7 +78,7 @@ How you structure and format your code can greatly influence how easy it is to r
 Just like paragraphs in a story, code needs to be organized with proper spacing and indentation to tell the computer (and our friends) what steps to follow and in what order. Indentation helps to show which pieces of code are connected. For example, everything inside a loop should be indented one level deeper:
 
 ```typescript
-function PrepareTea(numOfGuests)
+function PrepareTea(numOfGuests):
     i = 0
     while i < numOfGuests:
         AddWater()
@@ -94,7 +94,7 @@ Notice how the actions inside the for loop (adding water and steeping the tea) a
 Think of variables like ingredients in a recipe. You want to lay them all out before you start cooking. By grouping related variables at the start, you make your "recipe" easier to follow. Here's an example:
 
 ```typescript
-function BakeCake()
+function BakeCake():
     eggs = 3
     sugar = "1 cup"
     flour = "2 cups"
@@ -112,10 +112,10 @@ All the "ingredients" are listed at the top, so it's clear what we need to bake 
 When writing a story, we use paragraphs to separate ideas; in coding, we use blank lines to break up our code into sections. Each part does something different, like setting up the game, playing a round, or ending the game:
 
 ```typescript
-function PlayGame()
+function PlayGame():
     SetupGame()
 
-    while not gameOver
+    while not gameOver:
         PlayRound()
     END while
     
@@ -129,9 +129,9 @@ When we write stories, if we have too many stories within stories, it can become
 
 ```typescript
 // Try to avoid this
-if conditionA
-    if conditionB
-        if conditionC
+if conditionA:
+    if conditionB:
+        if conditionC:
             // Code here is deeply nested 
             //and harder to read.
         END if
@@ -140,7 +140,7 @@ END if
 
 
 // Better approach
-if conditionA AND conditionB AND conditionC
+if conditionA AND conditionB AND conditionC:
     // Code here is easier to understand.
 END if
 ```
@@ -151,14 +151,14 @@ Just like we don't want to repeat the same story over and over again, we don't w
 
 ```typescript
 // Instead of this
-if conditionA
+if conditionA:
     AddSugar()
     AddFlour()
     AddEggs()
     Mix()
 END if
 
-if conditionB
+if conditionB:
     AddSugar()
     AddFlour()
     AddEggs()
@@ -166,18 +166,18 @@ if conditionB
 END if
 
 // Do this
-function MakeMixture()
+function MakeMixture():
     AddSugar()
     AddFlour()
     AddEggs()
     Mix()
 END function
 
-if conditionA
+if conditionA:
     MakeMixture()
 END if
 
-if conditionB
+if conditionB:
     MakeMixture()
 END if
 ```
@@ -193,13 +193,13 @@ While not strictly part of the code's functionality, comments are part of the ov
 counter = 0 // Set counter to zero
 
 // Bad: Explains 'how' instead of 'why', which should be evident from the code
-function AddNumbers(a, b)
+function AddNumbers(a, b):
     // Add a and b and return the sum
     return a + b
 END function
 
 // Bad: Comment is redundant because the code is self-explanatory
-if temperature >= 100
+if temperature >= 100:
     // If temperature is greater than or equal to 100, print 'It's very hot!'
     Print("It's very hot!")
 END if
@@ -212,13 +212,13 @@ END if
 maxLoginAttempts = 3 // Limit attempts to prevent brute force attacks
 
 // Good: Describes the purpose of a complex function
-function CalculateOptimalPath()
+function CalculateOptimalPath():
     // Finds the quickest route through the network.
     ...
 END function
 
 // Good: Clarifies the reason behind a particular logic choice
-if temperature < 0
+if temperature < 0:
     // Check for sub-zero temperatures to trigger the anti-freeze protocol
     ActivateAntiFreeze()
 END if
@@ -231,7 +231,7 @@ END if
 Here’s a snippet of code where everything is jumbled together. Can you reorganize it using proper spacing and indentation?
 
 ```typescript
-function MakePizza(topping1,topping2)
+function MakePizza(topping1,topping2):
 dough = 'wheat'
 AddToPan(dough)
 AddToPan(topping1)
@@ -246,7 +246,7 @@ END function
 When making a pizza in code, just like in the kitchen, organization is key. You gather your ingredients, prepare your dough, add the toppings, and finally, bake your pizza to perfection. Let's take this step-by-step approach to our `MakePizza` function:
 
 ```typescript
-function MakePizza(topping1,topping2)
+function MakePizza(topping1,topping2):
     // Prepare the base ingredients
     dough = 'wheat'
     ovenTemp = 475
@@ -287,7 +287,7 @@ Display("Welcome, IronHeart007!")
 We want to make a function that handles the setup process for a player. This way, we can call the same function for all players without repeating those 11 (the `PRINT` as well as the 10 other lines) lines of code. Here's how you might structure that function and call it for all players:
 
 ```typescript
-function SetUpGame(player)
+function SetUpGame(player):
     Display("Welcome, " + player + "!")
     // ...
     // 10 more lines of code for setting up the game for a player
@@ -295,8 +295,8 @@ function SetUpGame(player)
 END function
 
 // Call the function for each player
-SetUpGame("playerone");
-SetUpGame("zombieXZ");
+SetUpGame("playerone")
+SetUpGame("zombieXZ")
 SetUpGame("IronHeart007")
 ```
 
