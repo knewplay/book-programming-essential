@@ -41,7 +41,7 @@ These are the easiest to spot and fix. They happen when you misspell a command o
 **Incorrect Pseudocode:**
 
 ```typescript
-IF x > 10
+if x > 10
     PRIT "X is a big number!"
 ```
 
@@ -50,7 +50,7 @@ Can you spot the mistake?
 **Corrected Pseudocode:**
 
 ```typescript
-IF x > 10
+if x > 10
     PRINT "X is a big number!"
 ```
 
@@ -61,9 +61,9 @@ These can be trickier. Logic errors happen when your pseudocode doesn't do what 
 **Incorrect Pseudocode:**
 
 ```typescript
-IF x < 10
+if x < 10
     PRINT "X is a big number!"
-ELSE
+else
     PRINT "X is a small number!"
 ```
 
@@ -72,9 +72,9 @@ The messages are mixed up! If x is less than 10, it should say that it's a small
 **Corrected Pseudocode:**
 
 ```typescript
-IF x < 10
+if x < 10
     PRINT "X is a small number!"
-ELSE
+else
     PRINT "X is a big number!"
 ```
 
@@ -110,11 +110,11 @@ Spotting errors in your code doesn't have to be overwhelming. With a few smart s
 To illustrate, let's consider a simple piece of pseudocode:
 
 ```typescript
-IF temperature > 30
+if temperature > 30
     PRINT "It's hot outside!"
-ELIF temperature > 20 and temperature < 30
+else if temperature > 20 and temperature < 30
     PRINT "It's warm outside!"
-ELSE
+else
     PRINT "It's a cold day."
 ```
 
@@ -124,7 +124,7 @@ Using our strategies:
 
 **Check for Completeness and Edge Cases:** Each statement appears to address different temperature ranges, but is there any range missing? What happens if the temperature is exactly 20? What about 30?
 
-**Simplify Complex Statements:** The `ELIF` statement uses 'and', a logical operator that requires both conditions to be true. Make sure this logic correctly includes all intended values, especially at the boundaries.
+**Simplify Complex Statements:** The `else if` statement uses 'and', a logical operator that requires both conditions to be true. Make sure this logic correctly includes all intended values, especially at the boundaries.
 
 **Peer Review:** A classmate might not spot the boundary issue immediately, but a discussion could lead to questions about temperatures at the edge cases.
 
@@ -140,11 +140,11 @@ Your friend wrote the following code:
 
 ```typescript
 x = INPUT
-IF x < 10
+if x < 10
     PRINT "x is less than 10"
-ELSE IF x < 5
+else if x < 5
     PRINT "x is less than 5"
-ELSE
+else
     PRINT "x is not less than 10 and 5"
 ```
 
@@ -162,17 +162,17 @@ Let's run through some numbers:
 - **Exactly 5:** It prints "x is less than 10". This is correct.
 - **Below 5 (e.g., 3):** It prints "x is less than 10" instead of printing "x is less than 5", which is what we actually want. This is a case that the code fails to handle correctly.
 
-The flaw lies in the sequence of the conditions. When we input a number, for example, 3, the program first checks if `x < 10`. Since 3 is indeed less than 10, the program outputs "x is less than 10" and bypasses the subsequent conditions. As a result, the second condition `ELSE IF x < 5` is never executed, which means the program will never print "x is less than 5", even though it's accurate.
+The flaw lies in the sequence of the conditions. When we input a number, for example, 3, the program first checks if `x < 10`. Since 3 is indeed less than 10, the program outputs "x is less than 10" and bypasses the subsequent conditions. As a result, the second condition `else if x < 5` is never executed, which means the program will never print "x is less than 5", even though it's accurate.
 
 The code should be rearranged so that it checks for the smaller value first. Here's a corrected version:
 
 ```typescript
 x = INPUT
-IF x < 5
+if x < 5
     PRINT "x is less than 5"
-ELSE IF x < 10
+else if x < 10
     PRINT "x is less than 10"
-ELSE
+else
     PRINT "x is not less than 10 and 5"
 ```
 
@@ -184,10 +184,10 @@ Your friend was asked to write a program that will count numbers from 1 to 10. T
 
 ```typescript
 i = 1         // Initialize variable i
-WHILE i < 10
+while i < 10
     PRINT i   // Display i onto the screen
     i = i + 1 // Increment i by 1
-END WHILE
+END while
 ```
 
 Comment on this code. Does it do what it is intended to do? What would you change, if anything?
@@ -207,10 +207,10 @@ To correct this, we can change the loop's condition to `i <= 10` so that it incl
 
 ```typescript
 i = 1         // Initialize variable i
-WHILE i <= 10
+while i <= 10
     PRINT i   // Display i onto the screen
     i = i + 1 // Increment i by 1
-END WHILE
+END while
 ```
 
 Now, if you mentally run through the code again, you'll see that it counts all the way up to 10, fixing the original issue and ensuring that the program works as intended.
