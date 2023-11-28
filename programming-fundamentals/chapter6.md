@@ -20,7 +20,7 @@ questions:
       FUNCTION ServeFood(guestName, , )
           // Determine the food to serve based on the guest's name, preference, and any dietary restrictions
           // Once the appropriate food is selected, the robot serves it to the guest
-          RETURN "Food served to " + guestName
+          return "Food served to " + guestName
       END FUNCTION
   - user-profile: |
       Design a function named DisplayProfile(userName, userAge) that takes in the user's name and age and returns a profile summary.
@@ -181,33 +181,33 @@ Let's illustrate with two pseudocode examples:
 **1. Returning a status message:**
 
 ```typescript
-FUNCTION AssembleFuselage(size, numberOfWindows)
+function AssembleFuselage(size, numberOfWindows)
     // The fuselage gets assembled based on the size and number of windows.
     
     // Once done, a status message is sent back.
-    RETURN "Fuselage Assembly Complete"
-END FUNCTION
+    return "Fuselage Assembly Complete"
+END function
 ```
 
 In this case:
 
-- `RETURN`: This keyword indicates that the function is providing an outcome after completing its task.
+- `return`: This keyword indicates that the function is providing an outcome after completing its task.
 - `"Fuselage Assembly Complete"`: This is the message the function returns. It's equivalent to the assembly team announcing their completion.
 
 **2. Returning the actual assembled fuselage:**
 
 ```typescript
-FUNCTION AssembleFuselage(size, numberOfWindows)
+function AssembleFuselage(size, numberOfWindows)
     // The fuselage gets assembled based on the size and number of windows.
     
     // Once done, the assembled fuselage is returned for further use.
-    RETURN assembledFuselage
-END FUNCTION
+    return assembledFuselage
+END function
 ```
 
 In this scenario:
 
-- `RETURN`: Indicates that the function is providing the result of its task.
+- `return`: Indicates that the function is providing the result of its task.
 - `assembledFuselage`: Represents the finished plane part that's being returned. Think of this as the actual fuselage being presented for inspection or integration.
 
 > Note: Again, notice the indentation of the body of the functions. This indicates that those lines of code are inside the function, and it visually separates the body of the function from the rest of the code, making the code structure clear and readable.
@@ -221,37 +221,37 @@ When constructing an airplane, for the sake of this example, we'll consider that
 **Fuselage Assembly:** The department responsible for assembling the fuselage. Parameters like its size and the number of windows are crucial to this process.
 
 ```typescript
-FUNCTION AssembleFuselage(fuselageSize, numberOfWindows)
+function AssembleFuselage(fuselageSize, numberOfWindows)
     // Steps to assemble the fuselage
-    RETURN "Fuselage Assembly Complete"
-END FUNCTION
+    return "Fuselage Assembly Complete"
+END function
 ```
 
 **Wing Assembly:** The design and structure of the wings are determined by the specific model of the airplane. Different types may necessitate varying wing configurations.
 
 ```typescript
-FUNCTION AssembleWings(typeOfWing)
+function AssembleWings(typeOfWing)
     // Steps to assemble the chosen type of wing
-    RETURN "Wings Assembly Complete"
-END FUNCTION
+    return "Wings Assembly Complete"
+END function
 ```
 
 **Engine Installation:** The number of engines an airplane carries depends on its size and purpose. A cargo plane might require more engines than a small commercial jet, for instance.
 
 ```typescript
-FUNCTION InstallEngines(numberOfEngines)
+function InstallEngines(numberOfEngines)
     // Steps to install the specified number of engines
-    RETURN "Engine Installation Complete"
-END FUNCTION
+    return "Engine Installation Complete"
+END function
 ```
 
 **Cockpit Assembly:** The cockpit's electronic systems are standardized across various airplane models. Given this uniformity, assembling the cockpit doesn't require specific input parameters.
 
 ```typescript
-FUNCTION AssembleCockpit()
+function AssembleCockpit()
     // Steps to set up the chosen type of controls
-    RETURN "Cockpit Assembly Complete"
-END FUNCTION
+    return "Cockpit Assembly Complete"
+END function
 ```
 
 ### Assembling the Entire Airplane
@@ -259,13 +259,13 @@ END FUNCTION
 With the above modules, the main assembly function would be:
 
 ```typescript
-FUNCTION AssembleAirplane(fuselageSize, numberOfWindows, typeOfWing, numberOfEngines)
+function AssembleAirplane(fuselageSize, numberOfWindows, typeOfWing, numberOfEngines)
     AssembleFuselage(fuselageSize, numberOfWindows)
     AssembleWings(typeOfWing)
     InstallEngines(numberOfEngines)
     AssembleCockpit()
-    RETURN "Airplane Assembly Complete"
-END FUNCTION
+    return "Airplane Assembly Complete"
+END function
 ```
 
 > Note: Notice how the call to `AssembleCockpit` did not require any arguments to be passed to the function. This is because `AssembleCockpit` doesn't take any input, and so the parentheses are left empty.
@@ -285,25 +285,25 @@ Break down the process of organizing a birthday party into smaller, more managea
 Pseudocode:
 
 ```typescript
-FUNCTION SendInvitations(listOfFriends)
+function SendInvitations(listOfFriends)
     // Steps to send out invitations to friends on the list
-    RETURN "Invitations Sent"
-END FUNCTION
+    return "Invitations Sent"
+END function
 
-FUNCTION OrderCake(cakeType, caseSize)
+function OrderCake(cakeType, caseSize)
     // Steps to order a specific type of cake
-    RETURN "Cake Ordered"
-END FUNCTION
+    return "Cake Ordered"
+END function
 
-FUNCTION DecorateVenue(theme)
+function DecorateVenue(theme)
     // Steps to decorate the venue based on the chosen theme
-    RETURN "Venue Decorated"
-END FUNCTION
+    return "Venue Decorated"
+END function
 
-FUNCTION ArrangeMusic(playlist)
+function ArrangeMusic(playlist)
     // Steps to set up music based on the chosen playlist
-    RETURN "Music Arranged"
-END FUNCTION
+    return "Music Arranged"
+END function
 ```
 
 Since the question only asked us to "design the functions", this means that we don't need to make the actual function calls and complete the task of actually organizing a birthday party. It's like creating an action plan without carrying out the actions.
@@ -321,20 +321,20 @@ Write pseudocode for the following three functions, and then make function calls
 Pseudocode:
 
 ```typescript
-FUNCTION GreetUser(userName)
+function GreetUser(userName)
     // Greet the user by name
-    RETURN "Hello, " + userName + "!"
-END FUNCTION
+    return "Hello, " + userName + "!"
+END function
 
-FUNCTION DisplayDate()
+function DisplayDate()
     // Show today's date
-    RETURN todaysDate
-END FUNCTION
+    return todaysDate
+END function
 
-FUNCTION RecommendMovie(favoriteMovie)
+function RecommendMovie(favoriteMovie)
     // Suggest a movie for the user to watch based on his favorite movie
-    RETURN topRecommendation
-END FUNCTION
+    return topRecommendation
+END function
 ```
 
 The function calls of these function would look like this:
@@ -355,4 +355,4 @@ Hello, John!
 Murder on the Orient Express
 ```
 
-It is important to note that the function `DisplayDate` does not need any input in order to display today's date. THat is why, in its function definition, we do not include any parameters, and similarly, when calling the function, we do not pass any arguments.
+It is important to note that the function `DisplayDate` does not need any input in order to display today's date. That is why, in its function definition, we do not include any parameters, and similarly, when calling the function, we do not pass any arguments.
