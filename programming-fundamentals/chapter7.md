@@ -53,10 +53,10 @@ To solve this, it's important to understand the relationship between Celsius and
 **Pseudocode:**
 
 ```typescript
-FUNCTION ConvertToFahrenheit(celsius):
+function ConvertToFahrenheit(celsius):
     fahrenheit = celsius * 9/5 + 32
-    RETURN fahrenheit
-END FUNCTION
+    return fahrenheit
+END function
 ```
 
 **Explanation:**
@@ -84,14 +84,15 @@ To figure out if a number is even or odd using loops, we'll subtract 2 from the 
 **Pseudocode:**
 
 ```typescript
-FUNCTION IsEvenOrOdd(number):
-    WHILE number >= 2:
+function IsEvenOrOdd(number):
+    while number >= 2:
         number = number - 2
-    IF number == 0:
-        RETURN "Even"
-    ELSE:
-        RETURN "Odd"
-END FUNCTION
+
+    if number == 0:
+        return "Even"
+    else:
+        return "Odd"
+END function
 ```
 
 **Explanation:**
@@ -130,19 +131,19 @@ number2 = INPUT
 PRINT "Enter operation (+, -, *, /): "
 operation = INPUT
 
-IF operation == "+":
+if operation == "+":
     result = number1 + number2
     PRINT result
-ELIF operation == "-":
+else if operation == "-":
     result = number1 - number2
     PRINT result
-ELIF operation == "*":
+else if operation == "*":
     result = number1 * number2
     PRINT result
-ELIF operation == "/":
+else if operation == "/":
     result = number1 / number2
     PRINT result
-ELSE:
+else:
     PRINT "Unrecognized operation"
 ```
 
@@ -167,26 +168,26 @@ We'll set a predefined secret number, and then use a `WHILE` loop to repeatedly 
 **Pseudocode:**
 
 ```typescript
-FUNCTION Feedback(guess, secret_number):
-    IF guess < secret_number:
-        RETURN "Your guess is too low."
-    ELSE IF guess > secret_number:
-        RETURN "Your guess is too high."
-    ELSE:
-        RETURN "Congratulations! You've guessed the secret number."
-END FUNCTION
+function Feedback(guess, secret_number):
+    if guess < secret_number:
+        return "Your guess is too low."
+    else if guess > secret_number:
+        return "Your guess is too high."
+    else:
+        return "Congratulations! You've guessed the secret number."
+END function
 
 secret_number = 7
 guess = 0
 
 PRINT "Guess the secret number between 1 and 10."
 
-WHILE guess != secret_number:
+while guess != secret_number:
     PRINT "Enter your guess:"
     guess = INPUT
     message = Feedback(guess, secret_number)
     PRINT message
-END WHILE
+END while
 ```
 
 **Explanation:**
@@ -231,19 +232,19 @@ Design a function that represents the process adopted by the engine installation
 **Answer:**
 
 ```typescript
-FUNCTION InstallEngines(wings, numberOfEngines)
+function InstallEngines(wings, numberOfEngines):
     enginesInstalled = 0
     enginesPerWing = numberOfEngines / 2
 
-    WHILE enginesInstalled < numberOfEngines
-        IF enginesInstalled == enginesPerWing + 1
+    while enginesInstalled < numberOfEngines:
+        if enginesInstalled == enginesPerWing + 1:
             switch_to_other_wing
         install_engine // Steps to install engine
         enginesInstalled = enginesInstalled + 1
-    END WHILE
+    END while
     
-    RETURN "Engine Installation Complete"
-END FUNCTION
+    return "Engine Installation Complete"
+END function
 ```
 
 1. **Function Declaration:** The algorithm starts with the declaration of the `InstallEngines` function. This function models the procedure of attaching engines to an airplane's wings. It accepts two parameters: `wings`, symbolizing the airplane's wings, and `numberOfEngines`, indicating the total number of engines to be installed.
@@ -266,17 +267,17 @@ Design a pseudocode algorithm that calculates and displays the eligible discount
 **Answer:**
 
 ```typescript
-FUNCTION CalculateDiscount(age, membershipDuration)
+function CalculateDiscount(age, membershipDuration):
     discount = 0
 
-    IF age < 20 AND membershipDuration == 0
+    if age < 20 AND membershipDuration == 0:
         discount = 10
-    ELSE IF age >= 55 AND membershipDuration >= 5
+    else if age >= 55 AND membershipDuration >= 5:
         discount = 15
-    END IF
+    END if
 
-    RETURN discount
-END FUNCTION
+    return discount
+END function
 
 // Main Program
 PRINT "Enter your age: "
