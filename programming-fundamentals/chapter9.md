@@ -280,7 +280,7 @@ With the ingredients and steps laid out clearly, anyone reading this code will u
 Here’s a long piece of code that repeats the same steps several times. Can you create a function to avoid repetition and make the code cleaner?
 
 ![Code clean up.](./figures/ch-9-clean-up.jpg)
-*CLeaning code up.*
+*Cleaning code up.*
 
 ```typescript
 Display("Welcome, playerone!")
