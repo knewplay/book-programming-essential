@@ -139,7 +139,6 @@ Once you've drawn out each step from your list, take a moment to review the flow
 
 The intuitive approach is like narrating a story to yourself. You're recounting the tale of making a cup of tea, from start to finish. By following each step as you would in real life and drawing it out in sequence, you create a visual representation of the process.
 
-[TODO: Rename image (syntax mistake) + potentially change image is it does not show a teabag in the cup. The process shown is slightly different than the one described in this section]
 ![Tea making](./figures/ch-2-tea-makeing-image.jpg)
 *Tea being poured into a cup.*
 
@@ -195,6 +194,5 @@ To instruct the robot to move 30 centimeters forward with each leg, one after an
 
 These commands ensure the robot takes a single step with each leg, moving a total of 30 centimeters forward.
 
-[TODO consider drawing a robot in the background of some of these steps, performing the steps. Somehow add more illustrations to help students visualize the flowchart + remove space in the title]
 ![Robot walking flowchart](./figures/ch-2-robot-walk%20-no-loop.jpg)
 *Completed flowchart of a robot walking.*

@@ -26,8 +26,6 @@ Programming, at its core, is about solving problems. But before you can solve a 
 
 Imagine you're faced with a jigsaw puzzle. If given all the pieces jumbled up in a box, it's overwhelming. But when you start grouping pieces by color or patterns and tackling small sections at a time, the task becomes more manageable. This is the essence of problem decomposition.
 
-[TODO: illustration of jigsaw puzzle partially solved]
-
 In programming, problems can often feel like a massive jigsaw puzzle, especially when you're just starting out. The trick is to break them down into bite-sized tasks that you can handle.
 
 ### Benefits of Breaking Problems Down
@@ -53,7 +51,6 @@ In programming, problems can often feel like a massive jigsaw puzzle, especially
 
 Imagine you are organizing a big family picnic and you need to ensure everyone has everything they need (food, drinks, and activities). How would you approach to organize this event?
 
-[TODO: Potentially completely remove picnic setup image]
 ![Family Picnic](./figures/ch-1-family-picnic.jpg)
 *A picnic setup with food and drinks on blankets.*
 

@@ -148,7 +148,6 @@ This logic conveys that for two days, you'll ride a roller coaster, and then dec
 
 Recall the humanoid robot from [Chapter 2 Activity #2](./chapter2#activity-2). With your understanding of loops from this chapter, describe the commands you would provide to ensure the robot walks across the room. Consider visualizing your solution with a flowchart diagram.
 
-[TODO: Fix name, add '-' after '4']
 ![Walking robot](./figures/ch-4robot-walk-image.jpg)
 *A humanoid robot walking.*
 
@@ -179,7 +178,6 @@ REPEAT while not endOfRoom
     transfer_weight_left
 ```
 
-[TODO: fix title, remove space]
 ![Walking robot flowchart](./figures/ch-4-robot-walk%20-%20loop.jpg)
 *Flowchart for a humanoid robot walking.*
 
