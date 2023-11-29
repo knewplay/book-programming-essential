@@ -7,9 +7,9 @@ questions:
   - birthday-song: |
       The "Happy Birthday" song has a repetitive structure. Given the function provided below:
 
-      FUNCTION HappyBDay()
+      function HappyBDay():
           DISPLAY "Happy birthday to you!"
-      END FUNCTION    
+      END function    
 
       Construct a program that utilizes this function to display the complete "Happy Birthday" song for an individual named John.
   - party-food: |
@@ -17,11 +17,11 @@ questions:
 
       Complete the function definition provided below. Afterwards, demonstrate its usage by calling it three times with details for three different guests.
 
-      FUNCTION ServeFood(guestName, , )
+      function ServeFood(guestName, , ):
           // Determine the food to serve based on the guest's name, preference, and any dietary restrictions
           // Once the appropriate food is selected, the robot serves it to the guest
           return "Food served to " + guestName
-      END FUNCTION
+      END function
   - user-profile: |
       Design a function named DisplayProfile(userName, userAge) that takes in the user's name and age and returns a profile summary.
 ---
@@ -117,21 +117,21 @@ In programming, it's the same story. The programmer (general manager) needs to p
 For our fuselage assembly example, the code might look like this:
 
 ```typescript
-FUNCTION AssembleFuselage(size, numberOfWindows)
+function AssembleFuselage(size, numberOfWindows):
     // Here the fuselage gets assembled.
-END FUNCTION
+END function
 ```
 
 Breaking this down:
 
-- `FUNCTION`: This is a keyword indicating that we're defining a new function. Think of it as announcing, "Hey, we're setting up a new section of the assembly line here!"
+- `function`: This is a keyword indicating that we're defining a new function. Think of it as announcing, "Hey, we're setting up a new section of the assembly line here!"
 - `AssembleFuselage`: This is the name of the function, much like naming the "fuselage assembly" section. By using this name in our code, we can instruct the function to start its task, just as a project manager would say *"Hey Fuselage-Assembly team, get to work!"*
 - `(size, numberOfWindows)`: Inside these parentheses, we have our parameters – the essential details the function needs. In this case, the two parameters are:
 - `size`: This parameter expects a value that indicates the size of the airplane, like "small", "medium", or "large".
 - `numberOfWindows`: This parameter expects a number, indicating how many windows the fuselage should have.
 Think of these parameters as the instruction manual or blueprint for the fuselage assembly team. Without these specifics, the team won't know how to proceed.
 - `// Here the fuselage gets assembled.`: This is a comment in the pseudocode. It doesn't affect the functionality but is a note to anyone reading the code (or for our analogy, a reminder for the assembly team) about what happens in this section of the function. In a real code setting, this is where the steps or operations to assemble the fuselage would be detailed.
-- `END FUNCTION`: This keyword indicates the function's conclusion. It's a signal that the process defined in this function is complete. Think of it as the signal that the fuselage assembly job is complete.
+- `END function`: This keyword indicates the function's conclusion. It's a signal that the process defined in this function is complete. Think of it as the signal that the fuselage assembly job is complete.
 
 > Note: You might notice that the comment in the pseudocode is indented (moved a few spaces to the right). This indentation is a convention in programming to show that a piece of code belongs to or is "inside" a specific section, in this case, the AssembleFuselage function.
 
@@ -181,7 +181,7 @@ Let's illustrate with two pseudocode examples:
 **1. Returning a status message:**
 
 ```typescript
-function AssembleFuselage(size, numberOfWindows)
+function AssembleFuselage(size, numberOfWindows):
     // The fuselage gets assembled based on the size and number of windows.
     
     // Once done, a status message is sent back.
@@ -197,7 +197,7 @@ In this case:
 **2. Returning the actual assembled fuselage:**
 
 ```typescript
-function AssembleFuselage(size, numberOfWindows)
+function AssembleFuselage(size, numberOfWindows):
     // The fuselage gets assembled based on the size and number of windows.
     
     // Once done, the assembled fuselage is returned for further use.
@@ -221,7 +221,7 @@ When constructing an airplane, for the sake of this example, we'll consider that
 **Fuselage Assembly:** The department responsible for assembling the fuselage. Parameters like its size and the number of windows are crucial to this process.
 
 ```typescript
-function AssembleFuselage(fuselageSize, numberOfWindows)
+function AssembleFuselage(fuselageSize, numberOfWindows):
     // Steps to assemble the fuselage
     return "Fuselage Assembly Complete"
 END function
@@ -230,7 +230,7 @@ END function
 **Wing Assembly:** The design and structure of the wings are determined by the specific model of the airplane. Different types may necessitate varying wing configurations.
 
 ```typescript
-function AssembleWings(typeOfWing)
+function AssembleWings(typeOfWing):
     // Steps to assemble the chosen type of wing
     return "Wings Assembly Complete"
 END function
@@ -239,7 +239,7 @@ END function
 **Engine Installation:** The number of engines an airplane carries depends on its size and purpose. A cargo plane might require more engines than a small commercial jet, for instance.
 
 ```typescript
-function InstallEngines(numberOfEngines)
+function InstallEngines(numberOfEngines):
     // Steps to install the specified number of engines
     return "Engine Installation Complete"
 END function
@@ -248,7 +248,7 @@ END function
 **Cockpit Assembly:** The cockpit's electronic systems are standardized across various airplane models. Given this uniformity, assembling the cockpit doesn't require specific input parameters.
 
 ```typescript
-function AssembleCockpit()
+function AssembleCockpit():
     // Steps to set up the chosen type of controls
     return "Cockpit Assembly Complete"
 END function
@@ -259,7 +259,7 @@ END function
 With the above modules, the main assembly function would be:
 
 ```typescript
-function AssembleAirplane(fuselageSize, numberOfWindows, typeOfWing, numberOfEngines)
+function AssembleAirplane(fuselageSize, numberOfWindows, typeOfWing, numberOfEngines):
     AssembleFuselage(fuselageSize, numberOfWindows)
     AssembleWings(typeOfWing)
     InstallEngines(numberOfEngines)
@@ -285,22 +285,22 @@ Break down the process of organizing a birthday party into smaller, more managea
 Pseudocode:
 
 ```typescript
-function SendInvitations(listOfFriends)
+function SendInvitations(listOfFriends):
     // Steps to send out invitations to friends on the list
     return "Invitations Sent"
 END function
 
-function OrderCake(cakeType, caseSize)
+function OrderCake(cakeType, caseSize):
     // Steps to order a specific type of cake
     return "Cake Ordered"
 END function
 
-function DecorateVenue(theme)
+function DecorateVenue(theme):
     // Steps to decorate the venue based on the chosen theme
     return "Venue Decorated"
 END function
 
-function ArrangeMusic(playlist)
+function ArrangeMusic(playlist):
     // Steps to set up music based on the chosen playlist
     return "Music Arranged"
 END function
@@ -321,17 +321,17 @@ Write pseudocode for the following three functions, and then make function calls
 Pseudocode:
 
 ```typescript
-function GreetUser(userName)
+function GreetUser(userName):
     // Greet the user by name
     return "Hello, " + userName + "!"
 END function
 
-function DisplayDate()
+function DisplayDate():
     // Show today's date
     return todaysDate
 END function
 
-function RecommendMovie(favoriteMovie)
+function RecommendMovie(favoriteMovie):
     // Suggest a movie for the user to watch based on his favorite movie
     return topRecommendation
 END function
