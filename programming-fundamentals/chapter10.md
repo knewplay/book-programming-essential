@@ -321,9 +321,9 @@ As more of our daily life moves online, the skills learned in web development be
 
 ## Journey into Programming: Start with What You Love
 
-The most important part of getting really good at programming, or anything in life, is to actually enjoy what you're doing. While it's true that sometimes a bit of external pressure can help you learn, the best way is always through finding joy in what you do. Love for coding can take you further than any amount of fear or force.
+The secret to excelling in programming, or any skill, really boils down to enjoying what you're doing. It's about finding that spark of interest and fun in coding. When you love what you do, learning and growing in that area becomes much more natural and exciting.
 
-The key is to just start coding. Pick out something that you think is cool, something you're excited to create or work on, and dive into it. If your dream project seems too complicated right now, that's okay! Begin with something more basic and work your way up. Every project, big or small, is a step forward in your programming journey.
+The best way to improve is to start coding. Choose something that fascinates you, something you're eager to build or be a part of, and jump right in. If your dream project feels too complex for now, no worries! Start with something simpler and gradually level up. Every project, no matter its size, is a step forward on your coding path.
 
 Remember, in this book, we've been working with pseudocode, which isn't a real programming language. But the core ideas and logic you've learned here are the same ones you'll use in any programming language. Think of what you've learned as the foundation upon which you can build as you explore real programming languages and start bringing your own ideas to life.
 
