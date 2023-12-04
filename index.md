@@ -100,9 +100,7 @@ author: "Andrei Guevorkian"
 
 ### [Chapter 10: Exploring Further](./programming-fundamentals/chapter10)
 
-- Introduction to more advanced topics: databases, web development, mobile apps.
-- How to stay updated in the ever-evolving world of programming.
-- Resources to learn more: websites, online courses, books.
+- Introduction to more advanced topics: Artificial Intelligence, Cybersecurity, Game Development, Robotics, Web Development.
 - Encouragement to practice and delve deeper into areas of interest.
 - The lifelong learning journey of a programmer.
 
