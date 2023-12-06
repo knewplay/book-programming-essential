@@ -66,7 +66,8 @@ However, when most people talk about AI, they often mean "Machine Learning" (ML)
 
 For instance, imagine a music streaming app that suggests new songs and artists for you. Just like a friend who learns your music taste over time, the app uses machine learning to analyze your listening history, likes, and skips. It gets better at predicting what you'll enjoy listening to next, creating a personalized playlist that feels like it was handpicked just for you.
 
-[Illustration of music streaming]
+![Music streaming](./figures/ch-10-music-streaming.jpg)
+*Machine learning refines music choices in a streaming service from user feedback.*
 
 A critical aspect of ML is that it relies on labeled data. This is like giving the machine a completed quiz to study from, so it knows what the correct answers (or classifications) should be. As a concrete example, say we are writing a program that will determine if it sees a cat or a dog in an image. In that case, we'd give the computer examples of labeled data, such as pictures that are already tagged as 'cat' or 'dog'. The machine uses these examples to learn the distinctive features of each animal.
 
@@ -94,11 +95,13 @@ END function
 
 The `LearnFeatures()` function is where the machine learning algorithm examines each labeled photo, identifying features such as ear shape, fur pattern, or tail length. Over time, as the algorithm encounters more labeled photos, it gets better at understanding which features are most likely to be those of a 'cat' or 'dog'. This process is called "training the model".
 
-[Illustration of dog and cat features]
+![Cat Dog](./figures/ch-10-cat-dog.jpg)
+*Dog and cat faces showing key features for machine learning identification.*
 
 Once trained, the machine can then look at new, unlabeled photos (data it hasn't seen before) and use what it has learned to guess whether they contain a cat or a dog. This guessing is based on the presence and strength of the features it learned during training.
 
-[Illustration of chihuahua that has features of a cat]
+![Dog with cat features](./figures/ch-10-dog.jpg)
+*Chihuahua with cat-like traits, highlighting machine learning classification challenges.*
 
 However, the model isn't infallible. Some dogs resemble cats, and vice versa. The accuracy of an AI model largely depends on the quality and variety of its training data. For instance, initially focusing on features like the distance between the eyes and nose may lead to limited accuracy. By adding and analyzing more features (such as eye size or nose shape), the model's predictive capability can improve. This iterative process of feature selection and model training is crucial in ML.
 
@@ -158,7 +161,8 @@ However, in real-world applications, passwords are not stored in plain text as s
 
 Hashing transforms your password into a scrambled string of characters, known as a hash. This is done using a hash function, a special algorithm that takes any input text (like a password) and produces a unique hash. Importantly, hashing is a one-way process: converting a password into a hash is straightforward, but reversing a hash back to the original password is extremely difficult, if not impossible.
 
-[Illustration of hashing]
+![Hashing](./figures/ch-10-hashing.jpg)
+*A depiction of the hashing process, turning a password into a unique, secure hash.*
 
 Here’s how it works in practice: when you create a password on a website, the system hashes your password and stores this hash. Later, when you log in, the system hashes the password you enter and compares it to the stored hash. If the two hashes match, your login is successful.
 
