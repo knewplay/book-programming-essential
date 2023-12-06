@@ -172,6 +172,9 @@ This method of storing passwords as hashes increases security. If someone were t
 
 In the realm of digital creativity, game development stands out as a fascinating fusion of art and science. It's more than just playing games; it's about building them from the ground up. In this field, you combine elements of storytelling and visual art with the logic of programming, creating interactive experiences ranging from simple, engaging puzzles to complex, immersive worlds.
 
+![Game](./figures/ch-10-game.jpg)
+*Immersive game world character, fusing storytelling and coding.*
+
 One of the core concepts in game development is the game loop, a continuous cycle that keeps the game running and responsive. It's the heartbeat of every game, constantly checking for player inputs, updating the game state, and rendering the game world on the screen.
 
 Let's look at a basic pseudocode example for a simple 2D game loop, similar to classic games like Super Mario Bros:
@@ -273,6 +276,9 @@ END function
 ```
 
 In this pseudocode, `NavigateRoom()` is the main function where the robot continuously checks for obstacles while trying to reach a destination. If it detects an obstacle, it calls `AvoidObstacle()` to change its path; otherwise, it moves forward. This simple decision-making process is fundamental in robotics, allowing robots to interact with and adapt to their environment.
+
+![Vacuum cleaner](./figures/ch-10-vacuum.jpg)
+*Programmed vacuum for efficient room cleaning and obstacle avoidance.*
 
 ### Web Development
 
