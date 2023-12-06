@@ -4,12 +4,12 @@ date: "2023-11-08"
 author: "Andrei Guevorkian"
 illustrator: "Dengyijia Liu"
 questions:
-  - q1-tag: |
-      q1-text
-  - q2-tag: |
-      q2-text
-  - q3-tag: |
-        q3-text
+  - more-fields: |
+      Can you identify three additional fields where programming plays a crucial role?
+  - career-choice: |
+      If you were to pursue a career in programming, which field(s) would you choose and why?
+  - unrelated-field: |
+      Consider a profession that doesn't obviously require programming. Suggest three ways in which programming could enhance or improve this profession, possibly through automation or other means.
 ---
 
 With a solid foundation in programming basics, you're ready to peek into more complex and exciting areas. This chapter will give you a glimpse into advanced fields where programming is making a big impact, inviting you to consider your next steps in the programming landscape.
@@ -24,9 +24,9 @@ With a solid foundation in programming basics, you're ready to peek into more co
 - [Robotics](#robotics)
 - [Web Development](#web-development)
 
-[Learning Resources](#learning-resources)
+[Journey into Programming: Start with What You Love](#journey-into-programming-start-with-what-you-love)
 
-[Staying Current: The Programmer’s Growth](#staying-current-the-programmers-growth)
+[Questions](#questions)
 
 ## Introduction to More Advanced Topics
 
@@ -123,7 +123,7 @@ In summary:
 
 As we delve deeper into the digital era, cybersecurity becomes increasingly crucial. Our conversations, personal information, and even banking transactions are all happening online, making the security of this digital space more important than ever.
 
-Cybersecurity encompasses a range of subfields, each addressing different aspects of digital protection. These include network security, which focuses on protecting data in transit; ethical hacking, where experts think like hackers to find and fix vulnerabilities; cryptology, involving the creation and cracking of codes; and cyber forensics, the art of uncovering digital evidence after a security breach. Among these varied and intriguing areas, one of the most directly relevant to everyday users is the management and protection of passwords.
+Cybersecurity encompasses a range of subfields, each addressing different aspects of digital protection. These include network security, which focuses on protecting data in transit; ethical hacking, where experts think like hackers to find and fix vulnerabilities; cryptology, which involves creating and cracking codes; and cyber forensics, the art of uncovering digital evidence after a security breach. Among these varied and intriguing areas, one of the most directly relevant to everyday users is the management and protection of passwords.
 
 Consider a scenario where you're trying to log into your social media account. Here's a pseudocode example to illustrate how a social media company might handle password authentication:
 
@@ -155,9 +155,9 @@ userPassword = INPUT
 CheckPassword(userPassword)
 ```
 
-The pseudocode starts by setting the correct password and initializing an attempt counter. The loop allows the user to enter a password up to three times. If the password is correct, the loop breaks, and the user gains access. If the password is incorrect, it prompts the user to try again until the maximum number of attempts is reached.
+The pseudocode starts by setting the correct password and initializing an attempt counter. The loop allows the user to enter a password up to three times. If the password is correct, the loop is exited, and the user gains access. If the password is incorrect, it prompts the user to try again until the maximum number of attempts is reached.
 
-However, in real-world applications, passwords are not stored in plain text as shown here. Storing passwords in plain text is highly insecure as it makes them easily accessible to anyone who can breach the database, including hackers. Instead, secure systems use a process called hashing to store passwords.
+However, in real-world applications, passwords are not stored in plain text, as shown here. Storing passwords in plain text is highly insecure as it makes them easily accessible to anyone who can breach the database, including hackers. Instead, secure systems use a process called hashing to store passwords.
 
 Hashing transforms your password into a scrambled string of characters, known as a hash. This is done using a hash function, a special algorithm that takes any input text (like a password) and produces a unique hash. Importantly, hashing is a one-way process: converting a password into a hash is straightforward, but reversing a hash back to the original password is extremely difficult, if not impossible.
 
@@ -170,7 +170,7 @@ This method of storing passwords as hashes increases security. If someone were t
 
 ### Game Development
 
-In the realm of digital creativity, game development stands out as a fascinating fusion of art and science. It's more than just playing games; it's about building them from the ground up. In this field, you combine elements of storytelling and visual art with the logic of programming, creating interactive experiences that can range from simple, engaging puzzles to complex, immersive worlds.
+In the realm of digital creativity, game development stands out as a fascinating fusion of art and science. It's more than just playing games; it's about building them from the ground up. In this field, you combine elements of storytelling and visual art with the logic of programming, creating interactive experiences ranging from simple, engaging puzzles to complex, immersive worlds.
 
 One of the core concepts in game development is the game loop, a continuous cycle that keeps the game running and responsive. It's the heartbeat of every game, constantly checking for player inputs, updating the game state, and rendering the game world on the screen.
 
@@ -276,7 +276,7 @@ In this pseudocode, `NavigateRoom()` is the main function where the robot contin
 
 ### Web Development
 
-Web development, commonly known as "web dev" among programmers, is an exciting and dynamic field that powers the websites and applications you use every day. Whether you're checking out your favorite blog, streaming a video, or researching for a school project, these activities are facilitated by web developers who create and maintain the sites and applications.
+Web development, commonly known as "web dev" among programmers, is the process behind the creation of websites and applications that are part of our daily digital experience. From browsing a news site to logging into a social media platform, web dev plays a crucial role in how these services are built and function.
 
 Let's dive deeper into one of the core functionalities of the web: the client-server interaction. Imagine you're at a library:
 
@@ -315,8 +315,20 @@ function GetPageContent(url)
 END function
 ```
 
-In this pseudocode, when you request a webpage, the client (your web browser) sends this request to a server. The server checks if it has the page you're asking for and sends back the page (or an error message if it doesn't have it). [explain code in more detail]
+In this pseudocode, the `RequestWebPage(url)` function on the client side (like your web browser) asks the server for a specific webpage by calling `SendRequestToServer(url)`. The server, through `SendRequestToServer(url)`, checks if the requested URL is available. If it is, the `GetPageContent(url)` function retrieves the webpage's content and sends it back to the client. The client then displays this content if there's no error, or shows an error message if the page can't be found. This process exemplifies the basic request-response pattern of web interactions, where the client requests data and the server responds accordingly.
 
-## Learning Resources
+This foundational model of clients sending requests to servers, and servers responding accordingly, is central to the operation of the internet. In fact, this happens to be a basic example of key concepts in web development known as front-end and back-end.
 
-## Staying Current: The Programmer’s Growth
+In web development, the 'front-end' is what you, as the user, see and interact with on a website. It's all the client-side parts - the design, the buttons, and the layout. On the other side, the 'back-end' is the server-side of things. It does all the behind-the-scenes work like processing your requests, accessing and managing databases, and sending back data to the front-end.
+
+As more of our daily life moves online, the skills learned in web development become increasingly valuable, opening doors to creating exciting and impactful digital experiences for everyone.
+
+## Journey into Programming: Start with What You Love
+
+The secret to excelling in programming, or any skill, really boils down to enjoying what you're doing. It's about finding that spark of interest and fun in coding. When you love what you do, learning and growing in that area becomes much more natural and exciting.
+
+The best way to improve is to start coding. Choose something that fascinates you, something you're eager to build or be a part of, and jump right in. If your dream project feels too complex for now, no worries! Start with something simpler and gradually level up. Every project, no matter its size, is a step forward on your coding path.
+
+Remember, in this book, we've been working with pseudocode, which isn't a real programming language. But the core ideas and logic you've learned here are the same ones you'll use in any programming language. Think of what you've learned as the foundation upon which you can build as you explore real programming languages and start bringing your own ideas to life.
+
+So, what's next for you? Maybe you'll start with a simple website, a small game, or even a basic app. The options are endless. The most important thing is to keep practicing, keep learning, and most importantly, keep enjoying the process of creating and solving problems with code. Your journey into programming has just begun, and the path ahead is yours to shape.
