@@ -245,6 +245,9 @@ Expanding from the basic game loop, game development covers a wide range of skil
 
 Robotics is a dynamic field that combines technology with practical application, transforming the way we approach tasks and challenges. More than just constructing mechanical devices, robotics involves programming these machines to carry out specific functions, from simple repetitive tasks to complex problem-solving. The field blends the principles of engineering, computer science, and sometimes even biology to create robots that can range from simple automated arms in factories to complex rovers exploring other planets.
 
+![Game](./figures/ch-10-tic-tac-toe.jpg)
+*A robot playing tic-tac-toe, showcasing the versatility of robotics programming.*
+
 At the core of robotics is the programming that controls how these machines operate and respond to their environment. This includes writing code that guides their movements, processes sensory input, and makes decisions.
 
 Here's a simple pseudocode example, similar to the algorithm a robotic vacuum cleaner might use to navigate around obstacles:
@@ -291,6 +294,9 @@ Let's dive deeper into one of the core functionalities of the web: the client-se
 
 When you ask for a book, the librarian (server) checks if it's available. If it is, they give it to you; if not, they tell you it's unavailable. This is similar to what happens when you use a web browser (the client) to visit a website. Your browser asks a server for the website's pages, and the server responds.
 
+![Library](./figures/ch-10-borrow-books.jpg)
+*A library visitor requesting to borrow a book, akin to a web page request.*
+
 Here's a simple pseudocode example that mirrors this interaction in web development:
 
 ```typescript
@@ -322,6 +328,9 @@ END function
 ```
 
 In this pseudocode, the `RequestWebPage(url)` function on the client side (like your web browser) asks the server for a specific webpage by calling `SendRequestToServer(url)`. The server, through `SendRequestToServer(url)`, checks if the requested URL is available. If it is, the `GetPageContent(url)` function retrieves the webpage's content and sends it back to the client. The client then displays this content if there's no error, or shows an error message if the page can't be found. This process exemplifies the basic request-response pattern of web interactions, where the client requests data and the server responds accordingly.
+
+![Client-Server model](./figures/ch-10-server-clients-library.jpg)
+*A laptop, phone, and PC depicted as clients interacting with a server via the internet, highlighting the flow of web interactions.*
 
 This foundational model of clients sending requests to servers, and servers responding accordingly, is central to the operation of the internet. In fact, this happens to be a basic example of key concepts in web development known as front-end and back-end.
 
