@@ -66,7 +66,8 @@ However, when most people talk about AI, they often mean "Machine Learning" (ML)
 
 For instance, imagine a music streaming app that suggests new songs and artists for you. Just like a friend who learns your music taste over time, the app uses machine learning to analyze your listening history, likes, and skips. It gets better at predicting what you'll enjoy listening to next, creating a personalized playlist that feels like it was handpicked just for you.
 
-[Illustration of music streaming]
+![Music streaming](./figures/ch-10-music-streaming.jpg)
+*Machine learning refines music choices in a streaming service from user feedback.*
 
 A critical aspect of ML is that it relies on labeled data. This is like giving the machine a completed quiz to study from, so it knows what the correct answers (or classifications) should be. As a concrete example, say we are writing a program that will determine if it sees a cat or a dog in an image. In that case, we'd give the computer examples of labeled data, such as pictures that are already tagged as 'cat' or 'dog'. The machine uses these examples to learn the distinctive features of each animal.
 
@@ -94,11 +95,13 @@ END function
 
 The `LearnFeatures()` function is where the machine learning algorithm examines each labeled photo, identifying features such as ear shape, fur pattern, or tail length. Over time, as the algorithm encounters more labeled photos, it gets better at understanding which features are most likely to be those of a 'cat' or 'dog'. This process is called "training the model".
 
-[Illustration of dog and cat features]
+![Cat Dog](./figures/ch-10-cat-dog.jpg)
+*Dog and cat faces showing key features for machine learning identification.*
 
 Once trained, the machine can then look at new, unlabeled photos (data it hasn't seen before) and use what it has learned to guess whether they contain a cat or a dog. This guessing is based on the presence and strength of the features it learned during training.
 
-[Illustration of chihuahua that has features of a cat]
+![Dog with cat features](./figures/ch-10-dog.jpg)
+*Chihuahua with cat-like traits, highlighting machine learning classification challenges.*
 
 However, the model isn't infallible. Some dogs resemble cats, and vice versa. The accuracy of an AI model largely depends on the quality and variety of its training data. For instance, initially focusing on features like the distance between the eyes and nose may lead to limited accuracy. By adding and analyzing more features (such as eye size or nose shape), the model's predictive capability can improve. This iterative process of feature selection and model training is crucial in ML.
 
@@ -158,7 +161,8 @@ However, in real-world applications, passwords are not stored in plain text, as 
 
 Hashing transforms your password into a scrambled string of characters, known as a hash. This is done using a hash function, a special algorithm that takes any input text (like a password) and produces a unique hash. Importantly, hashing is a one-way process: converting a password into a hash is straightforward, but reversing a hash back to the original password is extremely difficult, if not impossible.
 
-[Illustration of hashing]
+![Hashing](./figures/ch-10-hashing.jpg)
+*A depiction of the hashing process, turning a password into a unique, secure hash.*
 
 Here’s how it works in practice: when you create a password on a website, the system hashes your password and stores this hash. Later, when you log in, the system hashes the password you enter and compares it to the stored hash. If the two hashes match, your login is successful.
 
@@ -167,6 +171,9 @@ This method of storing passwords as hashes increases security. If someone were t
 ### Game Development
 
 In the realm of digital creativity, game development stands out as a fascinating fusion of art and science. It's more than just playing games; it's about building them from the ground up. In this field, you combine elements of storytelling and visual art with the logic of programming, creating interactive experiences ranging from simple, engaging puzzles to complex, immersive worlds.
+
+![Game](./figures/ch-10-game.jpg)
+*Immersive game world character, fusing storytelling and coding.*
 
 One of the core concepts in game development is the game loop, a continuous cycle that keeps the game running and responsive. It's the heartbeat of every game, constantly checking for player inputs, updating the game state, and rendering the game world on the screen.
 
@@ -238,6 +245,9 @@ Expanding from the basic game loop, game development covers a wide range of skil
 
 Robotics is a dynamic field that combines technology with practical application, transforming the way we approach tasks and challenges. More than just constructing mechanical devices, robotics involves programming these machines to carry out specific functions, from simple repetitive tasks to complex problem-solving. The field blends the principles of engineering, computer science, and sometimes even biology to create robots that can range from simple automated arms in factories to complex rovers exploring other planets.
 
+![Game](./figures/ch-10-tic-tac-toe.jpg)
+*A robot playing tic-tac-toe, showcasing the versatility of robotics programming.*
+
 At the core of robotics is the programming that controls how these machines operate and respond to their environment. This includes writing code that guides their movements, processes sensory input, and makes decisions.
 
 Here's a simple pseudocode example, similar to the algorithm a robotic vacuum cleaner might use to navigate around obstacles:
@@ -270,6 +280,9 @@ END function
 
 In this pseudocode, `NavigateRoom()` is the main function where the robot continuously checks for obstacles while trying to reach a destination. If it detects an obstacle, it calls `AvoidObstacle()` to change its path; otherwise, it moves forward. This simple decision-making process is fundamental in robotics, allowing robots to interact with and adapt to their environment.
 
+![Vacuum cleaner](./figures/ch-10-vacuum.jpg)
+*Programmed vacuum for efficient room cleaning and obstacle avoidance.*
+
 ### Web Development
 
 Web development, commonly known as "web dev" among programmers, is the process behind the creation of websites and applications that are part of our daily digital experience. From browsing a news site to logging into a social media platform, web dev plays a crucial role in how these services are built and function.
@@ -280,6 +293,9 @@ Let's dive deeper into one of the core functionalities of the web: the client-se
 - The 'server' is like the librarian, who knows where all the books are.
 
 When you ask for a book, the librarian (server) checks if it's available. If it is, they give it to you; if not, they tell you it's unavailable. This is similar to what happens when you use a web browser (the client) to visit a website. Your browser asks a server for the website's pages, and the server responds.
+
+![Library](./figures/ch-10-borrow-books.jpg)
+*A library visitor requesting to borrow a book, akin to a web page request.*
 
 Here's a simple pseudocode example that mirrors this interaction in web development:
 
@@ -312,6 +328,9 @@ END function
 ```
 
 In this pseudocode, the `RequestWebPage(url)` function on the client side (like your web browser) asks the server for a specific webpage by calling `SendRequestToServer(url)`. The server, through `SendRequestToServer(url)`, checks if the requested URL is available. If it is, the `GetPageContent(url)` function retrieves the webpage's content and sends it back to the client. The client then displays this content if there's no error, or shows an error message if the page can't be found. This process exemplifies the basic request-response pattern of web interactions, where the client requests data and the server responds accordingly.
+
+![Client-Server model](./figures/ch-10-server-clients-library.jpg)
+*A laptop, phone, and PC depicted as clients interacting with a server via the internet, highlighting the flow of web interactions.*
 
 This foundational model of clients sending requests to servers, and servers responding accordingly, is central to the operation of the internet. In fact, this happens to be a basic example of key concepts in web development known as front-end and back-end.
 

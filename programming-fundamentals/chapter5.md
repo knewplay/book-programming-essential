@@ -50,7 +50,8 @@ Imagine walking into a library. In this library, there are various items: books,
 
 Just as different items in a library have distinct operations and storage methods, data types in programming have their unique ways of being manipulated and stored. For instance, in the library, you wouldn't try to "listen" to a book or "read" a CD. Similarly, in our daily lives, you wouldn't "peel" a number like a fruit or "wear" it like a shirt. Understanding and respecting these distinctions in programming ensures that we use data appropriately and efficiently.
 
-[illustration of boy reading a CD, or listening to a book]
+![Labeled box](./figures/ch-5-library.jpg)
+*A box labeled "Harry Potter Series", illustrating variables in programming as organizational tools for data.*
 
 ## Common Data Types in Programming
 
@@ -71,7 +72,8 @@ Imagine your room filled with various items: books, CDs, toys, and more. Without
 
 In programming, these "labeled boxes" are what we refer to as variables. They allow us to store, manage, and retrieve data efficiently.
 
-[Illustration of labeled box]
+![Labeled box](./figures/ch-5-labeled-box.jpg)
+*A box labeled "Harry Potter Series", illustrating variables in programming as organizational tools for data.*
 
 ### Benefits of Using Variables
 
@@ -88,11 +90,13 @@ Assigning a value to a variable is like placing an item inside a labeled box.
 
 Imagine finding a box and labelling it *"Animal Farm"*, and then putting the book "Animal Farm" inside it.
 
-[Illustration]
+![Animal Farm](./figures/ch-5-animal-farm.jpg)
+*A box labeled "Animal Farm", symbolizing the assignment of a value to a variable in programming.*
 
 You can also label that box *"Favorite Book"*, and still put the book "Animal Farm" inside it. The label is just a label, and it's there to help you remember what's inside the box.
 
-[Illustration]
+![Favorite book](./figures/ch-5-favorite-book.jpg)
+*A box labeled "Favorite Book" containing "Animal Farm", demonstrating how variables in programming flexibly label and store data.*
 
 In programming, this is typically done with an "equals" sign (=). The variable name comes on the left, and the value you want to store comes on the right.
 
@@ -163,6 +167,9 @@ In these languages, the data type of a variable is set when the variable is decl
 
 [Illustration of box titled "Animal Farm" with a book inside titled animal farm. Next image is removal of the book from the box, and insertion of a DVD of Animal Farm the cartoon. At the bottom, it says "Not Allowed in C"]
 
+![Strongly-typed language](./figures/ch-5-strongly-typed-languages.jpg)
+*A box labeled 'Animal Farm' initially holding a book, then attempting to insert a DVD, which is not allowed in a language like C that uses strict type enforcement.*
+
 #### C Example
 
 ```c
@@ -177,6 +184,9 @@ In the above example, once the `motorSpeed` variable is defined as an integer (`
 Conversely, weakly typed languages allow for more flexibility with variable data types. A variable's type can change over the course of a program. This flexibility is double-edged; while it can simplify code, it can also lead to unexpected behaviors if not used carefully. Python is an example of a weakly typed language.
 
 [Illustration of box titled "Animal Farm" with a book inside titled animal farm. Next image is removal of the book from the box, and insertion of a DVD of Animal Farm the cartoon. At the bottom, it says "Allowed in Python"]
+
+![Weakly-typed language](./figures/ch-5-weakly-typed-languages.jpg)
+*A box labeled 'Animal Farm' first containing a book and then accepting a DVD, illustrating type flexibility in languages like Python.*
 
 #### Python Example
 

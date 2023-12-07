@@ -54,7 +54,12 @@ An algorithm is a well-defined series of steps to solve a specific problem or ac
 
 Imagine you're teaching someone to tie their shoelaces. The instructions you give them, starting from holding the two ends of the laces to the final tightening of the knot, constitute an algorithm.
 
-Now, consider a more complex scenario: robots in a competition. In such a contest, a robot might be tasked to collect a ball from the ground and shoot it into a basket. The robot doesn't act on instinct or intuition; instead, it follows a strict set of instructions - its algorithm. The algorithm could look something like this:
+Now, consider a more complex scenario: robots in a competition. In such a contest, a robot might be tasked to collect a ball from the ground and shoot it into a basket.
+
+![Shooting robot](./figures/ch-2-robot-shoot-image.jpg)
+*A robot shooting a basketball during a competition.*
+
+The robot doesn't act on instinct or intuition; instead, it follows a strict set of instructions - its algorithm. The algorithm could look something like this:
 
 1. Scan the surroundings for a ball.
 2. Navigate towards the ball while avoiding obstacles.
@@ -63,7 +68,10 @@ Now, consider a more complex scenario: robots in a competition. In such a contes
 5. Calculate the right angle and force to shoot the ball into the basket.
 6. Shoot the ball.
 
-Even though it might seem simple to us, each of these steps needs to be meticulously defined for a robot to perform them. How does it "scan" or "pick up"? Each of these larger tasks can be further decomposed into smaller, more precise actions, each constituting part of the overall algorithm.
+![Shooting robot flowchart](./figures/ch-2-robot-shoot-no-loop.jpg)
+*A flowchart diagram showing the steps for a robot to shoot a ball.*
+
+Even though it might seem simple to us, each of these steps needs to be meticulously defined for a robot to perform them. How does it "scan" or "pick up the ball"? Each of these larger tasks can be further decomposed into smaller, more precise actions, each constituting part of the overall algorithm.
 
 ## Introduction to Flowcharts
 
@@ -100,12 +108,21 @@ Write down every step involved in the process. For our tea example, it might loo
 #### Step 3: Start drawing the flowchart
 
 **Begin at the start:**
-Draw the rounded rectangle labeled "Start". This will be the entry point of your flowchart.
+Draw an oval labeled "Start". This will be the entry point of your flowchart.
+
+![Oval to Start](./figures/ch-2-tea-making-a.jpg)
+*Start of a flowchart diagram: an oval labeled "Start".*
 
 **Go step-by-step:**
 Now, take your first step ("Fill the kettle with water.") and represent it with a rectangle. Draw an arrow from "Start" to this rectangle.
 
+![Fill kettle](./figures/ch-2-tea-making-b.jpg)
+*Addition of a rectangle representing the first task.*
+
 From this rectangle, draw another arrow leading to the next step ("Boil the water.") represented by another rectangle. This intuitive method is like walking through the process yourself and marking down each step as you complete it.
+
+![Boil water](./figures/ch-2-tea-making-c.jpg)
+*Addition of a rectangle representing the second task.*
 
 **Incorporate decisions:**
 When you encounter a step that involves making a decision, use a diamond shape. For instance, after removing the teabag, there might be a decision: "Add sugar?". If "Yes", you'd show the steps to add sugar; if "No", you'd proceed to the end.
@@ -113,13 +130,17 @@ When you encounter a step that involves making a decision, use a diamond shape. 
 **Continue until the end:**
 Keep drawing arrows from one rectangle to the next as you move through your list of steps. After the last step, draw an arrow to a rounded rectangle labeled "End".
 
+![Completed flowchart](./figures/ch-2-tea-making.jpg)
+*Complete flowchart of the tea-making process.*
+
 #### Step 4: Review
 
 Once you've drawn out each step from your list, take a moment to review the flowchart. Walk through each step and decision in your mind to ensure nothing is missing and the flow is logical.
 
 The intuitive approach is like narrating a story to yourself. You're recounting the tale of making a cup of tea, from start to finish. By following each step as you would in real life and drawing it out in sequence, you create a visual representation of the process.
 
-[Illustration of tea making process]
+![Tea making](./figures/ch-2-tea-makeing-image.jpg)
+*Tea being poured into a cup.*
 
 By using this systematic approach, you can turn any problem or process into a clear, visual flowchart.
 
@@ -130,6 +151,9 @@ Remember, algorithms and flowcharts are all about breaking down problems and rep
 ### Activity #1
 
 Think of a daily routine. Describe the sequence and decision-making process of your routine as if you were guiding someone through the steps. For instance, consider the routine of getting ready for work in the morning.
+
+![Getting ready for school](./figures/ch-2-getting-ready-for-school.jpg)
+*A student headed to school.*
 
 ### Answer
 
@@ -170,4 +194,5 @@ To instruct the robot to move 30 centimeters forward with each leg, one after an
 
 These commands ensure the robot takes a single step with each leg, moving a total of 30 centimeters forward.
 
-[Flowchart diagram]
+![Robot walking flowchart](./figures/ch-2-robot-walk%20-no-loop.jpg)
+*Completed flowchart of a robot walking.*

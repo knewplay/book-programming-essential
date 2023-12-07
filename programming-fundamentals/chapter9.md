@@ -93,6 +93,9 @@ Notice how the actions inside the for loop (adding water and steeping the tea) a
 
 Think of variables like ingredients in a recipe. You want to lay them all out before you start cooking. By grouping related variables at the start, you make your "recipe" easier to follow. Here's an example:
 
+![Cake ingredients](./figures/ch-9-cake.jpg)
+*You need eggs, flour and sugar to bake a cake.*
+
 ```typescript
 FUNCTION BakeCake()
     eggs = 3
@@ -124,6 +127,9 @@ END FUNCTION
 ```
 
 ### Avoiding Deep Nesting
+
+![Deep nesting confusing](./figures/ch-9-loops.jpg)
+*Deep nesting will get confusing very quickly.*
 
 When we write stories, if we have too many stories within stories, it can become confusing. Similarly, in programming, having too many loops or conditions inside of each other (nested) can make code hard to follow. Try to keep things simple:
 
@@ -181,6 +187,9 @@ IF conditionB
     MakeMixture()
 END IF
 ```
+
+![Cake function.](./figures/ch-9-function.jpg)
+*A device representing a function used to transform ingredients into cake batter.*
 
 ## Commenting Properly
 
@@ -263,9 +272,15 @@ END FUNCTION
 
 With the ingredients and steps laid out clearly, anyone reading this code will understand the process of making a pizza. The comments provide additional context, making the function accessible even for those who might be new to coding.
 
+![Pizza](./figures/ch-9-pizza.jpg)
+*A pizza with multiple toppings.*
+
 **Activity #2:**
 
 Here’s a long piece of code that repeats the same steps several times. Can you create a function to avoid repetition and make the code cleaner?
+
+![Code clean up.](./figures/ch-9-clean-up.jpg)
+*Cleaning code up.*
 
 ```typescript
 Display("Welcome, playerone!")

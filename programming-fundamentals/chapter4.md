@@ -67,7 +67,8 @@ When you start actually programming, you'll notice that you can't just say "Loop
 
 So in this section, let's take a closer look at the core components of a loop, using a visual guide:
 
-[[Illustration](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.quora.com%2FHow-do-I-visualize-a-loop-in-C-programming&psig=AOvVaw3nEYgUSEy0vJgFHnHPCkYu&ust=1697055905206000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJiF5Iao7IEDFQAAAAAdAAAAABAD) but split "body" and "update" into two boxes]
+![Flowchart of while loop](./figures/ch-4-robot-walk%20-%20loop.jpg)
+*Flowchart representing the basic components of a while loop.*
 
 1. **Starting Point (*`start`*):** This is where our loop begins its journey. It sets the stage for the series of repetitive actions that will follow.
 2. **Initialization (*`initialization of loop counter`*):** We set a base or starting value for our loop.
@@ -82,7 +83,8 @@ So in this section, let's take a closer look at the core components of a loop, u
 
 Imagine we're programming a robot for a competition where it needs to shoot a ball into a basket ten times in a row. Using a loop, we can efficiently give the robot this repetitive task.
 
-[Illustration: A flowchart diagram representing a loop where a robot shoots a ball 10 times]
+![Flowchart of shooting balls](./figures/ch-4-robot-shoot.jpg)
+*Flowchart of a robot shooting balls until no balls are left.*
 
 1. **Starting Point (*`Start`*):** Our loop begins at this entry point, initiating the robot's ball shooting sequence.
 2. **Initialization (*`Set shotCounter to 0`*):** The loop starts by setting an initial value for the shot counter, which keeps track of how many balls the robot has shot. Initially, the shot counter is set to 0.
@@ -105,6 +107,9 @@ Rocket launches are thrilling, right? They always start with that dramatic count
 6. **Exit Point (*`Launch the rocket`*)**: When 'countdown' hits zero, the loop's work is done, and it's time for the rocket to soar into the skies!
 
 **Overview:** The countdown starts at 10, and with each passing second, the number decreases by 1. Once the countdown reaches 0, the rocket launches! In this case, the starting point is `countdown = 10`, the condition to check if is `countdown == 0`, and the update we do is to update `countdown - 1` every passing second.
+
+![Flowchart of countdown](./figures/ch-4-Rocket-launch.jpg)
+*Flowchart representation of the rocket launch countdown.*
 
 ## Nested Loops
 
@@ -143,6 +148,9 @@ This logic conveys that for two days, you'll ride a roller coaster, and then dec
 
 Recall the humanoid robot from [Chapter 2 Activity #2](./chapter2#activity-2). With your understanding of loops from this chapter, describe the commands you would provide to ensure the robot walks across the room. Consider visualizing your solution with a flowchart diagram.
 
+![Walking robot](./figures/ch-4robot-walk-image.jpg)
+*A humanoid robot walking.*
+
 ### Answer
 
 To make the robot walk across the room, you would use a series of commands for each step, and then loop through those commands until the robot has crossed the room:
@@ -170,7 +178,8 @@ REPEAT while not endOfRoom
     transfer_weight_left
 ```
 
-[Illustration of flowchart diagram]
+![Walking robot flowchart](./figures/ch-4-robot-walk%20-%20loop.jpg)
+*Flowchart for a humanoid robot walking.*
 
 This series of commands instructs the robot on the basic mechanics of walking, step by step. You would then loop the above commands until the robot has reached the end of the room.
 

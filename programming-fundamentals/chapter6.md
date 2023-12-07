@@ -56,18 +56,20 @@ We learned in Chapter 1 about the importance of breaking down a problem. We lear
 
 Imagine a mysterious black box. You don't know what's inside it, but you're given a manual which tells you what the box needs, and what it will produce. You feed the box what it asks for, and out comes a predictable result, exactly as the manual described. That's the essence of a function in programming. Like this black box, a function takes in certain inputs, processes them internally, and produces an output. You don't always need to know the intricacies of how it works inside, just what you need to give it, and what to expect in return.
 
-[Illustration of [industrial machine/BLACK BOX which takes in something and outputs something else](https://content.presentermedia.com/content/clipart/00019000/19074/process_conversion_300_nwm.jpg), and on top of it have [illustration of function](https://res.cloudinary.com/practicaldev/image/fetch/s--4bEYLci3--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/kq34mrtitnuolaulcpfz.png)]
+![Industrial conversion](./figures/ch-6-converting-machine.jpg)
+*A machine taking specific inputs and producing a predictable output, akin to the operation of functions in programming.*
 
 Now, consider an airplane-manufacturing plant. You're outside, observing the massive building, and throughout the day, trucks come in loaded with plane parts. By the end of the day, out rolls a brand-new airplane. This entire plant can be visualized as a single function: you input plane parts, and it outputs a ready-to-fly airplane.
 
-[Illustration of building, with plane parts going in, and a plane coming out]
+![Airplane manufacturing](./figures/ch-6-plane-factory.jpg)
+*A factory receiving airplane parts and outputting a completed airplane, symbolizing a function's process of transforming inputs into specific outputs.*
 
 However, as you correctly guessed, the process isn't that straightforward. Inside, workers aren't scrambling to assemble an entire airplane in one place. The plant is divided into sections. One section assembles the wings, another the fuselage, yet another the engines, and so on. Each section specializes in one aspect, doing its job efficiently. In the end, all these components are combined, resulting in a finished airplane. This reflects the essence of modularization.
 
-[Illustration of inside the building (maybe have building be transparent, we can see its silhouette) with different components being produced.
-OR Somehow show that the pieces that come in from the trucks, then get distributed/separated into different sections.]
+[Illustration of inside the building (maybe have building be transparent, we can see its silhouette) with different components being produced. Inner workings of the airplane manufacturing plant]
 
-[OR illustration of the entire building being one large function, and inside have sub-functions]
+![Airplane manufacturing transparent view](./figures/ch-6-plane-assembling.jpg)
+*A transparent view inside an airplane manufacturing plant with distinct sections for assembling various parts, illustrating the principle of modularization.*
 
 Much like the specialized sections in the airplane-manufacturing plant, functions in programming allow developers to break down complex tasks into smaller, more manageable pieces. This not only makes the code more organized but also easier to debug, maintain, and reuse.
 
