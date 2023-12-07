@@ -41,16 +41,16 @@ Simply put, AI involves creating rules and algorithms that enable computers to p
 For example, think of a simple AI that plays tic-tac-toe:
 
 ```typescript
-function PlayTicTacToe(board)
-    while "empty space on the board exists" == True
-        if move == "lead to victory"
+function PlayTicTacToe(board):
+    while "empty space on the board exists" == True:
+        if move == "lead to victory":
             // If AI can win with this move, take it
             MAKE move
-            RETURN
-        else if move == "block opponent victory"
+            return
+        else if move == "block opponent victory":
             // If AI can block the opponent's victory, do it
             MAKE move
-            RETURN
+            return
         END if
     END while
 
@@ -74,21 +74,21 @@ A critical aspect of ML is that it relies on labeled data. This is like giving t
 Here's a simplified pseudocode example of how a machine could learn from labeled photos to tell the difference between cats and dogs:
 
 ```typescript
-function LearnFromPhotos(photoCollection)
-    while photo "left in" photoCollection
-        if photo is labeled 'cat'
+function LearnFromPhotos(photoCollection):
+    while photo "left in" photoCollection:
+        if photo is labeled 'cat':
             LearnFeatures('cat', photo)
-        else // Photo is labeled 'dog'
+        else: // Photo is labeled 'dog'
             LearnFeatures('dog', photo)
         END if
     END while
 END function
 
-function GuessAnimal(newPhoto)
-    if newPhoto "matches more features of" 'cat'
-        RETURN "This is probably a cat"
-    else
-        RETURN "This is probably a dog"
+function GuessAnimal(newPhoto):
+    if newPhoto "matches more features of" 'cat':
+        return "This is probably a cat"
+    else:
+        return "This is probably a dog"
     END if
 END function
 ```
@@ -128,15 +128,15 @@ Cybersecurity encompasses a range of subfields, each addressing different aspect
 Consider a scenario where you're trying to log into your social media account. Here's a pseudocode example to illustrate how a social media company might handle password authentication:
 
 ```typescript
-function CheckPassword(inputPassword)
+function CheckPassword(inputPassword):
     realPassword = "secret123"  // This is the correct password
     attemptCount = 0            // Start counting attempts
 
-    while attemptCount < 3
-        if inputPassword == realPassword
+    while attemptCount < 3:
+        if inputPassword == realPassword:
             Print("Welcome! You're in.")
             EXIT LOOP  // Stop checking since the password is correct
-        else
+        else:
             Print("Oops! Wrong password. Try again.")
             attemptCount = attemptCount + 1
             // Ask for the password again
@@ -144,7 +144,7 @@ function CheckPassword(inputPassword)
         END if
     END while
 
-    if attemptCount == 3
+    if attemptCount == 3:
         Print("Sorry, no more tries allowed.")
     END if
 END function
@@ -180,20 +180,20 @@ One of the core concepts in game development is the game loop, a continuous cycl
 Let's look at a basic pseudocode example for a simple 2D game loop, similar to classic games like Super Mario Bros:
 
 ```typescript
-function RunGame()
+function RunGame():
     gameIsRunning = True
     playerScore = 0
 
-    while gameIsRunning == True
+    while gameIsRunning == True:
         // Check for player input (like movement or actions)
         playerInput = GetPlayerInput()
 
         // Update the game state based on player input and other factors
-        if playerInput == "jump"
+        if playerInput == "jump":
             jump()
-        else if playerInput == "move left"
+        else if playerInput == "move left":
             moveLeft()
-        else if playerInput == "move right"
+        else if playerInput == "move right":
             moveRight()
         END if
 
@@ -204,7 +204,7 @@ function RunGame()
         RenderGameScreen()
 
         // Check if the player wants to exit the game
-        if playerInput == "exit"
+        if playerInput == "exit":
             gameIsRunning = False
         END if
     END while
@@ -212,27 +212,27 @@ function RunGame()
     Print("Game Over! Your score: " + playerScore)
 END function
 
-function GetPlayerInput()
+function GetPlayerInput():
     // Code to get the player's current action
 END function
 
-function Jump()
+function Jump():
     // Code for the jump action
 END function
 
-function MoveLeft()
+function MoveLeft():
     // Code for moving left
 END function
 
-function MoveRight()
+function MoveRight():
     // Code for moving right
 END function
 
-function UpdateScore(score)
+function UpdateScore(score):
     // Code to update the player's score
 END function
 
-function RenderGameScreen()
+function RenderGameScreen():
     // Code to display the game state on the screen
 END function
 ```
@@ -253,27 +253,27 @@ At the core of robotics is the programming that controls how these machines oper
 Here's a simple pseudocode example, similar to the algorithm a robotic vacuum cleaner might use to navigate around obstacles:
 
 ```typescript
-function NavigateRoom()
-    while not atDestination
-        if ObstacleDetected()
+function NavigateRoom():
+    while NOT atDestination:
+        if ObstacleDetected():
             AvoidObstacle()
-        else
+        else:
             MoveForward()
         END if
     END while
     Print("Destination reached!")
 END function
 
-function ObstacleDetected()
+function ObstacleDetected():
     // Code to detect if there is an obstacle in front of the robot
     // Returns true if an obstacle is detected, false otherwise
 END function
 
-function AvoidObstacle()
+function AvoidObstacle():
     // Code for the robot to change direction or take action to avoid the obstacle
 END function
 
-function MoveForward()
+function MoveForward():
     // Code to move the robot forward
 END function
 ```
@@ -301,27 +301,27 @@ Here's a simple pseudocode example that mirrors this interaction in web developm
 
 ```typescript
 // Client-Side Code
-function RequestWebPage(url)
+function RequestWebPage(url):
     Print("Requesting webpage from: " + url)
     response = SendRequestToServer(url) // Function defined below
-    if response != "Error"
+    if response != "Error":
         DisplayWebPage(response)
-    else
+    else:
         Print("Failed to load webpage.")
     END if
 END function
 
 // Server-Side Code
-function SendRequestToServer(url)
-    if url "exists in" server
+function SendRequestToServer(url):
+    if url "exists in" server:
         pageContent = GetPageContent(url) // Function defined below
         return pageContent
-    else
+    else:
         return "Error: Page not found"
     END if
 END function
 
-function GetPageContent(url)
+function GetPageContent(url):
     // Code to retrieve the webpage content based on the URL
     // Returns the HTML/CSS/JS content of the page
 END function

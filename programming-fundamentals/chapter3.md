@@ -160,8 +160,6 @@ In both cases, the underlying principle is evaluating the accuracy or truthfulne
 
 When programming real-world applications, we use variables like *'raining'* or *'temperature'* to symbolize and manage real-world data. Our decision-making constructs and logical operators interact with these variables in the same way they would with pure numbers.
 
-<!-- [4-part Illustration: 1. 3>2 (True), 2. 4>4 (False), 3. raining (True), 4. not raining (False)] -->
-
 This dynamic nature of variables lets our programs react and make decisions based on the current situation or data, whether that data represents numbers, weather conditions, user inputs, or any other conceivable scenario.
 
 With this understanding, we can now delve into real-world problems like deciding whether to hold an outdoor event based on the weather forecast.
@@ -187,7 +185,7 @@ Next, we must decide what to do based on the number's value. This is where the *
 If the number is greater than zero, we can say it's positive:
 
 ```typescript
-IF number > 0 THEN
+if number > 0 THEN:
     PRINT "The number is positive."
 ```
 
@@ -196,21 +194,21 @@ But what if it's not? We need another check, and that's where **else if** proves
 If the number is less than zero, it's negative:
 
 ```typescript
-ELSE IF number < 0 THEN
+else if number < 0 THEN:
     PRINT "The number is negative."
 ```
 
 Lastly, if the number isn't positive or negative, it must be zero. That's where **else** comes in. It's our catch-all for "if none of the above conditions are met, do this":
 
 ```typescript
-ELSE
+else:
     PRINT "The number is zero."
 ```
 
 And, to neatly conclude our decision-making constructs, we use:
 
 ```typescript
-END IF
+END if
 ```
 
 Putting it all together, we have
@@ -218,13 +216,13 @@ Putting it all together, we have
 ```typescript
 INPUT number
 
-IF number > 0 THEN
+if number > 0 THEN:
     PRINT "The number is positive."
-ELSE IF number < 0 THEN
+else if number < 0 THEN:
     PRINT "The number is negative."
-ELSE
+else:
     PRINT "The number is zero."
-END IF
+END if
 ```
 
 By outlining logic in pseudocode, transitioning to actual coding in any programming language becomes a smoother process, as the core logic remains consistent.
@@ -236,13 +234,13 @@ Without going into all the steps, here is the final pseudocode.
 ```typescript
 INPUT number
 
-IF number == 0 THEN
+if number == 0 THEN:
     PRINT "The number is zero."
-ELSE IF number > 0 THEN
+else if number > 0 THEN:
     PRINT "The number is positive."
-ELSE
+else:
     PRINT "The number is negative."
-END IF
+END if
 ```
 
 There are multiple ways to solve most problems, depending on the order in which you evaluate the conditions.
@@ -268,7 +266,7 @@ We want to check if it's NOT raining. Here's how we can understand the NOT raini
 In pseudocode:
 
 ```typescript
-IF NOT raining
+if NOT raining:
 ```
 
 **Evaluating Temperature:**
@@ -281,9 +279,9 @@ temperature >= 18 AND temperature <= 30
 Combining both conditions, our complete decision-making pseudocode becomes:
 
 ```typescript
-IF NOT raining AND (temperature >= 18 AND temperature <= 30):
+if NOT raining AND (temperature >= 18 AND temperature <= 30):
     proceed_with_event
-ELSE
+else:
     reschedule_event
 ```
 
