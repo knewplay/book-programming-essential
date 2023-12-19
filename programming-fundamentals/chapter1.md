@@ -26,6 +26,8 @@ Programming, at its core, is about solving problems. But before you can solve a 
 
 Imagine you're faced with a jigsaw puzzle. If given all the pieces jumbled up in a box, it's overwhelming. But when you start grouping pieces by color or patterns and tackling small sections at a time, the task becomes more manageable. This is the essence of problem decomposition.
 
+![Picnic Organization](./figures/chp-1-jigsaw-puzzle.jpg)
+
 In programming, problems can often feel like a massive jigsaw puzzle, especially when you're just starting out. The trick is to break them down into bite-sized tasks that you can handle.
 
 ### Benefits of Breaking Problems Down
@@ -52,7 +54,8 @@ In programming, problems can often feel like a massive jigsaw puzzle, especially
 Imagine you are organizing a big family picnic and you need to ensure everyone has everything they need (food, drinks, and activities). How would you approach to organize this event?
 
 ![Family Picnic](./figures/ch-1-family-picnic.jpg)
-*A picnic setup with food and drinks on blankets.*
+
+![Picnic Organization](./figures/chp-1-family-picnic-2.jpg)
 
 ### Answer
 Organizing a big family picnic can be a complex task. Here's one structured approach, among many, to ensure everything runs smoothly:
@@ -81,6 +84,8 @@ Remember, while this is one approach to plan, adaptability is essential.
 ### Activity #2
 
 Imagine you're tasked with designing a simple to-do list app that helps users organize their daily tasks. How would you approach the development of this app?
+
+![App design](./figures/chp1-design-app.jpg)
 
 ### Answer
 Designing a to-do list app, while conceptually simple, requires a focus on user experience to make it stand out. Here's a structured method to guide the development:
