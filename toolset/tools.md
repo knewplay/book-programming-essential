@@ -68,6 +68,8 @@ Another field where the terminal shines is cybersecurity. Security analysts use 
 
 Finally, the terminal is also crucial in the field of robotics. Even though we sometimes see young kids "programming" robots within their school curriculum, they often do it using a GUI. These interfaces often feature drag-and-drop functionality and simplified coding blocks that allow students to create basic robot behaviors without delving into the complexities of coding. Transitioning to the terminal becomes essential as students advance in their robotics journey. It allows them to dive deeper into coding, write precise and customized algorithms, and gain a deeper understanding of the mechanics behind their robot's operations.
 
+![Robotics programming](./figures/terminal-robotics.png)
+
 So whatever your interests, the terminal is a crucial tool for programmers and IT professionals. It provides direct access to the underlying command-line interface, allowing for precise control, automation, and efficient workflows. The terminal empowers users to delve into the inner workings of computer operations, unleashing the full potential of their skills and creativity.
 
 ### Fundamentals
@@ -106,9 +108,6 @@ In the Computer Fundamentals, Software and Hardware section, I mentioned that th
 In general, this is true, however the operating system is large and has many components. One of its components is called the kernel.
 
 Just like its definition in English, the kernel is the operating system's core. Windows has one, macOS has one, and so too does Linux. Everything previously said that the OS does is actually done specifically by the kernel.
-
-![Kernel](./figures/kernel.jpg)
-*The kernel is the core bridge between software applications and the physical hardware.*
 
 #### Shell
 
@@ -184,8 +183,7 @@ When we enter a command into the terminal, we use the keyboard. Hence, the input
 
 In addition to receiving output on the terminal, we can use I/O redirection to manipulate how commands process data. Let's say you want to take the output of one command and use it as input for another command. This is where pipes come into play. Pipes are represented by the | symbol and allow us to connect multiple commands, creating a powerful chain of actions.
 
-![Piping process](./figures/piping.jpg)
-*The process of piping involves inputting the output of one function into another.*
+![Piping process pizza example](./figures/piping-pizza.png)
 
 See examples of how to use pipes [in this article](https://www.computernetworkingnotes.com/linux-tutorials/pipes-in-linux-explained.html).
 
