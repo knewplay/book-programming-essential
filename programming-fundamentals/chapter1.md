@@ -53,8 +53,6 @@ In programming, problems can often feel like a massive jigsaw puzzle, especially
 
 Imagine you are organizing a big family picnic and you need to ensure everyone has everything they need (food, drinks, and activities). How would you approach to organize this event?
 
-![Family Picnic](./figures/ch-1-family-picnic.jpg)
-
 ![Picnic Organization](./figures/chp-1-family-picnic-2.jpg)
 
 ### Answer
@@ -75,9 +73,6 @@ Organizing a big family picnic can be a complex task. Here's one structured appr
 5. Miscellaneous Preparations:
     - Weather: Monitor forecasts; plan for rain with umbrellas or a backup venue.
     - Parking: Ensure the site has sufficient parking or inform attendees of alternatives.
-
-![Picnic Organization](./figures/ch-1-organizing-a-big-family-picnic.jpg)
-*Steps to organizing a successful family picnic.*
 
 Remember, while this is one approach to plan, adaptability is essential.
 
