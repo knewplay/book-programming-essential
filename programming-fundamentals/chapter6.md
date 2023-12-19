@@ -66,8 +66,6 @@ Now, consider an airplane-manufacturing plant. You're outside, observing the mas
 
 However, as you correctly guessed, the process isn't that straightforward. Inside, workers aren't scrambling to assemble an entire airplane in one place. The plant is divided into sections. One section assembles the wings, another the fuselage, yet another the engines, and so on. Each section specializes in one aspect, doing its job efficiently. In the end, all these components are combined, resulting in a finished airplane. This reflects the essence of modularization.
 
-[Illustration of inside the building (maybe have building be transparent, we can see its silhouette) with different components being produced. Inner workings of the airplane manufacturing plant]
-
 ![Airplane manufacturing transparent view](./figures/ch-6-plane-assembling.jpg)
 *A transparent view inside an airplane manufacturing plant with distinct sections for assembling various parts, illustrating the principle of modularization.*
 
@@ -99,6 +97,8 @@ Imagine an airplane manufacturing plant where there's only one large assembly li
 In a more modular approach, the airplane manufacturing plant has separate assembly lines or stations for each major part.
 
 Each station functions as an independent module. Once all parts are ready, they come together in a final assembly line.
+
+![Modular design](./figures/chp6-design-with-modularity.jpg)
 
 **Advantages:**
 
@@ -137,7 +137,7 @@ Think of these parameters as the instruction manual or blueprint for the fuselag
 
 > Note: You might notice that the comment in the pseudocode is indented (moved a few spaces to the right). This indentation is a convention in programming to show that a piece of code belongs to or is "inside" a specific section, in this case, the AssembleFuselage function.
 
-The beauty of this approach is that once this function is set up, we can call upon it multiple times with various inputs. If we need a large plane with 20 windows, we simply provide those specific details (arguments) when we call the function. It's like telling the assembly team to start a new project with a new set of blueprints.
+The beauty of this approach is that once this function is set up, we can call upon it multiple times with various inputs. If we need a large plane with 20 windows, we simply provide those specific details (arguments) when we call the function. It's like telling the assembly team to start a new project with a new set of details.
 
 ### Function Call and its Arguments
 
@@ -172,7 +172,7 @@ This is the power of functions: Set up the process once, then initiate it whenev
 
 So far, we've talked about how to create a function and how to call it. In both these discussions, the topic of "input" is involved. But what about the output? If we revisit the basic representation of a function, for every input that we give it, it should give us an output in return.
 
-[Illustration of function core]
+![Return mechanism](./figures/chp6-return-mechanism.jpg)
 
 Consider a scenario where the fuselage-assembly team finishes their work. Sometimes they might need to simply give a status update like "Fuselage Assembly Complete." Other times, they might need to actually present the finished fuselage for inspection or integration with other parts of the plane.
 
@@ -279,6 +279,8 @@ One of the most notable benefits of such a modular design is maintainability. If
 **Activity #1:**
 
 Design functions to complete the task of organizing a birthday party.
+
+![Birthday party](./figures/chp6-birthday-party.jpg)
 
 **Answer:**
 
