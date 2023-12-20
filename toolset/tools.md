@@ -220,6 +220,8 @@ To address such challenges, programmers often rely on version control systems li
 
 Version Control Systems are tools that keep track of changes to code or other collections of files or folders. In other words, they keep track of the history of changes to some set of documents.
 
+![Project snapshots](./figures/sketch-git-snapshots.png)
+
 Version Control Systems track changes to a folder and its contents in a series of snapshots. So, if you are working on your code, you can take a snapshot of the entire state of your project folder at any time, and with time, you will have multiple of these snapshots.
 
 Version Control Systems also keep track of some extra information, or "metadata", along with the actual changes to the content. This makes it possible to know who authored a particular change to a specific file, when it was made, and what message was left with the snapshot.
@@ -572,6 +574,8 @@ Popular IDEs include Visual Studio for multiple languages (but primarily C#), Ec
 ### The conclusion
 
 The world of code editors spans a broad spectrum. On one end, you have minimalist tools like Vim that operate solely on keyboard commands, and on the other end, there are IDEs like Visual Studio that bring together a suite of tools.
+
+![Code editors represented with typing devices](./figures/sketch-code-editors.png)
 
 Today, however, VS Code represents a harmonious middle ground. It stands as a testament to the evolution of code editors, seamlessly blending the efficiency of traditional editors with the intuitive interfaces of modern-day tools.
 
