@@ -183,7 +183,7 @@ When we enter a command into the terminal, we use the keyboard. Hence, the input
 
 In addition to receiving output on the terminal, we can use I/O redirection to manipulate how commands process data. Let's say you want to take the output of one command and use it as input for another command. This is where pipes come into play. Pipes are represented by the | symbol and allow us to connect multiple commands, creating a powerful chain of actions.
 
-![Piping process pizza example](./figures/piping-pizza.png)
+![Piping process pizza example](./figures/sketch-piping-pizza.png)
 
 See examples of how to use pipes [in this article](https://www.computernetworkingnotes.com/linux-tutorials/pipes-in-linux-explained.html).
 
