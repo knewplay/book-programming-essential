@@ -18,7 +18,7 @@ questions:
   - file-naming: What is the purpose of file naming conventions?
 ---
 
-In the previous article, we explored the history of computers and their defining characteristics. Now, let's delve deeper into general-purpose computers and their underlying concepts such as Operating Systems and file systems.
+In the previous article, we explored the history of computers and their defining characteristics. Now, let's delve deeper into general-purpose computers and their underlying concepts such as operating systems and file systems.
 
 ## Table of Contents
 
@@ -47,34 +47,38 @@ As we saw in the last article, a computer fundamentally consists of 4 parts:
 
 **Input:** This is where data enters the system. Devices like the keyboard, mouse, touchpad, camera, and microphone capture and transmit information to the computer for processing.
 
-**Processing Unit:** The CPU (Central Processing Unit) is the computer's brain. It handles data computations, command executions, and oversees the system's functions.
+**Processing Unit:** The CPU (Central Processing Unit) is the computer's brain. It handles data computations, command executions, and managing the overall operations of the computer.
 
-**Memory and Storage:** Two methods work in tandem When saving information on a laptop. The long-term "storage" is provided by hard disk drives (HDD) or solid-state drives (SSD), while temporary "memory" comes in the form of Random Access Memory (RAM).
+**Memory and Storage:** Two methods work in tandem when saving information on a laptop. The long-term "storage" is provided by hard disk drives (HDD) or solid-state drives (SSD), while temporary "memory" comes in the form of Random Access Memory (RAM).
 
-> Note: The distinction between memory (RAM) and storage (HDD/SSD) is crucial. Delve deeper into storage [here](https://student.cs.uwaterloo.ca/~cs100/F21content/02-03-secondary-storage.html) and into memory [here](https://student.cs.uwaterloo.ca/~cs100/F21content/02-04-memory.html). Be aware: the author uses "primary memory" for "memory" and "secondary storage" for "storage"—it's just a terminology choice.
+> Note: The distinction between memory (RAM) and storage (HDD/SSD) is crucial. Delve deeper into storage [here](https://student.cs.uwaterloo.ca/~cs100/F21content/02-03-secondary-storage.html) and into memory [here](https://student.cs.uwaterloo.ca/~cs100/F21content/02-04-memory.html). Be aware: the author uses "primary memory" for "memory" and "secondary storage" for "storage" — it's just a terminology choice.
 
 **Output:** After processing, the data is presented as output. On a laptop, the screen is the primary output device, visualizing data. Additionally, devices like speakers, headphone jacks, printers, or external monitors represent other forms of output.
 
 ![Laptop](./figures/laptop.jpg)
-*An illustration of a modern laptop with CPU and RAM depicted, symbolizing the essential components of the computer.*
+*A modern laptop with CPU and RAM depicted, symbolizing the essential components of the computer.*
 
 All the devices mentioned here, such as the keyboard, the CPU, the hard drive, and the screen, are known as hardware. **Hardware** is "hard" to the touch. It's tangible. In other words, you can actually touch it and hold it. It's also "hard" to change it. If you buy a laptop, the components on the laptop's motherboard are soldered onto the board, making the hardware fixed and hard to modify.
 
 On the other hand, we have software. Software is soft. In other words, it's not something physical that you can touch or feel. Can you touch a video game, or the Google search engine? Nope. It's also soft in the sense that it's flexible. One minute, you can run Microsoft Word, and the next, you might run Photoshop. Software can easily be changed, modified, or removed.
 
 ![Laptop's Software](./figures/software.jpg)
-*An illustration of a modern laptop showcasing the intangible yet dynamic nature of software applications.*
+*A modern laptop showcasing the intangible yet dynamic nature of software applications.*
 
 ## Operating System
 
 Marrying hardware and software poses an intriguing question. Without hardware, software remains an abstract concept; without software, hardware becomes an unutilized piece of machinery. They complement each other: hardware provides a platform for software, while software brings functionality to hardware.
 
-Software resides in a computer's memory, which can be visualized as numerous "slots." Each slot holds a unit of information—let's equate one instruction (or command) to one slot for simplicity. If we have a sequence of 10 commands, we'd occupy 10 consecutive memory slots, often referred to as memory locations or addresses. The CPU processes the instruction in slot #1, then moves on sequentially, ending with the instruction in slot #10. Collectively, this sequence forms a program, which is essentially a series of commands for the CPU.
+Software is stored in a computer's memory, which can be conceptualized as a series of "slots." Each slot stores a unit of information. For the sake of simplicity, imagine that each slot holds a single instruction or command. If we have a sequence of 10 commands, these would occupy 10 adjacent memory slots. The CPU starts by processing the instruction in slot #1, then proceeds sequentially, concluding with the instruction in slot #10. This sequence of instructions collectively forms a program, essentially a set of commands for the CPU to execute.
 
 ![Memory Slots](./figures/computer-memory.jpg)
-*An illustration of a memory stick with zoomed-in memory slots holding instructions for a computer program.*
+*A memory stick with magnified memory slots, each storing an instruction as part of a computer program.*
 
-While it might seem straightforward, consider this: different devices like a Mac computer, an iPhone, a Samsung phone, and a Lenovo laptop have different parts made by various companies. This means they each might run programs in their own unique way. Plus, we often connect extra devices like mice, keyboards, screens, or printers.
+> Note: The term "slots" used here is a simplified representation. In computer terminology, these are more accurately referred to as memory locations or addresses, each uniquely identifiable and accessible by the CPU.
+
+So far, so good, right? Not too complicated.
+
+Now consider this: different devices like a Mac computer, an iPhone, a Samsung phone, and a Lenovo laptop have different parts made by various companies. This means they each might run programs in their own unique way. Plus, we often connect extra devices like mice, keyboards, screens, or printers.
 
 Imagine if software developers had to make separate versions of a program for each different device – one for Lenovo, another for Apple, another for phones using a Qualcomm chip, and so on. That would be exhausting! This is how things worked back in the 1970s and some of the 1980s.
 
