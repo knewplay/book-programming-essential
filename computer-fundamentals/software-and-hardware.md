@@ -230,4 +230,4 @@ Locker >
 
 as your **working directory** so you could correctly position the French folder. This captures the essence of a working directory: the folder you're currently navigating or "working" within.
 
-> Note: If you are at a school that teaches English, and, say, Spanish, then maybe you'd have a Languages folder, in which case you would add the new French folder into that folder, rather than under Locker.
+> Note: If your school offers multiple language courses like English and Spanish, you might already have a "Languages" folder. In this case, you should add the new French folder to the existing "Languages" folder, rather than placing it directly under "Locker".
