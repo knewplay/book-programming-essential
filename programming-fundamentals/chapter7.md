@@ -274,7 +274,7 @@ A local gym wants to implement a promotional discount for its members based on t
 - Teenagers (younger than 20 years old) who are just about to sign up (0 years of membership) receive a 10% discount.
 - Elderly members (55 years and older) who have been a member of the gym for 5 or more years receive a 15% discount.
 
-![Treadmill](./figures/ch-7-thermometer.jpg)
+![Treadmill](./figures/ch-7-gym.jpg)
 *A treadmill.*
 
 Design a pseudocode algorithm that calculates and displays the eligible discount for a member based on their age and membership duration.

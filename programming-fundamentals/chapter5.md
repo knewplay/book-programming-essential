@@ -128,6 +128,8 @@ variable_name = new_value
 
 You may have noticed that the variable names follow a certain style. Here are some rules and conventions that programmers follow in order to ensure code clarity and prevent potentials errors.
 
+![Baby naming](./figures/chp5-Variable-naming.jpg)
+
 #### Mandatory Rules
 
 1. **Valid Characters:**

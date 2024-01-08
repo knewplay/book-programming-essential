@@ -42,6 +42,8 @@ In our daily lives, we encounter many repetitive tasks, whether it's setting an 
 
 Loops are a fundamental concept in programming. They allow us to execute a set of instructions multiple times, which is often referred to as "iteration." Instead of writing the same code over and over again, a loop provides a cleaner way to repeat actions.
 
+![Clock loop](./figures/chp-4-clock-loops.jpg)
+
 Imagine playing your favorite video game. There are certain elements in that game that are repetitive, all thanks to loops. Here are a few:
 
 - **Gameplay Music:** That catchy tune that plays over and over in the background? It's looped to create a consistent ambiance.
@@ -122,6 +124,8 @@ Just as we nest boxes within larger boxes, loops can also be placed inside other
 Imagine this: you're on a weekend trip to "WonderWorld Amusement Park" with an all-inclusive two-day ticket pass. You're super excited and have decided that on each day, you'll ride 5 different roller coasters.
 
 This situation is a great example of nested loops. Think of the two-day weekend as the outer loop. Now, inside each day (each cycle of the outer loop), there's another loop for the five times you ride the roller coasters.
+
+![Roller coaster loop](./figures/chp-4-amusement-park.jpg)
 
 Here's a breakdown:
 
