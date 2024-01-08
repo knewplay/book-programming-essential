@@ -45,7 +45,6 @@ In programming, problems can often feel like a massive jigsaw puzzle, especially
 - Iterative Approach: Start with a basic version of the solution. Improve and refine it in iterations.
 
 ![Problem decomposition](./figures/ch-1-problem-decomposition.jpg)
-*A complex problem is broken down into smaller parts and then recombined to form a complete solution.*
 
 ## Activities
 
