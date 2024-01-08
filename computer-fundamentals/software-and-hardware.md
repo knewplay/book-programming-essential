@@ -172,9 +172,9 @@ Locker > Science > Physics > Quizzes > Quiz 1.
 
 This is exactly how a computer's file system operates. Every computer has a starting folder known as the root folder. It's analogous to the locker in our example, a primary container for all other folders. For Linux and macOS, the root folder is marked by a forward slash (/), whereas Windows denotes it by a drive (hard drive or solid-state drive) letter, say "C:".
 
-> Task: Take a moment to find the root folder on your computer. Explore its contents. And if you're unsure, it's okay to search online!
+> Task: Take a moment to find the root folder on your computer. Explore its contents. And if you're unsure how to find it, just ask Google!
 
-Within the root folder, you will have subfolders. To these subfolders, the root folder is called the "parent folder" or "parent directory".
+Within the root folder, you will have subfolders. The subfolders will call the root folder their "parent folder" or "parent directory". Just like in a family tree, parents are on top, and kids are at the bottom.
 
 ### Working Directory
 
@@ -204,7 +204,9 @@ Locker > Physics > Quizzes
 
 At this point, you will have direct access to Quiz 1.
 
-The **working directory** is the present folder you've opened and are exploring. It's the one where you can directly see and access its files and subfolders. To illustrate, if you want to see Quiz 1, your working directory must be the Quizzes folder. To view all your subjects, the Locker needs to be your working directory.
+The **working directory** is the present folder you've opened and are exploring. It's the one where you can directly see and access its files and subfolders.
+
+For example, if you want to see your Physics Quiz 1, your working directory must be the Quizzes folder mentioned earlier. To view all your subjects, the Locker needs to be your working directory. You cannot see all your subjects if you're in Physics class and viewing your Physics folder, right?
 
 In computing terms, the working directory is the current directory or folder where a user is actively operating within a file system. By default, any program or command will run and search in this location unless you specify a different path.
 
@@ -227,3 +229,5 @@ Locker >
 ```
 
 as your **working directory** so you could correctly position the French folder. This captures the essence of a working directory: the folder you're currently navigating or "working" within.
+
+> Note: If you are at a school that teaches English, and, say, Spanish, then maybe you'd have a Languages folder, in which case you would add the new French folder into that folder, rather than under Locker.
