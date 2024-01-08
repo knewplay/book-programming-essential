@@ -444,6 +444,9 @@ Google Search is a powerful tool that helps users navigate the vast landscape of
 2. Indexing: The data collected by the web crawlers is then indexed, which means it is organized and stored in Google's vast database. This index allows Google to quickly retrieve relevant information when a user performs a search.
 3. Ranking: When you perform a search, Google's (secret) search algorithms come into play. These algorithms analyze the indexed data and consider numerous factors to determine the most relevant and useful results for your query. Google takes into account factors like the words used in your search, the freshness of the content, the quality of the web page, and the number of other websites linking to that page (known as PageRank).
 
+![Crawling indexing ranking](./figures/crawling-indexing-ranking.jpg)
+*Google's search journey: Traversing the web, indexing content, and ranking for relevance.*
+
 ### When to google
 
 The truth is that you can google anything, anytime you want. Google is never going to tell you "that was a dumb question". Once you start googling, you will notice that there have been many people before you who have had the same questions, and those questions are answered on the internet. However, here are some more specific cases when it is appropriate to google.
