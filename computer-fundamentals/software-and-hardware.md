@@ -6,15 +6,6 @@ illustrator: "Dengyijia Liu"
 questions:
   - hardware: What are some examples of hardware components in a computer?
   - software: Can you give examples of software applications you use on a daily basis?
-  - os-tasks: |
-      (Multiple choice question - Select one or more answers)
-      Which of the following is the OS tasked with?
-
-      1. Memory Management: Manages computer memory, allocating and tracking memory resources for programs, ensuring efficient utilization and preventing conflicts between different processes.
-      2. Process Management: Controls the execution of processes, scheduling CPU time and handling process creation and termination, ensuring fair allocation of resources and maximizing overall system performance.
-      3. File System Management: Organizes and manages data storage, allowing users to create, read, write, and delete files, providing a hierarchical structure and access control for efficient data management.
-      4. Device Management: Handles input and output devices, providing drivers and protocols for communication and coordinating I/O operations, ensuring seamless interaction between the computer and peripheral devices.
-      5. All of the above.
   - file-naming: What is the purpose of file naming conventions?
 ---
 
@@ -58,16 +49,16 @@ As we saw in the last article, a computer fundamentally consists of 4 parts:
 ![Laptop](./figures/laptop.jpg)
 *A modern laptop with CPU and RAM depicted, symbolizing the essential components of the computer.*
 
-All the devices mentioned here, such as the keyboard, the CPU, the hard drive, and the screen, are known as hardware. **Hardware** is "hard" to the touch. It's tangible. In other words, you can actually touch it and hold it. It's also "hard" to change it. If you buy a laptop, the components on the laptop's motherboard are soldered onto the board, making the hardware fixed and hard to modify.
+All the devices mentioned here, such as the keyboard, the CPU, the hard drive, and the screen, are known as hardware. **Hardware** is "hard" to the touch. It's tangible. In other words, you can actually touch it and hold it; it's the physical parts of the computer. It's also "hard" to change it. If you buy a laptop, the components on the laptop's motherboard are soldered onto the board, making the hardware fixed and hard to modify.
 
-On the other hand, we have software. Software is soft. In other words, it's not something physical that you can touch or feel. Can you touch a video game, or the Google search engine? Nope. It's also soft in the sense that it's flexible. One minute, you can run Microsoft Word, and the next, you might run Photoshop. Software can easily be changed, modified, or removed.
+On the other hand, we have software. Software is soft. It's the programs we run on our computer. In other words, it's not something physical that you can touch or feel. Can you touch a video game, or the Google search engine? Nope. It's also soft in the sense that it's flexible. One minute, you can run Microsoft Word, and the next, you might run Photoshop. Software can easily be changed, modified, or removed.
 
 ![Laptop's Software](./figures/software.jpg)
 *A modern laptop showcasing the intangible yet dynamic nature of software applications.*
 
 ## Operating System
 
-Marrying hardware and software poses an intriguing question. Without hardware, software remains an abstract concept; without software, hardware becomes an unutilized piece of machinery. They complement each other: hardware provides a platform for software, while software brings functionality to hardware.
+Integrating hardware and software poses an intriguing question. Without hardware, software remains an abstract concept; without software, hardware becomes an unutilized piece of machinery. They complement each other: hardware provides a platform for software, while software brings functionality to hardware.
 
 Software is stored in a computer's memory, which can be conceptualized as a series of "slots." Each slot stores a unit of information. For the sake of simplicity, imagine that each slot holds a single instruction or command. If we have a sequence of 10 commands, these would occupy 10 adjacent memory slots. The CPU starts by processing the instruction in slot #1, then proceeds sequentially, concluding with the instruction in slot #10. This sequence of instructions collectively forms a program, essentially a set of commands for the CPU to execute.
 
@@ -78,24 +69,22 @@ Software is stored in a computer's memory, which can be conceptualized as a seri
 
 So far, so good, right? Not too complicated.
 
-Now consider this: different devices like a Mac computer, an iPhone, a Samsung phone, and a Lenovo laptop have different parts made by various companies. This means they each might run programs in their own unique way. Plus, we often connect extra devices like mice, keyboards, screens, or printers.
+Now consider this: different devices such as a Mac computer, an iPhone, a Samsung phone, and a Lenovo laptop have different hardware made by various companies. This means they each might run programs in their own unique way. Plus, we often connect extra devices like mice, keyboards, screens, or printers.
 
-Imagine if software developers had to make separate versions of a program for each different device – one for Lenovo, another for Apple, another for phones using a Qualcomm chip, and so on. That would be exhausting! This is how things worked back in the 1970s and some of the 1980s.
+Imagine if software developers had to make separate versions of a program for each different device – one for Lenovo, another for Apple, another for phones specifically using a Qualcomm chip, and so on. That would be exhausting! And this is actually how things were done back in the 1970s and some of the 1980s.
 
-This is where operating systems (or OS) come in. They act like a translator or a middleman, smoothing out the communication between the hardware (the physical parts of a computer) and software (the programs we run). In simple terms, an operating system is low-level software that's specially designed to work closely with the actual hardware of a device.
+This is where operating systems (or OS) come in. They act like a translator, or a middleman, smoothing out the communication between the hardware and software. In simple terms, an operating system is low-level software that's specially designed to work closely with the actual hardware of a device.
 
 ![Operating System](./figures/software-hardware.jpg)
 *The operating system acts as an intermediary, facilitating seamless interaction between the user, software, and hardware components of a computer system.*
 
-The operating system abstracts the complexities of hardware, providing a uniform environment for software developers to create applications. It also provides regular everyday computer users with their familiar view of the computer: the GUI (pronounced as "Gee-You-Eye"), or Graphical User Interface. When we turn on a Windows computer, there is a style that we expect to see, and it's a similar story when we turn on a device running macOS, iOS, or Android.
+The operating system abstracts the complexities of hardware, providing a uniform environment for software developers to create applications. It also provides regular everyday computer users with their familiar view of the computer: the GUI (pronounced as "Gee-You-Eye"), or Graphical User Interface. When we turn on a Windows computer, there is a style of interface and layout that we expect to see, and it's a similar story when we turn on a device running macOS, iOS, or Android.
 
-Whether creating a new folder, running two programs simultaneously, saving a text document, or plugging a brand new mouse into the USB port, the operating system takes care of all this for us. The operating system takes care of anything that the user shouldn't have to worry about. For example, when was the last time you told your computer how to allocate its memory space, e.g. Microsoft Word should have memory slots #1 - #10000 and Adobe Photoshop should take memory slots #10001 - #21000? When did you last wonder where to save your essay file in storage? Never. Just click "Save," and the operating system will handle the rest.
+Whether creating a new folder, running two programs simultaneously, saving a text document, or plugging a brand new mouse into the USB port, the operating system takes care of all this for us. The operating system takes care of anything that the user shouldn't have to worry about. For example, when was the last time you told your computer how to allocate its memory space, e.g. Microsoft Word should have memory slots #1 - #10000 and Adobe Photoshop should take memory slots #10001 - #21000? When did you last wonder where to save your essay file in your hard drive or SSD? Never. Just pick a folder, click "Save," and the operating system will handle the rest.
 
 All in all, operating systems play a vital role in harmonizing hardware and software components. They provide the necessary abstractions, services, and interfaces to ensure compatibility, efficient resource utilization, and seamless communication between different devices and software applications.
 
 > Question: Do you know of any operating systems? What kind of devices do they run on, i.e. can these operating systems run on devices made by different companies? Think of Apple devices, a Samsung smartphone, a Lenovo laptop, etc.
-
-While many recognize names like Microsoft's Windows, Apple's macOS/iOS, and Google's Android, Linux remains less spotlighted. Yet, it's everywhere, often operating behind the scenes. To understand Linux better, explore this (helpful article)[read this](https://opensource.com/resources/linux).
 
 ## The File System: A School Analogy
 
