@@ -84,8 +84,6 @@ Whether creating a new folder, running two programs simultaneously, saving a tex
 
 All in all, operating systems play a vital role in harmonizing hardware and software components. They provide the necessary abstractions, services, and interfaces to ensure compatibility, efficient resource utilization, and seamless communication between different devices and software applications.
 
-> Question: Do you know of any operating systems? What kind of devices do they run on, i.e. can these operating systems run on devices made by different companies? Think of Apple devices, a Samsung smartphone, a Lenovo laptop, etc.
-
 ## The File System: A School Analogy
 
 Imagine this. It's 8:27AM, and you just reached your school locker. You have a strict Physics teacher who closes the classroom door at 8:30AM. No ifs, buts or maybes. You frantically turn the lock combination, open the door, and a bunch of books and papers come crashing down on your feet. You kneel down, pick up a paper, and "Oh no, this one's yesterday's History quiz! This one's the Math book. Ugh, it looks so similar to the Physics book!"... long story short, you're late for class.
@@ -93,7 +91,7 @@ Imagine this. It's 8:27AM, and you just reached your school locker. You have a s
 ![Messy Locker](./figures/school-locker-messy.jpg)
 *A cluttered locker with books and papers tumbling out.*
 
-Now imagine a different scenario. It's 8:27AM, and you just reached your school locker. You turn the lock combination, open the locker, and are greeted by the organized shelves. You read the folder labels: "History, no. Math, no. Chemistry, no. Physics, perfect!". You pull out the "Physics" folder, which you know contains everything already, lock the door, and head to class. It's 8:28AM, by the way.
+Now imagine a different scenario. It's 8:27AM, and you just reached your school locker. You turn the lock combination, open the locker, and are greeted by the organized shelves. You read the folder labels: "History, no. Math, no. Chemistry, no. Physics, perfect!". You pull out the "Physics" folder, which you know contains everything you'll need for the session, lock the door, and head to class. It's 8:28AM, by the way.
 
 ![Organized Locker](./figures/school-locker-organized.jpg)
 *A neat locker with clearly labeled folders.*
@@ -101,9 +99,9 @@ Now imagine a different scenario. It's 8:27AM, and you just reached your school 
 Continuing with this organized version of you, once seated in the classroom, you open your Physics folder. Inside, you see two smaller folders, two notebooks, some blank sheets (handy for surprise quizzes or jotting down notes), and the core Physics textbook. The subfolders are clearly labeled "Quizzes" and "Homework", each holding its own set of notebooks and sheets.
 
 ![Physics Folder](./figures/folders.jpg)
-*Inside the Physics folder: blank sheets,  notebooks, a textbook, and a folder labeled "Quizzes" and "Homework".*
+*Inside the Physics folder.*
 
-Here's an essential takeaway: there isn't a single "correct" method to sort your files. Your style might work wonders for you, while an equally organized classmate might stash their Physics materials inside a broader "Science" folder. This larger folder could house both "Physics" and "Chemistry" folders, and perhaps their spare sheets of paper are always tucked away within the "Quizzes" folder.
+> Note: there isn't a single "correct" method to sort your files. Your style might work wonders for you, while an equally organized classmate might stash their Physics materials inside a broader "Science" folder. This larger folder could house both "Physics" and "Chemistry" folders, and perhaps their spare sheets of paper are always tucked away within the "Quizzes" folder.
 
 ## The File System
 
@@ -113,7 +111,7 @@ We have an idea of what a folder is in real life, and it's no different when it 
 
 > Historically, the term "directory" was created first, and then the term "folder" was introduced with the advent of the GUI.
 
-In the realm of computers, a file resembles the items you'd find inside your school locker. It is a named collection of data stored on a computer's storage system. Just like your school book, notebook, or piece of paper, a computer file can hold various types of information, such as text, images, videos, audio, program instructions, or configuration data.
+In the realm of computers, a file resembles the items you'd find inside your school locker. It is a named collection of data stored on a computer's storage system. Just like your school book, notebook, or piece of paper, a computer file can hold various types of information, such as text, images, videos, audio or program instructions.
 
 ![The File System](./figures/file-system-2.jpg)
 *The file system can be viewed as an inverted tree, with the root at the top and leaves at the bottom.*
@@ -126,15 +124,15 @@ While folders group related files together, a file represents the actual data. T
 
 When you sift through your Physics folder in school, you can immediately tell the difference between a sheet of paper and a notebook. You can see and feel the difference. Both contain information, but they are clearly different.
 
-When it comes to computer files, they aren't actual objects we can hold and say "This is a JPG image file" or "This one's a simple text file". Calling some file "image1" doesn't make it an image because it could just be text describing one.
+When it comes to computer files, they aren't actual objects we can hold and say "this is a JPG image file" or "this one's a simple text file". Calling some file "image1" doesn't make it an image because it could also just be text describing an image.
 
 So, rule number one is to always specify the file type. How? By adding a filename extension. For example, "image1.png", "image1.jpg", or "image1.txt".
 
 > Note: Most of us rely on applications that handle this automatically. If you’re working on a Microsoft Word document and hit 'Save', it typically gets stored with a ".doc" or ".docx" extension. Similarly, when editing images in Adobe Photoshop, the program wouldn’t prompt you to save with a ".txt" extension.
 
-The second thing to realize is that in your Physics folder, you will not have two sheets of paper, both named "Quiz 1". That would be confusing. But if you had a notebook labeled "Quiz 1" and a loose sheet of paper labeled "Quiz 1", then there is some distinction, and you can distinguish them. Furthermore, you can have a paper labeled "Quiz 1" in the Physics folder and one in the History folder, and that is okay as well, as long as you don't mix the contents up.
+The second thing to realize is that in your Physics folder, you will **not** have two sheets of paper both labeled "Quiz 1". That would be confusing. But if you had a notebook labeled "Quiz 1" and a loose sheet of paper labeled "Quiz 1", then there is some distinction, and you can distinguish between them. Furthermore, you can have a paper labeled "Quiz 1" in the Physics folder and one in the History folder, and that is okay as well, as long as they are in different folders.
 
-It's a similar story with computer files. The file has a name that uniquely identifies it within a folder. So you can have a file called "quiz1.txt" in both the "Document" folder and the "Desktop" folder, but you cannot have the exact same name within the same folder.
+It's a similar story with computer files. Each file has a name that uniquely identifies it within a folder. This means you can have a file named "quiz1.txt" in both the "Document" folder and the "Desktop" folder. Moreover, within the same folder, you can have files with the same base name but different extensions, like "quiz1.txt" and "quiz1.doc". The different extensions indicate distinct file types, allowing them to coexist in the same folder without any conflict.
 
 ### File Path
 
