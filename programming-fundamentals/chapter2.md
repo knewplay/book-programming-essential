@@ -68,9 +68,6 @@ The robot doesn't act on instinct or intuition; instead, it follows a strict set
 5. Calculate the right angle and force to shoot the ball into the basket.
 6. Shoot the ball.
 
-![Shooting robot flowchart](./figures/ch-2-robot-shoot-no-loop.jpg)
-*A flowchart diagram showing the steps for a robot to shoot a ball.*
-
 Even though it might seem simple to us, each of these steps needs to be meticulously defined for a robot to perform them. How does it "scan" or "pick up the ball"? Each of these larger tasks can be further decomposed into smaller, more precise actions, each constituting part of the overall algorithm.
 
 ## Introduction to Flowcharts
@@ -83,8 +80,6 @@ A flowchart uses symbols to represent different types of actions or steps. Key s
 - Rectangle: Denotes a process or action step.
 - Diamond: Used for decisions, often questions that yield 'yes' or 'no' answers.
 - Arrow: Dictates the flow of the process.
-
-[Illustration of these symbols with labels: For the robot example, a flowchart could visually depict the process from scanning the environment to shooting the ball, highlighting decisions (like whether a ball is found) and actions (like navigating or shooting).]
 
 ### Convert a Problem into a Flowchart
 
@@ -110,19 +105,10 @@ Write down every step involved in the process. For our tea example, it might loo
 **Begin at the start:**
 Draw an oval labeled "Start". This will be the entry point of your flowchart.
 
-![Oval to Start](./figures/ch-2-tea-making-a.jpg)
-*Start of a flowchart diagram: an oval labeled "Start".*
-
 **Go step-by-step:**
 Now, take your first step ("Fill the kettle with water.") and represent it with a rectangle. Draw an arrow from "Start" to this rectangle.
 
-![Fill kettle](./figures/ch-2-tea-making-b.jpg)
-*Addition of a rectangle representing the first task.*
-
 From this rectangle, draw another arrow leading to the next step ("Boil the water.") represented by another rectangle. This intuitive method is like walking through the process yourself and marking down each step as you complete it.
-
-![Boil water](./figures/ch-2-tea-making-c.jpg)
-*Addition of a rectangle representing the second task.*
 
 **Incorporate decisions:**
 When you encounter a step that involves making a decision, use a diamond shape. For instance, after removing the teabag, there might be a decision: "Add sugar?". If "Yes", you'd show the steps to add sugar; if "No", you'd proceed to the end.
@@ -193,6 +179,3 @@ To instruct the robot to move 30 centimeters forward with each leg, one after an
 8. Distribute the weight evenly between both legs, achieving a 50/50 balance.
 
 These commands ensure the robot takes a single step with each leg, moving a total of 30 centimeters forward.
-
-![Robot walking flowchart](./figures/ch-2-robot-walk%20-no-loop.jpg)
-*Completed flowchart of a robot walking.*

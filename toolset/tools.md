@@ -68,6 +68,8 @@ Another field where the terminal shines is cybersecurity. Security analysts use 
 
 Finally, the terminal is also crucial in the field of robotics. Even though we sometimes see young kids "programming" robots within their school curriculum, they often do it using a GUI. These interfaces often feature drag-and-drop functionality and simplified coding blocks that allow students to create basic robot behaviors without delving into the complexities of coding. Transitioning to the terminal becomes essential as students advance in their robotics journey. It allows them to dive deeper into coding, write precise and customized algorithms, and gain a deeper understanding of the mechanics behind their robot's operations.
 
+![Robotics programming](./figures/terminal-robotics.png)
+
 So whatever your interests, the terminal is a crucial tool for programmers and IT professionals. It provides direct access to the underlying command-line interface, allowing for precise control, automation, and efficient workflows. The terminal empowers users to delve into the inner workings of computer operations, unleashing the full potential of their skills and creativity.
 
 ### Fundamentals
@@ -106,9 +108,6 @@ In the Computer Fundamentals, Software and Hardware section, I mentioned that th
 In general, this is true, however the operating system is large and has many components. One of its components is called the kernel.
 
 Just like its definition in English, the kernel is the operating system's core. Windows has one, macOS has one, and so too does Linux. Everything previously said that the OS does is actually done specifically by the kernel.
-
-![Kernel](./figures/kernel.jpg)
-*The kernel is the core bridge between software applications and the physical hardware.*
 
 #### Shell
 
@@ -184,8 +183,7 @@ When we enter a command into the terminal, we use the keyboard. Hence, the input
 
 In addition to receiving output on the terminal, we can use I/O redirection to manipulate how commands process data. Let's say you want to take the output of one command and use it as input for another command. This is where pipes come into play. Pipes are represented by the | symbol and allow us to connect multiple commands, creating a powerful chain of actions.
 
-![Piping process](./figures/piping.jpg)
-*The process of piping involves inputting the output of one function into another.*
+![Piping process pizza example](./figures/sketch-piping-pizza.png)
 
 See examples of how to use pipes [in this article](https://www.computernetworkingnotes.com/linux-tutorials/pipes-in-linux-explained.html).
 
@@ -221,6 +219,8 @@ To address such challenges, programmers often rely on version control systems li
 #### Version control systems (VCS)
 
 Version Control Systems are tools that keep track of changes to code or other collections of files or folders. In other words, they keep track of the history of changes to some set of documents.
+
+![Project snapshots](./figures/sketch-git-snapshots.png)
 
 Version Control Systems track changes to a folder and its contents in a series of snapshots. So, if you are working on your code, you can take a snapshot of the entire state of your project folder at any time, and with time, you will have multiple of these snapshots.
 
@@ -444,6 +444,9 @@ Google Search is a powerful tool that helps users navigate the vast landscape of
 2. Indexing: The data collected by the web crawlers is then indexed, which means it is organized and stored in Google's vast database. This index allows Google to quickly retrieve relevant information when a user performs a search.
 3. Ranking: When you perform a search, Google's (secret) search algorithms come into play. These algorithms analyze the indexed data and consider numerous factors to determine the most relevant and useful results for your query. Google takes into account factors like the words used in your search, the freshness of the content, the quality of the web page, and the number of other websites linking to that page (known as PageRank).
 
+![Crawling indexing ranking](./figures/crawling-indexing-ranking.jpg)
+*Google's search journey: Traversing the web, indexing content, and ranking for relevance.*
+
 ### When to google
 
 The truth is that you can google anything, anytime you want. Google is never going to tell you "that was a dumb question". Once you start googling, you will notice that there have been many people before you who have had the same questions, and those questions are answered on the internet. However, here are some more specific cases when it is appropriate to google.
@@ -574,6 +577,8 @@ Popular IDEs include Visual Studio for multiple languages (but primarily C#), Ec
 ### The conclusion
 
 The world of code editors spans a broad spectrum. On one end, you have minimalist tools like Vim that operate solely on keyboard commands, and on the other end, there are IDEs like Visual Studio that bring together a suite of tools.
+
+![Code editors represented with typing devices](./figures/sketch-code-editors.png)
 
 Today, however, VS Code represents a harmonious middle ground. It stands as a testament to the evolution of code editors, seamlessly blending the efficiency of traditional editors with the intuitive interfaces of modern-day tools.
 
