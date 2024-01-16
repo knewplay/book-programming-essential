@@ -79,7 +79,19 @@ In order to print the message once, we write the following line of code:
 PRINT "Hello World"
 ```
 
-It's that simple to display "Hello World" onto the screen. Now, for starters, let's put this line into a while loop:
+It's that simple to display "Hello World" onto the screen.
+
+Now, to display it 10 times, the inefficient way of doing it is as follows:
+
+```typescript
+PRINT "Hello World"
+PRINT "Hello World"
+PRINT "Hello World"
+// ... (repeat 6 more times)
+PRINT "Hello World"
+```
+
+Loops provide us with a much quicker way of doing this. Consider the following:
 
 ```typescript
 while counter < 10:
@@ -88,7 +100,9 @@ while counter < 10:
 
 In this while loop, we're looking at a simple but fundamental control structure in programming. Here’s how its components work together:
 
-**Condition Check:** The while loop starts with a condition check: `counter < 10`. Before each iteration, the loop evaluates this condition. If the condition is true, the loop continues and executes the code inside its body. If it's false, the loop stops.
+**While Loop Keyword:** The loop begins with the keyword `while`, signaling the start of a while loop. This keyword is crucial as it tells the program that what follows is a condition to be checked.
+
+**Condition Check:** Next we have a condition check: `counter < 10`. Before each iteration, the loop evaluates this condition. If the condition is true, the loop continues and executes the code inside its body. If it's false, the loop stops, and moves onto the code that follows the loop body.
 
 **Loop Body:** The indented block of code following the while statement is the loop's body (`PRINT "Hello World"` in this case). This code is executed repeatedly as long as the loop's condition remains true. Indentation is achieved by using a tab at the start of a line, or by inserting four spaces. This creates a visual hierarchy.
 
@@ -140,9 +154,10 @@ Now, `counter` starts at 0, but it gets incremented by 1 each time the loop body
 27. At the 9th iteration, `counter` is 8. The condition "8 < 10" is `True`, so "Hello World" is printed, and `counter` becomes 9.
 28. At the 10th iteration, `counter` is 9. The condition "9 < 10" is still `True`, so "Hello World" is printed for the tenth time, and `counter` is incremented to 10.
 29. The program returns to the `while` loop condition: with counter now at 10, it checks "10 < 10". This statement is `False`, so the loop does not enter its body, and the program execution moves on, marking the end of the loop.
+
 This example is a fundamental illustration of how loops can automate repetitive tasks, like printing a message multiple times.
 
-> Note that we could have had `counter` be the same as the "iteration" number, e.g. at the 1st iteration, `counter` is 1, at the 2nd iteration, `counter` is 2, etc. All we had to do was start `counter` from 1 instead of 0, but it is convention for computers to start counting from 0.
+> Note that we could have had `counter` be the same as the "iteration" number, e.g., at the 1st iteration, `counter` is 1, at the 2nd iteration, `counter` is 2, etc. All we had to do was start `counter` from 1 instead of 0, but it is convention for computers to start counting from 0.
 
 ### Example 2: Rocket Launch Countdown
 
