@@ -166,55 +166,32 @@ Rocket launches always start with that dramatic countdown: "10, 9, ..., 3, 2, 1,
 ![Flowchart of countdown](./figures/ch-4-Rocket-launch.jpg)
 *Flowchart representation of the rocket launch countdown.*
 
-1. **Starting Point** (*Start*): Our loop's exciting journey begins here, at the launch pad of our mission.
+1. **Starting Point** (*Start*): The journey begins here, at the "launch pad" of our mission.
 2. **Initialization** (*Set countdown to 10*): As we prepare for launch, the loop gets ready by setting the starting point of our countdown at 10.
-3. **Condition** (*Is countdown > 0?*): At this checkpoint, the loop asks, "Is there still time left on the countdown?". If the countdown is still greater than 0, the loop continues with the countdown. But once it reaches 0, the loop is exited.
+3. **Condition** (*Is countdown > 0?*): The loop asks, "Is there still time left on the countdown?". If the countdown is still greater than 0, the loop continues with the countdown. But once it reaches 0, the loop is exited.
 4. **Execution** (*Announce countdown*): With every tick of the countdown, the loop announces the current number, letting everyone know how many seconds remain until launch.
-5. **Update** (*Subtract 1 from countdown*): After each announcement, the loop decreases the 'countdown' by 1. This action ensures that we're progressing toward that exhilarating moment of blast-off.
-6. **Exit Point** (*Launch the rocket*): When 'countdown' hits 0, the loop's work is done, and it's time for the rocket to soar into the skies!
+5. **Update** (*Subtract 1 from countdown*): After each announcement, the loop decreases the `countdown` by 1. This action ensures that we're progressing toward the blast-off.
+6. **Exit Point** (*Launch the rocket*): When `countdown` hits 0, the loop's work is done, and it's time for the rocket to soar into the skies!
 
-**Overview:** Overview: The countdown starts at 10 and decreases by 1 each iteration. The loop runs as long as the countdown is above 0. When it reaches 0, the loop ends, and the rocket launches. We start with `countdown = 10`, check if `countdown > 0`, and decrement `countdown` by 1 in each loop.
-
-> Note: While humans start counting from 1 (1, 2, ...), computers begin at 0 (0, 1, ...). This way of counting is rooted in how early computer systems were designed; starting at 0 was efficient, allowing computers to optimize their memory and processing power. Over time, this became the standard in programming. So, in coding, always remember to kick things off with (or end them at) zero!
-
-To translate this into pseudocode, let's start with a simplified version:
+Here is the pseudocode version of this situation, with comments (non-executable lines) denoted with `//`:
 
 ```typescript
-REPEAT 10 times, starting from 10:
-    PRINT countdown number
-    DECREASE countdown number by 1
-```
-
-Let's now refine the pseudocode and explain its construction. We'll start by initializing the countdown and then use a WHILE loop to manage the countdown process:
-
-```typescript
-// Initialize the countdown
+// Initialization: Initialize the countdown
 countdown = 10
 
-// Begin the while loop
+// Condition: Begin the while loop
 WHILE countdown > 0:
-    // Print the current countdown number
+    // Execution: Print the current countdown number
     PRINT countdown
 
-    // Decrease the countdown number by 1
+    // Update: Decrease the countdown number by 1
     countdown = countdown - 1
 
-// Once the loop ends, announce the launch
+// Exit Point: Once the loop ends, announce the launch
 PRINT "Blast off!"
 ```
 
-Explanation of the Pseudocode:
-
-**Initialization**: We start by setting countdown to 10. This is our starting point for the countdown.
-
-**While Loop**: The WHILE countdown > 0 statement begins the loop. It checks if the countdown is greater than 0. As long as this condition is true, the loop continues to run.
-
-**Execution Inside the Loop**: Inside the loop, the PRINT countdown statement displays the current value of countdown.
-Then, countdown = countdown - 1 decreases the value of countdown by 1. This is crucial as it moves the countdown closer to 0 with each iteration.
-
-**End of the Loop**: The loop continues until countdown is no longer greater than 0. At this point, the condition of the WHILE loop is false, and the loop exits.
-
-**Final Step** (Outside the Loop): Finally, once the loop has finished (i.e., the countdown has reached 0), we print "Blast off!" to signify the end of the countdown and the launch of the rocket.
+**Overview:** This code begins by initializing the `countdown` variable to 10. In each iteration of the loop, it checks if `countdown` is greater than 0; if so, the current countdown number is printed. After each print, `countdown` is reduced by 1. This decrementing continues until `countdown` reaches 0, at which point the loop terminates. The final action outside the loop is printing `"Blast off!"` signaling the end of the countdown and the launch of the rocket.
 
 ## Nested Loops
 
