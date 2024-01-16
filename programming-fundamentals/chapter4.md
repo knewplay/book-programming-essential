@@ -309,7 +309,7 @@ After completing the sequence of steps for both feet, the robot checks if it has
 
 You're working with a new generation humanoid robot that's designed for physical exercises. Unlike previous models, this robot has advanced kinesthetic intelligence, meaning it understands basic exercise commands without needing a breakdown of every movement. For instance, you don't need to instruct it with "bend your arms 90 degrees" for push-ups; you can simply command "Do a push-up", and it will perform the action. However, you cannot ask it to "Do 10 push-ups", as it can only comprehend one push-up at a time.
 
-Instruct your robot to perform a set of 10 push-ups, followed by 10 sit-ups, and then 10 squats. The robot should then loop this set 5 times.
+Instruct your robot to perform a set of 10 push-ups, followed by 10 sit-ups, and then 10 squats. The robot should complete this set of exercises 5 times.
 
 ### Answer
 
@@ -332,7 +332,7 @@ REPEAT 10 times:
     do_pushup
 ```
 
-Similarly, we instruct the robot to repeat the do_situp and do_squat commands 10 times.
+Similarly, we instruct the robot to repeat the `do_situp` and `do_squat` commands 10 times.
 
 When pieced together in a nested loop structure, the pseudocode becomes:
 
@@ -345,3 +345,35 @@ REPEAT 5 times:
     REPEAT 10 times:
         do_squat
 ```
+
+To translate the given pseudocode using a while loop, we need to introduce "counter" variables for each level of repetition. Here's how it would look:
+
+```typescript
+setCount = 0
+
+while setCount < 5:
+    repCount = 0
+    while repCount < 10:
+        do_pushup()
+        repCount += 1
+
+    repCount = 0
+    while repCount < 10:
+        do_situp()
+        repCount += 1
+
+    repCount = 0
+    while repCount < 10:
+        do_squat()
+        repCount += 1
+
+    setCount += 1
+```
+
+In this code:
+
+- `setCount` keeps track of the number of total sets to be completed.
+- `repCount` monitors the number of repetitions (or reps) for each exercise within a set.
+- Each inner while loop uses `repCount` to execute the specified exercise (push-ups, sit-ups, and squats) 10 times.
+- After completing each exercise, `repCount` is reset to 0 before moving on to the next exercise.
+- Once all three exercises are completed in a set, `setCount` is incremented to proceed to the next set, repeating the process until five sets are finished.
