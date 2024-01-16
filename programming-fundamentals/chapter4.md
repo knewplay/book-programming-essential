@@ -262,7 +262,7 @@ while (dayCount < 2)
 
 ### Activity #1
 
-Recall the humanoid robot from [Chapter 2 Activity #2](./chapter2#activity-2). With your understanding of loops from this chapter, describe the commands you would provide to ensure the robot walks across the room. Consider visualizing your solution with a flowchart diagram.
+Recall the humanoid robot from [Chapter 2 Activity #2](./chapter2#activity-2). With your understanding of loops from this chapter, describe the commands you would provide to ensure the robot walks across the room. Write the corresponding pseudocode.
 
 ![Walking robot](./figures/ch-4robot-walk-image.jpg)
 *A humanoid robot walking.*
@@ -283,7 +283,9 @@ To make the robot walk across the room, you would use a series of commands for e
 10. Otherwise, repeat from step 1.
 
 ```typescript
-REPEAT while not endOfRoom
+enfOfRoom = False
+
+while not endOfRoom:
     lift_right_foot_5cm
     move_right_foot_forward_30cm
     lower_right_foot
@@ -292,9 +294,16 @@ REPEAT while not endOfRoom
     move_left_foot_forward_60cm
     lower_left_foot
     transfer_weight_left
+
+    if wall_detected:
+        endOfRoom = True
 ```
 
-This series of commands instructs the robot on the basic mechanics of walking, step by step. You would then loop the above commands until the robot has reached the end of the room.
+The variable `endOfRoom` is initially set to `False`, indicating that the robot hasn't reached the end of the room yet. The `while not endOfRoom` loop keeps running as long as `endOfRoom` remains `False`.
+
+Inside the loop, each step of the walking process is represented by an action (like `lift_right_foot_5cm`, `move_right_foot_forward_30cm`, etc.). These are assumed to execute the specific movements.
+
+After completing the sequence of steps for both feet, the robot checks if it has reached the wall (using `wall_detected`). If the robot detects the wall, it sets `endOfRoom` to `True`, causing the loop to exit. Otherwise, the loop starts over, repeating the walking sequence.
 
 ### Activity #2
 
