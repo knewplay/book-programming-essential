@@ -195,13 +195,13 @@ PRINT "Blast off!"
 
 ## Nested Loops
 
-Just as we nest boxes within larger boxes, loops can also be placed inside other loops. This is known as nesting. It's a powerful technique, especially when you need to handle multi-dimensional tasks.
+In programming, we can place loops inside other loops, a concept known as nesting. This approach is particularly powerful for handling tasks that involve multiple layers or dimensions.
 
-[Illustration [1](https://create.roblox.com/docs/tutorials/fundamentals/coding-4/nested-loops) [2](https://study.com/academy/lesson/nested-while-loops-in-java.html) or img sent in chat]
+[Illustration of 2 gears, one large one small]
 
 ### Nested Loop Example: Amusement Park
 
-Imagine this: you're on a weekend trip to "WonderWorld Amusement Park" with an all-inclusive two-day ticket pass. You're super excited and have decided that on each day, you'll ride 5 different roller coasters.
+Imagine this: you're on a weekend trip to an amusement park with an all-inclusive two-day ticket pass. You're super excited and have decided that on each day, you'll ride 5 different roller coasters.
 
 This situation is a great example of nested loops. Think of the two-day weekend as the outer loop. Now, inside each day (each cycle of the outer loop), there's another loop for the five times you ride the roller coasters.
 
@@ -214,7 +214,7 @@ Here's a breakdown:
 
 The beauty of nested loops is in their simplicity. You're not doing something drastically different each time; you're repeating the same enjoyable action (riding a roller coaster) within the larger context of the weekend.
 
-Here is what the pseudocode would look like:
+Here is what the rough pseudocode looks like:
 
 ```typescript
 REPEAT 2 days:
@@ -224,7 +224,39 @@ REPEAT 2 days:
     rest
 ```
 
-This logic conveys that for two days, you'll ride a roller coaster, and then decide where to go next five times each day. After those five rides, you might take a break.
+This pseudocode suggests a two-level nested loop: an outer loop for the days and an inner loop for the roller coaster rides each day. Here's the step-by-step process to convert it to an actual while loop:
+
+1. Introduce Counter Variables: `dayCount` keeps track of the number of days, and `rideCount` keeps track of the number of rides each day.
+2. Translate the Outer Loop: The outer `REPEAT 2 days:` becomes `while (dayCount < 2):`.
+3. Initialize the Inner Loop Counter:
+
+    - At the start of each day (each outer loop iteration), initialize rideCount to 0.
+    - This reset is important to ensure that the inner loop always starts counting from 0 each day.
+
+4. Translate the Inner Loop: The inner `REPEAT 5 times:` becomes `while (rideCount < 5):`.
+5. Increment the Counters:
+
+    - Within each loop, increment the respective counter (rideCount++ in the inner loop and dayCount++ in the outer loop) at the end of each iteration. This increment is crucial for the loop's condition to eventually become false, thus preventing infinite loops.
+    - The incrementation ensures that the loop progresses: each ride is counted, and each day is accounted for.
+
+Here is the final result:
+
+```typescript
+dayCount = 0
+rideCount = 0
+
+while (dayCount < 2) 
+    rideCount = 0
+    
+    while (rideCount < 5)
+        ride_roller_coaster
+        look_for_another_roller_coaster
+
+        rideCount = rideCount + 1
+
+    rest
+    dayCount = dayCounter + 1
+```
 
 ## Activities
 
