@@ -294,9 +294,6 @@ REPEAT while not endOfRoom
     transfer_weight_left
 ```
 
-![Walking robot flowchart](./figures/ch-4-robot-walk%20-%20loop.jpg)
-*Flowchart for a humanoid robot walking.*
-
 This series of commands instructs the robot on the basic mechanics of walking, step by step. You would then loop the above commands until the robot has reached the end of the room.
 
 ### Activity #2
