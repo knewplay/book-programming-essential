@@ -11,16 +11,15 @@ questions:
           DISPLAY "Happy birthday to you!"
       END function    
 
-      Construct a program that utilizes this function to display the complete "Happy Birthday" song for an individual named John.
+      Construct a program that utilizes this function to display the complete "Happy Birthday" song for an individual named Jonathan.
   - party-food: |
       You're hosting a party and are using a robot to serve food to your guests. Design a function that can accept multiple inputs, ensuring each guest receives the appropriate food. Consider things like the food preference of the guest, as well as any dietary restrictions.
 
       Complete the function definition provided below. Afterwards, demonstrate its usage by calling it three times with details for three different guests.
 
       function ServeFood(guestName, , ):
-          // Determine the food to serve based on the guest's name, preference, and any dietary restrictions
-          // Once the appropriate food is selected, the robot serves it to the guest
-          return "Food served to " + guestName
+        // Your code here: Use if statements to determine the food to serve
+        // Return a string indicating what food has been served to which guest
       END function
   - user-profile: |
       Design a function named DisplayProfile(userName, userAge) that takes in the user's name and age and returns a profile summary.
