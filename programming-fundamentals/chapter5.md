@@ -48,10 +48,9 @@ Imagine walking into a library. In this library, there are various items: books,
   - Operations: Read articles, check out advertisements, or solve puzzles.
   - Storage: Kept in stacks or in special newspaper stands.
 
-Just as different items in a library have distinct operations and storage methods, data types in programming have their unique ways of being manipulated and stored. For instance, in the library, you wouldn't try to "listen" to a book or "read" a CD. Similarly, in our daily lives, you wouldn't "peel" a number like a fruit or "wear" it like a shirt. Understanding and respecting these distinctions in programming ensures that we use data appropriately and efficiently.
+Just as different items in a library have distinct operations and storage methods, data types in programming have their unique ways of being manipulated and stored. For instance, in the library, you wouldn't try to "listen" to a book or "read" a CD. Similarly, in our daily lives, you wouldn't "peel" a number as you would a fruit, or "wear" a fruit as you would a shirt. Understanding and respecting these distinctions in programming ensures that we use data appropriately and efficiently.
 
 ![Labeled box](./figures/ch-5-library.jpg)
-*A box labeled "Harry Potter Series", illustrating variables in programming as organizational tools for data.*
 
 ## Common Data Types in Programming
 
@@ -98,9 +97,9 @@ You can also label that box *"Favorite Book"*, and still put the book "Animal Fa
 ![Favorite book](./figures/ch-5-favorite-book.jpg)
 *A box labeled "Favorite Book" containing "Animal Farm", demonstrating how variables in programming flexibly label and store data.*
 
-In programming, this is typically done with an "equals" sign (=). The variable name comes on the left, and the value you want to store comes on the right.
+In programming, this is typically done with an "equals" `=` sign. The variable name comes on the left, and the value you want to store comes on the right.
 
-As we saw before, programming languages don't have "book", "CD", or "newspaper" as data type. Instead, they have integers, floats, Strings and Booleans just to name a few.
+As we saw before, programming languages don't have "book", "CD", or "newspaper" as data type. Instead, they have integers, floats, strings and booleans just to name a few.
 
 ```python
 variable_name = value
@@ -113,11 +112,11 @@ title = "Animal Farm"
 author = "George Orwell"
 ```
 
-Notice that author contains a String type.
+Note that both `title` and `author` contain a string type.
 
 ### Changing Variable Values
 
-A variable's value can be updated or changed throughout a program. This is especially true for weakly typed languages:
+A variable's value can be updated or changed throughout a program.
 
 ```python
 variable_name = value
@@ -140,7 +139,7 @@ You may have noticed that the variable names follow a certain style. Here are so
     - Example: `sensor_reading` (correct), `_backup_value` (correct), `3rd_motor` (incorrect).
 3. **Reserved Words:**
     - Don't use language-specific keywords.
-    - Example: Avoid naming a variable *int*, *return*, *if*, etc. as they are common reserved words in many languages.
+    - Example: Avoid naming a variable *int*, *if*, *while*, *return*, etc. as they are common reserved words in many languages.
 
 #### Best Practices
 
@@ -157,7 +156,7 @@ You may have noticed that the variable names follow a certain style. Here are so
     - Stick to a chosen naming style throughout your code.
     - Example: If you start with snake_case (`motor_speed`), don't mix with camelCase (`robotArm`) in the same codebase.
 
-> Tip: Although the "Best Practices" aren't strict rules, adhering to them can greatly enhance the clarity and maintainability of your code.
+> Although the "Best Practices" aren't strict rules, adhering to them can greatly enhance the clarity and maintainability of your code.
 
 ## Strong vs. Weak Typing: C and Python Examples
 
@@ -166,8 +165,6 @@ In programming, languages differ in how strictly they enforce data types, leadin
 ### Strongly Typed Languages
 
 In these languages, the data type of a variable is set when the variable is declared, and it can't change unless explicitly redefined. For instance, if you declare a variable to be of type integer, you can't just assign a string value to it later on. C is an example of a strongly typed language.
-
-[Illustration of box titled "Animal Farm" with a book inside titled animal farm. Next image is removal of the book from the box, and insertion of a DVD of Animal Farm the cartoon. At the bottom, it says "Not Allowed in C"]
 
 ![Strongly-typed language](./figures/ch-5-strongly-typed-languages.jpg)
 *A box labeled 'Animal Farm' initially holding a book, then attempting to insert a DVD, which is not allowed in a language like C that uses strict type enforcement.*
@@ -185,8 +182,6 @@ In the above example, once the `motorSpeed` variable is defined as an integer (`
 
 Conversely, weakly typed languages allow for more flexibility with variable data types. A variable's type can change over the course of a program. This flexibility is double-edged; while it can simplify code, it can also lead to unexpected behaviors if not used carefully. Python is an example of a weakly typed language.
 
-[Illustration of box titled "Animal Farm" with a book inside titled animal farm. Next image is removal of the book from the box, and insertion of a DVD of Animal Farm the cartoon. At the bottom, it says "Allowed in Python"]
-
 ![Weakly-typed language](./figures/ch-5-weakly-typed-languages.jpg)
 *A box labeled 'Animal Farm' first containing a book and then accepting a DVD, illustrating type flexibility in languages like Python.*
 
@@ -197,7 +192,7 @@ motorSpeed = 100
 motorSpeed = "fast"  # This is valid in Python
 ```
 
-In the Python example, the *motorSpeed* variable can easily transition from holding an integer to a string without any errors.
+In the Python example, the `motorSpeed` variable can easily transition from holding an integer to a string without any errors.
 
 In summary, while strongly typed languages prioritize strict adherence to data types for accuracy and predictability, weakly typed languages offer flexibility, which can speed up development but requires extra caution.
 
@@ -207,31 +202,31 @@ In summary, while strongly typed languages prioritize strict adherence to data t
 
 Given a list of variable names and their descriptions, identify which names are correctly named (following mandatory rules and best practices) and which are not.
 
-- *123data*: Holds information about a dataset.
-- *user-response*: User's feedback on a survey.
-- *computeValue*: Calculates a specific value based on an algorithm.
-- *if*: Represents a number in decimal format.
-- *UserAddress*: Stores user's home address.
-- *tad*: Calculates the total amount due.
+- `123data`: Holds information about a dataset.
+- `user-response`: User's feedback on a survey.
+- `computeValue`: Calculates a specific value based on an algorithm.
+- `if`: Represents a number in decimal format.
+- `UserAddress`: Stores user's home address.
+- `tad`: Calculates the total amount due.
 
 **Answer:**
 
-- *123data*:
+- `123data`:
   - **Incorrect** (Starts with a number)
-  - **Suggested name:** *data123* or *dataset*
-- *user-response*:
+  - **Suggested name:** `data123`, or, preferably something more descriptive, like `dataset`
+- `user-response`:
   - **Incorrect** (Contains a hyphen)
-  - **Suggested name**: *userResponse* (camelCase) or *user_response* (snake_case)
-- *computeValue*:
+  - **Suggested name**: `userResponse` (camelCase) or `user_response` (snake_case)
+- `computeValue`:
   - **Correct**
-- *if*:
+- `if`:
   - **Incorrect** (Keyword in most programming languages)
-- *UserAddress*:
+- `UserAddress`:
   - **Allowed but not good** (Not following best practice of starting variable name with a lowercase letter)
-  - **Suggested name**: *userAddress*
-- *tad*:
+  - **Suggested name**: `userAddress`
+- `tad`:
   - **Allowed but not good** (Not following best practice of being descriptive)
-  - **Suggested name**: *totalAmountDue*
+  - **Suggested name**: `totalAmountDue`
 
 **Activity #2:**
 
@@ -245,8 +240,8 @@ Given a list of variables and their assigned values, determine the probable data
 
 **Answer:**
 
-- *temperature*: float (Because it's a decimal number)
-- *isActive*: boolean (It's either True or False)
-- *username*: string (Sequence of characters enclosed in quotes)
-- *studentCount*: integer (Whole number without decimal points)
-- *username1*: Not a valid datatype assignment
+- `temperature`: float (Because it's a decimal number)
+- `isActive`: boolean (if the value is `True` or `False`, or an expression results in one of these, then its a boolean)
+- `username`: string (Sequence of characters enclosed in quotes)
+- `studentCount`: integer (Whole number without decimal points)
+- `username1`: Not a valid datatype assignment
