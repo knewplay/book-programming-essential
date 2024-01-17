@@ -71,17 +71,17 @@ The fact that a transistor has only two states introduces us to a fundamental co
 
 When you start programming, you'll encounter a concept called "boolean values." Named after George Boole, a 19th-century mathematician, booleans in programming have just two values: "True" and "False".
 
-Do you see the parallel? Just as a transistor can be "on" (1) or "off" (0), a boolean value can be "True" (equivalent to 1) or "False" (equivalent to 0).
+Do you see the parallel? Just as a transistor can be "on" (1) or "off" (0), a boolean value can be `True` (equivalent to 1) or `False` (equivalent to 0).
 
 ![Switch](./figures/chp-3-switch.jpg)
 
-To grasp the significance of booleans, think about how we evaluate statements in our daily life. For instance, the statement "The sky is blue" can be **true** during a clear day, but **false** during the night. Similarly, in programming, boolean values emerge from evaluating conditions or statements.
+To grasp the significance of booleans, think about how we evaluate statements in our daily life. For instance, the statement "The sky is blue" can be true during a clear day, but false during the night. Similarly, in programming, boolean values emerge from evaluating conditions or statements.
 
 > **Note:** A statement is a sentence or expression that can be evaluated as either true or false, but not both. In programming, statements provide a way to represent facts or conditions that the computer can then use to make decisions.
 
-Take the example "5 is greater than 4." When a computer processes this statement, it evaluates the condition and concludes it to be "True." In contrast, the statement "6 is greater than 4 and less than 3" is contradictory, and thus, it evaluates to "False."
+Take the example "5 is greater than 4". When a computer processes this statement, it evaluates the condition and concludes it to be `True`. In contrast, the statement "6 is greater than 4 and less than 3" is contradictory, and thus, it evaluates to `False`.
 
-Programming uses this true or false logic for decision-making, fundamentally connecting the physical world of transistors with the logical realm of booleans."
+Programming uses this true or false logic for decision-making, fundamentally connecting the physical world of transistors with the logical realm of booleans.
 
 ## Introducing Pseudocode and Decision-Making in Programs
 
@@ -94,43 +94,43 @@ Before writing some pseudocode, there are a few topics we should cover first.
 Before delving into the pseudocode, let's familiarize ourselves with some basic comparison operators used in decision-making:
 
 - **\>** : Greater than.
-  - 5 > 3 is a true statement.
-  - 2 > 8 is a false statement.
+  - `5 > 3` results in `True`.
+  - `2 > 8` results in `False`.
 - **<** : Less than.
-  - 2 < 4 is a true statement.
-  - 6 < 3 is a false statement.
+  - `2 < 4` results in `True`.
+  - `6 < 3` results in `False`.
 - **==** : Equal to.
-  - 7 == 7 is a true statement.
-  - 5 == 8 is a false statement.
+  - `7 == 7` results in `True`.
+  - `5 == 8` results in `False`.
 - **!=** : Not equal to.
-  - 5 != 8 is a true statement.
-  - 7 != 7 is a false statement.
+  - `5 != 8` results in `True`.
+  - `7 != 7` results in `False`.
 - **<=** : Less than or equal to.
-  - 4 <= 5 is a true statement.
-  - 7 <= 7 is also a true statement.
-  - 9 <= 6 is a false statement.
+  - `4 <= 5` results in `True`.
+  - `7 <= 7` results in `True`.
+  - `9 <= 6` results in `False`.
 - **>=** : Greater than or equal to.
-  - 6 >= 3 is a true statement.
-  - 8 >= 8 is also a true statement.
-  - 4 >= 10 is a false statement.
+  - `6 >= 3` results in `True`.
+  - `8 >= 8` results in `True`.
+  - `4 >= 10` results in `False`.
 
-> **Note:** We use `==` to check for equality in most programming languages instead of `=`. The reason for this will become clear in [Chapter 5](./chapter5), when we will see `=` used for something else. For now, remember to use `==` when making comparisons.
+> **Note:** We use `==` to check for equality in most programming languages instead of `=`. The reason for this will become clear in the next chapter, where we will see `=` used for something else. For now, remember to use `==` when making comparisons.
 
 These operators help us compare values and determine the relationship between them. They're fundamental to setting up conditions in our code.
 
 ### Logical Operators
 
-Beyond simple comparisons, we often need to check multiple conditions at once or invert the logic of a condition. This is where logical operators come in. The three primary logical operators are **AND**, **OR**, and **NOT**.
+Beyond simple comparisons, we often need to check multiple conditions at once or invert the logic of a condition. This is where logical operators come in. The three primary logical operators are `AND`, `OR`, and `NOT`.
 
-- **AND** : Both conditions must be true for the overall statement to be true.
-  - The statement `5 > 3 and 6 > 4` is true because both individual conditions are true.
-  - However, `5 > 3 and 6 < 4` is false because, even though the first condition is true, the second is false.
-- **OR** : At least one condition must be true for the overall statement to be true.
-  - The statement `5 > 3 or 6 < 4` is true because at least one of the conditions (the first one) is true.
-  - `2 < 1 or 3 < 2` is false because both conditions are false.
-- **NOT** : Inverts the truth value of the condition.
-  - If we have a statement like `5 > 3`, its truth value is true. Using **NOT** inverts this, making the statement `not(5 > 3)` equal to false.
-  - Similarly, for the statement `2 > 3` which is false, `not(2 > 3)` will be true.
+- `AND` : **Both** conditions must result in `True` for the overall statement to result in `True`.
+  - The statement `5 > 3 AND 6 > 4` results in `True` because both individual conditions result in `True`.
+  - However, `5 > 3 AND 6 < 4` is `False` because even though the first condition is `True`, the second is `False`.
+- `OR` : **At least one** condition must result in `True` for the overall statement to be `True`.
+  - The statement `5 > 3 OR 6 < 4` is `True `because at least one of the conditions (the first one) is `True`.
+  - `2 < 1 OR 3 < 2` is `False` because both individual conditions are `False`.
+- `NOT` : **Inverts** the truth value of the condition.
+  - A statement such as `5 > 3` is `True`. Using `NOT` inverts this, making the statement `NOT(5 > 3)` result in `False`.
+  - Conversely, the statement `2 > 3` which is `False`, therefore `NOT(2 > 3)` will be `True`.
 
 These operators allow for more complex conditions and evaluations. For instance, imagine you're programming a system that checks if a user is allowed to view a specific piece of content. You might have conditions like:
 
@@ -181,6 +181,8 @@ If the number is greater than zero, we can say it's positive:
 if number > 0 then:
     PRINT "The number is positive."
 ```
+
+> In programming, the term "print" refers to displaying text or other data on the screen, rather than producing a physical copy with a printer. It's a command used to output information to the user.
 
 But what if it's not? We need another check, and that's where `else if` proves useful. It's like saying, "if the previous conditions weren't met, then check this one".
 
@@ -278,6 +280,7 @@ if NOT raining AND (temperature >= 18 AND temperature <= 30):
     proceed_with_event
 else:
     reschedule_event
+END if
 ```
 
 By breaking down our conditions in this way, we ensure that the event only proceeds if it's not raining and the temperature is within our desired range.
