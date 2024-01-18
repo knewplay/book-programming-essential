@@ -276,7 +276,7 @@ temperature >= 18 AND temperature <= 30
 Combining both conditions, our complete decision-making pseudocode becomes:
 
 ```typescript
-if NOT raining AND (temperature >= 18 AND temperature <= 30):
+if NOT raining AND (temperature >= 18 AND temperature <= 30) then:
     proceed_with_event
 else:
     reschedule_event
