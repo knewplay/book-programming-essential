@@ -45,12 +45,12 @@ if x > 10
     PRIT "X is a big number!"
 ```
 
-Can you spot the mistake?
+Can you spot the two mistakes?
 
 **Corrected Pseudocode:**
 
 ```typescript
-if x > 10
+if x > 10:
     PRINT "X is a big number!"
 ```
 
@@ -61,20 +61,20 @@ These can be trickier. Logic errors happen when your pseudocode doesn't do what 
 **Incorrect Pseudocode:**
 
 ```typescript
-if x < 10
+if x < 10:
     PRINT "X is a big number!"
-else
+else:
     PRINT "X is a small number!"
 ```
 
-The messages are mixed up! If x is less than 10, it should say that it's a small number.
+The messages are mixed up! If `x` is less than 10, it should say that it's a small number.
 
 **Corrected Pseudocode:**
 
 ```typescript
-if x < 10
+if x < 10:
     PRINT "X is a small number!"
-else
+else:
     PRINT "X is a big number!"
 ```
 
@@ -93,7 +93,7 @@ result = x / 0
 PRINT result
 ```
 
-Dividing by zero is something you just can't do—it's like trying to share five cookies with zero friends. It just doesn't work!
+Dividing by zero is something you just can't do; it's like trying to share five cookies with zero friends. It just doesn't work!
 
 ![Cookies](./figures/ch-8-five-cookies.jpg)
 *Some cookies.*
