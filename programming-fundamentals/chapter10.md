@@ -45,17 +45,15 @@ function PlayTicTacToe(board):
     while "empty space on the board exists" == True:
         if move == "lead to victory":
             // If AI can win with this move, take it
-            MAKE move
-            return
+            Make(move)
         else if move == "block opponent victory":
             // If AI can block the opponent's victory, do it
-            MAKE move
-            return
+            Make(move)
         END if
     END while
 
     // If neither winning nor blocking, take a random free space
-    MAKE move "randomly in a free space"
+    Make(move) // Random move
 END function
 
 ```
@@ -91,6 +89,11 @@ function GuessAnimal(newPhoto):
         return "This is probably a dog"
     END if
 END function
+
+function LearnFeatures(animalType, photo):
+    // Code to analyze the photo and extract features based on animalType ('cat' or 'dog')
+END function
+
 ```
 
 The `LearnFeatures()` function is where the machine learning algorithm examines each labeled photo, identifying features such as ear shape, fur pattern, or tail length. Over time, as the algorithm encounters more labeled photos, it gets better at understanding which features are most likely to be those of a 'cat' or 'dog'. This process is called "training the model".
@@ -190,11 +193,11 @@ function RunGame():
 
         // Update the game state based on player input and other factors
         if playerInput == "jump":
-            jump()
+            Jump()
         else if playerInput == "move left":
-            moveLeft()
+            MoveLeft()
         else if playerInput == "move right":
-            moveRight()
+            MoveRight()
         END if
 
         // Update the player's score or game status
@@ -289,10 +292,10 @@ Web development, commonly known as "web dev" among programmers, is the process b
 
 Let's dive deeper into one of the core functionalities of the web: the client-server interaction. Imagine you're at a library:
 
-- The 'client' is like you, going to the library to find a book.
-- The 'server' is like the librarian, who knows where all the books are.
+- The "web client" is like you, going to the library to find a book.
+- The "web server" is like the librarian, who knows where all the books are.
 
-When you ask for a book, the librarian (server) checks if it's available. If it is, they give it to you; if not, they tell you it's unavailable. This is similar to what happens when you use a web browser (the client) to visit a website. Your browser asks a server for the website's pages, and the server responds.
+When you ask for a book, the librarian (server) checks if it's available. If it is, they give it to you; if not, they tell you it's unavailable. This is similar to what happens when you use a web browser (client) to visit a website. Your browser asks a server for the website's pages, and the server responds.
 
 ![Library](./figures/ch-10-borrow-books.jpg)
 *A library visitor requesting to borrow a book, akin to a web page request.*
