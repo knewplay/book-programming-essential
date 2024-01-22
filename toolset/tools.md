@@ -32,21 +32,21 @@ For example, if you are playing a video game and click on the "Start Game" butto
 ![Start Game Button](./figures/start-game.jpg)
 *"Start Game" button – a simple click triggers a series of underlying programming commands.*
 
-- *initializeGame*
-- *createPlayerCharacter*
-- *setGameParameters*
-- *loadGameLevels*
-- *spawnEnemiesAndTriggers*
-- *startAudio*
-- *displayGameInterface*
+- *InitializeGame()*
+- *CreatePlayerCharacter()*
+- *SetGameParameters()*
+- *LoadGameLevels()*
+- *SpawnEnemiesAndTriggers()*
+- *StartAudio()*
+- *DisplayGameInterface()*
 
 And these commands will likely call many other commands that take care of the specifics. For example, *displayGameInterface* might call
 
-- *displayHealthBar*
-- *displayInventory*
-- *displayQuestLog*
-- *displayMap*
-- *displayScoreboard*
+- *DisplayHealthBar()*
+- *DisplayInventory()*
+- *DisplayQuestLog()*
+- *DisplayMap()*
+- *DisplayScoreboard()*
 
 It's evident that a lot is going on beneath the GUI. Just think about it. What we see as "Start Game" is actually a long list of subprocesses. While everyday users don't need to know all these intricate details, programmers working on games or other apps must break things down into their smallest components. And that's where the terminal comes in.
 
@@ -70,7 +70,7 @@ Finally, the terminal is also crucial in the field of robotics. Even though we s
 
 ![Robotics programming](./figures/terminal-robotics.png)
 
-So whatever your interests, the terminal is a crucial tool for programmers and IT professionals. It provides direct access to the underlying command-line interface, allowing for precise control, automation, and efficient workflows. The terminal empowers users to delve into the inner workings of computer operations, unleashing the full potential of their skills and creativity.
+So whatever your interests, the terminal is a crucial tool for programmers and IT professionals. It provides direct access to the underlying command-line interface, allowing for precise control, automation, and efficient workflows. Using the terminal also allows users to gain a deeper understanding of their computer's operations, enhancing their technical skills.
 
 ### Fundamentals
 
