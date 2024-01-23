@@ -329,7 +329,7 @@ END function
 
 In this pseudocode, the `RequestWebPage(url)` function on the client side (like your web browser) asks the server for a specific webpage by calling `SendRequestToServer(url)`. The server, through `SendRequestToServer(url)`, checks if the requested URL is available. If it is, the `GetPageContent(url)` function retrieves the webpage's content and sends it back to the client. The client then displays this content if there's no error, or shows an error message if the page can't be found. This process exemplifies the basic request-response pattern of web interactions, where the client requests data and the server responds accordingly.
 
-![Client-Server model](./figures/ch-10-server-clients-library2.jpg)
+![Client-Server model](./figures/ch-10-server-clients-library.jpg)
 *A laptop and phone depicted as clients interacting with a server via the internet, highlighting the flow of web interactions.*
 
 This foundational model of clients sending requests to servers, and servers responding accordingly, is central to the operation of the internet. In fact, this happens to be a basic example of key concepts in web development known as front-end and back-end.
