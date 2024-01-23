@@ -90,7 +90,7 @@ As you delve deeper into the world of computers, you will inevitably encounter t
 
 Linux, a widely-used Unix-like operating system, was developed by Linus Torvalds in the early 1990s. Being open-source, Linux allows users to freely access, modify, and distribute its source code.
 
-> Note: "Source code" refers to the original, human-readable version of the code that programmers write. "Code" can sometimes be used more broadly to refer to compiled or executable programs, while "source code" indicates the raw code developers work with before it's translated into machine-readable instructions.
+> **Note:** "Source code" refers to the original, human-readable version of the code that programmers write. "Code" can sometimes be used more broadly to refer to compiled or executable programs, while "source code" indicates the raw code developers work with before it's translated into machine-readable instructions.
 
 You'll be surprised to learn that Linux is used everywhere. While the average consumer knows only of Windows and macOS computers, companies across various sectors have embraced Linux's versatility, stability, and cost-effectiveness. They deploy it in applications ranging from web servers and cloud computing to scientific research, embedded systems, and even space exploration.
 
@@ -99,15 +99,15 @@ You'll be surprised to learn that Linux is used everywhere. While the average co
 
 As you delve deeper into the technology realm, you'll likely encounter Linux, which places significant emphasis on executing text-based commands through the terminal.
 
-> Fun fact: Linux powers 96.3% of the world's top web servers [(source)](https://www.enterpriseappstoday.com/stats/linux-statistics.html#:~:text=Linux%20is%20used%20to%20power,Linus%20operating%20system%20is%20run).
+> Fun fact: Linux powers 96.3% of the world's top web servers. [(Source)](https://www.enterpriseappstoday.com/stats/linux-statistics.html#:~:text=Linux%20is%20used%20to%20power,Linus%20operating%20system%20is%20run)
 
 #### Kernel
 
-In the Computer Fundamentals, Software and Hardware section, I mentioned that the operating system is what sits between the hardware components of a computer and the software applications.
+In the [Computer Fundamentals, Software and Hardware](../computer-fundamentals/software-and-hardware.md) section, I mentioned that the operating system is what sits between the hardware components of a computer and the software applications.
 
 In general, this is true, however the operating system is large and has many components. One of its components is called the kernel.
 
-Just like its definition in English, the kernel is the operating system's core. Windows has one, macOS has one, and so too does Linux. Everything previously said that the OS does is actually done specifically by the kernel.
+In line with its English definition, the kernel is the operating system's core. Windows has one, macOS has one, and so too does Linux. All the tasks attributed to the operating system are, in fact, carried out specifically by the kernel.
 
 #### Shell
 
