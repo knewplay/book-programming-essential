@@ -73,7 +73,7 @@ When you start programming, you'll encounter a concept called "boolean values." 
 
 Do you see the parallel? Just as a transistor can be "on" (1) or "off" (0), a boolean value can be `True` (equivalent to 1) or `False` (equivalent to 0).
 
-![Switch](./figures/chp-3-switch.jpg)
+![Switch](./figures/ch-3-switch.jpg)
 
 To grasp the significance of booleans, think about how we evaluate statements in our daily life. For instance, the statement "The sky is blue" can be true during a clear day, but false during the night. Similarly, in programming, boolean values emerge from evaluating conditions or statements.
 
@@ -139,7 +139,7 @@ These operators allow for more complex conditions and evaluations. For instance,
 
 Using logical operators like **AND**, **OR** and **NOT** helps us set up complex conditions for making decisions in our programs. They allow us to mirror real-life decision-making in our code.
 
-![Chess logical](./figures/chp-3-chess-logical-operators.jpg)
+![Chess logical](./figures/ch-3-chess-logical-operators.jpg)
 
 ## From Math to Everyday Decisions
 
@@ -249,7 +249,7 @@ Suppose you're organizing an outdoor event. You'll proceed if:
 
 Write corresponding pseudocode for such a program.
 
-![Umbrella](./figures/chp3-rain.jpg)
+![Umbrella](./figures/ch-3-rain.jpg)
 
 ### Answer
 

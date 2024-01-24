@@ -176,6 +176,9 @@ This is exactly how a computer's file system operates. Every computer has a star
 
 Within the root folder, you will have subfolders. The subfolders will call the root folder their "parent folder" or "parent directory". Just like in a family tree, parents are on top, and kids are at the bottom.
 
+![Parent-tree](./figures/family-tree.jpg)
+*A family tree diagram, showing parent-child relationships similar to folder structures in a file system.*
+
 ### Working Directory
 
 Let's go back to the school analogy. Say you have the following file path to get to Physics Quiz 1.
