@@ -11,16 +11,15 @@ questions:
           DISPLAY "Happy birthday to you!"
       END function    
 
-      Construct a program that utilizes this function to display the complete "Happy Birthday" song for an individual named John.
+      Construct a program that utilizes this function to display the complete "Happy Birthday" song for an individual named Jonathan.
   - party-food: |
       You're hosting a party and are using a robot to serve food to your guests. Design a function that can accept multiple inputs, ensuring each guest receives the appropriate food. Consider things like the food preference of the guest, as well as any dietary restrictions.
 
       Complete the function definition provided below. Afterwards, demonstrate its usage by calling it three times with details for three different guests.
 
       function ServeFood(guestName, , ):
-          // Determine the food to serve based on the guest's name, preference, and any dietary restrictions
-          // Once the appropriate food is selected, the robot serves it to the guest
-          return "Food served to " + guestName
+        // Your code here: Use if statements to determine the food to serve
+        // Return a string indicating what food has been served to which guest
       END function
   - user-profile: |
       Design a function named DisplayProfile(userName, userAge) that takes in the user's name and age and returns a profile summary.
@@ -54,17 +53,17 @@ We learned in Chapter 1 about the importance of breaking down a problem. We lear
 
 ## Understanding Functions
 
-Imagine a mysterious black box. You don't know what's inside it, but you're given a manual which tells you what the box needs, and what it will produce. You feed the box what it asks for, and out comes a predictable result, exactly as the manual described. That's the essence of a function in programming. Like this black box, a function takes in certain inputs, processes them internally, and produces an output. You don't always need to know the intricacies of how it works inside, just what you need to give it, and what to expect in return.
+Imagine a mysterious black box. You don't know what's inside it, but you're given a manual which tells you what the box needs and what it will produce. You feed the box what it asks for, and out comes a predictable result, exactly as the manual described. That's the essence of a function in programming. Like this black box, a function takes in certain inputs, processes them internally, and produces an output. You don't always have to understand the complex details of its internal workings; you just need to know what inputs it requires and what outputs it will produce.
 
 ![Industrial conversion](./figures/ch-6-converting-machine.jpg)
 *A machine taking specific inputs and producing a predictable output, akin to the operation of functions in programming.*
 
-Now, consider an airplane-manufacturing plant. You're outside, observing the massive building, and throughout the day, trucks come in loaded with plane parts. By the end of the day, out rolls a brand-new airplane. This entire plant can be visualized as a single function: you input plane parts, and it outputs a ready-to-fly airplane.
+Now, consider an airplane-manufacturing plant. You're outside, observing the massive building, and throughout the day, trucks come in loaded with plane parts. By the end of the day, out rolls a brand-new airplane. This entire plant can be visualized as a single function: plane parts go in as input, and a ready-to-fly airplane comes out as the output.
 
 ![Airplane manufacturing](./figures/ch-6-plane-factory.jpg)
 *A factory receiving airplane parts and outputting a completed airplane, symbolizing a function's process of transforming inputs into specific outputs.*
 
-However, as you correctly guessed, the process isn't that straightforward. Inside, workers aren't scrambling to assemble an entire airplane in one place. The plant is divided into sections. One section assembles the wings, another the fuselage, yet another the engines, and so on. Each section specializes in one aspect, doing its job efficiently. In the end, all these components are combined, resulting in a finished airplane. This reflects the essence of modularization.
+Peaking into this "black box" system, we can see that inside the plant, workers aren't scrambling to assemble an entire airplane in one place. The plant is divided into sections. One section assembles the wings, another the fuselage, yet another the engines, and so on. Each section specializes in one aspect, doing its job efficiently. In the end, all these components are combined, resulting in a finished airplane. This reflects the essence of modularization.
 
 ![Airplane manufacturing transparent view](./figures/ch-6-plane-assembling.jpg)
 *A transparent view inside an airplane manufacturing plant with distinct sections for assembling various parts, illustrating the principle of modularization.*
@@ -73,7 +72,7 @@ Much like the specialized sections in the airplane-manufacturing plant, function
 
 ## Why Modularize?
 
-Let's briefly compare the state of the assembly plant without modularity, and then with it. This contrast will set the stage for a deeper understanding of its significance and benefits.
+Let's briefly compare the state of the assembly plant without modularity, and then with modularity. This contrast will set the stage for a deeper understanding of its significance and benefits.
 
 ### Example Without Modularity
 
@@ -112,7 +111,7 @@ Now that we've seen the overall system, let’s dive deeper to understand one of
 
 ### Function Definition and its Parameters
 
-Imagine a section of the plant where the fuselage is assembled. Before assembly starts, the fuselage-assembly team needs some key details like the size of the airplane (small, medium, large) and the number of windows it should have. Without these details, the fuselage-assembly team cannot do their work. Because remember, we have purposefully separated the plane building process, so one group does not have direct access to what the other groups are doing. They are all working independently. So this information needs to be fed to them from the general manager.
+Imagine a section of the plant where the fuselage is assembled. Before assembly starts, the fuselage-assembly team needs some key details like the size of the airplane (small, medium, large) and the number of windows it should have. Without these details, the fuselage-assembly team cannot do their work. Because remember, we have purposefully separated the plane building process, so one group does not have direct access to what the other groups are doing. They are all working independently. So this information needs to be fed to them from, say, the general manager.
 
 In programming, it's the same story. The programmer (general manager) needs to provide the "input" to the function in order for the function to do its job. And these inputs are known as "parameters".
 
@@ -129,15 +128,16 @@ Breaking this down:
 - `function`: This is a keyword indicating that we're defining a new function. Think of it as announcing, "Hey, we're setting up a new section of the assembly line here!"
 - `AssembleFuselage`: This is the name of the function, much like naming the "fuselage assembly" section. By using this name in our code, we can instruct the function to start its task, just as a project manager would say *"Hey Fuselage-Assembly team, get to work!"*
 - `(size, numberOfWindows)`: Inside these parentheses, we have our parameters – the essential details the function needs. In this case, the two parameters are:
-- `size`: This parameter expects a value that indicates the size of the airplane, like "small", "medium", or "large".
-- `numberOfWindows`: This parameter expects a number, indicating how many windows the fuselage should have.
-Think of these parameters as the instruction manual or blueprint for the fuselage assembly team. Without these specifics, the team won't know how to proceed.
+  - `size`: This parameter expects a value that indicates the size of the airplane, like "small", "medium", or "large".
+  - `numberOfWindows`: This parameter expects a number, indicating how many windows the fuselage should have.
+  
+  Think of these parameters as the instruction manual or blueprint for the fuselage assembly team. Without these specifics, the team won't know how to proceed.
 - `// Here the fuselage gets assembled.`: This is a comment in the pseudocode. It doesn't affect the functionality but is a note to anyone reading the code (or for our analogy, a reminder for the assembly team) about what happens in this section of the function. In a real code setting, this is where the steps or operations to assemble the fuselage would be detailed.
 - `END function`: This keyword indicates the function's conclusion. It's a signal that the process defined in this function is complete. Think of it as the signal that the fuselage assembly job is complete.
 
-> Note: You might notice that the comment in the pseudocode is indented (moved a few spaces to the right). This indentation is a convention in programming to show that a piece of code belongs to or is "inside" a specific section, in this case, the AssembleFuselage function.
+> You might notice that the comment in the pseudocode is indented (moved a few spaces to the right). This indentation is a convention in programming to show that a piece of code belongs to or is "inside" a specific section, in this case, the AssembleFuselage function. It's the same as the if-else statement and while loop.
 
-The beauty of this approach is that once this function is set up, we can call upon it multiple times with various inputs. If we need a large plane with 20 windows, we simply provide those specific details (arguments) when we call the function. It's like telling the assembly team to start a new project with a new set of details.
+The beauty of this approach is that once this function is set up, we can call upon it multiple times with various inputs. If we need a large plane with 20 windows, we simply provide those specific details (known as "arguments" in programming) when we call the function. It's like telling the assembly team to start a new project with a new set of details.
 
 ### Function Call and its Arguments
 
@@ -167,6 +167,8 @@ AssembleFuselage("large", 20)
 Now we're asking for a large airplane with 20 windows. And just like that, with a single line of code (or instruction to our assembly team), we set in motion the entire process to create a different type of airplane.
 
 This is the power of functions: Set up the process once, then initiate it whenever needed with the specifics you desire. Just like having an efficient assembly line that's ready to produce different models of airplanes based on the instructions you provide.
+
+> **What's the difference between a parameter and an argument?** In programming, parameters are the placeholders defined in a function, representing the types of information it requires, much like a blueprint's specifications. For instance, in `AssembleFuselage(size, numberOfWindows)`, `size` and `numberOfWindows` are parameters. Arguments, however, are the actual values you provide when calling the function, such as "medium" and "15" in `AssembleFuselage("medium", 15)`. While parameters set up what a function expects, arguments are the real data you pass to the function for execution.
 
 ### Return Mechanism
 
@@ -270,9 +272,9 @@ function AssembleAirplane(fuselageSize, numberOfWindows, typeOfWing, numberOfEng
 END function
 ```
 
-> Note: Notice how the call to `AssembleCockpit` did not require any arguments to be passed to the function. This is because `AssembleCockpit` doesn't take any input, and so the parentheses are left empty.
+> Note: Notice how the call to `AssembleCockpit()` did not require any arguments to be passed to the function. This is because `AssembleCockpit()` doesn't take any input, and so the parentheses are left empty.
 
-One of the most notable benefits of such a modular design is maintainability. If, for instance, there is an issue or a need for an improvement in the `AssembleWings` function, there's no need to sift through the overarching `AssembleAirplane` function. Instead, one would directly approach the specific function where the problem has occurred, making adjustments and optimizations far more straightforward and efficient. This approach not only reduces errors but also saves significant time during the debugging and improvement processes.
+One of the most notable benefits of such a modular design is maintainability. If, for instance, there is an issue or a need for an improvement in the `AssembleWings()` function, there's no need to sift through the overarching `AssembleAirplane()` function. Instead, one would directly approach the specific function where the problem has occurred, making adjustments and optimizations far more straightforward and efficient. This approach not only reduces errors but also saves significant time during the debugging and improvement processes.
 
 ## Activities
 
@@ -318,7 +320,7 @@ Write pseudocode for the following three functions, and then make function calls
 
 1. Greet the program user by their username.
 2. Display today's date.
-3. Provide a recommendation for a movie based on the users favorite movie.
+3. Provide a recommendation for a movie based on the user's favorite movie.
 
 **Answer:**
 
@@ -336,12 +338,12 @@ function DisplayDate():
 END function
 
 function RecommendMovie(favoriteMovie):
-    // Suggest a movie for the user to watch based on his favorite movie
+    // Suggest a movie for the user to watch based on their favorite movie
     return topRecommendation
 END function
 ```
 
-The function calls of these function would look like this:
+The function calls of these functions would look like this:
 
 ```typescript
 GreetUser("John")
@@ -359,4 +361,4 @@ Hello, John!
 Murder on the Orient Express
 ```
 
-It is important to note that the function `DisplayDate` does not need any input in order to display today's date. That is why, in its function definition, we do not include any parameters, and similarly, when calling the function, we do not pass any arguments.
+It is important to note that the function `DisplayDate()` does not need any input in order to display today's date. That is why, in its function definition, we do not include any parameters, and similarly, when calling the function, we do not pass any arguments.

@@ -41,11 +41,10 @@ In programming, problems can often feel like a massive jigsaw puzzle, especially
 
 - List the Requirements: Before diving into a solution, outline what you need to achieve. This helps in understanding the scope of the problem.
 - Visual Representation: Draw flowcharts or diagrams to visualize how different components relate.
-- Analogies: Relate the problem to a real-world scenario. If you were to explain it to a friend, how would you describe it?
+- Simplified Explanation: Break down the problem as if you were explaining it to a friend. This can often help clarify complex concepts.
 - Iterative Approach: Start with a basic version of the solution. Improve and refine it in iterations.
 
 ![Problem decomposition](./figures/ch-1-problem-decomposition.jpg)
-*A complex problem is broken down into smaller parts and then recombined to form a complete solution.*
 
 ## Activities
 

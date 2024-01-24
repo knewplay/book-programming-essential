@@ -37,9 +37,9 @@ When writing code, it's important not just to make it work, but also to make it 
 
 ## Some Review: Descriptive Names
 
-In some of the previous chapters, we've touched upon some good coding practices already, notably that of providing clear and descriptive names to functions and variables.
+In some previous chapters, we've touched upon some good coding practices, notably providing clear and descriptive names to functions and variables.
 
-Good naming is like giving clear, easy-to-follow instructions. When naming functions, we use verbs to describe actions, making it obvious what the function does. So is this good enough?
+Good naming is like giving clear, easy-to-follow instructions. When naming functions, we use verbs to describe actions, making what the function does obvious. So, is the following good enough?
 
 ```typescript
 function DoThing():
@@ -47,7 +47,7 @@ function DoThing():
 END function
 ```
 
-No, because what this function does just by looking at its name is anyone's guess. Now just to understand what the function does, we'd have to go inside the function and try to understand the code.
+No, because what this function does just by looking at its name is anyone's guess. Now, to understand what the function does, we'd have to go inside the function and try to understand the code.
 
 Instead, you should call it something like:
 
@@ -75,7 +75,7 @@ How you structure and format your code can greatly influence how easy it is to r
 
 ### Spacing and Indentation
 
-Just like paragraphs in a story, code needs to be organized with proper spacing and indentation to tell the computer (and our friends) what steps to follow and in what order. Indentation helps to show which pieces of code are connected. For example, everything inside a loop should be indented one level deeper:
+Just like paragraphs in a story, code needs to be organized with proper spacing and indentation to tell the computer (and our friends when they try to help us find a bug) what steps to follow and in what order. Indentation helps to show which pieces of code are connected. For example, everything inside a loop should be indented one level deeper, like so:
 
 ```typescript
 function PrepareTea(numOfGuests):
@@ -87,11 +87,11 @@ function PrepareTea(numOfGuests):
 END function
 ```
 
-Notice how the actions inside the for loop (adding water and steeping the tea) are indented, showing they are part of the looping action.
+Notice how the actions inside the loop (adding water and steeping the tea) are indented, showing they are part of the looping action. It's the exact same concept for everything inside the `PrepareTea()` function.
 
 ### Organizing Variables
 
-Think of variables like ingredients in a recipe. You want to lay them all out before you start cooking. By grouping related variables at the start, you make your "recipe" easier to follow. Here's an example:
+Think of variables like ingredients in a recipe. You want to lay them all out before you start cooking. By grouping related variables at the start, you make your recipe easier to follow. Here's an example:
 
 ![Cake ingredients](./figures/ch-9-cake.jpg)
 *You need eggs, flour and sugar to bake a cake.*
@@ -108,7 +108,7 @@ function BakeCake():
 END function
 ```
 
-All the "ingredients" are listed at the top, so it's clear what we need to bake the cake.
+All the ingredients are listed at the top, so it's clear what we need to bake the cake.
 
 ### Logical Segmentation
 
@@ -131,7 +131,7 @@ END function
 ![Deep nesting confusing](./figures/ch-9-loops.jpg)
 *Deep nesting will get confusing very quickly.*
 
-When we write stories, if we have too many stories within stories, it can become confusing. Similarly, in programming, having too many loops or conditions inside of each other (nested) can make code hard to follow. Try to keep things simple:
+When we write stories, if we have too many stories within stories, it can become confusing. Similarly, in programming, having too many loops or conditions inside one another (nested) can make code hard to follow. Try to keep things simple:
 
 ```typescript
 // Try to avoid this
@@ -193,7 +193,7 @@ END if
 
 ## Commenting Properly
 
-While not strictly part of the code's functionality, comments are part of the overall structure. Use them to explain why you're doing something, not what you're doing (which should be clear from the code itself). Over-commenting with obvious information can clutter the code, while under-commenting can leave readers puzzled.
+While not strictly part of the code's functionality, comments are part of the overall structure. Use them to explain why you're doing something, rather than what you're doing (which should be clear from the code itself). Over-commenting with obvious information can clutter the code, while under-commenting can leave readers puzzled.
 
 ### Bad Commenting Examples
 
@@ -241,23 +241,23 @@ Here’s a snippet of code where everything is jumbled together. Can you reorgan
 
 ```typescript
 function MakePizza(topping1,topping2):
-dough = 'wheat'
-AddToPan(dough)
-AddToPan(topping1)
-AddToPan(topping2)
-ovenTemp = 475
-Bake(ovenTemp)
+    dough = 'wheat'
+    AddToPan(dough)
+    AddToPan(topping1)
+    AddToPan(topping2)
+    ovenTemp = 475
+    Bake(ovenTemp)
 END function
 ```
 
 **Answer:**
 
-When making a pizza in code, just like in the kitchen, organization is key. You gather your ingredients, prepare your dough, add the toppings, and finally, bake your pizza to perfection. Let's take this step-by-step approach to our `MakePizza` function:
+When making a pizza in code, just like in the kitchen, organization is key. You gather your ingredients, prepare your dough, add the toppings, and finally, bake your pizza to perfection. Let's take this step-by-step approach to our `MakePizza()` function:
 
 ```typescript
 function MakePizza(topping1,topping2):
-    // Prepare the base ingredients
-    dough = 'wheat'
+    // Prepare the base ingredient and save oven temperature
+    dough = "wheat"
     ovenTemp = 475
     
     // Start the pizza-making process
@@ -270,7 +270,9 @@ function MakePizza(topping1,topping2):
 END function
 ```
 
-With the ingredients and steps laid out clearly, anyone reading this code will understand the process of making a pizza. The comments provide additional context, making the function accessible even for those who might be new to coding.
+With the ingredients and steps laid out clearly, anyone reading this code will understand the process of making a pizza.
+
+> The comments in this code sample may not strictly adhere to the previously outlined best practices for commenting. They are intentionally designed to be more descriptive to aid understanding for new coders, making the function more accessible to beginners.
 
 ![Pizza](./figures/ch-9-pizza.jpg)
 *A pizza with multiple toppings.*
@@ -283,27 +285,27 @@ Here’s a long piece of code that repeats the same steps several times. Can you
 *Cleaning code up.*
 
 ```typescript
-Display("Welcome, playerone!")
+Print("Welcome, playerone!")
 // ...
-// 10 more lines of code for setting up the game for user "playerone". 
+// 10 more lines of code for setting up the game for user "playerone" 
 // These might include initializing scores, setting positions, etc.
 
-Display("Welcome, zombieXZ!")
+Print("Welcome, zombieXZ!")
 // ...
 // Same 10 lines of code for setting up the game for user "zombieXZ" 
 
-Display("Welcome, IronHeart007!")
+Print()"Welcome, IronHeart007!")
 // ...
 // Same 10 lines of code for setting up the game for user "IronHeart007"
 ```
 
 **Answer:**
 
-We want to make a function that handles the setup process for a player. This way, we can call the same function for all players without repeating those 11 (the `PRINT` as well as the 10 other lines) lines of code. Here's how you might structure that function and call it for all players:
+We want to make a function that handles the setup process for a player. This way, we can call the same function for all players without repeating those 11 (`Print()` as well as the 10 other lines) lines of code. Here's how you might structure that function and call it for all players:
 
 ```typescript
 function SetUpGame(player):
-    Display("Welcome, " + player + "!")
+    Print("Welcome, " + player + "!")
     // ...
     // 10 more lines of code for setting up the game for a player
     // These might include initializing scores, setting positions, etc.
@@ -315,4 +317,18 @@ SetUpGame("zombieXZ")
 SetUpGame("IronHeart007")
 ```
 
-This setup not only simplifies your code, making it easier to read and maintain, but also makes your game setup more flexible. If you wanted to add 100 more players or change the setup process, you'd only need to update it in one place.
+**Code explanation:**
+
+1. **Function Declaration - `SetUpGame()`:**
+The SetUpGame function is declared at the beginning. It's designed to initialize the game settings for a player. The function takes one parameter, `player`, which should be a string representing the player's name.
+
+2. **Welcoming the Player:**
+The function's first action is to print a welcome message for the player. This is done by combining, or "concatenating", several strings together. Concatenation is simply joining strings together. Here, the string `"Welcome, "` is joined with the variable `player` (the player's name), and an exclamation mark `"!"` at the end. For example, if `player` is `"playerone"`, the output becomes `"Welcome, playerone!"`. This process is repeated with different player names, customizing the message for each player.
+
+3. **Additional Setup Steps:**
+After the welcome message, the function continues with more code to set up the game. This includes initializing scores, setting player positions, and other necessary steps, though these specific lines aren't shown in the snippet.
+
+4. **Function Calls:**
+The function is then called three times with different arguments: `"playerone"`, `"zombieXZ"`, and `"IronHeart007"`. Each call sets up the game for a different player, showcasing the function's versatility.
+
+This setup not only simplifies your code, making it easier to read and maintain, but also makes your game setup more flexible. If you wanted to add 100 more players or change the setup process, you'd only need to update it in one place. That is the beauty of functions.

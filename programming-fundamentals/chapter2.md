@@ -57,7 +57,6 @@ Imagine you're teaching someone to tie their shoelaces. The instructions you giv
 Now, consider a more complex scenario: robots in a competition. In such a contest, a robot might be tasked to collect a ball from the ground and shoot it into a basket.
 
 ![Shooting robot](./figures/ch-2-robot-shoot-image.jpg)
-*A robot shooting a basketball during a competition.*
 
 The robot doesn't act on instinct or intuition; instead, it follows a strict set of instructions - its algorithm. The algorithm could look something like this:
 
@@ -87,7 +86,7 @@ Converting a problem into a flowchart involves breaking down the problem into in
 
 #### Step 1: Define the problem
 
-Understand what you're trying to achieve. In our example, the problem or task is: Make a cup of tea.
+Understand what you're trying to achieve. In our example, the task is: make a cup of tea.
 
 #### Step 2: List down the steps
 
@@ -99,6 +98,7 @@ Write down every step involved in the process. For our tea example, it might loo
 - Pour the boiled water into the cup.
 - Wait a couple of minutes.
 - Remove the teabag from the cup.
+- Decide if sugar should be added.
 
 #### Step 3: Start drawing the flowchart
 
@@ -117,7 +117,6 @@ When you encounter a step that involves making a decision, use a diamond shape. 
 Keep drawing arrows from one rectangle to the next as you move through your list of steps. After the last step, draw an arrow to a rounded rectangle labeled "End".
 
 ![Completed flowchart](./figures/ch-2-tea-making.jpg)
-*Complete flowchart of the tea-making process.*
 
 #### Step 4: Review
 
@@ -126,7 +125,6 @@ Once you've drawn out each step from your list, take a moment to review the flow
 The intuitive approach is like narrating a story to yourself. You're recounting the tale of making a cup of tea, from start to finish. By following each step as you would in real life and drawing it out in sequence, you create a visual representation of the process.
 
 ![Tea making](./figures/ch-2-tea-makeing-image.jpg)
-*Tea being poured into a cup.*
 
 By using this systematic approach, you can turn any problem or process into a clear, visual flowchart.
 
@@ -136,25 +134,24 @@ Remember, algorithms and flowcharts are all about breaking down problems and rep
 
 ### Activity #1
 
-Think of a daily routine. Describe the sequence and decision-making process of your routine as if you were guiding someone through the steps. For instance, consider the routine of getting ready for work in the morning.
+Describe a typical morning routine for getting ready for school, including a decision you make between two options at some point in the routine. Detail the steps from waking up to leaving the house.
 
 ![Getting ready for school](./figures/ch-2-getting-ready-for-school.jpg)
-*A student headed to school.*
 
 ### Answer
 
-Routine: Getting ready for work in the morning
+Routine: Getting ready for school in the morning
 
 1. Wake up when the alarm rings.
 2. Turn off the alarm.
 3. Check the weather.
-4. Put on basic clothing.
+4. Put on base clothes.
 5. Go to the bathroom to brush teeth and wash face.
 6. Eat breakfast.
 7. Decision: Is it raining?
     - Yes: Wear rain-appropriate attire and carry an umbrella.
     - No: Wear regular attire.
-8. Grab your schoolbag, ensuring the essentials are inside.
+8. Grab your schoolbag.
 9. Leave the house and head to school.
 
 This sequence lists out the steps and includes a decision-making point regarding the weather, which affects the choice of attire for the day.

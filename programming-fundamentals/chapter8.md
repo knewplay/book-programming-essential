@@ -45,12 +45,12 @@ if x > 10
     PRIT "X is a big number!"
 ```
 
-Can you spot the mistake?
+Can you spot the two mistakes?
 
 **Corrected Pseudocode:**
 
 ```typescript
-if x > 10
+if x > 10:
     PRINT "X is a big number!"
 ```
 
@@ -61,20 +61,20 @@ These can be trickier. Logic errors happen when your pseudocode doesn't do what 
 **Incorrect Pseudocode:**
 
 ```typescript
-if x < 10
+if x < 10:
     PRINT "X is a big number!"
-else
+else:
     PRINT "X is a small number!"
 ```
 
-The messages are mixed up! If x is less than 10, it should say that it's a small number.
+The messages are mixed up! If `x` is less than 10, it should say that it's a small number.
 
 **Corrected Pseudocode:**
 
 ```typescript
-if x < 10
+if x < 10:
     PRINT "X is a small number!"
-else
+else:
     PRINT "X is a big number!"
 ```
 
@@ -93,7 +93,7 @@ result = x / 0
 PRINT result
 ```
 
-Dividing by zero is something you just can't do—it's like trying to share five cookies with zero friends. It just doesn't work!
+Dividing by zero is something you just can't do; it's like trying to share five cookies with zero friends. It just doesn't work!
 
 ![Cookies](./figures/ch-8-five-cookies.jpg)
 *Some cookies.*
@@ -119,12 +119,13 @@ Spotting errors in your code doesn't have to be overwhelming. With a few smart s
 To illustrate, let's consider a simple piece of pseudocode:
 
 ```typescript
-if temperature > 30
+if temperature > 30:
     PRINT "It's hot outside!"
-else if temperature > 20 and temperature < 30
+else if (temperature > 20 AND temperature < 30):
     PRINT "It's warm outside!"
-else
+else:
     PRINT "It's a cold day."
+END if
 ```
 
 Using our strategies:
@@ -133,7 +134,7 @@ Using our strategies:
 
 **Check for Completeness and Edge Cases:** Each statement appears to address different temperature ranges, but is there any range missing? What happens if the temperature is exactly 20? What about 30?
 
-**Simplify Complex Statements:** The `else if` statement uses 'and', a logical operator that requires both conditions to be true. Make sure this logic correctly includes all intended values, especially at the boundaries.
+**Simplify Complex Statements:** The `else if` statement uses `AND`, a logical operator that requires both conditions to be true. Make sure this logic correctly includes all intended values, especially at the boundaries.
 
 **Peer Review:** A classmate might not spot the boundary issue immediately, but a discussion could lead to questions about temperatures at the edge cases.
 
@@ -152,12 +153,13 @@ Your friend wrote the following code:
 
 ```typescript
 x = INPUT
-if x < 10
+if x < 10:
     PRINT "x is less than 10"
-else if x < 5
+else if x < 5:
     PRINT "x is less than 5"
-else
+else:
     PRINT "x is not less than 10 and 5"
+END if
 ```
 
 Are there any problems with this code? Explain.
@@ -174,21 +176,21 @@ Let's run through some numbers:
 - **Exactly 5:** It prints "x is less than 10". This is correct.
 - **Below 5 (e.g., 3):** It prints "x is less than 10" instead of printing "x is less than 5", which is what we actually want. This is a case that the code fails to handle correctly.
 
-The flaw lies in the sequence of the conditions. When we input a number, for example, 3, the program first checks if `x < 10`. Since 3 is indeed less than 10, the program outputs "x is less than 10" and bypasses the subsequent conditions. As a result, the second condition `else if x < 5` is never executed, which means the program will never print "x is less than 5", even though it's accurate.
+The flaw lies in the sequence of the conditions. When we input a number, for example, 3, the program first checks if `x < 10`. Since 3 is indeed less than 10, the program outputs "x is less than 10" and bypasses the subsequent conditions. As a result, the second condition `x < 5` is never executed, which means the program will never print "x is less than 5", even though it's accurate.
 
 The code should be rearranged so that it checks for the smaller value first. Here's a corrected version:
 
 ```typescript
 x = INPUT
-if x < 5
+if x < 5:
     PRINT "x is less than 5"
-else if x < 10
+else if x < 10:
     PRINT "x is less than 10"
-else
+else:
     PRINT "x is not less than 10 and 5"
 ```
 
-Now, the code checks if `x` is less than 5 first. If it's not, then it checks if it's less than 10. This way, all possibilities are covered correctly.
+Now, the code checks if `x < 5` first. If it's not, then it checks if `x < 10`. This way, all possibilities are covered correctly.
 
 ![1D coordinate system](./figures/ch-8-activity.jpg)
 *As can be seen, x < 5 must be checked first because it is contained within x < 10.*
@@ -209,7 +211,9 @@ Comment on this code. Does it do what it is intended to do? What would you chang
 
 **Answer:**
 
-The code is close to achieving the goal but falls short due to a common oversight. It's meant to count from 1 to 10, yet it stops at 9. The loop's condition, i < 10, causes it to halt prematurely.
+Your friend's code has a good foundation but contains two issues: a syntax error in the form of a missing colon in the while loop statement, and a logic error.
+
+The primary issue is that the code, meant to count from 1 to 10, stops at 9. This is due to the loop's condition, i < 10, which excludes the number 10. The program halts prematurely because once i equals 10, the condition no longer holds true.
 
 To better understand and catch such issues, it's essential to mentally simulate the program's execution, especially paying attention to edge cases. Let's mentally run the code:
 
@@ -221,7 +225,7 @@ To better understand and catch such issues, it's essential to mentally simulate 
 To correct this, we can change the loop's condition to `i <= 10` so that it includes 10 in the count. The revised code looks like this:
 
 ```typescript
-i = 1         // Initialize variable i
+i = 1:         // Initialize variable i
 while i <= 10
     PRINT i   // Display i onto the screen
     i = i + 1 // Increment i by 1

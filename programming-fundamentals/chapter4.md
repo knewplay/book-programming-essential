@@ -27,12 +27,10 @@ In our daily lives, we encounter many repetitive tasks, whether it's setting an 
 
 [Use Cases of Looping](#use-cases-of-looping)
 
-[The Intricacies of a Loop](#the-intricacies-of-a-loop)
+[The While Loop](#the-while-loop)
 
-[Visualizing with Examples](#visualizing-with-examples)
-
-- [Example #1: Repetitive Ball Shots by a Robot](#example-1-repetitive-ball-shots-by-a-robot)
-- [Example #2: Rocket Launch Countdown](#example-2-rocket-launch-countdown)
+- [Example 1: Printing "Hello World 10 times](#example-1-printing-hello-world-10-times)
+- [Example 2: Rocket Launch Countdown](#example-2-rocket-launch-countdown)
 
 [Nested Loops](#nested-loops)
 
@@ -51,7 +49,7 @@ Imagine playing your favorite video game. There are certain elements in that gam
 - **Respawning Items:** Ever noticed how some collectible items or power-ups reappear in the same spot after a while? That's a loop ensuring you never run out of challenges or rewards.
 - **Animated Backgrounds:** The moving clouds, flying birds, or flowing rivers that bring a game environment to life? These are often looped animations, adding depth without the need for constant new animations.
 
-Using loops, developers can instruct the game to repeat specific actions seamlessly, enhancing the overall gaming experience. It's one of the many nifty tricks in the programmer's toolkit!
+Using loops, developers can instruct the game to repeat specific actions seamlessly, enhancing the overall gaming experience. This technique is one of the most widely used and fundamental in a programmer's  toolkit!
 
 ### Use Cases of Looping
 
@@ -63,65 +61,145 @@ Loops are incredibly useful in scenarios where:
 
 Using loops not only saves time but also ensures our code remains clean and efficient.
 
-## The Intricacies of a Loop
+## The While Loop
 
-When you start actually programming, you'll notice that you can't just say "Loop 5 times"; it's a bit more complicated than that.
+When you start actually programming, you'll notice that you can't just say *"Loop 5 times"*; it's a bit more complicated than that.
 
-So in this section, let's take a closer look at the core components of a loop, using a visual guide:
+So in this section, let's take a closer look at the core components of what's known as a **while loop**.
 
-![Flowchart of while loop](./figures/ch-4-robot-walk%20-%20loop.jpg)
-*Flowchart representing the basic components of a while loop.*
+### Example 1: Printing "Hello World" 10 times
 
-1. **Starting Point (*`start`*):** This is where our loop begins its journey. It sets the stage for the series of repetitive actions that will follow.
-2. **Initialization (*`initialization of loop counter`*):** We set a base or starting value for our loop.
-3. **Condition (*`while condition`*):** This is the loop's heartbeat. As long as this condition remains **true**, the loop will continue its iterations. In the flowchart, you can see a decision diamond (the pink one) where the loop checks if the condition is still true. If it's not, the loop will break, and the process will stop.
-4. **Execution (*`body of the loop`*):** Here's where the main action of the loop takes place. It's the task or set of tasks that the loop performs with each iteration. Maybe it's adding a number, printing a message, or updating a score in a video game.
-5. **Update (*`update the counter`*):** After executing the main action, the loop typically modifies the loop counter, pushing the loop closer to an exiting condition.
-6. **Exit Point (*`stop`*)**: All loops must have an end (unless they're meant to run indefinitely). When the loop's condition no longer holds true, it exits, allowing the program to either end or move on to the next task.
+One of the classic exercises in programming is to make your program say "Hello World". Let's explore how a loop can be used to print this message 10 times.
 
-## Visualizing with Examples
+In order to print the message once, we write the following line of code:
 
-### Example #1: Repetitive Ball Shots by a Robot
+```typescript
+PRINT "Hello World"
+```
 
-Imagine we're programming a robot for a competition where it needs to shoot a ball into a basket ten times in a row. Using a loop, we can efficiently give the robot this repetitive task.
+It's that simple to display "Hello World" onto the screen.
 
-![Flowchart of shooting balls](./figures/ch-4-robot-shoot.jpg)
-*Flowchart of a robot shooting balls until no balls are left.*
+Now, to display it 10 times, the inefficient way of doing it is as follows:
 
-1. **Starting Point (*`Start`*):** Our loop begins at this entry point, initiating the robot's ball shooting sequence.
-2. **Initialization (*`Set shotCounter to 0`*):** The loop starts by setting an initial value for the shot counter, which keeps track of how many balls the robot has shot. Initially, the shot counter is set to 0.
-3. **Condition (*`Is shotCounter < 10?`*)**: At this step, the loop checks the counter's value. It's asking, "Has the robot shot less than 10 balls?" If the shot counter hasn't reached 10, the loop will continue instructing the robot to shoot. Once the counter reaches 10, the robot stops.
-4. **Execution (*`Shoot ball into basket`*):** Here, the loop commands the robot to take a shot, aiming the ball at the basket.
-5. **Update (*`Add 1 to shotCounter`*)**: After each successful shot, the loop increments the shot counter by 1, ensuring accurate tracking of the number of shots taken.
-6. **Exit Point (*`Exit`*)**: After the robot has shot ten balls, the loop concludes its task, and the robot stops shooting.
+```typescript
+PRINT "Hello World"
+PRINT "Hello World"
+PRINT "Hello World"
+// ... (repeat 6 more times)
+PRINT "Hello World"
+```
 
-> Note: While humans start counting from 1 (1, 2, ..., 8), computers begin at 0 (0, 1, ..., 7). This way of counting is rooted in how early computer systems were designed; starting at 0 was efficient, allowing computers to optimize their memory and processing power. Over time, this zero-based method became the standard in programming. So, in coding, always remember to kick things off with zero!
+Loops provide us with a much quicker way of doing this. Consider the following:
 
-### Example #2: Rocket Launch Countdown
+```typescript
+while counter < 10:
+    PRINT "Hello World"
+```
 
-Rocket launches are thrilling, right? They always start with that dramatic countdown: "10, 9, 8...". Let's break down how a loop might handle this!
+In this while loop, we're looking at a simple but fundamental control structure in programming. Here’s how its components work together:
 
-1. **Starting Point (*`Start`*):** Our loop's exciting journey begins here, at the launch pad of our mission.
-2. **Initialization (*`Set countdown to 10`*):** As we prepare for launch, the loop gets ready by setting the starting point of our countdown at 10.
-3. **Condition (*`Is countdown > 0?`*):** At this checkpoint, the loop asks, "Is there still time left on the countdown?" If the countdown is still greater than 0, the loop continues with the countdown. But once it reaches 0, the loop is exited.
-4. **Execution (*`Announce countdown`*)**: With every tick of the countdown, the loop announces the current number, letting everyone know how many seconds remain until launch.
-5. **Update (*`Subtract 1 from countdown`*):** After each announcement, the loop decreases the 'countdown' by 1. This action ensures that we're progressing toward that exhilarating moment of blast-off.
-6. **Exit Point (*`Launch the rocket`*)**: When 'countdown' hits zero, the loop's work is done, and it's time for the rocket to soar into the skies!
+**While Loop Keyword:** The loop begins with the keyword `while`, signaling the start of a while loop. This keyword is crucial as it tells the program that what follows is a condition to be checked.
 
-**Overview:** The countdown starts at 10, and with each passing second, the number decreases by 1. Once the countdown reaches 0, the rocket launches! In this case, the starting point is `countdown = 10`, the condition to check if is `countdown == 0`, and the update we do is to update `countdown - 1` every passing second.
+**Condition Check:** Next we have a condition check: `counter < 10`. Before each iteration, the loop evaluates this condition. If the condition is true, the loop continues and executes the code inside its body. If it's false, the loop stops, and moves onto the code that follows the loop body.
+
+**Loop Body:** The indented block of code following the while statement is the loop's body (`PRINT "Hello World"` in this case). This code is executed repeatedly as long as the loop's condition remains true. Indentation is achieved by using a tab at the start of a line, or by inserting four spaces. This creates a visual hierarchy.
+
+**Execution Flow:**
+
+- In each loop iteration, the program checks if `counter` is less than 10.
+- If this is true, the program prints "Hello World".
+- After executing the loop body, control returns to the top of the loop, and the condition is checked again.
+
+There is a problem however: what is the value of `counter`? Should we start `counter` at 0, 1, 5, 10? We need to define this explicitly in our program. Typically, in such scenarios, we start counting from 0. So, let’s initialize `counter` to 0 right before the loop starts:
+
+```typescript
+counter = 0
+
+while counter < 10:
+    PRINT "Hello World"
+```
+
+We're almost done! Now we have a variable called `counter`, set to 0, and while `counter` is less than 10, the program will print "Hello World" onto the screen. Do you see a problem here?
+
+We want to print 10 times. If we run this program, it will print "Hello World" indefinitely. Why?
+
+Because `counter` is 0, and 0 is always less than 10. The while loop will keep asking "is `counter < 10` `True` or `False`?" Since "0 is less than 10" is always `True`, the "body" of the while loop will always be executed.
+
+For that reason, we have to update the value of `counter` after every iteration, like so:
+
+```typescript
+counter = 0
+
+while counter < 10:
+    PRINT "Hello World"
+    counter = counter + 1
+```
+
+Now, `counter` starts at 0, but it gets incremented by 1 each time the loop body is entered. Here is step by step what happens:
+
+1. `counter` is set to 0.
+2. Empty line get's skipped.
+3. The `while` loop condition is checked: since `counter` is currently set to 0, the program checks if "0 < 10". Because this statement is `True`, the body of the while loop is entered.
+4. "Hello World" is printed onto the screen.
+5. `counter` is incremented by 1. Since `counter` was previously 0, it is now updated to be 1.
+6. The program returns to check the `while` loop condition: since `counter` is currently set to 1, the program checks if "1 < 10". Because this statement is `True`, the body of the while loop is entered.
+7. "Hello World" is printed onto the screen again (for the second time).
+8. `counter` is incremented by 1 again. Since counter was previously 1, it is now updated to be 2.
+9. The program returns to the `while` loop condition: with `counter` now at 2, it checks if "2 < 10". This is `True`, so it enters the loop body once more.
+
+...
+
+27. At the 9th iteration, `counter` is 8. The condition "8 < 10" is `True`, so "Hello World" is printed, and `counter` becomes 9.
+28. At the 10th iteration, `counter` is 9. The condition "9 < 10" is still `True`, so "Hello World" is printed for the tenth time, and `counter` is incremented to 10.
+29. The program returns to the `while` loop condition: with counter now at 10, it checks "10 < 10". This statement is `False`, so the loop does not enter its body, and the program execution moves on, marking the end of the loop.
+
+This example is a fundamental illustration of how loops can automate repetitive tasks, like printing a message multiple times.
+
+> Note that we could have had `counter` be the same as the "iteration" number, e.g., at the 1st iteration, `counter` is 1, at the 2nd iteration, `counter` is 2, etc. All we had to do was start `counter` from 1 instead of 0, but it is convention for computers to start counting from 0.
+
+### Example 2: Rocket Launch Countdown
+
+Rocket launches always start with that dramatic countdown: "10, 9, ..., 3, 2, 1, Blast off!". Let's break down how a loop might handle this!
 
 ![Flowchart of countdown](./figures/ch-4-Rocket-launch.jpg)
 *Flowchart representation of the rocket launch countdown.*
 
+1. **Starting Point** (*Start*): The journey begins here, at the "launch pad" of our mission.
+2. **Initialization** (*Set countdown to 10*): As we prepare for launch, the loop gets ready by setting the starting point of our countdown at 10.
+3. **Condition** (*Is countdown > 0?*): The loop asks, "Is there still time left on the countdown?". If the countdown is still greater than 0, the loop continues with the countdown. But once it reaches 0, the loop is exited.
+4. **Execution** (*Announce countdown*): With every tick of the countdown, the loop announces the current number, letting everyone know how many seconds remain until launch.
+5. **Update** (*Subtract 1 from countdown*): After each announcement, the loop decreases the `countdown` by 1. This action ensures that we're progressing toward the blast-off.
+6. **Exit Point** (*Launch the rocket*): When `countdown` hits 0, the loop's work is done, and it's time for the rocket to soar into the skies!
+
+Here is the pseudocode version of this situation, with comments (non-executable lines) denoted with `//`:
+
+```typescript
+// Initialization: Initialize the countdown
+countdown = 10
+
+// Condition: Begin the while loop
+WHILE countdown > 0:
+    // Execution: Print the current countdown number
+    PRINT countdown
+
+    // Update: Decrease the countdown number by 1
+    countdown = countdown - 1
+
+// Exit Point: Once the loop ends, announce the launch
+PRINT "Blast off!"
+```
+
+**Overview:** This code begins by initializing the `countdown` variable to 10. In each iteration of the loop, it checks if `countdown` is greater than 0; if so, the current countdown number is printed. After each print, `countdown` is reduced by 1. This decrementing continues until `countdown` reaches 0, at which point the loop terminates. The final action outside the loop is printing `"Blast off!"` signaling the end of the countdown and the launch of the rocket.
+
 ## Nested Loops
 
-Just as we nest boxes within larger boxes, loops can also be placed inside other loops. This is known as nesting. It's a powerful technique, especially when you need to handle multi-dimensional tasks.
+In programming, we can place loops inside other loops, a concept known as nesting. This approach is particularly powerful for handling tasks that involve multiple layers or dimensions.
 
-[Illustration [1](https://create.roblox.com/docs/tutorials/fundamentals/coding-4/nested-loops) [2](https://study.com/academy/lesson/nested-while-loops-in-java.html) or img sent in chat]
+[Illustration of 2 gears, one large one small]
 
 ### Nested Loop Example: Amusement Park
 
-Imagine this: you're on a weekend trip to "WonderWorld Amusement Park" with an all-inclusive two-day ticket pass. You're super excited and have decided that on each day, you'll ride 5 different roller coasters.
+Imagine this: you're on a weekend trip to an amusement park with an all-inclusive two-day ticket pass. You're super excited and have decided that on each day, you'll ride 5 different roller coasters.
 
 This situation is a great example of nested loops. Think of the two-day weekend as the outer loop. Now, inside each day (each cycle of the outer loop), there's another loop for the five times you ride the roller coasters.
 
@@ -134,7 +212,7 @@ Here's a breakdown:
 
 The beauty of nested loops is in their simplicity. You're not doing something drastically different each time; you're repeating the same enjoyable action (riding a roller coaster) within the larger context of the weekend.
 
-Here is what the pseudocode would look like:
+Here is what the rough pseudocode looks like:
 
 ```typescript
 REPEAT 2 days:
@@ -144,13 +222,45 @@ REPEAT 2 days:
     rest
 ```
 
-This logic conveys that for two days, you'll ride a roller coaster, and then decide where to go next five times each day. After those five rides, you might take a break.
+This pseudocode suggests a two-level nested loop: an outer loop for the days and an inner loop for the roller coaster rides each day. Here's the step-by-step process to convert it to an actual while loop:
+
+1. Introduce Counter Variables: `dayCount` keeps track of the number of days, and `rideCount` keeps track of the number of rides each day.
+2. Translate the Outer Loop: The outer `REPEAT 2 days:` becomes `while (dayCount < 2):`.
+3. Initialize the Inner Loop Counter:
+
+    - At the start of each day (each outer loop iteration), initialize rideCount to 0.
+    - This reset is important to ensure that the inner loop always starts counting from 0 each day.
+
+4. Translate the Inner Loop: The inner `REPEAT 5 times:` becomes `while (rideCount < 5):`.
+5. Increment the Counters:
+
+    - Within each loop, increment the respective counter (rideCount++ in the inner loop and dayCount++ in the outer loop) at the end of each iteration. This increment is crucial for the loop's condition to eventually become false, thus preventing infinite loops.
+    - The incrementation ensures that the loop progresses: each ride is counted, and each day is accounted for.
+
+Here is the final result:
+
+```typescript
+dayCount = 0
+rideCount = 0
+
+while (dayCount < 2) 
+    rideCount = 0
+    
+    while (rideCount < 5)
+        ride_roller_coaster
+        look_for_another_roller_coaster
+
+        rideCount = rideCount + 1
+
+    rest
+    dayCount = dayCounter + 1
+```
 
 ## Activities
 
 ### Activity #1
 
-Recall the humanoid robot from [Chapter 2 Activity #2](./chapter2#activity-2). With your understanding of loops from this chapter, describe the commands you would provide to ensure the robot walks across the room. Consider visualizing your solution with a flowchart diagram.
+Recall the humanoid robot from [Chapter 2 Activity #2](./chapter2#activity-2). With your understanding of loops from this chapter, describe the commands you would provide to ensure the robot walks across the room. Write the corresponding pseudocode.
 
 ![Walking robot](./figures/ch-4robot-walk-image.jpg)
 *A humanoid robot walking.*
@@ -171,7 +281,9 @@ To make the robot walk across the room, you would use a series of commands for e
 10. Otherwise, repeat from step 1.
 
 ```typescript
-REPEAT while not endOfRoom
+enfOfRoom = False
+
+while not endOfRoom:
     lift_right_foot_5cm
     move_right_foot_forward_30cm
     lower_right_foot
@@ -180,18 +292,22 @@ REPEAT while not endOfRoom
     move_left_foot_forward_60cm
     lower_left_foot
     transfer_weight_left
+
+    if wall_detected:
+        endOfRoom = True
 ```
 
-![Walking robot flowchart](./figures/ch-4-robot-walk%20-%20loop.jpg)
-*Flowchart for a humanoid robot walking.*
+The variable `endOfRoom` is initially set to `False`, indicating that the robot hasn't reached the end of the room yet. The `while not endOfRoom` loop keeps running as long as `endOfRoom` remains `False`.
 
-This series of commands instructs the robot on the basic mechanics of walking, step by step. You would then loop the above commands until the robot has reached the end of the room.
+Inside the loop, each step of the walking process is represented by an action (like `lift_right_foot_5cm`, `move_right_foot_forward_30cm`, etc.). These are assumed to execute the specific movements.
+
+After completing the sequence of steps for both feet, the robot checks if it has reached the wall (using `wall_detected`). If the robot detects the wall, it sets `endOfRoom` to `True`, causing the loop to exit. Otherwise, the loop starts over, repeating the walking sequence.
 
 ### Activity #2
 
 You're working with a new generation humanoid robot that's designed for physical exercises. Unlike previous models, this robot has advanced kinesthetic intelligence, meaning it understands basic exercise commands without needing a breakdown of every movement. For instance, you don't need to instruct it with "bend your arms 90 degrees" for push-ups; you can simply command "Do a push-up", and it will perform the action. However, you cannot ask it to "Do 10 push-ups", as it can only comprehend one push-up at a time.
 
-Instruct your robot to perform a set of 10 push-ups, followed by 10 sit-ups, and then 10 squats. The robot should then loop this set 5 times.
+Instruct your robot to perform a set of 10 push-ups, followed by 10 sit-ups, and then 10 squats. The robot should complete this set of exercises 5 times.
 
 ### Answer
 
@@ -214,7 +330,7 @@ REPEAT 10 times:
     do_pushup
 ```
 
-Similarly, we instruct the robot to repeat the do_situp and do_squat commands 10 times.
+Similarly, we instruct the robot to repeat the `do_situp` and `do_squat` commands 10 times.
 
 When pieced together in a nested loop structure, the pseudocode becomes:
 
@@ -227,3 +343,35 @@ REPEAT 5 times:
     REPEAT 10 times:
         do_squat
 ```
+
+To translate the given pseudocode using a while loop, we need to introduce "counter" variables for each level of repetition. Here's how it would look:
+
+```typescript
+setCount = 0
+
+while setCount < 5:
+    repCount = 0
+    while repCount < 10:
+        do_pushup()
+        repCount += 1
+
+    repCount = 0
+    while repCount < 10:
+        do_situp()
+        repCount += 1
+
+    repCount = 0
+    while repCount < 10:
+        do_squat()
+        repCount += 1
+
+    setCount += 1
+```
+
+In this code:
+
+- `setCount` keeps track of the number of total sets to be completed.
+- `repCount` monitors the number of repetitions (or reps) for each exercise within a set.
+- Each inner while loop uses `repCount` to execute the specified exercise (push-ups, sit-ups, and squats) 10 times.
+- After completing each exercise, `repCount` is reset to 0 before moving on to the next exercise.
+- Once all three exercises are completed in a set, `setCount` is incremented to proceed to the next set, repeating the process until five sets are finished.

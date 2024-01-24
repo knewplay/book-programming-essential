@@ -6,16 +6,7 @@ illustrator: "Dengyijia Liu"
 questions:
   - jacquard: Why isn't the Jacquard loom considered to be the first computer?
   - mouse: Does a computer absolutely need to have a keyboard and a mouse in order for it to be a computer?
-  - parallel-universe: |
-      In a parallel universe, if a mouse was used as both an input and an output to a laptop, what would that look like? Think of possible scenarios. 
-
-      This is a creative exercise. Do not think logically and do not ask "why would anyone do this?". It doesn't need to make practical sense.
-  - sound-processor: |
-      Consider a hypothetical device called the 'Sound Processor.' This device is designed to take in sound and produce processed sound based on which button the user presses (you can modify pitch, tone, and make other audio transformations).
-
-      Following the simplest definition of what is a computer, can this device be considered a computer? Did you have to make any assumptions about this device?
   - calculator: Why isn't a basic calculator considered a computer?
-  - simple-computer: What is the simplest, non-general-purpose computer you can imagine? What components would it have?
 ---
 
 Is your smartphone considered a computer? How about the components inside your oven that allow you to connect to it via an app? What are the minimum requirements for something to be considered a computer? That's what we'll explore in this article.
@@ -43,7 +34,7 @@ Before the year 1805, if I wanted to make a piece of cloth, such as a napkin, wi
 
 However, then came the Jacquard loom, named after the French weaver Joseph-Marie Jacquard. This device used a system of stiff paper with holes punched into them in specific patterns, which was a representation of a portion of the actual design pattern. So now, instead of manually controlling the threads with my hands, I would insert a series of these punch cards into the loom, and the machine would lift and lower threads based on the hole positions on the card.
 
-> Watch [this short animation](https://www.youtube.com/watch?v=K6NgMNvK52A) demonstrating this process.
+> If you want to see the Jacquard Loom in action, [watch this short animation](https://www.youtube.com/watch?v=K6NgMNvK52A).
 
 What does this have to do with computers? Well, while the Jacquard loom is not directly related to the development of computers, it started a conversation about input and output, as well as automation and "feeding instructions" to a machine.
 
@@ -73,14 +64,14 @@ During this time, several pioneering computers were independently designed in Ge
 
 As it turned out, doing math using digits 0, 1, 2, ..., 8, 9 was not the most effective way for computers. Instead, the binary representation of numbers was used to perform all the calculations, and most computers today solely use binary numbers.
 
-> Want to read a bit more on binary? Here's a [recommended reading](https://www.mathsisfun.com/binary-number-system.html).
+> Want to learn more on binary? Here's a [recommended reading](https://www.mathsisfun.com/binary-number-system.html).
 
 This was not only perfect with the use of punch cards and punch tapes, where the presence of a hole can be represented with a 0, and the absence of a hole can be represented by a 1, but it also worked out well with the next technological advancement: vacuum tubes. These look like little light bulbs, but more importantly they were electronic devices that controlled and manipulated electrical signals, providing the means to process and control data electronically, which in turn enabled their use in mathematical calculations. In this system, a '1' in binary corresponded to a lit bulb, while a '0' represented an unlit bulb. With these binary digits, computers could perform calculations, store data, and execute user instructions.
 
 ![Vacuum Tubes](./figures/vacuum-tubes.jpg)
 *An assortment of vacuum tubes.*
 
-> [Take a look at the ENIAC](https://www.youtube.com/watch?v=HgsklKafxG8): considered to be the world's first general-purpose electronic computer, built in 1945.
+> [Take a look at the ENIAC](https://www.youtube.com/watch?v=HgsklKafxG8): considered to be the world's first general-purpose electronic computer, built in 1945, it used vacuum tubes.
 
 ### Computer Terminals: An Advancement in Human-Computer Interaction
 
@@ -101,18 +92,18 @@ The invention of computer terminals significantly improved the efficiency and us
 
 Today, we no longer have room-sized mainframes made of vacuum tubes. Nor do we communicate with our computers using text-based commands through a device called a terminal... well actually, some of us still sort of do that. More on this in the next chapter. But it is true that the average person will never need to encounter anything that resembles a terminal. Large corporations such as Microsoft and Apple make their systems very easy to use, so much so that our grandparents can also catch on with the latest tech. On top of a keyboard, we also use a mouse to use visual applications like Microsoft PowerPoint, watch videos on Youtube, save pictures on our computers, and scroll down social media. Imagine having to write a text command to open your web browser. Imagine going on your social media account, and only seeing text.
 
+This is hard to imagine because the modern state of computers is characterized by user-friendly interfaces, notably graphical user interfaces (GUIs). Instead of typing complex commands into a terminal, we interact with our computers using intuitive visual elements such as icons, buttons, menus, and windows.
+
 ![Apple Lisa](./figures/lisa-computer.jpg)
 *Apple Lisa: a GUI pioneer.*
 
-This is hard to imagine because the modern state of computers is characterized by user-friendly interfaces, notably graphical user interfaces (GUIs). Instead of typing complex commands into a terminal, we interact with our computers using intuitive visual elements such as icons, buttons, menus, and windows.
+We moved away from vacuum tubes, and now have tiny transistors, billions of them, all tightly packed inside a laptop or smartphone, which we can hold with one hand. We no longer use the term "mainframe"; the mainframe is now simply packed tightly inside our computers and laptops. And as for the terminal, the device that used to be separate from the mainframe and used to communicate with it, that is now just the screen and the laptop's keyboard itself. It all got seamlessly combined into one device.
 
-We moved away from vacuum tubes, and now have tiny transistors, billions of them, all tightly packed inside a laptop or smartphone, which we can hold with one hand. We no longer use the terms "mainframe"; the mainframe is now simply the computer or laptop, simply reduced in size considerably. And as for the terminal, the device that used to be separate from the mainframe and used to communicate with it, that is now just the screen and the laptop's keyboard itself. It all got combined into one device, seamlessly.
+Although today's computers appear vastly different from the "number crunchers" of the 1940s, which were primarily used for solving lengthy and complex math problems, the reality is quite different. Surprisingly, everything a modern computer does still essentially boils down to math.
 
-And while it seems like the computers of today are very different from the "number crunchers" from the 1940s, when the only purpose of computers was to solve lengthy, difficulty, and tedious math problems, you may be surprised to hear that everything a modern computer does essentially boils down to math.
+I'll give an example. Say you are using some image editing software, and you want to increase the brightness of an image. As you slide the "brightness" bar, the computer works through all the pixels of the image and changes the RGB (Red Green Blue) values accordingly. Everything is represented with numbers.
 
-I'll give an example. Say you are using Photoshop, and you want to increase the brightness of an image. As you slide the "brightness" bar, the computer works through all the pixels of the image and changes (using math) the RGB (Red Green Blue) values accordingly.
-
-> Read some more about it [here](https://www.csfieldguide.org.nz/en/chapters/data-representation/images-and-colours/).
+> See how colors are essentially numbers [here](https://www.csfieldguide.org.nz/en/chapters/data-representation/images-and-colours/).
 
 ## Computer Fundamentals
 
@@ -120,9 +111,9 @@ Watching cat videos on a computer is cool, but what is a computer fundamentally?
 
 Well, the word "computer" comes from the verb "to compute", and by adding "er" to the end it means "someone that computes", just like what "writer" is to "to write", "dancer" is to "to dance", and "programmer" is to "to program".
 
-Since the first use of the word in the 1600's, "computers" have evolved. They have gone from a person who computes, to machines that compute. But is computing all that is really required nowadays to be considered a "computer"? For example, take [a "computer" made up of dominoes](https://www.youtube.com/watch?v=w6E7aQnA4Ws). Based on the input, this "computer" computes and outputs the result. Can this system technically be considered a computer? Even though they call it a computer in the video, they are using the looser definition of "computer" as "something that computes". Following a slightly stricter definition of a modern computer, the answer would be "no, this is far from a computer".
+Since the first use of the word in the 1600's, "computers" have evolved. They have gone from a person who computes, to machines that compute. But is computing all that is really required nowadays to be considered a "computer"? For example, take [a "computer" made up of dominoes](https://www.youtube.com/watch?v=w6E7aQnA4Ws). Based on the input, this "computer" computes and outputs the result. Can this system technically be considered a computer? Even though they call it a computer in the video, they are using the looser definition of "computer" as *"something that computes"*. Following a slightly stricter definition of a modern computer, the answer would be *"no, this is far from a computer"*.
 
-Why isn't a domino computer, or even a [water computer](https://www.youtube.com/watch?v=IxXaizglscw), technically a computer? Because in order to be a computer, you have to do more than just perform mathematical computations. That's why a basic calculator isn't a computer.
+Why isn't a domino computer, or even this [water computer](https://www.youtube.com/watch?v=IxXaizglscw), technically a computer? Because in order to be a computer, you have to do more than just perform mathematical computations. That's why a basic calculator isn't a computer.
 
 For one, these systems don't have a way to store data or retrieve previous calculations. They don't provide the possibility to store any data.
 
@@ -143,7 +134,7 @@ While both a basic calculator and a laptop are similar in the fact that they bot
 
 The reason why I say that it "can" be a computer, is because there is an even stricter definition of computer as needing to be "general-purpose". And this is where the line starts to get blurry. How "general-purpose" should it be? How much programmability is enough?
 
-This is the reason why some people claim that Germany's Z3 was the first computer, other's claim that UK's Colossus was the first computer, and many more claim that the ENIAC claims that title. The ENIAC was truly the first "general-purpose" computer, while the previous iterations were more specialized for war-related purposes; the Z3 and Colossus were programmable, but they were limited in what they can solve (on top of needing a change in the physical wiring of the mainframe).
+This is the reason why some people claim that Germany's Z3 was the first computer, others claim that the UK's Colossus holds that title, and many more believe that the ENIAC deserves this recognition. The ENIAC was truly the first "general-purpose" computer, while the previous iterations were more specialized for war-related purposes; the Z3 and Colossus were programmable, but they were limited in what they can solve (on top of needing a change in the physical wiring of the mainframe).
 
 > Exercise: What do you think should be considered a computer? What should not be considered a computer?
 
