@@ -113,13 +113,15 @@ In line with its English definition, the kernel is the operating system's core. 
 
 As it turns out, we can have direct access to the kernel of an operating system. And that is thanks to the outermost layer of the operating system, known as the shell.
 
-The shell takes in commands and interprets them. For that reason, it can be called a "command-line interpreter" or "command language interpreter" (not to be confused with the typical abbreviation of CLI being "command-line interface", which refers to the terminal). The shell is a program that translates your typed commands into instructions that the kernel can understand and execute. It sits between the user and the kernel of the operating system.
+The shell takes in commands and interprets them. For that reason, it can be called a "command-line interpreter" or "command language interpreter" (which also abbreviates to "CLI", just like the "command-line interface", showing how these two are typically used interchangeably). The shell is a program that translates your typed commands into instructions that the kernel can understand and execute. It sits between the user and the kernel of the operating system.
 
 But wait, wasn't that the role of the terminal?
 
 Not exactly. The terminal does sit between the user and the operating system. However, it is simply an interface, a place where the user can write their commands. The terminal only knows how to accept input from the keyboard and display output onto the screen. The terminal itself does not know what to do with the provided input. And that is where the shell comes in.
 
-When you type something into the terminal and press enter, the terminal sends what you wrote to the shell. The shell reads the commands you enter in the terminal, processes them, and communicates with the kernel to perform the requested actions. The kernel then performs the necessary tasks, such as managing memory, accessing files, or running processes, based on the instructions provided by the shell.
+> The terminal is a program application that provides a graphical user interface (GUI) for you to interact with the shell. The shell is the one that interprets what you wrote and executes the commands. Hence why it is called the Command-Line Interpreter.
+
+When you enter a command in the terminal and hit enter, the terminal forwards your input to the shell. The shell then reads and processes these commands, communicating with the kernel to carry out your requests. The kernel then performs the necessary tasks, such as managing memory, accessing files, or running processes, based on the instructions provided by the shell.
 
 The terminal and the shell are often used interchangeably, so don't get too caught up on the definitions when reading about it online.
 
@@ -138,56 +140,56 @@ So, if you are in the
 Locker > Physics > Quizzes 
 ```
 
-folder, and you enter a command that translates to "create a file called "quiz8.txt", it will create it in your working directory, i.e. Locker/Physics/Quizzes/. If you do not specify where you want the command to execute, then it will, by default, execute in the working directory.
+folder, and you enter a command that translates to "create a file called 'quiz8.txt'", it will create it in your working directory, i.e. Locker/Physics/Quizzes/. If you do not specify where you want the command to execute, then it will, by default, execute in the working directory.
 
 #### File system navigation
 
 Moving around the file system is a fundamental skill in the terminal. You will need to work with files from different directories, and knowing how to navigate efficiently will save you time and effort.
 
-For macOS and Linux users, you can view the "Basic Navigation" of [this resource for specific commands](https://www.pluralsight.com/guides/beginner-linux-navigation-manual).
+For macOS and Linux users, you can view the "Basic Navigation" of [this resource for specific commands](https://www.redhat.com/sysadmin/navigating-linux-filesystem), as well as [this one](https://www.digitalocean.com/community/tutorials/basic-linux-navigation-and-file-management#navigation-and-exploration).
 
-For Windows users, you can view [this resource for specific commands](https://riptutorial.com/cmd/example/8646/navigating-in-cmd) or [this article](https://www.howtogeek.com/659411/how-to-change-directories-in-command-prompt-on-windows-10/).
+For Windows users, you can view [this resource for specific commands](https://riptutorial.com/cmd/example/8646/navigating-in-cmd), as well as [this article](https://www.howtogeek.com/659411/how-to-change-directories-in-command-prompt-on-windows-10/).
 
 #### File manipulation
 
 The terminal enables us to work with files efficiently.
 
-For macOS and Linux users, you can view the "File Manipulation" of [the previous resource for specific commands](https://www.pluralsight.com/guides/beginner-linux-navigation-manual).
+For macOS and Linux users, you can view the "File Manipulation" of [this resource](https://www.digitalocean.com/community/tutorials/basic-linux-navigation-and-file-management#file-and-directory-manipulation), as well as [this one](https://www.scaler.com/topics/linux-file-commands/).
 
-For Windows users, you can review some navigation commands as well as learn about file manipulation in [this article](https://www.it.uc3m.es/pbasanta/asng/course_notes/linux_managefiles_en.html).
+For Windows users, you can review some navigation commands as well as learn about file manipulation in [this article](https://www.it.uc3m.es/pbasanta/asng/course_notes/linux_managefiles_en.html), as well as [this one](https://bebi103a.github.io/recitations/01/working_with_files.html).
 
 #### Working with text
 
 Working with text in the terminal opens up a world of possibilities. It allows you to manipulate, search, and transform text effortlessly.
 
-For macOS and Linux users, you can view the "Working with Content" of [the previous resource for specific commands](https://www.pluralsight.com/guides/beginner-linux-navigation-manual).
+For macOS and Linux users, you can view [this resource](https://www.makeuseof.com/best-linux-text-manipulation-commands/), as well as [this resource](https://learnbyexample.gitbooks.io/linux-command-line/content/Text_Processing.html).
 
-For Windows users, you can read [this article](https://www.onmsft.com/feature/command-prompt-basics-files-and-folders/).
+For Windows users, you can read [this resource](https://www.ibm.com/docs/en/aix/7.1?topic=files-administering).
 
 #### Understanding relative versus absolute path
 
-In the Computer Fundamentals, Software and Hardware section, I talked about the meaning of a file path. There, I described what is known as "absolute path", i.e. the path it takes to get to a file from the root folder, or in the case of the analogy, the locker.
+In the [Computer Fundamentals, Software and Hardware](../computer-fundamentals/software-and-hardware.md) section, I talked about the meaning of a file path. There, I described what is known as "absolute path", i.e. the path it takes to get to a file from the root folder, or in the case of the analogy, the locker.
 
 However, "relative paths" are equally essential. They define a file or directory's location concerning the current working directory. Instead of tracing back to the system's root, they start from where you are right now in the file system, i.e. the working directory.
 
 For instance, if you're in the Locker/Physics/Quizzes directory, the relative path to a "Homework" folder inside it would just be "Go up to Physics" -> "Down to Homework", whereas its absolute path might be Root -> Science -> Physics -> Homework.
 
 ![Absolute path vs. relative path](./figures/path.jpg)
-*On the left, arrows show an absolute path from the root to a target folder. On the right, arrows depict a relative path from a current directory to the target.*
+*On the left, arrows show an absolute path from the root to a target folder. On the right, arrows depict a relative path from a current directory to the target folder.*
 
 To better understand the difference, as well as learn some more about how to navigate the file system, check out [this article](https://www.redhat.com/sysadmin/linux-path-absolute-relative).
 
 #### I/O redirection
 
-When we enter a command into the terminal, we use the keyboard. Hence, the input is text from the keyboard (a.k.a. standard input). Once the command gets executed, we (may) receive an output in the form of text on the terminal (a.k.a. standard output). Commands that do this are ***ls***, ***cat***, ***pwd***, and so on.
+When we enter a command into the terminal using the keyboard, the input is text (also known as "standard input"). After executing the command, we often receive output, typically displayed as text in the terminal (known as "standard output"). Examples of commands that follow this pattern include `ls`, `cat`, `pwd`, and others.
 
-In addition to receiving output on the terminal, we can use I/O redirection to manipulate how commands process data. Let's say you want to take the output of one command and use it as input for another command. This is where pipes come into play. Pipes are represented by the | symbol and allow us to connect multiple commands, creating a powerful chain of actions.
+In addition to receiving output in the terminal, we can use I/O redirection to manipulate how commands process data. Let's say you want to take the output of one command and use it as input for another command. This is where pipes come into play. Pipes are represented by the `|` symbol and allow us to connect multiple commands, creating a powerful chain of actions.
 
 ![Piping process pizza example](./figures/sketch-piping-pizza.png)
 
 See examples of how to use pipes [in this article](https://www.computernetworkingnotes.com/linux-tutorials/pipes-in-linux-explained.html).
 
-It is also possible to redirect an output into a file rather than onto the terminal using the > operator. Learn more about it [in this article](https://learning.lpi.org/en/learning-materials/010-160/3/3.2/3.2_01/#:~:text=To%20redirect%20standard%20output%20to,will%20overwrite%20the%20existing%20file.).
+It is also possible to redirect an output into a file rather than onto the terminal using the `>` operator. Learn more about it [in this article](https://learning.lpi.org/en/learning-materials/010-160/3/3.2/3.2_01/#:~:text=To%20redirect%20standard%20output%20to,will%20overwrite%20the%20existing%20file.).
 
 ### Conclusion
 
