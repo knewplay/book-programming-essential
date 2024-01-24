@@ -280,7 +280,7 @@ One of the most notable benefits of such a modular design is maintainability. If
 
 **Activity #1:**
 
-Design functions to complete the task of organizing a birthday party.
+Create a set of functions for different aspects of planning a birthday party. Think about the key tasks involved in organizing a party and design functions for each of these tasks. You don't need to implement the details of each function; just outline what each function would do.
 
 ![Birthday party](./figures/ch-6-birthday-party.jpg)
 
