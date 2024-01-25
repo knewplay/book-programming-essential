@@ -47,7 +47,7 @@ As we saw in the last article, a computer fundamentally consists of 4 parts:
 **Output:** After processing, the data is presented as output. On a laptop, the screen is the primary output device, visualizing data. Additionally, devices like speakers, headphone jacks, printers, or external monitors represent other forms of output.
 
 ![Laptop](./figures/laptop.jpg)
-*A modern laptop with CPU and RAM depicted, symbolizing the essential components of the computer.*
+*An illustration of a modern laptop, along with representing the four key components of computing: input, output, processing, and memory.*
 
 All the devices mentioned here, such as the keyboard, the CPU, the hard drive, and the screen, are known as hardware. **Hardware** is "hard" to the touch. It's tangible. In other words, you can actually touch it and hold it; it's the physical parts of the computer. It's also "hard" to change it. If you buy a laptop, the components on the laptop's motherboard are soldered onto the board, making the hardware fixed and hard to modify.
 
@@ -101,7 +101,7 @@ Continuing with this organized version of you, once seated in the classroom, you
 ![Physics Folder](./figures/folders.jpg)
 *Inside the Physics folder.*
 
-> Note: there isn't a single "correct" method to sort your files. Your style might work wonders for you, while an equally organized classmate might stash their Physics materials inside a broader "Science" folder. This larger folder could house both "Physics" and "Chemistry" folders, and perhaps their spare sheets of paper are always tucked away within the "Quizzes" folder.
+> Note: there isn't a single "correct" method to sort your files. Your style might work wonders for you, while an equally organized classmate might stash their Physics materials inside a broader "Science" folder. This larger folder could house both "Physics" and "Chemistry" folders, and perhaps their spare sheets of paper are always tucked away within the Quizzes folder.
 
 ## The File System
 
@@ -132,42 +132,24 @@ So, rule number one is to always specify the file type. How? By adding a filenam
 
 The second thing to realize is that in your Physics folder, you will **not** have two sheets of paper both labeled "Quiz 1". That would be confusing. But if you had a notebook labeled "Quiz 1" and a loose sheet of paper labeled "Quiz 1", then there is some distinction, and you can distinguish between them. Furthermore, you can have a paper labeled "Quiz 1" in the Physics folder and one in the History folder, and that is okay as well, as long as they are in different folders.
 
-It's a similar story with computer files. Each file has a name that uniquely identifies it within a folder. This means you can have a file named "quiz1.txt" in both the "Document" folder and the "Desktop" folder. Moreover, within the same folder, you can have files with the same base name but different extensions, like "quiz1.txt" and "quiz1.doc". The different extensions indicate distinct file types, allowing them to coexist in the same folder without any conflict.
+It's a similar story with computer files. Each file has a name that uniquely identifies it within a folder. This means you can have a file named "quiz1.txt" in both the Document folder and the Desktop folder. Moreover, within the same folder, you can have files with the same base name but different extensions, like "quiz1.txt" and "quiz1.doc". The different extensions indicate distinct file types, allowing them to coexist in the same folder without any conflict.
 
 ### File Path
 
 Suppose you want to review your Quiz 1 for your Physics class. In that case, there is an underlying path to get to Quiz 1:
 
-1. Open your locker (you can think of it as a folder containing all your course folders).
-2. Open the Physics folder.
-3. Grab the loose sheet of paper labeled "Quiz 1".
-
-If your folder structure is different, then you'll have to take a different path. For example:
-
 1. Open your locker.
-2. Open the Science folder.
-3. Open the Physics folder.
-4. Open the Quizzes folder.
-5. Grab "Quiz 1".
+2. Open the Physics folder.
+3. Open the Quizzes folder.
+4. Grab Quiz 1.
 
-It all depends on the structure of the folder system.
-
-A simple way to represent the path that you took to get to your Physics Quiz 1 in the first case is as follows:
+A simple way to represent the path that you took to get to your Physics Quiz 1 is as follows:
 
 ```text
-Locker > Physics > Quiz 1
+Locker > Physics > Quizzes > Quiz 1
 ```
 
 ![A File Path](./figures/file-path-1.jpg)
-*An example of a path, highlighted in red.*
-
-In the second case, it is as follows:
-
-```text
-Locker > Science > Physics > Quizzes > Quiz 1.
-```
-
-![A File Path](./figures/file-path-2.jpg)
 *An example of a path, highlighted in red.*
 
 This is exactly how a computer's file system operates. Every computer has a starting folder known as the root folder. It's analogous to the locker in our example, a primary container for all other folders. For Linux and macOS, the root folder is marked by a forward slash (/), whereas Windows denotes it by a drive (hard drive or solid-state drive) letter, say "C:".
@@ -184,7 +166,7 @@ Within the root folder, you will have subfolders. The subfolders will call the r
 Let's go back to the school analogy. Say you have the following file path to get to Physics Quiz 1.
 
 ```text
-Locker > Physics > Quizzes > Quiz 1.
+Locker > Physics > Quizzes > Quiz 1
 ```
 
 Let's now say that you are in the middle of opening your locker. In other words, you are at this step:
@@ -225,12 +207,6 @@ Right? Because French isn't a subset of English. Instead, you'd navigate to:
 Locker >
 ```
 
-And create the French folder there, alongside your other subjects. In computer jargon, you set
+And create the French folder there, alongside your other subjects. In computer jargon, you set this Locker directory as your **working directory** so you could correctly position the French folder. This captures the essence of a working directory: the folder you're currently navigating or "working" within.
 
-```text
-Locker >
-```
-
-as your **working directory** so you could correctly position the French folder. This captures the essence of a working directory: the folder you're currently navigating or "working" within.
-
-> Note: If your school offers multiple language courses like English and Spanish, you might already have a "Languages" folder. In this case, you should add the new French folder to the existing "Languages" folder, rather than placing it directly under "Locker".
+> Note: If your school offers multiple language courses like English and Spanish, you might already have a Languages folder. In this case, you should add the new French folder to the existing Languages folder, rather than placing it directly under Locker.
