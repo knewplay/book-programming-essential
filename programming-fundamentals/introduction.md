@@ -25,6 +25,6 @@ While a programmer's code may be used by billions, it's their unique approach to
 - Creative: While logic forms the foundation, creativity adds the flair. Every problem can have multiple solutions, and it's often the most creative one that stands out, making a program more efficient or user-friendly.
 - Persistent: Anyone who's ever written code knows that it rarely works perfectly the first time. There are bugs, unexpected outcomes, and challenges. Persistence is about continuous troubleshooting and refining the code until it's just right (or just good enough).
 
-Is this mindset essential for our book? Absolutely. While the technicalities of programming are vital, fostering this mindset will empower readers to tackle any coding challenge they encounter and, more broadly, to approach problems in their daily lives with a similar analytical and creative spirit.
+Is this mindset essential for our book? Absolutely. While the technicalities of programming are important, developing this mindset enables aspiring programmers to tackle any coding challenge they encounter. More than that, it equips them with the tools to approach everyday problems with a blend of analytical and creative thinking.
 
 As we journey through this book, we'll not only learn the nuts and bolts of coding but also nurture this mindset, making us not just better programmers, but better problem-solvers.
