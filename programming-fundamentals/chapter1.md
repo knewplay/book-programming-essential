@@ -26,7 +26,8 @@ Programming, at its core, is about solving problems. But before you can solve a 
 
 Imagine you're faced with a jigsaw puzzle. If given all the pieces jumbled up in a box, it's overwhelming. But when you start grouping pieces by color or patterns and tackling small sections at a time, the task becomes more manageable. This is the essence of problem decomposition.
 
-![Picnic Organization](./figures/ch-1-jigsaw-puzzle.jpg)
+![Jigsaw puzzle](./figures/ch-1-jigsaw-puzzle.jpg)
+*A puzzle symbolizing step-by-step problem-solving.*
 
 In programming, problems can often feel like a massive jigsaw puzzle, especially when you're just starting out. The trick is to break them down into bite-sized tasks that you can handle.
 
@@ -45,6 +46,7 @@ In programming, problems can often feel like a massive jigsaw puzzle, especially
 - Iterative Approach: Start with a basic version of the solution. Improve and refine it in iterations.
 
 ![Problem decomposition](./figures/ch-1-problem-decomposition.jpg)
+*A diagram illustrating the breakdown of a larger problem into smaller, solvable components.*
 
 ## Activities
 
@@ -53,6 +55,7 @@ In programming, problems can often feel like a massive jigsaw puzzle, especially
 Imagine you are organizing a big family picnic and you need to ensure everyone has everything they need (food, drinks, and activities). How would you approach to organize this event?
 
 ![Picnic Organization](./figures/ch-1-family-picnic.jpg)
+*Planning a family picnic, considering every aspect from meals to entertainment.*
 
 ### Answer
 Organizing a big family picnic can be a complex task. Here's one structured approach, among many, to ensure everything runs smoothly:
@@ -80,6 +83,7 @@ Remember, while this is one approach to plan, adaptability is essential.
 Imagine you're tasked with designing a simple to-do list app that helps users organize their daily tasks. How would you approach the development of this app?
 
 ![App design](./figures/ch-1-design-app.jpg)
+*Designing an app focused on enhancing productivity and task management.*
 
 ### Answer
 Designing a to-do list app, while conceptually simple, requires a focus on user experience to make it stand out. Here's a structured method to guide the development:
