@@ -140,9 +140,9 @@ This is the reason why some people claim that Germany's Z3 was the first compute
 
 And today, there are countless appliances, gadgets, toys, instruments, automotive electronics, and much more, that have built-in "mini-computers" called microcontrollers. Even though they come equipped with a processing unit, memory, I/O peripherals, and are programmable to a certain extent, these **embedded devices** are designed to perform specific tasks, as they typically come with a pre-programmed set of instructions specific to the device. They do not have the versatility of a general-purpose computer, but they excel at executing specific tasks efficiently. They are typically programmable to a certain extent, but only within the constraints and limitations set by their design and intended purpose.
 
-![Game Boy Exploded View](./figures/game-boy.jpg)
-*The Game Boy: a portable gaming console powerhouse.*
-
 > Exercise: Name a computer around you that usually people don't see as a computer.
+
+![Game Boy Exploded View](./figures/game-boy.jpg)
+*Inside look at the Game Boy, displaying the components of the classic gaming console.*
 
 > Note: A shortcut to find out if a system is a computer (in the strictest sense of the word) is to check for "Turing-completeness". This is a theoretical concept which measures how flexible and versatile a system is when it comes to solving problems, thus determining whether or not is has the capabilities of a general-purpose computer. Embedded devices are usually not Turing complete, while smartphones are. To learn more, read the first section of [this article](https://academy.binance.com/en/glossary/turing-complete).
