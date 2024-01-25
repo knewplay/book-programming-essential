@@ -54,7 +54,7 @@ In our everyday lives, we make countless decisions based on conditions: if it ra
 Imagine a tiny switch, so small that millions of them could fit on the tip of your finger. This is a transistor. It's a device that can either allow an electric current to flow through it (like turning on a light) or stop it entirely (like turning the light off).
 
 ![Transistor](./figures/ch-3-transistor.jpg)
-*A transistor.*
+*A transistor, an electronic switch controlling electricity flow.*
 
 In essence, a transistor has two primary states:
 
@@ -74,6 +74,7 @@ When you start programming, you'll encounter a concept called "boolean values." 
 Do you see the parallel? Just as a transistor can be "on" (1) or "off" (0), a boolean value can be `True` (equivalent to 1) or `False` (equivalent to 0).
 
 ![Switch](./figures/ch-3-switch.jpg)
+*A simple on/off switch, illustrating the binary nature of boolean values in programming.*
 
 To grasp the significance of booleans, think about how we evaluate statements in our daily life. For instance, the statement "The sky is blue" can be true during a clear day, but false during the night. Similarly, in programming, boolean values emerge from evaluating conditions or statements.
 
@@ -140,6 +141,7 @@ These operators allow for more complex conditions and evaluations. For instance,
 Using logical operators like **AND**, **OR** and **NOT** helps us set up complex conditions for making decisions in our programs. They allow us to mirror real-life decision-making in our code.
 
 ![Chess logical](./figures/ch-3-chess-logical-operators.jpg)
+*A chessboard setup, symbolizing strategic decision-making akin to using logical operators in programming.*
 
 ## From Math to Everyday Decisions
 
@@ -250,6 +252,7 @@ Suppose you're organizing an outdoor event. You'll proceed if:
 Write corresponding pseudocode for such a program.
 
 ![Umbrella](./figures/ch-3-rain.jpg)
+*An umbrella, for planning events with weather in mind.*
 
 ### Answer
 
