@@ -69,6 +69,7 @@ Another field where the terminal shines is cybersecurity. Security analysts use 
 Finally, the terminal is also crucial in the field of robotics. Even though we sometimes see young kids "programming" robots within their school curriculum, they often do it using a GUI. These interfaces often feature drag-and-drop functionality and simplified coding blocks that allow students to create basic robot behaviors without delving into the complexities of coding. Transitioning to the terminal becomes essential as students advance in their robotics journey. It allows them to dive deeper into coding, write precise and customized algorithms, and gain a deeper understanding of the mechanics behind their robot's operations.
 
 ![Robotics programming](./figures/terminal-robotics.jpg)
+*Evolving robotics skills from basic interfaces to complex coding.*
 
 So whatever your interests, the terminal is a crucial tool for programmers and IT professionals. It provides direct access to the underlying command-line interface, allowing for precise control, automation, and efficient workflows. Using the terminal also allows users to gain a deeper understanding of their computer's operations, enhancing their technical skills.
 
@@ -186,6 +187,7 @@ When we enter a command into the terminal using the keyboard, the input is text 
 In addition to receiving output in the terminal, we can use I/O redirection to manipulate how commands process data. Let's say you want to take the output of one command and use it as input for another command. This is where pipes come into play. Pipes are represented by the `|` symbol and allow us to connect multiple commands, creating a powerful chain of actions.
 
 ![Piping process pizza example](./figures/piping-pizza.jpg)
+*Ingredients combine into a pizza, then to the oven, illustrating command chaining, a.k.a. piping.*
 
 See examples of how to use pipes [in this article](https://www.computernetworkingnotes.com/linux-tutorials/pipes-in-linux-explained.html).
 
@@ -223,13 +225,11 @@ To address such challenges, programmers often rely on version control systems li
 Version Control Systems are tools that keep track of changes to code or other collections of files or folders. In other words, they keep track of the history of changes to some set of documents.
 
 ![Project snapshots](./figures/git-snapshots.jpg)
+*A set of snapshots capturing how a project builds up.*
 
 Version Control Systems track changes to a folder and its contents in a series of snapshots. So, if you are working on your code, you can take a snapshot of the entire state of your project folder at any time, and with time, you will have multiple of these snapshots.
 
 Version Control Systems also keep track of some extra information, or "metadata", along with the actual changes to the content. This makes it possible to know who authored a particular change to a specific file, when it was made, and what message was left with the snapshot.
-
-![Git Snapshots](./figures/snapshots.jpg)
-*Three project snapshots. Each displays the name of the person who captured it, the date, and the accompanying comment.*
 
 There are several Version Control Systems out there, such as Subversion (SVN) and Mercurial, but Git has become the de facto standard for version control. Here, we will talk about the concepts with Git in mind.
 
