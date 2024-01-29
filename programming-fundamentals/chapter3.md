@@ -119,6 +119,9 @@ Before delving into the pseudocode, let's familiarize ourselves with some basic 
 
 These operators help us compare values and determine the relationship between them. They're fundamental to setting up conditions in our code.
 
+![Scale comparison](./figures/ch-3-scale-comparison.jpg)
+*A scale, showcasing the principle behind comparing variables.*
+
 ### Logical Operators
 
 Beyond simple comparisons, we often need to check multiple conditions at once or invert the logic of a condition. This is where logical operators come in. The three primary logical operators are `AND`, `OR`, and `NOT`.
