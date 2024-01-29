@@ -144,6 +144,8 @@ The beauty of this approach is that once this function is set up, we can call up
 
 Now that we've established our fuselage assembly section (the function definition) and know the details it requires (parameters), it's time to put it into action. This is like telling the assembly team to start the assembly based on the specifics we've provided.
 
+> Note: A function must be defined before it can be called. This means you should first write the function's definition at the beginning of your code, and then you can use (or "call") the function later on in the code when needed.
+
 In programming, when we want a function to carry out its task, we "call" it. And just like the assembly team needs their specific set of blueprints (size and number of windows) to get started, we provide these specifics to the function when we call it. These specific values that we supply during a function call are known as "arguments."
 
 Let's understand this with a direct application:
@@ -262,7 +264,7 @@ END function
 
 ### Assembling the Entire Airplane
 
-With the above modules, the main assembly function would be:
+With the above functions defined, the main assembly function would be:
 
 ```typescript
 function AssembleAirplane(fuselageSize, numberOfWindows, typeOfWing, numberOfEngines):
@@ -277,6 +279,8 @@ END function
 > Note: Notice how the call to `AssembleCockpit()` did not require any arguments to be passed to the function. This is because `AssembleCockpit()` doesn't take any input, and so the parentheses are left empty.
 
 One of the most notable benefits of such a modular design is maintainability. If, for instance, there is an issue or a need for an improvement in the `AssembleWings()` function, there's no need to sift through the overarching `AssembleAirplane()` function. Instead, one would directly approach the specific function where the problem has occurred, making adjustments and optimizations far more straightforward and efficient. This approach not only reduces errors but also saves significant time during the debugging and improvement processes.
+
+> **Do not forget:** Before you can call a function, you need to define it. Write the function earlier on in your code, then you can use it wherever you need later on.
 
 ## Activities
 
