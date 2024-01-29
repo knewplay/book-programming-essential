@@ -146,6 +146,9 @@ Suppose you want to review your Quiz 1 for your Physics class. In that case, the
 3. Open the Quizzes folder.
 4. Grab Quiz 1.
 
+![A file path in real life](./figures/school_analogy.jpg)
+*The path to get to the Physics Quiz 1*
+
 A simple way to represent the path that you took to get to your Physics Quiz 1 is as follows:
 
 ```text
@@ -209,6 +212,9 @@ Right? Because French isn't a subset of English. Instead, you'd navigate to:
 ```text
 Locker >
 ```
+
+![working directory](./figures/working_directory.jpg)
+*To create a folder under Locker, make sure to set Locker as the working directory.*
 
 And create the French folder there, alongside your other subjects. In computer jargon, you set this Locker directory as your **working directory** so you could correctly position the French folder. This captures the essence of a working directory: the folder you're currently navigating or "working" within.
 
