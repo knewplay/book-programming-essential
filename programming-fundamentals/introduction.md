@@ -7,7 +7,10 @@ illustrator: "Dengyijia Liu"
 
 At its core, programming is the act of instructing computers to perform specific tasks.
 
-Without instructions, a computer is essentially dormant, like a powerful engine without fuel. It's through programming that we harness its immense potential, turning complex algorithms into tangible, useful applications.
+Without instructions, a computer is essentially dormant, just as a puppet remains motionless without the guiding hands of its puppeteer. It's through programming that we harness its immense potential, turning complex algorithms into tangible, useful applications.
+
+![Puppet control](./figures/intro-puppet.jpg)
+*Maneuvering a puppet, analogous to the control and direction provided by programming.*
 
 Whether it's calculating large sums, displaying graphics, playing music, or connecting with other devices over the internet, all computer operations boil down to specific sets of instructions we've programmed it to understand and execute.
 
