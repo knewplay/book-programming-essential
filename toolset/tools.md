@@ -399,7 +399,7 @@ Navigating the realm of Git collaboration can be a smooth journey if we all foll
 
 3. Branching Out: Create a new branch when experimenting or adding a new feature. This keeps the main codebase stable and allows for isolated testing and development.
 
-4. Adopt a consistent branch naming convention and clarity in the branch's purpose. Examples of branch names are *launch-mechanism*, *sensor-integration*, and *battery-optimization*.
+4. Consistency: Adopt a consistent branch naming convention and clarity in the branch's purpose. Examples of branch names are *launch-mechanism*, *sensor-integration*, and *battery-optimization*.
 
 5. Regular Updates: Pull changes from the main branch regularly. This reduces the likelihood of conflicts and keeps your local copy up to date.
 
