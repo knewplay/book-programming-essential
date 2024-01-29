@@ -583,7 +583,7 @@ The world of code editors spans a broad spectrum. On one end, you have minimalis
 Today, however, VS Code represents a harmonious middle ground. It stands as a testament to the evolution of code editors, seamlessly blending the efficiency of traditional editors with the intuitive interfaces of modern-day tools.
 
 ![StackOF Survey](./figures/preferred-code-editor.jpg)
-*A bar chart from a Stack Overflow survey conducted in 2023, displaying preferences for different code editors among developers.*
+*A bar chart from a Stack Overflow survey conducted in 2023, displaying preferences for different code editors among developers. [Source](https://survey.stackoverflow.co/2023/#integrated-development-environment)*
 
 For those embarking on their coding journey, I can't recommend VS Code enough. It's versatile and caters to a multitude of projects. While there may be instances where a specialized tool is beneficial, VS Code fulfills the requirements of the majority of programmers.
 
