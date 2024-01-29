@@ -98,6 +98,7 @@ In a more modular approach, the airplane manufacturing plant has separate assemb
 Each station functions as an independent module. Once all parts are ready, they come together in a final assembly line.
 
 ![Modular design](./figures/ch-6-design-with-modularity.jpg)
+*Modular architecture design highlighting the concept of independent assembly modules.*
 
 **Advantages:**
 
@@ -175,6 +176,7 @@ This is the power of functions: Set up the process once, then initiate it whenev
 So far, we've talked about how to create a function and how to call it. In both these discussions, the topic of "input" is involved. But what about the output? If we revisit the basic representation of a function, for every input that we give it, it should give us an output in return.
 
 ![Return mechanism](./figures/ch-6-return-mechanism.jpg)
+*A boomerang returns to you, similar to a function returning its output.*
 
 Consider a scenario where the fuselage-assembly team finishes their work. Sometimes they might need to simply give a status update like "Fuselage Assembly Complete." Other times, they might need to actually present the finished fuselage for inspection or integration with other parts of the plane.
 
@@ -283,6 +285,7 @@ One of the most notable benefits of such a modular design is maintainability. If
 Create a set of functions for different aspects of planning a birthday party. Think about the key tasks involved in organizing a party and design functions for each of these tasks. You don't need to implement the details of each function; just outline what each function would do.
 
 ![Birthday party](./figures/ch-6-birthday-party.jpg)
+*Party essentials ready for a birthday celebration.*
 
 **Answer:**
 
