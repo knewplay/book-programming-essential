@@ -113,7 +113,7 @@ We have an idea of what a folder is in real life, and it's no different when it 
 
 In the realm of computers, a file resembles the items you'd find inside your school locker. It is a named collection of data stored on a computer's storage system. Just like your school book, notebook, or piece of paper, a computer file can hold various types of information, such as text, images, videos, audio or program instructions.
 
-![The File System](./figures/file-system-2.jpg)
+![The File System](./figures/file-system.jpg)
 *The file system can be viewed as an inverted tree, with the root at the top and leaves at the bottom.*
 
 > To get a better understanding of how computers view and represent images, [read this](http://www.lakelandscomputing.com/binary-images.html).
@@ -134,6 +134,9 @@ The second thing to realize is that in your Physics folder, you will **not** hav
 
 It's a similar story with computer files. Each file has a name that uniquely identifies it within a folder. This means you can have a file named "quiz1.txt" in both the Document folder and the Desktop folder. Moreover, within the same folder, you can have files with the same base name but different extensions, like "quiz1.txt" and "quiz1.doc". The different extensions indicate distinct file types, allowing them to coexist in the same folder without any conflict.
 
+![File naming](./figures/file-naming.jpg)
+*File naming conventions maintain digital clarity and coherence.*
+
 ### File Path
 
 Suppose you want to review your Quiz 1 for your Physics class. In that case, there is an underlying path to get to Quiz 1:
@@ -149,7 +152,7 @@ A simple way to represent the path that you took to get to your Physics Quiz 1 i
 Locker > Physics > Quizzes > Quiz 1
 ```
 
-![A File Path](./figures/file-path-1.jpg)
+![A File Path](./figures/file-path.jpg)
 *An example of a path, highlighted in red.*
 
 This is exactly how a computer's file system operates. Every computer has a starting folder known as the root folder. It's analogous to the locker in our example, a primary container for all other folders. For Linux and macOS, the root folder is marked by a forward slash (/), whereas Windows denotes it by a drive (hard drive or solid-state drive) letter, say "C:".
