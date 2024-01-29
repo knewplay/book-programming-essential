@@ -100,7 +100,7 @@ You'll be surprised to learn that Linux is used everywhere. While the average co
 
 As you delve deeper into the technology realm, you'll likely encounter Linux, which places significant emphasis on executing text-based commands through the terminal.
 
-> Fun fact: Linux powers 96.3% of the world's top web servers. [(Source)](https://www.enterpriseappstoday.com/stats/linux-statistics.html#:~:text=Linux%20is%20used%20to%20power,Linus%20operating%20system%20is%20run)
+> **Fun fact:** Linux powers 96.3% of the world's top web servers. [(Source)](https://www.enterpriseappstoday.com/stats/linux-statistics.html#:~:text=Linux%20is%20used%20to%20power,Linus%20operating%20system%20is%20run)
 
 #### Kernel
 
@@ -305,7 +305,7 @@ The HEAD is a pointer that tells you where you are in the repository. It usually
 
 At this point, we've explored various components and stages of Git. Let's take a moment to see how everything comes together to form a streamlined workflow for developers. Specifically, let's focus on the interaction between the working directory, staging area, local repository, and remote repository.
 
-> Important: Please note that all of this is happening locally on the user's computer. We are not yet interacting with a remote repository and dealing with other people working on the same project. In order to turn your regular folder into a Git repository, read [2.1 Git Basics - Getting a Git Repository](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository).
+> **Important:** Please note that all of this is happening locally on the user's computer. We are not yet interacting with a remote repository and dealing with other people working on the same project. In order to turn your regular folder into a Git repository, read [2.1 Git Basics - Getting a Git Repository](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository).
 
 1. Working Directory: This is where you'll be doing most of your work. It's where you write, edit, and delete your project files. When you have made some changes to your files that you're satisfied with, you move on to the next step, staging your changes.
 
@@ -318,7 +318,7 @@ At this point, we've explored various components and stages of Git. Let's take a
 ![Git Local Workflow](./figures/bring-it-all-together.jpg)
 *Workflow diagram showcasing the sequence of Git operations: Changes are made in the 'Working Directory', prepared in the 'Staging Area', and then saved as a snapshot in the 'Local Repository'.*
 
-> Resources: To learn more about the specific commands to use, read [2.2 Recording Changes to the Repository](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository), as well as sections [2.3 Viewing the Commit History](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History) and [2.4 Undoing Things](https://git-scm.com/book/en/v2/Git-Basics-Undoing-Things).
+> **Resources:** To learn more about the specific commands to use, read [2.2 Recording Changes to the Repository](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository), as well as sections [2.3 Viewing the Commit History](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History) and [2.4 Undoing Things](https://git-scm.com/book/en/v2/Git-Basics-Undoing-Things).
 
 ### Branching
 
@@ -331,7 +331,7 @@ When you create a new branch, it's like you're taking a snapshot of the main bra
 
 If you are working alone, a branch enables you to try something out and easily revert your code back to the beginning simply by switching back to the main branch. When working with others, if everyone works in their own branch, they can save work on their part in isolation without affecting their teammates.
 
-> Recourses: For specific commands around branching, [read this](https://www.atlassian.com/git/tutorials/using-branches). Furthermore, you may want to switch between different branches. To do that, [read this](https://www.atlassian.com/git/tutorials/using-branches/git-checkout).
+> **Resources:** For specific commands around branching, [read this](https://www.atlassian.com/git/tutorials/using-branches). Furthermore, you may want to switch between different branches. To do that, [read this](https://www.atlassian.com/git/tutorials/using-branches/git-checkout).
 
 ### Merging
 
@@ -342,7 +342,7 @@ Merging is taking the separate lines of development created by branching and joi
 ![Merging](./figures/merging.jpg)
 *After successfully completing their respective features, Alice and Bob merge their work back into the main branch.*
 
-> Recourse: For specific commands around merging, [read this](https://www.atlassian.com/git/tutorials/using-branches/git-merge).
+> **Resource:** For specific commands around merging, [read this](https://www.atlassian.com/git/tutorials/using-branches/git-merge).
 
 I encourage you to practice your Git command skills with [this Git visualizing tool](http://onlywei.github.io/explain-git-with-d3/#freeplay). Note that the staging step is omitted in this tool so that you can commit directly.
 
@@ -369,7 +369,7 @@ However, it is crucial to note that you cannot directly push code from your work
 
 Remember, collaborating with others involves not only sharing your changes but also keeping up with their work. Regularly pulling updates from the remote repository ensures you're working with the project's latest version and helps prevent conflicts when merging.
 
-> Recourse: Read [this article](https://www.javatpoint.com/git-remote) to learn about the Git remote-related commands.
+> **Resource:** Read [this article](https://www.javatpoint.com/git-remote) to learn about the Git remote-related commands.
 
 ### Resolving conflicts
 
@@ -382,7 +382,7 @@ So, what's this "conflict"? When you and your teammates are working on the same 
 
 When this happens, Git shows both changes, delimited by <, =, and > markers. At this point, you have to edit the file and decide which changes to keep, which to discard, or perhaps blend the two changes together. After "resolving" the conflict, stage the file, and then commit (leave a helpful message explaining the reasoning behind the change) and push your harmonized version to the remote repository.
 
-> Recourse: Read [this article](https://www.freecodecamp.org/news/how-to-fix-merge-conflicts-in-git/) to view how to resolve a Git conflict.
+> **Resource:** Read [this article](https://www.freecodecamp.org/news/how-to-fix-merge-conflicts-in-git/) to view how to resolve a Git conflict.
 
 While a Git conflict may seem intimidating at first, it's usually simple to solve as long as you are communicating with your friend. Discussing the reasons behind each change can help both of you understand the broader perspective and decide on the best solution. This collaborative resolution ensures the code works as intended and fosters a harmonious team dynamic. Remember, in collaborative projects, communication is as crucial as coding prowess.
 
@@ -472,7 +472,7 @@ When it comes to simplifying your query, think of the resulting websites' titles
 
 > Instead of writing *"I'm confused by when I should use semicolons in C"*, write *"semicolon use in c"*, or just simply *"semicolons in c"*. If Google shows results of semicolon use in regular English (for example), and didn't pick up the *"in c"* portion of the query, then specify: *"semicolon use in c programming language"*.
 
-> Note: Google searches are case-insensitive, meaning it doesn't matter if you write *C* of *c*.
+> **Note:** Google searches are case-insensitive, meaning it doesn't matter if you write *C* of *c*.
 
 #### **Use autocompletion**
 
@@ -539,7 +539,7 @@ As computers evolved and became more interactive, the need for a more efficient 
 
 At the end of the day, writing code is really just typing text. This means, in theory, you could use anything from Google Docs to Microsoft Word for this task. However, as you delve deeper into programming, you'll understand the need for tools tailored specifically for the job, as they will make the coding process faster, more efficient, and less error-prone.
 
-> Fun fact: In computing, we often refer to programming errors as "bugs." The term "bug" actually has a fascinating origin. Back in 1947, a moth found its way into one of the components of the Mark II computer at Harvard University. When the team, led by Grace Hopper, discovered it, they commented that they were "debugging" the system. That's how we got the term "debugging." So, a "bug" refers to an error or flaw in software that produces unexpected results, and "debugging" is the process of finding and fixing these issues to ensure the program works correctly.
+> **Fun fact:** In computing, we often refer to programming errors as "bugs." The term "bug" actually has a fascinating origin. Back in 1947, a moth found its way into one of the components of the Mark II computer at Harvard University. When the team, led by Grace Hopper, discovered it, they commented that they were "debugging" the system. That's how we got the term "debugging." So, a "bug" refers to an error or flaw in software that produces unexpected results, and "debugging" is the process of finding and fixing these issues to ensure the program works correctly.
 
 ### Fundamentals
 
