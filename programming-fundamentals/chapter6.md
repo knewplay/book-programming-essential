@@ -282,7 +282,14 @@ One of the most notable benefits of such a modular design is maintainability. If
 
 **Activity #1:**
 
-Create a set of functions for different aspects of planning a birthday party. Think about the key tasks involved in organizing a party and design functions for each of these tasks. You don't need to implement the details of each function; just outline what each function would do.
+Create a set of functions for different aspects of planning a birthday party. Think about the key tasks involved in organizing a party and design functions for each of these tasks. You don't need to implement the details of each function; just outline what each function would do using comments. For example:
+
+```typescript
+function PlanMenu(foodItems):
+    // Choose a variety of dishes to cater to all guests' tastes
+    return "Menu Planned"
+END function
+```
 
 ![Birthday party](./figures/ch-6-birthday-party.jpg)
 *Party essentials ready for a birthday celebration.*
