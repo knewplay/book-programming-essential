@@ -52,6 +52,9 @@ It's evident that a lot is going on beneath the GUI. Just think about it. What w
 
 The terminal operates at a more fundamental level, granting direct access to the operating system's underlying command-line interface (CLI). It's like a secret door that bypasses the graphical user interface altogether. You can do everything you do with a GUI using the terminal, but not everything you can do with the terminal is possible through a GUI. That's because the GUI is written based on the commands, and not all commands are necessarily represented in the GUI.
 
+![GUI and terminal](./figures/gui-terminal.jpg)
+*The GUI's sleek design masks the complex code within the terminal.*
+
 That's why programmers and IT professionals rely on the terminal. It offers unparalleled control and functionality. While GUIs simplify user interactions, programmers might not create or develop them for certain specialized technologies or applications. Nobody bothers to create the GUI-equivalent of tools used by programmers and IT professionals. Why? Well, developing a GUI takes extra effort, and programmers must write lots of code to erect a GUI-equivalent of a program. And the assumption is that since tech-savvy folks like programmers are capable of using the terminal, then they should just use the terminal. No need for a GUI-equivalent.
 
 This explanation might make it seem like programmers force us to use the terminal because there is no GUI-equivalent, but the truth is that the CLI offers way more functionality than most of its GUI counterparts.
