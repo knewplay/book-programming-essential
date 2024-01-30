@@ -462,7 +462,7 @@ The truth is that you can google anything, anytime you want. Google is never goi
 
 1. As someone learning a new programming language, googling can help you find tutorials, guides and online courses to expand your knowledge.
 2. If you come across the use of a function in a tutorial, and would like to see more examples of that function being used, then googling for examples is a great idea.
-3. When you compile or run your code, errors are inevitable, and copy-pasting the error message will often lead you to either a blog post solving the error, a discussion forum where others have faced the same issue and found solutions, or most commonly, a Q&A website such as Stack OverFlow. However, do not forget to read and try to understand the error message yourself before automatically copy-pasting it.
+3. When you compile or run your code, errors are inevitable, and copy-pasting the error message will often lead you to either a blog post solving the error, a discussion forum where others have faced the same issue and found solutions, or most commonly, a Q&A website such as Stack Overflow. However, do not forget to read and try to understand the error message yourself before automatically copy-pasting it.
 4. Just like when learning a new programming language, there may be a new library that you must use. Learn more about the library by googling it.
 
 ### How to google
@@ -506,16 +506,18 @@ After entering their query, most people will automatically click on the first se
 #### Use matching operators
 
 1. Using double quotes ("") around any term acts as an **inclusion operator** and will force Google to match it exactly. E.g. ***"html" "css" website development***
-2. Using the minus symbol (-) before a word acts as an **exclusion operator** and will filter out any results containing that word. Use this when you are looking for a solution for something but, for one reason or another, you don't want to use some particularly popular tool; maybe it doesn't work on your system, maybe it's too bulky for your project, etc. E.g. rather than searching ***robotics programming without python***, which is going to give python-related results, search for  ***robotics programming -python***.
-3. Using the asterisk (*) within a query acts as a **wildcard operator** and will be replaced with any word or phrase. E.g. you run your code, and receive an error message which contains your local directory (which will only be relevant to you). Instead searching for the entire error message, you could replace that section with an asterisk.
+2. Using the minus symbol (-) before a word acts as an **exclusion operator** and will filter out any results containing that word. Use this when you are looking for a solution for something but, for one reason or another, you don't want to use some particularly popular tool; maybe it doesn't work on your system, maybe it's too bulky for your project, etc. E.g. rather than searching *"robotics programming without python"*, which may still give python-related results, search for  *"robotics programming -python"*.
+3. Using the asterisk (\*) within a query acts as a **wildcard operator** and will be replaced with any word or phrase. E.g. you run your code, and receive an error message which contains your local directory (which will only be relevant to you). Instead searching for the entire error message, you could replace that section with an asterisk. E.g. rather than seraching *"ImportError: No module named 'robotpy_vex' in /Users/andreig/robotics_project"*, you could search *"ImportError: No module named \*"*.
+
+    This search query would help you find information on resolving import errors related to missing modules in Python, which is a common issue among beginner programmers.
 
 #### **Use date operators**
 
-If you are typing ***"c programming tutorial"*** and are getting results from 2010, you may want to limit the search to more recent articles.
+If you are typing *"c programming tutorial"* and are getting results from 2010, you may want to limit the search to more recent articles.
 
-You can use the complete format of ***yyyy-mm-dd***, or just type in the year. For example, ***"c programming tutorial after:2020"***.
+You can use the complete format of ***yyyy-mm-dd***, or just type in the year. For example, *"c programming tutorial after:2020"*.
 
-Similarly, you can use ***"before"*** to search for articles before a certain date.
+Similarly, you can use *"before"* to search for articles before a certain date.
 
 #### **Honorable mention: Stack Overflow**
 
@@ -560,7 +562,7 @@ In the same year, Emacs emerged as another influential editor. Characterized by 
 
 In 1991, Vim (Vi IMproved) was released. Vim is an enhanced version of vi, bringing along more features and capabilities. Editors like Vim were built for efficiency, allowing users to navigate and edit files directly from the command line using keyboard shortcuts.
 
-In the modern era, there's still a dedicated group of programmers who swear by such minimalist tools (notably Vim, Neovim, Nano and Emacs) for their unmatched speed and adaptability. Operating solely within the terminal, they don't have flashy visuals. However, there's a caveat: mastering them can be a challenge. A steep learning curve is associated with memorizing various keyboard shortcuts, but for many, the payoff in efficiency is well worth the effort.
+In the modern era, there's still a dedicated group of programmers who swear by such minimalist tools (notably Vim, Neovim and Emacs) for their unmatched speed and adaptability. Operating solely within the terminal, they don't have flashy visuals. However, there's a caveat: mastering them can be a challenge. A steep learning curve is associated with memorizing various keyboard shortcuts, but for many, the payoff in efficiency is well worth the effort.
 
 ![Vim](./figures/vim.jpg)
 *A screenshot of the Vim editor, showcasing its simple and efficient command-line interface.*
