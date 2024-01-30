@@ -5,7 +5,7 @@ author: "Andrei Guevorkian"
 illustrator: "Dengyijia Liu"
 ---
 
-Just as a master carpenter skillfully wields their tools to shape exquisite furniture or a painter expertly selects brushes and colors to create captivating artwork, programmers harness a collection of specialized tools to craft intricate software systems. Let's explore the essential tools that empower programmers to shape the digital world.
+Like a carpenter with their toolbox for building furniture or a painter with their palette for creating art, programmers have their own set of tools for crafting software. Let's dive into the essential tools that enable programmers to bring their digital creations to life.
 
 ## Table of Contents
 
