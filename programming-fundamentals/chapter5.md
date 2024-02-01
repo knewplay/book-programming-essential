@@ -50,7 +50,8 @@ Imagine walking into a library. In this library, there are various items: books,
 
 Just as different items in a library have distinct operations and storage methods, data types in programming have their unique ways of being manipulated and stored. For instance, in the library, you wouldn't try to "listen" to a book or "read" a CD. Similarly, in our daily lives, you wouldn't "peel" a number as you would a fruit, or "wear" a fruit as you would a shirt. Understanding and respecting these distinctions in programming ensures that we use data appropriately and efficiently.
 
-![Labeled box](./figures/ch-5-library.jpg)
+![Library reading](./figures/ch-5-library.jpg)
+*A student reading in a library.*
 
 ## Common Data Types in Programming
 
@@ -127,7 +128,8 @@ variable_name = new_value
 
 You may have noticed that the variable names follow a certain style. Here are some rules and conventions that programmers follow in order to ensure code clarity and prevent potentials errors.
 
-![Baby naming](./figures/ch-5-Variable-naming.jpg)
+![Baby naming](./figures/ch-5-variable-naming.jpg)
+*A baby with a nametag, symbolizing the significance of naming in programming.*
 
 #### Mandatory Rules
 

@@ -57,6 +57,7 @@ Imagine you're teaching someone to tie their shoelaces. The instructions you giv
 Now, consider a more complex scenario: robots in a competition. In such a contest, a robot might be tasked to collect a ball from the ground and shoot it into a basket.
 
 ![Shooting robot](./figures/ch-2-robot-shoot-image.jpg)
+*A robot executing tasks in a robotics competition, from collection to shooting.*
 
 The robot doesn't act on instinct or intuition; instead, it follows a strict set of instructions - its algorithm. The algorithm could look something like this:
 
@@ -117,6 +118,7 @@ When you encounter a step that involves making a decision, use a diamond shape. 
 Keep drawing arrows from one rectangle to the next as you move through your list of steps. After the last step, draw an arrow to a rounded rectangle labeled "End".
 
 ![Completed flowchart](./figures/ch-2-tea-making.jpg)
+*A completed flowchart illustrating the sequential steps in tea preparation.*
 
 #### Step 4: Review
 
@@ -125,6 +127,7 @@ Once you've drawn out each step from your list, take a moment to review the flow
 The intuitive approach is like narrating a story to yourself. You're recounting the tale of making a cup of tea, from start to finish. By following each step as you would in real life and drawing it out in sequence, you create a visual representation of the process.
 
 ![Tea making](./figures/ch-2-tea-makeing-image.jpg)
+*Tea pouring into a cup, the final step in tea preparation.*
 
 By using this systematic approach, you can turn any problem or process into a clear, visual flowchart.
 
@@ -137,6 +140,7 @@ Remember, algorithms and flowcharts are all about breaking down problems and rep
 Describe a typical morning routine for getting ready for school, including a decision you make between two options at some point in the routine. Detail the steps from waking up to leaving the house.
 
 ![Getting ready for school](./figures/ch-2-getting-ready-for-school.jpg)
+*A student with her school bag, ready for school after her morning routine.*
 
 ### Answer
 
@@ -161,6 +165,9 @@ This sequence lists out the steps and includes a decision-making point regarding
 Imagine you have a humanoid robot. This robot can flawlessly execute every command you give but understands only fundamental commands, such as "lift your right foot 5 centimeters" or "turn your head 90 degrees left". It's unable to process abstract or compound actions like "walk forward".
 
 You want to instruct the robot to move 30 centimeters forward. Describe in detail the series of commands you would provide to ensure the robot moves the desired distance.
+
+![Walking robot](./figures/ch-2-robot-walk.jpg)
+*A humanoid robot walking.*
 
 ### Answer
 

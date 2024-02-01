@@ -41,6 +41,7 @@ In our daily lives, we encounter many repetitive tasks, whether it's setting an 
 Loops are a fundamental concept in programming. They allow us to execute a set of instructions multiple times, which is often referred to as "iteration." Instead of writing the same code over and over again, a loop provides a cleaner way to repeat actions.
 
 ![Clock loop](./figures/ch-4-clock-loops.jpg)
+*A clock, symbolizing the repetitive nature of loops in programming.*
 
 Imagine playing your favorite video game. There are certain elements in that game that are repetitive, all thanks to loops. Here are a few:
 
@@ -161,8 +162,8 @@ This example is a fundamental illustration of how loops can automate repetitive 
 
 Rocket launches always start with that dramatic countdown: "10, 9, ..., 3, 2, 1, Blast off!". Let's break down how a loop might handle this!
 
-![Flowchart of countdown](./figures/ch-4-Rocket-launch.jpg)
-*Flowchart representation of the rocket launch countdown.*
+![Rocket launch](./figures/ch-4-Rocket-launch.jpg)
+*A rocket launch, capturing the final moment of a countdown loop.*
 
 1. **Starting Point** (*Start*): The journey begins here, at the "launch pad" of our mission.
 2. **Initialization** (*Set countdown to 10*): As we prepare for launch, the loop gets ready by setting the starting point of our countdown at 10.
@@ -195,7 +196,8 @@ PRINT "Blast off!"
 
 In programming, we can place loops inside other loops, a concept known as nesting. This approach is particularly powerful for handling tasks that involve multiple layers or dimensions.
 
-[Illustration of 2 gears, one large one small]
+![Two gears](./figures/ch-4-nested-loops.jpg)
+*Two gears, with the smaller one representing the inner loop that cycles multiple times within the larger outer loop's single rotation.*
 
 ### Nested Loop Example: Amusement Park
 
@@ -204,6 +206,7 @@ Imagine this: you're on a weekend trip to an amusement park with an all-inclusiv
 This situation is a great example of nested loops. Think of the two-day weekend as the outer loop. Now, inside each day (each cycle of the outer loop), there's another loop for the five times you ride the roller coasters.
 
 ![Roller coaster loop](./figures/ch-4-amusement-park.jpg)
+*A roller coaster making two loop-the-loops.*
 
 Here's a breakdown:
 

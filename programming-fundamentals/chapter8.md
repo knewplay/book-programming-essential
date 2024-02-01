@@ -192,9 +192,6 @@ else:
 
 Now, the code checks if `x < 5` first. If it's not, then it checks if `x < 10`. This way, all possibilities are covered correctly.
 
-![1D coordinate system](./figures/ch-8-activity.jpg)
-*As can be seen, x < 5 must be checked first because it is contained within x < 10.*
-
 **Activity #2:**
 
 Your friend was asked to write a program that will count numbers from 1 to 10. They wrote the following code:

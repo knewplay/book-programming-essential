@@ -1,5 +1,5 @@
 ---
-title: "Chapter 1: Understanding and Breaking Down Problems"
+title: "Introduction: Programming as a Way of Thinking"
 date: "2023-09-30"
 author: "Andrei Guevorkian"
 illustrator: "Dengyijia Liu"
@@ -7,7 +7,10 @@ illustrator: "Dengyijia Liu"
 
 At its core, programming is the act of instructing computers to perform specific tasks.
 
-Without instructions, a computer is essentially dormant, like a powerful engine without fuel. It's through programming that we harness its immense potential, turning complex algorithms into tangible, useful applications.
+Without instructions, a computer is essentially dormant, just as a puppet remains motionless without the guiding hands of its puppeteer. It's through programming that we harness its immense potential, turning complex algorithms into tangible, useful applications.
+
+![Puppet control](./figures/intro-puppet.jpg)
+*Maneuvering a puppet, analogous to the control and direction provided by programming.*
 
 Whether it's calculating large sums, displaying graphics, playing music, or connecting with other devices over the internet, all computer operations boil down to specific sets of instructions we've programmed it to understand and execute.
 
@@ -25,6 +28,6 @@ While a programmer's code may be used by billions, it's their unique approach to
 - Creative: While logic forms the foundation, creativity adds the flair. Every problem can have multiple solutions, and it's often the most creative one that stands out, making a program more efficient or user-friendly.
 - Persistent: Anyone who's ever written code knows that it rarely works perfectly the first time. There are bugs, unexpected outcomes, and challenges. Persistence is about continuous troubleshooting and refining the code until it's just right (or just good enough).
 
-Is this mindset essential for our book? Absolutely. While the technicalities of programming are vital, fostering this mindset will empower readers to tackle any coding challenge they encounter and, more broadly, to approach problems in their daily lives with a similar analytical and creative spirit.
+Is this mindset essential for our book? Absolutely. While the technicalities of programming are important, developing this mindset enables aspiring programmers to tackle any coding challenge they encounter. More than that, it equips them with the tools to approach everyday problems with a blend of analytical and creative thinking.
 
 As we journey through this book, we'll not only learn the nuts and bolts of coding but also nurture this mindset, making us not just better programmers, but better problem-solvers.

@@ -5,7 +5,7 @@ author: "Andrei Guevorkian"
 illustrator: "Dengyijia Liu"
 ---
 
-Just as a master carpenter skillfully wields their tools to shape exquisite furniture or a painter expertly selects brushes and colors to create captivating artwork, programmers harness a collection of specialized tools to craft intricate software systems. Let's explore the essential tools that empower programmers to shape the digital world.
+Like a carpenter with their toolbox for building furniture or a painter with their palette for creating art, programmers have their own set of tools for crafting software. Let's dive into the essential tools that enable programmers to bring their digital creations to life.
 
 ## Table of Contents
 
@@ -52,6 +52,9 @@ It's evident that a lot is going on beneath the GUI. Just think about it. What w
 
 The terminal operates at a more fundamental level, granting direct access to the operating system's underlying command-line interface (CLI). It's like a secret door that bypasses the graphical user interface altogether. You can do everything you do with a GUI using the terminal, but not everything you can do with the terminal is possible through a GUI. That's because the GUI is written based on the commands, and not all commands are necessarily represented in the GUI.
 
+![GUI and terminal](./figures/gui-terminal.jpg)
+*The GUI's sleek design masks the complex code within the terminal.*
+
 That's why programmers and IT professionals rely on the terminal. It offers unparalleled control and functionality. While GUIs simplify user interactions, programmers might not create or develop them for certain specialized technologies or applications. Nobody bothers to create the GUI-equivalent of tools used by programmers and IT professionals. Why? Well, developing a GUI takes extra effort, and programmers must write lots of code to erect a GUI-equivalent of a program. And the assumption is that since tech-savvy folks like programmers are capable of using the terminal, then they should just use the terminal. No need for a GUI-equivalent.
 
 This explanation might make it seem like programmers force us to use the terminal because there is no GUI-equivalent, but the truth is that the CLI offers way more functionality than most of its GUI counterparts.
@@ -69,6 +72,7 @@ Another field where the terminal shines is cybersecurity. Security analysts use 
 Finally, the terminal is also crucial in the field of robotics. Even though we sometimes see young kids "programming" robots within their school curriculum, they often do it using a GUI. These interfaces often feature drag-and-drop functionality and simplified coding blocks that allow students to create basic robot behaviors without delving into the complexities of coding. Transitioning to the terminal becomes essential as students advance in their robotics journey. It allows them to dive deeper into coding, write precise and customized algorithms, and gain a deeper understanding of the mechanics behind their robot's operations.
 
 ![Robotics programming](./figures/terminal-robotics.jpg)
+*Evolving robotics skills from basic interfaces to complex coding.*
 
 So whatever your interests, the terminal is a crucial tool for programmers and IT professionals. It provides direct access to the underlying command-line interface, allowing for precise control, automation, and efficient workflows. Using the terminal also allows users to gain a deeper understanding of their computer's operations, enhancing their technical skills.
 
@@ -99,7 +103,7 @@ You'll be surprised to learn that Linux is used everywhere. While the average co
 
 As you delve deeper into the technology realm, you'll likely encounter Linux, which places significant emphasis on executing text-based commands through the terminal.
 
-> Fun fact: Linux powers 96.3% of the world's top web servers. [(Source)](https://www.enterpriseappstoday.com/stats/linux-statistics.html#:~:text=Linux%20is%20used%20to%20power,Linus%20operating%20system%20is%20run)
+> **Fun fact:** Linux powers 96.3% of the world's top web servers. [(Source)](https://www.enterpriseappstoday.com/stats/linux-statistics.html#:~:text=Linux%20is%20used%20to%20power,Linus%20operating%20system%20is%20run)
 
 #### Kernel
 
@@ -168,7 +172,7 @@ For Windows users, you can read [this resource](https://www.ibm.com/docs/en/aix/
 
 #### Understanding relative versus absolute path
 
-In the [Computer Fundamentals, Software and Hardware](../computer-fundamentals/software-and-hardware.md) section, I talked about the meaning of a file path. There, I described what is known as "absolute path", i.e. the path it takes to get to a file from the root folder, or in the case of the analogy, the locker.
+In the [Computer Fundamentals, Software and Hardware](../computer-fundamentals/software-and-hardware.md) section, I talked about the meaning of a file path. There, I described what is known as "absolute path", i.e. the path it takes to get to a file starting from the root folder, or in the case of the analogy, the locker.
 
 However, "relative paths" are equally essential. They define a file or directory's location concerning the current working directory. Instead of tracing back to the system's root, they start from where you are right now in the file system, i.e. the working directory.
 
@@ -186,6 +190,7 @@ When we enter a command into the terminal using the keyboard, the input is text 
 In addition to receiving output in the terminal, we can use I/O redirection to manipulate how commands process data. Let's say you want to take the output of one command and use it as input for another command. This is where pipes come into play. Pipes are represented by the `|` symbol and allow us to connect multiple commands, creating a powerful chain of actions.
 
 ![Piping process pizza example](./figures/piping-pizza.jpg)
+*Ingredients combine into a pizza, then to the oven, illustrating command chaining, a.k.a. piping.*
 
 See examples of how to use pipes [in this article](https://www.computernetworkingnotes.com/linux-tutorials/pipes-in-linux-explained.html).
 
@@ -193,7 +198,7 @@ It is also possible to redirect an output into a file rather than onto the termi
 
 ### Conclusion
 
-The terminal is an immensely powerful tool, offering a direct line of communication to the core of your operating system. As you become more comfortable using it, you'll discover its potential to streamline tasks, automate repetitive actions, and give you a richer understanding of how computers work. Continue to explore, learn, and remember: every expert was once a beginner. Happy coding!
+The terminal is an immensely powerful tool, offering a direct line of communication to the core of your operating system. As you become more comfortable using it, you'll discover its potential to streamline tasks, automate repetitive actions, and give you a richer understanding of how computers work.
 
 ## Git
 
@@ -201,20 +206,22 @@ Imagine investing months, or even years, in developing a remarkable app, only to
 
 ### Importance
 
-Suppose you're working on a robotics project centered around launching a projectile, with all your code neatly stored in a "RoboticsProject" folder. Given the complexities of coding and the potential for unexpected outcomes, you've adopted a prudent approach. Each time you reach a functional milestone, you save that version in the "RoboticsProject" folder, ensuring you always have a reliable backup to revert to if needed.
+Suppose you're working on a robotics project, with all your code neatly stored in a "RoboticsProject" folder. Given the complexities of coding and the potential for unexpected outcomes, you've adopted a prudent approach. Each time you reach a functional milestone, you save that version in the "RoboticsProject" folder, ensuring you always have a reliable backup to revert to if needed.
 
-Suppose you decide to add a new feature, such as a sophisticated projectile launch mechanism. To ensure safety, you could duplicate the "RoboticsProject" folder and name it "RoboticsProject_v2".
+Suppose you decide to enhance your robot with an arm capable of grasping and lifting balls. To test this new functionality while preserving the original design, you could duplicate the "RoboticsProject" folder and name it "RoboticsProject_v2".
 
 ![Robotics Project](./figures/robotics-project.jpg)
-*To the left, we have the version of the project that is stable and works. To the right is an experimental version of the robot, with a launch mechanism still being developed and tested.*
+*To the left, we have the version of the project that is stable and works. To the right is an experimental version of the robot, with an arm mechanism still being developed and tested.*
 
 Why go through this trouble? Well, this duplicate serves as a playground where you can freely experiment without fear of damaging your working code. If your attempts in "RoboticsProject_v2" lead to chaos, no worries because your original code in "RoboticsProject" remains intact.
 
-Suppose "RoboticsProject_v2" turns out to be a success, and your new projectile launch mechanism works flawlessly. At this point, "RoboticsProject_v2" becomes your main project, incorporating the new feature.
+Suppose "RoboticsProject_v2" turns out to be a success, and your new arm mechanism works flawlessly. At this point, "RoboticsProject_v2" becomes your main project, incorporating the new feature.
 
-This approach significantly improves your workflow compared to what many novice programmers do. However, there's a catch. Managing code becomes more complex when multiple people collaborate on the same project. Imagine person A enhancing the projectile launch feature while person B simultaneously works on another feature that interacts with the projectile launch code. Once they both complete their features, which of the two folders will be the new main code? How are we going to merge the two folders together? Is person A going to send his version, tell person B the changes he's made, and have person B manually copy and paste the changes into his version, which will eventually become the main version?
+This approach significantly improves your workflow compared to what many novice programmers do. However, there's a catch. Managing code becomes more complex when multiple people collaborate on the same project. Imagine Alice is enhancing the lift feature while Bob is simultaneously working on the ball grasping mechanism. Once they both complete their features, which of the two folders will be the new main code? How are we going to merge the two codebases together? Is Alice going to send her version, notify Bob of the changes that she's made, and have Bob manually copy and paste the changes into his version, which will eventually become the main version?
 
-To address such challenges, programmers often rely on version control systems like Git. These systems allow collaborative work while keeping everyone's changes organized and manageable. So, while the "duplicate and experiment" technique is great for personal projects, embracing version control practices like Git takes your coding journey to a whole new level, especially for team collaborations.
+Too complicated.
+
+To address such challenges, programmers often rely on version control systems like Git. These systems allow collaborative work while keeping everyone's changes organized and manageable. So, while the "duplicate and experiment" technique is great for personal projects, embracing version control tools like Git takes your coding journey to a whole new level, especially for team collaborations.
 
 ### Fundamentals
 
@@ -223,13 +230,11 @@ To address such challenges, programmers often rely on version control systems li
 Version Control Systems are tools that keep track of changes to code or other collections of files or folders. In other words, they keep track of the history of changes to some set of documents.
 
 ![Project snapshots](./figures/git-snapshots.jpg)
+*A set of snapshots capturing how a project builds up.*
 
 Version Control Systems track changes to a folder and its contents in a series of snapshots. So, if you are working on your code, you can take a snapshot of the entire state of your project folder at any time, and with time, you will have multiple of these snapshots.
 
-Version Control Systems also keep track of some extra information, or "metadata", along with the actual changes to the content. This makes it possible to know who authored a particular change to a specific file, when it was made, and what message was left with the snapshot.
-
-![Git Snapshots](./figures/snapshots.jpg)
-*Three project snapshots. Each displays the name of the person who captured it, the date, and the accompanying comment.*
+Version Control Systems also keep track of some extra information, or "metadata", along with the actual changes to the content. This makes it possible to know who authored a particular change to a specific file, when was this change made, and what message was left with the snapshot.
 
 There are several Version Control Systems out there, such as Subversion (SVN) and Mercurial, but Git has become the de facto standard for version control. Here, we will talk about the concepts with Git in mind.
 
@@ -247,7 +252,7 @@ With just one command, you can turn this folder into a Git repository. And since
 
 > In computer terms, "local" means something is on your own computer or in your immediate network. For example, "localhost" refers to your own computer, particularly when you're running a program or service on it. A "local network" is a group of computers or devices that are physically close, like the devices in your home. This is in contrast to "remote," which means it's located off-site or somewhere else on the internet.
 
-This local environment contains not only your project files but also a history of changes, authorship, and notes associated with those changes. This point is critical. Don't think of your repository as simply the current state of your project because that's what the working directory is. Your local repository is the history of your project, alongside the metadata of each snapshot.
+This local repository contains not only your project files but also a history of changes, authorship, and notes associated with those changes. This point is critical. Don't think of your repository as simply the current state of your project because that's what the working directory is. Your local repository is the history of your project, alongside the metadata of each snapshot.
 
 ![Local Repository](./figures/local-repository.jpg)
 *Three snapshots stored on the local repository, with the latest one mirroring the current state of the working directory.*
@@ -294,35 +299,37 @@ So, if you realize that you made a mistake in your code and want to backtrack to
 
 Each commit does have a unique identifier, but instead of being some arbitrary number like 1, 2, or 3, it's a long, funky-looking string generated through a process called SHA-1. Imagine this: You have a magical machine that turns any document, no matter how big, into a unique combination of letters and numbers. To be more precise, this is a 40-character fingerprint derived from your changes and associated metadata. This ensures each commit is distinct and allows for precise tracking. In Git, every time you save your progress (or "commit"), your work goes through this machine, and out comes a special code. This code, or "hash", is like a unique name tag for that specific moment in your project. So, when you want to revisit a past moment, you just need to reference its unique hash ID!
 
-And how do you know at which point you are at in this series of snapshots? Sure, you can say "I want to go to commit 4f5h...359b", but what keeps track of this? That is thanks to the HEAD pointer.
+And how do you know at which point you are at in this series of snapshots? Sure, you can say "I want to go to commit 4f5h...359b", but what keeps track of your current position? That is, what keeps track of which snapshot your working directory is reflecting? 
+
+Enter the HEAD pointer.
 
 The HEAD is a pointer that tells you where you are in the repository. It usually points to the latest commit in the branch you're currently working on. If you switch branches (which we will see later) or retract a previous commit, the HEAD will move accordingly, as shown in the illustration below.
 
 ![Committing Changes](./figures/committing-changes.jpg)
-*Four snapshots in a Git repository, each labeled with a unique hash ID. The 'HEAD' pointer indicates the current position in the project's timeline, while 'MAIN' marks the most recent commit.*
+*Four snapshots in a Git repository, each labeled with a unique hash ID. The 'HEAD' pointer indicates the current position in the project's timeline, which happens to be different from the latest commit.*
 
 ### Bringing it all together
 
-At this point, we've explored various components and stages of Git. Let's take a moment to see how everything comes together to form a streamlined workflow for developers. Specifically, let's focus on the interaction between the working directory, staging area, local repository, and remote repository.
+At this point, we've explored various components and stages of Git. Let's take a moment to see how everything comes together to form a streamlined workflow for developers. Specifically, let's focus on the interaction between the working directory, staging area and local repository.
 
-> Important: Please note that all of this is happening locally on the user's computer. We are not yet interacting with a remote repository and dealing with other people working on the same project. In order to turn your regular folder into a Git repository, read [2.1 Git Basics - Getting a Git Repository](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository).
+> **Important:** Please note that all of this is happening locally on the user's computer. We are not yet interacting with a remote repository and dealing with other people working on the same project. In order to turn your regular folder into a Git repository, read [2.1 Git Basics - Getting a Git Repository](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository).
 
-1. Working Directory: This is where you'll be doing most of your work. It's where you write, edit, and delete your project files. When you have made some changes to your files that you're satisfied with, you move on to the next step, staging your changes.
+1. Working Directory: This is where you'll be doing most of your work. It's where you write, edit, and delete your project files. When you have made some changes to your files that you're satisfied with, you move on to the next step: staging your changes.
 
     Note that whichever commit the HEAD pointer points to is the version of the project that you will see in front of you in your working directory.
 
 2. Staging Area: Before committing changes to the local repository, you must decide which changes you want to include in that snapshot. This step is called staging. The staging area is a sort of buffer that holds the changes you want to commit. You select and organize the changes here, ensuring you have a set of related changes ready to be committed.
 
-3. Committing to the Local Repository: Once you have staged your changes, you commit them to your local repository. This step involves saving a snapshot of your project in its current state to the repository. Remember, each commit captures a moment in your project's history. When you commit, you provide a message that briefly describes your changes and why. This message becomes part of your project's history, helping you and your collaborators understand why each change was made.
+3. Committing to the Local Repository: Once you have staged your changes, you commit them to your local repository. This step involves saving a snapshot of your project in its current state to the repository. Remember, each commit captures a moment in your project's history. When you commit, you provide a message that briefly describes your changes. This message becomes part of your project's history, helping you and your collaborators understand why each change was made.
 
 ![Git Local Workflow](./figures/bring-it-all-together.jpg)
 *Workflow diagram showcasing the sequence of Git operations: Changes are made in the 'Working Directory', prepared in the 'Staging Area', and then saved as a snapshot in the 'Local Repository'.*
 
-> Resources: To learn more about the specific commands to use, read [2.2 Recording Changes to the Repository](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository), as well as sections [2.3 Viewing the Commit History](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History) and [2.4 Undoing Things](https://git-scm.com/book/en/v2/Git-Basics-Undoing-Things).
+> **Resources:** To learn more about the specific commands to use, read [2.2 Recording Changes to the Repository](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository), as well as sections [2.3 Viewing the Commit History](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History) and [2.4 Undoing Things](https://git-scm.com/book/en/v2/Git-Basics-Undoing-Things).
 
 ### Branching
 
-Branching is one of the powerful features of Git. Imagine you're working on the "RoboticsProject" folder with your team and want to try a new feature for the projectile launch mechanism. Instead of making changes directly to the main project, you create a "branch" - a parallel version of your project where you can experiment without affecting the original code. In Git, the main branch is often called the "main" branch (previously called "master"), and it's the version of your project that's considered stable and ready for production.
+Branching is one of the powerful features of Git. Imagine you're working on the "RoboticsProject" folder with your team and want to try a new feature for the arm mechanism. Instead of making changes directly to the main project, you create a "branch" - a parallel version of your project where you can experiment without affecting the original code. In Git, the main branch is often called the "main" branch (previously called "master"), and it's the version of your project that's considered stable and ready for production.
 
 When you create a new branch, it's like you're taking a snapshot of the main branch at that point in time. You can make changes, add new files, and even delete files in the new branch without affecting the main branch. This allows you to experiment, try new features, or fix bugs in a safe environment.
 
@@ -331,18 +338,18 @@ When you create a new branch, it's like you're taking a snapshot of the main bra
 
 If you are working alone, a branch enables you to try something out and easily revert your code back to the beginning simply by switching back to the main branch. When working with others, if everyone works in their own branch, they can save work on their part in isolation without affecting their teammates.
 
-> Recourses: For specific commands around branching, [read this](https://www.atlassian.com/git/tutorials/using-branches). Furthermore, you may want to switch between different branches. To do that, [read this](https://www.atlassian.com/git/tutorials/using-branches/git-checkout).
+> **Resources:** For specific commands around branching, [read this](https://www.atlassian.com/git/tutorials/using-branches). Furthermore, you may want to switch between different branches. To do that, [read this](https://www.atlassian.com/git/tutorials/using-branches/git-checkout).
 
 ### Merging
 
-After working on your feature branch and testing the new projectile calculation code, you're ready to incorporate it into the main project. This process is called "merging." By merging your feature branch into the main branch, you're integrating the changes you made in the feature branch back into the main project. This way, your team can benefit from the new features or fixes you've added.
+After working on your feature branch and testing the new arm mechanism code, you're ready to incorporate it into the main project. This process is called "merging." By merging your feature branch into the main branch, you're integrating the changes you made in the feature branch back into the main project. This way, your team can benefit from the new features or fixes you've added.
 
 Merging is taking the separate lines of development created by branching and joining them back together. When you merge two branches, Git will try to automatically combine the changes. If the branches have diverged significantly, you may need to help Git by resolving any conflicts that arise.
 
 ![Merging](./figures/merging.jpg)
 *After successfully completing their respective features, Alice and Bob merge their work back into the main branch.*
 
-> Recourse: For specific commands around merging, [read this](https://www.atlassian.com/git/tutorials/using-branches/git-merge).
+> **Resource:** For specific commands around merging, [read this](https://www.atlassian.com/git/tutorials/using-branches/git-merge).
 
 I encourage you to practice your Git command skills with [this Git visualizing tool](http://onlywei.github.io/explain-git-with-d3/#freeplay). Note that the staging step is omitted in this tool so that you can commit directly.
 
@@ -355,7 +362,7 @@ To get your own local copy of the remote repository, you "clone" it. Cloning cre
 ![Cloning Process](./figures/clone.jpg)
 *Cloning creates an exact local copy of the remote repository.*
 
-Once you have a local copy, you can create branches, make changes, and commit them just like in any other Git repository. While your local repository maintains this history of commits, these are local to your computer. To share this history and the current state with others, one must synchronize the local repository with a remote one.
+Once you have a local copy, you can create branches, make changes, and commit them just like in any other Git repository. While your local repository maintains this history of commits, these are local to your computer. To share this history and the current state with others, one must synchronize the local repository with the remote one.
 
 ![Push and Pull Process](./figures/push-pull.jpg)
 *To synchronize changes, you push updates from your local repository to the remote and pull the latest changes from the remote back to your local repository.*
@@ -369,7 +376,7 @@ However, it is crucial to note that you cannot directly push code from your work
 
 Remember, collaborating with others involves not only sharing your changes but also keeping up with their work. Regularly pulling updates from the remote repository ensures you're working with the project's latest version and helps prevent conflicts when merging.
 
-> Recourse: Read [this article](https://www.javatpoint.com/git-remote) to learn about the Git remote-related commands.
+> **Resource:** Read [this article](https://www.javatpoint.com/git-remote) to learn about the Git remote-related commands.
 
 ### Resolving conflicts
 
@@ -382,7 +389,7 @@ So, what's this "conflict"? When you and your teammates are working on the same 
 
 When this happens, Git shows both changes, delimited by <, =, and > markers. At this point, you have to edit the file and decide which changes to keep, which to discard, or perhaps blend the two changes together. After "resolving" the conflict, stage the file, and then commit (leave a helpful message explaining the reasoning behind the change) and push your harmonized version to the remote repository.
 
-> Recourse: Read [this article](https://www.freecodecamp.org/news/how-to-fix-merge-conflicts-in-git/) to view how to resolve a Git conflict.
+> **Resource:** Read [this article](https://www.freecodecamp.org/news/how-to-fix-merge-conflicts-in-git/) to view how to resolve a Git conflict.
 
 While a Git conflict may seem intimidating at first, it's usually simple to solve as long as you are communicating with your friend. Discussing the reasons behind each change can help both of you understand the broader perspective and decide on the best solution. This collaborative resolution ensures the code works as intended and fosters a harmonious team dynamic. Remember, in collaborative projects, communication is as crucial as coding prowess.
 
@@ -399,7 +406,7 @@ Navigating the realm of Git collaboration can be a smooth journey if we all foll
 
 3. Branching Out: Create a new branch when experimenting or adding a new feature. This keeps the main codebase stable and allows for isolated testing and development.
 
-4. Adopt a consistent branch naming convention and clarity in the branch's purpose. Examples of branch names are *launch-mechanism*, *sensor-integration*, and *battery-optimization*.
+4. Consistency: Adopt a consistent branch naming convention and clarity in the branch's purpose. Examples of branch names are *launch-mechanism*, *sensor-integration*, and *battery-optimization*.
 
 5. Regular Updates: Pull changes from the main branch regularly. This reduces the likelihood of conflicts and keeps your local copy up to date.
 
@@ -455,7 +462,7 @@ The truth is that you can google anything, anytime you want. Google is never goi
 
 1. As someone learning a new programming language, googling can help you find tutorials, guides and online courses to expand your knowledge.
 2. If you come across the use of a function in a tutorial, and would like to see more examples of that function being used, then googling for examples is a great idea.
-3. When you compile or run your code, errors are inevitable, and copy-pasting the error message will often lead you to either a blog post solving the error, a discussion forum where others have faced the same issue and found solutions, or most commonly, a Q&A website such as Stack OverFlow. However, do not forget to read and try to understand the error message yourself before automatically copy-pasting it.
+3. When you compile or run your code, errors are inevitable, and copy-pasting the error message will often lead you to either a blog post solving the error, a discussion forum where others have faced the same issue and found solutions, or most commonly, a Q&A website such as Stack Overflow. However, do not forget to read and try to understand the error message yourself before automatically copy-pasting it.
 4. Just like when learning a new programming language, there may be a new library that you must use. Learn more about the library by googling it.
 
 ### How to google
@@ -472,7 +479,7 @@ When it comes to simplifying your query, think of the resulting websites' titles
 
 > Instead of writing *"I'm confused by when I should use semicolons in C"*, write *"semicolon use in c"*, or just simply *"semicolons in c"*. If Google shows results of semicolon use in regular English (for example), and didn't pick up the *"in c"* portion of the query, then specify: *"semicolon use in c programming language"*.
 
-> Note: Google searches are case-insensitive, meaning it doesn't matter if you write *C* of *c*.
+> **Note:** Google searches are case-insensitive, meaning it doesn't matter if you write *C* of *c*.
 
 #### **Use autocompletion**
 
@@ -499,16 +506,18 @@ After entering their query, most people will automatically click on the first se
 #### Use matching operators
 
 1. Using double quotes ("") around any term acts as an **inclusion operator** and will force Google to match it exactly. E.g. ***"html" "css" website development***
-2. Using the minus symbol (-) before a word acts as an **exclusion operator** and will filter out any results containing that word. Use this when you are looking for a solution for something but, for one reason or another, you don't want to use some particularly popular tool; maybe it doesn't work on your system, maybe it's too bulky for your project, etc. E.g. rather than searching ***robotics programming without python***, which is going to give python-related results, search for  ***robotics programming -python***.
-3. Using the asterisk (*) within a query acts as a **wildcard operator** and will be replaced with any word or phrase. E.g. you run your code, and receive an error message which contains your local directory (which will only be relevant to you). Instead searching for the entire error message, you could replace that section with an asterisk.
+2. Using the minus symbol (-) before a word acts as an **exclusion operator** and will filter out any results containing that word. Use this when you are looking for a solution for something but, for one reason or another, you don't want to use some particularly popular tool; maybe it doesn't work on your system, maybe it's too bulky for your project, etc. E.g. rather than searching *"robotics programming without python"*, which may still give python-related results, search for  *"robotics programming -python"*.
+3. Using the asterisk (\*) within a query acts as a **wildcard operator** and will be replaced with any word or phrase. E.g. you run your code, and receive an error message which contains your local directory (which will only be relevant to you). Instead searching for the entire error message, you could replace that section with an asterisk. E.g. rather than seraching *"ImportError: No module named 'robotpy_vex' in /Users/andreig/robotics_project"*, you could search *"ImportError: No module named \*"*.
+
+    This search query would help you find information on resolving import errors related to missing modules in Python, which is a common issue among beginner programmers.
 
 #### **Use date operators**
 
-If you are typing ***"c programming tutorial"*** and are getting results from 2010, you may want to limit the search to more recent articles.
+If you are typing *"c programming tutorial"* and are getting results from 2010, you may want to limit the search to more recent articles.
 
-You can use the complete format of ***yyyy-mm-dd***, or just type in the year. For example, ***"c programming tutorial after:2020"***.
+You can use the complete format of ***yyyy-mm-dd***, or just type in the year. For example, *"c programming tutorial after:2020"*.
 
-Similarly, you can use ***"before"*** to search for articles before a certain date.
+Similarly, you can use *"before"* to search for articles before a certain date.
 
 #### **Honorable mention: Stack Overflow**
 
@@ -539,7 +548,7 @@ As computers evolved and became more interactive, the need for a more efficient 
 
 At the end of the day, writing code is really just typing text. This means, in theory, you could use anything from Google Docs to Microsoft Word for this task. However, as you delve deeper into programming, you'll understand the need for tools tailored specifically for the job, as they will make the coding process faster, more efficient, and less error-prone.
 
-> Fun fact: In computing, we often refer to programming errors as "bugs." The term "bug" actually has a fascinating origin. Back in 1947, a moth found its way into one of the components of the Mark II computer at Harvard University. When the team, led by Grace Hopper, discovered it, they commented that they were "debugging" the system. That's how we got the term "debugging." So, a "bug" refers to an error or flaw in software that produces unexpected results, and "debugging" is the process of finding and fixing these issues to ensure the program works correctly.
+> **Fun fact:** In computing, we often refer to programming errors as "bugs." The term "bug" actually has a fascinating origin. Back in 1947, a moth found its way into one of the components of the Mark II computer at Harvard University. When the team, led by Grace Hopper, discovered it, they commented that they were "debugging" the system. That's how we got the term "debugging." So, a "bug" refers to an error or flaw in software that produces unexpected results, and "debugging" is the process of finding and fixing these issues to ensure the program works correctly.
 
 ### Fundamentals
 
@@ -553,7 +562,7 @@ In the same year, Emacs emerged as another influential editor. Characterized by 
 
 In 1991, Vim (Vi IMproved) was released. Vim is an enhanced version of vi, bringing along more features and capabilities. Editors like Vim were built for efficiency, allowing users to navigate and edit files directly from the command line using keyboard shortcuts.
 
-In the modern era, there's still a dedicated group of programmers who swear by such minimalist tools (notably Vim, Neovim, Nano and Emacs) for their unmatched speed and adaptability. Operating solely within the terminal, they don't have flashy visuals. However, there's a caveat: mastering them can be a challenge. A steep learning curve is associated with memorizing various keyboard shortcuts, but for many, the payoff in efficiency is well worth the effort.
+In the modern era, there's still a dedicated group of programmers who swear by such minimalist tools (notably Vim, Neovim and Emacs) for their unmatched speed and adaptability. Operating solely within the terminal, they don't have flashy visuals. However, there's a caveat: mastering them can be a challenge. A steep learning curve is associated with memorizing various keyboard shortcuts, but for many, the payoff in efficiency is well worth the effort.
 
 ![Vim](./figures/vim.jpg)
 *A screenshot of the Vim editor, showcasing its simple and efficient command-line interface.*
@@ -583,7 +592,7 @@ The world of code editors spans a broad spectrum. On one end, you have minimalis
 Today, however, VS Code represents a harmonious middle ground. It stands as a testament to the evolution of code editors, seamlessly blending the efficiency of traditional editors with the intuitive interfaces of modern-day tools.
 
 ![StackOF Survey](./figures/preferred-code-editor.jpg)
-*A bar chart from a Stack Overflow survey conducted in 2023, displaying preferences for different code editors among developers.*
+*A bar chart from a Stack Overflow survey conducted in 2023, displaying preferences for different code editors among developers. [Source](https://survey.stackoverflow.co/2023/#integrated-development-environment)*
 
 For those embarking on their coding journey, I can't recommend VS Code enough. It's versatile and caters to a multitude of projects. While there may be instances where a specialized tool is beneficial, VS Code fulfills the requirements of the majority of programmers.
 
